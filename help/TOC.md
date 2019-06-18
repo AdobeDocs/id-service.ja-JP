@@ -5,7 +5,7 @@ audience: エンドユーザー
 user-guide-title: IDサービスヘルプ
 user-guide-url: /content/help/en/id-service/using/mcvid-home.html
 translation-type: tm+mt
-source-git-commit: c8020fc1cc5acd5fccb1e8a2e2787d95aa1294ab
+source-git-commit: 1dd8b109f7e9567b5f72747ecc653d35d0942413
 
 ---
 
@@ -42,6 +42,7 @@ source-git-commit: c8020fc1cc5acd5fccb1e8a2e2787d95aa1294ab
       + [オプトインリファレンス](mcvid-implementation-guides/opt-in-service/api.md)
       + [（ベータ） IABフレームワークを使用したオプトインサービスの使用](mcvid-implementation-guides/opt-in-service/iab.md)
 + ID サービスの API {#id-service-api}
+   + [IDサービスAPIの概要](mcvid-library/mcvid-library.md)
    + 設定 {#configurations}
       + [設定の概要](mcvid-library/mcvid-function-vars/mcvid-function-vars.md)
       + [audienceManagerServer および audienceManagerServerSecure](mcvid-library/mcvid-function-vars/mcvid-subdomain-config.md)
@@ -77,6 +78,7 @@ source-git-commit: c8020fc1cc5acd5fccb1e8a2e2787d95aa1294ab
       + [isClientSideMarketingCloudVisitorID](mcvid-library/mcvid-get-set/mcvid-client-side-id.md)
       + [resetState](mcvid-library/mcvid-get-set/mcvid-resetstate.md)
 + リファレンス {#reference}
+   + [リファレンス概要](mcvid-reference/mcvid-reference.md)
    + Analytics リファレンス {#analytics-reference}
       + [Analyticsリファレンス概要](mcvid-reference/mcvid-analytics-reference/mcvid-analytics-reference.md)
       + [Analytics および Experience Cloud ID の設定](mcvid-reference/mcvid-analytics-reference/mcvid-analytics-ids.md)
@@ -91,6 +93,7 @@ source-git-commit: c8020fc1cc5acd5fccb1e8a2e2787d95aa1294ab
    + [Experience Cloud ID サービスでの COPPA のサポート](mcvid-reference/mcvid-coppa.md)
    + [Experience Cloud ID サービスでの CORS のサポート](mcvid-reference/mcvid-cors.md)
    + [顧客 ID と認証状態](mcvid-reference/mcvid-authenticated-state.md)
+   + [Safari ITP世界のECIDライブラリメソッド](mcvid-reference/ecid-library-methods.md)
    + [AMCV Cookie または ID サービスからの地域およびユーザー ID の取得](mcvid-reference/mcvid-regions.md)
    + [Experience Cloud ID サービスの要件](mcvid-reference/mcvid-requirements.md)
    + [ビデオハートビートと Experience Cloud ID サービス](mcvid-reference/mcvid-heartbeat.md)
