@@ -9,10 +9,10 @@ getting-started-title: 導入
 getting-started-url: https://helpx.adobe.com/experience-cloud-core-services/get-started.html
 tutorials-title: チュートリアル
 tutorials-url: https://helpx.adobe.com/jp/experience-cloud/tutorials.html
-git-repo: https://git.corp.adobe.com/AdobeDocs/id-service.en
-index: false
+git-repo: https://github.com/AdobeDocs/id-service.en
+index: true
 translation-type: tm+mt
-source-git-commit: 16aaf27ebca79afb14e6ac3573852543efcd0173
+source-git-commit: cacc5a1e1591a4b7b5906711b157527a283d7731
 
 ---
 
