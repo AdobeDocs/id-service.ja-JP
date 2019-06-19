@@ -1,22 +1,22 @@
 ---
-description: アドビによる起動は、エクスペリエンスプラットフォームIDサービスを他のExperience Cloudソリューションと設定、デプロイおよび統合するために使用される主要ツールです。
-seo-description: アドビによる起動は、エクスペリエンスプラットフォームIDサービスを他のExperience Cloudソリューションと設定、デプロイおよび統合するために使用される主要ツールです。
+description: Adobe Experience Platform Launchは、Experience Platform IDサービスを他のExperience Cloudソリューションと設定、デプロイおよび統合するために使用する主要ツールです。
+seo-description: Adobe Experience Platform Launchは、Experience Platform IDサービスを他のExperience Cloudソリューションと設定、デプロイおよび統合するために使用する主要ツールです。
 seo-title: Launch を使用した実装
 title: Launch を使用した実装
 uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
 
 # Launch を使用した実装{#implement-with-launch}
 
-アドビによる起動は、エクスペリエンスプラットフォームIDサービスを他のExperience Cloudソリューションと設定、デプロイおよび統合するために使用される主要ツールです。
+Adobe Experience Platform Launchは、Experience Platform IDサービスを他のExperience Cloudソリューションと設定、デプロイおよび統合するために使用する主要ツールです。
 
 ## Launch について {#section-611711602854464ea351a4af80a8dafe}
 
-[Launch by Adobe](https://docs.adobelaunch.com/) は、Adobe Experience Cloud に組み込まれている次世代のアドビタグ管理機能です。Launch を使用すると、クライアントは以下のことが可能になります。
+[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) は、Adobe Experience Cloudに組み込まれているAdobe Tag Management機能の次世代機能です。Launch を使用すると、クライアントは以下のことが可能になります。
 
 * 拡張と呼ばれる統合機能を使用してクライアント側の Web 製品をデプロイする
 * 他のベンダーやアドビのマーケティング製品と広告製品の間でデータを一貫して記録、定義、管理および共有する
