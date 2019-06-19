@@ -6,7 +6,7 @@ seo-title: Experience Cloud ID サービスの Analytics および Audience Mana
 title: Experience Cloud ID サービスの Analytics および Audience Manager への実装
 uuid: d46050ae-87de-46cc-911b- d6346c7fd511
 translation-type: tm+mt
-source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
+source-git-commit: 4dc668afd37cd1d6f9104adb1b102f1dd4c5746e
 
 ---
 
@@ -133,7 +133,7 @@ Analytics は、データ収集にトラッキングサーバーを使用しま�
 * Experience Cloud サーバー URL = トラッキングサーバー URL
 * Experience Cloud サーバーセキュア URL = トラッキングサーバーセキュア URL
 
-トラッキングサーバーの見つけ方が分からない場合は、[FAQ](../mcvid-faq-intro/ecid-faq.md) および [trackingServer 変数と trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)を参照してください。
+トラッキングサーバーの見つけ方が分からない場合は、[FAQ](../mcvid-faq-intro/mcvid-faq.md) および [trackingServer 変数と trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)を参照してください。
 
 ## 手順6:AppMeasurement. jsファイルの更新 {#section-5517e94a09bc44dfb492ebca14b43048}
 
