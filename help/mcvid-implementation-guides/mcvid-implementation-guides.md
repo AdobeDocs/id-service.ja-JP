@@ -7,7 +7,7 @@ solution: Experience Cloud
 title: 導入ガイド
 uuid: null
 translation-type: tm+mt
-source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
+source-git-commit: 4dc668afd37cd1d6f9104adb1b102f1dd4c5746e
 
 ---
 
@@ -34,6 +34,6 @@ Experience Cloud ID サービスの標準的な実装および非標準的な実
 * [Experience Cloud ID サービスの Analytics、Audience Manager および Target への実装](mcvid-setup-aam-analytics-target.md)
 * [Target のサーバー側実装を使用する A4T での Experience Cloud ID サービスの使用](ecid-a4t-target.md)
 * [Experience Cloud ID サービスとの直接統合](mcvid-direct-integration.md)
-* [直接統合の使用例](ecid-direct-integration-examples.md)
+* [直接統合の使用例](mcvid-direct-integration-examples.md)
 * [Experience Cloud IDサービスのテストと検証](mcvid-test-verify.md)
 * [オプトインサービスの概要](opt-in-service/mcvid-optin-overview.md)
