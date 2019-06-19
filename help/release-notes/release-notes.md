@@ -6,7 +6,7 @@ seo-title: 2019 年リリースノート
 title: 2019 年リリースノート
 uuid: a5a59410-7f85-48f9- a30a- fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -21,7 +21,7 @@ Experience Platform IDサービスの機能リリース、更新、または変�
 
 ## バージョン 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**オプトインサービス**。オプトインは、[Experience Cloud ID（ECID）](https://marketing.adobe.com/resources/help/en_US/mcvid/)の拡張であり、使用すると、Experience Cloud ライブラリで Web ページに訪問者に対する Cookie を作成可能にするかどうか（およびどのライブラリで作成可能にするか）を指定できます。[Launch](https://docs.adobelaunch.com/) を使用すると、Analytics、Target、Audience Manager などの選ばれたすべての Experience Cloud ソリューションを導入済みの同意管理システムにオプトインできるようになり、Experience Cloud ソリューションの訪問者オプトイン同意の収集を簡素化できます。
+**オプトインサービス**。オプトインは、Experience Cloud ID（ECID）の拡張機能で、Experience Cloudライブラリで訪問者のWebページにcookieを作成できるかどうかを制御できます。[Experience Platform Launch](https://docs.adobelaunch.com/)を使用すると、Analytics、Target、Audience Managerを有効にして、Experience Cloudソリューションの訪問者オプトインの承諾を単純化したり、選択したExperience Cloudソリューションを使用して同意管理システムにオプトインしたりできます。
 
 ## バージョン 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
