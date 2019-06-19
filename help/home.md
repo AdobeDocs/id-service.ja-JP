@@ -1,19 +1,19 @@
 ---
 description: 'Experience Platform IDサービスは、Experience Cloudのすべてのソリューションで訪問者を識別する永続的な永続的IDを提供します。 '
 keywords: ID サービス
-seo-description: Adobe Experience Platform IDサービスは、Experience Cloudのすべてのソリューションで訪問者を識別する永続的な永続的IDを提供します。このサービスを、Analytics、Audience Manager、Target などのサービスや、その他の Experience Cloud のソリューションまたは機能の ID 生成コードの代わりに使用できます。
+seo-description: Adobe Experience Platform IDサービス（IDサービス）は、Experience Cloudのすべてのソリューションで訪問者を識別する永続的な永続的IDを提供します。このサービスを、Analytics、Audience Manager、Target などのサービスや、その他の Experience Cloud のソリューションまたは機能の ID 生成コードの代わりに使用できます。
 seo-title: Experience Platform IDサービス
 title: Experience Platform IDサービス
 uuid: b68194b5- e549-4f6f- bfaf-7744926aaac
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
 
-# Experience Platform IDサービス {#experience-cloud-id-service}
+# Adobe Experience Platform IDサービス {#experience-cloud-id-service}
 
-Experience Platform IDサービス（IDサービス）は、Experience Cloudのすべてのソリューションで訪問者を識別する永続的な永続的IDを提供します。このサービスを、Analytics、Audience Manager、Target などのサービスや、その他の Experience Cloud のソリューションまたは機能の ID 生成コードの代わりに使用できます。
+Adobe Experience Platform IDサービス（IDサービス）は、Experience Cloudのすべてのソリューションで訪問者を識別する永続的な永続的IDを提供します。このサービスを、Analytics、Audience Manager、Target などのサービスや、その他の Experience Cloud のソリューションまたは機能の ID 生成コードの代わりに使用できます。
 
 <table id="table_5E612F746A704FE095B809A013EE977F" class="simpletable"> 
  <tbody> 
