@@ -6,7 +6,7 @@ seo-title: Experience Cloud ID サービスの Analytics への実装
 title: Experience Cloud ID サービスの Analytics への実装
 uuid: 7fbd6fa0-1713-4232-8680-500ED62709d5
 translation-type: tm+mt
-source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
+source-git-commit: 4dc668afd37cd1d6f9104adb1b102f1dd4c5746e
 
 ---
 
@@ -134,7 +134,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 
 
-トラッキングサーバーを確認する方法が不明な場合は、 [FAQ](../mcvid-faq-intro/ecid-faq.md) および [trackingServer変数およびtrackingServerSecure変数の適切な設定](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)を参照してください。
+トラッキングサーバーを確認する方法が不明な場合は、 [FAQ](../mcvid-faq-intro/mcvid-faq.md) および [trackingServer変数およびtrackingServerSecure変数の適切な設定](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)を参照してください。
 
 ## 手順5:AppMeasurement. jsまたはs_ code. jsファイルの更新 {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
