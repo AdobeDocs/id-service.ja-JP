@@ -5,7 +5,7 @@ seo-title: DTM を使用したオプトインの設定
 title: DTM を使用したオプトインの設定
 uuid: 7a886bc3- c9e5-4eac-85e8-828a83c847c5
 translation-type: tm+mt
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -20,6 +20,6 @@ DTMを使用してオプトインサービスを設定します。
 
 * ECID 4.0.0 以降にアップグレードします。[&quot;EIDダウンロード](https://github.com/Adobe-Marketing-Cloud/id-service/releases)」を参照してください。
 
-DTM の「一般」ページにある[設定フィールド](https://marketing.adobe.com/resources/help/en_US/mcvid/api.html)を入力します。
+DTM の「一般」ページにある[設定フィールド](/help/implementation-guides/opt-in-service/api.md)を入力します。
 
 ![](assets/DTM-example.png)
