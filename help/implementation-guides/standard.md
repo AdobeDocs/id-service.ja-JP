@@ -6,7 +6,7 @@ seo-title: Dynamic Tag Managementによる実装
 title: Dynamic Tag Managementによる実装
 uuid: c4f752c4-392e-4909- b178-911706857064
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 >[!NOTE]
 >
->現在 [、アドビによる起動](https://docs.adobelaunch.com/) は、複雑なtag managementタスクをシンプル化し、DTMの機能を超えるコード配置を自動化できるので、お勧めの実装ツールです。&quot;Launch with [Launch](../implementation-guides/ecid-implement-with-launch.md)」を参照してください。
+>現在 [、Adobe Experience Platform Launch](https://docs.adobelaunch.com/) は、複雑なタグ管理タスクをシンプル化し、DTMの機能を超えるコード配置を自動化するのに役立つ、推奨される実装ツールです。&quot;Launch with [Launch](../implementation-guides/ecid-implement-with-launch.md)」を参照してください。
 
 ## Dynamic Tag Management と ID サービス {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
