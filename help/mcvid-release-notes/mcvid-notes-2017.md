@@ -6,7 +6,7 @@ seo-title: 2017 年リリースノート
 title: 2017 年リリースノート
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
+source-git-commit: 4dc668afd37cd1d6f9104adb1b102f1dd4c5746e
 
 ---
 
@@ -74,7 +74,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **改訂されたドキュメント**
 
-更新および [FAQs](/help/mcvid-faq-intro/ecid-faq-intro.md) to include separate FAQs for different [!DNL Experience Cloud] solutions.
+更新および [FAQs](/help/mcvid-faq-intro/mcvid-faq-intro.md) to include separate FAQs for different [!DNL Experience Cloud] solutions.
 
 ## バージョン2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -134,7 +134,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <a href="../mcvid-faq-intro/ecid-faq.md" format="dita" scope="local"> FAQ </a> </p> </td> 
+   <td colname="col1"> <p> <a href="../mcvid-faq-intro/mcvid-faq.md" format="dita" scope="local"> FAQ </a> </p> </td> 
    <td colname="col2"> <p>トラッキングサーバーの情報を見つける方法について、<span class="keyword">Analytics</span> に関する節を更新しました。 </p> </td> 
   </tr> 
  </tbody> 
