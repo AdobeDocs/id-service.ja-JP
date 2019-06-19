@@ -6,7 +6,7 @@ seo-title: Dynamic Tag Managementによる実装
 title: Dynamic Tag Managementによる実装
 uuid: c4f752c4-392e-4909- b178-911706857064
 translation-type: tm+mt
-source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
+source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
 
 ---
 
@@ -94,7 +94,7 @@ mcvid-dtm-implement.xml
    >
    >このアクションにより **[!UICONTROL 、Experience Cloud組織ID]** ボックスに組織IDが入力されます。DTM アカウントが [!DNL Experience Cloud] にリンクされていない場合、この ID を指定する必要があります。アカウントをリンクするには、[Experience Cloud でのアカウントのリンク](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)を参照してください。組織 ID を見つける方法については、[要件](../mcvid-reference/mcvid-requirements.md#section-a02f537129a64ffbb690d5738d360c26)を参照してください。
 
-1. トラッキングサーバーの名前を **[!UICONTROL 「トラッキングサーバー]** 」ボックスに入力します。トラッキングサーバーを確認する方法が不明な場合は、 [FAQ](../mcvid-faq-intro/mcvid-faq.md) および [trackingServer変数およびtrackingServerSecure変数の適切な設定](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)を参照してください。
+1. トラッキングサーバーの名前を **[!UICONTROL 「トラッキングサーバー]** 」ボックスに入力します。トラッキングサーバーを確認する方法が不明な場合は、 [FAQ](../mcvid-faq-intro/ecid-faq.md) および [trackingServer変数およびtrackingServerSecure変数の適切な設定](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)を参照してください。
 1. 「ツール **[!UICONTROL を作成」]** および「変更 **[!UICONTROL を保存」をクリック]** します。
 
    保存したら、ID サービスは DTM のツールとして設定されます。ただし、まだ使用する準備は整っていません。DTM ツールは、DTM 公開／承認プロセスを経る必要があり、追加のパラメーターを設定することもできます。DTM 承認プロセスについて詳しくは、[ユーザーの基礎知識ジャンプスタート](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html)ビデオを参照してください。DTM に追加できるパラメーターについて詳しくは、 [DTM 用の Experience Cloud ID サービス設定](../mcvid-implementation-guides/mcvid-standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59).
