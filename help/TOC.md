@@ -3,16 +3,16 @@ cloud: experience-cloud
 product: ID サービス
 audience: エンドユーザー
 user-guide-title: IDサービスヘルプ
-user-guide-url: /content/help/en/id-service/using/home.html
+user-guide-url: /content/help/en/id-service/using/mcvid-home.html
 translation-type: tm+mt
-source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
+source-git-commit: 4dc668afd37cd1d6f9104adb1b102f1dd4c5746e
 
 ---
 
 
 # IDサービスヘルプ {#using}
 
-+ [Experience Cloud ID サービス](home.md)
++ [Experience Cloud ID サービス](mcvid-home.md)
 + 概要 {#mcvid-introduction}
    + [概要](mcvid-introduction/mcvid-overview.md)
    + [IDサービスについて](mcvid-introduction/mcvid-about-id-service.md)
@@ -30,7 +30,7 @@ source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
    + [Experience Cloud ID サービスの Analytics、Audience Manager および Target への実装](mcvid-implementation-guides/mcvid-setup-aam-analytics-target.md)
    + [Target のサーバー側実装を使用する A4T での Experience Cloud ID サービスの使用](mcvid-implementation-guides/ecid-a4t-target.md)
    + [Experience Cloud ID サービスとの直接統合](mcvid-implementation-guides/mcvid-direct-integration.md)
-   + [直接統合の使用例](mcvid-implementation-guides/ecid-direct-integration-examples.md)
+   + [直接統合の使用例](mcvid-implementation-guides/mcvid-direct-integration-examples.md)
    + [Experience Cloud IDサービスのテストと検証](mcvid-implementation-guides/mcvid-test-verify.md)
    + オプトインドキュメント {#opt-in-service}
       + [オプトインサービスの概要](mcvid-implementation-guides/opt-in-service/mcvid-optin-overview.md)
@@ -99,10 +99,10 @@ source-git-commit: cce8f5559baa0598fedaccf2fece6ec90cb641b7
    + [ビデオハートビートと Experience Cloud ID サービス](mcvid-reference/mcvid-heartbeat.md)
    + [Data Workbench と Experience Cloud ID サービス](mcvid-reference/mcvid-dwb.md)
 + よくある質問（FAQ） {#faqs}
-   + [FAQの概要](mcvid-faq-intro/ecid-faq-intro.md)
-   + [ID サービス FAQ](mcvid-faq-intro/ecid-faq.md)
-   + [Analytics と ID サービスに関する FAQ](mcvid-faq-intro/ecid-analytics-faq.md)
-   + [他の Experience Cloud ソリューションに関する FAQ](mcvid-faq-intro/ecid-other-faq.md)
+   + [FAQの概要](mcvid-faq-intro/mcvid-faq-intro.md)
+   + [ID サービス FAQ](mcvid-faq-intro/mcvid-faq.md)
+   + [Analytics と ID サービスに関する FAQ](mcvid-faq-intro/mcvid-analytics-faq.md)
+   + [他の Experience Cloud ソリューションに関する FAQ](mcvid-faq-intro/mcvid-other-faq.md)
 + IDサービスのリリースノート {#release-notes}
    + [2019 年リリースノート](mcvid-release-notes/mcvid-release-notes.md)
    + [2018 年リリースノート](mcvid-release-notes/mcvid-notes-2018.md)
