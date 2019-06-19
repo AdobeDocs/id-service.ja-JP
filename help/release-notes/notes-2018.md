@@ -6,7 +6,7 @@ seo-title: 2018 年リリースノート
 title: 2018 年リリースノート
 uuid: 771b5b11- a8e3-464c- b65e- b15135584ace
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -27,7 +27,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
  <tbody> 
   <tr> 
    <td colname="col1"> <p>AMCV Cookie のセキュリティを強化しました </p> </td> 
-   <td colname="col2"> <p>内部セキュリティスキャン中に、DTM ライブラリを使用すると、セッション管理用の Cookie で適切な属性を指定できないことが判明しました。その結果、Cookie の情報が誤って共有される可能性があります。この問題を解決するために、お客様が AMCV Cookie を安全であると設定できる設定を追加しました。<a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-securecookie.html" format="https" scope="external">secureCookie</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>内部セキュリティスキャン中に、DTM ライブラリを使用すると、セッション管理用の Cookie で適切な属性を指定できないことが判明しました。その結果、Cookie の情報が誤って共有される可能性があります。この問題を解決するために、お客様が AMCV Cookie を安全であると設定できる設定を追加しました。<a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a> を参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
