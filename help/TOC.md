@@ -5,7 +5,7 @@ audience: エンドユーザー
 user-guide-title: Experience Platform IDサービスヘルプ
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 1af38efa5e85c09548a6dee6c9c550900f90a8ed
+source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
 
@@ -81,7 +81,7 @@ source-git-commit: 1af38efa5e85c09548a6dee6c9c550900f90a8ed
    + [リファレンス概要](reference/reference.md)
    + Analytics リファレンス {#analytics-reference}
       + [Analyticsリファレンス概要](reference/analytics-reference/analytics-reference.md)
-      + [AnalyticsとIDの設定](reference/analytics-reference/analytics-ids.md)
+      + [Analytics および Experience Cloud ID の設定](reference/analytics-reference/analytics-ids.md)
       + [Analytics ID の操作の順序](reference/analytics-reference/analytics-order-of-operations.md)
       + [IDサービス移行の判断ポイント](reference/analytics-reference/migration-decisions.md)
       + [IDサービスの移行シナリオ](reference/analytics-reference/migration-scenarios.md)
