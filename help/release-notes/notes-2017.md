@@ -6,7 +6,7 @@ seo-title: 2017 年リリースノート
 title: 2017 年リリースノート
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -42,7 +42,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。オプションの <span class="codeph">visitor.FIELDS</span> 列挙を使用して、返される ID を制御することもできます。<a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。オプションの <span class="codeph">visitor.FIELDS</span> 列挙を使用して、返される ID を制御することもできます。詳しくは、 <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -177,7 +177,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> ID サービス API のプロパティ、<span class="codeph">idSyncContainerID</span></p> </td> 
-   <td colname="col2"> <p>このプロパティは、ID 同期用に <span class="keyword">Audience Manager</span> で使用されるコンテナ ID を設定します。<a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-idsyncontainerid.html" format="https" scope="external">idSyncContainerID</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>このプロパティは、ID 同期用に <span class="keyword">Audience Manager</span> で使用されるコンテナ ID を設定します。<a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external">idSyncContainerID</a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ID サービス API メソッド <span class="codeph"> appendSupplementalDataIDTo( <span class="varname"> URL </span>, <span class="varname"> SDID</span>)</span></p> </td> 
