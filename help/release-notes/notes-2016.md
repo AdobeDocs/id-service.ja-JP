@@ -6,7 +6,7 @@ seo-title: 2016 年リリースノート
 title: 2016 年リリースノート
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 ---
 
@@ -24,9 +24,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 >[!IMPORTANT]
 >
 >* バージョン1.10には1.8.0が必要 [!DNL AppMeasurement] です。
->* Experience Platform IDサービスライブラリ2.0.0以上を使用すると、Adobe Media ManagerのID同期がデフォルトで開始されます。[ID 同期と一致率について](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-match-rates.html)を参照してください。
->
-
+>* Experience Platform IDサービスライブラリ2.0.0以上を使用すると、Adobe Media ManagerのID同期がデフォルトで開始されます。[ID 同期と一致率について](/help/introduction/match-rates.md)を参照してください。
 
 
 **修正点および改善点**
