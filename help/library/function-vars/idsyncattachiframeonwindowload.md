@@ -1,19 +1,19 @@
 ---
-description: エクスペリエンスプラットフォームIDサービスがID同期iFrameを読み込む方法を制御するブール型のフラグ。
+description: Experience Cloud IDサービスがID同期iFrameを読み込む方法を制御するブール型のフラグ。
 keywords: ID サービス
-seo-description: エクスペリエンスプラットフォームIDサービスがID同期iFrameを読み込む方法を制御するブール型のフラグ。
+seo-description: Experience Cloud IDサービスがID同期iFrameを読み込む方法を制御するブール型のフラグ。
 seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
 uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
 
-エクスペリエンスプラットフォームIDサービスがID同期iFrameを読み込む方法を制御するブール型のフラグ。
+Experience Cloud IDサービスがID同期iFrameを読み込む方法を制御するブール型のフラグ。
 
 **構文:**` `idSyncAttachIframeOnWindowLoad= true| false「（デフォルトは `false`.）
 
