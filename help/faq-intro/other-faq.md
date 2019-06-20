@@ -6,16 +6,16 @@ seo-title: 他のExperience Cloudソリューションに関するFAQ
 title: 他のExperience Cloudソリューションに関するFAQ
 uuid: 7d848663-6cbb-4d80- ab06-7b6d2dc20e2b
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# 他のExperience Cloudソリューションに関するFAQ{#faqs-for-other-experience-cloud-solutions}
+# FAQs for other Experience Cloud solutions{#faqs-for-other-experience-cloud-solutions}
 
 他の Experience Cloud ソリューションでの ID　サービス利用の特徴、機能、問題に関するよくある質問です。
 
-## Dynamic Tag Management（DTM） {#section-7ac4b9c1f1fd45a5a03eac3fb5968af7}
+## Dynamic Tag Management (DTM) {#section-7ac4b9c1f1fd45a5a03eac3fb5968af7}
 
 **Dynamic Tag Management を使用して訪問者 ID サービスを導入できますか。**
 
@@ -25,7 +25,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 ## Analytics と Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**Experience Platform[!DNL Adobe Analytics]IDサービスを実装した[!DNL Audience Manager]後、ユーザーの訪問履歴がエクスポートされますか。**
+**Experience Cloud ID サービスを実装すると、ユーザーの訪問履歴が[!DNL Adobe Analytics]から[!DNL Audience Manager]にエクスポートされますか。**
 
 この場合、次の 2 つのことが考えられます。
 
