@@ -1,18 +1,18 @@
 ---
-description: Adobe Experience Platform Launchは、Experience Platform IDサービスを他のExperience Cloudソリューションと設定、デプロイおよび統合するために使用する主要ツールです。
-seo-description: Adobe Experience Platform Launchは、Experience Platform IDサービスを他のExperience Cloudソリューションと設定、デプロイおよび統合するために使用する主要ツールです。
+description: Adobe Experience Platform Launchは、Experience Cloud IDサービスを設定、デプロイ、および他のExperience Cloudソリューションと統合するために使用する主要ツールです。
+seo-description: Adobe Experience Platform Launchは、Experience Cloud IDサービスを設定、デプロイ、および他のExperience Cloudソリューションと統合するために使用する主要ツールです。
 seo-title: Launch を使用した実装
 title: Launch を使用した実装
 uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Launch を使用した実装{#implement-with-launch}
 
-Adobe Experience Platform Launchは、Experience Platform IDサービスを他のExperience Cloudソリューションと設定、デプロイおよび統合するために使用する主要ツールです。
+Adobe Experience Platform Launchは、Experience Cloud IDサービスを設定、デプロイ、および他のExperience Cloudソリューションと統合するために使用する主要ツールです。
 
 ## Launch について {#section-611711602854464ea351a4af80a8dafe}
 
