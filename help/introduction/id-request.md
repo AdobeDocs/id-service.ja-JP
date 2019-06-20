@@ -2,22 +2,22 @@
 description: ID のリクエストと応答のプロセスについて、概要を説明します。個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
 keywords: ID サービス
 seo-description: ID のリクエストと応答のプロセスについて、概要を説明します。個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
-seo-title: Experience Platform IDサービスのIDのリクエストと設定
-title: Experience Platform IDサービスのIDのリクエストと設定
+seo-title: Experience Cloud IDサービスのリクエストとIDの設定方法
+title: Experience Cloud IDサービスのリクエストとIDの設定方法
 uuid: ff7f5b7e- e959-4391- b75c- b7a36286e0ea
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Experience Platform IDサービスのIDのリクエストと設定{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# How the Experience Cloud ID Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 ID のリクエストと応答のプロセスについて、概要を説明します。個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
 
 >[!NOTE]
 >
->Experience Platform IDサービスが訪問者IDをどのように作成するかに精通していない場合は、Experience Cloudを確認 [](../introduction/cookies.md)してください。
+>If you&#39;re not familiar with how the Experience Cloud ID Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
 
 **ヒント：**[クロスドメイントラッキングに関する ID サービスのビデオ](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html)も参照してください。
 
@@ -44,7 +44,7 @@ ID のリクエストと応答のプロセスについて、概要を説明し�
 
 以下の例で示すとおり、訪問者が「食品会社」に属する別のサイトに移動すると、ID サービスは demdex ID と組織 ID を使用して正しい MID を作成して返すことができます。
 
-## クロスサイトリクエストと応答 {#section-15ea880453af467abd2874b8b4ed6ee9}
+## Cross-site request and response {#section-15ea880453af467abd2874b8b4ed6ee9}
 
 この例では、「食品会社」の訪問者は、ピザサイトからタコスサイトに移動します。「食品会社」のこのタコス Web サイトには ID サービスコードが含まれています。この訪問者が過去にタコス Web サイトにアクセスしたことはありません。
 
@@ -56,7 +56,7 @@ DCS が組織 ID と demdex ID を受け取った後、サイト訪問者の正�
 
 ![](assets/response2.png)
 
-## 他のサイトからのIDリクエスト {#section-ba9a929e50d64b0aba080630fd83b6f1}
+## ID requests from other sites {#section-ba9a929e50d64b0aba080630fd83b6f1}
 
 この例では、訪問者は「食品会社」のサイトを離れ、「スポーツ会社」が所有するサッカーサイトに移動します。訪問者がサッカーサイトにアクセスしたときの ID チェックとリクエストの処理は、前の例で説明したとおりに実行されます。ただし、「スポーツ会社」には独自の組織 ID があるので、ID サービスが返す MID は異なります。新しい MID は「スポーツ会社」が管理するドメインに固有のものであり、この MID によってこの会社が [!DNL Experience Cloud] の複数のソリューションで訪問者データを追跡して共有することができます。demdex ID は、サードパーティ Cookie に保存されており、異なるドメインで維持されるので、この訪問者に対して同じものになります。
 
