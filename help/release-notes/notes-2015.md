@@ -6,7 +6,7 @@ seo-title: 2015 年リリースノート
 title: 2015 年リリースノート
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -15,18 +15,18 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 2015 年版のリリースノートと更新情報です。
 
-## バージョン1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
+## Version 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
 2015 年 11 月
 
-児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく13歳未満の子供からの個人情報をオンラインで収集できません。COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。エクスペリエンスプラットフォームIDサービスで [のCOPPAのサポート](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)を参照してください。バージョン 1.5.3 以降でサポートされています。
+児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく13歳未満の子供からの個人情報をオンラインで収集できません。COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。[Experience Cloud ID サービスでの COPPA のサポート](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)を参照してください。バージョン 1.5.3 以降でサポートされています。
 
 ## バージョン 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 2015 年 9 月
 
 * Safari ブラウザーでサードパーティの Cookie をブロックしている場合、同期サービスが機能しなかったバグを修正しました。（AAM-20764）
-* IDサービスの呼び出しに `d_visid_ver=` 、パラメーターにバージョンIDが含まれるようになりました。返される ID は、内部チームが問題をトラブルシューティングしたりサポートするのに役立ちます。（AAM-20824）
+* Calls to the ID service now include the version ID in the `d_visid_ver=` parameter. 返される ID は、内部チームが問題をトラブルシューティングしたりサポートするのに役立ちます。（AAM-20824）
 
 ## バージョン 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
@@ -45,9 +45,9 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 このリリースのドキュメントで見直された内容は以下のとおりです。
 
 * [APIメソッドとコードライブラリ](../library/library.md#concept-ff27497375644a898d47984aefb21c97):コンテンツとテキストを再構成しました。ほとんどの場合、メソッドごとにページを設けました。
-* [Experience Platform IDサービスの要件](../reference/requirements.md):コンテンツを改訂し、テキストを再構成しました。
+* [Experience Cloud ID サービスの要件](../reference/requirements.md)：内容を改訂し、テキストを再構成しました。
 
-## バージョン1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
+## Version 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 2015 年 7 月
 
@@ -79,4 +79,4 @@ AAM Blob およびロケーションヒントの要求で、タイムアウト�
 
 2015 年 1 月
 
-JSONP `<head>/<body>` リクエスト `<script>` タグコンテナ用のタグ検索を修正しました。また、大文字と小文字の区別の設定が異なる様々なDOM実装（HTMLとXHTML）に対応する `<script>` ためのタグを作成しました。（AN-9355）
+Reworked `<head>/<body>` tag finding for JSONP request `<script>` tag container, as well as the creation of the `<script>` tag to account for different DOM implementations (HTML vs XHTML) with possibly different case sensitivity settings. （AN-9355）
