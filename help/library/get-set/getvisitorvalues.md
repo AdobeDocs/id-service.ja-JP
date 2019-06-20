@@ -6,7 +6,7 @@ seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3- cf7e-40e2- a219-07fec28ad49c
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 ## 構文{#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-この関数は、次の構文を使用します（斜体のプレースホルダーを表します）。 ` var *`valueSID`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`typeId`*, visitor.FIELDS. *`タイプ`*]);`
+This function uses the following syntax (italics represents a placeholder for a variable): ` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
 
 関数パラメーターの詳細は次のとおりです。
 
@@ -108,7 +108,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>訪問者の Experience Cloud ID です。 </p> <p>詳しくは、<a href="../../introduction/cookies.md" format="dita" scope="local"> cookieとエクスペリエンスプラットフォームIDサービス </a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>訪問者の Experience Cloud ID です。 </p> <p>詳しくは、 <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie と Experience Cloud ID サービス </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
