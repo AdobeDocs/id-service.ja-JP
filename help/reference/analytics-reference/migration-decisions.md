@@ -1,19 +1,19 @@
 ---
-description: Experience Platform IDサービスを導入する前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法またはJavaScriptファイルを使用してデータを収集する場合の潜在的な問題について理解する必要があります。
+description: Experience Cloud IDサービスを導入する前に、様々な方法やJavaScriptファイルを使用してデータを収集する場合に、このサービスが複数ドメインでの訪問者トラッキングにどのように影響するか、および潜在的な問題について理解する必要があります。
 keywords: ID サービス
-seo-description: Experience Platform IDサービスを導入する前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法またはJavaScriptファイルを使用してデータを収集する場合の潜在的な問題について理解する必要があります。
-seo-title: エクスペリエンスプラットフォームIDサービス移行の判断ポイント
-title: エクスペリエンスプラットフォームIDサービス移行の判断ポイント
+seo-description: Experience Cloud IDサービスを導入する前に、様々な方法やJavaScriptファイルを使用してデータを収集する場合に、このサービスが複数ドメインでの訪問者トラッキングにどのように影響するか、および潜在的な問題について理解する必要があります。
+seo-title: Experience Cloud ID サービス移行の判断ポイント
+title: Experience Cloud ID サービス移行の判断ポイント
 uuid: ee56b5de- fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# エクスペリエンスプラットフォームIDサービス移行の判断ポイント
+# Experience Cloud ID サービス移行の判断ポイント
 
-Experience Platform IDサービスを導入する前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法またはJavaScriptファイルを使用してデータを収集する場合の潜在的な問題について理解する必要があります。
+Experience Cloud IDサービスを導入する前に、様々な方法やJavaScriptファイルを使用してデータを収集する場合に、このサービスが複数ドメインでの訪問者トラッキングにどのように影響するか、および潜在的な問題について理解する必要があります。
 
 この節に示す質問に答えながら、必要な移行手順について判断してください。
 
