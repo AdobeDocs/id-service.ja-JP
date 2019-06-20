@@ -1,21 +1,21 @@
 ---
-description: Adobe Media ManagerおよびIDサービスを含む、ID同期プロセスとエクスペリエンスプラットフォームIDサービスの一致率の概要です。
+description: Adobe Media ManagerやIDサービスなど、ID同期プロセスとExperience Cloud IDサービスの一致率の概要を示します。
 keywords: ID サービス
-seo-description: Adobe Media ManagerおよびIDサービスを含む、ID同期プロセスとエクスペリエンスプラットフォームIDサービスの一致率の概要です。
+seo-description: Adobe Media ManagerやIDサービスなど、ID同期プロセスとExperience Cloud IDサービスの一致率の概要を示します。
 seo-title: ID同期と一致率について
 title: ID同期と一致率について
 uuid: 31bd655f-2b9e-4f8d-9a1f- e81a6110ea8
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# ID同期と一致率について{#understanding-id-synchronization-and-match-rates}
+# Understanding ID synchronization and match rates{#understanding-id-synchronization-and-match-rates}
 
-Adobe Media ManagerおよびIDサービスを含む、ID同期プロセスとエクスペリエンスプラットフォームIDサービスの一致率の概要です。
+Adobe Media ManagerやIDサービスなど、ID同期プロセスとExperience Cloud IDサービスの一致率の概要を示します。
 
-## ID同期と一致率 {#section-f652aae7234945e89d26dd833c5215fb}
+## ID synchronization and match rates {#section-f652aae7234945e89d26dd833c5215fb}
 
 ID 同期は、ID サービスによって割り当てられた ID を顧客によってサイト訪問者に割り当てられた ID に一致させます。例えば、ID サービスが訪問者 ID 1234 を割り当てたとします。別のプラットフォームでは、この訪問者を ID 4321 として把握しています。ID サービスは、同期プロセスの間、これらの ID を一緒にマッピングします。その結果、サイト訪問者について顧客が把握する新しいデータポイントが追加されます。そして、ID サービスが ID を一致させることができない場合、新しい ID が作成され、その ID が将来の同期に使用されます。
 
@@ -25,25 +25,25 @@ ID 同期は、ID サービスによって割り当てられた ID を顧客に�
 
 **高い一致率の確保**
 
-高い一致率を生成するには、IDサービスを適切に設定することが重要です（ [標準導入ガイド](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)を参照）。適切な実装により、使用可能なデータパラメーターを持つ ID を機能させ、同期させるために必要な Cookie を ID サービスが設定できるので、高い一致率を確保できます。ただし、低速なインターネット接続、モバイルデバイスやワイヤレスネットワークからのデータ接続などの要因が、ID サービスによる ID の収集、同期および一致の程度に影響する可能性があります。これらのクライアント側変数は、ID サービスや [!DNL Adobe] では制御できません。
+To generate high match rates, it is important to set up the ID service properly (see the [standard implementation guide](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)). 適切な実装により、使用可能なデータパラメーターを持つ ID を機能させ、同期させるために必要な Cookie を ID サービスが設定できるので、高い一致率を確保できます。ただし、低速なインターネット接続、モバイルデバイスやワイヤレスネットワークからのデータ接続などの要因が、ID サービスによる ID の収集、同期および一致の程度に影響する可能性があります。これらのクライアント側変数は、ID サービスや [!DNL Adobe] では制御できません。
 
-## ID同期プロセスの説明 {#section-a541a85cbbc74f5682824b1a2ee2a657}
+## ID synchronization process described {#section-a541a85cbbc74f5682824b1a2ee2a657}
 
 ID サービスは、リアルタイムに ID を同期します。このプロセスは、サーバーからサーバーへのデータ転送を使用する代わりに、ブラウザーで動作します。以下の表で、ID 同期プロセスの手順を説明します。
 
 **手順1:ロードページ**
 
-訪問者がサイトに来訪してページをロードすると、 `Visitor.getInstance` そのIDサービスに [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) またはJSON- P呼び出しが行われます。ID サービスは、訪問者の [!DNL Experience Cloud] ID（MID）を含む Cookie を使用して応答します。MID は、各サイト訪問者に割り当てられた一意の ID です。また、[cookieとエクスペリエンスプラットフォームIDサービス](../introduction/cookies.md)を参照してください。
+When a visitor comes to your site and loads a page, the `Visitor.getInstance` function makes a [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) or JSON-P call to the ID service. ID サービスは、訪問者の [!DNL Experience Cloud] ID（MID）を含む Cookie を使用して応答します。MID は、各サイト訪問者に割り当てられた一意の ID です。また、 [Cookie と Experience Cloud ID サービス](../introduction/cookies.md).
 
 **手順 2：iFrame の読み込み**
 
-ページ本文が読み込まれる間、ID サービスは、 *`Destination Publishing iFrame`*. 親ページとは別にドメインに [!DNL Destination Publishing iFrame] 読み込まれます。この設計によって iFrame は以下の動作をするので、ページパフォーマンスを確保し、セキュリティを強化できます。
+ページ本文が読み込まれる間、ID サービスは、 *`Destination Publishing iFrame`*. The [!DNL Destination Publishing iFrame] loads in a domain separate from the parent page. この設計によって iFrame は以下の動作をするので、ページパフォーマンスを確保し、セキュリティを強化できます。
 
-* 親ページとは非同期で読み込みます。つまり、親ページは、その親ページから独立してロード [!DNL Destination Publishing iFrame]できます。iFrame の読み込みと iFrame 内からの ID 同期ピクセルの読み込みは、親ページやユーザーエクスペリエンスには影響しません。
+* 親ページとは非同期で読み込みます。This means the parent page can load independently from the [!DNL Destination Publishing iFrame]. iFrame の読み込みと iFrame 内からの ID 同期ピクセルの読み込みは、親ページやユーザーエクスペリエンスには影響しません。
 * 可能な限り高速に読み込みます。これが速すぎる場合、ウィンドウ読み込みイベントの後で iFrame を読み込むことができます（非推奨）。詳しくは、[idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) を参照してください。
 * iFrame のコードが親ページのアクセス権を取得したり、親ページに影響を与えたりすることを防ぎます。
 
-また、[エクスペリエンスプラットフォームIDサービスのリクエストと設定方法](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+また、 [Experience Cloud ID サービスによる ID のリクエスト方法と設定方法...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
 
 **手順3：ID 同期の実行**
 
@@ -65,20 +65,20 @@ http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<
 
 同期した ID は、[エッジおよびコアデータサーバー](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html)に格納されます。
 
-## 同期サービスはID同期を管理します {#section-cd5784d7ad404a24aa28ad4816a0119a}
+## Sync services manages ID synchronization {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
-この用語 *`Sync Services`* は、ID同期を担当する内部 [!DNL Experience Cloud] テクノロジーを指します。このサービスは、デフォルトで有効になっています。無効にするには、[オプションの変数](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414)を ID サービスの `Visitor.getInstance` 関数に追加します。同期サービスは、次のような異なる [!DNL Experience Cloud] IDに一致します。
+The term *`Sync Services`* refers to internal [!DNL Experience Cloud] technologies responsible for ID synchronization. このサービスは、デフォルトで有効になっています。無効にするには、[オプションの変数](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414)を ID サービスの `Visitor.getInstance` 関数に追加します。Sync Services matches different [!DNL Experience Cloud] IDs such as:
 
-* サードパーティ [!DNL Experience Cloud] cookie IDに対するファーストパーティ [!DNL Experience Cloud] ID。
+* Third-party [!DNL Experience Cloud] cookie IDs to first-party [!DNL Experience Cloud] IDs.
 
-* ファーストパーティ [!DNL Experience Cloud] cookie ID（ [!DNL Adobe Media Optimizer] AMO） ID。
+* First-party [!DNL Experience Cloud] cookie IDs to [!DNL Adobe Media Optimizer] (AMO) IDs.
 
 * サードパーティ [!DNL Experience Cloud] Cookie ID とサードパーティデータプロバイダーおよびターゲットプラットフォーム ID。これには、データプロバイダー、デマンドサイドプラットフォームおよびサプライサイドプラットフォーム、アドネットワーク、アドエクスチェンジなどのサービスおよびプラットフォームが含まれます。
-* ファーストパーティ [!DNL Experience Cloud] cookie ID（クロスデバイスパートナーID）。
+* First-party [!DNL Experience Cloud] cookie IDs to cross-device partner IDs.
 
-## Adobe Media OptimizerとのID同期 {#section-642c885ea65d45ffb761f78838735016}
+## ID synchronization with Adobe Media Optimizer {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] は、iFrameベースのID同期プロセスの例外です。信頼されたドメインなので [!DNL Media Optimizer] 、ID同期は、内部ではなく親ページから実行さ [!DNL Destination Publishing iFrame]れます。同期中、IDサービスは [!DNL Media Optimizer] 、 `cm.eversttech.net`アドビにより獲得の前に使用される従来 [!DNL Media Optimizer] のドメイン名である、at.データを送信 [!DNL Media Optimizer] して一致率を改善し、バージョン2.0（以上）を使用するIDサービスのお客様に自動的に対応。[Media Manager の cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html) も参照してください。
+[!DNL Adobe Media Optimizer] は、iFrameベースのID同期プロセスの例外です。Because [!DNL Media Optimizer] is a trusted domain, ID syncs take place from the parent page rather than in the [!DNL Destination Publishing iFrame]. During synchronization, the ID service calls [!DNL Media Optimizer] at `cm.eversttech.net`, which is a legacy domain name used by [!DNL Media Optimizer] prior to its acquisition by Adobe. Sending data to [!DNL Media Optimizer] helps improve match rates and is automatic for ID service customers using version 2.0 (or higher). [Media Manager の cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html) も参照してください。
 
 >[!MORE_ LIKE_ THIS]
 >
