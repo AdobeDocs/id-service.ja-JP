@@ -1,19 +1,19 @@
 ---
-description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Platform IDサービスは、これらのクライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
+description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Cloud IDサービスは、これらのクライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
 keywords: ID サービス
-seo-description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Platform IDサービスは、これらのクライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
-seo-title: Experience Platform IDサービスでのCORSのサポート
-title: Experience Platform IDサービスでのCORSのサポート
+seo-description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Cloud IDサービスは、これらのクライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
+seo-title: Experience Cloud ID サービスでの CORS のサポート
+title: Experience Cloud ID サービスでの CORS のサポート
 uuid: e656b573-72a8-4312- a7d5-5cc3818f0a9e
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Experience Platform IDサービスでのCORSのサポート {#cors-support-in-the-experience-cloud-id-service}
+# Experience Cloud ID サービスでの CORS のサポート {#cors-support-in-the-experience-cloud-id-service}
 
-ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Platform IDサービスは、これらのクライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
+ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Cloud IDサービスは、これらのクライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
 
 ## 同一オリジンポリシーと ID サービスリクエストの問題 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
