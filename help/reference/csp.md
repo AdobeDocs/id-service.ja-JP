@@ -2,16 +2,16 @@
 description: コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
 keywords: ID サービス
 seo-description: コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
-seo-title: コンテンツセキュリティポリシーとExperience Platform IDサービス
-title: コンテンツセキュリティポリシーとExperience Platform IDサービス
+seo-title: コンテンツセキュリティポリシーおよび Experience Cloud ID サービス
+title: コンテンツセキュリティポリシーおよび Experience Cloud ID サービス
 uuid: 7399edf3-01c1-4730-834e- e2dd2c5791ff
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# コンテンツセキュリティポリシーとExperience Platform IDサービス {#content-security-policies-and-the-experience-cloud-id-service}
+# コンテンツセキュリティポリシーおよび Experience Cloud ID サービス {#content-security-policies-and-the-experience-cloud-id-service}
 
 コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
 
@@ -53,7 +53,7 @@ CSP の使用は一般的であり、よく理解されています。このド�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>訪問者 ID サービス</b> </p> </td> 
-   <td colname="col2"> <p>CSP に <span class="codeph">*.demdex.net</span> を追加します。 </p> <p><span class="codeph"> demdex. net</span> ドメインの呼び出しは <a href="../introduction/cookies.md" format="dita" scope="local"> 、cookieとExperience Platform IDサービス</a> およびID同期の生成に使用されます。<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> 
+   <td colname="col2"> <p>CSP に <span class="codeph">*.demdex.net</span> を追加します。 </p> <p><span class="codeph"> demdex. net</span> ドメインの呼び出しは <a href="../introduction/cookies.md" format="dita" scope="local"> 、cookieとExperience Cloud IDサービス</a> およびID同期の生成に使用されます。<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
