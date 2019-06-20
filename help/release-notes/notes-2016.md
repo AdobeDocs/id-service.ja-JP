@@ -1,47 +1,47 @@
 ---
-description: 2016年のExperience Platform IDサービスの機能リリース、更新、変更点です。
+description: 2016年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
 keywords: ID サービス
-seo-description: 2016年のExperience Platform IDサービスの機能リリース、更新、変更点です。
+seo-description: 2016年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
 seo-title: 2016 年リリースノート
 title: 2016 年リリースノート
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # 2016 年リリースノート {#release-notes}
 
-2016年のExperience Platform IDサービスの機能リリース、更新、変更点です。
+2016年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
 
 これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)にも記載されています。過去の発表内容については、[以前のリリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)を参照してください。[!DNL Experience Cloud]
 
-## バージョン1.10 {#section-7d719b3213344a46858835042e0214ed}
+## Version 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
 2016 年 11 月
 
 >[!IMPORTANT]
 >
->* バージョン1.10には1.8.0が必要 [!DNL AppMeasurement] です。
->* Experience Platform IDサービスライブラリ2.0.0以上を使用すると、Adobe Media ManagerのID同期がデフォルトで開始されます。[ID 同期と一致率について](/help/introduction/match-rates.md)を参照してください。
+>* Version 1.10 requires [!DNL AppMeasurement] 1.8.0.
+>* Experience Cloud IDサービスライブラリ2.0.0以上を使用すると、Adobe Media ManagerのID同期がデフォルトで開始されます。[ID 同期と一致率について](/help/introduction/match-rates.md)を参照してください。
 
 
 **修正点および改善点**
 
 * サーバー側環境での ID サービスの実装方法に関する説明を追加しました。
-* クロスドメイン遷移時に Experience Cloud と Analytics の ID を上書きできるブール関数である `Visitor.overwriteCrossDomainMCIDAndAID` が追加されました。詳しくは、訪問者ID [の上書きを](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)参照してください。
+* クロスドメイン遷移時に Experience Cloud と Analytics の ID を上書きできるブール関数である `Visitor.overwriteCrossDomainMCIDAndAID` が追加されました。See [Overwrite Visitor ID](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde).
 
 * `TS = UTC` timestamp が `visitor.appendVisitorIDsTo` 関数のプロパティとして追加されました。ID サービスではタイムスタンプを使用して、5 分間隔でリダイレクト URL に ID を使用するかどうかを決定します。詳しくは、 [訪問者 ID 追加関数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
 
-* 地域IDを返す新しい関数が追加 `Visitor.getLocationHint,` されました。地域ID [の取得（ロケーションヒント）を参照](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)してください。
+* Added `Visitor.getLocationHint,` a new function that returns a region ID. See [Get Region IDs (Location Hint)](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c).
 
-* `idSyncByURL`Destination Publishing iFrame`idSyncByDataSource` で ID 同期を手動で実装するための 2 つの関数として、 と  が追加されました。URLまたはデータソースによる [ID同期を参照](../library/get-set/idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48)してください。
+* `idSyncByURL`Destination Publishing iFrame`idSyncByDataSource` で ID 同期を手動で実装するための 2 つの関数として、 と  が追加されました。See [ID Synchronization by URL or Data Source](../library/get-set/idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48).
 
 * `disableThirdPartyCalls:true` の場合に AppMeasurement のトラッキングコールがブロックされる問題を修正しました。
 * 異なるドメイン間で Experience Cloud ID（MID）が渡されなかった、ID サービスの問題を修正しました。
 
-## バージョン1.9.0 {#section-04e1b4d4b10d40468f2116b8119998e7}
+## Version 1.9.0 {#section-04e1b4d4b10d40468f2116b8119998e7}
 
 2016 年 10 月
 
@@ -55,7 +55,7 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 **新規:**[AMCV cookieからの地域およびユーザーIDの取得](../reference/regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
 
-## バージョン1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
+## Version 1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 
 2016 年 9 月
 
@@ -77,13 +77,13 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 **新規および改訂されたドキュメント**
 
-改訂済み：[エクスペリエンスプラットフォームIDサービスの要件](../reference/requirements.md)
+改訂済み： [Experience Cloud ID サービスの要件](../reference/requirements.md)
 
 **既知の問題**
 
 [!DNL Audience Manager] DIL コードと visitorAPI.js コードを同じページに使用しているお客様は、DIL 変数 `secureDataCollection= false` を設定する必要があります。[secureDataCollection](https://marketing.adobe.com/resources/help/en_US/aam/?f=dil-secure-data-collection.html) を参照してください。
 
-## バージョン1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
+## Version 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
 2016 年 7 月
 
@@ -101,9 +101,9 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
  <tbody> 
   <tr> 
    <td colname="col1"> <p>クロスオリジンリソース共有（CORS） </p> </td> 
-   <td colname="col2"> <p>CORS を利用すると、ブラウザーから、現在のドメイン以外のドメインのリソースをリクエストできます。Experience Platform IDサービスは、クライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。 </p> <p>以下を参照してください。 </p> 
+   <td colname="col2"> <p>CORS を利用すると、ブラウザーから、現在のドメイン以外のドメインのリソースをリクエストできます。Experience Cloud IDサービスは、クライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。 </p> <p>以下を参照してください。 </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Experience Platform IDサービスでのCORSのサポート </a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Experience Cloud ID サービスでの CORS のサポート </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -123,15 +123,15 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 **新規**
 
-* [Experience Platform IDサービスのAnalyticsへの実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [Experience Platform IDサービスのAnalytics、Audience ManagerおよびTargetへの実装](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [Experience Cloud ID サービスの Analytics への実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
+* [Experience Cloud ID サービスの Analytics、Audience Manager および Target への実装](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **改訂済み**
 
-* [エクスペリエンスプラットフォームIDサービスの要件](../reference/requirements.md)
-* [エクスペリエンスプラットフォームIDサービスのテストと検証](../implementation-guides/test-verify.md)
+* [Experience Cloud ID サービスの要件](../reference/requirements.md)
+* [Experience Cloud ID サービスのテストと検証](../implementation-guides/test-verify.md)
 
-## バージョン1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
+## Version 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
 2016 年 6 月
 
@@ -149,7 +149,7 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
   </tr> 
   <tr> 
    <td colname="col1"> <p>Experience Cloud ID（MID）のエンコード </p> </td> 
-   <td colname="col2"> <p>ID サービスは、サーバーから返される、または <span class="codeph">visitor.setMarketingCloudVisitorID()</span> 関数で設定された、MID 値をエンコードするようになります。MIDについて詳しくは <a href="../introduction/cookies.md" format="dita" scope="local"> 、cookieとExperience Cloud ID </a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>ID サービスは、サーバーから返される、または <span class="codeph">visitor.setMarketingCloudVisitorID()</span> 関数で設定された、MID 値をエンコードするようになります。For more information about the MID, see <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud ID </a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -165,8 +165,8 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 **ドキュメントの更新**
 
 * [Android および iOS 向け SDK 要件](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data WorkbenchとExperience Platform IDサービス](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [エクスペリエンスプラットフォームIDサービスのテストと検証](../implementation-guides/test-verify.md)
+* [Data Workbench と Experience Cloud ID サービス](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [Experience Cloud ID サービスのテストと検証](../implementation-guides/test-verify.md)
 
 ## バージョン 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -174,9 +174,9 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 **ドキュメントの更新**
 
-[Target向けExperience Platform IDサービスの実装](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[Experience Cloud ID サービスの Target への実装](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
-## バージョン1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
+## Version 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
 2016 年 3 月
 
@@ -201,9 +201,9 @@ source-git-commit: 746f8937c59d318dcf7245c7f8484884974601dc
 
 **ドキュメントの更新**
 
-* [Experience Platform IDサービスのAnalyticsへの実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) :IDサービスの設定方法を説明する新しい手順 [!DNL Analytics]です。
+* [Experience Cloud ID サービスの への実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)：ID サービスを Analytics[!DNL Analytics] で使用するための設定方法に関する新しい手順です。
 
-* [エクスペリエンスプラットフォームIDサービス移行の判断ポイント](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) :テキストを明確にしました。単一のドメインを使用する場合は、データ収集 CNAME の管理を終了したい場合に、その使用を停止できます。ただし、CNAME が機能している場合には、変更する必要はありません。
+* [Experience Cloud ID サービス移行の判断ポイント](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257)：テキストをわかりやすく修正しました。単一のドメインを使用する場合は、データ収集 CNAME の管理を終了したい場合に、その使用を停止できます。ただし、CNAME が機能している場合には、変更する必要はありません。
 
 ## バージョン 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
