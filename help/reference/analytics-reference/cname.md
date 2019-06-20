@@ -6,7 +6,7 @@ seo-title: データ収集 CNAME およびクロスドメイントラッキン�
 title: データ収集 CNAME およびクロスドメイントラッキング
 uuid: ba42c822- b677-4139- b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -35,16 +35,16 @@ Analytics Cookie がデータ収集サーバーによって設定されていた
 
 Apple Safari などのブラウザーではファーストパーティ Cookie をサードパーティのコンテキストで使用できるしくみがあるため、CNAME を利用して、同じトラッキングサーバーを使用するプライマリドメインとその他のドメインとにまたがって顧客を追跡できます。
 
-例えば、プライマリサイトが `mymainsite.com` にあるとします。CNAMEレコードを設定して、セキュリティで保護されたデータ収集サーバーを参照します。 `smetrics.mymainsite.com`を参照してください。
+例えば、プライマリサイトが `mymainsite.com` にあるとします。You configured the CNAME record to point to your secure data collection server: `smetrics.mymainsite.com`.
 
-ユーザーが `mymainsite.com` を訪問すると、データ収集サーバーによって ID サービス Cookie が設定されます。これは、データ収集サーバーのドメインがWebサイトのドメインと一致するためです。 *ファーストパーティコンテキスト*でcookieを使用するか *、ファーストパーティcookieだけを使用*するかを指定します。
+ユーザーが `mymainsite.com` を訪問すると、データ収集サーバーによって ID サービス Cookie が設定されます。This is allowed since the domain of the data collection server matches the domain of the website, and is what is known as using a cookie in a *first-party context*, or just a *first-party cookie*.
 
-同じデータ収集サーバーを他のサイト（例えば、など `myothersiteA.com``myothersiteB.com`）で使用し、訪問者がこれらのサイトを後で訪問した場合、訪問中に設定されたcookieがHTTPSリクエストで `mymainsite.com` データ収集サーバーに送信されます（ドメインが現在のWebサイトのドメインと一致していない場合でも、そのドメインへのすべてのHTTPSリクエストがあるドメインのcookieがすべて送信されます）。これは *、サードパーティコンテキスト*でcookieを使用すること、または *サードパーティcookie*を使用する場合と呼ばれ、これらの他のドメインで同じ訪問者IDを使用することができます。ブラウザーは、サードパーティのコンテキストのcookieをファーストパーティcookieとは異なる方法で処理します。
+If you are also using this same data collection server on other sites (for example, `myothersiteA.com`, and `myothersiteB.com`), and a visitor later visits these sites, the cookie that was set during the visit to `mymainsite.com` is sent in the HTTPS request to the data collection server (remember that browsers send all cookies for a domain with all HTTPS requests to that domain, even if the domain doesn&#39;t match the domain of the current website). This is what is known as using a cookie in a *third-party context*, or just a *third-party cookie*, and it enables the same visitor ID to be used on these other domains. ブラウザーは、サードパーティのコンテキストのcookieをファーストパーティcookieとは異なる方法で処理します。
 
 *注意:Safariは、サードパーティコンテキストのどのCookieが設定されているかにかかわらず、すべてのCookieをブロックします。*
 
-このことから、訪問者を複数のドメインで識別するには、ユーザーが共通して訪問するドメインを収集ドメインにする必要があります。データ収集ドメインに使用する *共通* ドメインがない場合、データ収集ドメインのCNAMEを維持するためのクロスドメインはありません。訪問者がメインエントリサイトを最初に訪問しない場合は、セカンダリサイトとメインサイトで訪問者が異なる訪問者として識別されます。
+このことから、訪問者を複数のドメインで識別するには、ユーザーが共通して訪問するドメインを収集ドメインにする必要があります。If there is no *common* domain to use for the data collection domain, there is no cross-domain benefit to maintaining a CNAME for the data collection domain. 訪問者がメインエントリサイトを最初に訪問しない場合は、セカンダリサイトとメインサイトで訪問者が異なる訪問者として識別されます。
 
-## エクスペリエンスプラットフォームIDサービスでCNAMEサポートを有効にする {#section-25d4feb686d944e3a877d7aad8dbdf9a}
+## Experience Cloud ID サービスで CNAME サポートを有効にする {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
-データ収集サーバーCNAMEのサポートは、変数を `visitor.marketingCloudServerSecure` 設定することで有効になります。
+Data collection server CNAME support is enabled by setting the `visitor.marketingCloudServerSecure` variables.
