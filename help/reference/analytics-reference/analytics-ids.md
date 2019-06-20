@@ -1,19 +1,19 @@
 ---
-description: Experience Platform IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+description: Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
 keywords: ID サービス
-seo-description: Experience Platform IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+seo-description: Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
 seo-title: Analytics および Experience Cloud ID の設定
 title: Analytics および Experience Cloud ID の設定
 uuid: 421cf597- a3e0-4ca3-8ce8- d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # Analytics および Experience Cloud ID の設定{#setting-analytics-and-experience-cloud-ids}
 
-Experience Platform IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
 
 ID サービスの実装後、AppMeasurement の前にこのコードが実行されます。ID サービスは Experience Cloud および Analytics の ID を取得するので、AppMeasurement が読み込まれたときには、これらの値が利用できる状態になっています。
 
@@ -76,7 +76,7 @@ JavaScript は、ファーストパーティドメイン（現在の Web サイ�
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external">fid（H.25.3 以降の代替の Cookie、または JavaScript 版 AppMeasurement）</a> </p> </td> 
-   <td colname="col3"> <p>ブラウザーがサードパーティ Cookie を受け入れず、Analytics トラッキングサーバーがサードパーティトラッキングサーバーとして設定されている場合 </p> <p> <p>注意：<span class="codeph">fid</span> は、従来の識別子で、サイトに ID サービスを実装している場合、使用されません。この場合、 <span class="codeph"> ファースト</span> パーティの <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie</a> は古いので、fidは不要です。fid は、レガシーコードをサポートするために、および歴史的な理由により、保持されています。 </p> </p> </td> 
+   <td colname="col3"> <p>ブラウザーがサードパーティ Cookie を受け入れず、Analytics トラッキングサーバーがサードパーティトラッキングサーバーとして設定されている場合 </p> <p> <p>注意：<span class="codeph">fid</span> は、従来の識別子で、サイトに ID サービスを実装している場合、使用されません。In this case, the <span class="codeph"> fid</span> is not needed because the first-party, <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie</a> makes it obsolete. fid は、レガシーコードをサポートするために、および歴史的な理由により、保持されています。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
