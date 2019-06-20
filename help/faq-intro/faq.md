@@ -6,7 +6,7 @@ seo-title: ID サービス FAQ
 title: ID サービス FAQ
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -23,21 +23,21 @@ ID サービス利用の特長、機能、課題に関するよくある質問�
 
 **ID サービスが Experience Cloud ID を取得するための呼び出しをおこないません。なぜですか。**
 
-これは診断が難しい問題です。まず、サイトのコンテンツセキュリティポリシーのヘッダーを確認してください。厳格なセキュリティポリシーが適用されている場合は、設定により、ID サービスによるサードパーティ呼び出しがブロックされている可能性があります。詳しくは、[コンテンツセキュリティポリシーおよびエクスペリエンスプラットフォームIDサービス](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)を参照してください。
+これは診断が難しい問題です。まず、サイトのコンテンツセキュリティポリシーのヘッダーを確認してください。厳格なセキュリティポリシーが適用されている場合は、設定により、ID サービスによるサードパーティ呼び出しがブロックされている可能性があります。詳しくは、 [コンテンツセキュリティポリシーおよび Experience Cloud ID サービス](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
 
 **VisitorAPI.js ファイルの保存**
 
 VisitorAPI.js をモバイルアプリのローカルファイルとしてホストすると、問題が生じる場合があります。このファイルは、Web サーバーでホストすることをお勧めします。
 
-## ページロード時間と遅延 {#section-c78e148d8dbe4c77a436ef0f2af5434b}
+## Page load times and latency {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
 **ID サービスの VisitorAPI.js ライブラリの場所は、ページ読み込み時間にどのように影響しますか。**
 
-VisitorAPI. jsライブラリを、コードのセクションの `<head>` ページの先頭に配置します。これにより、ページ本文の読み込み前に ID の呼び出しがおこなわれるので、ID が問題なく返される可能性が高くなります。
+Place the VisitorAPI.js library at the top of the page in the `<head>` section of your code. これにより、ページ本文の読み込み前に ID の呼び出しがおこなわれるので、ID が問題なく返される可能性が高くなります。
 
 ID サービス呼び出しは非同期であり、[demdex.net ドメイン](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) への唯一の呼び出しです。ID サービス呼び出しにより、ページ上で他の要素が読み込まれないようにブロックされることはありません。
 
-[!DNL Target] 顧客の場合、ページの中にIDサービスコードを配置 `<body>` すると [!DNL Target] 、呼び出しがブロックされる可能性が高くなる可能性があります。IDサービスコードをページの本文に配置する必要がある場合は、開始 `<body>` タグの後に配置する必要があります。
+[!DNL Target] 顧客の場合、ページの中にIDサービスコードを配置 `<body>` すると [!DNL Target] 、呼び出しがブロックされる可能性が高くなる可能性があります。If you must place ID service code in the body of your page, it should be placed after the open `<body>` tag.
 
 **ID サービスは、ページが読み込まれるたびにサーバー呼び出しをおこないますか。**
 
@@ -67,13 +67,13 @@ ID サービス呼び出しは非同期であり、[demdex.net ドメイン](htt
 
 一般的に、リソースリクエストには、JSON-P よりも CORS を使用する方が望ましいと言えます。JSON-P の場合、一部のブラウザーはリクエストをキューに追加し、ページ上の他の同期呼び出しや非同期呼び出しリクエストを基準にして優先順位を下げます。CORS を使用すると、ブラウザーのコールスタック内でのこれらのリクエストの優先度の高さを確保できます。
 
-詳しくは、[エクスペリエンスプラットフォームIDサービスでのCORSのサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+詳しくは、 [Experience Cloud ID サービスでの CORS のサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 ## セキュリティ {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **ID サービスは CORS をサポートしていますか。**
 
-はい。エクスペリエンスプラットフォームIDサービスの [CORSのサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)を参照してください。
+はい。See [CORS Support in the Experience Cloud ID Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **CORS とは何ですか。**
 
