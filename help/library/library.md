@@ -1,19 +1,19 @@
 ---
-description: Experience Platform IDサービスとプログラムで連携できるプロパティ、メソッドおよび設定です。
+description: Experience Cloud IDサービスとプログラムで連携できるプロパティ、メソッドおよび設定です。
 keywords: ID サービス
-seo-description: Experience Platform IDサービスとプログラムで連携できるプロパティ、メソッドおよび設定です。
+seo-description: Experience Cloud IDサービスとプログラムで連携できるプロパティ、メソッドおよび設定です。
 seo-title: ID サービスのAPI
 title: ID サービスのAPI
 uuid: 9663cf9d-64be-4b68- a0e1- c1a1eb70fbd5
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # ID サービスの API{#id-service-api}
 
-Experience Platform IDサービスとプログラムで連携できるプロパティ、メソッドおよび設定です。
+Experience Cloud IDサービスとプログラムで連携できるプロパティ、メソッドおよび設定です。
 
 * [設定の概要](function-vars/function-vars.md)
 * [メソッドの概要](get-set/get-set.md)
