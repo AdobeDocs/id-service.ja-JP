@@ -6,7 +6,7 @@ seo-title: 顧客 ID と認証状態
 title: 顧客 ID と認証状態
 uuid: 643df363-224a-463e- a332- be59926b47e7
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 >
 >`setCustomerIDs` （顧客IDの同期）は、顧客属性およびコアサービス機能に必要です。顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。[!DNL Target] 顧客属性 `Visitor.AuthState.AUTHENTICATED` が機能する必要があります。例については、[コアサービス - ソリューションを有効にする方法](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services)を参照してください。
 
-Experience Platform `setCustomerIDs` IDサービスv1.5以降から、オプション `AuthState` のオブジェクトを含めます。`AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。認証状態は整数値として返されます。
+Beginning with Experience Cloud ID Service v1.5+, `setCustomerIDs` includes the optional `AuthState` object. `AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。認証状態は整数値として返されます。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -220,4 +220,4 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## Analytics および Audience Manager ユーザー向けの注意点 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトとデータソースに関連付けられた統合コードが一致する必要があります。詳しくは、結合ルールコード [!DNL Visitor ID Service] の [設定](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html) ドキュメントの節を参照してください。
+宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトとデータソースに関連付けられた統合コードが一致する必要があります。For more information, see the [!DNL Visitor ID Service] section in the [Configure Merge Rules Code](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html) documentation.
