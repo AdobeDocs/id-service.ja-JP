@@ -2,16 +2,16 @@
 description: これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
 keywords: ID サービス
 seo-description: これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
-seo-title: Experience Platform IDサービスとの直接統合
-title: Experience Platform IDサービスとの直接統合
+seo-title: Experience Cloud IDサービスとの直接統合
+title: Experience Cloud IDサービスとの直接統合
 uuid: de502f7e- cffd-4130- b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# Experience Platform IDサービスとの直接統合 {#direct-integration-with-the-experience-cloud-id-service}
+# Direct integration with the Experience Cloud ID Service {#direct-integration-with-the-experience-cloud-id-service}
 
 これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
 
@@ -21,17 +21,17 @@ VisitorAPI.js または SDK コードライブラリを使用できないデバ�
 
 ![](assets/directSyntax.png)
 
-この構文の例では、プレフィックスは `d_` 、呼び出し内のキーと値のペアをシステムレベルの変数として識別します。IDサービスには非常に `d_` 多くのパラメーターを渡すことができますが、上記のコードに示すように、キーと値のペアに焦点を合わせることができます。他の変数について詳しくは、[DCS API 呼び出しでサポートされる属性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)を参照してください。
+In this syntax example, the `d_` prefix identifies the key-value pairs in the call as a system-level variable. You can pass quite a few `d_` parameters to the ID service, but stay focused on the key-value pairs as shown in the code above. 他の変数について詳しくは、[DCS API 呼び出しでサポートされる属性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)を参照してください。
 
 ID サービスは HTTP 呼び出しと HTTPS 呼び出しをサポートします。セキュアなページからデータを渡す際には HTTPS を使用してください。
 
-## リクエストのサンプル {#section-26302b8851704888b6f8e6b2071bcdb0}
+## Sample request {#section-26302b8851704888b6f8e6b2071bcdb0}
 
 リクエストは以下のサンプルのようになります。長い変数は短縮されています。
 
 ![](assets/directExample.png)
 
-## 応答サンプル {#section-89bc103b3e9e4a8b98e74c32897b1200}
+## Sample response {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
 ID サービスは、以下のような JSON オブジェクトでデータを返します。レスポンスは異なる場合があります。
 
@@ -44,7 +44,7 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
 }
 ```
 
-## 定義されたリクエストおよび応答パラメーター {#section-4a9912b545364dc4acad4f1ea5ec641d}
+## Request and response parameters defined {#section-4a9912b545364dc4acad4f1ea5ec641d}
 
 **リクエストパラメーター**
 
@@ -62,18 +62,18 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 訪問者 IDです。詳しくは、<a href="../introduction/cookies.md" format="dita" scope="local"> cookieとエクスペリエンスプラットフォームIDサービス</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 訪問者 IDです。詳しくは、 <a href="../introduction/cookies.md" format="dita" scope="local"> Cookie と Experience Cloud ID サービス</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 組織 IDです。この ID の探し方については、<a href="../reference/requirements.md" format="dita" scope="local"> エクスペリエンスプラットフォームIDサービスの要件</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 組織 IDです。この ID の探し方については、 <a href="../reference/requirements.md" format="dita" scope="local"> Experience Cloud ID サービスの要件</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>データプロバイダーID（DPID）、個別ユーザーID（DPUUID）および <a href="../reference/authenticated-state.md" format="dita" scope="local"> 認証済み状態IDをIDサービス</a> に渡すオプションのパラメーター。コードサンプルで示すように、DPID と DPUUID の間は非表示の制御文字 <span class="codeph">%01</span> で区切ります。 </p> <p> <b>DPID および DPUUID</b> </p> <p><span class="codeph">d_cid</span> パラメーターでは、関連する DPID と DPUUID の各組み合わせを同じ <span class="codeph">d_cid</span> パラメーターに割り当てます。これにより、複数の ID セットを単一のリクエストで設定できます。また、DPID、DPUUID、および任意の認証フラグの間は非表示の制御文字 <span class="codeph">%01</span> で区切ります。以下の例では、プロバイダー ID とユーザー ID が<b>太字</b>のテキストで強調されています。 </p> 
+   <td colname="col2"> <p>An optional parameter that passes the Data Provider ID (DPID), the Unique User ID (DPUUID), and an <a href="../reference/authenticated-state.md" format="dita" scope="local"> authenticated state ID</a> to the ID service. コードサンプルで示すように、DPID と DPUUID の間は非表示の制御文字 <span class="codeph">%01</span> で区切ります。 </p> <p> <b>DPID および DPUUID</b> </p> <p><span class="codeph">d_cid</span> パラメーターでは、関連する DPID と DPUUID の各組み合わせを同じ <span class="codeph">d_cid</span> パラメーターに割り当てます。これにより、複数の ID セットを単一のリクエストで設定できます。また、DPID、DPUUID、および任意の認証フラグの間は非表示の制御文字 <span class="codeph">%01</span> で区切ります。以下の例では、プロバイダー ID とユーザー ID が<b>太字</b>のテキストで強調されています。 </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">構文：<span class="codeph">...d_cid=DPID%01DPUUID%01認証状態...</span> </li> 
-     <li id="li_B07833EF51D54F088574B7B7F9FB841A">例: <span class="codeph">… d_ cid=123%01456%011…</span> </li> 
+     <li id="li_B07833EF51D54F088574B7B7F9FB841A">Example: <span class="codeph">...d_cid=123%01456%011...</span> </li> 
     </ul> <p> <b>認証状態</b> </p> <p>これは <span class="codeph">d_cid</span> パラメーターのオプションの ID です。整数で表され、以下に示す認証状態によってユーザーを識別します。 </p> 
     <ul id="ul_E2B36922B11C4AA2A9016B6E2DC9EDAA"> 
      <li id="li_31C018E3F9514B938C73EF40C436715F"> <span class="codeph">0</span>（不明） </li> 
