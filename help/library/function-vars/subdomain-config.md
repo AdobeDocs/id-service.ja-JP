@@ -1,19 +1,19 @@
 ---
-description: Experience Platform IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定を使用して独自のサブドメイン名に変更します。
+description: Experience Cloud IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定で独自のサブドメイン名に変更します。
 keywords: ID サービス
-seo-description: Experience Platform IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定を使用して独自のサブドメイン名に変更します。
+seo-description: Experience Cloud IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定で独自のサブドメイン名に変更します。
 seo-title: audienceManagerServer および audienceManagerServerSecure
 title: audienceManagerServer および audienceManagerServerSecure
 uuid: e21cacf-5151-4d34- b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
 # audienceManagerServer および audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-Experience Platform IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定を使用して独自のサブドメイン名に変更します。
+Experience Cloud IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定で独自のサブドメイン名に変更します。
 
 **構文：**
 
@@ -22,14 +22,14 @@ Experience Platform IDサービスへの呼び出しで使用されるデフォ�
 
 **目的**
 
-通常、 [!DNL Experience Cloud] IDサービスは [!DNL Adobe] 、呼び出し `dpm.demdex.net`をおこないます。この宛先への呼び出しは、あまりに一般的で、サードパーティのように見えるため、好まれない場合があります。ID サービスをよりファーストパーティらしく見せるためには、これらの設定を使用して、以下のように [!DNL Audience Manager] サブドメイン名を `demdex.net` に追加します。`dpm.demdex.net` 呼び出しについて詳しくは、[Demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)を参照してください。
+Normally, the [!DNL Experience Cloud] ID service makes calls to [!DNL Adobe] at `dpm.demdex.net`. この宛先への呼び出しは、あまりに一般的で、サードパーティのように見えるため、好まれない場合があります。ID サービスをよりファーストパーティらしく見せるためには、これらの設定を使用して、以下のように [!DNL Audience Manager] サブドメイン名を `demdex.net` に追加します。`dpm.demdex.net` 呼び出しについて詳しくは、[Demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)を参照してください。
 
 **要件**
 
 これらの設定では、以下を使用する必要があります。
 
-* 会社のレコードの [!DNL Audience Manager] サブドメイン名。この名前はコンサルタントに確認するか、コンサルタントから取得してください。
-* に関連付けられているサブドメイン名 [!DNL Organization ID]。
+* The [!DNL Audience Manager] subdomain name of record for your company. この名前はコンサルタントに確認するか、コンサルタントから取得してください。
+* The subdomain name associated with your [!DNL Organization ID].
 * 同じサブドメイン名を持つ*両方の*設定パラメーター。
 
 **コードサンプル**
