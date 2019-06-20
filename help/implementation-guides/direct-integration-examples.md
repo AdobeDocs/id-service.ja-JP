@@ -6,24 +6,24 @@ seo-title: 直接統合の使用例
 title: 直接統合の使用例
 uuid: 6de1eb8b-4783-4545-8a64- ab6b9ef93432
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
 
-# 直接統合の使用例 {#direct-integration-use-cases}
+# Direct integration use cases {#direct-integration-use-cases}
 
 直接統合と Experience Cloud ID（MID）に関連する 2 つの一般的な使用例を示します。MID は、サイト訪問者に割り当てられる一意の永続的 ID です。
 
 >[!TIP]
 >
->* 使用事例にジャンプする前に [、コード構文と変数](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) を確認して理解してください。
->* MIDについて詳しくは [、cookieとエクスペリエンスプラットフォームIDサービス](../introduction/cookies.md)を参照してください。
+>* Review and understand the [code syntax and variables](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) before diving into the use cases.
+>* For more information about the MID, see [Cookies and the Experience Cloud ID Service](../introduction/cookies.md).
 >
 
 
 
-## 使用例1:MIDがあるが、訪問者IDを渡して認証状態を設定したい {#section-a67d89a343754d1286d03cf08d34b806}
+## Use case 1: I have a MID but want to pass my Visitor IDs and set an authentication state {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -65,7 +65,7 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
  </tbody> 
 </table>
 
-## 使用例2:MIDがないので、1つの {#section-8e81291f8b684de8b88fae4002ae0029}
+## Use case 2: I do not have a MID and need to generate one {#section-8e81291f8b684de8b88fae4002ae0029}
 
 <table id="table_666A92693F8A413096DF6A64770C1141"> 
  <thead> 
