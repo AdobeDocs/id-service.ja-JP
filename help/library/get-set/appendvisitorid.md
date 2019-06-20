@@ -6,7 +6,7 @@ seo-title: appendVisitorIDsTo（クロスドメイントラッキング）
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
-source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
+source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ---
 
@@ -25,14 +25,14 @@ source-git-commit: 50a5b4d3a27fd8b21437f02bd9390565f23ac7e6
 
 ## ブラウザーでサードパーティ Cookie がブロックされている場合に複数のドメインをまたいで訪問者を追跡する {#section-7251d88befd440b4b79520e33c5aa44a}
 
-IDサービスは、訪問者がサイトを訪問したときにファーストパーティCookieとサードパーティCookieをブラウザーに書き込みます（ [cookieとエクスペリエンスプラットフォームIDサービス](../../introduction/cookies.md) を参照）。ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。サードパーティ Cookie には、ID サービスで MID を生成するために使用される別の ID が含まれます。ブラウザーでサードパーティ Cookie がブロックされている場合、ID サービスは以下のことができなくなります。
+ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Cloud ID Service](../../introduction/cookies.md) ). ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。サードパーティ Cookie には、ID サービスで MID を生成するために使用される別の ID が含まれます。ブラウザーでサードパーティ Cookie がブロックされている場合、ID サービスは以下のことができなくなります。
 
 * サイト訪問者が別のドメインに移動したときに、その訪問者の一意の ID を再生成する。
 * 同じ組織が所有する異なるドメインにわたって訪問者を追跡する。
 
-この問題を解決するには、URLを実装 ` Visitor.appendVisitorIDsTo( *``*)`してください。これにより、ブラウザーがサードパーティ Cookie をブロックしても、ID サービスが複数ドメインにわたってサイト訪問者を適切に追跡できます。このプロパティは以下のように動作します。
+To help solve this problem, implement ` Visitor.appendVisitorIDsTo( *`url`*)`. これにより、ブラウザーがサードパーティ Cookie をブロックしても、ID サービスが複数ドメインにわたってサイト訪問者を適切に追跡できます。このプロパティは以下のように動作します。
 
-* 訪問者が他のドメインを閲覧するとき、 ` Visitor.appendVisitorIDsTo( *`URL`*)` は元のドメインから宛先ドメインへのURLリダイレクトにクエリパラメーターとしてMIDを追加します。
+* As a visitor browses to your other domains, the ` Visitor.appendVisitorIDsTo( *`url`*)` appends the MID as a query parameter in the URL redirect from the original domain to the destination domain.
 * アドビに訪問者の ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から MID が抽出されます。このリクエストにはサードパーティ Cookie が含まれますが、このケースではサードパーティ Cookie を利用できません。
 * 宛先ページの ID サービスコードは、MID で渡された値を使用して訪問者を追跡します。
 
@@ -40,7 +40,7 @@ IDサービスは、訪問者がサイトを訪問したときにファースト
 
 ## 訪問者 ID コードサンプルを追加する {#section-62d55f7f986542b0b9238e483d50d7b0}
 
-次の例は、URLの使用 ` Visitor.appendVisitorIDsTo( *`を開始するのに役立ち`*)`ます。設定が完了すると、JavaScript コードは以下の例のようになります。
+The following example can help you get started with ` Visitor.appendVisitorIDsTo( *`url`*)`. 設定が完了すると、JavaScript コードは以下の例のようになります。
 
 ```js
 //Code on Domain A 
