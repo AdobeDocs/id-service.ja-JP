@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: この ID サービス関数を呼び出して、ID サービスがクライアント側で Experience Cloud 訪問者 ID（MID）を生成したかどうかを判定します。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 seo-title: isClientSideMarketingCloudVisitorID
 title: isClientSideMarketingCloudVisitorID
-uuid: 1c39ac60-1d2b-4ed4- a2ea-30d680e61e10
-translation-type: tm+mt
+uuid: 1c39ac60-1d2b-4ed4-a2ea-30d680e61e10
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
