@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: ID サービスの機能は、Adobe Analytics に特有のものです。
 seo-title: Analytics リファレンス
 title: Analytics リファレンス
-uuid: 215f0394- a436-4f0c-9a52-3b387048e40e
-translation-type: tm+mt
+uuid: 215f0394-a436-4f0c-9a52-3b387048e40e
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -22,4 +22,4 @@ ID サービスの機能は、Adobe Analytics に特有のものです。
 + [Analytics と Experience Cloud ID のリクエスト](mcvid-legacy-analytics.md)
 + [データ収集 CNAME およびクロスドメイントラッキング](mcvid-cname.md)
 + [JavaScript を利用したサーバー側実装](mcvid-server-side.md)
-+ [ID サービスの猶予期間](mcvid-grace-period.md)   
++ [ID サービスの猶予期間](mcvid-grace-period.md)
