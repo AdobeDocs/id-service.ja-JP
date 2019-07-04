@@ -2,16 +2,16 @@
 description: これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
 keywords: ID サービス
 seo-description: これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
-seo-title: Experience Cloud IDサービスとの直接統合
-title: Experience Cloud IDサービスとの直接統合
-uuid: de502f7e- cffd-4130- b3ca-7d6b9a9caae9
-translation-type: tm+mt
+seo-title: Experience Cloud ID サービスとの直接統合
+title: Experience Cloud ID サービスとの直接統合
+uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
 
 
-# Experience Cloud IDサービスとの直接統合 {#direct-integration-with-the-experience-cloud-id-service}
+# Experience Cloud ID サービスとの直接統合 {#direct-integration-with-the-experience-cloud-id-service}
 
 これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
 
@@ -21,7 +21,7 @@ VisitorAPI.js または SDK コードライブラリを使用できないデバ�
 
 ![](assets/directSyntax.png)
 
-この構文の例では、プレフィックスは `d_` 、呼び出し内のキーと値のペアをシステムレベルの変数として識別します。IDサービスには非常に `d_` 多くのパラメーターを渡すことができますが、上記のコードに示すように、キーと値のペアに焦点を合わせることができます。他の変数について詳しくは、[DCS API 呼び出しでサポートされる属性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)を参照してください。
+この構文の例において、`d_` というプレフィックスは呼び出し内のキーと値のペアがシステムレベルの変数であることを示します。ID サービスには多くの `d_` パラメーターを渡すことができますが、上のコードに示されているキーと値のペアに特に注目してください。その他の変数について詳しくは、[DCS API 呼び出しでサポートされている属性](https://marketing.adobe.com/resources/help/ja_JP/aam/dcs-keys.html)を参照してください。
 
 ID サービスは HTTP 呼び出しと HTTPS 呼び出しをサポートします。セキュアなページからデータを渡す際には HTTPS を使用してください。
 
@@ -31,7 +31,7 @@ ID サービスは HTTP 呼び出しと HTTPS 呼び出しをサポートしま�
 
 ![](assets/directExample.png)
 
-## 応答サンプル {#section-89bc103b3e9e4a8b98e74c32897b1200}
+## レスポンスのサンプル {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
 ID サービスは、以下のような JSON オブジェクトでデータを返します。レスポンスは異なる場合があります。
 
@@ -44,7 +44,7 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
 }
 ```
 
-## 定義されたリクエストおよび応答パラメーター {#section-4a9912b545364dc4acad4f1ea5ec641d}
+## リクエストパラメーターおよびレスポンスパラメーターの定義 {#section-4a9912b545364dc4acad4f1ea5ec641d}
 
 **リクエストパラメーター**
 
@@ -58,22 +58,22 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p><span class="keyword">アドビ</span>が管理する従来のドメインです。<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">アドビ</span>が管理する従来のドメインです。<a href="https://marketing.adobe.com/resources/help/ja_JP/aam/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 訪問者 IDです。詳しくは、 <a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local"> Cookie と Experience Cloud ID サービス</a>. </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 訪問者 IDです。詳しくは、<a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local">Cookie と Experience Cloud ID サービス</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 組織 IDです。この ID の探し方については、 <a href="../mcvid-reference/mcvid-requirements.md" format="dita" scope="local"> Experience Cloud ID サービスの要件</a>. </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 組織 IDです。この ID の探し方については、<a href="../mcvid-reference/mcvid-requirements.md" format="dita" scope="local">Experience Cloud ID サービスの要件</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
-   <td colname="col2"> <p>データプロバイダーID（DPID）、個別ユーザーID（DPUUID）および <a href="../mcvid-reference/mcvid-authenticated-state.md" format="dita" scope="local"> 認証済み状態IDをIDサービス</a> に渡すオプションのパラメーター。コードサンプルで示すように、DPID と DPUUID の間は非表示の制御文字 <span class="codeph">%01</span> で区切ります。 </p> <p> <b>DPID および DPUUID</b> </p> <p><span class="codeph">d_cid</span> パラメーターでは、関連する DPID と DPUUID の各組み合わせを同じ <span class="codeph">d_cid</span> パラメーターに割り当てます。これにより、複数の ID セットを単一のリクエストで設定できます。また、DPID、DPUUID、および任意の認証フラグの間は非表示の制御文字 <span class="codeph">%01</span> で区切ります。以下の例では、プロバイダー ID とユーザー ID が<b>太字</b>のテキストで強調されています。 </p> 
+   <td colname="col2"> <p>データプロバイダー ID（DPID）、一意のユーザー ID（DPUUID）および<a href="../mcvid-reference/mcvid-authenticated-state.md" format="dita" scope="local">認証済み状態 ID </a>を ID サービスに渡すオプションのパラメーター。コードサンプルで示すように、DPID と DPUUID の間は非表示の制御文字 <span class="codeph">%01</span> で区切ります。 </p> <p> <b>DPID および DPUUID</b> </p> <p><span class="codeph">d_cid</span> パラメーターでは、関連する DPID と DPUUID の各組み合わせを同じ <span class="codeph">d_cid</span> パラメーターに割り当てます。これにより、複数の ID セットを単一のリクエストで設定できます。また、DPID、DPUUID、および任意の認証フラグの間は非表示の制御文字 <span class="codeph">%01</span> で区切ります。以下の例では、プロバイダー ID とユーザー ID が<b>太字</b>のテキストで強調されています。 </p> 
     <ul id="ul_2E19D837296B40E9ACD096495CF711C5"> 
      <li id="li_5B94B057654440B99B989BA60E4ED053">構文：<span class="codeph">...d_cid=DPID%01DPUUID%01認証状態...</span> </li> 
-     <li id="li_B07833EF51D54F088574B7B7F9FB841A">例: <span class="codeph">… d_ cid=123%01456%011…</span> </li> 
+     <li id="li_B07833EF51D54F088574B7B7F9FB841A">例：<span class="codeph">...d_cid=123%01456%011...</span> </li> 
     </ul> <p> <b>認証状態</b> </p> <p>これは <span class="codeph">d_cid</span> パラメーターのオプションの ID です。整数で表され、以下に示す認証状態によってユーザーを識別します。 </p> 
     <ul id="ul_E2B36922B11C4AA2A9016B6E2DC9EDAA"> 
      <li id="li_31C018E3F9514B938C73EF40C436715F"> <span class="codeph">0</span>（不明） </li> 
@@ -88,7 +88,7 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>ID サービスは地理的に分散された負荷分散型システムです。呼び出しを処理するデータセンターの地域は ID で識別されます。<a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>ID サービスは地理的に分散された負荷分散型システムです。呼び出しを処理するデータセンターの地域は ID で識別されます。<a href="https://marketing.adobe.com/resources/help/ja_JP/aam/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
