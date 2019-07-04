@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: 一部の実装では、追加の Analytics イベント（購入など）をサーバーから送信できるようにするために、訪問者 ID を JavaScript からサーバーに渡します。
 seo-title: JavaScript を利用したサーバー側実装
 title: JavaScript を利用したサーバー側実装
-uuid: 256ea0e7-1eb4-4c92-9a7e- f61cb1ed13c7
-translation-type: tm+mt
+uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -21,16 +21,16 @@ Experience Cloud 訪問者 ID と Analytics 訪問者 ID の両方を確認し�
 
 >[!IMPORTANT]
 >
->Java版AppMeasurementは、現在、Experience Cloud IDサービスをサポートしていません。
+>Java 版 AppMeasurement は、現在 Experience Cloud ID サービスをサポートしていません。
 
 ## Data Insertion API {#section-955ce7664a4646d38b3005cb2df40baf}
 
-`<visitorID>` 要素にAnalytics訪問者IDを含めます（設定されている場合）。
+`<visitorID>` 要素に Analytics 訪問者 ID を含めます（設定されている場合）。
 
-`<marketingCloudVisitorID>` 要素にExperience Cloud訪問者IDを含めます。
+`<marketingCloudVisitorID>` 要素に Experience Cloud 訪問者 ID を含めます。
 
-[サポートされる XML タグ](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags)を参照してください。
+[サポートされている XML タグ](https://marketing.adobe.com/developer/ja_JP/documentation/data-insertion/r-supported-tags)を参照してください。
 
-## Java 版 AppMeasurement{#section-d664b94934924d048300d9c2b6560085}
+##  Java 版 AppMeasurement{#section-d664b94934924d048300d9c2b6560085}
 
 Java 版 AppMeasurement は、現在 Experience Cloud ID サービスをサポートしていません。
