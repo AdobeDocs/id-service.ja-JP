@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: この機能は、単一ページのサイト／画面またはアプリでの ID の使用に関連する問題を解決するために、主に A4T のお客様向けに設計されています。
 seo-title: resetState
 title: resetState
-uuid: ed7be76d- a7ee-4e51- b26c-456ff85fd096
-translation-type: tm+mt
+uuid: ed7be76d-a7ee-4e51-b26c-456ff85fd096
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,28 +17,28 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ## 使用例 {#section-840b88a5cdb042488b340cad5d7b22a5}
 
-IDサービスを使用するA4Tの顧客として、必要な場合に `visitor.resetState()` この関数を使用することができます。
+ID サービスを利用している A4T のお客様の場合、以下をおこなう必要があるときには `visitor.resetState()` 関数を使用することが推奨されます。
 
 * リダイレクトを通じて Supplemental Data ID（SDID）またはその他の ID をあるページまたは画面から別のページまたは画面に渡すとき。通常、ID サービスはこの関数を使用しない限りこの ID を渡しません。
-* Ajax 呼び出しを介してページやアプリケーションの特定のセクションのみを更新するコードを使用し、その動作をトラッキングする必要があるとき。例えば、オブジェクトをクリックすると特定のセクションのみが読み込まれたり変更されたりするページがあるとします。この場合、ページの再読み込みがおこなわれない限り、ID サービスは別の ID をリクエストできません。ただし、次 `visitor.resetState()`の条件で新しいIDをリクエストできます。
+* Ajax 呼び出しを介してページやアプリケーションの特定のセクションのみを更新するコードを使用し、その動作をトラッキングする必要があるとき。例えば、オブジェクトをクリックすると特定のセクションのみが読み込まれたり変更されたりするページがあるとします。この場合、ページの再読み込みがおこなわれない限り、ID サービスは別の ID をリクエストできません。しかし、`visitor.resetState()` を使用すると、この条件でも新しい ID をリクエストできます。
 
 以下のコードサンプルを参照してください。
 
-## 構文 {#section-9e63503e178f4be28ac850abf44d6d91}
+## 構文{#section-9e63503e178f4be28ac850abf44d6d91}
 
-**構文:**` visitor.resetState( *`state`*);`
+**構文：** ` visitor.resetState( *`state`*);`
 
 ## コードサンプル {#section-d75b211bb4ea473887eb284de2ad838b}
 
 ID サービスの実装は、この関数の使用方法に影響します。以下の表の例を参照してください。
 
-**サーバー側の実装**
+**サーバー側実装**
 
-サーバー側実装は、サーバーとクライアント側の実装を混在させ、 [!DNL Target][!DNL Analytics]IDサービスを使用するA4Tのお客様向けです。この方法を使用してIDサービスを設定している場合は、ページに追加 `visitor.resetState()` する必要があります。ID サービスの呼び出しにより自動的に新しい ID とサーバーの状態が返されます。
+サーバー側実装は、[!DNL Analytics]、[!DNL Target]、および ID サービスのサーバーおよびクライアント側実装を使用する A4T のお客様向けです。この方法で ID サービスを設定した場合は、ページに `visitor.resetState()` を追加するだけでかまいません。ID サービスの呼び出しにより自動的に新しい ID とサーバーの状態が返されます。
 
-**非標準実装（** ID付き）
+**非標準的な実装**（ID を渡す場合）
 
-ID サービスを[非標準的な実装](../../mcvid-implementation-guides/mcvid-implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113)で設定した場合、`visitor.resetState()` () と共に渡す SDID（またはその他の ID）を保持するための可変オブジェクトを設定する必要があります。以下に示すように、これには[組織 ID](../../mcvid-reference/mcvid-requirements.md#section-a02f537129a64ffbb690d5738d360c26) と、渡す ID が含まれます。コードは、以下の例のようになります。
+ID サービスを[非標準的な実装](../../mcvid-implementation-guides/mcvid-implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113)で設定した場合、`visitor.resetState()` と共に渡す SDID（またはその他の ID）を保持するための可変オブジェクトを設定する必要があります。以下に示すように、これには[組織 ID](../../mcvid-reference/mcvid-requirements.md#section-a02f537129a64ffbb690d5738d360c26) と、渡す ID が含まれます。コードは、以下の例のようになります。
 
 ```js
 //Instantiate server state variable 
@@ -61,9 +61,9 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 visitor.resetState(serverState);
 ```
 
-**非標準的な実装** （IDを渡さない）
+**非標準的な実装**（ID を渡さない場合）
 
-この場合、新しい `visitor.resetState()` IDを生成するために使用できます。これは、シングルページアプリで、ユーザーがページを更新せずに新しい画面に移動し、新しい ID が必要となったときに便利です。
+この場合は、`visitor.resetState()` を使用して新しい ID を生成できます。これは、シングルページアプリで、ユーザーがページを更新せずに新しい画面に移動し、新しい ID が必要となったときに便利です。
 
 ```js
  
@@ -89,4 +89,4 @@ var sdid2 = visitor.getSupplementalDataID("consumer4"); // sdid2: 5678
 
 **Dynamic Tag Manager（DTM）**
 
-現在、`visitor.resetState()` () を DTM で使用するための設定方法はありません。
+現在、`visitor.resetState()` を DTM で使用するための設定方法はありません。
