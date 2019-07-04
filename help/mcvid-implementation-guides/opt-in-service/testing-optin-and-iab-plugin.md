@@ -1,10 +1,10 @@
 ---
-description: Webサイトでオプトインを有効にしたら、検証方法を使用して、ブラウザーの開発者ツールを使用して、サービスが期待どおりに動作していることをテストします。
-seo-description: Webサイトでオプトインを有効にしたら、検証方法を使用して、ブラウザーの開発者ツールを使用して、サービスが期待どおりに動作していることをテストします。
+description: Web サイトでオプトインを有効にしたら、検証方法を使用して、ブラウザーの開発者ツールでサービスが期待どおりに動作しているかどうかをテストします。
+seo-description: Web サイトでオプトインを有効にしたら、検証方法を使用して、ブラウザーの開発者ツールでサービスが期待どおりに動作しているかどうかをテストします。
 seo-title: オプトインサービスの検証
 title: オプトインサービスの検証
-uuid: 1743360a- d757-4e50-8697-0fa92b302cbc
-translation-type: tm+mt
+uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -12,9 +12,9 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 # オプトインサービスの検証{#validating-opt-in-service}
 
-Webサイトでオプトインを有効にしたら、検証方法を使用して、ブラウザーの開発者ツールを使用して、サービスが期待どおりに動作していることをテストします。
+Web サイトでオプトインを有効にしたら、検証方法を使用して、ブラウザーの開発者ツールでサービスが期待どおりに動作しているかどうかをテストします。
 
-## 使用例1:オプトインの有効化 {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## 使用例 1：オプトインを有効にする {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -30,7 +30,7 @@ Chrome で、Web ページを右クリックして「検証」を選択します
 
 この例では、ECID、AAM、Analytics、Target という Adobe JS タグがページにインストールされています。
 
-**オプトインが期待どおりに動作することを証明する方法。**
+**オプトインが期待どおりに動作していることを証明する方法：**
 
 アドビのサーバーに対するリクエストは表示されません。
 
@@ -42,7 +42,7 @@ Chrome で、Web ページを右クリックして「検証」を選択します
 
 >[!NOTE]
 >
->呼び出しを確認できます。これ `http://dpm.demdex.net/optOutStatus`は、訪問者のオプトアウトステータスを取得するために使用されるREAD ONONLYエンドポイントです。このエンドポイントでは、サードパーティ Cookie が作成されることも、ページから情報が収集されることもありません。
+>`http://dpm.demdex.net/optOutStatus` の呼び出しが表示される場合があります。これは、訪問者のオプトアウトステータスを取得するために使用される読み取り専用のエンドポイントです。このエンドポイントでは、サードパーティ Cookie が作成されることも、ページから情報が収集されることもありません。
 
 アドビのタグによって作成された Cookie（AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2）は表示されません。
 
@@ -50,7 +50,7 @@ Chrome で、「*Application*」タブに移動し、「*Storage*」の「*Cooki
 
 ![](assets/use_case_1_2.png)
 
-## 使用例 2：オプトインとストレージを有効にする {#section-bd28326f52474fa09a2addca23ccdc0f}
+## 使用例 2：オプトインとストレージを有効にする{#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -61,7 +61,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 使用例 2 で唯一異なる点は、訪問者から提供されたオプトインの権限が含まれる*新しい Cookie* として **adobeujs-optin** が表示されることです。
 
-## 使用例 3：オプトインを有効にして Adobe Analytics を事前承認する {#section-257fe582b425496cbf986d0ec12d3692}
+## 使用例 3：オプトインを有効にして Adobe Analytics を事前承認する{#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -81,7 +81,7 @@ Adobe Analytics ではオプトインが事前に承認されているので、�
 
 ![](assets/use_case_3_2.png)
 
-## 使用例 4：オプトインと IAB を有効にする {#section-64331998954d4892960dcecd744a6d88}
+## 使用例 4：オプトインと IAB を有効にする{#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
