@@ -4,14 +4,14 @@ keywords: ID サービス
 seo-description: 同じレポートスイートにデータを送信する複数の JavaScript ファイルがある場合、またはサイト上で Flash ビデオによる測定などの他のテクノロジーを使用している場合は、猶予期間を設定することをお勧めします。
 seo-title: ID サービスの猶予期間
 title: ID サービスの猶予期間
-uuid: 10a7db7d- de32-4379-914f- edaf929efa32
-translation-type: tm+mt
+uuid: 10a7db7d-de32-4379-914f-edaf929efa32
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
 
 
-# ID サービスの猶予期間{#the-id-service-grace-period}   
+# ID サービスの猶予期間{#the-id-service-grace-period}
 
 同じレポートスイートにデータを送信する複数の JavaScript ファイルがある場合、またはサイト上で Flash ビデオによる測定などの他のテクノロジーを使用している場合は、猶予期間を設定することをお勧めします。
 
@@ -23,14 +23,14 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 >[!NOTE]
 >
->猶予期間のサポートには [!DNL Experience Cloud] 、IDサービスのバージョン1.3以降が必要です。
+>猶予期間のサポートには、[!DNL Experience Cloud] ID サービスバージョン 1.3 以降が必要です。
 
-## 猶予期間が必要な場合 {#section-fd34c7ff697348a39f49258b7d39eb42}
+## 猶予期間が必要な場合{#section-fd34c7ff697348a39f49258b7d39eb42}
 
-Analytics JavaScript ファイルが 1 つのみで、他の AppMeasurement ライブラリを使用していない場合は、猶予期間は必要ありません。1 つの JavaScript ファイルを更新すると、新しい訪問者は、訪問の間、一貫して Marketing Cloud ID を使用して識別されます。
+Analytics JavaScript ファイルが 1 つのみで、他の AppMeasurement ライブラリを使用していない場合は、猶予期間は必要ありません。1 つの JavaScript ファイルを更新すると、新しい訪問者は、訪問の間、一貫して Experience Cloud ID を使用して識別されます。
 
 *同じレポートスイート*にデータを送信する複数の JavaScript ファイルがある場合、またはサイト上で Flash ビデオによる測定などの他のテクノロジーを使用している場合は、猶予期間を設定することをお勧めします。
 
-## 猶予期間を有効にするには {#section-512d5cd8570e483cbdd8b04457a16ced}
+## 猶予期間を有効にするには{#section-512d5cd8570e483cbdd8b04457a16ced}
 
-カスタマーケアに [お問い合わせ](https://helpx.adobe.com/marketing-cloud/contact-support.html)ください。
+[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください。
