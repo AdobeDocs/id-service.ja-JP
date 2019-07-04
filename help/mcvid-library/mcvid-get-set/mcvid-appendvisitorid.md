@@ -5,7 +5,7 @@ seo-description: この関数を使用すると、ブラウザーでサードパ
 seo-title: appendVisitorIDsTo（クロスドメイントラッキング）
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -25,22 +25,22 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ## ブラウザーでサードパーティ Cookie がブロックされている場合に複数のドメインをまたいで訪問者を追跡する {#section-7251d88befd440b4b79520e33c5aa44a}
 
-IDサービスは、訪問者がサイトを訪問したときにファーストパーティCookieとサードパーティCookieをブラウザーに書き込みます（ [cookieとExperience Cloud IDサービス](../../mcvid-introduction/mcvid-cookies.md) を参照）。ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。サードパーティ Cookie には、ID サービスで MID を生成するために使用される別の ID が含まれます。ブラウザーでサードパーティ Cookie がブロックされている場合、ID サービスは以下のことができなくなります。
+ID サービスは、ユーザーがサイトを訪問したときにファーストパーティ Cookie とサードパーティ Cookie をブラウザーに書き込みます（[Cookie と Experience Cloud ID サービス](../../mcvid-introduction/mcvid-cookies.md)を参照）。ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。サードパーティ Cookie には、ID サービスで MID を生成するために使用される別の ID が含まれます。ブラウザーでサードパーティ Cookie がブロックされている場合、ID サービスは以下のことができなくなります。
 
 * サイト訪問者が別のドメインに移動したときに、その訪問者の一意の ID を再生成する。
 * 同じ組織が所有する異なるドメインにわたって訪問者を追跡する。
 
-この問題を解決するには、URLを実装 ` Visitor.appendVisitorIDsTo( *``*)`してください。これにより、ブラウザーがサードパーティ Cookie をブロックしても、ID サービスが複数ドメインにわたってサイト訪問者を適切に追跡できます。このプロパティは以下のように動作します。
+この問題を解決するには、` Visitor.appendVisitorIDsTo( *`url`*)` を実装します。これにより、ブラウザーがサードパーティ Cookie をブロックしても、ID サービスが複数ドメインにわたってサイト訪問者を適切に追跡できます。このプロパティは以下のように動作します。
 
-* 訪問者が他のドメインを閲覧するとき、 ` Visitor.appendVisitorIDsTo( *`URL`*)` は元のドメインから宛先ドメインへのURLリダイレクトにクエリパラメーターとしてMIDを追加します。
+* 訪問者が同じ組織の他のドメインを参照すると、` Visitor.appendVisitorIDsTo( *`url`*)` によって、元のドメインから宛先ドメインへの URL リダイレクトのクエリパラメーターとして MID が追加されます。
 * アドビに訪問者の ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から MID が抽出されます。このリクエストにはサードパーティ Cookie が含まれますが、このケースではサードパーティ Cookie を利用できません。
 * 宛先ページの ID サービスコードは、MID で渡された値を使用して訪問者を追跡します。
 
 詳しくは、コードサンプルを参照してください。
 
-## 訪問者 ID コードサンプルを追加する {#section-62d55f7f986542b0b9238e483d50d7b0}
+## 訪問者 ID コードサンプルを追加する{#section-62d55f7f986542b0b9238e483d50d7b0}
 
-次の例は、URLの使用 ` Visitor.appendVisitorIDsTo( *`を開始するのに役立ち`*)`ます。設定が完了すると、JavaScript コードは以下の例のようになります。
+次の例では、` Visitor.appendVisitorIDsTo( *`url`*)` の基本を学ぶことができます。設定が完了すると、JavaScript コードは以下の例のようになります。
 
 ```js
 //Code on Domain A 
@@ -60,7 +60,7 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
 //Redirect to the destination
 ```
 
-## Dynamic Tag Management（DTM）および SDK のサポート {#section-168e313df6054af0a7e27b9fa0d69640}
+## Dynamic Tag Management（DTM）および SDK のサポート{#section-168e313df6054af0a7e27b9fa0d69640}
 
 <table id="table_6E7152B4FD2B4C4D8C9477C68204C4FF"> 
  <thead> 
@@ -72,14 +72,14 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>DTM</b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://helpx.adobe.com/dtm/kb/how-to-set-marketing-cloud-id-service-helper-function-in-adobe-d.html" format="https" scope="external"> DTM で appendVisitorIDTo 関数を設定する </a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://helpx.adobe.com/jp/dtm/kb/how-to-set-marketing-cloud-id-service-helper-function-in-adobe-d.html" format="https" scope="external"> DTM で appendVisitorIDTo 関数を設定する </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://marketing.adobe.com/resources/help/en_US/mobile/android/mc_methods.html" format="https" scope="external"> Android ID サービスメソッド </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://marketing.adobe.com/resources/help/en_US/mobile/ios/mc_methods.html" format="https" scope="external"> iOS ID サービスメソッド </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://marketing.adobe.com/resources/help/ja_JP/mobile/android/mc_methods.html" format="https" scope="external"> Android ID サービスメソッド </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://marketing.adobe.com/resources/help/ja_JP/mobile/ios/mc_methods.html" format="https" scope="external"> iOS ID サービスメソッド </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
