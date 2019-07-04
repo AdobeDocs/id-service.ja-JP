@@ -5,7 +5,7 @@ seo-description: 2016 年の Experience Cloud ID サービスの機能リリー�
 seo-title: 2016 年リリースノート
 title: 2016 年リリースノート
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,16 +15,16 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 2016 年の Experience Cloud ID サービスの機能リリース、更新、変更点です。
 
-これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)にも記載されています。過去の発表内容については、[以前のリリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)を参照してください。[!DNL Experience Cloud]
+これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/) にも記載されています。過去の [!DNL Experience Cloud] のお知らせについては、[以前のリリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/?f=c_legacy_releases.html)を参照してください。
 
-## バージョン1.10 {#section-7d719b3213344a46858835042e0214ed}
+## バージョン 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
 2016 年 11 月
 
 >[!IMPORTANT]
 >
->* バージョン1.10には1.8.0が必要 [!DNL AppMeasurement] です。
->* Experience Cloud ID サービスライブラリ 2.0.0 以降を使用している場合は、Adobe Media Manager の ID 同期はデフォルトで開始されます。[ID 同期と一致率について](https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-match-rates.html)を参照してください。
+>* バージョン 1.10 には [!DNL AppMeasurement] 1.8.0 が必要です。
+>* Experience Cloud ID サービスライブラリ 2.0.0 以降を使用している場合は、Adobe Media Manager の ID 同期はデフォルトで開始されます。[ID の同期と一致率について](https://marketing.adobe.com/resources/help/ja_JP/mcvid/mcvid-match-rates.html)を参照してください。
 >
 
 
@@ -32,18 +32,18 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 **修正点および改善点**
 
 * サーバー側環境での ID サービスの実装方法に関する説明を追加しました。
-* クロスドメイン遷移時に Experience Cloud と Analytics の ID を上書きできるブール関数である `Visitor.overwriteCrossDomainMCIDAndAID` が追加されました。詳しくは、訪問者ID [の上書きを](../mcvid-library/mcvid-function-vars/mcvid-overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)参照してください。
+* クロスドメイン遷移時に Experience Cloud と Analytics の ID を上書きできるブール関数である `Visitor.overwriteCrossDomainMCIDAndAID` が追加されました。[訪問者 ID の上書き](../mcvid-library/mcvid-function-vars/mcvid-overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)を参照してください。
 
-* `TS = UTC` timestamp が `visitor.appendVisitorIDsTo` 関数のプロパティとして追加されました。ID サービスではタイムスタンプを使用して、5 分間隔でリダイレクト URL に ID を使用するかどうかを決定します。詳しくは、 [訪問者 ID 追加関数](../mcvid-library/mcvid-get-set/mcvid-appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
+* `TS = UTC` timestamp が `visitor.appendVisitorIDsTo` 関数のプロパティとして追加されました。ID サービスではタイムスタンプを使用して、5 分間隔でリダイレクト URL に ID を使用するかどうかを決定します。詳しくは、[訪問者 ID 追加関数](../mcvid-library/mcvid-get-set/mcvid-appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)を参照してください。
 
-* 地域IDを返す新しい関数が追加 `Visitor.getLocationHint,` されました。地域ID [の取得（ロケーションヒント）を参照](../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)してください。
+* 地域 ID を返す新しい関数である `Visitor.getLocationHint,` が追加されました。[地域 ID（ロケーションヒント）の取得](../mcvid-library/mcvid-get-set/mcvid-getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)を参照してください。
 
-* `idSyncByURL`Destination Publishing iFrame`idSyncByDataSource` で ID 同期を手動で実装するための 2 つの関数として、 と  が追加されました。URLまたはデータソースによる [ID同期を参照](../mcvid-library/mcvid-get-set/mcvid-idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48)してください。
+* ターゲットパブリッシング iFrame で ID 同期を手動で実装するための 2 つの関数として、`idSyncByURL` と `idSyncByDataSource` が追加されました。[URL またはデータソースによる ID 同期](../mcvid-library/mcvid-get-set/mcvid-idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48)を参照してください。
 
 * `disableThirdPartyCalls:true` の場合に AppMeasurement のトラッキングコールがブロックされる問題を修正しました。
 * 異なるドメイン間で Experience Cloud ID（MID）が渡されなかった、ID サービスの問題を修正しました。
 
-## バージョン1.9.0 {#section-04e1b4d4b10d40468f2116b8119998e7}
+## バージョン 1.9.0 {#section-04e1b4d4b10d40468f2116b8119998e7}
 
 2016 年 10 月
 
@@ -55,9 +55,9 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 **新規および改訂されたドキュメント**
 
-**新規:**[AMCV cookieからの地域およびユーザーIDの取得](../mcvid-reference/mcvid-regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
+**新規：** [AMCV Cookie から地域とユーザー ID を取得する](../mcvid-reference/mcvid-regions.md#concept-15b2c8c894b846a48f1f61a353cfdf4e)
 
-## バージョン1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
+## バージョン 1.8.0 {#section-69f2eb5b246b4c7aafe116b7a2a5448a}
 
 2016 年 9 月
 
@@ -71,7 +71,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 **修正点および改善点**
 
-* 関数 `idSyncAttachIframeOnWindowLoad` で設定できるオプションのブール値のフラグとして、`Visitor.getInstance` が追加されました。`idSyncAttachIframeOnWindowLoad= true` の場合、ID サービスは、ウィンドウの読み込み時に ID 同期 iFrame を読み込みます。デフォルトでは、ID サービスは、可能な限り迅速に iFrame を読み込みます。このフラグは、廃止される * に代わるものです。*`idSyncAttachIframeASAP`[Visitor. getInstance関数変数](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md)を参照してください。
+* 関数 `idSyncAttachIframeOnWindowLoad` で設定できるオプションのブール値のフラグとして、`Visitor.getInstance` が追加されました。`idSyncAttachIframeOnWindowLoad= true` の場合、ID サービスは、ウィンドウの読み込み時に ID 同期 iFrame を読み込みます。デフォルトでは、ID サービスは、可能な限り迅速に iFrame を読み込みます。このフラグは、廃止される * に代わるものです。*`idSyncAttachIframeASAP`[Visitor.getInstance 関数の変数](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md)を参照してください。
 
 * ドメイン、ネイティブアプリおよびハイブリッドアプリから Web 移行への [!DNL Experience Cloud] ID のトラッキングをサポートする機能が追加されました。[訪問者 ID 追加ヘルパー関数](../mcvid-library/mcvid-get-set/mcvid-appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)を参照してください。
 
@@ -79,19 +79,19 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 **新規および改訂されたドキュメント**
 
-改訂済み： [Experience Cloud ID サービスの要件](../mcvid-reference/mcvid-requirements.md)
+改訂済み：[Experience Cloud ID サービスの要件](../mcvid-reference/mcvid-requirements.md)
 
 **既知の問題**
 
-[!DNL Audience Manager] DIL コードと visitorAPI.js コードを同じページに使用しているお客様は、DIL 変数 `secureDataCollection= false` を設定する必要があります。[secureDataCollection](https://marketing.adobe.com/resources/help/en_US/aam/?f=dil-secure-data-collection.html) を参照してください。
+[!DNL Audience Manager] DIL コードと visitorAPI.js コードを同じページに使用しているお客様は、DIL 変数 `secureDataCollection= false` を設定する必要があります。[secureDataCollection](https://marketing.adobe.com/resources/help/ja_JP/aam/?f=dil-secure-data-collection.html) を参照してください。
 
-## バージョン1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
+## バージョン 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
 2016 年 7 月
 
 >[!IMPORTANT]
 >
->[!DNL Experience Cloud] IDサービス *のバージョン1.6.0では* 、AppMeasurement for JavaScriptバージョン1.6.2が必要です。IDサービスバージョン1.6.0にアップグレードする場合は、適切なAppMeasurementコードバージョンを使用していることを確認してください。
+>[!DNL Experience Cloud] ID サービスの バージョン 1.6.0 には、JavaScript 版 AppMeasurement バージョン 1.6.2 が*必要*です。ID サービスバージョン 1.6.0 にアップグレードする場合は、適切な AppMeasurement コードバージョンを使用していることを確認してください。
 
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 
@@ -116,10 +116,10 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 * `dpm.demdex.net` への ID 同期呼び出しに `d_fieldgroup` パラメーターが追加されました。この新しいパラメーターは、内部のトラブルシューティングおよびデバッグの目的で使用されます。
 
 * ID サービスが生成する iFrame にタイトル属性が追加されました。iFrame のタイトルを指定すると、目の不自由な利用者向けにスクリーンリーダーで読み上げ可能なページ情報を提供できます。iFrame のタイトル属性は `Adobe ID Syncing iFrame` に設定されます。
-* 関数 `Visitor.getInstance` で設定できるオプションのフラグとして、`idSyncAttachIframeASAP: true` が追加されました。`true` の場合、ID サービスは ID 同期 iFrame をできるだけ早く読み込みます。これにより、ID 同期の一致率が向上します。デフォルトでは、ID サービスはウィンドウの読み込み時に iFrame を読み込みます。[Visitor. getInstance関数変数](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md)を参照してください。
+* 関数 `Visitor.getInstance` で設定できるオプションのフラグとして、`idSyncAttachIframeASAP: true` が追加されました。`true` の場合、ID サービスは ID 同期 iFrame をできるだけ早く読み込みます。これにより、ID 同期の一致率が向上します。デフォルトでは、ID サービスはウィンドウの読み込み時に iFrame を読み込みます。[Visitor.getInstance 関数の変数](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md)を参照してください。
 
 * AppMeasurement で無限ループが発生するコールバック関数の問題を修正しました。
-* `loadTimeout` 間隔のデフォルトが 500 ミリ秒から 30,000 ミリ秒に変更されました。[Visitor. getInstance関数変数](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md)を参照してください。
+* `loadTimeout` 間隔のデフォルトが 500 ミリ秒から 30,000 ミリ秒に変更されました。[Visitor.getInstance 関数の変数](../mcvid-library/mcvid-function-vars/mcvid-function-vars.md)を参照してください。
 
 **新規および改訂されたドキュメント**
 
@@ -133,7 +133,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 * [Experience Cloud ID サービスの要件](../mcvid-reference/mcvid-requirements.md)
 * [Experience Cloud ID サービスのテストと検証](../mcvid-implementation-guides/mcvid-test-verify.md)
 
-## バージョン1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
+## バージョン 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
 2016 年 6 月
 
@@ -147,11 +147,11 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
  <tbody> 
   <tr> 
    <td colname="col1"> <p><span class="codeph">iframe.sandbox</span> 属性の変更 </p> </td> 
-   <td colname="col2"> <p>iFrame で、<span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span> が設定できるようになりました。 </p> <p>これらの 2 トークンのみを許可することは、セキュリティを強化し、ID サービスに ID 同期で必要となる基本機能を提供するのに役立ちます。 </p> <p>sandbox 属性は、Internet Explorer のバージョン 9 以前ではサポートされていません。詳細については、この <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame ドキュメント</a>の属性の節を参照してください。 </p> </td> 
+   <td colname="col2"> <p>iFrame で、<span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span> が設定できるようになりました。 </p> <p>これらの 2 トークンのみを許可することは、セキュリティを強化し、ID サービスに ID 同期で必要となる基本機能を提供するのに役立ちます。 </p> <p>sandbox 属性は、Internet Explorer のバージョン 9 以前ではサポートされていません。詳細については、この <a href="https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame ドキュメント</a>の属性の節を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Experience Cloud ID（MID）のエンコード </p> </td> 
-   <td colname="col2"> <p>ID サービスは、サーバーから返される、または <span class="codeph">visitor.setMarketingCloudVisitorID()</span> 関数で設定された、MID 値をエンコードするようになります。MIDについて詳しくは <a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local"> 、cookieとExperience Cloud ID </a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>ID サービスは、サーバーから返される、または <span class="codeph">visitor.setMarketingCloudVisitorID()</span> 関数で設定された、MID 値をエンコードするようになります。MID について詳しくは、<a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local">Cookie と Experience Cloud ID</a> を参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -160,7 +160,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 訪問者 API は、従来の Analytics 訪問者 ID がない場合の、Audience Manager を使用した余分な再同期の呼び出しを強制しなくなりました。
 
-## バージョン 1.5.x {#section-a62ae48275324058b57edf66ee5a579f}
+## バージョン 1.5.x{#section-a62ae48275324058b57edf66ee5a579f}
 
 2016 年 5 月
 
@@ -178,7 +178,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 [Experience Cloud ID サービスの Target への実装](../mcvid-implementation-guides/mcvid-setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
-## バージョン1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
+## バージョン 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
 2016 年 3 月
 
@@ -207,7 +207,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 * [Experience Cloud ID サービス移行の判断ポイント](../mcvid-reference/mcvid-analytics-reference/mcvid-migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257)：テキストをわかりやすく修正しました。単一のドメインを使用する場合は、データ収集 CNAME の管理を終了したい場合に、その使用を停止できます。ただし、CNAME が機能している場合には、変更する必要はありません。
 
-## バージョン 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
+## バージョン 1.5.3{#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
 2016 年 1 月
 
