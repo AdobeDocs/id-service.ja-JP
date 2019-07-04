@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると、ターゲットパブリッシング iFrame で ID 同期を手動で実装できます。これらは、VisitorAPI.js バージョン 1.10 以降で利用できます。
 seo-title: URL またはデータソースによる ID 同期
 title: URL またはデータソースによる ID 同期
-uuid: ff83d910-8375-4295-9f2a- e14c15eee09a
-translation-type: tm+mt
+uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -91,13 +91,13 @@ ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると
 
 両方の関数は、以下のマクロを受け付けます。
 
-* ** `%TIMESTAMP%`:**タイムスタンプを生成します（ミリ秒単位）。キャッシュバスティングに使用されます。
-* ** `%DID%`:**ユーザーのAudience Manager IDを挿入します。
-* ** `%HTTP_PROTO%`:**通信プロトコル（ `http` また `https`は）を設定します。
+* `%TIMESTAMP%`：タイムスタンプを生成します（ミリ秒単位）。キャッシュバスティングに使用されます。
+* `%DID%`：ユーザーの Audience Manager ID を挿入します。
+* ** `%HTTP_PROTO%` **：通信プロトコルを設定します（`http` または `https`）。
 
 ## サンプルコードと出力 {#section-0115615c37584a19a2ab11e917c4e7e9}
 
-両方の関数が成功した場合に返さ `Successfully queued` れます。そうでない場合、エラーメッセージを返します。
+両方の関数は、成功した場合、`Successfully queued` を返します。そうでない場合、エラーメッセージを返します。
 
 **visitor.idSyncByURL**
 
@@ -110,15 +110,15 @@ ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code class="syntax javascript"> //Instatiate訪問者
-var visitor= Visitor. getInstance（"MARKETING- CLOUD- ORG- ID"，{}）;{}）;
+   <td colname="col1"> <p> <code class="syntax javascript"> //Instatiate Visitor 
+      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
 
-    //&amp; amp;nbsp;amp&amp; amp;nbsp;url&amp; amp;nbsp;with&amp; amp;nbsp;マクロ&amp; amp;nbsp;replaceVisitor
-    . idSyncByURL（{
-    &amp; amp;nbsp;dpid:&amp; amp;nbsp;24&#39;amp; amp;nbsp;//&amp; amp;nbsp;must&amp; amp;nbsp;amp&amp; amp;nbsp;1amp（&amp; amp）;nbsp;文字列
-    amp;nbsp;url:&amp; amp;nbsp;&#39;//su.addthis.com/red/usync?pid=16&amp;amp;puid=%DID%&amp;amp;url=%HTTP_PROTO%%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D&#39;,&amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp
-    ;
-    }）;&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+    //&amp;nbsp;Fires&amp;nbsp;url&amp;nbsp;with&amp;nbsp;macros&amp;nbsp;replaced
+    visitor.idSyncByURL({
+    &amp;nbsp;dpid:&amp;nbsp;&#39;24&#39;,&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
+    &amp;nbsp;url:&amp;nbsp;&#39;//su.addthis.com/red/usync?pid=16&amp;amp;puid=%DID%&amp;amp;url=%HTTP_PROTO%%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D&#39;,
+    &amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp;
+    }); &lt;/code&gt; &lt;/p&gt; &lt;/td&gt;
 <td colname="col2"> <p> <span class="codeph"> http://su.addthis.com/red/usync?pid=16&amp;puid=28777806459181003670799219185178493848&amp;url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D </span> </p> </td> 
   </tr> 
  </tbody> 
@@ -135,21 +135,21 @@ var visitor= Visitor. getInstance（"MARKETING- CLOUD- ORG- ID"，{}）;{}
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <code class="syntax javascript"> //Instantiate訪問者
-var visitor= Visitor. getInstance（"MARKETING- CLOUD- ORG- ID"，{}）;{}）;
+   <td colname="col1"> <p> <code class="syntax javascript"> //Instantiate Visitor 
+      var visitor = Visitor.getInstance("MARKETING-CLOUD-ORG-ID-HERE",{});
 
-    //&amp; amp;nbsp;amp&amp; amp;nbsp;&#39;http:/https:&#39;&amp;nbsp;+&amp;nbsp;&#39;//dpm.demdex.net/ibs:dpid=&amp;lt;dpid&amp;gt;&amp;amp;dpuuid=&amp;lt;dpuuid&amp;gt;&#39;visitor.idSyncByDataSource(
-    {
-    &amp; amp;nbsp;dpid:&amp; amp;nbsp;24&#39;amp; amp;nbsp;//&amp; amp;nbsp;must&amp; amp;nbsp;amp&amp; amp;nbsp;1amp（&amp; amp）;nbsp;文字列
-    amp;nbsp;dpuuid:&amp; amp;nbsp;98765&#39;，&amp; amp;nbsp;//&amp; amp;nbsp;must&amp; amp;nbsp;amp&amp; amp;nbsp;1amp（&amp; amp）;nbsp;文字列
-    amp;nbsp;minutesToLive:&amp; amp;nbsp;20160&amp; amp;nbsp;//&amp; amp;nbsp;オプション、amp;nbsp;default&amp; amp;nbsp;宛先（&amp; amp）;nbsp;20160&amp; amp;nbsp;minutes&amp; amp;nbsp;（14&amp; amp;nbsp;days）&amp; amp;nbsp;
-    }）;&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
+    //&amp;nbsp;Fires&amp;nbsp;&#39;http:/https:&#39;&amp;nbsp;+&amp;nbsp;&#39;//dpm.demdex.net/ibs:dpid=&amp;lt;dpid&amp;gt;&amp;amp;dpuuid=&amp;lt;dpuuid&amp;gt;&#39;
+    visitor.idSyncByDataSource({
+    &amp;nbsp;dpid:&amp;nbsp;&#39;24&#39;,&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
+    &amp;nbsp;dpuuid:&amp;nbsp;&#39;98765&#39;,&amp;nbsp;//&amp;nbsp;must&amp;nbsp;be&amp;nbsp;a&amp;nbsp;string
+    &amp;nbsp;minutesToLive:&amp;nbsp;20160&amp;nbsp;//&amp;nbsp;optional,&amp;nbsp;defaults&amp;nbsp;to&amp;nbsp;20160&amp;nbsp;minutes&amp;nbsp;(14&amp;nbsp;days)&amp;nbsp;
+    }); &lt;/code&gt; &lt;/p&gt; &lt;/td&gt;
 <td colname="col2"> <p> <span class="codeph"> http://dpm.demdex.net/ibs:dpid=24&amp;dpuuid=98765 </span> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
->* [DIL idSync](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_idsync.html)
+>* [DIL idSync](https://marketing.adobe.com/resources/help/ja_JP/aam/r_dil_idsync.html)
 
