@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: setCustomerIDs は、顧客 ID とその認証状態を定義する 1 つ以上のキーと値のペアを設定します。
 seo-title: setCustomerIDs
 title: setCustomerIDs
-uuid: 4f960f98- cec2-4db6-84ea-0259e2128ea2
-translation-type: tm+mt
+uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
