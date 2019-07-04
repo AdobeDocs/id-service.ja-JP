@@ -1,6 +1,6 @@
 ---
 source-git-commit: 676f6ca9c37f77fe24dbc3ceb9aef2d540b3adbe
-translation-type: tm+mt
+translation-type: ht
 
 ---
 # コントリビューション
@@ -15,7 +15,7 @@ translation-type: tm+mt
 
 ## コントリビューターガイドドキュメント
 
-[「寄稿者ガイド](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)」を参照してください。
+[コントリビューターガイドドキュメント](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)を参照してください。
 
 ## 質問がある場合
 
@@ -23,7 +23,7 @@ translation-type: tm+mt
 
 ## コントリビューター使用許諾契約
 
-このプロジェクトに対してサードパーティがおこなうコントリビューションには、署名されたコントリビューター使用許諾契約（CLA）が関連付けられている必要があります。この使用許諾契約は、アドビに対してそのコントリビューションをプロジェクトの一部として再配布する権限を認めるものです。[アドビの CLA に署名してください。](http://opensource.adobe.com/cla.html)アドビの CLA は 1 回提出すれば済みます。以前に提出したことがある場合は、再提出する必要はありません。
+このプロジェクトに対してサードパーティがおこなうコントリビューションには、署名されたコントリビューター使用許諾契約（CLA）が関連付けられている必要があります。この使用許諾契約は、アドビに対してそのコントリビューションをプロジェクトの一部として再配布する権限を認めるものです。[CLA に署名](http://opensource.adobe.com/cla.html)してください。アドビの CLA は 1 回提出すれば済みます。以前に提出したことがある場合は、再提出する必要はありません。
 
 ## コードのレビュー
 
@@ -40,4 +40,4 @@ submitting a pull request!
 
 ## セキュリティ上の問題
 
-セキュリティ上の問題はこのイシュートラッカーに報告しないでください。代わりに、[セキュリティ専門家に問題を報告します。](https://helpx.adobe.com/security/alertus.html)
+セキュリティ上の問題はこのイシュートラッカーに報告しないでください。代わりに、[セキュリティ専門家に問題を報告します。](https://helpx.adobe.com/jp/security/alertus.html)
