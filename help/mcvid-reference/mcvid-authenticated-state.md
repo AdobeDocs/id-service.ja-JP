@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: 通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID と認証状態を各訪問者に関連付けることができます。
 seo-title: 顧客 ID と認証状態
 title: 顧客 ID と認証状態
-uuid: 643df363-224a-463e- a332- be59926b47e7
-translation-type: tm+mt
+uuid: 643df363-224a-463e-a332-be59926b47e7
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,11 +17,11 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ## 認証状態 {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=attributes.html)として [!DNL Experience Cloud] にアップロードして、異なるソリューションからこのデータにアクセスすることができます。
+`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://marketing.adobe.com/resources/help/ja_JP/mcloud/?f=attributes.html)を [!DNL Experience Cloud] としてアップロードし、別のソリューションをまたいでこのデータにアクセスできます。
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` （顧客IDの同期）は、顧客属性およびコアサービス機能に必要です。顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。[!DNL Target] 顧客属性 `Visitor.AuthState.AUTHENTICATED` が機能する必要があります。例については、[コアサービス - ソリューションを有効にする方法](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services)を参照してください。
+>顧客属性とコアサービス機能には、`setCustomerIDs`（顧客 ID の同期）が必要です。顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。[!DNL Target] には、顧客属性を機能させるために `Visitor.AuthState.AUTHENTICATED` が必要です。例については、[コアサービス - コアサービスのソリューションを有効にする](https://marketing.adobe.com/resources/help/ja_JP/mcloud/?f=core_services)を参照してください。
 
 Experience Cloud ID サービス v1.5 以降の `setCustomerIDs` にはオプションの `AuthState` オブジェクトが含まれます。`AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。認証状態は整数値として返されます。
 
@@ -52,7 +52,7 @@ Experience Cloud ID サービス v1.5 以降の `setCustomerIDs` にはオプシ
  </tbody> 
 </table>
 
-## 認証状態のユースケース {#section-fe9560cc490943b29dac2c4fb6efd72c}
+## 認証状態のユースケース{#section-fe9560cc490943b29dac2c4fb6efd72c}
 
 ユーザーが Web プロパティに対して実行するアクションやユーザーの認証の有無に応じて、ユーザーに認証状態を割り当てることができます。下の表にいくつかの例を示します。
 
@@ -211,13 +211,13 @@ Object customerIDs = visitor.getCustomerIDs();
  }
 ```
 
-## SDK のサポート {#section-861c6b3b1ba645dda133dccb22ec7bb0}
+## SDK のサポート{#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
 [!DNL Experience Cloud] ID サービスは、アドビの Android および iOS SDK コードで顧客 ID と認証状態をサポートします。以下のコードライブラリを参照してください。
 
-* [Android SDK のメソッド](https://marketing.adobe.com/resources/help/en_US/mobile/android/?f=c_marketing_cloud.html)
-* [iOS SDK のメソッド](https://marketing.adobe.com/resources/help/en_US/mobile/ios/?f=marketing_cloud.html)
+* [Android SDK のメソッド](https://marketing.adobe.com/resources/help/ja_JP/mobile/android/?f=c_marketing_cloud.html)
+* [iOS SDK メソッド](https://marketing.adobe.com/resources/help/ja_JP/mobile/ios/?f=marketing_cloud.html)
 
 ## Analytics および Audience Manager ユーザー向けの注意点 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトとデータソースに関連付けられた統合コードが一致する必要があります。詳しくは、結合ルールコード [!DNL Visitor ID Service] の [設定](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html) ドキュメントの節を参照してください。
+宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトとデータソースに関連付けられた統合コードが一致する必要があります。詳しくは、[結合ルールコードの設定](https://marketing.adobe.com/resources/help/ja_JP/aam/?f=merge-rules-configure-code.html)ドキュメントの [!DNL Visitor ID Service] の節を参照してください。
