@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: この設定を使用すると、更新対象の ID サービスのバージョンに基づいて、孤立したり古くなったりした Experience Cloud ID（ECID）を消去できます。
 seo-title: resetBeforeVersion
 title: resetBeforeVersion
-uuid: b00d18b8-6720-42f9-9c83- bd306184cc0c
-translation-type: tm+mt
+uuid: b00d18b8-6720-42f9-9c83-bd306184cc0c
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
