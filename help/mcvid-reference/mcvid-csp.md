@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
 seo-title: コンテンツセキュリティポリシーおよび Experience Cloud ID サービス
 title: コンテンツセキュリティポリシーおよび Experience Cloud ID サービス
-uuid: 7399edf3-01c1-4730-834e- e2dd2c5791ff
-translation-type: tm+mt
+uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
 
-## CSP レビュー {#section-5fde5c00a678455c914b8307a8caab82}
+## CSP レビュー{#section-5fde5c00a678455c914b8307a8caab82}
 
 CSP は HTTP ヘッダー `Content-Security-Policy` を使用してブラウザーが許可したりページに読み込んだりするリソースのタイプを制御します。CSP を適用すると以下の問題を防ぐことができます。
 
@@ -53,14 +53,14 @@ CSP の使用は一般的であり、よく理解されています。このド�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>訪問者 ID サービス</b> </p> </td> 
-   <td colname="col2"> <p>CSP に <span class="codeph">*.demdex.net</span> を追加します。 </p> <p><span class="codeph"> demdex. net</span> ドメインの呼び出しは <a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local"> 、cookieとExperience Cloud IDサービス</a> およびID同期の生成に使用されます。<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> 
+   <td colname="col2"> <p>CSP に <span class="codeph">*.demdex.net</span> を追加します。 </p> <p><span class="codeph"> demdex.net</span> ドメインの呼び出しは、<a href="../mcvid-introduction/mcvid-cookies.md" format="dita" scope="local">Cookies および Experience Cloud ID サービス</a>の生成と、ID 同期用に使用されます。<a href="https://marketing.adobe.com/resources/help/ja_JP/aam/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
->* [コンテンツセキュリティポリシーリファレンス](https://content-security-policy.com/)
->* [MDN：コンテンツセキュリティポリシー](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+>* [コンテンツセキュリティポリシーのリファレンス](https://content-security-policy.com/)
+>* [MDN：コンテンツセキュリティポリシー](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/CSP)
 >* [Wikipedia：コンテンツセキュリティポリシー](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
