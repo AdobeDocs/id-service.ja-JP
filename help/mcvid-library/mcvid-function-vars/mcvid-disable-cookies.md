@@ -5,7 +5,7 @@ seo-description: Experience Cloud ID サービスがサードパーティの dem
 seo-title: disableThirdPartyCookies
 title: disableThirdPartyCookies
 uuid: 7ed5aa16-44ca-4702-878a-1a208ca95270
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -17,11 +17,11 @@ Experience Cloud ID サービスがサードパーティの demdex.net Cookie �
 
 >[!NOTE]
 >
->この設定は、 `idSyncDisable3rdPartySyncing` v3.0の2018年1月18日リリースで変更 `disableThirdPartyCookies` され、名前が変更されました。
+>この設定は従来 `idSyncDisable3rdPartySyncing` でしたが、2018 年 1 月 18 日の v3.0 リリースで `disableThirdPartyCookies` に名称変更されました。
 
-**構文:**`disableThirdPartyCookies: true|false` （デフォルトは `false`、です）。`VisitorAPI.js` v1.5.3以降の場合。
+**構文：**`disableThirdPartyCookies: true|false`（デフォルトは `false` です。）`VisitorAPI.js` v1.5.3 以降の場合。
 
-この場合 `disableThirdPartyCookies: true`、IDサービスはサードパーティのdemdex. net cookieを返しません（ [cookieとExperience Cloud IDサービスを参照してください](../../mcvid-introduction/mcvid-cookies.md) ）。サイトの訪問者のブラウザーにこの Cookie が既に設定されている場合、ID サービスが新しい Experience Cloud ID（MID）の作成や既存の ID の返却のためにこの Cookie を使用することはありません。代わりに、ID サービスは、ファーストパーティ Cookie に新しいランダムな MID を作成します。有効にすると、ID サービスを使用してデータを収集し、異なる Experience Cloud ソリューション間で共有できます。
+`disableThirdPartyCookies: true` のとき、ID サービスはサードパーティである demdex.net の Cookie（[Cookie と Experience Cloud ID サービス](../../mcvid-introduction/mcvid-cookies.md)を参照）を返しません。サイトの訪問者のブラウザーにこの Cookie が既に設定されている場合、ID サービスが新しい Experience Cloud ID（MID）の作成や既存の ID の返却のためにこの Cookie を使用することはありません。代わりに、ID サービスは、ファーストパーティ Cookie に新しいランダムな MID を作成します。有効にすると、ID サービスを使用してデータを収集し、異なる Experience Cloud ソリューション間で共有できます。
 
 **コードサンプル**
 
