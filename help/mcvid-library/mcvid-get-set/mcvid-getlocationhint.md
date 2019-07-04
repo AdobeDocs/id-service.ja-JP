@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: Experience Cloud ID サービス地域 ID を返します。地域 ID（またはロケーションヒント）は、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
 seo-title: getLocationHint
 title: getLocationHint
-uuid: cdc312b7- d270-4a5c- a2bb-0fbb37f1e2f4
-translation-type: tm+mt
+uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -15,9 +15,9 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 Experience Cloud ID サービス地域 ID を返します。地域 ID（またはロケーションヒント）は、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
 
-**構文:**` var *`変数名`* = visitor.getLocationHint()`
+**構文：** ` var *`変数名`* = visitor.getLocationHint()`
 
-地域 ID と対応する場所の一覧は、[DCS 地域 ID、場所、ホスト名](https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html)を参照してください。
+地域 ID と対応する場所の一覧は、[DCS 地域 ID、場所、ホスト名](https://marketing.adobe.com/resources/help/ja_JP/aam/dcs-regions.html)を参照してください。
 
 **コードサンプル**
 
