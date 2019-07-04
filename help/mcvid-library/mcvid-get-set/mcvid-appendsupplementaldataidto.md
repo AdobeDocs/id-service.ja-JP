@@ -5,7 +5,7 @@ seo-description: このヘルパーメソッドを使用すると、Supplemental
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
 uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -26,7 +26,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ## 構文およびコードサンプル {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**構文:**` appendSupplementalDataIDTo( *`URLSDID`*, *``*)`
+**構文：** ` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **コードサンプル**
 
@@ -40,7 +40,7 @@ var pageB = "www.domain.com/pageB";
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219");
 ```
 
-## サンプル出力 {#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
+## サンプル出力{#section-dbe02d7ff6bd4ad1a2a26bf9cff54fa4}
 
 以下に示すように、URL リダイレクトでは、訪問者の SDID、組織 ID、UNIX タイムスタンプが受信ページへの呼び出しに含まれます。
 
@@ -50,11 +50,11 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219
 
 ## sdidParamExpiry を使用した SDID タイムアウトの変更 {#section-99946715cefa4acc95200b093db5297e}
 
-[sdidParamExpiry](../../mcvid-library/mcvid-function-vars/mcvid-sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) 設定を使用すると、 `appendSupplementalDataIDTo` ヘルパー関数を使用して、あるページから別のページにそのIDを渡すときに、デフォルトのSDID有効期間の間隔を変更できます。デフォルトでは、受信ページの ID サービスコードは参照元ページによって送信された URL から SDID を 30 秒以内に取得します。受信ページの ID サービスコードが 30 秒以内に SDID を取得できない場合は新しい SDID を要求します。この機能は主に、あるページから別のページに SDID を渡す必要があり、このタイムアウト間隔を制御する必要がある A4T のユーザーを対象としています。
+[sdidParamExpiry](../../mcvid-library/mcvid-function-vars/mcvid-sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) 設定を使用すると、`appendSupplementalDataIDTo` ヘルパー関数を使用して、あるページから別のページに SDID を渡す際に、デフォルトの ID の有効期限を変更できます。デフォルトでは、受信ページの ID サービスコードは参照元ページによって送信された URL から SDID を 30 秒以内に取得します。受信ページの ID サービスコードが 30 秒以内に SDID を取得できない場合は新しい SDID を要求します。この機能は主に、あるページから別のページに SDID を渡す必要があり、このタイムアウト間隔を制御する必要がある A4T のユーザーを対象としています。
 
 デフォルトの SDID タイムアウトを変更したい場合は、次の構文を使用して `sdidParamExpiry` を `Visitor.getInstance` 関数に追加します。
 
-**構文:**` sdidParamExpiry: *`秒単位の時間`*`
+**構文：** ` sdidParamExpiry: *`時間（秒単位）`*`
 
 **コードサンプル**
 
