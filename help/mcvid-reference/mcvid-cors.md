@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Cloud ID サービスは、これらのクライアント側のクロスオリジンリソースリクエストを可能にする CORS 標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
 seo-title: Experience Cloud ID サービスでの CORS のサポート
 title: Experience Cloud ID サービスでの CORS のサポート
-uuid: e656b573-72a8-4312- a7d5-5cc3818f0a9e
-translation-type: tm+mt
+uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -25,9 +25,9 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ブラウザーは、両方のページがこれらの特徴を共有している場合にリクエストの続行を許可し、そうでない場合はリソースリクエストをブロックします。
 
-## 同一オリジンポリシーの問題を解決する CORS {#section-76c87ec3295d447bab220c84f138c235}
+## 同一オリジンポリシーの問題を解決する CORS{#section-76c87ec3295d447bab220c84f138c235}
 
-CORS は、異なるドメイン間でリソースをリクエストするための安全で効果的な方法を提供します。CORS 仕様には、リソースリクエストを送信、受信および評価するためにブラウザーが使用する HTTP ヘッダーのセットが含まれます。リソースリクエストの評価は、 *`preflight check`*. このチェックにより、ブラウザーとサーバーは、どのリクエストを許可またはブロックするかを判定します。プリフライトチェックは、リソースをリクエストするアプリ、API、スクリプトに対して透過的です。リソースリクエストで重要なのは、以下の 2 つのヘッダーです。
+CORS は、異なるドメイン間でリソースをリクエストするための安全で効果的な方法を提供します。CORS 仕様には、リソースリクエストを送信、受信および評価するためにブラウザーが使用する HTTP ヘッダーのセットが含まれます。リソースリクエストの評価は、*`preflight check`* と呼ばれます。このチェックにより、ブラウザーとサーバーは、どのリクエストを許可またはブロックするかを判定します。プリフライトチェックは、リソースをリクエストするアプリ、API、スクリプトに対して透過的です。リソースリクエストで重要なのは、以下の 2 つのヘッダーです。
 
 * `Origin`：リクエストのソースを識別するリクエストヘッダー。
 * `Access-Control-Allow-Origin`：リクエストがリクエスト元と共有できるかどうかを示す応答ヘッダー。
@@ -60,7 +60,7 @@ CORS は、異なるドメイン間でリソースをリクエストするため
  </tbody> 
 </table>
 
-[useCORSOnly](../mcvid-library/mcvid-function-vars/mcvid-use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)も参照してください。
+[useCORSOnly](../mcvid-library/mcvid-function-vars/mcvid-use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa) も参照してください。
 
 ## CORS を使用することのその他のメリット {#section-6f44f30694c44f95bf9854b8a2af8449}
 
@@ -76,7 +76,7 @@ CORS は、異なるドメイン間でリソースをリクエストするため
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>強化されたセキュリティ</b> </p> </td> 
-   <td colname="col2"> <p>CORS は、<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> を使用して、データをリクエストおよび転送します。この方法は、JSONP リクエストよりも安全です。DCS からの応答に含まれている可能性のある、任意の JavaScript を実行する方法がないことを保証します。CORS XMLHttpRequest 応答ペイロードは、ID サービス JavaScript によって解析され、単純にコールバック関数で実行されることはありません。 </p> <p> <p>注意：Cookie を受け入れるために、<span class="codeph">XMLHttpRequest</span> オブジェクトの <span class="codeph">withCredentials</span> プロパティを <span class="codeph">true</span> に設定する必要があります。このプロパティは、Chrome、Firefox、Internet Explorer（v10 以降）、Opera および Safari でサポートされます。 </p> </p> </td> 
+   <td colname="col2"> <p>CORS は、<a href="https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> を使用して、データをリクエストおよび転送します。この方法は、JSONP リクエストよりも安全です。DCS からの応答に含まれている可能性のある、任意の JavaScript を実行する方法がないことを保証します。CORS XMLHttpRequest 応答ペイロードは、ID サービス JavaScript によって解析され、単純にコールバック関数で実行されることはありません。 </p> <p> <p>注意：Cookie を受け入れるために、<span class="codeph">XMLHttpRequest</span> オブジェクトの <span class="codeph">withCredentials</span> プロパティを <span class="codeph">true</span> に設定する必要があります。このプロパティは、Chrome、Firefox、Internet Explorer（v10 以降）、Opera および Safari でサポートされます。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>パフォーマンスの向上</b> </p> </td> 
