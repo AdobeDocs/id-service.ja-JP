@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: Experience Cloud ID サービスを導入する前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法や JavaScript ファイルによってデータを収集する場合の潜在的な問題について理解する必要があります。
 seo-title: Experience Cloud ID サービス移行の判断ポイント
 title: Experience Cloud ID サービス移行の判断ポイント
-uuid: ee56b5de- fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: tm+mt
+uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -60,10 +60,10 @@ Experience Cloud ID サービスを導入する前に、このサービスが複
    <td colname="col1"> <p>単一のドメイン </p> </td> 
    <td colname="col2"> <p>単一のドメインを使用する場合は、データ収集 CNAME の管理を終了したい場合に、その使用を停止できます。ただし、CNAME が機能している場合には、変更する必要はありません。 </p> <p>CNAME を削除する場合： </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">新しいトラッキングサーバーが <a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external">RDC に準拠している</a>ことを確認します。 </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">新しいトラッキングサーバーが <a href="https://marketing.adobe.com/resources/help/ja_JP/whitepapers/rdc/" format="https" scope="external">RDC に準拠している</a>ことを確認します。 </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762"><span class="keyword">Experience Cloud</span> ID サービスに移行する数ヶ月前に、CNAME から RDC トラッキングサーバーに移行します。 </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i></i><span class="codeph">*.2o7.net</span> トラッキングサーバーは使用しないでください。 </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">訪問者の移行の設定方法については、<a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">カスタマーケア</a>にお問い合わせください。この設定により、訪問者を一貫性のある方法でカウントすることができます。 </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">訪問者の移行の設定方法については、<a href="https://helpx.adobe.com/jp/marketing-cloud/contact-support.html" format="https" scope="external">カスタマーケア</a>にお問い合わせください。この設定により、訪問者を一貫性のある方法でカウントすることができます。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
