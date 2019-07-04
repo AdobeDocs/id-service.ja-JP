@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: 2018 年の Experience Cloud ID サービスの機能リリース、更新、変更点です。
 seo-title: 2018 年リリースノート
 title: 2018 年リリースノート
-uuid: 771b5b11- a8e3-464c- b65e- b15135584ace
-translation-type: tm+mt
+uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
+translation-type: ht
 source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
 
 ---
@@ -27,7 +27,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
  <tbody> 
   <tr> 
    <td colname="col1"> <p>AMCV Cookie のセキュリティを強化しました </p> </td> 
-   <td colname="col2"> <p>内部セキュリティスキャン中に、DTM ライブラリを使用すると、セッション管理用の Cookie で適切な属性を指定できないことが判明しました。その結果、Cookie の情報が誤って共有される可能性があります。この問題を解決するために、お客様が AMCV Cookie を安全であると設定できる設定を追加しました。<a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-securecookie.html" format="https" scope="external">secureCookie</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>内部セキュリティスキャン中に、DTM ライブラリを使用すると、セッション管理用の Cookie で適切な属性を指定できないことが判明しました。その結果、Cookie の情報が誤って共有される可能性があります。この問題を解決するために、お客様が AMCV Cookie を安全であると設定できる設定を追加しました。<a href="https://marketing.adobe.com/resources/help/ja_JP/mcvid/mcvid-securecookie.html" format="https" scope="external">secureCookie</a> を参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -44,7 +44,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
  <tbody> 
   <tr> 
    <td colname="col1"> <p>AMCV Cookie のセキュリティを強化しました </p> </td> 
-   <td colname="col2"> <p>内部セキュリティスキャン中に、DTM ライブラリを使用すると、セッション管理用の Cookie で適切な属性を指定できないことが判明しました。その結果、Cookie の情報が誤って共有される可能性があります。この問題を解決するために、お客様が AMCV Cookie を安全であると設定できる設定を追加しました。「secureCookie」を参照してください。 </p> </td> 
+   <td colname="col2"> <p>内部セキュリティスキャン中に、DTM ライブラリを使用すると、セッション管理用の Cookie で適切な属性を指定できないことが判明しました。その結果、Cookie の情報が誤って共有される可能性があります。この問題を解決するために、お客様が AMCV Cookie を安全であると設定できる設定を追加しました。secureCookie を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>統合コードおよび ID は数字か空でない文字列にする必要があります </p> </td> 
@@ -57,7 +57,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
  </tbody> 
 </table>
 
-## バージョン 3.1.2 {#section-3cba186f74fe4f2186a9ca2e5e0a2514}
+## バージョン 3.1.2{#section-3cba186f74fe4f2186a9ca2e5e0a2514}
 
 <table id="table_9FA4E20C996746A2A4219C9A0F759AD1"> 
  <thead> 
@@ -74,11 +74,11 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
  </tbody> 
 </table>
 
-## バージョン 3.1.0 {#section-a20c8278bf9643018965330415091e53}
+## バージョン 3.1.0{#section-a20c8278bf9643018965330415091e53}
 
 >[!NOTE]
 >
->バージョン3.1.0から最新のバージョンにアップグレードすることをお勧めします。バージョン 3.1.2 の説明を参照してください。Adobe Launch、DTM および AppMeasurement 内で最新バンドルを使用できます。
+>できるだけ早期に、バージョン 3.1.0 から最新バージョンにアップグレードすることをお勧めします。バージョン 3.1.2 の説明を参照してください。Adobe Launch、DTM および AppMeasurement 内で最新バンドルを使用できます。
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -95,7 +95,7 @@ source-git-commit: bb687c1cd14aae7faef2565dcf9d041a1c06e3bd
  </tbody> 
 </table>
 
-## バージョン 3.0 {#section-5fcaef66e8b343238abeb10048dc5747}
+## バージョン 3.0{#section-5fcaef66e8b343238abeb10048dc5747}
 
 <table id="table_7E9224D6CC924A2DB5119171C9DC5443"> 
  <thead> 
