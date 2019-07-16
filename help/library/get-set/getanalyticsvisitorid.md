@@ -1,19 +1,19 @@
 ---
-description: Experience Cloud IDサービスが実装される前にs_ vi cookieに保存されていた従来のAnalytics ID（存在する場合）を返します。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
+description: Experience Platform IDサービスが実装される前にs_ vi cookieに保存されていた従来のAnalytics ID（存在する場合）を返します。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
 keywords: ID サービス
-seo-description: Experience Cloud IDサービスが実装される前にs_ vi cookieに保存されていた従来のAnalytics ID（存在する場合）を返します。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
+seo-description: Experience Platform IDサービスが実装される前にs_ vi cookieに保存されていた従来のAnalytics ID（存在する場合）を返します。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
-uuid: 6bb8ddfc-9fc1-4105- b377- d9b4d247a0f8
+uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Experience Cloud IDサービスが実装される前にs_ vi cookieに保存されていた従来のAnalytics ID（存在する場合）を返します。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
+Experience Platform IDサービスが実装される前にs_ vi cookieに保存されていた従来のAnalytics ID（存在する場合）を返します。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
 
 **構文** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
@@ -33,7 +33,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!TIP]
 >
->If you&#39;re an [!DNL Analytics] customer, also check for and send the [!DNL Analytics] ID to your function. 例えば、hidden フォーム要素の訪問者 ID を、データ挿入 API を使用するサーバー側のアプリケーションに渡す場合に、両方の識別子が必要になります。In this case, you should collect and return the [!DNL Experience Cloud] and [!DNL Analytics] visitor IDs. [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md)を参照してください。
+>[!DNL Analytics] ユーザーの場合は、さらに [!DNL Analytics] ID をチェックして独自の関数に送信します。例えば、hidden フォーム要素の訪問者 ID を、データ挿入 API を使用するサーバー側のアプリケーションに渡す場合に、両方の識別子が必要になります。その場合は、[!DNL Experience Cloud] と [!DNL Analytics] の訪問者 ID を取得して返してください。[getMarketingCloudVisitorID](../../library/get-set/getmcvid.md) を参照してください。
 
 **「aid」パラメーターは従来の値です**
 
@@ -43,14 +43,14 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 `aid` パラメーターは次の場合に、クエリ文字列内で使用されます。
 
-* [!DNL Experience Cloud] IDサービスが正しくデプロイされている。
+* [!DNL Experience Cloud] ID サービスが正しく導入されている場合。
 * サイトに訪問しているユーザーの [!DNL Analytics]s_vi Cookie[ に既に ](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/?f=cookies_analytics.html) ID が保存されている場合。
 
 **例 2**
 
-You will see the `aid` parameter in a query string when your organization is using a [grace period](../../reference/analytics-reference/grace-period.md) before fully implementing the ID service. If the user visiting your site is new, and you&#39;re not using a grace period, the visitor will get the `mid` ( [!DNL Experience Cloud] ID) parameter.
+`aid` パラメーターは、組織が ID サービスを完全に導入する前の[猶予期間](../../reference/analytics-reference/grace-period.md)を使用している場合に、クエリ文字列内で使用されます。サイトに訪問しているユーザーが新規ユーザーであり、組織が猶予期間を使用していない場合、訪問者には [!DNL Experience Cloud]（`mid` ID）パラメーターが送信されます。
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Analytics Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
 
