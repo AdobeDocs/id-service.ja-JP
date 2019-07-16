@@ -6,7 +6,7 @@ seo-title: 2015 年リリースノート
 title: 2015 年リリースノート
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -15,18 +15,18 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 2015 年版のリリースノートと更新情報です。
 
-## Version 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
+## バージョン 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
 2015 年 11 月
 
-児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく13歳未満の子供からの個人情報をオンラインで収集できません。COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。[Experience Cloud ID サービスでの COPPA のサポート](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)を参照してください。バージョン 1.5.3 以降でサポートされています。
+児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。See [COPPA Support in the Experience Platform Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). バージョン 1.5.3 以降でサポートされています。
 
 ## バージョン 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 2015 年 9 月
 
 * Safari ブラウザーでサードパーティの Cookie をブロックしている場合、同期サービスが機能しなかったバグを修正しました。（AAM-20764）
-* Calls to the ID service now include the version ID in the `d_visid_ver=` parameter. 返される ID は、内部チームが問題をトラブルシューティングしたりサポートするのに役立ちます。（AAM-20824）
+* ID サービスの呼び出しで、`d_visid_ver=` パラメーターにバージョン ID が含まれるようになりました。返される ID は、内部チームが問題をトラブルシューティングしたりサポートするのに役立ちます。（AAM-20824）
 
 ## バージョン 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
@@ -44,14 +44,14 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 このリリースのドキュメントで見直された内容は以下のとおりです。
 
-* [APIメソッドとコードライブラリ](../library/library.md#concept-ff27497375644a898d47984aefb21c97):コンテンツとテキストを再構成しました。ほとんどの場合、メソッドごとにページを設けました。
-* [Experience Cloud ID サービスの要件](../reference/requirements.md)：内容を改訂し、テキストを再構成しました。
+* [API メソッドとコードライブラリ](../library/library.md#concept-ff27497375644a898d47984aefb21c97)：コンテンツとテキストを再構成しました。ほとんどの場合、メソッドごとにページを設けました。
+* [Experience Platform IDサービスの要件](../reference/requirements.md):コンテンツを改訂し、テキストを再構成しました。
 
-## Version 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
+## バージョン 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 2015 年 7 月
 
-[!DNL Experience Cloud] ID サービスは複数の ID と認証状態をサポートします。この変更により、[!DNL Audience Manager] 関数で使用されているユーザー ID への `setCustomerIDs` DPID マッピングのサポートが完全に廃止されました。[顧客IDと認証状態を参照してください](../reference/authenticated-state.md)
+[!DNL Experience Cloud] ID サービスは複数の ID と認証状態をサポートします。この変更により、[!DNL Audience Manager] 関数で使用されているユーザー ID への `setCustomerIDs` DPID マッピングのサポートが完全に廃止されました。詳しくは、[顧客 ID と認証状態](../reference/authenticated-state.md)を参照してください。
 
 ## バージョン 1.4 {#section-f5c596f355b14da28f45c798df513572}
 
@@ -79,4 +79,4 @@ AAM Blob およびロケーションヒントの要求で、タイムアウト�
 
 2015 年 1 月
 
-Reworked `<head>/<body>` tag finding for JSONP request `<script>` tag container, as well as the creation of the `<script>` tag to account for different DOM implementations (HTML vs XHTML) with possibly different case sensitivity settings. （AN-9355）
+JSONP リクエストの `<head>/<body>` タグコンテナ用に `<script>` タグの検索を見直しました。また、大文字と小文字の区別に関する設定がそれぞれ異なる多様な DOM 実装（HTML か XHTML）に対応するための `<script>` タグを作成しました。（AN-9355）
