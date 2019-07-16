@@ -1,25 +1,25 @@
 ---
-description: 2017年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
+description: 2017年のExperience Platform IDサービスの機能リリース、更新、変更点です。
 keywords: ID サービス
-seo-description: 2017年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
+seo-description: 2017年のExperience Platform IDサービスの機能リリース、更新、変更点です。
 seo-title: 2017 年リリースノート
 title: 2017 年リリースノート
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # 2017 年リリースノート {#release-notes}
 
-2017年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
+2017年のExperience Platform IDサービスの機能リリース、更新、変更点です。
 
 これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)にも記載されています。以前の ID サービスリリースノートについては、[以前のリリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)またはこのページの下部にあるリンクを参照してください。
 
 >[!NOTE]
 >
->お客様向けリリースノートやコードの変更は、3月、4月、2017年5月、および10月には変更されません。これらの月の ID サービスコードは v2.1 から変更されていません。
+>2017 年 3 月、4 月、5 月、10 月については、お客様に関わるリリースノートおよびコード変更はありません。これらの月の ID サービスコードは v2.1 から変更されていません。
 
 ## バージョン 2.5 {#section-27b441509124493f80984ed09bd9e88b}
 
@@ -42,7 +42,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。オプションの <span class="codeph">visitor.FIELDS</span> 列挙を使用して、返される ID を制御することもできます。<a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。オプションの <span class="codeph">visitor.FIELDS</span> 列挙を使用して、返される ID を制御することもできます。<a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a> を参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -51,9 +51,9 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Chrome でブラウザーの戻るボタンをクリックしたときに ID サービスがエラー状態になる問題を修正しました。
 * ID サービスで、イベント呼び出し応答の地域 ID が変更されたときに ID 同期が再実行されるようになりました。
-* 新たに追加したドキュメント、[コンテンツセキュリティポリシーおよび Experience Cloud ID サービス](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)で、ID サービスで使用されるアドビドメインへの呼び出しをホワイトリストに登録する方法を説明しています。
+* 新たに追加したドキュメント、[IDサービスで使用されるアドビドメインへのホワイトリストの呼び出し方法を説明するコンテンツセキュリティポリシーおよびエクスペリエンスプラットフォームIDサービス](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
 
-## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
+## バージョン 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
 2017 年 8 月
 
@@ -74,9 +74,9 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **改訂されたドキュメント**
 
-更新および[FAQ](/help/faq-intro/faq-intro.md) を参照してください。[!DNL Experience Cloud]
+更新および[FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
 
-## Version 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
+## バージョン 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
 2017 年 7 月
 
@@ -106,7 +106,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 ## バージョン 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
-リリース日:2017年6月
+リリース日：2017 年 6 月
 
 <table id="table_7E412383E89D46759B00FE7328C9946F"> 
  <thead> 
@@ -161,9 +161,9 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  </tbody> 
 </table>
 
-## Version 2.1 {#section-5e666dc47c2f4f92999e92697d75799e}
+## バージョン 2.1 {#section-5e666dc47c2f4f92999e92697d75799e}
 
-リリース日:2017年2月
+リリース日：2017 年 2 月
 
 **機能**
 
@@ -177,11 +177,11 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> ID サービス API のプロパティ、<span class="codeph">idSyncContainerID</span></p> </td> 
-   <td colname="col2"> <p>このプロパティは、ID 同期用に <span class="keyword">Audience Manager</span> で使用されるコンテナ ID を設定します。<a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external">idSyncContainerID</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>このプロパティは、ID 同期用に <span class="keyword">Audience Manager</span> で使用されるコンテナ ID を設定します。<a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>ID サービス API メソッド <span class="codeph"> appendSupplementalDataIDTo( <span class="varname"> URL </span>, <span class="varname"> SDID</span>)</span></p> </td> 
-   <td colname="col2"> <p>この公開メソッドは、<span class="wintitle">Supplemental Data ID</span>（SDID）をクエリ文字列パラメーターとしてリダイレクト URL に追加します。<a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local"> appendSupplementalDataIDToを参照</a>してください。（MCID-285） </p> </td> 
+   <td colname="col1"> <p>ID サービス API メソッド、<span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>、<span class="varname"> SDID</span>)</span></p> </td> 
+   <td colname="col2"> <p>この公開メソッドは、<span class="wintitle">Supplemental Data ID</span>（SDID）をクエリ文字列パラメーターとしてリダイレクト URL に追加します。<a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local">appendSupplementalDataIDTo</a> を参照してください。（MCID-285） </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -194,13 +194,13 @@ ID サービスが原因で、AMCV Cookie に格納された ID を使用する�
 
 [様々な Experience Cloud ソリューションおよびサービスによる DNS プリフェッチの使用`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
 
-## Version 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
+## バージョン 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
 2017 年 1 月
 
 >[!IMPORTANT]
 >
->IDサービスコードv2.0は、デフォルトでIDを自動的にAdobe Media Managerと同期します。This means you&#39;ll see a call from the page to `cm.eversttech.net`, which is a legacy [!DNL Media Optimizer] domain controlled by [!DNL Adobe]. [ID 同期と一致率について](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)も参照してください。
+>ID サービスコード v2.0 はデフォルトで ID を自動的に Adobe Media Manager と同期します。つまり、ページから `cm.eversttech.net` への呼び出しが発生します。これは、[!DNL Adobe] が管理する従来の [!DNL Media Optimizer] ドメインです。[ID 同期と一致率について](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)も参照してください。
 
 **修正点および改善点**
 
