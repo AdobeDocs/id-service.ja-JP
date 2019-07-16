@@ -1,19 +1,19 @@
 ---
-description: Experience Cloud IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定で独自のサブドメイン名に変更します。
+description: Experience Platform IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定を使用して独自のサブドメイン名に変更します。
 keywords: ID サービス
-seo-description: Experience Cloud IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定で独自のサブドメイン名に変更します。
+seo-description: Experience Platform IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定を使用して独自のサブドメイン名に変更します。
 seo-title: audienceManagerServer および audienceManagerServerSecure
 title: audienceManagerServer および audienceManagerServerSecure
-uuid: e21cacf-5151-4d34- b0f7-9e90275f4c7c
+uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # audienceManagerServer および audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-Experience Cloud IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定で独自のサブドメイン名に変更します。
+Experience Platform IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定を使用して独自のサブドメイン名に変更します。
 
 **構文：**
 
@@ -22,14 +22,14 @@ Experience Cloud IDサービスへの呼び出しで使用されるデフォル�
 
 **目的**
 
-Normally, the [!DNL Experience Cloud] ID service makes calls to [!DNL Adobe] at `dpm.demdex.net`. この宛先への呼び出しは、あまりに一般的で、サードパーティのように見えるため、好まれない場合があります。ID サービスをよりファーストパーティらしく見せるためには、これらの設定を使用して、以下のように [!DNL Audience Manager] サブドメイン名を `demdex.net` に追加します。`dpm.demdex.net` 呼び出しについて詳しくは、[Demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)を参照してください。
+通常、[!DNL Experience Cloud] ID サービスは [!DNL Adobe] への呼び出しを `dpm.demdex.net` でおこないます。この宛先への呼び出しは、あまりに一般的で、サードパーティのように見えるため、好まれない場合があります。ID サービスをよりファーストパーティらしく見せるためには、これらの設定を使用して、以下のように [!DNL Audience Manager] サブドメイン名を `demdex.net` に追加します。`dpm.demdex.net` 呼び出しについて詳しくは、[Demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)を参照してください。
 
 **要件**
 
 これらの設定では、以下を使用する必要があります。
 
-* The [!DNL Audience Manager] subdomain name of record for your company. この名前はコンサルタントに確認するか、コンサルタントから取得してください。
-* The subdomain name associated with your [!DNL Organization ID].
+* 会社で登録している [!DNL Audience Manager] サブドメイン名。この名前はコンサルタントに確認するか、コンサルタントから取得してください。
+* [!DNL Organization ID] に関連付けられているサブドメイン名。
 * 同じサブドメイン名を持つ*両方の*設定パラメーター。
 
 **コードサンプル**
