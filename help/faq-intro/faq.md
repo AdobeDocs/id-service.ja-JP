@@ -1,43 +1,43 @@
 ---
-description: ID　サービス利用の特長、機能、課題に関するよくある質問
+description: ID サービス利用の特長、機能、課題に関するよくある質問
 keywords: ID サービス
-seo-description: ID サービス利用の特長、機能、課題に関するよくある質問です。
-seo-title: ID サービス FAQ
+seo-description: ID サービス利用の特長、機能、課題に関するよくある質問
+seo-title: ID サービス よくある質問（FAQ）
 title: ID サービス FAQ
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # ID サービス FAQ{#id-service-faqs}
 
-ID サービス利用の特長、機能、課題に関するよくある質問です。
+ID サービス利用の特長、機能、課題に関するよくある質問
 
-## 機能 {#section-659e89f8b9a74cb8afff35587dc96836}
+## 機能{#section-659e89f8b9a74cb8afff35587dc96836}
 
 **ID サービスにはどのような機能がありますか。**
 
-詳しくは、 [概要](../introduction/overview.md).
+詳しくは、[概要](../introduction/overview.md)を参照してください。
 
 **ID サービスが Experience Cloud ID を取得するための呼び出しをおこないません。なぜですか。**
 
-これは診断が難しい問題です。まず、サイトのコンテンツセキュリティポリシーのヘッダーを確認してください。厳格なセキュリティポリシーが適用されている場合は、設定により、ID サービスによるサードパーティ呼び出しがブロックされている可能性があります。詳しくは、 [コンテンツセキュリティポリシーおよび Experience Cloud ID サービス](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3).
+これは診断が難しい問題です。まず、サイトのコンテンツセキュリティポリシーのヘッダーを確認してください。厳格なセキュリティポリシーが適用されている場合は、設定により、ID サービスによるサードパーティ呼び出しがブロックされている可能性があります。詳しくは、[コンテンツセキュリティポリシーおよびエクスペリエンスプラットフォームIDサービス](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)を参照してください。
 
 **VisitorAPI.js ファイルの保存**
 
 VisitorAPI.js をモバイルアプリのローカルファイルとしてホストすると、問題が生じる場合があります。このファイルは、Web サーバーでホストすることをお勧めします。
 
-## Page load times and latency {#section-c78e148d8dbe4c77a436ef0f2af5434b}
+## ページ読み込み時間と待ち時間 {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
 **ID サービスの VisitorAPI.js ライブラリの場所は、ページ読み込み時間にどのように影響しますか。**
 
-Place the VisitorAPI.js library at the top of the page in the `<head>` section of your code. これにより、ページ本文の読み込み前に ID の呼び出しがおこなわれるので、ID が問題なく返される可能性が高くなります。
+VisitorAPI.js ライブラリはページ上部にあるコードの `<head>` セクションに配置してください。これにより、ページ本文の読み込み前に ID の呼び出しがおこなわれるので、ID が問題なく返される可能性が高くなります。
 
 ID サービス呼び出しは非同期であり、[demdex.net ドメイン](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) への唯一の呼び出しです。ID サービス呼び出しにより、ページ上で他の要素が読み込まれないようにブロックされることはありません。
 
-[!DNL Target] 顧客の場合、ページの中にIDサービスコードを配置 `<body>` すると [!DNL Target] 、呼び出しがブロックされる可能性が高くなる可能性があります。If you must place ID service code in the body of your page, it should be placed after the open `<body>` tag.
+[!DNL Target] を使用している場合、ページの `<body>` に ID サービスコードを配置すると、[!DNL Target] 呼び出しがブロックされる可能性が高くなります。ページ本文に ID サービスコードを配置しなければならない場合は、`<body>` 開始タグの後にこのコードを配置してください。
 
 **ID サービスは、ページが読み込まれるたびにサーバー呼び出しをおこないますか。**
 
@@ -47,7 +47,7 @@ ID サービス呼び出しは非同期であり、[demdex.net ドメイン](htt
 
 **ID サービスを利用する際、ページ読み込みが遅くなったりユーザーエクスペリエンスに影響したりする原因は何ですか。**
 
-考えうるすべての条件を並べるのは難しいことです。何十億人もの消費者クライアントがアドビのサービスに接続しており、その接続の場所や方法がパフォーマンスに与える影響も多岐にわたります。次に例を示します。
+考えうるすべての条件を並べるのは難しいことです。何十億人もの消費者クライアントがアドビのサービスに接続しており、その接続の場所や方法がパフォーマンスに与える影響も多岐にわたります。以下に例を示します。
 
 * 速度はモバイルネットワークによって大きく異なります。ネットワークは信号、データ、音声パケットの損失からも影響を受けます。
 * Wi-Fi 経由で接続しているデバイスの接続性は様々な条件により影響を受けます。例えば、パケット損失や速度の問題は、喫茶店などの公共の場所や、パケットが地上波ネットワークに到達する前に衛星を経由しなければならない飛行機などの環境においてよく発生します。
@@ -67,25 +67,25 @@ ID サービス呼び出しは非同期であり、[demdex.net ドメイン](htt
 
 一般的に、リソースリクエストには、JSON-P よりも CORS を使用する方が望ましいと言えます。JSON-P の場合、一部のブラウザーはリクエストをキューに追加し、ページ上の他の同期呼び出しや非同期呼び出しリクエストを基準にして優先順位を下げます。CORS を使用すると、ブラウザーのコールスタック内でのこれらのリクエストの優先度の高さを確保できます。
 
-詳しくは、 [Experience Cloud ID サービスでの CORS のサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+詳しくは、[エクスペリエンスプラットフォームIDサービスでのCORSのサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 ## セキュリティ {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **ID サービスは CORS をサポートしていますか。**
 
-はい。See [CORS Support in the Experience Cloud ID Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+はい。See [CORS Support in the Experience Platform Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **CORS とは何ですか。**
 
-*`Cross-Origin Resource Sharing`*（CORS）とは、ブラウザーがリソースをリクエストする際に使用するメソッドです。ブラウザーが CORS をサポートしている場合、ID サービスは常に CORS を使用してリソースをリクエストします。CORS をサポートしていない古いブラウザー上では JSONP を使用してリソースをリクエストします。詳しくは、 [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+*`Cross-Origin Resource Sharing`*（CORS）とは、ブラウザーがリソースをリクエストする際に使用するメソッドです。ブラウザーが CORS をサポートしている場合、ID サービスは常に CORS を使用してリソースをリクエストします。CORS をサポートしていない古いブラウザー上では JSONP を使用してリソースをリクエストします。[Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) に関する説明を参照してください。
 
 **厳格なセキュリティ要件があり、JSONP を使用できない場合はどうすればよいですか。**
 
 厳格なセキュリティ要件がある場合は、ID サービスの API 設定で `useCORSOnly: true` を設定してください。訪問者が CORS をサポートするブラウザーを使用しているという確信がある場合にのみ、このモードを有効にする必要があります。
 
-詳しくは、[Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) および [useCorsOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)。
+詳しくは、[Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) および [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa) を参照してください。
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
