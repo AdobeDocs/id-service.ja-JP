@@ -4,9 +4,9 @@ keywords: ID サービス
 seo-description: 通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID と認証状態を各訪問者に関連付けることができます。
 seo-title: 顧客 ID と認証状態
 title: 顧客 ID と認証状態
-uuid: 643df363-224a-463e- a332- be59926b47e7
+uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -21,9 +21,9 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 >[!IMPORTANT]
 >
->`setCustomerIDs` （顧客IDの同期）は、顧客属性およびコアサービス機能に必要です。顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。[!DNL Target] 顧客属性 `Visitor.AuthState.AUTHENTICATED` が機能する必要があります。例については、[コアサービス - ソリューションを有効にする方法](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services)を参照してください。
+>顧客属性とコアサービス機能には、`setCustomerIDs`（顧客 ID の同期）が必要です。顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。[!DNL Target] には、顧客属性を機能させるために `Visitor.AuthState.AUTHENTICATED` が必要です。例については、[コアサービス - ソリューションを有効にする方法](https://marketing.adobe.com/resources/help/en_US/mcloud/?f=core_services)を参照してください。
 
-Beginning with Experience Cloud ID Service v1.5+, `setCustomerIDs` includes the optional `AuthState` object. `AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。認証状態は整数値として返されます。
+Beginning with Experience Platform Identity Service v1.5+, `setCustomerIDs` includes the optional `AuthState` object. `AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。認証状態は整数値として返されます。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
