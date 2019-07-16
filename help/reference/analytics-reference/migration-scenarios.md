@@ -2,16 +2,16 @@
 description: サーバーのサンプル設定および必要な移行手順について説明しています。
 keywords: ID サービス
 seo-description: サーバーのサンプル設定および必要な移行手順について説明しています。
-seo-title: Experience Cloud ID サービスの移行シナリオ
-title: Experience Cloud ID サービスの移行シナリオ
-uuid: 9e229045-6508-48c4- ae39-9537b4941853
+seo-title: エクスペリエンスプラットフォームIDサービス移行シナリオ
+title: エクスペリエンスプラットフォームIDサービス移行シナリオ
+uuid: 9e229045-6508-48c4-ae39-9537b4941853
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Experience Cloud ID サービスの移行シナリオ {#experience-cloud-id-service-migration-scenarios}
+# Experience Platform Identity Service Migration Scenarios {#experience-cloud-id-service-migration-scenarios}
 
 サーバーのサンプル設定および必要な移行手順について説明しています。
 
@@ -23,7 +23,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 * **データ収集サーバー**：metrics.example.com、smetrics.example.com
 * **Analytics JavaScript ファイル**：すべてのサイトページで単一のファイル
 
-最初に、Experience Cloud を有効にする必要があります（[要件](../../reference/requirements.md)を参照）。単一の JavaScript ファイルを使用するので、猶予期間を設定する必要はありません。さらに、訪問者移行の設定をおこないます。データ収集 CNAME は必要ないので、使用しない方式に移行します。
+最初に、Experience Cloud を有効にする必要があります（[要件](../../reference/requirements.md)を参照してください）。単一の JavaScript ファイルを使用するので、猶予期間を設定する必要はありません。さらに、訪問者移行の設定をおこないます。データ収集 CNAME は必要ないので、使用しない方式に移行します。
 
 ## 複数の JavaScript ファイル、ハードコーディングされた画像タグ {#section-a665f6ee202940449198e4e7a5dcac54}
 
@@ -34,7 +34,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 * **Analytics JavaScript ファイル**：複数の JavaScript ファイル。1 つはメインサイト用のファイル、もう 1 つは別の CMS で保持されているサポートセクション用のファイルです。
 * **その他のデータ収集方法**：1 つのサイトセクションにハードコーディングされた画像タグ
 
-最初に、この会社の Adobe Experience Cloud 組織 ID を見つける必要があります（[要件](../../reference/requirements.md)を参照）。次に、複数の JavaScript ファイルを使用しているので、移行の猶予期間を設定する必要があります。This customer will also set up visitor migration and then migrate from `*.2o7.net` to `*.sc.omtrdc.net`.
+最初に、この会社の Adobe Experience Cloud 組織 ID を見つける必要があります（[要件](../../reference/requirements.md)を参照してください）。次に、複数の JavaScript ファイルを使用しているので、移行の猶予期間を設定する必要があります。また、訪問者移行の設定をおこない、`*.2o7.net` から `*.sc.omtrdc.net` に移行します。
 
 [!DNL Experience Cloud] ID サービスの展開に備えるために最新の Analytics JavaScript コードに更新する場合は、すべてのハードコーディングされた画像タグを、JavaScript を使用するように更新します。
 
@@ -47,6 +47,6 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 * **Analytics JavaScript ファイル**：複数の JavaScript ファイル。各 Web プロパティにつき 1 つのファイルです。
 * **その他のデータ収集方法**：Flash ベースのビデオプレーヤー
 
-最初に、この会社の Adobe Experience Cloud 組織 ID を見つける必要があります（[要件](../../reference/requirements.md)を参照）。次に、複数の JavaScript ファイルを使用しているので、移行の猶予期間を設定する必要があります。このお客様は、プライマリドメインとサブドメインとの間で訪問者を追跡しているので、引き続きデータ収集 CNAME を訪問者 ID サービスと併用します。
+最初に、この会社の Adobe Experience Cloud 組織 ID を見つける必要があります（[要件](../../reference/requirements.md)を参照してください）。次に、複数の JavaScript ファイルを使用しているので、移行の猶予期間を設定する必要があります。このお客様は、プライマリドメインとサブドメインとの間で訪問者を追跡しているので、引き続きデータ収集 CNAME を訪問者 ID サービスと併用します。
 
 [!DNL Experience Cloud] ID サービスの展開に備えるために最新の Analytics JavaScript コードに更新する場合には、Flash ベースのビデオプレーヤーも最新バージョンの Flash 版 AppMeasurement に更新します。
