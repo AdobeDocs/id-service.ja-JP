@@ -1,27 +1,27 @@
 ---
-description: オプトインのIABプラグインを使用して、同社の同意管理プラットフォーム（CMP）を接続します。
-seo-description: オプトインのIABプラグインを使用して、同社の同意管理プラットフォーム（CMP）を接続します。
-seo-title: （ベータ） IABフレームワークを使用したオプトインサービスの使用
-title: （ベータ） IABフレームワークを使用したオプトインサービスの使用
-uuid: 8df39d9c- c016-490e- b4db- d02e4044b480
+description: オプトインの IAB プラグインを使用して、同意管理プラットフォーム（CMP）を接続します。
+seo-description: オプトインの IAB プラグインを使用して、同意管理プラットフォーム（CMP）を接続します。
+seo-title: （ベータ）IAB フレームワークを使用したオプトインサービスの使用
+title: （ベータ）IAB フレームワークを使用したオプトインサービスの使用
+uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
 
-# （ベータ） IABフレームワークを使用したオプトインサービスの使用{#beta-using-opt-in-services-with-iab-framework}
+# （ベータ）IAB フレームワークを使用したオプトインサービスの使用{#beta-using-opt-in-services-with-iab-framework}
 
-オプトインのIABプラグインを使用して、同社の同意管理プラットフォーム（CMP）を接続します。
+オプトインの IAB プラグインを使用して、同意管理プラットフォーム（CMP）を接続します。
 
-IAB透明化および同意フレームワーク（ [TCF）](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) を使用するAudience Managerお客様は、その同意管理プラットフォーム（CMP）をオプトインのIABプラグインと接続できます。オプトインは、CMP内で設定された訪問者の環境設定に応じて個々のアドビソリューションライブラリを無効にできる、ECID JavaScriptライブラリ内に埋め込まれた機能です。IABプラグインがEIDライブラリで実装されると、IAB準拠のCMPからの訪問者の環境設定が自動的にオプトインにマッピングされます。これらの環境設定により、Audience Managerベースのライブラリ（DILおよびECID）と、同意が受信されると関連する呼び出しが有効になります。
+Audience Manager customers using [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) can connect their Consent Management Platform (CMP) with Opt-in’s IAB plugin. オプトインは、（ECID）JavaScript ライブラリ内に組み込まれている機能です。CMP 内で設定された訪問者の設定に応じて、個々のアドビソリューションライブラリを無効化することができます。ECID ライブラリに IAB プラグインが実装されると、訪問者の設定は、IAB 準拠の CMP からオプトインへ自動的にマッピングされます。これらの環境設定により、Audience Manager ベースのライブラリ（DIL および ECID）と、同意を受信したときの関連する呼び出しが有効になります。
 
 ## IAB をサポートする CMP の実装 {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
 オプトインを IAB 同意と統合するには、以下の手順を完了する必要があります。
 
 1. IAB をサポートし [IAB ベンダーとして登録されている](https://vendorlist.consensu.org/vendorlist.json) CMP を実装するか、IAB の仕様を実装する社内 CMP を開発して IAB Europe に登録します。
-1. Adobe JSを読み込む `__cmp` 前に、を定義/読み込みしてください。
+1. Adobe JS を読み込む前に、`__cmp` を定義するか読み込みます。
 
 詳細については、[Interactive Advertising Bureau のドキュメント](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/v1.1%20Implementation%20Guidelines.md)を参照してください。
 
@@ -29,9 +29,9 @@ IAB透明化および同意フレームワーク（ [TCF）](https://iabtechlab.
 
 >[!NOTE]
 >
->オプトインは、ECID4.0以降でのみ使用できます
+>オプトインは ECID 4.0 以降でのみ利用できます。
 
-Adobe Launch を使用して、サイトのオプトインおよび IAB プラグインの両方を実装します。Launch 拡張の設定方法については、[ECID オプトイン拡張に関するドキュメント](https://marketing-beta.adobe.com/resources/help/launch/ecid-optin/)を参照してください。
+サイト用オプトインとIABプラグインの両方を実装するには、&quot;Adobe Experience Platform Launch&quot;を使用してください。Read the [documentation for the ECID Opt-in extension](https://marketing-beta.adobe.com/resources/help/launch/ecid-optin/) to learn how to set up the Experience Platform Launch extension.
 
 オプトイン用の IAB を手動で有効化する場合は、Visitor オブジェクト内で以下の設定が true になっていることを確認してください。
 
@@ -46,7 +46,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 >[!IMPORTANT]
 >
->Audience Manager では、目的 1、2、5 に対する同意が必要です。また、Cookie をデプロイして ID 同期を開始または有効化するために、ベンダーの同意が必要です。**Audience Managerドキュメント** [こちら](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html)のIABプラグインについて詳しくは、こちらを参照してください。
+>Audience Manager では、目的 1、2、5 に対する同意が必要です。また、Cookie をデプロイして ID 同期を開始または有効化するために、ベンダーの同意が必要です。**Read more about the IAB plugin in Audience Manager documentation ** [here](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html)**.
 
 オプトインおよび IAB プラグインの両方を検証する方法の詳細については、[**こちら**](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0)の検証ガイドのユースケース 4 を参照してください。
 
