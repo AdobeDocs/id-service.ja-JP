@@ -4,31 +4,31 @@ keywords: ID サービス
 seo-description: 直接統合と Experience Cloud ID（MID）に関連する 2 つの一般的な使用例を示します。MID は、サイト訪問者に割り当てられる一意の永続的 ID です。
 seo-title: 直接統合の使用例
 title: 直接統合の使用例
-uuid: 6de1eb8b-4783-4545-8a64- ab6b9ef93432
+uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Direct integration use cases {#direct-integration-use-cases}
+# 直接統合の使用例{#direct-integration-use-cases}
 
 直接統合と Experience Cloud ID（MID）に関連する 2 つの一般的な使用例を示します。MID は、サイト訪問者に割り当てられる一意の永続的 ID です。
 
 >[!TIP]
 >
->* Review and understand the [code syntax and variables](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9) before diving into the use cases.
->* For more information about the MID, see [Cookies and the Experience Cloud ID Service](../introduction/cookies.md).
+>* 使用例を参照する前に、[コード構文と変数](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)をよくお読みください。
+>* For more information about the MID, see [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
 >
 
 
 
-## Use case 1: I have a MID but want to pass my Visitor IDs and set an authentication state {#section-a67d89a343754d1286d03cf08d34b806}
+## 使用例 1：MID はあるが、自分の訪問者 ID を渡して認証状態を設定したい {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> ユースケースの要素 </th> 
+   <th colname="col1" class="entry"> 使用例の要素 </th> 
    <th colname="col2" class="entry"> 説明 </th> 
   </tr> 
  </thead>
@@ -65,12 +65,12 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
  </tbody> 
 </table>
 
-## Use case 2: I do not have a MID and need to generate one {#section-8e81291f8b684de8b88fae4002ae0029}
+## 使用例 2：MID がないので生成する必要がある {#section-8e81291f8b684de8b88fae4002ae0029}
 
 <table id="table_666A92693F8A413096DF6A64770C1141"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> ユースケースの要素 </th> 
+   <th colname="col1" class="entry"> 使用例の要素 </th> 
    <th colname="col2" class="entry"> 説明 </th> 
   </tr> 
  </thead>
