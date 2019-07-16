@@ -1,19 +1,19 @@
 ---
-description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Cloud IDサービスコードに追加して、ブラウザーのサードパーティドメインにcookieを設定できないようにすることができます。
+description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Platform IDサービスコードに追加して、ブラウザーのサードパーティドメインでcookieを設定できないようにすることができます。
 keywords: ID サービス
-seo-description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Cloud IDサービスコードに追加して、ブラウザーのサードパーティドメインにcookieを設定できないようにすることができます。
-seo-title: Experience Cloud ID サービスでの COPPA のサポート
-title: Experience Cloud ID サービスでの COPPA のサポート
-uuid: 621b5ebd-92e7-4635- be85-8d7e36589fcb
+seo-description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Platform IDサービスコードに追加して、ブラウザーのサードパーティドメインでcookieを設定できないようにすることができます。
+seo-title: エクスペリエンスプラットフォームIDサービスでのCOPPAのサポート
+title: エクスペリエンスプラットフォームIDサービスでのCOPPAのサポート
+uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Experience Cloud ID サービスでの COPPA のサポート {#coppa-support-in-the-experience-cloud-id-service}
+# COPPA Support in the Experience Platform Identity Service {#coppa-support-in-the-experience-cloud-id-service}
 
-児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Cloud IDサービスコードに追加して、ブラウザーのサードパーティドメインにcookieを設定できないようにすることができます。
+児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Platform IDサービスコードに追加して、ブラウザーのサードパーティドメインでcookieを設定できないようにすることができます。
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 **Cookie とトラッキング**
 
-When a web page loads, the [!DNL Experience Cloud] ID service calls an [!DNL Adobe] data collection server (DCS). DCS の応答には Experience Cloud Cookie と demdex.net Cookie が含まれます。
+Web ページを読み込む際に、[!DNL Experience Cloud] ID サービスが [!DNL Adobe] データ収集サーバー（DCS）を呼び出します。DCS の応答には Experience Cloud Cookie と demdex.net Cookie が含まれます。
 
 * Experience Cloud Cookie はファーストパーティドメインに設定されます。異なるドメインが連動してアクセスを許可していない限り、この Cookie を使用して異なるドメインで訪問者を追跡することはできません。
 * demdex.net Cookie は、サードパーティドメインに設定されます。この Cookie には、訪問者を異なるドメインで追跡するために使用できる一意の識別子が含まれます。
@@ -43,7 +43,7 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 
 `true` に設定した場合、DCS が demdex.net サードパーティ Cookie を返す処理が `disableThirdPartyCookies` オブジェクトによって停止されます。サイトの訪問者のブラウザーにこの Cookie が既に設定されている場合、ID サービスが新しい [!DNL Experience Cloud] ID の作成や既存 ID の返却のためにこの Cookie を使用することはありません。[!DNL Experience Cloud] ID サービスは、ファーストパーティ Cookie に新しいランダムな ID を作成します。一度有効にすれば、COPPA によって許可されているその他の内部操作を含め、ID サービスによってデータを収集して、異なる [!DNL Experience Cloud] ソリューション間でそのデータを共有することができます。
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [アドビプライバシーセンター](http://www.adobe.com/privacy.html)
 >* [COPPA とは](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
