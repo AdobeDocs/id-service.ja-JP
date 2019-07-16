@@ -4,9 +4,9 @@ keywords: ID サービス
 seo-description: これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
 seo-title: getVisitorValues
 title: getVisitorValues
-uuid: 7fb831b3- cf7e-40e2- a219-07fec28ad49c
+uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
@@ -26,12 +26,12 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ## 構文{#section-5aebe3907b2b46e997f45a1d1ed35c09}
 
-This function uses the following syntax (italics represents a placeholder for a variable): ` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
+この関数は、次の構文を使用します（斜体は変数のプレースホルダーを表します）：` var *`values`* = visitor.getVisitorValues (callback, [visitor.FIELDS. *`ID type`*, visitor.FIELDS. *`ID type`*]);`
 
 関数パラメーターの詳細は次のとおりです。
 
-* ` *`callback`*` は、返されたIDを受け取る独自のコールバックコードを表します。
-* *（オプション）* ` visitor.FIELDS. *`IDタイプ`*` は、この関数を返す [ID値](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5) を指定する列挙型です。
+* ` *`callback`*` は、返される ID を受け取るコールバックコードを表します。
+* *（オプション）*` visitor.FIELDS. *`ID type`*` は、この関数で返す必要がある [ID 値](../../library/get-set/getvisitorvalues.md#section-4c4c300167694c6fbff1d6c612f372b5)を指定できる列挙です。
 
 詳しくは、以下の使用例と定義を参照してください。
 
@@ -100,7 +100,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>データ収集地域 ID。これは、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。 </p> <p><a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external"> DCS地域ID、場所、ホスト名 </a> および <a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHintを参照 </a>してください。 </p> </td> 
+   <td colname="col2"> <p>データ収集地域 ID。これは、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。 </p> <p><a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>および<a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint</a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -108,7 +108,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>訪問者の Experience Cloud ID です。 </p> <p>詳しくは、 <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookie と Experience Cloud ID サービス </a>. </p> </td> 
+   <td colname="col2"> <p>訪問者の Experience Cloud ID です。 </p> <p>詳しくは、<a href="../../introduction/cookies.md" format="dita" scope="local"> cookieとエクスペリエンスプラットフォームIDサービス </a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
