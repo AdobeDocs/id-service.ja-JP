@@ -1,19 +1,19 @@
 ---
-description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Cloud IDサービスは、これらのクライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
+description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Platform IDサービスは、これらのクライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
 keywords: ID サービス
-seo-description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Cloud IDサービスは、これらのクライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
-seo-title: Experience Cloud ID サービスでの CORS のサポート
-title: Experience Cloud ID サービスでの CORS のサポート
-uuid: e656b573-72a8-4312- a7d5-5cc3818f0a9e
+seo-description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Platform IDサービスは、これらのクライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
+seo-title: Experience Platform IDサービスでのCORSのサポート
+title: Experience Platform IDサービスでのCORSのサポート
+uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Experience Cloud ID サービスでの CORS のサポート {#cors-support-in-the-experience-cloud-id-service}
+# CORS Support in the Experience Platform Identity Service {#cors-support-in-the-experience-cloud-id-service}
 
-ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Cloud IDサービスは、これらのクライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
+ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Platform IDサービスは、これらのクライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP に切り替わります。
 
 ## 同一オリジンポリシーと ID サービスリクエストの問題 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
@@ -27,7 +27,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 ## 同一オリジンポリシーの問題を解決する CORS {#section-76c87ec3295d447bab220c84f138c235}
 
-CORS は、異なるドメイン間でリソースをリクエストするための安全で効果的な方法を提供します。CORS 仕様には、リソースリクエストを送信、受信および評価するためにブラウザーが使用する HTTP ヘッダーのセットが含まれます。リソースリクエストの評価は、 *`preflight check`*. このチェックにより、ブラウザーとサーバーは、どのリクエストを許可またはブロックするかを判定します。プリフライトチェックは、リソースをリクエストするアプリ、API、スクリプトに対して透過的です。リソースリクエストで重要なのは、以下の 2 つのヘッダーです。
+CORS は、異なるドメイン間でリソースをリクエストするための安全で効果的な方法を提供します。CORS 仕様には、リソースリクエストを送信、受信および評価するためにブラウザーが使用する HTTP ヘッダーのセットが含まれます。リソースリクエストの評価は、*`preflight check`* と呼ばれます。このチェックにより、ブラウザーとサーバーは、どのリクエストを許可またはブロックするかを判定します。プリフライトチェックは、リソースをリクエストするアプリ、API、スクリプトに対して透過的です。リソースリクエストで重要なのは、以下の 2 つのヘッダーです。
 
 * `Origin`：リクエストのソースを識別するリクエストヘッダー。
 * `Access-Control-Allow-Origin`：リクエストがリクエスト元と共有できるかどうかを示す応答ヘッダー。
@@ -60,7 +60,7 @@ CORS は、異なるドメイン間でリソースをリクエストするため
  </tbody> 
 </table>
 
-[useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)も参照してください。
+[useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa) も参照してください。
 
 ## CORS を使用することのその他のメリット {#section-6f44f30694c44f95bf9854b8a2af8449}
 
