@@ -1,19 +1,19 @@
 ---
-description: この節では、Experience Cloud IDサービスに必要な適切なソリューション、サービスおよびコードバージョンを使用していることを確認してください。
+description: この節では、Experience Platform IDサービスに必要な適切なソリューション、サービスおよびコードバージョンを使用していることを確認してください。
 keywords: ID サービス
-seo-description: この節では、Experience Cloud IDサービスに必要な適切なソリューション、サービスおよびコードバージョンを使用していることを確認してください。
-seo-title: Experience Cloud ID サービスの要件
-title: Experience Cloud ID サービスの要件
-uuid: 608b1082-6e9e-4101- b6cb-60027950109b
+seo-description: この節では、Experience Platform IDサービスに必要な適切なソリューション、サービスおよびコードバージョンを使用していることを確認してください。
+seo-title: エクスペリエンスプラットフォームIDサービスの要件
+title: エクスペリエンスプラットフォームIDサービスの要件
+uuid: 608b1082-6e9e-4101-b6cb-60027950109b
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Experience Cloud ID サービスの要件 {#requirements-for-the-experience-cloud-id-service}
+# Requirements for the Experience Platform Identity Service {#requirements-for-the-experience-cloud-id-service}
 
-この節では、Experience Cloud IDサービスに必要な適切なソリューション、サービスおよびコードバージョンを使用していることを確認してください。
+この節では、Experience Platform IDサービスに必要な適切なソリューション、サービスおよびコードバージョンを使用していることを確認してください。
 
 ## 実装の成功とサポートを確実にする要件 {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
@@ -53,7 +53,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
 
 >[!IMPORTANT]
 >
->組織IDでは大文字と小文字が区別され、指定したとおりに使用する必要があります。
+>組織 ID は大文字小文字が区別され、割り当てられたとおりに使用する必要があります。
 
 <table id="table_6C74B676EB094C568D2439FDCC9A7830"> 
  <thead> 
@@ -80,7 +80,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
 
 ## Analytics の要件：地域別データ収集（RDC）{#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-すべてのトラッキングサーバーはRDCに変換されているので、Analyticsトラッキングサーバーを変更する必要はありません。[詳細情報...](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
+すべてのトラッキングサーバーは RDC に変換されているので、Analyticsトラッキングサーバーを変更する必要はありません。[詳細情報...](https://docs.adobe.com/content/help/en/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
 
 ## コードライブラリとバージョンの要件 {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -88,7 +88,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
 
 >[!TIP]
 >
->必要最小限ではなく最新のコードバージョンを使用することをお勧めします。
+>必要最小限ではなく、最新のコードバージョンを使用することをお勧めします。
 
 **JavaScript**
 
@@ -102,7 +102,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="keyword"></span>  Experience Cloud ID サービス</b> </p> </td> 
+   <td colname="col1"> <p> <b><span class="keyword"> Experience Cloud</span> ID サービス</b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2.0 以降 </p> </td> 
   </tr> 
@@ -124,7 +124,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
    <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> <a href="https://marketing.adobe.com/resources/help/en_US/aam/?f=c_dil.html" format="https" scope="external">データ統合ライブラリ</a>（DIL）を参照してください。 </p> </td> 
    <td colname="col4"> <p>5.0 </p> <p> 
      <draft-comment>
-       4.9から更新 
+       4.9 から更新 
      </draft-comment> </p> </td> 
   </tr> 
   <tr> 
@@ -148,7 +148,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
 
 >[!TIP]
 >
->必要最小限ではなく最新のコードバージョンを使用することをお勧めします。
+>必要最小限ではなく、最新のコードバージョンを使用することをお勧めします。
 
 ID サービスに関して、SDK コードが有効になっている必要があります。[Adobe Mobile Services](https://mobilemarketing.adobe.com/) アカウントから、各アプリ用の最新 SDK コードを有効にして、ダウンロードします。関連トピック:
 
@@ -156,7 +156,7 @@ ID サービスに関して、SDK コードが有効になっている必要が�
 * [Android SDK のメソッド](https://marketing.adobe.com/resources/help/en_US/mobile/android/c_marketing_cloud.html)
 * [iOS SDK のメソッド](https://marketing.adobe.com/resources/help/en_US/mobile/ios/marketing_cloud.html)
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [コードライブラリ](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
 
