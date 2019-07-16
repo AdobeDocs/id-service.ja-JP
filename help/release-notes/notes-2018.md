@@ -4,9 +4,9 @@ keywords: ID サービス
 seo-description: 2018年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
 seo-title: 2018 年リリースノート
 title: 2018 年リリースノート
-uuid: 771b5b11- a8e3-464c- b65e- b15135584ace
+uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
@@ -44,7 +44,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
  <tbody> 
   <tr> 
    <td colname="col1"> <p>AMCV Cookie のセキュリティを強化しました </p> </td> 
-   <td colname="col2"> <p>内部セキュリティスキャン中に、DTM ライブラリを使用すると、セッション管理用の Cookie で適切な属性を指定できないことが判明しました。その結果、Cookie の情報が誤って共有される可能性があります。この問題を解決するために、お客様が AMCV Cookie を安全であると設定できる設定を追加しました。「secureCookie」を参照してください。 </p> </td> 
+   <td colname="col2"> <p>内部セキュリティスキャン中に、DTM ライブラリを使用すると、セッション管理用の Cookie で適切な属性を指定できないことが判明しました。その結果、Cookie の情報が誤って共有される可能性があります。この問題を解決するために、お客様が AMCV Cookie を安全であると設定できる設定を追加しました。secureCookie を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>統合コードおよび ID は数字か空でない文字列にする必要があります </p> </td> 
@@ -78,7 +78,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 >[!NOTE]
 >
->バージョン3.1.0から最新のバージョンにアップグレードすることをお勧めします。バージョン 3.1.2 の説明を参照してください。Adobe Launch、DTM および AppMeasurement 内で最新バンドルを使用できます。
+>できるだけ早期に、バージョン 3.1.0 から最新バージョンにアップグレードすることをお勧めします。バージョン 3.1.2 の説明を参照してください。最新のバンドルは、Adobe Experience Platform Launch、DTMおよびAppMeasurement内で利用できます。
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
