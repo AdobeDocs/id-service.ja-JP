@@ -1,28 +1,28 @@
 ---
 cloud: platform- cloud
 product: ID サービス
-audience: エンドユーザー
+audience: end-user
 user-guide-title: Experience Cloud IDサービスヘルプ
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
 
 
 # Experience Cloud ID Service Help {#using}
 
-+ [IDサービスヘルプ](home.md)
++ [ID サービスヘルプ](home.md)
 + 概要 {#intro}
    + [概要](introduction/overview.md)
-   + [IDサービスについて](introduction/about-id-service.md)
+   + [ID サービスについて](introduction/about-id-service.md)
    + [cookie と Marketing Cloud ID](introduction/cookies.md)
-   + [IDサービスのIDのリクエストと設定](introduction/id-request.md)
-   + [同期と一致率について](introduction/match-rates.md)
-+ Implementation guides {#implementation-guides}
-   + [導入ガイド](implementation-guides/implementation-guides.md)
+   + [ ID サービスによる ID のリクエスト方法と設定方法](introduction/id-request.md)
+   + [ 同期と一致率について](introduction/match-rates.md)
++ 実装ガイド{#implementation-guides}
+   + [実装ガイド](implementation-guides/implementation-guides.md)
    + [実装方法](implementation-guides/implementation-methods.md)
-   + [Launch を使用した実装](implementation-guides/ecid-implement-with-launch.md)
+   + [Experience Platform Launchによる実装](implementation-guides/ecid-implement-with-launch.md)
    + [DTM を使用した実装](implementation-guides/standard.md)
    + [Analytics用に実装](implementation-guides/setup-analytics.md)
    + [Target用の実装](implementation-guides/setup-target.md)
@@ -32,15 +32,15 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
    + [IDサービスとの直接統合](implementation-guides/direct-integration.md)
    + [直接統合の使用例](implementation-guides/direct-integration-examples.md)
    + [IDサービスのテストと検証](implementation-guides/test-verify.md)
-   + Opt-in Documentation {#opt-in-service}
+   + オプトインドキュメント{#opt-in-service}
       + [オプトインサービスの概要](implementation-guides/opt-in-service/optin-overview.md)
       + [オプトインサービスの設定](implementation-guides/opt-in-service/getting-started.md)
       + [オプトインサービスの検証](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [Launch を使用したオプトインの設定](implementation-guides/opt-in-service/launch.md)
+      + [エクスペリエンスプラットフォーム起動によるオプトインの設定](implementation-guides/opt-in-service/launch.md)
       + [DTM を使用したオプトインの設定](implementation-guides/opt-in-service/optin-dtm.md)
       + [オプトインの使用例](implementation-guides/opt-in-service/use-cases.md)
       + [オプトインリファレンス](implementation-guides/opt-in-service/api.md)
-      + [（ベータ） IABフレームワークを使用したオプトインサービスの使用](implementation-guides/opt-in-service/iab.md)
+      + [（ベータ）IAB フレームワークを使用したオプトインサービスの使用](implementation-guides/opt-in-service/iab.md)
 + ID サービスの API {#id-service-api}
    + [IDサービスAPIの概要](library/library.md)
    + 設定 {#configurations}
@@ -80,7 +80,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 + リファレンス {#reference}
    + [リファレンス概要](reference/reference.md)
    + Analytics リファレンス {#analytics-reference}
-      + [Analyticsリファレンス概要](reference/analytics-reference/analytics-reference.md)
+      + [Analytics リファレンスの概要](reference/analytics-reference/analytics-reference.md)
       + [Analytics および Experience Cloud ID の設定](reference/analytics-reference/analytics-ids.md)
       + [Analytics ID の操作の順序](reference/analytics-reference/analytics-order-of-operations.md)
       + [IDサービス移行の判断ポイント](reference/analytics-reference/migration-decisions.md)
@@ -88,7 +88,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
       + [AnalyticsおよびIDリクエスト](reference/analytics-reference/legacy-analytics.md)
       + [データ収集 CNAME およびクロスドメイントラッキング](reference/analytics-reference/cname.md)
       + [JavaScript を利用したサーバー側実装](reference/analytics-reference/server-side.md)
-      + [ID サービスの猶予期間](reference/analytics-reference/grace-period.md)   
+      + [ID サービスの猶予期間](reference/analytics-reference/grace-period.md)
    + [コンテンツセキュリティポリシーとIDサービス](reference/csp.md)
    + [IDサービスでのCOPPAのサポート](reference/coppa.md)
    + [IDサービスでのCORSのサポート](reference/cors.md)
@@ -99,11 +99,11 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
    + [ビデオハートビートとIDサービス](reference/heartbeat.md)
    + [Data WorkbenchとIDサービス](reference/dwb.md)
 + よくある質問（FAQ） {#faqs}
-   + [FAQの概要](faq-intro/faq-intro.md)
+   + [FAQ の概要](faq-intro/faq-intro.md)
    + [ID サービス FAQ](faq-intro/faq.md)
    + [Analytics と ID サービスに関する FAQ](faq-intro/analytics-faq.md)
    + [他の Experience Cloud ソリューションに関する FAQ](faq-intro/other-faq.md)
-+ Release notes for ID Service {#release-notes}
++ ID サービスのリリースノート {#release-notes}
    + [2019 年リリースノート](release-notes/release-notes.md)
    + [2018 年リリースノート](release-notes/notes-2018.md)
    + [2017 年リリースノート](release-notes/notes-2017.md)
