@@ -1,19 +1,19 @@
 ---
-description: Experience Cloud IDサービスの機能リリース、更新、または変更。
+description: Experience Platform IDサービスの機能リリース、更新、または変更。
 keywords: ID サービス
-seo-description: Experience Cloud IDサービスの機能リリース、更新、または変更。
+seo-description: Experience Platform IDサービスの機能リリース、更新、または変更。
 seo-title: 2019 年リリースノート
 title: 2019 年リリースノート
-uuid: a5a59410-7f85-48f9- a30a- fef1c2e2b558
+uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # 2019 年リリースノート {#release-notes}
 
-Experience Cloud IDサービスの機能リリース、更新、または変更。
+Experience Platform IDサービスの機能リリース、更新、または変更。
 
 ## 2019 年リリースノート {#topic-1b9a1c3ec5044e1c987785950f697e25}
 
@@ -27,6 +27,6 @@ Experience Cloud IDサービスの機能リリース、更新、または変更�
 
 | 項目 | 説明 |
 |---|---|
-| `disableIdSyncs` フラグに文字列を渡すと動作しない | 修正されました。Values set on `disableidSyncs` parameter for `getInstance` function are now being honored. |
+| `disableIdSyncs` フラグに文字列を渡すと動作しない | 修正しました。`getInstance` 関数の `disableidSyncs` パラメーターに設定された値は現在、有効になっています。 |
 | サードパーティ iFrame が ECID を取得しない | Safari モバイル上の ECID および機能していない各種 iFrame の ECID を修正しました。 |
 
