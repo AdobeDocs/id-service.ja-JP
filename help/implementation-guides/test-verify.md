@@ -2,22 +2,22 @@
 description: これらの説明、ツール、手順は、ID サービスが適切に動作しているかどうかを判定するのに役立ちます。これらのテストは、一般に、ID サービスに適用され、様々な ID サービスと Experience Cloud ソリューションの組み合わせに適用されます。
 keywords: ID サービス
 seo-description: これらの説明、ツール、手順は、ID サービスが適切に動作しているかどうかを判定するのに役立ちます。これらのテストは、一般に、ID サービスに適用され、様々な ID サービスと Experience Cloud ソリューションの組み合わせに適用されます。
-seo-title: Experience Cloud IDサービスのテストと検証
-title: Experience Cloud IDサービスのテストと検証
-uuid: 442de9c3- c265-4412-89bd- aeaa286ddad6
+seo-title: エクスペリエンスプラットフォームIDサービスのテストと検証
+title: エクスペリエンスプラットフォームIDサービスのテストと検証
+uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Test and verify the Experience Cloud ID Service{#test-and-verify-the-experience-cloud-id-service}
+# Test and verify the Experience Platform Identity Service{#test-and-verify-the-experience-cloud-id-service}
 
 これらの説明、ツール、手順は、ID サービスが適切に動作しているかどうかを判定するのに役立ちます。これらのテストは、一般に、ID サービスに適用され、様々な ID サービスと Experience Cloud ソリューションの組み合わせに適用されます。
 
-## Before you begin {#section-b1e76ad552ed4eb793b6e521a55127d4}
+## 始める前に{#section-b1e76ad552ed4eb793b6e521a55127d4}
 
-IDサービスのテストと検証を始める前に知っておくべき重要な情報です。
+ID サービスのテストと検証を始める前に知っておくべき重要な情報です。
 
 **ブラウザー環境**
 
@@ -31,18 +31,18 @@ IDサービスのテストと検証を始める前に知っておくべき重要
 
 ## Adobe Debugger を使用したテスト {#section-861365abc24b498e925b3837ea81d469}
 
-Your service integration is configured properly when you see a [!DNL Experience Cloud ID] (MID) in the [!DNL Adobe] debugger response. See [Cookies and the Experience Cloud ID Service](../introduction/cookies.md) for more information about the MID.
+[!DNL Adobe] Debugger の応答に [!DNL Experience Cloud ID]（MID）が表示される場合、サービス統合は適切に設定されています。See [Cookies and the Experience Platform Identity Service](../introduction/cookies.md) for more information about the MID.
 
 [!DNL Adobe][デバッガを使用してIDサービスのステータスを検証するに](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html)は:
 
 1. ブラウザーの Cookie をクリアするか、匿名ブラウジングセッションを開きます。
 1. ID サービスコードを含むテストページを読み込みます。
-1. Open the [!DNL Adobe] debugger.
+1. [!DNL Adobe] Debugger を開きます。
 1. MID の結果をチェックします。
 
-## Understanding Adobe Debugger results {#section-bd2caa6643d54d41a476d747b41e7e25}
+## Adobe Debugger の結果について {#section-bd2caa6643d54d41a476d747b41e7e25}
 
-The MID is stored in a key-value pair that uses this syntax: `MID= *`Experience Cloud ID`*`. デバッガーは、この情報を以下に示すように表示します。
+MID は、キーと値のペアで格納されます（`MID= *`Experience Cloud ID`*` という構文が使用されます）。デバッガーは、この情報を以下に示すように表示します。
 
 **成功**
 
@@ -64,7 +64,7 @@ mid=20265673158980419722735089753036633573
 * MID を返さない。
 * パートナー ID がプロビジョニングされていないことを示すエラーメッセージを返す。
 
-## Testing with the Charles HTTP proxy {#section-d9e91f24984146b2b527fe059d7c9355}
+## Charles HTTP プロキシを使用したテスト {#section-d9e91f24984146b2b527fe059d7c9355}
 
 Charles を使用した ID サービスのステータスを検証するには：
 
@@ -73,25 +73,25 @@ Charles を使用した ID サービスのステータスを検証するには�
 1. ID サービスコードを含むテストページを読み込みます。
 1. 以下に説明するリクエストと応答の呼び出しとデータをチェックします。
 
-## Understanding Charles results {#section-c10c3dc0bb9945cbaffcf6fec7082fab}
+## Charles の結果について {#section-c10c3dc0bb9945cbaffcf6fec7082fab}
 
 Charles を使用して HTTP 呼び出しを監視する場合、どこを見て何を探すかに関する情報については、この節を参照してください。
 
-**Charlesでの成功したIDサービスリクエスト**
+**Charles での成功した ID サービスリクエスト**
 
-`Visitor.getInstance` 関数が `dpm.demdex.net` に対する JavaScript 呼び出しをおこなう場合、ID サービスコードは適切に動作しています。成功したリクエストには、[組織 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) が含まれます。The Organization ID is passed as a key-value pair that uses this syntax: `d_orgid= *`organization ID`*`. Look for the `dpm.demdex.net` and the JavaScript calls under the [!DNL Structure] tab. Look for your Organization ID under the [!DNL Request] tab.
+`Visitor.getInstance` 関数が `dpm.demdex.net` に対する JavaScript 呼び出しをおこなう場合、ID サービスコードは適切に動作しています。成功したリクエストには、[組織 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) が含まれます。組織 ID は、キーと値のペアとして渡されます（`d_orgid= *`組織 ID`*` という構文が使用されます）。「[!DNL Structure]」タブで、`dpm.demdex.net` および JavaScript 呼び出しを探します。「[!DNL Request]」タブで、組織 ID を探します。
 
 ![](assets/charles_request.png)
 
-**Charlesでの成功したIDサービス応答**
+**Charles での成功した ID サービス応答**
 
-[データ収集サーバー](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html)（DCS）からの応答が MID を返す場合、アカウントは ID サービスに関して適切にプロビジョニングされています。The MID is returned as a key-value pair that uses this syntax: `d_mid: *`visitor Experience Cloud ID`*`. Look for the MID in the [!DNL Response] tab as shown below.
+[データ収集サーバー](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html)（DCS）からの応答が MID を返す場合、アカウントは ID サービスに関して適切にプロビジョニングされています。MID は、キーと値のペアとして返されます（`d_mid: *`訪問者の Experience Cloud ID`*` という構文が使用されます）。以下に示すように、「[!DNL Response]」タブで、MID を探します。
 
 ![](assets/charles_response_success.png)
 
-**Charlesでの失敗したIDサービス応答**
+**Charles での失敗した ID サービス応答**
 
-DCS 応答に MID がない場合、アカウントは適切にプロビジョニングされています。An unsuccessful response returns an error code and message in the [!DNL Response] tab as shown below. DCS 応答にこのメッセージが表示された場合は、カスタマーケアにお問い合わせください。
+DCS 応答に MID がない場合、アカウントは適切にプロビジョニングされています。失敗した応答は、以下に示すように、「[!DNL Response]」タブにエラーコードとメッセージを返します。DCS 応答にこのメッセージが表示された場合は、カスタマーケアにお問い合わせください。
 
 ![](assets/charles_response_unsuccessful.png)
 
