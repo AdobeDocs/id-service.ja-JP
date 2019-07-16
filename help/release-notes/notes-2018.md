@@ -1,19 +1,19 @@
 ---
-description: 2018年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
+description: 2018年のExperience Platform IDサービスの機能リリース、更新、変更点です。
 keywords: ID サービス
-seo-description: 2018年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
+seo-description: 2018年のExperience Platform IDサービスの機能リリース、更新、変更点です。
 seo-title: 2018 年リリースノート
 title: 2018 年リリースノート
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # 2018 年リリースノート {#release-notes}
 
-2018年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
+2018年のExperience Platform IDサービスの機能リリース、更新、変更点です。
 
 ## バージョン 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -69,7 +69,7 @@ source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
  <tbody> 
   <tr> 
    <td colname="col1"> <p>個別訪問者数の非現実的なスパイク </p> </td> 
-   <td colname="col2"> <p>Experience Cloud ID サービス 3.1.0 のリリースでは、このバージョンが実装された際に、個別訪問者数で非現実的なスパイクが作成される問題が見つかりました。この動作は、最新バージョンの ECID v3.1.0 で、ユーザーが Safari ブラウザーのプライバシー設定で「閲覧中の Web サイトのみ許可」オプションを選択していた場合にのみ、示されます。この問題はバージョン 3.1.2 で修正されました。 </p> </td> 
+   <td colname="col2"> <p>Experience Platform IDサービス3.1.0リリースでは、このバージョンの実装時に個別訪問者数の現実的なスパイクが作成される問題が見つかりました。この動作は、最新バージョンの ECID v3.1.0 で、ユーザーが Safari ブラウザーのプライバシー設定で「閲覧中の Web サイトのみ許可」オプションを選択していた場合にのみ、示されます。この問題はバージョン 3.1.2 で修正されました。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
