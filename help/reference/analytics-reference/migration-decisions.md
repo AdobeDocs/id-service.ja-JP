@@ -1,19 +1,19 @@
 ---
-description: Experience Cloud IDサービスを導入する前に、様々な方法やJavaScriptファイルを使用してデータを収集する場合に、このサービスが複数ドメインでの訪問者トラッキングにどのように影響するか、および潜在的な問題について理解する必要があります。
+description: Experience Platform IDサービスを導入する前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法またはJavaScriptファイルを使用してデータを収集する場合の潜在的な問題について理解する必要があります。
 keywords: ID サービス
-seo-description: Experience Cloud IDサービスを導入する前に、様々な方法やJavaScriptファイルを使用してデータを収集する場合に、このサービスが複数ドメインでの訪問者トラッキングにどのように影響するか、および潜在的な問題について理解する必要があります。
-seo-title: Experience Cloud ID サービス移行の判断ポイント
-title: Experience Cloud ID サービス移行の判断ポイント
-uuid: ee56b5de- fcf3-4cfb-9e53-762af7c4d2ff
+seo-description: Experience Platform IDサービスを導入する前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法またはJavaScriptファイルを使用してデータを収集する場合の潜在的な問題について理解する必要があります。
+seo-title: エクスペリエンスプラットフォームIDサービス移行の判断ポイント
+title: エクスペリエンスプラットフォームIDサービス移行の判断ポイント
+uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
-# Experience Cloud ID サービス移行の判断ポイント
+# エクスペリエンスプラットフォームIDサービス移行の判断ポイント
 
-Experience Cloud IDサービスを導入する前に、様々な方法やJavaScriptファイルを使用してデータを収集する場合に、このサービスが複数ドメインでの訪問者トラッキングにどのように影響するか、および潜在的な問題について理解する必要があります。
+Experience Platform IDサービスを導入する前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法またはJavaScriptファイルを使用してデータを収集する場合の潜在的な問題について理解する必要があります。
 
 この節に示す質問に答えながら、必要な移行手順について判断してください。
 
@@ -110,7 +110,7 @@ Experience Cloud IDサービスを導入する前に、様々な方法やJavaScr
  <tbody> 
   <tr> 
    <td colname="col1"> <p>JavaScript、Flash </p> </td> 
-   <td colname="col2"> <p>なし。<span class="keyword">Experience Cloud</span> ID サービスは、これらのデータ収集方法をサポートしています。 </p> </td> 
+   <td colname="col2"> <p>なし. <span class="keyword">Experience Cloud</span> ID サービスは、これらのデータ収集方法をサポートしています。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Silverlight </p> </td> 
