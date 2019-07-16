@@ -1,19 +1,19 @@
 ---
-description: Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+description: Experience Platform IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
 keywords: ID サービス
-seo-description: Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+seo-description: Experience Platform IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
 seo-title: Analytics および Experience Cloud ID の設定
 title: Analytics および Experience Cloud ID の設定
-uuid: 421cf597- a3e0-4ca3-8ce8- d0c80cbb6aca
+uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # Analytics および Experience Cloud ID の設定{#setting-analytics-and-experience-cloud-ids}
 
-Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+Experience Platform IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
 
 ID サービスの実装後、AppMeasurement の前にこのコードが実行されます。ID サービスは Experience Cloud および Analytics の ID を取得するので、AppMeasurement が読み込まれたときには、これらの値が利用できる状態になっています。
 
@@ -25,7 +25,7 @@ AppMeasurement が読み込まれると、Experience Cloud および Analytics �
 
 **HTTP ヘッダー**
 
-Web サーバーからの HTTP 応答がブラウザーの Cookie に設定されます。`s_vi` cookieの設定方法です。`s_vi` cookieはAnalytics訪問者を識別します。設定された Cookie は、以後そのサーバーに送信されるすべての HTTP リクエストに含まれます。
+Web サーバーからの HTTP 応答がブラウザーの Cookie に設定されます。この処理により、`s_vi` Cookie が設定されます。`s_vi` Cookie は Analytics 訪問者を識別するものです。設定された Cookie は、以後そのサーバーに送信されるすべての HTTP リクエストに含まれます。
 
 リクエストがアドビのデータ収集サーバーに送信されると、ヘッダーで `s_vi` Cookie の有無がチェックされます。この Cookie がリクエストに含まれている場合、この Cookie を使用して訪問者が識別されます。この Cookie がリクエストに含まれていない場合、サーバーは一意の [!DNL Experience Cloud] ID を生成し、それを HTTP 応答ヘッダー内に Cookie として設定した後、リクエストとともに返送します。この Cookie はブラウザーに保存され、その後のサイト訪問の際にデータ収集サーバーに返送されます。このしくみによって、複数回訪問する訪問者を識別できます。
 
@@ -66,7 +66,7 @@ JavaScript は、ファーストパーティドメイン（現在の Web サイ�
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external">aid（s_vi Cookie）</a> </p> </td> 
-   <td colname="col3"> <p><span class="keyword"> Experience Cloud</span> IDサービスを展開する前に、訪問者に既存のs_ vi cookieがあったか、 <a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local"> 猶予期間</a> が設定されています。 </p> </td> 
+   <td colname="col3"> <p><span class="keyword">Experience Cloud</span> ID サービスを導入する前に、訪問者に既存の s_vi Cookie がある場合、または<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">猶予期間</a>を設定している場合。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_0A950B1A6B004387AFEE8EED882739CB" src="assets/step3_icon.png" /> </p> </td> 
@@ -76,7 +76,7 @@ JavaScript は、ファーストパーティドメイン（現在の Web サイ�
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
    <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external">fid（H.25.3 以降の代替の Cookie、または JavaScript 版 AppMeasurement）</a> </p> </td> 
-   <td colname="col3"> <p>ブラウザーがサードパーティ Cookie を受け入れず、Analytics トラッキングサーバーがサードパーティトラッキングサーバーとして設定されている場合 </p> <p> <p>注意：<span class="codeph">fid</span> は、従来の識別子で、サイトに ID サービスを実装している場合、使用されません。In this case, the <span class="codeph"> fid</span> is not needed because the first-party, <a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie</a> makes it obsolete. fid は、レガシーコードをサポートするために、および歴史的な理由により、保持されています。 </p> </p> </td> 
+   <td colname="col3"> <p>ブラウザーがサードパーティ Cookie を受け入れず、Analytics トラッキングサーバーがサードパーティトラッキングサーバーとして設定されている場合 </p> <p> <p>注意：<span class="codeph">fid</span> は、従来の識別子で、サイトに ID サービスを実装している場合、使用されません。この場合、ファーストパーティである<a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie</a> がもう使用していないので、<span class="codeph"> fid</span> は必要ありません。fid は、レガシーコードをサポートするために、および歴史的な理由により、保持されています。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
@@ -88,7 +88,7 @@ JavaScript は、ファーストパーティドメイン（現在の Web サイ�
 
 ほとんどのシナリオでは 1 回の呼び出しに 2 ～ 3 種類の ID が存在しますが、Analytics では、最も優先度の高い ID が正式な [!DNL Experience Cloud] ID として使用されます。例えば、&#39;vid&#39; クエリパラメーターに格納されるカスタム訪問者 ID を設定している場合は、この ID が、同じヒットで存在する他の ID よりも優先して使用されます。
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
 >* [Analytics ID の操作の順序](../../reference/analytics-reference/analytics-order-of-operations.md#concept-b92935b4fff545adb4773f3728bc15ef)
 
