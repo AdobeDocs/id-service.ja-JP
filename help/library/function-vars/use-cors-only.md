@@ -1,21 +1,21 @@
 ---
-description: ブラウザーがExperience Cloud IDサービスからリソースをリクエストする方法を制御するブール型のフラグ。
+description: ブラウザーがExperience Platform IDサービスからリソースをリクエストする方法を制御するブール型のフラグ。
 keywords: ID サービス
-seo-description: ブラウザーがExperience Cloud IDサービスからリソースをリクエストする方法を制御するブール型のフラグ。
+seo-description: ブラウザーがExperience Platform IDサービスからリソースをリクエストする方法を制御するブール型のフラグ。
 seo-title: useCORSOnly
 title: useCORSOnly
-uuid: 607dc035- dffc-4f4d- be51-08ef6c0a8fad
+uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
 translation-type: tm+mt
-source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
+source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ---
 
 
 # useCORSOnly{#usecorsonly}
 
-ブラウザーがExperience Cloud IDサービスからリソースをリクエストする方法を制御するブール型のフラグ。
+ブラウザーがExperience Platform IDサービスからリソースをリクエストする方法を制御するブール型のフラグ。
 
-**構文:**`useCORSOnly: true|false` （デフォルトは `false`、です）。
+**構文：**`useCORSOnly: true|false`（デフォルトは `false` です。）
 
 **概要**
 
@@ -23,7 +23,7 @@ source-git-commit: 3e7b49564938527e1b6bca3a5fbaf9eb141d2e06
 
 >[!IMPORTANT]
 >
->`Set useCORSOnly: true` 厳密なセキュリティ要件がある場合は、すべての訪問者が CORS をサポートするブラウザーを使用しているという確信がある場合にのみ、このモードを有効にする必要があります。ユーザーエクスペリエンスは、CORS をサポートしていないブラウザーの影響を受けません。ただし、CORS をサポートしていないブラウザーは、[!DNL Adobe Experience Cloud] を使用してリソースをリクエストしたり、データを交換したりできません。
+>厳格なセキュリティ要件がある場合は、`Set useCORSOnly: true` を設定します。すべての訪問者が CORS をサポートするブラウザーを使用しているという確信がある場合にのみ、このモードを有効にする必要があります。ユーザーエクスペリエンスは、CORS をサポートしていないブラウザーの影響を受けません。ただし、CORS をサポートしていないブラウザーは、[!DNL Adobe Experience Cloud] を使用してリソースをリクエストしたり、データを交換したりできません。
 
 **コードサンプル**
 
