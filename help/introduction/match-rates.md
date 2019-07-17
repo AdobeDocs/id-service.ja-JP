@@ -1,19 +1,19 @@
 ---
-description: Adobe Media ManagerおよびIDサービスを含む、ID同期プロセスとエクスペリエンスプラットフォームIDサービスの一致率の概要です。
+description: Adobe Media ManagerやIDサービスなど、ID同期プロセスとExperience Cloud IDサービスの一致率の概要です。
 keywords: ID サービス
-seo-description: Adobe Media ManagerおよびIDサービスを含む、ID同期プロセスとエクスペリエンスプラットフォームIDサービスの一致率の概要です。
+seo-description: Adobe Media ManagerやIDサービスなど、ID同期プロセスとExperience Cloud IDサービスの一致率の概要です。
 seo-title: ID 同期と一致率について
 title: ID 同期と一致率について
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # ID 同期と一致率について{#understanding-id-synchronization-and-match-rates}
 
-Adobe Media ManagerおよびIDサービスを含む、ID同期プロセスとエクスペリエンスプラットフォームIDサービスの一致率の概要です。
+Adobe Media ManagerやIDサービスなど、ID同期プロセスとExperience Cloud IDサービスの一致率の概要です。
 
 ## ID 同期と一致率 {#section-f652aae7234945e89d26dd833c5215fb}
 
@@ -33,7 +33,7 @@ ID サービスは、リアルタイムに ID を同期します。このプロ�
 
 **手順 1：ページの読み込み**
 
-訪問者がサイトにアクセスしてページを読み込むと、`Visitor.getInstance` 関数は ID サービスへの [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) または JSON-P 呼び出しをおこないます。ID サービスは、訪問者の [!DNL Experience Cloud] ID（MID）を含む Cookie を使用して応答します。MID は、各サイト訪問者に割り当てられた一意の ID です。また、[cookieとエクスペリエンスプラットフォームIDサービス](../introduction/cookies.md)を参照してください。
+訪問者がサイトにアクセスしてページを読み込むと、`Visitor.getInstance` 関数は ID サービスへの [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) または JSON-P 呼び出しをおこないます。ID サービスは、訪問者の [!DNL Experience Cloud] ID（MID）を含む Cookie を使用して応答します。MID は、各サイト訪問者に割り当てられた一意の ID です。また、[cookieとExperience Cloud IDサービス](../introduction/cookies.md)を参照してください。
 
 **手順 2：iFrame の読み込み**
 
@@ -43,7 +43,7 @@ ID サービスは、リアルタイムに ID を同期します。このプロ�
 * 可能な限り高速に読み込みます。これが速すぎる場合、ウィンドウ読み込みイベントの後で iFrame を読み込むことができます（非推奨）。詳しくは、[idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) を参照してください。
 * iFrame のコードが親ページのアクセス権を取得したり、親ページに影響を与えたりすることを防ぎます。
 
-また、[エクスペリエンスプラットフォームIDサービスのリクエストと設定方法](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+また、[Experience Cloud IDサービスのリクエストと設定方法](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
 
 **手順3：ID 同期の実行**
 
