@@ -6,7 +6,7 @@ seo-title: 2015 年リリースノート
 title: 2015 年リリースノート
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 2015 年 11 月
 
-児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。See [COPPA Support in the Experience Platform Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). バージョン 1.5.3 以降でサポートされています。
+児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。See [COPPA Support in the Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). バージョン 1.5.3 以降でサポートされています。
 
 ## バージョン 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -35,17 +35,17 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 * 同期または送信するデータがない場合に、ID サービスをリクエストできないバグを修正しました。（AAM-20164）
 * ID サービスで、マルチパートのトップレベルドメイン Cookie を適切に設定できないバグを修正しました。例えば、`my_company.co.uk` のようなドメインの場合、状況によっては、ID サービスは、`co.uk` にのみ Cookie を設定していました。（AN-104683）
 
-   これは、次の基準のすべて**に当てはまる少数のクライアントのみに影響していました。
+   これは、次の基準のすべて&#x200B;**&#x200B;に当てはまる少数のクライアントのみに影響していました。
 
    * ID サービスを使用している。
-   * [猶予期限](../reference/analytics-reference/grace-period.md)を有効にしているか、**猶予期限がファーストパーティ cookie を使用していて、ユーザーが cookie をブロックしている。
+   * [猶予期限](../reference/analytics-reference/grace-period.md)を有効にしているか、**&#x200B;猶予期限がファーストパーティ cookie を使用していて、ユーザーが cookie をブロックしている。
 
    * マルチパートのトップレベルドメインのページがある。
 
 このリリースのドキュメントで見直された内容は以下のとおりです。
 
 * [API メソッドとコードライブラリ](../library/library.md#concept-ff27497375644a898d47984aefb21c97)：コンテンツとテキストを再構成しました。ほとんどの場合、メソッドごとにページを設けました。
-* [Experience Platform IDサービスの要件](../reference/requirements.md):コンテンツを改訂し、テキストを再構成しました。
+* [Experience Cloud IDサービスの要件](../reference/requirements.md):コンテンツを改訂し、テキストを再構成しました。
 
 ## バージョン 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
