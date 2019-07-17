@@ -6,7 +6,7 @@ seo-title: 他の Experience Cloud ソリューションに関する FAQ
 title: 他の Experience Cloud ソリューションに関する FAQ
 uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ## Analytics と Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**Experience Platform[!DNL Adobe Analytics]IDサービスを実装した[!DNL Audience Manager]後、ユーザーの訪問履歴がエクスポートされますか。**
+**Experience Cloud[!DNL Adobe Analytics]IDサービスを実装した[!DNL Audience Manager]後、ユーザーの訪問履歴がエクスポートされますか。**
 
 この場合、次の 2 つのことが考えられます。
 
