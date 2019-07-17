@@ -1,12 +1,12 @@
 ---
-description: エクスペリエンス、機能、およびExperience Platform IDサービスとのAnalyticsの使用に関する問題に関するよくある質問（FAQ）です。
-keywords: Experience Platform IDサービス
+description: Experience Cloud IDサービスとAnalyticsの使用に関連する、機能、機能、および問題に関するよくある質問です。
+keywords: Experience Cloud IDサービス
 seo-description: 機能、機能、およびIDサービスとAnalyticsの使用に関する問題に関するよくある質問（FAQ）です。
 seo-title: AnalyticsおよびIDサービスFAQ
 title: AnalyticsおよびIDサービスFAQ
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -41,7 +41,7 @@ CNAME を設定しても、訪問者がメインのエントリサイトを最�
 
 **Analytics リクエストに Experience Cloud ID（MID）パラメーターがない理由を教えてください。**
 
-If the Identity Service is returning information correctly but you do not see the `MID` parameter, make sure that you&#39;ve upgraded to a supported version of AppMeasurement.
+If the Identity Service is returning information correctly but you do not see the `MID` parameter, make sure that you've upgraded to a supported version of AppMeasurement.
 
 **サイトでHコードとJavaScript版AppMeasurementをIDサービスと併用できますか。**
 
