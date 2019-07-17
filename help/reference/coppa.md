@@ -1,19 +1,19 @@
 ---
-description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Platform IDサービスコードに追加して、ブラウザーのサードパーティドメインでcookieを設定できないようにすることができます。
+description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Cloud IDサービスコードに追加して、ブラウザーのサードパーティドメインにcookieを設定できないようにすることができます。
 keywords: ID サービス
-seo-description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Platform IDサービスコードに追加して、ブラウザーのサードパーティドメインでcookieを設定できないようにすることができます。
-seo-title: エクスペリエンスプラットフォームIDサービスでのCOPPAのサポート
-title: エクスペリエンスプラットフォームIDサービスでのCOPPAのサポート
+seo-description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Cloud IDサービスコードに追加して、ブラウザーのサードパーティドメインにcookieを設定できないようにすることができます。
+seo-title: Experience Cloud IDサービスでのCOPPAのサポート
+title: Experience Cloud IDサービスでのCOPPAのサポート
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# COPPA Support in the Experience Platform Identity Service {#coppa-support-in-the-experience-cloud-id-service}
+# COPPA Support in the Experience Cloud Identity Service {#coppa-support-in-the-experience-cloud-id-service}
 
-児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Platform IDサービスコードに追加して、ブラウザーのサードパーティドメインでcookieを設定できないようにすることができます。
+児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Cloud IDサービスコードに追加して、ブラウザーのサードパーティドメインにcookieを設定できないようにすることができます。
 
 >[!NOTE]
 >
