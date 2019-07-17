@@ -31,6 +31,6 @@ Experience Cloud 訪問者 ID と Analytics 訪問者 ID の両方を確認し�
 
 [サポートされる XML タグ](https://marketing.adobe.com/developer/en_US/documentation/data-insertion/r-supported-tags)を参照してください。
 
-##  Java 版 AppMeasurement{#section-d664b94934924d048300d9c2b6560085}
+## Java 版 AppMeasurement{#section-d664b94934924d048300d9c2b6560085}
 
 Experience Cloud IDサービスは、現在、AppMeasurement for Javaではサポートされていません。
