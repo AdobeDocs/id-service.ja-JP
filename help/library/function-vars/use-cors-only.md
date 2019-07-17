@@ -1,19 +1,19 @@
 ---
-description: ブラウザーがExperience Platform IDサービスからリソースをリクエストする方法を制御するブール型のフラグ。
+description: ブラウザーがExperience Cloud IDサービスからリソースをリクエストする方法を制御するブール型のフラグ。
 keywords: ID サービス
-seo-description: ブラウザーがExperience Platform IDサービスからリソースをリクエストする方法を制御するブール型のフラグ。
+seo-description: ブラウザーがExperience Cloud IDサービスからリソースをリクエストする方法を制御するブール型のフラグ。
 seo-title: useCORSOnly
 title: useCORSOnly
 uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # useCORSOnly{#usecorsonly}
 
-ブラウザーがExperience Platform IDサービスからリソースをリクエストする方法を制御するブール型のフラグ。
+ブラウザーがExperience Cloud IDサービスからリソースをリクエストする方法を制御するブール型のフラグ。
 
 **構文：**`useCORSOnly: true|false`（デフォルトは `false` です。）
 
