@@ -2,22 +2,22 @@
 description: これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
 keywords: ID サービス
 seo-description: これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
-seo-title: Experience Platform IDサービスとの直接統合
-title: Experience Platform IDサービスとの直接統合
+seo-title: Experience Cloud IDサービスとの直接統合
+title: Experience Cloud IDサービスとの直接統合
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Direct integration with the Experience Platform Identity Service {#direct-integration-with-the-experience-cloud-id-service}
+# Direct integration with the Experience Cloud Identity Service {#direct-integration-with-the-experience-cloud-id-service}
 
 これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
 
 ## 構文{#section-a4754afec5ad40b6be00d6f1011d68bb}
 
-VisitorAPI.js または SDK コードライブラリを使用できないデバイスは、ID サービスで使用されるデータ収集サーバー（DCS）を直接呼び出すことができます。これをおこなうには `dpm.demdex.net` を呼び出し、次の形式のリクエストを使用します。*斜体*の部分には実際の情報が入ります。
+VisitorAPI.js または SDK コードライブラリを使用できないデバイスは、ID サービスで使用されるデータ収集サーバー（DCS）を直接呼び出すことができます。これをおこなうには `dpm.demdex.net` を呼び出し、次の形式のリクエストを使用します。*斜体*&#x200B;の部分には実際の情報が入ります。
 
 ![](assets/directSyntax.png)
 
@@ -62,11 +62,11 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 訪問者 IDです。詳しくは、<a href="../introduction/cookies.md" format="dita" scope="local"> cookieとエクスペリエンスプラットフォームIDサービス</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 訪問者 IDです。詳しくは、<a href="../introduction/cookies.md" format="dita" scope="local"> cookieとExperience Cloud IDサービス</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 組織 IDです。この ID の探し方については、<a href="../reference/requirements.md" format="dita" scope="local"> エクスペリエンスプラットフォームIDサービスの要件</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 組織 IDです。この ID の探し方については、<a href="../reference/requirements.md" format="dita" scope="local"> Experience Cloud IDサービスの要件</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
