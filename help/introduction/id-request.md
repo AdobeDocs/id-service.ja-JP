@@ -2,22 +2,22 @@
 description: ID のリクエストと応答のプロセスについて、概要を説明します。個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
 keywords: ID サービス
 seo-description: ID のリクエストと応答のプロセスについて、概要を説明します。個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
-seo-title: Experience Platform IDサービスのIDのリクエストと設定
-title: Experience Platform IDサービスのIDのリクエストと設定
+seo-title: Experience Cloud IDサービスによるIDのリクエストと設定
+title: Experience Cloud IDサービスによるIDのリクエストと設定
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# How the Experience Platform Identity Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# How the Experience Cloud Identity Service requests and sets IDs{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 ID のリクエストと応答のプロセスについて、概要を説明します。個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
 
 >[!NOTE]
 >
->If you&#39;re not familiar with how the Experience Platform Identity Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
+>If you're not familiar with how the Experience Cloud Identity Service creates the visitor ID, take a moment to review [Experience Cloud](../introduction/cookies.md).
 
 **ヒント：**[クロスドメイントラッキングに関する ID サービスのビデオ](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html)も参照してください。
 
@@ -48,7 +48,7 @@ ID のリクエストと応答のプロセスについて、概要を説明し�
 
 この例では、「食品会社」の訪問者は、ピザサイトからタコスサイトに移動します。「食品会社」のこのタコス Web サイトには ID サービスコードが含まれています。この訪問者が過去にタコス Web サイトにアクセスしたことはありません。
 
-この条件下では、タコスサイトに AMCV Cookie が存在しません。また、ID サービスは、ピザサイトに設定されている AMCV Cookie を使用できません。この Cookie は pizza ドメインに固有のものであるからです。そのため、ID サービスは DCS を呼び出して、訪問者 ID を確認してリクエストする必要があります。この場合、DCS の呼び出しには、「食品会社」の組織 ID に加えて demdex ID も含まれます。**また、前述のとおり、demdex ID は pizza サイトから取得され、demdex.net ドメイン下でサードパーティ Cookie として保存されます。
+この条件下では、タコスサイトに AMCV Cookie が存在しません。また、ID サービスは、ピザサイトに設定されている AMCV Cookie を使用できません。この Cookie は pizza ドメインに固有のものであるからです。そのため、ID サービスは DCS を呼び出して、訪問者 ID を確認してリクエストする必要があります。この場合、DCS の呼び出しには、「食品会社」の組織 ID に加えて demdex ID も含まれます。**&#x200B;また、前述のとおり、demdex ID は pizza サイトから取得され、demdex.net ドメイン下でサードパーティ Cookie として保存されます。
 
 ![](assets/request2.png)
 
