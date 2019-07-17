@@ -1,19 +1,19 @@
 ---
-description: Experience Platform IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定を使用して独自のサブドメイン名に変更します。
+description: Experience Cloud IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定で独自のサブドメイン名に変更します。
 keywords: ID サービス
-seo-description: Experience Platform IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定を使用して独自のサブドメイン名に変更します。
+seo-description: Experience Cloud IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定で独自のサブドメイン名に変更します。
 seo-title: audienceManagerServer および audienceManagerServerSecure
 title: audienceManagerServer および audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # audienceManagerServer および audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-Experience Platform IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定を使用して独自のサブドメイン名に変更します。
+Experience Cloud IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定で独自のサブドメイン名に変更します。
 
 **構文：**
 
@@ -30,7 +30,7 @@ Experience Platform IDサービスへの呼び出しで使用されるデフォ�
 
 * 会社で登録している [!DNL Audience Manager] サブドメイン名。この名前はコンサルタントに確認するか、コンサルタントから取得してください。
 * [!DNL Organization ID] に関連付けられているサブドメイン名。
-* 同じサブドメイン名を持つ*両方の*設定パラメーター。
+* 同じサブドメイン名を持つ&#x200B;*両方の*&#x200B;設定パラメーター。
 
 **コードサンプル**
 
