@@ -1,19 +1,19 @@
 ---
-description: これらの手順は、Experience Platform IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsおよびAudience Managerのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+description: これらの手順は、Experience Cloud IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsおよびAudience Managerのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 keywords: ID サービス
-seo-description: これらの手順は、Experience Platform IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsおよびAudience Managerのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
-seo-title: Experience Platform IDサービスのAnalyticsおよびAudience Managerへの実装
-title: Experience Platform IDサービスのAnalyticsおよびAudience Managerへの実装
+seo-description: これらの手順は、Experience Cloud IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsおよびAudience Managerのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+seo-title: Experience Cloud IDサービスのAnalyticsおよびAudience Managerへの実装
+title: Experience Cloud IDサービスのAnalyticsおよびAudience Managerへの実装
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Analytics and Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Implement the Experience Cloud Identity Service for Analytics and Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-これらの手順は、Experience Platform IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsおよびAudience Managerのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+これらの手順は、Experience Cloud IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsおよびAudience Managerのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 
 >[!IMPORTANT]
 >
@@ -40,7 +40,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ID サービスでは、`VisitorAPI.js` コードライブラリが必要です。このコードライブラリをダウンロードするには：
 
-1. **[!UICONTROL 管理]**／**[!UICONTROL コードマネージャー]** に移動します。
+1. **[!UICONTROL 管理]**／**[!UICONTROL コードマネージャー]**&#x200B;に移動します。
 
 1. コードマネージャーで、「**[!UICONTROL JavaScript (新規)]**」または「**[!UICONTROL JavaScript (レガシー)**]」をクリックします。圧縮されたコードライブラリがダウンロードされます。
 
@@ -103,7 +103,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE",
 
 >[!IMPORTANT]
 >
->組織 ID の大文字小文字を変更*しない*でください。この ID は大文字小文字が区別され、割り当てられたとおりに使用する必要があります。
+>組織 ID の大文字小文字を変更&#x200B;*しない*&#x200B;でください。この ID は大文字小文字が区別され、割り当てられたとおりに使用する必要があります。
 
 ## 手順 5：Visitor.getInstance へのトラッキングサーバーの追加 {#section-0dfc52096ac2427f86045aab9a0e0dfc}
 
@@ -179,7 +179,7 @@ ID サービスを使用するページと使用しないページが混在し�
 
 実装で s_vi Cookie を読み取る代わりに MID を取得できるようになった後に、猶予期間を停止します。
 
-[cookieおよびエクスペリエンスプラットフォームIDサービス](../introduction/cookies.md)も参照してください。
+[cookieおよびExperience Cloud IDサービス](../introduction/cookies.md)も参照してください。
 
 **クリックストリームデータの統合**
 
@@ -199,7 +199,7 @@ ID サービスの実装状況をテストするには、以下の項目を確�
 
 * [AMCV Cookie](../introduction/cookies.md)（ページがホストされているドメイン内）
 * Analytics イメージリクエストの MID 値（[Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html) を使用）
-* See also, [Test and Verify the Experience Platform Identity Service](../implementation-guides/test-verify.md).
+* See also, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
 
 サーバー側転送を検証するには、[サーバー側転送の実装の確認方法](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html)を参照してください。
 
