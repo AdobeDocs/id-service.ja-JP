@@ -6,7 +6,7 @@ seo-title: JavaScript を利用したサーバー側実装
 title: JavaScript を利用したサーバー側実装
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -21,7 +21,7 @@ Experience Cloud 訪問者 ID と Analytics 訪問者 ID の両方を確認し�
 
 >[!IMPORTANT]
 >
->Java版AppMeasurementは、現在、Experience Platform IDサービスをサポートしていません。
+>Java版AppMeasurementは、現在、Experience Cloud IDサービスをサポートしていません。
 
 ## Data Insertion API {#section-955ce7664a4646d38b3005cb2df40baf}
 
@@ -33,4 +33,4 @@ Experience Cloud 訪問者 ID と Analytics 訪問者 ID の両方を確認し�
 
 ##  Java 版 AppMeasurement{#section-d664b94934924d048300d9c2b6560085}
 
-Experience Platform IDサービスは、現在AppMeasurement for Javaでサポートされていません。
+Experience Cloud IDサービスは、現在、AppMeasurement for Javaではサポートされていません。
