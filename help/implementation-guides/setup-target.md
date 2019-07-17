@@ -1,19 +1,19 @@
 ---
-description: これらの手順は、Experience Platform IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないTargetのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+description: これらの手順は、Experience Cloud IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないTargetのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 keywords: ID サービス
-seo-description: これらの手順は、Experience Platform IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないTargetのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
-seo-title: Target向けExperience Platform IDサービスの実装
-title: Target向けExperience Platform IDサービスの実装
+seo-description: これらの手順は、Experience Cloud IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないTargetのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+seo-title: Target向けExperience Cloud IDサービスの実装
+title: Target向けExperience Cloud IDサービスの実装
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Target{#implement-the-experience-cloud-id-service-for-target}
+# Implement the Experience Cloud Identity Service for Target{#implement-the-experience-cloud-id-service-for-target}
 
-これらの手順は、Experience Platform IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないTargetのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+これらの手順は、Experience Cloud IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないTargetのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 
 >[!IMPORTANT]
 >
@@ -60,7 +60,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 >[!IMPORTANT]
 >
->組織 ID の大文字小文字を変更*しない*でください。この ID は大文字小文字が区別され、割り当てられたとおりに使用する必要があります。
+>組織 ID の大文字小文字を変更&#x200B;*しない*&#x200B;でください。この ID は大文字小文字が区別され、割り当てられたとおりに使用する必要があります。
 
 ## 手順 4：ページへの訪問者 API コードの追加 {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
 
@@ -77,7 +77,7 @@ ID サービスの実装状況をテストするには：
 * ページがホストされているドメインの AMCV Cookie を確認します。
 * `mboxMCGVID` が [!DNL Target] のリクエストに存在し、[!DNL Experience Cloud] ID（MID）が含まれていることを確認します。
 
-See [Cookies and the Experience Platform Identity Service](../introduction/cookies.md) for information about the AMCV cookie and the MID.
+See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for information about the AMCV cookie and the MID.
 
 **導入**
 
