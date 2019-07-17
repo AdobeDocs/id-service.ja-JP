@@ -1,19 +1,19 @@
 ---
-description: 2017年のExperience Platform IDサービスの機能リリース、更新、変更点です。
+description: 2017年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
 keywords: ID サービス
-seo-description: 2017年のExperience Platform IDサービスの機能リリース、更新、変更点です。
+seo-description: 2017年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
 seo-title: 2017 年リリースノート
 title: 2017 年リリースノート
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 2017 年リリースノート {#release-notes}
 
-2017年のExperience Platform IDサービスの機能リリース、更新、変更点です。
+2017年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
 
 これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)にも記載されています。以前の ID サービスリリースノートについては、[以前のリリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)またはこのページの下部にあるリンクを参照してください。
 
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Chrome でブラウザーの戻るボタンをクリックしたときに ID サービスがエラー状態になる問題を修正しました。
 * ID サービスで、イベント呼び出し応答の地域 ID が変更されたときに ID 同期が再実行されるようになりました。
-* 新たに追加したドキュメント、[IDサービスで使用されるアドビドメインへのホワイトリストの呼び出し方法を説明するコンテンツセキュリティポリシーおよびエクスペリエンスプラットフォームIDサービス](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
+* 新たに追加したドキュメント、[IDサービスで使用されるアドビドメインへのホワイトリストの呼び出し方法を説明する、コンテンツセキュリティポリシーおよびExperience Cloud IDサービス](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
 
 ## バージョン 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
