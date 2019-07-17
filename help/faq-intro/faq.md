@@ -6,7 +6,7 @@ seo-title: ID サービス よくある質問（FAQ）
 title: ID サービス FAQ
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -23,7 +23,7 @@ ID サービス利用の特長、機能、課題に関するよくある質問
 
 **ID サービスが Experience Cloud ID を取得するための呼び出しをおこないません。なぜですか。**
 
-これは診断が難しい問題です。まず、サイトのコンテンツセキュリティポリシーのヘッダーを確認してください。厳格なセキュリティポリシーが適用されている場合は、設定により、ID サービスによるサードパーティ呼び出しがブロックされている可能性があります。詳しくは、[コンテンツセキュリティポリシーおよびエクスペリエンスプラットフォームIDサービス](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)を参照してください。
+これは診断が難しい問題です。まず、サイトのコンテンツセキュリティポリシーのヘッダーを確認してください。厳格なセキュリティポリシーが適用されている場合は、設定により、ID サービスによるサードパーティ呼び出しがブロックされている可能性があります。詳しくは、[コンテンツセキュリティポリシーおよびExperience Cloud IDサービス](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)を参照してください。
 
 **VisitorAPI.js ファイルの保存**
 
@@ -67,13 +67,13 @@ ID サービス呼び出しは非同期であり、[demdex.net ドメイン](htt
 
 一般的に、リソースリクエストには、JSON-P よりも CORS を使用する方が望ましいと言えます。JSON-P の場合、一部のブラウザーはリクエストをキューに追加し、ページ上の他の同期呼び出しや非同期呼び出しリクエストを基準にして優先順位を下げます。CORS を使用すると、ブラウザーのコールスタック内でのこれらのリクエストの優先度の高さを確保できます。
 
-詳しくは、[エクスペリエンスプラットフォームIDサービスでのCORSのサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+詳しくは、[Experience Cloud IDサービスでのCORSのサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
 
 ## セキュリティ {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **ID サービスは CORS をサポートしていますか。**
 
-はい。See [CORS Support in the Experience Platform Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+はい。See [CORS Support in the Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
 
 **CORS とは何ですか。**
 
