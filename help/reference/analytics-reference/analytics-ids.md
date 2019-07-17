@@ -1,19 +1,19 @@
 ---
-description: Experience Platform IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+description: Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
 keywords: ID サービス
-seo-description: Experience Platform IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+seo-description: Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
 seo-title: Analytics および Experience Cloud ID の設定
 title: Analytics および Experience Cloud ID の設定
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Analytics および Experience Cloud ID の設定{#setting-analytics-and-experience-cloud-ids}
 
-Experience Platform IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
 
 ID サービスの実装後、AppMeasurement の前にこのコードが実行されます。ID サービスは Experience Cloud および Analytics の ID を取得するので、AppMeasurement が読み込まれたときには、これらの値が利用できる状態になっています。
 
@@ -86,7 +86,7 @@ JavaScript は、ファーストパーティドメイン（現在の Web サイ�
  </tbody> 
 </table>
 
-ほとんどのシナリオでは 1 回の呼び出しに 2 ～ 3 種類の ID が存在しますが、Analytics では、最も優先度の高い ID が正式な [!DNL Experience Cloud] ID として使用されます。例えば、&#39;vid&#39; クエリパラメーターに格納されるカスタム訪問者 ID を設定している場合は、この ID が、同じヒットで存在する他の ID よりも優先して使用されます。
+ほとんどのシナリオでは 1 回の呼び出しに 2 ～ 3 種類の ID が存在しますが、Analytics では、最も優先度の高い ID が正式な [!DNL Experience Cloud] ID として使用されます。例えば、'vid' クエリパラメーターに格納されるカスタム訪問者 ID を設定している場合は、この ID が、同じヒットで存在する他の ID よりも優先して使用されます。
 
 >[!MORE_LIKE_THIS]
 >
