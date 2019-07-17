@@ -1,19 +1,19 @@
 ---
-description: この節では、Experience Platform IDサービスに必要な適切なソリューション、サービスおよびコードバージョンを使用していることを確認してください。
+description: この節では、Experience Cloud IDサービスに必要な適切なソリューション、サービスおよびコードバージョンを使用していることを確認してください。
 keywords: ID サービス
-seo-description: この節では、Experience Platform IDサービスに必要な適切なソリューション、サービスおよびコードバージョンを使用していることを確認してください。
-seo-title: エクスペリエンスプラットフォームIDサービスの要件
-title: エクスペリエンスプラットフォームIDサービスの要件
+seo-description: この節では、Experience Cloud IDサービスに必要な適切なソリューション、サービスおよびコードバージョンを使用していることを確認してください。
+seo-title: Experience Cloud IDサービスの要件
+title: Experience Cloud IDサービスの要件
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Requirements for the Experience Platform Identity Service {#requirements-for-the-experience-cloud-id-service}
+# Requirements for the Experience Cloud Identity Service {#requirements-for-the-experience-cloud-id-service}
 
-この節では、Experience Platform IDサービスに必要な適切なソリューション、サービスおよびコードバージョンを使用していることを確認してください。
+この節では、Experience Cloud IDサービスに必要な適切なソリューション、サービスおよびコードバージョンを使用していることを確認してください。
 
 ## 実装の成功とサポートを確実にする要件 {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
