@@ -1,23 +1,23 @@
 ---
-description: Experience Platform IDサービスが従来のAnalytics IDとどのように連携するかの概要を説明します。
+description: Experience Cloud IDサービスが従来のAnalytics IDとどのように連携するかの概要を説明します。
 keywords: ID サービス
-seo-description: Experience Platform IDサービスが従来のAnalytics IDとどのように連携するかの概要を説明します。
+seo-description: Experience Cloud IDサービスが従来のAnalytics IDとどのように連携するかの概要を説明します。
 seo-title: Analytics と Experience Cloud ID のリクエスト
 title: Analytics と Experience Cloud ID のリクエスト
 uuid: 28beed16-7ef9-4824-8e82-853930756eca
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Analytics と Experience Cloud ID のリクエスト{#analytics-and-experience-cloud-id-requests}
 
-Experience Platform IDサービスが従来のAnalytics IDとどのように連携するかの概要を説明します。
+Experience Cloud IDサービスが従来のAnalytics IDとどのように連携するかの概要を説明します。
 
 ## 概要 {#section-64d8523ff7634cb987d0c6480f587dd3}
 
-以前は、Experience Platform IDサービスはAdobe Analyticsと緊密に統合されていました。現在も ID サービスは Analytics の重要な要素ですが、[!DNL Experience Cloud]Experience Cloud の他のソリューションや機能に対しても重要な役割を担うようになっています。Because of this historical legacy, checking for or writing an Analytics ID works a little differently than with the generic process described in [How the Experience Platform Identity Service Requests and Sets IDs...](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a). ID チェックの操作の順序について詳しくは、[Analytics ID と Experience Cloud ID の設定](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6)を参照してください。
+以前は、Experience Cloud IDサービスはAdobe Analyticsと緊密に統合されていました。現在も ID サービスは Analytics の重要な要素ですが、[!DNL Experience Cloud]Experience Cloud の他のソリューションや機能に対しても重要な役割を担うようになっています。Because of this historical legacy, checking for or writing an Analytics ID works a little differently than with the generic process described in [How the Experience Cloud Identity Service Requests and Sets IDs...](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a). ID チェックの操作の順序について詳しくは、[Analytics ID と Experience Cloud ID の設定](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6)を参照してください。
 
 ## AMCV Cookie がブラウザーに設定されていない {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
@@ -37,7 +37,7 @@ Experience Platform IDサービスが従来のAnalytics IDとどのように連�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>s_vi Cookie が設定されている</b> </p> </td> 
-   <td colname="col2"> <p>s_ vi cookieを持つサイト訪問者が最初にエクスペリエンスプラットフォームIDサービスに遭遇すると、このサービスは次のようになります。 </p> 
+   <td colname="col2"> <p>s_ vi cookieを持つサイト訪問者が最初にExperience Cloud IDサービスに遭遇すると、このサービスは次のようになります。 </p> 
     <ul id="ul_BE584810280D4874AF802A9247011787"> 
      <li id="li_AA395B09A3174AF78F3EC10053E2E4F5">s_vi Cookie に保存されている <span class="keyword">Analytics</span> ID を AMCV Cookie に書き込みます。この情報は <span class="keyword">Analytics</span> ID（AID）として書き込まれます。この操作により訪問者数が影響を受けることはありません。<i></i><span class="keyword">Analytics</span> は引き続き従来の ID を使用してユーザーを識別します。 </li> 
      <li id="li_8735DE21FEA542BA8024109B8FE1E2ED">MID を AMCV Cookie に書き込みます。MID はユーザーを異なるソリューションで識別します。 </li> 
