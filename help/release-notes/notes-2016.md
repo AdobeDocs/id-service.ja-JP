@@ -1,19 +1,19 @@
 ---
-description: 2016年のExperience Platform IDサービスの機能リリース、更新、変更点です。
+description: 2016年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
 keywords: ID サービス
-seo-description: 2016年のExperience Platform IDサービスの機能リリース、更新、変更点です。
+seo-description: 2016年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
 seo-title: 2016 年リリースノート
 title: 2016 年リリースノート
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # 2016 年リリースノート {#release-notes}
 
-2016年のExperience Platform IDサービスの機能リリース、更新、変更点です。
+2016年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
 
 これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)にも記載されています。過去の発表内容については、[以前のリリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)を参照してください。[!DNL Experience Cloud]
 
@@ -24,7 +24,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 >[!IMPORTANT]
 >
 >* バージョン 1.10 には [!DNL AppMeasurement] 1.8.0 が必要です。
->* Experience Platform IDサービスライブラリ2.0.0以上を使用すると、Adobe Media ManagerのID同期がデフォルトで開始されます。[ID 同期と一致率について](/help/introduction/match-rates.md)を参照してください。
+>* Experience Cloud IDサービスライブラリ2.0.0以上を使用すると、Adobe Media ManagerのID同期がデフォルトで開始されます。[ID 同期と一致率について](/help/introduction/match-rates.md)を参照してください。
 
 
 **修正点および改善点**
@@ -69,7 +69,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 **修正点および改善点**
 
-* 関数 `idSyncAttachIframeOnWindowLoad` で設定できるオプションのブール値のフラグとして、`Visitor.getInstance` が追加されました。`idSyncAttachIframeOnWindowLoad= true` の場合、ID サービスは、ウィンドウの読み込み時に ID 同期 iFrame を読み込みます。デフォルトでは、ID サービスは、可能な限り迅速に iFrame を読み込みます。このフラグは、廃止される * に代わるものです。*`idSyncAttachIframeASAP`[Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
+* 関数 `idSyncAttachIframeOnWindowLoad` で設定できるオプションのブール値のフラグとして、`Visitor.getInstance` が追加されました。`idSyncAttachIframeOnWindowLoad= true` の場合、ID サービスは、ウィンドウの読み込み時に ID 同期 iFrame を読み込みます。デフォルトでは、ID サービスは、可能な限り迅速に iFrame を読み込みます。このフラグは、廃止される *に代わるものです。*`idSyncAttachIframeASAP`[Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
 
 * ドメイン、ネイティブアプリおよびハイブリッドアプリから Web 移行への [!DNL Experience Cloud] ID のトラッキングをサポートする機能が追加されました。[訪問者 ID 追加ヘルパー関数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)を参照してください。
 
@@ -77,7 +77,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 **新規および改訂されたドキュメント**
 
-Revised: [Requirements for the Experience Platform Identity Service](../reference/requirements.md)
+Revised: [Requirements for the Experience Cloud Identity Service](../reference/requirements.md)
 
 **既知の問題**
 
@@ -89,7 +89,7 @@ Revised: [Requirements for the Experience Platform Identity Service](../referenc
 
 >[!IMPORTANT]
 >
->[!DNL Experience Cloud] ID サービスの バージョン 1.6.0 には、JavaScript 版 AppMeasurement バージョン 1.6.2 が*必要*です。ID サービスバージョン 1.6.0 にアップグレードする場合は、適切な AppMeasurement コードバージョンを使用していることを確認してください。
+>[!DNL Experience Cloud] ID サービスの バージョン 1.6.0 には、JavaScript 版 AppMeasurement バージョン 1.6.2 が&#x200B;*必要*&#x200B;です。ID サービスバージョン 1.6.0 にアップグレードする場合は、適切な AppMeasurement コードバージョンを使用していることを確認してください。
 
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 
@@ -101,9 +101,9 @@ Revised: [Requirements for the Experience Platform Identity Service](../referenc
  <tbody> 
   <tr> 
    <td colname="col1"> <p>クロスオリジンリソース共有（CORS） </p> </td> 
-   <td colname="col2"> <p>CORS を利用すると、ブラウザーから、現在のドメイン以外のドメインのリソースをリクエストできます。Experience Platform IDサービスは、クライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。 </p> <p>以下を参照してください。 </p> 
+   <td colname="col2"> <p>CORS を利用すると、ブラウザーから、現在のドメイン以外のドメインのリソースをリクエストできます。Experience Cloud IDサービスは、クライアント側のクロスオリジンリソースリクエストを有効にするCORS標準規格をサポートしています。CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。 </p> <p>以下を参照してください。 </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Experience Platform IDサービスでのCORSのサポート </a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local"> Experience Cloud IDサービスでのCORSのサポート </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -123,13 +123,13 @@ Revised: [Requirements for the Experience Platform Identity Service](../referenc
 
 **新規**
 
-* [Experience Platform IDサービスのAnalyticsへの実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [Experience Platform IDサービスのAnalytics、Audience ManagerおよびTargetへの実装](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [Experience Cloud IDサービスのAnalyticsへの実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
+* [Experience Cloud IDサービスのAnalytics、Audience ManagerおよびTargetへの実装](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **改訂済み**
 
-* [エクスペリエンスプラットフォームIDサービスの要件](../reference/requirements.md)
-* [エクスペリエンスプラットフォームIDサービスのテストと検証](../implementation-guides/test-verify.md)
+* [Experience Cloud IDサービスの要件](../reference/requirements.md)
+* [Experience Cloud IDサービスのテストと検証](../implementation-guides/test-verify.md)
 
 ## バージョン 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -165,8 +165,8 @@ Revised: [Requirements for the Experience Platform Identity Service](../referenc
 **ドキュメントの更新**
 
 * [Android および iOS 向け SDK 要件](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data WorkbenchとExperience Platform IDサービス](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [エクスペリエンスプラットフォームIDサービスのテストと検証](../implementation-guides/test-verify.md)
+* [Data WorkbenchとExperience Cloud IDサービス](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [Experience Cloud IDサービスのテストと検証](../implementation-guides/test-verify.md)
 
 ## バージョン 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -174,7 +174,7 @@ Revised: [Requirements for the Experience Platform Identity Service](../referenc
 
 **ドキュメントの更新**
 
-[Target向けExperience Platform IDサービスの実装](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[Target向けExperience Cloud IDサービスの実装](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## バージョン 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -201,9 +201,9 @@ Revised: [Requirements for the Experience Platform Identity Service](../referenc
 
 **ドキュメントの更新**
 
-* [Experience Platform IDサービスのAnalyticsへの実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) :IDサービスの設定方法を説明する新しい手順 [!DNL Analytics]です。
+* [Experience Cloud IDサービスのAnalyticsへの実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) :IDサービスの設定方法を説明する新しい手順 [!DNL Analytics]です。
 
-* [エクスペリエンスプラットフォームIDサービス移行の判断ポイント](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) :テキストを明確にしました。単一のドメインを使用する場合は、データ収集 CNAME の管理を終了したい場合に、その使用を停止できます。ただし、CNAME が機能している場合には、変更する必要はありません。
+* [Experience Cloud IDサービス移行の判断ポイント](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257) :テキストを明確にしました。単一のドメインを使用する場合は、データ収集 CNAME の管理を終了したい場合に、その使用を停止できます。ただし、CNAME が機能している場合には、変更する必要はありません。
 
 ## バージョン 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
