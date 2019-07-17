@@ -6,7 +6,7 @@ seo-title: appendVisitorIDsTo（クロスドメイントラッキング）
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 ## ブラウザーでサードパーティ Cookie がブロックされている場合に複数のドメインをまたいで訪問者を追跡する {#section-7251d88befd440b4b79520e33c5aa44a}
 
-ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Platform Identity Service](../../introduction/cookies.md) ). ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。サードパーティ Cookie には、ID サービスで MID を生成するために使用される別の ID が含まれます。ブラウザーでサードパーティ Cookie がブロックされている場合、ID サービスは以下のことができなくなります。
+ID service writes a first- and third-party cookie to the browser when a person visit your site (see [Cookies and the Experience Cloud Identity Service](../../introduction/cookies.md) ). ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。サードパーティ Cookie には、ID サービスで MID を生成するために使用される別の ID が含まれます。ブラウザーでサードパーティ Cookie がブロックされている場合、ID サービスは以下のことができなくなります。
 
 * サイト訪問者が別のドメインに移動したときに、その訪問者の一意の ID を再生成する。
 * 同じ組織が所有する異なるドメインにわたって訪問者を追跡する。
