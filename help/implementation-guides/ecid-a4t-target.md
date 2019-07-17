@@ -6,7 +6,7 @@ seo-title: Target のサーバー側実装を使用する A4T での ID サー�
 title: Target のサーバー側実装を使用する A4T での ID サービスの使用
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -153,7 +153,7 @@ Response.send("
 
 **DTM 設定**
 
-これらを名前と値のペアとして ID サービスインスタンスの **[!UICONTROL 一般／設定]** セクションに追加します。
+これらを名前と値のペアとして ID サービスインスタンスの&#x200B;**[!UICONTROL 一般／設定]**&#x200B;セクションに追加します。
 
 * **[!UICONTROL 名前：]** serverState
 * **[!UICONTROL 値：]**%serverState%
@@ -166,7 +166,7 @@ Response.send("
 
 ![](assets/server_side_dtm.png)
 
-また、[DTMのエクスペリエンスプラットフォームIDサービスの設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)を参照してください。
+また、[DTM用のExperience Cloud IDサービスの設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)を参照してください。
 
 **DTM を使用しないサーバー状態の取得**
 
