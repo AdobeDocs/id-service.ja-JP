@@ -6,7 +6,7 @@ seo-title: 直接統合の使用例
 title: 直接統合の使用例
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 >[!TIP]
 >
 >* 使用例を参照する前に、[コード構文と変数](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)をよくお読みください。
->* For more information about the MID, see [Cookies and the Experience Platform Identity Service](../introduction/cookies.md).
+>* For more information about the MID, see [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md).
 >
 
 
