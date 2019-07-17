@@ -2,16 +2,16 @@
 description: ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
 keywords: playstation;ID サービス
 seo-description: ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
-seo-title: CookieとエクスペリエンスプラットフォームIDサービス
-title: CookieとエクスペリエンスプラットフォームIDサービス
+seo-title: CookieとExperience Cloud IDサービス
+title: CookieとExperience Cloud IDサービス
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Cookies and the Experience Platform Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookies and the Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
 
 ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
 
@@ -124,4 +124,4 @@ Experience Cloud ID（MID）は、組織 ID と demdex ID から計算によっ�
 
 ## 次の手順 {#section-8db1727a63bc4ff68b495f270315d453}
 
-See [How the Experience Platform Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+See [How the Experience Cloud Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
