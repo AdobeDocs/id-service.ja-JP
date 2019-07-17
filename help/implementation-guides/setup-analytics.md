@@ -1,19 +1,19 @@
 ---
-description: これらの手順は、Experience Platform IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+description: これらの手順は、Experience Cloud IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 keywords: ID サービス
-seo-description: これらの手順は、Experience Platform IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
-seo-title: Experience Platform IDサービスのAnalyticsへの実装
-title: Experience Platform IDサービスのAnalyticsへの実装
+seo-description: これらの手順は、Experience Cloud IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+seo-title: Experience Cloud IDサービスのAnalyticsへの実装
+title: Experience Cloud IDサービスのAnalyticsへの実装
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Implement the Experience Platform Identity Service for Analytics {#implement-the-experience-cloud-id-service-for-analytics}
+# Implement the Experience Cloud Identity Service for Analytics {#implement-the-experience-cloud-id-service-for-analytics}
 
-これらの手順は、Experience Platform IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+これらの手順は、Experience Cloud IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 
 >[!IMPORTANT]
 >
@@ -38,7 +38,7 @@ source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
 
 [!DNL ID Service] には`VisitorAPI.js` コードライブラリが必要です。このコードライブラリをダウンロードするには：
 
-1. **[!UICONTROL 管理]**／**[!UICONTROL コードマネージャー]** に移動します。
+1. **[!UICONTROL 管理]**／**[!UICONTROL コードマネージャー]**&#x200B;に移動します。
 1. [!DNL Code Manager] で、「**[!UICONTROL JavaScript（新規）]**」または「**[!UICONTROL JavaScript（レガシー）]**」のいずれかをクリックします。
 
    圧縮されたコードライブラリがダウンロードされます。
@@ -102,7 +102,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!IMPORTANT]
 >
->組織 ID の大文字小文字を変更*しない*でください。この ID は大文字小文字が区別され、割り当てられたとおりに使用する必要があります。
+>組織 ID の大文字小文字を変更&#x200B;*しない*&#x200B;でください。この ID は大文字小文字が区別され、割り当てられたとおりに使用する必要があります。
 
 ## 手順 4：Visitor.getInstance へのトラッキングサーバーの追加 {#section-70ec9ebff47940d8ab520be5ec4728c5}
 
@@ -134,7 +134,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 
 
-If you&#39;re not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 ## 手順 5：AppMeasurement.js または s_code.js ファイルの更新 {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
@@ -178,7 +178,7 @@ ID サービスを使用するページと使用しないページが混在し�
 
 実装で s_vi Cookie を読み取る代わりに MID を取得できるようになった後に、猶予期間を停止します。
 
-[cookieとエクスペリエンスプラットフォームIDサービス](../introduction/cookies.md)を参照してください。
+[cookieとExperience Cloud IDサービス](../introduction/cookies.md)を参照してください。
 
 クリックストリームデータフィードから内部システムにデータを送信していて、そのプロセスで `visid_high` 列と `visid_low` 列を使用している場合、猶予期間が必要です。
 
@@ -199,7 +199,7 @@ ID サービスの実装状況をテストするには、以下の項目を確�
 * [AMCV cookie](../introduction/cookies.md)（ページがホストされているドメイン内）
 * [!DNL Analytics] イメージリクエストの MID 値（[Adobe Debugger ツール](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html)を使用）
 
-See, [Test and Verify the Experience Platform Identity Service](../implementation-guides/test-verify.md).
+See, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
 
 **コードのデプロイ**
 
