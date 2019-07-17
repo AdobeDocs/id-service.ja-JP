@@ -1,19 +1,19 @@
 ---
-description: Experience Platform IDサービスが実装される前にs_ vi cookieに保存されていた従来のAnalytics ID（存在する場合）を返します。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
+description: Experience Cloud IDサービスが実装される前にs_ vi cookieに保存されていた従来のAnalytics ID（存在する場合）を返します。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
 keywords: ID サービス
-seo-description: Experience Platform IDサービスが実装される前にs_ vi cookieに保存されていた従来のAnalytics ID（存在する場合）を返します。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
+seo-description: Experience Cloud IDサービスが実装される前にs_ vi cookieに保存されていた従来のAnalytics ID（存在する場合）を返します。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # getAnalyticsVisitorID{#getanalyticsvisitorid}
 
-Experience Platform IDサービスが実装される前にs_ vi cookieに保存されていた従来のAnalytics ID（存在する場合）を返します。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
+Experience Cloud IDサービスが実装される前にs_ vi cookieに保存されていた従来のAnalytics ID（存在する場合）を返します。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
 
 **構文** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
