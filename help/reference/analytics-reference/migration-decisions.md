@@ -1,19 +1,19 @@
 ---
-description: Experience Platform IDサービスを導入する前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法またはJavaScriptファイルを使用してデータを収集する場合の潜在的な問題について理解する必要があります。
+description: Experience Cloud IDサービスを導入する前に、様々な方法やJavaScriptファイルを使用してデータを収集する場合に、このサービスが複数ドメインでの訪問者トラッキングにどのように影響するか、および潜在的な問題について理解する必要があります。
 keywords: ID サービス
-seo-description: Experience Platform IDサービスを導入する前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法またはJavaScriptファイルを使用してデータを収集する場合の潜在的な問題について理解する必要があります。
-seo-title: エクスペリエンスプラットフォームIDサービス移行の判断ポイント
-title: エクスペリエンスプラットフォームIDサービス移行の判断ポイント
+seo-description: Experience Cloud IDサービスを導入する前に、様々な方法やJavaScriptファイルを使用してデータを収集する場合に、このサービスが複数ドメインでの訪問者トラッキングにどのように影響するか、および潜在的な問題について理解する必要があります。
+seo-title: Experience Cloud IDサービス移行の判断ポイント
+title: Experience Cloud IDサービス移行の判断ポイント
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# エクスペリエンスプラットフォームIDサービス移行の判断ポイント
+# Experience Cloud IDサービス移行の判断ポイント
 
-Experience Platform IDサービスを導入する前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法またはJavaScriptファイルを使用してデータを収集する場合の潜在的な問題について理解する必要があります。
+Experience Cloud IDサービスを導入する前に、様々な方法やJavaScriptファイルを使用してデータを収集する場合に、このサービスが複数ドメインでの訪問者トラッキングにどのように影響するか、および潜在的な問題について理解する必要があります。
 
 この節に示す質問に答えながら、必要な移行手順について判断してください。
 
@@ -42,7 +42,7 @@ Experience Platform IDサービスを導入する前に、このサービスが�
 
 ## データ収集 CNAME がある場合、複数のドメインがありますか。
 
-データを同じレポートスイートに送信する複数のドメインがある場合、CNAME によるデータ収集をお勧めします。**この方法により、複数のドメインで訪問者を追跡できます。単一のドメインでデータを収集している場合は、データ収集 CNAME を維持する必要はありません。
+データを同じレポートスイートに送信する複数のドメインがある場合、CNAME によるデータ収集をお勧めします。**&#x200B;この方法により、複数のドメインで訪問者を追跡できます。単一のドメインでデータを収集している場合は、データ収集 CNAME を維持する必要はありません。
 
 <table id="table_D132BCA243E54657AEC930559343FDD3"> 
  <thead> 
@@ -71,7 +71,7 @@ Experience Platform IDサービスを導入する前に、このサービスが�
 
 ## 複数の Analytics JavaScript ファイルがありますか。または、Flash アプリケーションやビデオを追跡していますか。
 
-サイトに、**同じレポートスイートにデータを送信する複数の Analytics JavaScript ファイル、または Flash アプリケーションやビデオがある場合は、[!DNL Experience Cloud] ID サービスの展開中も訪問者が引き続き Analytics ID で識別されるように、猶予期間を設定する必要があります。
+サイトに、**&#x200B;同じレポートスイートにデータを送信する複数の Analytics JavaScript ファイル、または Flash アプリケーションやビデオがある場合は、[!DNL Experience Cloud] ID サービスの展開中も訪問者が引き続き Analytics ID で識別されるように、猶予期間を設定する必要があります。
 
 <table id="table_8A4EA063AF4345B69BC98537E2E702BA"> 
  <thead> 
