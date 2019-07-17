@@ -1,23 +1,23 @@
 ---
-description: 古い実装では、Dynamic Tag Management（DTM）を使用して、Experience Platform IDサービスを設定、デプロイ、および他のExperience Cloudソリューションと統合できます。
+description: 古い実装では、Dynamic Tag Management（DTM）を使用して、Experience Cloud IDサービスを設定、デプロイ、および他のExperience Cloudソリューションと統合できます。
 keywords: ID サービス
-seo-description: 古い実装では、Dynamic Tag Management（DTM）を使用して、Experience Platform IDサービスを設定、デプロイ、および他のExperience Cloudソリューションと統合できます。
+seo-description: 古い実装では、Dynamic Tag Management（DTM）を使用して、Experience Cloud IDサービスを設定、デプロイ、および他のExperience Cloudソリューションと統合できます。
 seo-title: Dynamic Tag Management による実装
 title: Dynamic Tag Management による実装
 uuid: c4f752c4-392e-4909-b178-911706857064
 translation-type: tm+mt
-source-git-commit: 484c52265d8e0b6f0e79cb21d09082fff730a44b
+source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
 # Dynamic Tag Management による実装{#implementation-with-dynamic-tag-management}
 
-古い実装では、Dynamic Tag Management（DTM）を使用して、Experience Platform IDサービスを設定、デプロイ、および他のExperience Cloudソリューションと統合できます。
+古い実装では、Dynamic Tag Management（DTM）を使用して、Experience Cloud IDサービスを設定、デプロイ、および他のExperience Cloudソリューションと統合できます。
 
 ## Dynamic Tag Management による実装 {#topic-6f4ed5d96977406ca991e50f3fbd5b01}
 
-古い実装では、Dynamic Tag Management（DTM）を使用して、Experience Platform IDサービスを設定、デプロイ、および他のExperience Cloudソリューションと統合できます。
+古い実装では、Dynamic Tag Management（DTM）を使用して、Experience Cloud IDサービスを設定、デプロイ、および他のExperience Cloudソリューションと統合できます。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ DTM は、シンプルでありながら強力なツールです。まだ使用�
 
 ## 導入のガイドライン {#concept-54a2ec49af8f4bfca9207b1d404e8e1a}
 
-Dynamic Tag Management（DTM）を使用してExperience Platform IDサービスを実装する前に、これらの要件および手順を確認してください。
+Dynamic Tag Management（DTM）を使用してExperience Cloud IDサービスを実装する前に、これらの要件および手順を確認してください。
 
 <!--
 mcvid-dtm-deployment.xml
@@ -70,7 +70,7 @@ Customers must provide a CNAME or use [!DNL *.sc.omtrdc] for [regional data coll
 
 新規 [!DNL Analytics] ユーザーは、データ収集用の[レポートスイートを作成](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)する必要があります。
 
-## Implement the Experience Platform Identity Service with DTM {#task-a659cf19dea84ad48edabe0b72ef9f5c}
+## Implement the Experience Cloud Identity Service with DTM {#task-a659cf19dea84ad48edabe0b72ef9f5c}
 
 Dynamic Tag Management（DTM）を使用して ID サービスを実装するには、以下の手順に従います。
 
@@ -88,23 +88,23 @@ mcvid-dtm-implement.xml
 
 1. DTM [!DNL Dashboard] で、作業対象の Web プロパティをクリックします。
 1. 選択した Web プロパティの「**[!UICONTROL 概要]**」タブで、「**[!UICONTROL ツールを追加]**」をクリックします。
-1. **[!UICONTROL 「ツールタイプ]** 」リストで **[!UICONTROL 、「エクスペリエンスプラットフォームIDサービス]**」をクリックします。
+1. **[!UICONTROL ツールタイプ]** リストで **[!UICONTROL 、"Experience Cloud IDサービス]**」をクリックします。
 
    >[!NOTE]
    >
    >この操作によって、「**[!UICONTROL Experience Cloud 組織 ID]**」ボックスに組織 ID が入力されます。DTM アカウントが [!DNL Experience Cloud] にリンクされていない場合、この ID を指定する必要があります。アカウントをリンクするには、[Experience Cloud でのアカウントのリンク](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)を参照してください。組織 ID を見つける方法については、[要件](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)を参照してください。
 
-1. **[!UICONTROL トラッキングサーバー]** ボックスに、トラッキングサーバーの名前を入力します。If you&#39;re not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+1. **[!UICONTROL トラッキングサーバー]**&#x200B;ボックスに、トラッキングサーバーの名前を入力します。If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 1. 「**[!UICONTROL ツールを作成]**」および「**[!UICONTROL 変更を保存]**」をクリックします。
 
-   保存したら、ID サービスは DTM のツールとして設定されます。ただし、まだ使用する準備は整っていません。DTM ツールは、DTM 公開／承認プロセスを経る必要があり、追加のパラメーターを設定することもできます。DTM 承認プロセスについて詳しくは、[ユーザーの基礎知識ジャンプスタート](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html)ビデオを参照してください。DTM に追加できるパラメーターについて詳しくは、[DTMのエクスペリエンスプラットフォームIDサービスの設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)を参照してください。
+   保存したら、ID サービスは DTM のツールとして設定されます。ただし、まだ使用する準備は整っていません。DTM ツールは、DTM 公開／承認プロセスを経る必要があり、追加のパラメーターを設定することもできます。DTM 承認プロセスについて詳しくは、[ユーザーの基礎知識ジャンプスタート](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html)ビデオを参照してください。DTM に追加できるパラメーターについて詳しくは、[DTM用のExperience Cloud IDサービスの設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)を参照してください。
 
 >[!MORE_LIKE_THIS]
 >
 >* [Web プロパティ](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
 
 
-## Experience Platform Identity Service Settings for DTM {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
+## Experience Cloud Identity Service Settings for DTM {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
 [!DNL Organization ID]、[!DNL General] および [!DNL Customer Settings] フィールドについて、およびこれらの [!DNL Experience Cloud] ID サービスでの使用方法について説明します。
 
@@ -124,7 +124,7 @@ mcvid-dtm-settings.xml
 
 ![](assets/orgID.png)
 
-[cookieとExperience Platform IDサービス](../introduction/cookies.md)も参照してください。
+[cookieとExperience Cloud IDサービス](../introduction/cookies.md)も参照してください。
 
 ## 一般設定{#section-071d358e40f84629a8901b893dd61392}
 
@@ -136,7 +136,7 @@ mcvid-dtm-settings.xml
 
 **訪問者 ID を自動的にリクエスト**
 
-When checked, dynamic tag management to automatically calls the `getMarketingCloudVisitorID()` method before loading any of the Adobe solutions that use the Experience Platform Identity Service.
+When checked, dynamic tag management to automatically calls the `getMarketingCloudVisitorID()` method before loading any of the Adobe solutions that use the Experience Cloud Identity Service.
 
 [getMarketingCloudVisitorID](../library/get-set/getmcvid.md) を参照してください。
 
@@ -196,7 +196,7 @@ Anatytics のデータ収集に使用されるセキュリティで保護され�
 
 訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って、訪問者を定義または識別するオプションです。詳しくは、[顧客 ID と認証状態](../reference/authenticated-state.md)を参照してください。
 
-## Test and verify the Experience Platform Identity Service {#concept-644fdbef433b46ba9c0634ac95eaa680}
+## Test and verify the Experience Cloud Identity Service {#concept-644fdbef433b46ba9c0634ac95eaa680}
 
 これらの説明、ツール、手順は、ID サービスが適切に動作しているかどうかを判定するのに役立ちます。これらのテストは、一般に、ID サービスに適用され、様々な ID サービスと [!DNL Experience Cloud] ソリューションの組み合わせに適用されます。
 
@@ -220,7 +220,7 @@ ID サービスのテストと検証を始める前に知っておくべき重�
 
 ## Adobe Debugger を使用したテスト {#section-861365abc24b498e925b3837ea81d469}
 
-[!DNL Adobe] Debugger の応答に [!DNL Experience Cloud ID]（MID）が表示される場合、サービス統合は適切に設定されています。See [Cookies and the Experience Platform Identity Service](../introduction/cookies.md) for more information about the MID.
+[!DNL Adobe] Debugger の応答に [!DNL Experience Cloud ID]（MID）が表示される場合、サービス統合は適切に設定されています。See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for more information about the MID.
 
 [!DNL Adobe][デバッガを使用してIDサービスのステータスを検証するに](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html)は:
 
