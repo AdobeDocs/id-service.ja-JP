@@ -6,7 +6,7 @@ seo-title: 顧客 ID と認証状態
 title: 顧客 ID と認証状態
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 
 ---
 
@@ -92,7 +92,7 @@ Beginning with Experience Cloud Identity Service v1.5+, `setCustomerIDs` include
 >* ID は大文字と小文字が区別されます。
 >* エンコードされていない ID 値のみを使用してください。
 >* 顧客 ID と認証状態は訪問者 ID Cookie に保存されません。ページまたはアプリケーションコンテキストごとに設定する必要があります。
->* 顧客 ID には、個人識別情報（PII）は含めないでください。PII（電子メールアドレスなど）を使用して訪問者を識別する場合は、情報をハッシュ化または暗号化して格納することをお勧めします。
+>* 顧客 ID には、個人識別情報（PII）は含めないでください。PII（電子メールアドレスなど）を使用して訪問者を識別する場合は、情報をハッシュ化または暗号化して格納することをお勧めします。ECIDライブラリは、ハッシュユーザー識別子のサポートを提供します。See [SHA256 Hashing Support for setCustomerIDs](/help/reference/hashing-support.md).
 >
 
 
@@ -116,7 +116,7 @@ visitor.setCustomerIDs({
         "id":"67312378756723456", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     }, 
-    "puuid":"550e8400-e29b-41d4-a716-446655440000" 
+    "dpuuid":"550e8400-e29b-41d4-a716-446655440000" 
 }); 
  
 // Multiple IDs with identical authentication states 
@@ -125,7 +125,7 @@ visitor.setCustomerIDs({
         "id":"67312378756723456", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     }, 
-    "puuid":{ 
+    "dpuuid":{ 
         "id":"550e8400-e29b-41d4-a716-446655440000", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     } 
@@ -137,7 +137,7 @@ visitor.setCustomerIDs({
         "id":"67312378756723456", 
         "authState":Visitor.AuthState.AUTHENTICATED 
     }, 
-    "puuid":{ 
+    "dpuuid":{ 
         "id":"550e8400-e29b-41d4-a716-446655440000", 
         "authState":Visitor.AuthState.LOGGED_OUT 
     } 
@@ -199,12 +199,12 @@ Object customerIDs = visitor.getCustomerIDs();
     } 
 } 
   
-// setCustomerIDs call on this instance with {"userid":{"authState":Visitor.AuthState.LOGGED_OUT},"puuid":{"id":"550e8400-e29b-41d4-a716-446655440000"}} 
+// setCustomerIDs call on this instance with {"userid":{"authState":Visitor.AuthState.LOGGED_OUT},"dpuuid":{"id":"550e8400-e29b-41d4-a716-446655440000"}} 
 { 
     "userid":{ 
         "authState":2 
     }, 
-    "puuid":{ 
+    "dpuuid":{ 
         "id":"550e8400-e29b-41d4-a716-446655440000", 
         "authState":0 
     } 
