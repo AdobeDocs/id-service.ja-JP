@@ -5,7 +5,7 @@ seo-description: Experience Cloud IDサービス（ECID）は、SHA-256ハッシ
 seo-title: setCustomerIDsのSHA256ハッシュサポート
 title: setCustomerIDsのSHA256ハッシュサポート
 translation-type: tm+mt
-source-git-commit: 0311d57391a0a9d5ac5a0bba255ca71bdffd67c0
+source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
 
 ---
 
@@ -15,8 +15,8 @@ source-git-commit: 0311d57391a0a9d5ac5a0bba255ca71bdffd67c0
 Experience Cloud IDサービス（ECID）は、SHA-256ハッシュアルゴリズムをサポートし、顧客IDまたは電子メールアドレスを渡すことができ、ハッシュIDを渡すことができます。これは、ハッシュ化された識別子をExperience Cloudに送信するためのオプションのJavascriptメソッドです。顧客IDを送信する前に、独自のハッシュのメソッドを引き続き使用できます。
 以下の節で説明するように、setCustomerIDsを使用してハッシュサポートを実装するには、2つの方法があります。
 
-* EIDのsetCustomerIDsメソッドを使用する
-* Adobe Experience Platform Launchでのアクションの追加
+* [EIDのsetCustomerIDsメソッドを使用する](/help/reference/hashing-support.md#use-setcustomerids-method)
+* [Adobe Experience Platform Launchでのアクションの追加](/help/reference/hashing-support.md#add-action-launch)
 
 ## Use the `setCustomerIDs` method in ECID {#use-setcustomerids-method}
 
