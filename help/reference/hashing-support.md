@@ -5,7 +5,7 @@ seo-description: Experience Cloud IDサービス（ECID）は、SHA-256ハッシ
 seo-title: setCustomerIDsのSHA256ハッシュサポート
 title: setCustomerIDsのSHA256ハッシュサポート
 translation-type: tm+mt
-source-git-commit: c670939cbeaebf4530df0e7d12e992ca5f0963bd
+source-git-commit: 0311d57391a0a9d5ac5a0bba255ca71bdffd67c0
 
 ---
 
@@ -31,11 +31,13 @@ SHA-256ハッシュを使用して、単一の顧客ID（前述の電子メー�
 visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256");
 ```
 
+<br> 
+
 Experience Cloud訪問者IDとともに、追加の顧客ID、認証ステータスおよびハッシュタイプ（SHA-256）を各訪問者に関連付けることができます。ハッシュタイプを指定しない場合、ハッシュなしと見なされます。
 
 `setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html)として Experience Cloud にアップロードして、異なるソリューションからこのデータにアクセスすることができます。
 
-Customer IDs, authenticated states and hash type *are not* stored in a cookie to be used later. Instead, Customer IDs, authenticated states and hash type should be stored in an instance variable, to be retrieved using [`getCustomerIDs](/help/library/get-set/getcustomerids.md), as shown below:
+Customer IDs, authenticated states and hash type *are not* stored in a cookie to be used later. Instead, Customer IDs, authenticated states and hash type should be stored in an instance variable, to be retrieved using [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), as shown below:
 
 ```
 > visitor.getCustomerIDs();
@@ -43,6 +45,8 @@ Customer IDs, authenticated states and hash type *are not* stored in a cookie to
     email: {id: "a6ea4cde5da5ae7cc68baae894d1d6544fca26254433b0fff7c2cb4843b4a097", authState: 1, hashType: "SHA-256"}
     __proto__: Object
 ```
+
+<br> 
 
 `setCustomerIDs` このメソッドを使用すると、ハッシュ `dpm.demdex.net`化された顧客IDを含む `d_cid_ic` クエリパラメーターが追加され、Experience Cloud IDサービスの呼び出しが実行されます。サンプルの呼び出しは以下のようになります。明確にするために改行が追加されました。
 
@@ -53,6 +57,8 @@ d_blob=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&
 d_cid_ic=email%a6ea4cde5da5ae7cc68baae894d1d6544fca26254433b0fff7c2cb4843b4a097%011&
 ts=1563299964843
 ```
+
+<br> 
 
 `d_cid_ic` パラメーターと認証状態の説明については、以下の表を参照してください。
 
@@ -67,6 +73,8 @@ Experience Platform Launchは、アドビのタグ管理機能の次世代です
 To add an action in Launch, read the [rules documentation](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) in Adobe Launch and see the screen capture below:
 
 ![](/help/reference/assets/hashing-support.png)
+
+<br> 
 
 設定を確認すると、起動すると、次のようにデータがオブジェクトにラップされます。
 
