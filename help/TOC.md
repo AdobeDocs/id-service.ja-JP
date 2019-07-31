@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Experience Cloud IDサービスヘルプ
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
 
 ---
 
@@ -98,6 +98,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
    + [IDサービスの要件](reference/requirements.md)
    + [ビデオハートビートとIDサービス](reference/heartbeat.md)
    + [Data WorkbenchとIDサービス](reference/dwb.md)
+   + [setCustomerIDsのSHA256ハッシュサポート](reference/hashing-support.md)
 + よくある質問（FAQ） {#faqs}
    + [FAQ の概要](faq-intro/faq-intro.md)
    + [ID サービス FAQ](faq-intro/faq.md)
