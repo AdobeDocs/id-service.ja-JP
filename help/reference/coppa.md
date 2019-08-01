@@ -6,7 +6,7 @@ seo-title: Experience Cloud IDサービスでのCOPPAのサポート
 title: Experience Cloud IDサービスでのCOPPAのサポート
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 >[!NOTE]
 >
->バージョン 1.5.3 以降でサポートされています。
+>バージョン 3.0.0 以降でサポートされています。
 
 **Cookie とトラッキング**
 
