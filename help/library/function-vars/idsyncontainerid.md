@@ -4,9 +4,9 @@ keywords: ID サービス
 seo-description: このプロパティは ID 同期に使用するデータソースコンテナ ID を設定します。
 seo-title: idSyncContainerID
 title: idSyncContainerID
-uuid: e35dc48b-1aa1-41e3-91c1- ef1e9d2d8b90
+uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -25,9 +25,9 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ## 構文およびコードサンプル {#section-b0c50732b1c84bed8616e82e8e83d58c}
 
-**構文:**` idSyncContainerID: *`container ID値`*`
+**構文：** ` idSyncContainerID: *`コンテナ ID 値`*`
 
-**コードサンプル：**
+**コードサンプル:**
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
@@ -37,11 +37,11 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 });
 ```
 
-## コンテナの概要と用途 {#section-6aed44fbe9d6401a8f912cb0d98339a7}
+## コンテナの概要と用途{#section-6aed44fbe9d6401a8f912cb0d98339a7}
 
 **コンテナ**
 
-コンテナは、作成 [!DNL Audience Manager]されたオブジェクトです。外部からはアクセスできませんが、コンテナには次のいずれかの条件に該当するすべてのデータソースがリストされます。
+コンテナは [!DNL Audience Manager] によって作成されるオブジェクトです。外部からはアクセスできませんが、コンテナには次のいずれかの条件に該当するすべてのデータソースがリストされます。
 
 * ID 同期に使用可能だが未使用である。
 * ID 同期に使用されている。
@@ -82,7 +82,7 @@ ID サービスコードにこの設定を追加する必要があるかどう�
 
 ## DIL および VisitorAPI.js を使用する場合のコンテナ ID の設定 {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-同じページに [!DNL DIL]* および* VisitorAPI.js を導入している場合：
+同じページに [!UICONTROL DIL]*および* VisitorAPI.js を導入している場合：
 
 * ID 同期において、訪問者 ID サービスコードが DIL よりも優先されます。
 * ID サービスコードでのみ、`idSyncContainerID` コンフィギュレーションを設定します。
