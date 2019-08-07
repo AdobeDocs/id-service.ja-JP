@@ -5,7 +5,7 @@ seo-title: （ベータ）IAB フレームワークを使用したオプトイ�
 title: （ベータ）IAB フレームワークを使用したオプトインサービスの使用
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -31,7 +31,7 @@ Audience Manager customers using [IAB Transparency and Consent Framework (TCF)](
 >
 >オプトインは ECID 4.0 以降でのみ利用できます。
 
-サイト用オプトインとIABプラグインの両方を実装するには、&quot;Adobe Experience Platform Launch&quot;を使用してください。Read the [documentation for the ECID Opt-in extension](https://marketing-beta.adobe.com/resources/help/launch/ecid-optin/) to learn how to set up the Experience Platform Launch extension.
+サイト用オプトインとIABプラグインの両方を実装するには、"Adobe Experience Platform Launch"を使用してください。Read the [documentation for the ECID Opt-in extension](https://marketing-beta.adobe.com/resources/help/launch/ecid-optin/) to learn how to set up the Experience Platform Launch extension.
 
 オプトイン用の IAB を手動で有効化する場合は、Visitor オブジェクト内で以下の設定が true になっていることを確認してください。
 
@@ -46,9 +46,9 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 >[!IMPORTANT]
 >
->Audience Manager では、目的 1、2、5 に対する同意が必要です。また、Cookie をデプロイして ID 同期を開始または有効化するために、ベンダーの同意が必要です。**Read more about the IAB plugin in Audience Manager documentation ** [here](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html)**.
+>Audience Manager では、目的 1、2、5 に対する同意が必要です。また、Cookie をデプロイして ID 同期を開始または有効化するために、ベンダーの同意が必要です。** IAB プラグインの詳細については、[こちら](https://marketing-beta.adobe.com/resources/help/aam/iab-support/aam-iab-support.html)にある Audience Manager のドキュメントを参照してください。
 
-オプトインおよび IAB プラグインの両方を検証する方法の詳細については、[**こちら**](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0)の検証ガイドのユースケース 4 を参照してください。
+オプトインおよび IAB プラグインの両方を検証する方法の詳細については、[こちら](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0)の検証ガイドのユースケース 4 を参照してください。
 
 ## 関連ドキュメント {#section-55da1110051a4b39b1037803f4a7b264}
 
