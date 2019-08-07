@@ -6,7 +6,7 @@ seo-title: 顧客 ID と認証状態
 title: 顧客 ID と認証状態
 uuid: 643df363-224a-463e-a332-be59926b47e7
 translation-type: tm+mt
-source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
+source-git-commit: 603540150edcdc76aacf407aeb6421c5b8386f56
 
 ---
 
@@ -92,7 +92,7 @@ Beginning with Experience Cloud Identity Service v1.5+, `setCustomerIDs` include
 >* ID は大文字と小文字が区別されます。
 >* エンコードされていない ID 値のみを使用してください。
 >* 顧客 ID と認証状態は訪問者 ID Cookie に保存されません。ページまたはアプリケーションコンテキストごとに設定する必要があります。
->* 顧客 ID には、個人識別情報（PII）は含めないでください。PII（電子メールアドレスなど）を使用して訪問者を識別する場合は、情報をハッシュ化または暗号化して格納することをお勧めします。ECIDライブラリは、ハッシュユーザー識別子のサポートを提供します。See [SHA256 Hashing Support for setCustomerIDs](/help/reference/hashing-support.md).
+>* 顧客 ID には、個人識別情報（PII）は含めないでください。PII（電子メールアドレスなど）を使用して訪問者を識別する場合は、情報をハッシュ化または暗号化して格納することをお勧めします。ECIDライブラリは、ハッシュユーザー識別子のサポートを提供します。setCustomerIDsの [SHA256ハッシュサポートを](/help/reference/hashing-support.md)参照してください。
 >
 
 
@@ -220,4 +220,4 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## Analytics および Audience Manager ユーザー向けの注意点 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトとデータソースに関連付けられた統合コードが一致する必要があります。For more information, see the [!DNL Visitor ID Service] section in the [Configure Merge Rules Code](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html) documentation.
+宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトとデータソースに関連付けられた統合コードが一致する必要があります。詳しくは、[マージルールコードの設定](https://marketing.adobe.com/resources/help/en_US/aam/?f=merge-rules-configure-code.html)ドキュメントの「[!UICONTROL 訪問者 ID サービス]」の節を参照してください。
