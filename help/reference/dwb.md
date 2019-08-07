@@ -6,7 +6,7 @@ seo-title: Data WorkbenchとExperience Cloud IDサービス
 title: Data WorkbenchとExperience Cloud IDサービス
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -19,7 +19,7 @@ ID サービスを使用するように [Data Workbench](https://marketing.adobe
 
 1. 現在の[デコーダーグループ](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html)設定ファイルを探します。
 
-   通常、[!DNL Decoder Group] は、パス `Dataset\Log Processing\Decoding Instructions.cfg` の [!DNL Profile Manager] にあります。1. 設定ファイルから現在のデコーダー形式をコピーします。
+   Typically, the [!DNL Decoder Group] is located in a [!UICONTROL Profile Manager] on this path: `Dataset\Log Processing\Decoding Instructions.cfg`. 1. 設定ファイルから現在のデコーダー形式をコピーします。
 1. 元の記述の下にそのデコーダー形式を貼り付けます。
 1. デコーダー形式を開き、リストの最後に以下の新しいフィールド位置を追加します。
 
