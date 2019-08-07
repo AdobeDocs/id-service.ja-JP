@@ -6,7 +6,7 @@ seo-title: audienceManagerServer および audienceManagerServerSecure
 title: audienceManagerServer および audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -29,7 +29,7 @@ Experience Cloud IDサービスへの呼び出しで使用されるデフォル�
 これらの設定では、以下を使用する必要があります。
 
 * 会社で登録している [!DNL Audience Manager] サブドメイン名。この名前はコンサルタントに確認するか、コンサルタントから取得してください。
-* [!DNL Organization ID] に関連付けられているサブドメイン名。
+* [!UICONTROL 組織 ID] に関連付けられているサブドメイン名。
 * 同じサブドメイン名を持つ&#x200B;*両方の*&#x200B;設定パラメーター。
 
 **コードサンプル**
