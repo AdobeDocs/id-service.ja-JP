@@ -6,7 +6,7 @@ seo-title: ID 同期と一致率について
 title: ID 同期と一致率について
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -37,9 +37,9 @@ ID サービスは、リアルタイムに ID を同期します。このプロ�
 
 **手順 2：iFrame の読み込み**
 
-ページ本文が読み込まれる間、ID サービスは、*`Destination Publishing iFrame`* と呼ばれる iFrame を読み込みます。[!DNL Destination Publishing iFrame] は、親ページとは別のドメインに読み込まれます。この設計によって iFrame は以下の動作をするので、ページパフォーマンスを確保し、セキュリティを強化できます。
+ページ本文が読み込まれる間、ID サービスは、*`Destination Publishing iFrame`* と呼ばれる iFrame を読み込みます。[!UICONTROL ターゲットパブリッシング iFrame] は、親ページとは別のドメインに読み込まれます。この設計によって iFrame は以下の動作をするので、ページパフォーマンスを確保し、セキュリティを強化できます。
 
-* 親ページとは非同期で読み込みます。これは、親ページを [!DNL Destination Publishing iFrame] とは独立して読み込めることを意味します。iFrame の読み込みと iFrame 内からの ID 同期ピクセルの読み込みは、親ページやユーザーエクスペリエンスには影響しません。
+* 親ページとは非同期で読み込みます。これは、親ページを[!UICONTROL ターゲットパブリッシング iFrame] とは独立して読み込めることを意味します。iFrame の読み込みと iFrame 内からの ID 同期ピクセルの読み込みは、親ページやユーザーエクスペリエンスには影響しません。
 * 可能な限り高速に読み込みます。これが速すぎる場合、ウィンドウ読み込みイベントの後で iFrame を読み込むことができます（非推奨）。詳しくは、[idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) を参照してください。
 * iFrame のコードが親ページのアクセス権を取得したり、親ページに影響を与えたりすることを防ぎます。
 
@@ -49,15 +49,7 @@ ID サービスは、リアルタイムに ID を同期します。このプロ�
 
 ID 同期は、ターゲットパブリッシング iFrame で実行される URL です。この一般的な例で示すように、ID 同期 URL には、パートナーの ID 同期エンドポイントと、その ID を含む [!DNL Adobe] に戻るリダイレクト URL が含まれます。
 
-```
-http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<
-<varname>
-  ADOBE_PARTNER_ID
-</varname>>&dpuuid=<
-<varname>
-  PARTNER_UUID
-</varname>>
-```
+`http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
 [受信データ転送のための ID 同期](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html)も参照してください。
 
@@ -78,7 +70,7 @@ http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<
 
 ## Adobe Media Manager を使用した ID 同期 {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] は、iFrame ベースの ID 同期プロセスの例外です。[!DNL Media Optimizer] は信頼されているドメインなので、ID 同期は [!DNL Destination Publishing iFrame] 内ではなく親ページからおこなわれます。同期中、ID サービスは `cm.eversttech.net` の [!DNL Media Optimizer] を呼び出します。cm.eversttech.net はアドビが [!DNL Media Optimizer]Media Manager を買収する以前に使用されていた従来のドメイン名です。[!DNL Media Optimizer] にデータを送信すると一致率の向上に役立ちます。バージョン 2.0 以降を使用している ID サービスのお客様の場合、このデータ送信は自動的におこなわれます。[Media Manager の cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html) も参照してください。
+[!DNL Adobe Media Optimizer] は、iFrame ベースの ID 同期プロセスの例外です。Because [!DNL Media Optimizer] is a trusted domain, ID syncs take place from the parent page rather than in the [!UICONTROL Destination Publishing iFrame]. 同期中、ID サービスは `cm.eversttech.net` の [!DNL Media Optimizer] を呼び出します。cm.eversttech.net はアドビが [!DNL Media Optimizer]Media Manager を買収する以前に使用されていた従来のドメイン名です。[!DNL Media Optimizer] にデータを送信すると一致率の向上に役立ちます。バージョン 2.0 以降を使用している ID サービスのお客様の場合、このデータ送信は自動的におこなわれます。[Media Manager の cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html) も参照してください。
 
 >[!MORE_LIKE_THIS]
 >
