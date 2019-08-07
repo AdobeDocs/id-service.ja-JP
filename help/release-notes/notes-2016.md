@@ -6,7 +6,7 @@ seo-title: 2016 年リリースノート
 title: 2016 年リリースノート
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 >[!IMPORTANT]
 >
->* バージョン 1.10 には [!DNL AppMeasurement] 1.8.0 が必要です。
+>* バージョン 1.10 を使用するには [!UICONTROL AppMeasurement] 1.8.0 が必要です。
 >* Experience Cloud IDサービスライブラリ2.0.0以上を使用すると、Adobe Media ManagerのID同期がデフォルトで開始されます。[ID 同期と一致率について](/help/introduction/match-rates.md)を参照してください。
 
 
