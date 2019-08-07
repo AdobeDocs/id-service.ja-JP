@@ -6,7 +6,7 @@ seo-title: Experience Cloud IDサービスのテストと検証
 title: Experience Cloud IDサービスのテストと検証
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -79,19 +79,19 @@ Charles を使用して HTTP 呼び出しを監視する場合、どこを見て
 
 **Charles での成功した ID サービスリクエスト**
 
-`Visitor.getInstance` 関数が `dpm.demdex.net` に対する JavaScript 呼び出しをおこなう場合、ID サービスコードは適切に動作しています。成功したリクエストには、[組織 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) が含まれます。組織 ID は、キーと値のペアとして渡されます（`d_orgid= *`組織 ID`*` という構文が使用されます）。「[!DNL Structure]」タブで、`dpm.demdex.net` および JavaScript 呼び出しを探します。「[!DNL Request]」タブで、組織 ID を探します。
+`Visitor.getInstance` 関数が `dpm.demdex.net` に対する JavaScript 呼び出しをおこなう場合、ID サービスコードは適切に動作しています。成功したリクエストには、[組織 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) が含まれます。組織 ID は、キーと値のペアとして渡されます（`d_orgid= *`組織 ID`*` という構文が使用されます）。`dpm.demdex.net`[!UICONTROLS「トラック」] タブの下の、およびJavaScript呼び出しを探します。[!UICONTROLR「リクエスト] 」タブで組織IDを探します。
 
 ![](assets/charles_request.png)
 
 **Charles での成功した ID サービス応答**
 
-[データ収集サーバー](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html)（DCS）からの応答が MID を返す場合、アカウントは ID サービスに関して適切にプロビジョニングされています。MID は、キーと値のペアとして返されます（`d_mid: *`訪問者の Experience Cloud ID`*` という構文が使用されます）。以下に示すように、「[!DNL Response]」タブで、MID を探します。
+[データ収集サーバー](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html)（DCS）からの応答が MID を返す場合、アカウントは ID サービスに関して適切にプロビジョニングされています。MID は、キーと値のペアとして返されます（`d_mid: *`訪問者の Experience Cloud ID`*` という構文が使用されます）。Look for the MID in the [!UICONTROLResponse] tab as shown below.
 
 ![](assets/charles_response_success.png)
 
 **Charles での失敗した ID サービス応答**
 
-DCS 応答に MID がない場合、アカウントは適切にプロビジョニングされています。失敗した応答は、以下に示すように、「[!DNL Response]」タブにエラーコードとメッセージを返します。DCS 応答にこのメッセージが表示された場合は、カスタマーケアにお問い合わせください。
+DCS 応答に MID がない場合、アカウントは適切にプロビジョニングされています。An unsuccessful response returns an error code and message in the [!UICONTROLResponse] tab as shown below. DCS 応答にこのメッセージが表示された場合は、カスタマーケアにお問い合わせください。
 
 ![](assets/charles_response_unsuccessful.png)
 
