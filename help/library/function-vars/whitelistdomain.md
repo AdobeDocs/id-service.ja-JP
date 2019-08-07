@@ -4,9 +4,9 @@ keywords: ID サービス
 seo-description: これらの設定を使用すると、iFrame と親ページに実装されている ID サービスコードのインスタンスが互いに通信できるようになります。これらの設定は、自社が管理しているドメインの iFrame に ID サービスコードを読み込む場合の 2 つの具体的な使用例（親ページまたはドメインを制御できる場合とできない場合）に関わる問題の解決に役立つように設計されています。これらは、VisitorAPI.js コードバージョン 2.2 以降で利用できます。
 seo-title: whitelistParentDomain および whitelistIframeDomains
 title: whitelistParentDomain および whitelistIframeDomains
-uuid: 6b66a4d0- fea2-4d98-963e-0c4f4ab1efb6
+uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 <ul class="simplelist"> 
  <li> <a href="../../library/function-vars/whitelistdomain.md#section-f645198bbaba4fba8961acb6e88d1470" format="dita" scope="local">構文</a> </li> 
  <li> <a href="../../library/function-vars/whitelistdomain.md#section-09d0049fe88a473baa69d404c50bf8ae" format="dita" scope="local"> コードサンプル </a> </li> 
- <li> <a href="../../library/function-vars/whitelistdomain.md#section-fc2eeb93546b406fae3b102dbcd11de7" format="dita" scope="local"> ユースケース </a> </li> 
+ <li> <a href="../../library/function-vars/whitelistdomain.md#section-fc2eeb93546b406fae3b102dbcd11de7" format="dita" scope="local"> 使用例 </a> </li> 
  <li> <a href="../../library/function-vars/whitelistdomain.md#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2" format="dita" scope="local"> 設定の安全性とセキュリティ </a> </li> 
  <li> <a href="../../library/function-vars/whitelistdomain.md#section-30c6a9f4dcdc4265a1149260b97cc057" format="dita" scope="local"> サポートされる訪問者 API メソッド </a> </li> 
 </ul>
@@ -38,11 +38,11 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> ホワイトListParentDomain:「 <span class="varname"> 親ページのドメイン名 </span>」 </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> whitelistParentDomain: "<span class="varname">親ページのドメイン名</span>" </span> </p> </td> 
    <td colname="col2"> <p>文字列として渡される単一のドメイン名を受け入れます。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> WhiteListFrameDomains:[ <span class="varname"> "iFrame domain"，"iFrame domain"，"iFrame domain" </span>] </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> whitelistIframeDomains: [ <span class="varname"> "iFrame ドメイン","iFrame ドメイン","iFrame ドメイン" </span>] </span> </p> </td> 
    <td colname="col2"> <p>配列として渡される iFrame ドメイン名を受け入れます。 </p> </td> 
   </tr> 
  </tbody> 
@@ -50,7 +50,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ## コードサンプル {#section-09d0049fe88a473baa69d404c50bf8ae}
 
-設定 [!DNL ID service] したコードは、この例のようになります。
+設定が完了すると、[!UICONTROL ID サービス]コードはこの例のようになります。
 
 ```js
 //Instantiate Visitor 
@@ -64,7 +64,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 );
 ```
 
-## ユースケース {#section-fc2eeb93546b406fae3b102dbcd11de7}
+## 使用例 {#section-fc2eeb93546b406fae3b102dbcd11de7}
 
 これらの設定は、ブラウザーがサードパーティ Cookie をブロックし、以下のいずれかの条件に該当する場合に発生する、ID サービス Cookie 設定と訪問者 ID 割り当ての問題の解決に役立ちます。
 
@@ -73,7 +73,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 >[!TIP]
 >
->ビデオハートビートを使用 [してiFrameでビデオを提供するときに、これらの設定を実装すること](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)もできます。ビデオハートビートを正しく動作させるには ID サービスの ID（MID）が必要です。
+>You may also want to implement these configurations when you're serving video in an iFrame with [Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/). ビデオハートビートを正しく動作させるには ID サービスの ID（MID）が必要です。
 
 **使用例 1：ブラウザーがサードパーティ Cookie をブロックし、ID サービスが iFrame および親ページに実装されている**
 
@@ -165,7 +165,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>使用例 1</b> </p> </td> 
+   <td colname="col1"> <p> <b>例 1</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_99FAC8608F4C4B39805EEAA6297DB771"> 
       <li id="li_B13F6C4119F44F17963794B1E2046B1F"> <span class="codeph"> getMarketingCloudID </span> </li> 
