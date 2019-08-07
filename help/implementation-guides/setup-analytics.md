@@ -6,7 +6,7 @@ seo-title: Experience Cloud IDサービスのAnalyticsへの実装
 title: Experience Cloud IDサービスのAnalyticsへの実装
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -36,10 +36,10 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ## 手順 1：ID サービスコードのダウンロード {#section-ead9403a6b7e45b887f9ac959ef89f7f}
 
-[!DNL ID Service] には`VisitorAPI.js` コードライブラリが必要です。このコードライブラリをダウンロードするには：
+[!UICONTROL ID サービス]では、`VisitorAPI.js` コードライブラリが必要です。このコードライブラリをダウンロードするには：
 
 1. **[!UICONTROL 管理]**／**[!UICONTROL コードマネージャー]**&#x200B;に移動します。
-1. [!DNL Code Manager] で、「**[!UICONTROL JavaScript（新規）]**」または「**[!UICONTROL JavaScript（レガシー）]**」のいずれかをクリックします。
+1. [!UICONTROL コードマネージャー]で **[!UICONTROL 、"JavaScript（新規）]** 」または「 **[!UICONTROL JavaScript（レガシー）」をクリック]**&#x200B;します。
 
    圧縮されたコードライブラリがダウンロードされます。
 
