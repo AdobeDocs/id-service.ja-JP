@@ -6,7 +6,7 @@ seo-title: Experience Cloud IDサービスのAnalytics、Audience Managerおよ�
 title: Experience Cloud IDサービスのAnalytics、Audience ManagerおよびTargetへの実装
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 1. [!DNL Analytics] と [!DNL Audience Manager] の連絡先を使用して、ID サービスおよびサーバー側転送の移行を計画します。この計画で重要な部分である、トラッキングサーバーを選択します。
 
-1. [!DNL Profiles & Audiences] のプロビジョニングをおこないます。開始するには、[統合およびプロビジョニングサイト](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES)のフォームを完成させます。
+1. 開始するには、[統合およびプロビジョニングサイト](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES)のフォームを完成させます。
 
 1. ID サービスと [!DNL Audience Management Module] を同時に実装します。適切に動作させるには、[!DNL Audience Management Module]（サーバー側転送）および ID サービスがページの同じセットに同時にリリースされる必要があります。
 
@@ -136,7 +136,7 @@ Analytics は、データ収集にトラッキングサーバーを使用しま�
 
 ## 手順 6：AppMeasurement.js ファイルの更新 {#section-5517e94a09bc44dfb492ebca14b43048}
 
-この手順には、[!DNL AppMeasurement] が必要です。s_code を使用している場合、続行できません。
+この手順には、[!UICONTROL AppMeasurement] が必要です。s_code を使用している場合、続行できません。
 
 以下に示す `Visitor.getInstance` 関数を `AppMeasurement.js` ファイルに追加します。`linkInternalFilters`、`charSet`、`trackDownloads` などの設定を含むセクションに配置します。
 
@@ -157,7 +157,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 手順 7：ページへの訪問者 API コードの追加 {#section-c2bd096a3e484872a72967b6468d3673}
 
-` [!DNL VisitorAPI.js]` ファイルを各ページの `<head>` タグ内に配置します。`VisitorAPI.js` ファイルをページに配置する際には、以下のようにします。
+` [!UICONTROL VisitorAPI.js]` ファイルを各ページの `<head>` タグ内に配置します。`VisitorAPI.js` ファイルをページに配置する際には、以下のようにします。
 
 * タグは `<head>` セクションの先頭に配置して、他のソリューションタグより先に表示させます。
 * AppMeasurement およびその他の [!DNL Experience Cloud] ソリューションのコードより前に実行する必要があります。
