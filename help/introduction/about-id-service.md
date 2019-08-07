@@ -1,12 +1,12 @@
 ---
-description: Adobe Experience CloudのExperience Cloud IDサービスの役割。
+description: Adobe Experience CloudのExperience Platform IDサービスの役割。
 keywords: ID サービス
-seo-description: Adobe Experience CloudのExperience Cloud IDサービスの役割。
+seo-description: Adobe Experience CloudのExperience Platform IDサービスの役割。
 seo-title: ID サービスについて
 title: 概要
 uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -21,7 +21,7 @@ mcvid-functionality.xml
 
 ## The Experience Cloud Identity Service: A Foundational Element of Core Services {#section-2de0eb1d65664e92a4d8bbb167b84bde}
 
-Experience Cloud IDサービスでは、Experience Cloudコアサービス、ソリューション、顧客属性およびPeopleコアサービスのオーディエンスに対して共通の識別フレームワークが有効になります。サイト訪問者に一意の永続的 ID を割り当てることで機能します。組織が ID サービスを実装する場合、この ID を使用することで、同じサイト訪問者およびそのデータを様々な Experience Cloud ソリューションで識別できます。
+Experience Cloud IDサービスでは、Experience Cloudコアサービス、ソリューション、顧客属性およびオーディエンスの共通の識別フレームワークが有効になります。サイト訪問者に一意の永続的 ID を割り当てることで機能します。組織が ID サービスを実装する場合、この ID を使用することで、同じサイト訪問者およびそのデータを様々な Experience Cloud ソリューションで識別できます。
 
 ![](assets/ecid.png)
 
