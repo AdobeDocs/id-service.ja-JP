@@ -6,7 +6,7 @@ seo-title: Target向けExperience Cloud IDサービスの実装
 title: Target向けExperience Cloud IDサービスの実装
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ## 手順 1：ID サービスコードの入手 {#section-b32ba0548aa546a79dd38be59832a53e}
 
-[!DNL ID Service] には`VisitorAPI.js` コードライブラリが必要です。このコードを入手するには、[カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)にお問い合わせください。
+[!UICONTROL ID サービス]では、`VisitorAPI.js` コードライブラリが必要です。このコードを入手するには、[カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)にお問い合わせください。
 
 ## 手順 2：ID サービスコードへの Visitor.getInstance 関数の追加 {#section-287ef2958e9f43858fe9d630ae519e22}
 
