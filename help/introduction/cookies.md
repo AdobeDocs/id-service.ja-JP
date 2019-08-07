@@ -6,7 +6,7 @@ seo-title: CookieとExperience Cloud IDサービス
 title: CookieとExperience Cloud IDサービス
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
@@ -19,13 +19,13 @@ ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cook
 
 ID サービスは、正常に機能するために AMCV Cookie、AMCVS Cookie および demdex Cookie を使用します。これらの Cookie は ID サービスで使用されるデータが格納されるファイルです。このような ID サービス Cookie は、他のファーストパーティ Cookie やサードパーティ Cookie を制御する場合と同様のルールに従っており、危険なものでも悪意があるものでもなく、ブラウザーの Web サイトやサービスで保存される他のファーストパーティ Cookie やサードパーティ Cookie と変わりません。ID サービスで使用される Cookie について詳しくは、次の各セクションを参照してください。
 
-**ID サービス Cookie で実行できること**
+### ID サービス Cookie で実行できること
 
 * サイト訪問者に一意の ID（MID）を設定して保存する。
 * ID サービスがデータを収集して他の Experience Cloud ソリューションと共有できるように、この一意の ID を維持する。
 * 複数のドメインをまたいでユーザーを追跡する。ただし、そのためには、同じ組織が他のドメインも所有している必要があり、それらのドメインに ID サービスコードが導入されている必要があります。
 
-** ID サービス Cookie で実行できないこと**
+### IDサービスが実行できないこと
 
 * コンピューターウィルスを格納して転送し、実行する。
 * 電子メールアドレスなどの個人を特定できる情報（PII）にアクセスしたり、そのような情報を保存したりする。
