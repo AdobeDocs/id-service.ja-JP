@@ -1,12 +1,12 @@
 ---
 description: Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
 keywords: ID サービス
-seo-description: Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+seo-description: Experience Platform IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
 seo-title: Analytics および Experience Cloud ID の設定
 title: Analytics および Experience Cloud ID の設定
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
