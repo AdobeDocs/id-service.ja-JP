@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: この変数を使用すると、AMCV Cookie のデフォルトのライフタイム間隔を上書きできます。
 seo-title: cookieLifetime
 title: cookieLifetime
-uuid: cd945db3-429a-4625- ac3f-69ac259377a3
-translation-type: tm+mt
+uuid: cd945db3-429a-4625-ac3f-69ac259377a3
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -15,9 +15,9 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 この変数を使用すると、AMCV Cookie のデフォルトのライフタイム間隔を上書きできます。
 
-デフォルトで [!DNL Experience Cloud] は、IDサービスcookieは24ヶ月後に期限切れになります。この間隔を秒単位で設定します。
+デフォルトでは、[!DNL Experience Cloud] ID サービス Cookie は、24 ヶ月後に有効期限が切れます。この間隔を秒単位で設定します。
 
-**構文:**` cookieLifetime: *`秒単位のライフタイム`*`
+**構文：** ` cookieLifetime: *`全期間（秒単位）`*`
 
 **コードサンプル**
 
