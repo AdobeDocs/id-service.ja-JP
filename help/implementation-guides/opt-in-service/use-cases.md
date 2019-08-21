@@ -1,10 +1,10 @@
 ---
-description: オプトインサービスを管理するためのサンプルユースケースとソリューション。
-seo-description: オプトインサービスを管理するためのサンプルユースケースとソリューション。
+description: オプトインサービスを管理するための使用例と解決策のサンプルです。
+seo-description: オプトインサービスを管理するための使用例と解決策のサンプルです。
 seo-title: オプトインの使用例
 title: オプトインの使用例
-uuid: d75a44d5- b713-43d1- b5b6-95d1d0d213a7
-translation-type: tm+mt
+uuid: d75a44d5-b713-43d1-b5b6-95d1d0d213a7
+translation-type: ht
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 # オプトインの使用例 {#opt-in-use-cases}
 
-オプトインサービスを管理するためのサンプルユースケースとソリューション。
+オプトインサービスを管理するための使用例と解決策のサンプルです。
 
 ## ヒントとトラブルシューティング {#section-5c566366410f4a8f89eca0d3f556d99f}
 
@@ -22,7 +22,7 @@ source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ## オプトインのシナリオ {#section-1178053c065c430bba26f82ef383a71c}
 
-これらの使用例は、オプトインサービスを使用するためのアイデアの例です。
+以下の使用例は、オプトインサービスを使用するためのアイデアの例です。
 
 <table id="table_83C85343611344D8A8315157C1B4240F"> 
  <thead> 
