@@ -1,11 +1,11 @@
 ---
 description: ID サービスが他のドメインに対する呼び出しをおこなえないようにするブール型のフラグ（オプション）。
-keywords: クロスドメイントラッキング;IDサービス
+keywords: クロスドメイントラッキング;ID サービス
 seo-description: ID サービスが他のドメインに対する呼び出しをおこなえないようにするブール型のフラグ（オプション）。
 seo-title: disableThirdPartyCalls
 title: disableThirdPartyCalls
 uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ID サービスが他のドメインに対する呼び出しをおこなえないようにするブール型のフラグ（オプション）。
 
-**構文:**` `disableThirdPartyCalls:true| false「（デフォルトは `false`.）
+**構文：** ` `disableThirdPartyCalls: true|false``（デフォルトは `false`。）
 
 `disableThirdPartyCalls: true` の場合、この ID サービスは他のドメインの呼び出しをおこないません。
 
