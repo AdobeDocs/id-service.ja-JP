@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: ID サービスとのインタラクションを可能にするパブリックメソッドです。
 seo-title: メソッド
 title: メソッド
-uuid: 184d0a62-0c8d-481b-9afe- b7a67bdafdce
-translation-type: tm+mt
+uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -17,9 +17,9 @@ ID サービスとのインタラクションを可能にするパブリック�
 
 >[!NOTE]
 >
->*Experience Cloud ID JavaScriptライブラリ* が最近移動されました。ECID JS ライブラリの最新リリースは、[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) にあります。
+>*Experience Cloud ID Javascript ライブラリ*&#x200B;は最近移行しました。ECID JS ライブラリの最新リリースは、[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) にあります。
 
-関連記事:
+関連記事：
 
 + [appendSupplementalDataIDTo](appendsupplementaldataidto.md)
 + [appendVisitorIDsTo（クロスドメイントラッキング）](appendvisitorid.md)
