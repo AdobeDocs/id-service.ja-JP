@@ -5,7 +5,7 @@ seo-description: AMCV Cookie に「Secure」属性を追加するブール型フ
 seo-title: secureCookie
 title: secureCookie
 uuid: 995d19f6-9c9d-4493-9c9c-545b0b5696b0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -19,9 +19,9 @@ AMCV Cookie に「Secure」属性を追加するブール型フラグ（オプ�
 
 >[!NOTE]
 >
->`SecureCookie` この設定は、保護されていないドメインでは機能しません。また、保護されていないプロトコルを使用する訪問のMID値を受信しない可能性があります。`secureCookie` を `true` に設定する必要があるのは、すべてのページおよびサブドメインでセキュリティで保護されたプロトコルが常に使用されていることを確認できた場合のみです。
+>`SecureCookie` 設定は、セキュリティで保護されていないドメインで機能しません。その結果、セキュリティで保護されていないプロトコルを使用する訪問について MID 値が返されない可能性があります。`secureCookie` を `true` に設定する必要があるのは、すべてのページおよびサブドメインでセキュリティで保護されたプロトコルが常に使用されていることを確認できた場合のみです。
 
-**構文:**`secureCookie: true | false` （デフォルト）
+**構文：** `secureCookie: true | false`（デフォルト）
 
 **コードサンプル**
 
