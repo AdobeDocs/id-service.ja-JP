@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: ID 同期を無効にするブール型のフラグ（オプション）。
 seo-title: disableIdSyncs
 title: disableIdSyncs
-uuid: 8bea1de8-53c8-4a15- bcf5- f0869763a32e
-translation-type: tm+mt
+uuid: 8bea1de8-53c8-4a15-bcf5-f0869763a32e
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -17,9 +17,9 @@ ID 同期を無効にするブール型のフラグ（オプション）。
 
 >[!NOTE]
 >
->この設定は、 `idSyncDisableSyncs` v3.0の2018年1月18日リリースで変更 `disableIdSyncs` され、名前が変更されました。
+>この設定は従来 `idSyncDisableSyncs` でしたが、2018 年 1 月 18 日の v3.0 リリースで `disableIdSyncs` に名称変更されました。
 
-**構文:**`disableIdSyncs: true|false` （デフォルトは `false`、です）。
+**構文：**`disableIdSyncs: true|false`（デフォルトは `false` です。）
 
 **コードサンプル**
 
