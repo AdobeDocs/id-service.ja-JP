@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: 宛先の公開テンプレートで HTTPS 接続に Akamai を使用するかを指定します。
 seo-title: idSyncSSLUseAkamai
 title: idSyncSSLUseAkamai
-uuid: 501ccc37- c3ab-4454- bfcf-3e3c3e8b5ca3
-translation-type: tm+mt
+uuid: 501ccc37-c3ab-4454-bfcf-3e3c3e8b5ca3
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
