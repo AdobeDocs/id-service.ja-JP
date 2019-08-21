@@ -4,8 +4,8 @@ keywords: ID サービス
 seo-description: ID サービスから Adobe Experience Cloud Device Co-op にデータを送信するかどうかを指定する任意のブール型設定です。
 seo-title: isCoopSafe
 title: isCoopSafe
-uuid: 4dfa1f35-0a88-48d1-9484- d88cb53ad461
-translation-type: tm+mt
+uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
+translation-type: ht
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -19,7 +19,7 @@ ID サービスから Adobe Experience Cloud Device Co-op にデータを送信�
 
 <ul class="simplelist"> 
  <li> <a href="../../library/function-vars/coopsafe.md#section-4883eda6beb8437182bcc82bb58fae41" format="dita" scope="local"> 要件 </a> </li> 
- <li> <a href="../../library/function-vars/coopsafe.md#section-d18af2b903f248e18ae8108aaf0a8ebb" format="dita" scope="local"> ユースケース </a> </li> 
+ <li> <a href="../../library/function-vars/coopsafe.md#section-d18af2b903f248e18ae8108aaf0a8ebb" format="dita" scope="local"> 使用例 </a> </li> 
  <li> <a href="../../library/function-vars/coopsafe.md#section-952f56724a2b4d349340e26fbaf33ddd" format="dita" scope="local"> 構文およびコードサンプル </a> </li> 
  <li> <a href="../../library/function-vars/coopsafe.md#section-fcd441933506493faefaa6b51f194a17" format="dita" scope="local"> イベント呼び出し POST パラメーター </a> </li> 
  <li> <a href="../../library/function-vars/coopsafe.md#section-9281c39c8b6249d7864100b5cbca7dc6" format="dita" scope="local"> インスタンス化後の API </a> </li> 
@@ -27,12 +27,12 @@ ID サービスから Adobe Experience Cloud Device Co-op にデータを送信�
 
 ## 要件 {#section-4883eda6beb8437182bcc82bb58fae41}
 
-使用する `isCoopSafe` には、以下を使用する必要があります。
+`isCoopSafe` を使用するには、以下の要件を満たす必要があります。
 
 * バージョン 2.4 以降の ID サービスコードを使用する。
-* [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/) に参加する。Co-op への参加を検討している場合は、このドキュメントをよく読み、デバイスグラフの作成にデータがどのように使用されるかに関する懸念に `isCoopSafe` で対処できるかどうかを確認する必要があります。
+* [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/ja_JP/mcdc/) に参加する。Co-op への参加を検討している場合は、このドキュメントをよく読み、デバイスグラフの作成にデータがどのように使用されるかに関する懸念に `isCoopSafe` で対処できるかどうかを確認する必要があります。
 
-* [!DNL Adobe] コンサルタントと協力して、Device Co- opアカウントにホワイトリストまたはブラックリストフラグを設定します。これらのフラグをセルフサービスで有効にする方法はありません。
+* [!DNL Adobe]コンサルタントに依頼して、Device Co-op アカウントにホワイトリストまたはブラックリストのフラグを設定する。これらのフラグをセルフサービスで有効にする方法はありません。
 
 ## 使用例 {#section-d18af2b903f248e18ae8108aaf0a8ebb}
 
@@ -67,9 +67,9 @@ ID サービスから Adobe Experience Cloud Device Co-op にデータを送信�
 
 Device Co-op で顧客データを利用するか利用しないかをブール型オプションで指定します。
 
-* `isCoopSafe: true`：モバイル SDK または Web サイトが収集した訪問者データをデバイスグラフの作成に利用*できます*。
+* `isCoopSafe: true`：モバイル SDK または Web サイトが収集した訪問者データをデバイスグラフの作成に利用&#x200B;*できます*。
 
-* `isCoopSafe: false`：モバイル SDK または Web サイトが収集した訪問者データをデバイスグラフの作成に利用*できません*。
+* `isCoopSafe: false`：モバイル SDK または Web サイトが収集した訪問者データをデバイスグラフの作成に利用&#x200B;*できません*。
 
 **コードサンプル**
 
@@ -84,7 +84,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 
 ## イベント呼び出し POST パラメーター {#section-fcd441933506493faefaa6b51f194a17}
 
-設定したフラグに応じて、ID `true``false`サービスはこれらのPOSTパラメーター `isCoopSafe` に変換し、イベント呼び出し [!DNL Adobe] で送信します。
+設定したフラグ（`true` または `false`）に応じて、ID サービスは `isCoopSafe` をこれらの POST パラメーターに変換し、イベント呼び出しで [!DNL Adobe] に送信します。
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
@@ -137,7 +137,7 @@ POST パラメーターは、ユーザーデータをデバイスグラフに含
 Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 -->
 
->[!MORE_ LIKE_ THIS]
+>[!MORE_LIKE_THIS]
 >
->* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/ja_JP/aam/dil-coopsafe.html)
 
