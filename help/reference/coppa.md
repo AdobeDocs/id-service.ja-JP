@@ -1,19 +1,19 @@
 ---
-description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Cloud IDサービスコードに追加して、ブラウザーのサードパーティドメインにcookieを設定できないようにすることができます。
+description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を Experience Cloud Identity Service コードに追加して、ブラウザーのサードパーティドメインに Cookie を設定できなくすることができます。
 keywords: ID サービス
-seo-description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Cloud IDサービスコードに追加して、ブラウザーのサードパーティドメインにcookieを設定できないようにすることができます。
-seo-title: Experience Cloud IDサービスでのCOPPAのサポート
-title: Experience Cloud IDサービスでのCOPPAのサポート
+seo-description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を Experience Cloud Identity Service コードに追加して、ブラウザーのサードパーティドメインに Cookie を設定できなくすることができます。
+seo-title: Experience Cloud Identity Service での COPPA のサポート
+title: Experience Cloud Identity Service での COPPA のサポート
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 ---
 
 
-# COPPA Support in the Experience Cloud Identity Service {#coppa-support-in-the-experience-cloud-id-service}
+# Experience Cloud Identity Service での COPPA のサポート {#coppa-support-in-the-experience-cloud-id-service}
 
-児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPAに関するお客様は、オプションの変数をExperience Cloud IDサービスコードに追加して、ブラウザーのサードパーティドメインにcookieを設定できないようにすることができます。
+児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を Experience Cloud Identity Service コードに追加して、ブラウザーのサードパーティドメインに Cookie を設定できなくすることができます。
 
 >[!NOTE]
 >
@@ -45,6 +45,6 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 
 >[!MORE_LIKE_THIS]
 >
->* [アドビプライバシーセンター](http://www.adobe.com/privacy.html)
+>* [アドビプライバシーセンター](http://www.adobe.com/jp/privacy.html)
 >* [COPPA とは](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
 
