@@ -2,10 +2,10 @@
 description: ID サービス利用の特長、機能、課題に関するよくある質問
 keywords: ID サービス
 seo-description: ID サービス利用の特長、機能、課題に関するよくある質問
-seo-title: ID サービス よくある質問（FAQ）
+seo-title: ID サービス FAQ
 title: ID サービス FAQ
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -23,7 +23,7 @@ ID サービス利用の特長、機能、課題に関するよくある質問
 
 **ID サービスが Experience Cloud ID を取得するための呼び出しをおこないません。なぜですか。**
 
-これは診断が難しい問題です。まず、サイトのコンテンツセキュリティポリシーのヘッダーを確認してください。厳格なセキュリティポリシーが適用されている場合は、設定により、ID サービスによるサードパーティ呼び出しがブロックされている可能性があります。詳しくは、[コンテンツセキュリティポリシーおよびExperience Cloud IDサービス](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)を参照してください。
+これは診断が難しい問題です。まず、サイトのコンテンツセキュリティポリシーのヘッダーを確認してください。厳格なセキュリティポリシーが適用されている場合は、設定により、ID サービスによるサードパーティ呼び出しがブロックされている可能性があります。詳しくは、[コンテンツセキュリティポリシーおよび Experience Cloud Identity Service](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3) を参照してください。
 
 **VisitorAPI.js ファイルの保存**
 
@@ -35,7 +35,7 @@ VisitorAPI.js をモバイルアプリのローカルファイルとしてホス
 
 VisitorAPI.js ライブラリはページ上部にあるコードの `<head>` セクションに配置してください。これにより、ページ本文の読み込み前に ID の呼び出しがおこなわれるので、ID が問題なく返される可能性が高くなります。
 
-ID サービス呼び出しは非同期であり、[demdex.net ドメイン](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) への唯一の呼び出しです。ID サービス呼び出しにより、ページ上で他の要素が読み込まれないようにブロックされることはありません。
+ID サービスの呼び出しは非同期的であり、[demdex.net ドメイン](https://marketing.adobe.com/resources/help/ja_JP/aam/demdex-calls.html)への唯一の呼び出しです。ID サービス呼び出しにより、ページ上で他の要素が読み込まれないようにブロックされることはありません。
 
 [!DNL Target] を使用している場合、ページの `<body>` に ID サービスコードを配置すると、[!DNL Target] 呼び出しがブロックされる可能性が高くなります。ページ本文に ID サービスコードを配置しなければならない場合は、`<body>` 開始タグの後にこのコードを配置してください。
 
@@ -67,13 +67,13 @@ ID サービス呼び出しは非同期であり、[demdex.net ドメイン](htt
 
 一般的に、リソースリクエストには、JSON-P よりも CORS を使用する方が望ましいと言えます。JSON-P の場合、一部のブラウザーはリクエストをキューに追加し、ページ上の他の同期呼び出しや非同期呼び出しリクエストを基準にして優先順位を下げます。CORS を使用すると、ブラウザーのコールスタック内でのこれらのリクエストの優先度の高さを確保できます。
 
-詳しくは、[Experience Cloud IDサービスでのCORSのサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)。
+詳しくは、[Experience Cloud Identity Service での CORS のサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)を参照してください。
 
 ## セキュリティ {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **ID サービスは CORS をサポートしていますか。**
 
-はい。See [CORS Support in the Experience Cloud Identity Service](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758).
+はい。[Experience Cloud Identity Service での CORS のサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)を参照してください。
 
 **CORS とは何ですか。**
 
@@ -87,5 +87,5 @@ ID サービス呼び出しは非同期であり、[demdex.net ドメイン](htt
 
 >[!MORE_LIKE_THIS]
 >
->* [カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)
 
