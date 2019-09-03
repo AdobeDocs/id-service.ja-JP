@@ -5,7 +5,7 @@ seo-description: ID サービスの関数、idSyncByURL と idSyncByDataSource �
 seo-title: URL またはデータソースによる ID 同期
 title: URL またはデータソースによる ID 同期
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -91,9 +91,9 @@ ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると
 
 両方の関数は、以下のマクロを受け付けます。
 
-* `%TIMESTAMP%`:タイムスタンプを生成します（ミリ秒単位）。キャッシュバスティングに使用されます。
-* `%DID%`:ユーザーのAudience Manager IDを挿入します。
-* `%HTTP_PROTO%`:通信プロトコル（ `http` また `https`は）を設定します。
+* `%TIMESTAMP%`：タイムスタンプを生成します（ミリ秒単位）。キャッシュバスティングに使用されます。
+* `%DID%`：ユーザーの Audience Manager ID を挿入します。
+* `%HTTP_PROTO%`：通信プロトコルを設定します（`http` または `https`）。
 
 ## サンプルコードと出力 {#section-0115615c37584a19a2ab11e917c4e7e9}
 
@@ -151,5 +151,5 @@ ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると
 
 >[!MORE_LIKE_THIS]
 >
->* [DIL idSync](https://marketing.adobe.com/resources/help/en_US/aam/r_dil_idsync.html)
+>* [DIL idSync](https://marketing.adobe.com/resources/help/ja_JP/aam/r_dil_idsync.html)
 
