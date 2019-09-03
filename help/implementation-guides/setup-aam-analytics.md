@@ -1,19 +1,19 @@
 ---
-description: これらの手順は、Experience Cloud IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsおよびAudience Managerのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Analytics および Audience Manager のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 keywords: ID サービス
-seo-description: これらの手順は、Experience Cloud IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsおよびAudience Managerのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
-seo-title: Experience Cloud IDサービスのAnalyticsおよびAudience Managerへの実装
-title: Experience Cloud IDサービスのAnalyticsおよびAudience Managerへの実装
+seo-description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Analytics および Audience Manager のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+seo-title: Experience Cloud Identity Service の Analytics および Audience Manager への実装
+title: Experience Cloud Identity Service の Analytics および Audience Manager への実装
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Implement the Experience Cloud Identity Service for Analytics and Audience Manager{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Experience Cloud Identity Service の Analytics および Audience Manager への実装{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-これらの手順は、Experience Cloud IDサービスを使用し、Dynamic Tag Management（DTM）を使用しないAnalyticsおよびAudience Managerのお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Analytics および Audience Manager のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 
 >[!IMPORTANT]
 >
@@ -26,13 +26,13 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ## 手順 1：サーバー側転送の計画 {#section-880797cc992d4755b29cada7b831f1fc}
 
-ここで説明する手順に加えて、[!DNL Analytics] および [!DNL Audience Manager] を使用するお客様は、サーバー側転送に移行する必要があります。サーバー側転送を使用すると、DIL（Audience Manager のデータ収集コード）を削除して、[Audience Management モジュール](https://marketing.adobe.com/resources/help/en_US/aam/c_profiles_audiences.html)に置き換えることができます。詳しくは、[サーバー側転送のドキュメント](https://marketing.adobe.com/resources/help/en_US/analytics/audiences/ssf.html)を参照してください。
+ここで説明する手順に加えて、[!DNL Analytics] および [!DNL Audience Manager] を使用するお客様は、サーバー側転送に移行する必要があります。サーバー側転送では、DIL（Audience Manager のデータ収集コード）を削除し、[オーディエンス管理モジュール](https://marketing.adobe.com/resources/help/ja_JP/aam/c_profiles_audiences.html)と置き換えます。詳しくは、[サーバー側転送のドキュメント](https://marketing.adobe.com/resources/help/ja_JP/analytics/audiences/ssf.html)を参照してください。
 
 サーバー側転送への移行には、計画と調整が必要です。この手順には、サイトコードに対する外部の変更と、アカウントをプロビジョニングするためにアドビが取る必要のある内部手順が関係します。実際、これらの移行手順の多くは、並行しておこない、同時にリリースする必要があります。実装パスは、このイベントの順番に従う必要があります。
 
 1. [!DNL Analytics] と [!DNL Audience Manager] の連絡先を使用して、ID サービスおよびサーバー側転送の移行を計画します。この計画で重要な部分である、トラッキングサーバーを選択します。
 
-1. 開始するには、[統合およびプロビジョニングサイト](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES)のフォームを完成させます。
+1. 開始するには、[サイトの統合およびプロビジョニング](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=X8SVES)のフォームに入力してください。
 
 1. ID サービスと [!DNL Audience Management Module] を同時に実装します。適切に動作させるには、[!DNL Audience Management Module]（サーバー側転送）および ID サービスがページの同じセットに同時にリリースされる必要があります。
 
@@ -133,7 +133,7 @@ Analytics は、データ収集にトラッキングサーバーを使用しま�
 * Experience Cloud サーバー URL = トラッキングサーバー URL
 * Experience Cloud サーバーセキュア URL = トラッキングサーバーセキュア URL
 
-トラッキングサーバーの見つけ方が分からない場合は、[FAQ](../faq-intro/faq.md) および [trackingServer 変数と trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/analytics/kb/determining-data-center.html#)を参照してください。
+トラッキングサーバーの見つけ方が分からない場合は、[FAQ](../faq-intro/faq.md) および [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html#)を参照してください。
 
 ## 手順 6：AppMeasurement.js ファイルの更新 {#section-5517e94a09bc44dfb492ebca14b43048}
 
@@ -145,7 +145,7 @@ Analytics は、データ収集にトラッキングサーバーを使用しま�
 
 >[!IMPORTANT]
 >
->この時点で、[!DNL Audience Manager] DIL コードを削除して、Audience Management モジュールに置き換える必要があります。手順については、[サーバー側転送の実装](https://marketing.adobe.com/resources/help/en_US/reference/ssf.html)を参照してください。
+>この時点で、[!DNL Audience Manager] DIL コードを削除して、Audience Management モジュールに置き換える必要があります。手順については、[サーバー側転送の実装](https://marketing.adobe.com/resources/help/ja_JP/reference/ssf.html)を参照してください。
 
 ***（オプション、推奨）*カスタム prop の作成****
 
@@ -165,13 +165,13 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 手順 8：（オプション）猶予期間の設定 {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). 猶予期間は最大 180 日間有効です。必要に応じて、猶予期間を更新できます。
+これらの使用例のいずれかがお客様の状況に当てはまる場合は、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)までお問い合わせいただき、一時的な[猶予期間](../reference/analytics-reference/grace-period.md)を設定するよう依頼してください。猶予期間は最大 180 日間有効です。必要に応じて、猶予期間を更新できます。
 
 **部分的実装**
 
 ID サービスを使用するページと使用しないページが混在し、そのすべてのページが同じ Analytics レポートスイートで管理される場合は、猶予期間が必要です。この状況は、複数のドメインで管理されるグローバルなレポートスイートがある場合に一般的です。
 
-同じレポートスイートで管理されるすべての Web ページに ID サービスを導入した後に、猶予期間を停止します。
+同じレポートスイートで管理されるすべての Web ページに ID サービスをデプロイした後に、猶予期間を停止します。
 
 **s_vi Cookie の要件**
 
@@ -179,7 +179,7 @@ ID サービスを使用するページと使用しないページが混在し�
 
 実装で s_vi Cookie を読み取る代わりに MID を取得できるようになった後に、猶予期間を停止します。
 
-[cookieおよびExperience Cloud IDサービス](../introduction/cookies.md)も参照してください。
+詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
 
 **クリックストリームデータの統合**
 
@@ -187,7 +187,7 @@ ID サービスを使用するページと使用しないページが混在し�
 
 データ収集プロセスで `post_visid_high` 列と `post_visid_low` 列を使用できるようになった後で、猶予期間を停止します。
 
-[クリックストリームデータ列リファレンス](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html)も参照してください。
+また、[クリックストリームデータ列リファレンス](https://marketing.adobe.com/resources/help/ja_JP/sc/clickstream/datafeeds_reference.html)も参照してください。
 
 ## 手順 9：ID サービスコードのテストとデプロイ {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -198,14 +198,14 @@ ID サービスを使用するページと使用しないページが混在し�
 ID サービスの実装状況をテストするには、以下の項目を確認します。
 
 * [AMCV Cookie](../introduction/cookies.md)（ページがホストされているドメイン内）
-* Analytics イメージリクエストの MID 値（[Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html) を使用）
-* See also, [Test and Verify the Experience Cloud Identity Service](../implementation-guides/test-verify.md).
+* [Adobe Debugger ](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/debugger.html)を使用した Analytics 画像リクエストの MID 値。
+* 詳しくは、[Experience Cloud Identity Service のテストと検証](../implementation-guides/test-verify.md)を参照してください。
 
-サーバー側転送を検証するには、[サーバー側転送の実装の確認方法](https://marketing.adobe.com/resources/help/en_US/reference/ssf-verify.html)を参照してください。
+サーバー側転送を検証するには、[サーバー側転送の実装の確認方法](https://marketing.adobe.com/resources/help/ja_JP/reference/ssf-verify.html)を参照してください。
 
-**導入**
+**デプロイ**
 
-テストの合格後に、コードを導入します。
+テストの合格後に、コードをデプロイします。
 
 猶予期間を有効にしている場合：
 
