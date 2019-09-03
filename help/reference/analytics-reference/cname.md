@@ -5,7 +5,7 @@ seo-description: 'null'
 seo-title: データ収集 CNAME およびクロスドメイントラッキング
 title: データ収集 CNAME およびクロスドメイントラッキング
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -23,7 +23,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ## データ収集 CNAME {#section-48fd186d376a48079769d12c4bd9f317}
 
-Analytics Cookie がデータ収集サーバーによって設定されていたときには、多くの企業が、サードパーティ Cookie を拒否するブラウザーの問題を回避するために、[ファーストパーティ Cookie 実装](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/)の一部としてデータ収集サーバーの CNAME レコードを設定していました。このプロセスでは、データ収集サーバーのドメインを Web サイトのドメインと一致させることで、訪問者 ID Cookie がファーストパーティ Cookie として設定されるようにしていました。
+Analytics Cookie がデータ収集サーバーによって設定されていたときには、多くの企業が、サードパーティ Cookie を拒否するブラウザーの問題を回避するために、[ファーストパーティ Cookie 実装](https://marketing.adobe.com/resources/help/ja_JP/whitepapers/first_party_cookies/)の一部としてデータ収集サーバーの CNAME レコードを設定していました。このプロセスでは、データ収集サーバーのドメインを Web サイトのドメインと一致させることで、訪問者 ID Cookie がファーストパーティ Cookie として設定されるようにしていました。
 
 しかし訪問者 ID サービスでは、JavaScript を使用して現在の Web サイトのドメインに直接訪問者 Cookie を設定するので、そのような方法でファーストパーティ Cookie を設定する必要はなくなりました。
 
@@ -45,6 +45,6 @@ Apple Safari などのブラウザーではファーストパーティ Cookie �
 
 このことから、訪問者を複数のドメインで識別するには、ユーザーが共通して訪問するドメインを収集ドメインにする必要があります。データ収集ドメインとして使用できる&#x200B;*共通の*&#x200B;ドメインがない場合は、クロスドメイントラッキングのためにデータ収集ドメインの CNAME を保持するメリットはありません。訪問者がメインエントリサイトを最初に訪問しない場合は、セカンダリサイトとメインサイトで訪問者が異なる訪問者として識別されます。
 
-## Enable CNAME support with the Experience Cloud Identity Service {#section-25d4feb686d944e3a877d7aad8dbdf9a}
+## Experience Cloud Identity Service で CNAME サポートを有効にする {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
-データ収集サーバーの CNAME のサポートは、`visitor.marketingCloudServerSecure` 変数を設定することで有効にできます。
+データ収集サーバーの CNAME のサポートは、`visitor.marketingCloudServerSecure` 変数を設定することで有効になります。
