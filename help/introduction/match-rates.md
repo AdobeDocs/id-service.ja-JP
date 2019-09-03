@@ -1,11 +1,11 @@
 ---
-description: Adobe Media ManagerやIDサービスなど、ID同期プロセスとExperience Cloud IDサービスの一致率の概要です。
+description: Adobe Media Manager および ID サービスを含む、ID 同期プロセスと Experience Cloud Identity Service の一致率の概要です。
 keywords: ID サービス
-seo-description: Adobe Media ManagerやIDサービスなど、ID同期プロセスとExperience Cloud IDサービスの一致率の概要です。
+seo-description: Adobe Media Manager および ID サービスを含む、ID 同期プロセスと Experience Cloud Identity Service の一致率の概要です。
 seo-title: ID 同期と一致率について
 title: ID 同期と一致率について
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 # ID 同期と一致率について{#understanding-id-synchronization-and-match-rates}
 
-Adobe Media ManagerやIDサービスなど、ID同期プロセスとExperience Cloud IDサービスの一致率の概要です。
+Adobe Media Manager および ID サービスを含む、ID 同期プロセスと Experience Cloud Identity Service の一致率の概要です。
 
 ## ID 同期と一致率 {#section-f652aae7234945e89d26dd833c5215fb}
 
@@ -33,7 +33,7 @@ ID サービスは、リアルタイムに ID を同期します。このプロ�
 
 **手順 1：ページの読み込み**
 
-訪問者がサイトにアクセスしてページを読み込むと、`Visitor.getInstance` 関数は ID サービスへの [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) または JSON-P 呼び出しをおこないます。ID サービスは、訪問者の [!DNL Experience Cloud] ID（MID）を含む Cookie を使用して応答します。MID は、各サイト訪問者に割り当てられた一意の ID です。また、[cookieとExperience Cloud IDサービス](../introduction/cookies.md)を参照してください。
+訪問者がサイトにアクセスしてページを読み込むと、`Visitor.getInstance` 関数は ID サービスへの [CORS](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) または JSON-P 呼び出しをおこないます。ID サービスは、訪問者の [!DNL Experience Cloud] ID（MID）を含む Cookie を使用して応答します。MID は、各サイト訪問者に割り当てられた一意の ID です。詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
 
 **手順 2：iFrame の読み込み**
 
@@ -43,7 +43,7 @@ ID サービスは、リアルタイムに ID を同期します。このプロ�
 * 可能な限り高速に読み込みます。これが速すぎる場合、ウィンドウ読み込みイベントの後で iFrame を読み込むことができます（非推奨）。詳しくは、[idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) を参照してください。
 * iFrame のコードが親ページのアクセス権を取得したり、親ページに影響を与えたりすることを防ぎます。
 
-また、[Experience Cloud IDサービスのリクエストと設定方法](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)
+[Experience Cloud Identity Service による ID のリクエスト方法と設定方法](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)も参照してください。
 
 **手順3：ID 同期の実行**
 
@@ -51,11 +51,11 @@ ID 同期は、ターゲットパブリッシング iFrame で実行される UR
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-[受信データ転送のための ID 同期](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html)も参照してください。
+[受信データ転送のための ID 同期](https://marketing.adobe.com/resources/help/ja_JP/aam/c_id_sync_in.html)も参照してください。
 
 **手順 4：ID の格納**
 
-同期した ID は、[エッジおよびコアデータサーバー](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html)に格納されます。
+同期した ID は、[エッジとコアデータサーバー](https://marketing.adobe.com/resources/help/ja_JP/aam/c_compedge.html)に格納されます。
 
 ## ID 同期を管理する同期サービス {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -70,9 +70,9 @@ ID 同期は、ターゲットパブリッシング iFrame で実行される UR
 
 ## Adobe Media Manager を使用した ID 同期 {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] は、iFrame ベースの ID 同期プロセスの例外です。Because [!DNL Media Optimizer] is a trusted domain, ID syncs take place from the parent page rather than in the [!UICONTROL Destination Publishing iFrame]. 同期中、ID サービスは `cm.eversttech.net` の [!DNL Media Optimizer] を呼び出します。cm.eversttech.net はアドビが [!DNL Media Optimizer]Media Manager を買収する以前に使用されていた従来のドメイン名です。[!DNL Media Optimizer] にデータを送信すると一致率の向上に役立ちます。バージョン 2.0 以降を使用している ID サービスのお客様の場合、このデータ送信は自動的におこなわれます。[Media Manager の cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html) も参照してください。
+[!DNL Adobe Media Optimizer] は、iFrame ベースの ID 同期プロセスの例外です。[!DNL Media Optimizer] は信頼されているドメインなので、ID 同期は [!UICONTROL Destination Publishing iFrame] 内ではなく親ページからおこなわれます。同期中、ID サービスは `cm.eversttech.net` の [!DNL Media Optimizer] を呼び出します。cm.eversttech.net はアドビが [!DNL Media Optimizer]Media Manager を買収する以前に使用されていた従来のドメイン名です。[!DNL Media Optimizer] にデータを送信すると一致率の向上に役立ちます。バージョン 2.0 以降を使用している ID サービスのお客様の場合、このデータ送信は自動的におこなわれます。[Media Manager の Cookie](https://marketing.adobe.com/resources/help/ja_JP/whitepapers/cookies/cookies_media_optimizer.html) も参照してください。
 
 >[!MORE_LIKE_THIS]
 >
->* [demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
+>* [Demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/ja_JP/aam/demdex-calls.html)
 
