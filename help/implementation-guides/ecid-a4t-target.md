@@ -1,11 +1,11 @@
 ---
-description: これらの手順は、Target、Analytics、ID サービスのサーバーおよびクライアント側実装を使用する A4T のお客様向けです。NodeJS または Rhino 環境で ID サービスを実行する必要があるお客様は、こちらの情報も確認する必要があります。ID サービスのこのインスタンスは、Node Package Manager（NPM）からダウンロードおよびインストールできる、短縮版の VisitorAPI.js コードライブラリを使用します。インストール手順およびその他の設定要件については、この節を参照してください.
+description: これらの手順は、Target、Analytics、ID サービスのサーバーおよびクライアント側実装を使用する A4T のお客様向けです。NodeJS または Rhino 環境で ID サービスを実行する必要があるお客様は、こちらの情報も確認する必要があります。ID サービスのこのインスタンスは、Node Package Manager（NPM）からダウンロードおよびインストールできる、短縮版の VisitorAPI.js コードライブラリを使用します。インストール手順およびその他の設定要件については、この節を参照してください。
 keywords: ID サービス
-seo-description: これらの手順は、Target、Analytics、ID サービスのサーバーおよびクライアント側実装を使用する A4T のお客様向けです。NodeJS または Rhino 環境で ID サービスを実行する必要があるお客様は、こちらの情報も確認する必要があります。ID サービスのこのインスタンスは、Node Package Manager（NPM）からダウンロードおよびインストールできる、短縮版の VisitorAPI.js コードライブラリを使用します。インストール手順およびその他の設定要件については、この節を参照してください.
+seo-description: これらの手順は、Target、Analytics、ID サービスのサーバーおよびクライアント側実装を使用する A4T のお客様向けです。NodeJS または Rhino 環境で ID サービスを実行する必要があるお客様は、こちらの情報も確認する必要があります。ID サービスのこのインスタンスは、Node Package Manager（NPM）からダウンロードおよびインストールできる、短縮版の VisitorAPI.js コードライブラリを使用します。インストール手順およびその他の設定要件については、この節を参照してください。
 seo-title: Target のサーバー側実装を使用する A4T での ID サービスの使用
 title: Target のサーバー側実装を使用する A4T での ID サービスの使用
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # Target のサーバー側実装を使用する A4T での ID サービスの使用 {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
-これらの手順は、Target、Analytics、ID サービスのサーバーおよびクライアント側実装を使用する A4T のお客様向けです。NodeJS または Rhino 環境で ID サービスを実行する必要があるお客様は、こちらの情報も確認する必要があります。ID サービスのこのインスタンスは、Node Package Manager（NPM）からダウンロードおよびインストールできる、短縮版の VisitorAPI.js コードライブラリを使用します。インストール手順およびその他の設定要件については、この節を参照してください.
+これらの手順は、Target、Analytics、ID サービスのサーバーおよびクライアント側実装を使用する A4T のお客様向けです。NodeJS または Rhino 環境で ID サービスを実行する必要があるお客様は、こちらの情報も確認する必要があります。ID サービスのこのインスタンスは、Node Package Manager（NPM）からダウンロードおよびインストールできる、短縮版の VisitorAPI.js コードライブラリを使用します。インストール手順およびその他の設定要件については、この節を参照してください。
 
 ## はじめに {#section-ab0521ff5bbd44c592c3eaab31c1de8b}
 
@@ -166,7 +166,7 @@ Response.send("
 
 ![](assets/server_side_dtm.png)
 
-また、[DTM用のExperience Cloud IDサービスの設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)を参照してください。
+[DTM 用の Experience Cloud Identity Service 設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)も参照してください。
 
 **DTM を使用しないサーバー状態の取得**
 
@@ -199,5 +199,5 @@ Response.send("
 
 >[!MORE_LIKE_THIS]
 >
->* [Node Package Manager によるサーバー側 ID サービスパッケージ](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [ノードパッケージからのサーバー側 ID サービスパッケージ](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 
