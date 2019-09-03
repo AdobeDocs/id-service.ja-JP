@@ -1,11 +1,11 @@
 ---
-description: Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+description: Experience Cloud Identity Service は、従来の Analytics 訪問者 ID 方式を置き換えるものです。
 keywords: ID サービス
-seo-description: Experience Platform IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+seo-description: Experience Platform Identity Service は、従来の Analytics 訪問者 ID 方式を置き換えるものです。
 seo-title: Analytics および Experience Cloud ID の設定
 title: Analytics および Experience Cloud ID の設定
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 # Analytics および Experience Cloud ID の設定{#setting-analytics-and-experience-cloud-ids}
 
-Experience Cloud IDサービスは、従来のAnalytics訪問者IDメソッドに代わるものです。
+Experience Cloud Identity Service は、従来の Analytics 訪問者 ID 方式を置き換えるものです。
 
 ID サービスの実装後、AppMeasurement の前にこのコードが実行されます。ID サービスは Experience Cloud および Analytics の ID を取得するので、AppMeasurement が読み込まれたときには、これらの値が利用できる状態になっています。
 
@@ -31,7 +31,7 @@ Web サーバーからの HTTP 応答がブラウザーの Cookie に設定さ�
 
 ただし、Apple Safari などの一部のブラウザーでは、サードパーティ Cookie が受け入れられません。サードパーティ Cookie とは、現在の Web サイト以外のドメインからブラウザーに設定される Cookie のことです。また、Safari では、訪問者が訪問したことのないサードパーティドメインの Cookie がブロックされます。例えば、`mysite.com` を表示しているとき、データ収集サーバーが `mysite.omtrdc.net` である場合は、`mysite.omtrdc.net` からの HTTP ヘッダーで返された Cookie はブラウザーによって拒否される可能性があります。
 
-この状況を避けるために、多くのお客様はデータ収集サーバーに対して CNAME レコードを実装しています。これは、[ファーストパーティ Cookie を実装する](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/)効果的な方法の 1 つです。お客様のドメインのホスト名をデータ収集サーバーにマッピングするように CNAME レコードを設定すると（例えば、`metrics.mysite.com` を `mysite.omtrdc.net` にマッピングする）、データ収集ドメインは Web サイトのドメインと一致するので、[!DNL Experience Cloud] ID Cookie が保存されます。この方法により、ID サービスの Cookie が保存される可能性が上がります。ただし、CNAME レコードを設定して、データ収集サーバーの SSL 証明書を維持する必要があるので、オーバーヘッドが発生します。
+この状況を避けるために、多くのお客様はデータ収集サーバーに対して CNAME レコードを実装しています。これは、[ファーストパーティ Cookie の実装](https://marketing.adobe.com/resources/help/ja_JP/whitepapers/first_party_cookies/) の有効な部分です。お客様のドメインのホスト名をデータ収集サーバーにマッピングするように CNAME レコードを設定すると（例えば、`metrics.mysite.com` を `mysite.omtrdc.net` にマッピングする）、データ収集ドメインは Web サイトのドメインと一致するので、[!DNL Experience Cloud] ID Cookie が保存されます。この方法により、ID サービスの Cookie が保存される可能性が上がります。ただし、CNAME レコードを設定して、データ収集サーバーの SSL 証明書を維持する必要があるので、オーバーヘッドが発生します。
 
 **JavaScript**
 
@@ -47,7 +47,7 @@ JavaScript は、ファーストパーティドメイン（現在の Web サイ�
 
 ## Analytics 訪問者 ID の順序 {#section-de1dc9fc9b6d4388995b70e35b8bcddf}
 
-訪問者 ID サービスを導入すると、Analytics で訪問者を識別するために次の 5 つの方法を使用できることになります（次の表では、優先度の高い順に並べています）。
+訪問者 ID サービスをデプロイすると、Analytics で訪問者を識別するために次の 5 つの方法を使用できることになります（次の表では、優先度の高い順に並べています）。
 
 <table id="table_D267D36451F643D1BB68AF6FEAA6AD1A"> 
  <thead> 
@@ -60,13 +60,13 @@ JavaScript は、ファーストパーティドメイン（現在の Web サイ�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <img id="image_9F3E58898A1B4F40BBDEF5ADE362E55C" src="assets/step1_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_custom" format="http" scope="external">vid（s.visitorID）</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/ja_JP/sc/implement/?f=visid_custom" format="http" scope="external">vid（s.visitorID）</a> </p> </td> 
    <td colname="col3"> <p>s.visitorID が設定されている場合 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_77A06981672745B6AEA8BB4D55911CCA" src="assets/step2_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external">aid（s_vi Cookie）</a> </p> </td> 
-   <td colname="col3"> <p><span class="keyword">Experience Cloud</span> ID サービスを導入する前に、訪問者に既存の s_vi Cookie がある場合、または<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">猶予期間</a>を設定している場合。 </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/ja_JP/sc/implement/?f=visid_analytics" format="http" scope="external">aid（s_vi Cookie）</a> </p> </td> 
+   <td colname="col3"> <p><span class="keyword">Experience Cloud</span> ID サービスをデプロイする前に、訪問者に既存の s_vi Cookie がある場合、または<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">猶予期間</a>を設定している場合。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_0A950B1A6B004387AFEE8EED882739CB" src="assets/step3_icon.png" /> </p> </td> 
@@ -75,12 +75,12 @@ JavaScript は、ファーストパーティドメイン（現在の Web サイ�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_6F0ED8FE3EF846CA8E6ECCC3C0070D85" src="assets/step4_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external">fid（H.25.3 以降の代替の Cookie、または JavaScript 版 AppMeasurement）</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/ja_JP/sc/implement/?f=visid_fallback" format="http" scope="external">fid（H.25.3 以降の代替の Cookie、または JavaScript 版 AppMeasurement）</a> </p> </td> 
    <td colname="col3"> <p>ブラウザーがサードパーティ Cookie を受け入れず、Analytics トラッキングサーバーがサードパーティトラッキングサーバーとして設定されている場合 </p> <p> <p>注意：<span class="codeph">fid</span> は、従来の識別子で、サイトに ID サービスを実装している場合、使用されません。この場合、ファーストパーティである<a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie</a> がもう使用していないので、<span class="codeph"> fid</span> は必要ありません。fid は、レガシーコードをサポートするために、および歴史的な理由により、保持されています。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/ja_JP/sc/implement/?f=visid_fallback" format="http" scope="external"> IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス</a> </p> </td> 
    <td colname="col3"> <p>訪問者のブラウザーが Cookie を受け入れない場合。 </p> </td> 
   </tr> 
  </tbody> 
