@@ -1,11 +1,11 @@
 ---
-description: 2017年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
+description: 2017 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 keywords: ID サービス
-seo-description: 2017年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
+seo-description: 2017 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 seo-title: 2017 年リリースノート
 title: 2017 年リリースノート
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,9 +13,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # 2017 年リリースノート {#release-notes}
 
-2017年のExperience Cloud IDサービスの機能リリース、更新、変更点です。
+2017 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 
-これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)にも記載されています。以前の ID サービスリリースノートについては、[以前のリリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)またはこのページの下部にあるリンクを参照してください。
+これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/) にも記載されています。古い ID サービスのリリースノートについては、[以前ののリリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/?f=c_legacy_releases.html)またはこのページの下にあるリンクを参照してください。
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 * Chrome でブラウザーの戻るボタンをクリックしたときに ID サービスがエラー状態になる問題を修正しました。
 * ID サービスで、イベント呼び出し応答の地域 ID が変更されたときに ID 同期が再実行されるようになりました。
-* 新たに追加したドキュメント、[IDサービスで使用されるアドビドメインへのホワイトリストの呼び出し方法を説明する、コンテンツセキュリティポリシーおよびExperience Cloud IDサービス](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)。
+* 新たに追加したドキュメント、 [コンテンツセキュリティポリシーおよび Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3) で、ID サービスで使用されるアドビドメインへの呼び出しをホワイトリストに登録する方法を説明しています。
 
 ## バージョン 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -74,7 +74,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **改訂されたドキュメント**
 
-更新および[FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
+[FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
 
 ## バージョン 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -192,7 +192,7 @@ ID サービスが原因で、AMCV Cookie に格納された ID を使用する�
 
 **新しいドキュメント**
 
-[様々な Experience Cloud ソリューションおよびサービスによる DNS プリフェッチの使用`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
+[各種 Experience Cloud ソリューションおよびサービスでの DNS プリフェッチの使用`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/ja_JP/mcloud/dns-prefetch.html)
 
 ## バージョン 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
