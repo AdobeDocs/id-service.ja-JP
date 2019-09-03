@@ -1,11 +1,11 @@
 ---
-description: Experience Cloud IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定で独自のサブドメイン名に変更します。
+description: これらの設定を使用して、Experience Cloud Identity Service への呼び出しに使用されるデフォルトのドメイン名を、独自のサブドメイン名に変更します。
 keywords: ID サービス
-seo-description: Experience Cloud IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定で独自のサブドメイン名に変更します。
+seo-description: これらの設定を使用して、Experience Cloud Identity Service への呼び出しに使用されるデフォルトのドメイン名を、独自のサブドメイン名に変更します。
 seo-title: audienceManagerServer および audienceManagerServerSecure
 title: audienceManagerServer および audienceManagerServerSecure
 uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 # audienceManagerServer および audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-Experience Cloud IDサービスへの呼び出しで使用されるデフォルトのドメイン名を、これらの設定で独自のサブドメイン名に変更します。
+これらの設定を使用して、Experience Cloud Identity Service への呼び出しに使用されるデフォルトのドメイン名を、独自のサブドメイン名に変更します。
 
 **構文：**
 
@@ -22,7 +22,7 @@ Experience Cloud IDサービスへの呼び出しで使用されるデフォル�
 
 **目的**
 
-通常、[!DNL Experience Cloud] ID サービスは [!DNL Adobe] への呼び出しを `dpm.demdex.net` でおこないます。この宛先への呼び出しは、あまりに一般的で、サードパーティのように見えるため、好まれない場合があります。ID サービスをよりファーストパーティらしく見せるためには、これらの設定を使用して、以下のように [!DNL Audience Manager] サブドメイン名を `demdex.net` に追加します。`dpm.demdex.net` 呼び出しについて詳しくは、[Demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)を参照してください。
+通常、[!DNL Experience Cloud] ID サービスは [!DNL Adobe] への呼び出しを `dpm.demdex.net` でおこないます。この宛先への呼び出しは、あまりに一般的で、サードパーティのように見えるため、好まれない場合があります。ID サービスをよりファーストパーティらしく見せるためには、これらの設定を使用して、以下のように [!DNL Audience Manager] サブドメイン名を `demdex.net` に追加します。`dpm.demdex.net` 呼び出しについて詳しくは、[Demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/ja_JP/aam/demdex-calls.html)を参照してください。
 
 **要件**
 
