@@ -1,11 +1,11 @@
 ---
-description: これらのIDサービス関数を呼び出して、Experience Cloud IDサービス、AnalyticsまたはAudience Manager IDリクエストのタイムアウトステータスを決定します。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
+description: これらの ID サービス関数を呼び出して、Experience Cloud Identity Service、Analytics または Audience Manager ID リクエストのタイムアウトステータスを判定します。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 keywords: ID サービス
-seo-description: これらのIDサービス関数を呼び出して、Experience Cloud IDサービス、AnalyticsまたはAudience Manager IDリクエストのタイムアウトステータスを決定します。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
+seo-description: これらの ID サービス関数を呼び出して、Experience Cloud Identity Service、Analytics または Audience Manager ID リクエストのタイムアウトステータスを判定します。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 seo-title: callTimeOut メソッド
 title: callTimeOut メソッド
 uuid: e5047498-11db-4945-b356-c92b7d447573
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # callTimeOut メソッド{#calltimeout-methods}
 
-これらのIDサービス関数を呼び出して、Experience Cloud IDサービス、AnalyticsまたはAudience Manager IDリクエストのタイムアウトステータスを決定します。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
+これらの ID サービス関数を呼び出して、Experience Cloud Identity Service、Analytics または Audience Manager ID リクエストのタイムアウトステータスを判定します。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 
 ## タイムアウトの関数 {#section-e08228ef5f9b45c9a84139bbb763164a}
 
@@ -26,7 +26,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Experience Cloud IDサービス </p> </td> 
+   <td colname="col1"> <p>Experience Cloud Identity Service </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 
