@@ -2,16 +2,16 @@
 description: ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
 keywords: playstation;ID サービス
 seo-description: ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
-seo-title: CookieとExperience Cloud IDサービス
-title: CookieとExperience Cloud IDサービス
+seo-title: Cookie と Experience Cloud Identity Service
+title: Cookie と Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
 
 
-# Cookies and the Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookie と Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
 
 ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
 
@@ -23,9 +23,9 @@ ID サービスは、正常に機能するために AMCV Cookie、AMCVS Cookie �
 
 * サイト訪問者に一意の ID（MID）を設定して保存する。
 * ID サービスがデータを収集して他の Experience Cloud ソリューションと共有できるように、この一意の ID を維持する。
-* 複数のドメインをまたいでユーザーを追跡する。ただし、そのためには、同じ組織が他のドメインも所有している必要があり、それらのドメインに ID サービスコードが導入されている必要があります。
+* 複数のドメインをまたいでユーザーを追跡する。ただし、そのためには、同じ組織が他のドメインも所有している必要があり、それらのドメインに ID サービスコードがデプロイされている必要があります。
 
-### IDサービスが実行できないこと
+### ID サービス Cookie で実行できないこと
 
 * コンピューターウィルスを格納して転送し、実行する。
 * 電子メールアドレスなどの個人を特定できる情報（PII）にアクセスしたり、そのような情報を保存したりする。
@@ -114,7 +114,7 @@ AMCVS Cookie は、ブラウザーのファーストパーティドメインに�
  </tbody> 
 </table>
 
-For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+関連情報については、[Demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/ja_JP/aam/demdex-calls.html)を参照してください。
 
 ## Experience Cloud ID の生成 {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -124,4 +124,4 @@ Experience Cloud ID（MID）は、組織 ID と demdex ID から計算によっ�
 
 ## 次の手順 {#section-8db1727a63bc4ff68b495f270315d453}
 
-See [How the Experience Cloud Identity Service Requests and Sets IDs...](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a).
+[Experience Cloud Identity Service による ID のリクエスト方法と設定方法](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)を参照してください。
