@@ -5,7 +5,7 @@ seo-description: getInstance は、指定した Experience Cloud 組織 ID に�
 seo-title: getInstance
 title: getInstance
 uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -51,7 +51,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-`getInstance` により既存のインスタンスが見つからない場合は、新しいインスタンスが作成されて返されます。This is similar to the [ `s_gi()` function ](https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=function_s_gi.html) in [!DNL AppMeasurement].
+`getInstance` により既存のインスタンスが見つからない場合は、新しいインスタンスが作成されて返されます。これは、[!DNL AppMeasurement] の [ `s_gi()` 関数](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/?f=function_s_gi.html)と似ています。
 
 **一般的な使用例**
 
