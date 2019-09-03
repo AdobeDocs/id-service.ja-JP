@@ -5,7 +5,7 @@ seo-description: これらの設定を使用すると、iFrame と親ページ�
 seo-title: whitelistParentDomain および whitelistIframeDomains
 title: whitelistParentDomain および whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -43,7 +43,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> whitelistIframeDomains: [ <span class="varname"> "iFrame ドメイン","iFrame ドメイン","iFrame ドメイン" </span>] </span> </p> </td> 
-   <td colname="col2"> <p>配列として渡される iFrame ドメイン名を受け入れます。 </p> </td> 
+   <td colname="col2"> <p>配列として渡される 1 つ以上の iFrame ドメイン名を受け入れます。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -73,7 +73,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 >[!TIP]
 >
->You may also want to implement these configurations when you're serving video in an iFrame with [Video Heartbeat](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/). ビデオハートビートを正しく動作させるには ID サービスの ID（MID）が必要です。
+>iFrame で[ビデオハートビート](https://marketing.adobe.com/resources/help/ja_JP/sc/appmeasurement/hbvideo/)を使用してビデオを提供している場合も、これらの設定を実装することが推奨されます。ビビデオハートビートを正しく動作させるには ID サービスの ID（MID）が必要です。
 
 **使用例 1：ブラウザーがサードパーティ Cookie をブロックし、ID サービスが iFrame および親ページに実装されている**
 
