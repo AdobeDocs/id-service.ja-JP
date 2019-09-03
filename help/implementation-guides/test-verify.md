@@ -2,16 +2,16 @@
 description: これらの説明、ツール、手順は、ID サービスが適切に動作しているかどうかを判定するのに役立ちます。これらのテストは、一般に、ID サービスに適用され、様々な ID サービスと Experience Cloud ソリューションの組み合わせに適用されます。
 keywords: ID サービス
 seo-description: これらの説明、ツール、手順は、ID サービスが適切に動作しているかどうかを判定するのに役立ちます。これらのテストは、一般に、ID サービスに適用され、様々な ID サービスと Experience Cloud ソリューションの組み合わせに適用されます。
-seo-title: Experience Cloud IDサービスのテストと検証
-title: Experience Cloud IDサービスのテストと検証
+seo-title: Experience Cloud Identity Service のテストと検証
+title: Experience Cloud Identity Service のテストと検証
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ef3169f8928f337d4f2d17922b44a7421d225e51
 
 ---
 
 
-# Test and verify the Experience Cloud Identity Service{#test-and-verify-the-experience-cloud-id-service}
+# Experience Cloud Identity Service のテストと検証 {#test-and-verify-the-experience-cloud-id-service}
 
 これらの説明、ツール、手順は、ID サービスが適切に動作しているかどうかを判定するのに役立ちます。これらのテストは、一般に、ID サービスに適用され、様々な ID サービスと Experience Cloud ソリューションの組み合わせに適用されます。
 
@@ -27,13 +27,13 @@ ID サービスのテストと検証を始める前に知っておくべき重�
 
 **ツール**
 
-[Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html) および [Charles HTTP プロキシ](https://www.charlesproxy.com/)を使用すると、Analytics を使用して ID サービスが適切に動作するように設定されていることを判定できます。この節の情報は、Adobe Debugger および Charles が返す結果に基づいています。ただし、お客様に最適なツールやデバッガーを自由に使用することができます。
+[Adobe Debugger](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/debugger.html) および [Charles HTTP プロキシ](https://www.charlesproxy.com/) は、Analyticsで ID サービスが正しく動作するように設定されているかどうかを判断するのに役立ちます。この節の情報は、Adobe Debugger および Charles が返す結果に基づいています。ただし、お客様に最適なツールやデバッガーを自由に使用することができます。
 
 ## Adobe Debugger を使用したテスト {#section-861365abc24b498e925b3837ea81d469}
 
-[!DNL Adobe] Debugger の応答に [!DNL Experience Cloud ID]（MID）が表示される場合、サービス統合は適切に設定されています。See [Cookies and the Experience Cloud Identity Service](../introduction/cookies.md) for more information about the MID.
+[!DNL Adobe] Debugger の応答に [!DNL Experience Cloud ID]（MID）が表示される場合、サービス統合は適切に設定されています。MID について詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
 
-[!DNL Adobe][デバッガを使用してIDサービスのステータスを検証するに](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html)は:
+[!DNL Adobe] [デバッガー](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/debugger.html)を使用して ID サービスのステータスを検証するには：
 
 1. ブラウザーの Cookie をクリアするか、匿名ブラウジングセッションを開きます。
 1. ID サービスコードを含むテストページを読み込みます。
@@ -59,7 +59,7 @@ mid=20265673158980419722735089753036633573
 
 **失敗**
 
-デバッガーが以下の動作をする場合は、[カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)にお問い合わせください。
+デバッガーが以下の動作をする場合は、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください。
 
 * MID を返さない。
 * パートナー ID がプロビジョニングされていないことを示すエラーメッセージを返す。
@@ -79,13 +79,13 @@ Charles を使用して HTTP 呼び出しを監視する場合、どこを見て
 
 **Charles での成功した ID サービスリクエスト**
 
-`Visitor.getInstance` 関数が `dpm.demdex.net` に対する JavaScript 呼び出しをおこなう場合、ID サービスコードは適切に動作しています。成功したリクエストには、[組織 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) が含まれます。組織 ID は、キーと値のペアとして渡されます（`d_orgid= *`組織 ID`*` という構文が使用されます）。「`dpm.demdex.net`構造[!UICONTROL 」タブで、] および JavaScript 呼び出しを探します。「[!UICONTROL リクエスト]」タブで、組織 ID を探します。
+`Visitor.getInstance` 関数が `dpm.demdex.net` に対する JavaScript 呼び出しをおこなう場合、ID サービスコードは適切に動作しています。成功したリクエストには、[組織 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) が含まれます。組織 ID は、キーと値のペアとして渡されます（`d_orgid= *`組織 ID`*` という構文が使用されます）。「[!UICONTROL 構造]」タブで、`dpm.demdex.net` および JavaScript 呼び出しを探します。「[!UICONTROL リクエスト]」タブで、組織 ID を探します。
 
 ![](assets/charles_request.png)
 
 **Charles での成功した ID サービス応答**
 
-[データ収集サーバー](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html)（DCS）からの応答が MID を返す場合、アカウントは ID サービスに関して適切にプロビジョニングされています。MID は、キーと値のペアとして返されます（`d_mid: *`訪問者の Experience Cloud ID`*` という構文が使用されます）。以下に示すように、「[!UICONTROL 応答]」タブで、MID を探します。
+[データ収集サーバー](https://marketing.adobe.com/resources/help/ja_JP/aam/c_compcollect.html)（DCS）からの応答が MID を返す場合、アカウントは ID サービスに関して適切にプロビジョニングされています。MID は、キーと値のペアとして返されます（`d_mid: *`訪問者の Experience Cloud ID`*` という構文が使用されます）。以下に示すように、「[!UICONTROL 応答]」タブで、MID を探します。
 
 ![](assets/charles_response_success.png)
 
@@ -95,4 +95,4 @@ DCS 応答に MID がない場合、アカウントは適切にプロビジョ�
 
 ![](assets/charles_response_unsuccessful.png)
 
-エラーコードについて詳しくは、[DCS エラーコード、メッセージおよび例](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html)を参照してください。
+エラーコードについて詳しくは、[DCS エラー コード、メッセージ、および例](https://marketing.adobe.com/resources/help/ja_JP/aam/dcs_error_codes.html)を参照してください。
