@@ -1,30 +1,29 @@
 ---
-description: Experience Cloud IDサービス（ECID）は、SHA-256ハッシュアルゴリズムをサポートし、顧客IDまたは電子メールアドレスを渡すことができ、ハッシュIDを渡すことができます。これは、ハッシュ化された識別子をExperience Cloudに送信するためのオプションのJavascriptメソッドです。顧客IDを送信する前に、独自のハッシュのメソッドを引き続き使用できます。
+description: Experience Cloud ID Service（ECID）は、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、SHA-256 ハッシュアルゴリズムをサポートします。これは、ハッシュされた識別子を Experience Cloud に送信するための、オプションの JavaScript メソッドです。顧客 ID の送信前にハッシュする独自の方法を引き続き使用できます。
 keywords: ID サービス
-seo-description: Experience Cloud IDサービス（ECID）は、SHA-256ハッシュアルゴリズムをサポートし、顧客IDまたは電子メールアドレスを渡すことができ、ハッシュIDを渡すことができます。これは、ハッシュ化された識別子をExperience Cloudに送信するためのオプションのJavascriptメソッドです。顧客IDを送信する前に、独自のハッシュのメソッドを引き続き使用できます。
-seo-title: setCustomerIDsのSHA256ハッシュサポート
-title: setCustomerIDsのSHA256ハッシュサポート
-translation-type: tm+mt
+seo-description: Experience Cloud ID Service（ECID）は、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、SHA-256 ハッシュアルゴリズムをサポートします。これは、ハッシュされた識別子を Experience Cloud に送信するための、オプションの JavaScript メソッドです。顧客 ID の送信前にハッシュする独自の方法を引き続き使用できます。
+seo-title: setCustomerIDs の SHA256 ハッシュサポート
+title: setCustomerIDs の SHA256 ハッシュサポート
+translation-type: ht
 source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
 
 ---
 
 
-# SHA256 Hashing Support for `setCustomerIDs` {#hashing-support}
+# の SHA256 ハッシュサポート `setCustomerIDs` {#hashing-support}
 
-Experience Cloud IDサービス（ECID）は、SHA-256ハッシュアルゴリズムをサポートし、顧客IDまたは電子メールアドレスを渡すことができ、ハッシュIDを渡すことができます。これは、ハッシュ化された識別子をExperience Cloudに送信するためのオプションのJavascriptメソッドです。顧客IDを送信する前に、独自のハッシュのメソッドを引き続き使用できます。
-以下の節で説明するように、setCustomerIDsを使用してハッシュサポートを実装するには、2つの方法があります。
+Experience Cloud ID Service（ECID）は、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、SHA-256 ハッシュアルゴリズムをサポートします。これは、ハッシュされた識別子を Experience Cloud に送信するための、オプションの JavaScript メソッドです。顧客 ID の送信前にハッシュする独自の方法を引き続き使用できます。setCustomerIDs を使用してハッシュサポートを実装するには、以下の節で説明するように、2 つの方法があります。
 
-* [EIDのsetCustomerIDsメソッドを使用する](/help/reference/hashing-support.md#use-setcustomerids-method)
-* [Adobe Experience Platform Launchでのアクションの追加](/help/reference/hashing-support.md#add-action-launch)
+* [ECID での setCustomerIDs メソッドの使用](/help/reference/hashing-support.md#use-setcustomerids-method)
+* [Adobe Experience Platform Launch でのアクションの追加](/help/reference/hashing-support.md#add-action-launch)
 
-## Use the `setCustomerIDs` method in ECID {#use-setcustomerids-method}
+## ECID での `setCustomerIDs` メソッドの使用 {#use-setcustomerids-method}
 
-The first method leverages using the [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) method.
+最初の方法は、[`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) メソッドを利用します。
 
-ハッシュの前に、ECIDライブラリはCustomerIDsでデータの正規化を実行します。このプロセスでは、両方のCustomerIDsのホワイトスペースがトリミングされ、すべての文字が小文字に変換されます。例えば、電子メールアドレスの場合:"ecid@adobe.com"は"ecid@adobe.com"になります。
+ハッシュ化する前に、ECID ライブラリは、customerIDs のデータの正規化を実行します。このプロセスでは、customerIDs の両端の空白をトリミングし、すべての文字を小文字に変換します。例えば、電子メールアドレスの場合、「 ecid@adobe.com 」は「ecid@adobe.com」になります。
 
-SHA-256ハッシュを使用して、単一の顧客ID（前述の電子メールアドレス）を設定する方法のコード例を参照してください。
+以下のコード例に、SHA-256 ハッシュで単一の顧客 ID（前述の電子メールアドレス）を設定する方法を示します。
 
 ```
 // Set single customerID with SHA-256 hashing
@@ -33,11 +32,11 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 <br> 
 
-Experience Cloud訪問者IDとともに、追加の顧客ID、認証ステータスおよびハッシュタイプ（SHA-256）を各訪問者に関連付けることができます。ハッシュタイプを指定しない場合、ハッシュなしと見なされます。
+通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID、認証状態およびハッシュタイプ（SHA-256）を各訪問者に関連付けることができます。ハッシュタイプを指定していない場合、ハッシュ化しないと見なされます。
 
-`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html)として Experience Cloud にアップロードして、異なるソリューションからこのデータにアクセスすることができます。
+`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://docs.adobe.com/content/help/ja-JP/core-services/interface/customer-attributes/attributes.html)として Experience Cloud にアップロードし、様々なソリューションからこのデータにアクセスできます。
 
-Customer IDs, authenticated states and hash type *are not* stored in a cookie to be used later. Instead, Customer IDs, authenticated states and hash type should be stored in an instance variable, to be retrieved using [`getCustomerIDs`](/help/library/get-set/getcustomerids.md), as shown below:
+顧客 ID、認証状態およびハッシュタイプは、後で使用するために Cookie に格納されることはありません。**&#x200B;代わりに、顧客 ID、認証状態およびハッシュタイプは、[`getCustomerIDs`](/help/library/get-set/getcustomerids.md) を使用して取得するために、以下に示すように、インスタンス変数に格納されます。
 
 ```
 > visitor.getCustomerIDs();
@@ -48,7 +47,7 @@ Customer IDs, authenticated states and hash type *are not* stored in a cookie to
 
 <br> 
 
-`setCustomerIDs` このメソッドを使用すると、ハッシュ `dpm.demdex.net`化された顧客IDを含む `d_cid_ic` クエリパラメーターが追加され、Experience Cloud IDサービスの呼び出しが実行されます。サンプルの呼び出しは以下のようになります。明確にするために改行が追加されました。
+`setCustomerIDs` メソッドを使用すると、Experience Cloud ID Service に対して `dpm.demdex.net` を、ハッシュされた 顧客 ID を含む `d_cid_ic` クエリパラメーターを追加して呼び出します。呼び出しの例は、以下のようになります。わかりやすくするために改行を追加してあります。
 
 ```
 http://dpm.demdex.net/id?d_visid_ver=4.4.0&d_fieldgroup=AAM&d_rtbd=json&d_ver=2&
@@ -60,23 +59,23 @@ ts=1563299964843
 
 <br> 
 
-`d_cid_ic` パラメーターと認証状態の説明については、以下の表を参照してください。
+以下の表に、`d_cid_ic` パラメーターおよび認証状態の説明を示します。
 
 | パラメーター | 説明 |
 |------------|----------|
-| `d_cid_ic` | 統合コード、個別ユーザーID（DPUUID）および認証済み状態IDをIDサービスに渡します。Separate the Integration Code and DPUUID with the non-printing control character, <code>%01</code>: <br> Example: <code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>認証状態</b> <br> d_ cid_ icパラメータ内のオプションのIDです。Expressed as an integer, it identifies users according to their authentication status as shown below: <br> <ul><li>0（不明または認証なし）</li><li>1（現在、このインスタンス/ページ/アプリケーションコンテキストで認証されています）</li><li>2（ログアウト済み）</li></ul> <br>例：<br> <ul><li>不明：...d_cid=123%01456%01<b>0</b></li><li>認証済み：...d_cid=123%01456%01<b>1</b></li><li>ログアウト済み：...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | 統合コード、一意の ユーザー ID（DPUUID）および認証状態 ID を ID サービスに渡します。統合コードおよび DPUUID を非表示の制御文字、<code>%01</code> で区切ります。<br> 例：<code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>認証状態</b> <br> これは、d_cid_ic パラメーターのオプションの ID です。整数で表され、以下に示す認証状態によってユーザーを識別します。<br> <ul><li>0（不明または認証なし）</li><li>1（現在、このインスタンス／ページ／アプリコンテキストに対して認証済み）</li><li>2（ログアウト済み）</li></ul> <br>例：<br> <ul><li>不明：...d_cid=123%01456%01<b>0</b></li><li>認証済み：...d_cid=123%01456%01<b>1</b></li><li>ログアウト済み：...d_cid=123%01456%01<b>2</b></li></ul> |
 
-## Add an Action in Adobe Experience Platform Launch {#add-action-launch}
+## Adobe Experience Platform Launch でのアクションの追加 {#add-action-launch}
 
-Experience Platform Launchは、アドビのタグ管理機能の次世代です。[起動製品ドキュメントの起動について](https://docs.adobe.com/content/help/en/launch/using/overview.html)詳しくは、を参照してください。
+Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。Launch について詳しくは、[Launch 製品ドキュメント](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)を参照してください。
 
-To add an action in Launch, read the [rules documentation](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) in Adobe Launch and see the screen capture below:
+Launch でアクションを追加するには、Adobe Launch の[ルールに関するドキュメント](https://docs.adobe.com/help/ja-JP/launch/using/reference/manage-resources/rules.html)および以下の画面キャプチャを参照してください。
 
 ![](/help/reference/assets/hashing-support.png)
 
 <br> 
 
-設定を確認すると、起動すると、次のようにデータがオブジェクトにラップされます。
+設定を確認したら、Launch は、以下のようにデータをオブジェクトにまとめます。
 
 ```
 {
@@ -88,7 +87,7 @@ To add an action in Launch, read the [rules documentation](https://docs.adobe.co
 }
 ```
 
-以下にコードサンプルを示します。
+以下にコード例を示します。
 
 ```
 // Set single customer ID with hash type
@@ -99,4 +98,4 @@ setCustomerIDs(Ingeration code: {
 });
 ```
 
-Similarly to the `setCustomerIDs` method described in the first section, this results in a call to the Experience Cloud ID Service, with the addition of the `d_cid_ic` query parameter.
+最初の節で説明した `setCustomerIDs` メソッドと同様、これにより、Experience Cloud ID Service に対して`d_cid_ic` クエリパラメーターを追加して呼び出します。
