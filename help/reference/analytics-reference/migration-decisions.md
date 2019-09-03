@@ -1,19 +1,19 @@
 ---
-description: Experience Cloud IDサービスを導入する前に、様々な方法やJavaScriptファイルを使用してデータを収集する場合に、このサービスが複数ドメインでの訪問者トラッキングにどのように影響するか、および潜在的な問題について理解する必要があります。
+description: Experience Cloud Identity Service をデプロイする前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法や JavaScript ファイルによってデータを収集する場合の潜在的な問題について理解する必要があります。
 keywords: ID サービス
-seo-description: Experience Cloud IDサービスを導入する前に、様々な方法やJavaScriptファイルを使用してデータを収集する場合に、このサービスが複数ドメインでの訪問者トラッキングにどのように影響するか、および潜在的な問題について理解する必要があります。
-seo-title: Experience Cloud IDサービス移行の判断ポイント
-title: Experience Cloud IDサービス移行の判断ポイント
+seo-description: Experience Cloud Identity Service をデプロイする前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法や JavaScript ファイルによってデータを収集する場合の潜在的な問題について理解する必要があります。
+seo-title: Experience Cloud Identity Service 移行の判断ポイント
+title: Experience Cloud Identity Service 移行の判断ポイント
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
 
 
-# Experience Cloud IDサービス移行の判断ポイント
+# Experience Cloud Identity Service 移行の判断ポイント
 
-Experience Cloud IDサービスを導入する前に、様々な方法やJavaScriptファイルを使用してデータを収集する場合に、このサービスが複数ドメインでの訪問者トラッキングにどのように影響するか、および潜在的な問題について理解する必要があります。
+Experience Cloud Identity Service をデプロイする前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法や JavaScript ファイルによってデータを収集する場合の潜在的な問題について理解する必要があります。
 
 この節に示す質問に答えながら、必要な移行手順について判断してください。
 
@@ -60,10 +60,10 @@ Experience Cloud IDサービスを導入する前に、様々な方法やJavaScr
    <td colname="col1"> <p>単一のドメイン </p> </td> 
    <td colname="col2"> <p>単一のドメインを使用する場合は、データ収集 CNAME の管理を終了したい場合に、その使用を停止できます。ただし、CNAME が機能している場合には、変更する必要はありません。 </p> <p>CNAME を削除する場合： </p> 
     <ul id="ul_12CDECEFC7BB41A18895B507CAA42315"> 
-     <li id="li_32E2CD3E58454E20A642BADE507AE86E">新しいトラッキングサーバーが <a href="https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/" format="https" scope="external">RDC に準拠している</a>ことを確認します。 </li> 
+     <li id="li_32E2CD3E58454E20A642BADE507AE86E">新しいトラッキングサーバーが <a href="https://marketing.adobe.com/resources/help/ja_JP/whitepapers/rdc/" format="https" scope="external">RDC に準拠している</a>ことを確認します。 </li> 
      <li id="li_865BB6DAA3594EBBAB688E73C8343762"><span class="keyword">Experience Cloud</span> ID サービスに移行する数ヶ月前に、CNAME から RDC トラッキングサーバーに移行します。 </li> 
      <li id="li_284A015177554C848C8648DC5BBAA365"> <i></i><span class="codeph">*.2o7.net</span> トラッキングサーバーは使用しないでください。 </li> 
-     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">訪問者の移行の設定方法については、<a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" format="https" scope="external">カスタマーケア</a>にお問い合わせください。この設定により、訪問者を一貫性のある方法でカウントすることができます。 </li> 
+     <li id="li_B1ABF03DC46C42059F61542CDE0FE5A1">訪問者の移行の設定方法については、<a href="https://helpx.adobe.com/jp/marketing-cloud/contact-support.html" format="https" scope="external">カスタマーケア</a>にお問い合わせください。この設定により、訪問者を一貫性のある方法でカウントすることができます。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -87,7 +87,7 @@ Experience Cloud IDサービスを導入する前に、様々な方法やJavaScr
      <li id="li_4366CC8EB7A54A959568E3761ABBBF23">複数の Analytics JavaScript ファイル </li> 
      <li id="li_B8A8132019EA48088E4F37E36F153D76">その他のデータ収集方法 </li> 
     </ul> </td> 
-   <td colname="col2"> <p>各 JavaScript ファイルおよび他のデータ収集ライブラリに訪問者 ID サービスを展開できるように、訪問者 ID サービス猶予期間を設定する必要があります。詳しくは、<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">ID サービスの猶予期間</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>各 JavaScript ファイルおよび他のデータ収集ライブラリに訪問者 ID サービスを展開できるように、訪問者 ID サービス猶予期間を設定する必要があります。<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">ID サービスの猶予期間</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>単一の Analytics JavaScript ファイル </p> </td> 
@@ -110,7 +110,7 @@ Experience Cloud IDサービスを導入する前に、様々な方法やJavaScr
  <tbody> 
   <tr> 
    <td colname="col1"> <p>JavaScript、Flash </p> </td> 
-   <td colname="col2"> <p>なし. <span class="keyword">Experience Cloud</span> ID サービスは、これらのデータ収集方法をサポートしています。 </p> </td> 
+   <td colname="col2"> <p>なし。<span class="keyword">Experience Cloud</span> ID サービスは、これらのデータ収集方法をサポートしています。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Silverlight </p> </td> 
