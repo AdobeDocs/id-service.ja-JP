@@ -1,11 +1,11 @@
 ---
-description: Experience Cloud IDサービスの標準および非標準的な実装の手順とコードサンプルです。
+description: Experience Cloud Identity Service の標準的な実装および非標準的な実装の手順とコードサンプルです。
 keywords: ID サービス
-seo-description: Experience Cloud IDサービスの標準および非標準的な実装の手順とコードサンプルです。
+seo-description: Experience Cloud Identity Service の標準的な実装および非標準的な実装の手順とコードサンプルです。
 seo-title: 実装ガイド
 title: 実装ガイド
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 # 実装方法
 
-Experience Cloud IDサービスの標準および非標準的な実装の手順とコードサンプルです。
+Experience Cloud Identity Service の標準的な実装および非標準的な実装の手順とコードサンプルです。
 
 >[!IMPORTANT]
 >
