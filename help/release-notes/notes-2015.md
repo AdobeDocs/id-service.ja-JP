@@ -5,7 +5,7 @@ seo-description: 2015 年版のリリースノートと更新情報です。
 seo-title: 2015 年リリースノート
 title: 2015 年リリースノート
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -19,7 +19,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 2015 年 11 月
 
-児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。See [COPPA Support in the Experience Cloud Identity Service](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413). バージョン 1.5.3 以降でサポートされています。
+児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。[Experience Cloud Identity Service での COPPA のサポート](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)を参照してください。バージョン 1.5.3 以降でサポートされています。
 
 ## バージョン 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -45,7 +45,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 このリリースのドキュメントで見直された内容は以下のとおりです。
 
 * [API メソッドとコードライブラリ](../library/library.md#concept-ff27497375644a898d47984aefb21c97)：コンテンツとテキストを再構成しました。ほとんどの場合、メソッドごとにページを設けました。
-* [Experience Cloud IDサービスの要件](../reference/requirements.md):コンテンツを改訂し、テキストを再構成しました。
+* [Experience Cloud Identity Service の要件](../reference/requirements.md)：内容を改訂し、テキストを再構成しました。
 
 ## バージョン 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
