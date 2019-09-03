@@ -1,48 +1,48 @@
 ---
-cloud: platform- cloud
+cloud: platform-cloud
 product: ID サービス
 audience: end-user
-user-guide-title: Experience Cloud IDサービスヘルプ
-user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+user-guide-title: Experience Cloud Identity Service ヘルプ
+user-guide-url: /content/help/ja-JP/id-service/using/home.html
+translation-type: ht
 source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
 
 ---
 
 
-# Experience Cloud Identity Service Help {#using}
+# Experience Cloud Identity Service ヘルプ {#using}
 
 + [ID サービスヘルプ](home.md)
 + 概要 {#intro}
    + [概要](introduction/overview.md)
    + [ID サービスについて](introduction/about-id-service.md)
-   + [cookie と Marketing Cloud ID](introduction/cookies.md)
+   + [Cookie と ID サービス](introduction/cookies.md)
    + [ ID サービスによる ID のリクエスト方法と設定方法](introduction/id-request.md)
-   + [ 同期と一致率について](introduction/match-rates.md)
+   + [同期と一致率について](introduction/match-rates.md)
 + 実装ガイド{#implementation-guides}
    + [実装ガイド](implementation-guides/implementation-guides.md)
    + [実装方法](implementation-guides/implementation-methods.md)
-   + [Experience Platform Launchによる実装](implementation-guides/ecid-implement-with-launch.md)
+   + [Experience Platform Launch を使用した実装](implementation-guides/ecid-implement-with-launch.md)
    + [DTM を使用した実装](implementation-guides/standard.md)
-   + [Analytics用に実装](implementation-guides/setup-analytics.md)
-   + [Target用の実装](implementation-guides/setup-target.md)
-   + [AnalyticsおよびAudience Managerの実装](implementation-guides/setup-aam-analytics.md)
-   + [Analytics、Audience ManagerおよびTargetの実装](implementation-guides/setup-aam-analytics-target.md)
+   + [Analytics の実装](implementation-guides/setup-analytics.md)
+   + [Target の実装](implementation-guides/setup-target.md)
+   + [Analytics および Audience Manager の実装](implementation-guides/setup-aam-analytics.md)
+   + [Analytics、Audience Manager および Target の実装](implementation-guides/setup-aam-analytics-target.md)
    + [Target のサーバー側実装を使用する A4T での ID サービスの使用](implementation-guides/ecid-a4t-target.md)
-   + [IDサービスとの直接統合](implementation-guides/direct-integration.md)
+   + [ID サービスとの直接統合](implementation-guides/direct-integration.md)
    + [直接統合の使用例](implementation-guides/direct-integration-examples.md)
-   + [IDサービスのテストと検証](implementation-guides/test-verify.md)
+   + [ ID サービスのテストと検証](implementation-guides/test-verify.md)
    + オプトインドキュメント{#opt-in-service}
       + [オプトインサービスの概要](implementation-guides/opt-in-service/optin-overview.md)
       + [オプトインサービスの設定](implementation-guides/opt-in-service/getting-started.md)
       + [オプトインサービスの検証](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [エクスペリエンスプラットフォーム起動によるオプトインの設定](implementation-guides/opt-in-service/launch.md)
+      + [Experience Platform Launch を使用したオプトインの設定](implementation-guides/opt-in-service/launch.md)
       + [DTM を使用したオプトインの設定](implementation-guides/opt-in-service/optin-dtm.md)
       + [オプトインの使用例](implementation-guides/opt-in-service/use-cases.md)
       + [オプトインリファレンス](implementation-guides/opt-in-service/api.md)
       + [（ベータ）IAB フレームワークを使用したオプトインサービスの使用](implementation-guides/opt-in-service/iab.md)
 + ID サービスの API {#id-service-api}
-   + [IDサービスAPIの概要](library/library.md)
+   + [ID サービス API の概要](library/library.md)
    + 設定 {#configurations}
       + [設定の概要](library/function-vars/function-vars.md)
       + [audienceManagerServer および audienceManagerServerSecure](library/function-vars/subdomain-config.md)
@@ -78,27 +78,27 @@ source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
       + [isClientSideMarketingCloudVisitorID](library/get-set/client-side-id.md)
       + [resetState](library/get-set/resetstate.md)
 + リファレンス {#reference}
-   + [リファレンス概要](reference/reference.md)
+   + [Reference の概要](reference/reference.md)
    + Analytics リファレンス {#analytics-reference}
       + [Analytics リファレンスの概要](reference/analytics-reference/analytics-reference.md)
       + [Analytics および Experience Cloud ID の設定](reference/analytics-reference/analytics-ids.md)
       + [Analytics ID の操作の順序](reference/analytics-reference/analytics-order-of-operations.md)
-      + [IDサービス移行の判断ポイント](reference/analytics-reference/migration-decisions.md)
-      + [IDサービスの移行シナリオ](reference/analytics-reference/migration-scenarios.md)
-      + [AnalyticsおよびIDリクエスト](reference/analytics-reference/legacy-analytics.md)
+      + [ID サービス移行の判断ポイント](reference/analytics-reference/migration-decisions.md)
+      + [ID サービスの移行シナリオ](reference/analytics-reference/migration-scenarios.md)
+      + [Analytics および ID のリクエスト](reference/analytics-reference/legacy-analytics.md)
       + [データ収集 CNAME およびクロスドメイントラッキング](reference/analytics-reference/cname.md)
       + [JavaScript を利用したサーバー側実装](reference/analytics-reference/server-side.md)
       + [ID サービスの猶予期間](reference/analytics-reference/grace-period.md)
-   + [コンテンツセキュリティポリシーとIDサービス](reference/csp.md)
-   + [IDサービスでのCOPPAのサポート](reference/coppa.md)
-   + [IDサービスでのCORSのサポート](reference/cors.md)
+   + [コンテンツセキュリティポリシーおよび ID サービス](reference/csp.md)
+   + [ID サービスでの COPPA のサポート](reference/coppa.md)
+   + [ID サービスでの CORS のサポート](reference/cors.md)
    + [顧客 ID と認証状態](reference/authenticated-state.md)
-   + [Safari ITP世界のECIDライブラリメソッド](reference/ecid-library-methods.md)
+   + [Safari ITP での ECID ライブラリの手法](reference/ecid-library-methods.md)
    + [AMCV Cookie または ID サービスからの地域およびユーザー ID の取得](reference/regions.md)
-   + [IDサービスの要件](reference/requirements.md)
-   + [ビデオハートビートとIDサービス](reference/heartbeat.md)
-   + [Data WorkbenchとIDサービス](reference/dwb.md)
-   + [setCustomerIDsのSHA256ハッシュサポート](reference/hashing-support.md)
+   + [ID サービスの要件](reference/requirements.md)
+   + [ビデオハートビートと ID サービス](reference/heartbeat.md)
+   + [Data Workbench と ID サービス](reference/dwb.md)
+   + [setCustomerIDs の SHA256 ハッシュサポート](reference/hashing-support.md)
 + よくある質問（FAQ） {#faqs}
    + [FAQ の概要](faq-intro/faq-intro.md)
    + [ID サービス FAQ](faq-intro/faq.md)
