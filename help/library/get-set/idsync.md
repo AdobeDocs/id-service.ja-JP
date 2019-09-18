@@ -6,7 +6,7 @@ seo-title: URL またはデータソースによる ID 同期
 title: URL またはデータソースによる ID 同期
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: cc050064465f6d94621e9f4b8879be3c2bd18a47
+source-git-commit: b83b192655f59a728b488b4e2a9aa2efbcf093f0
 
 ---
 
@@ -29,10 +29,7 @@ ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると
  <tbody> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByURL(); </span> </p> </td> 
-   <td colname="col2"> <p>カスタム ID 同期 URL を使用して、様々なデータパラメーターおよび <span class="keyword">Audience Manager</span> 間で同期。 </p> <p> 
-     <draft-comment>
-       複数のデータパートナーと Audience Manager の間で実行されます。例えば、パートナー x がこれを使用してユーザー ID をパートナー y と同期し、Audience Manager に送信します。 
-     </draft-comment> </p> </td> 
+   <td colname="col2"> <p>カスタム ID 同期 URL を使用して、様々なデータパラメーターおよび <span class="keyword">Audience Manager</span> 間で同期。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByDataSource(); </span> </p> </td> 
@@ -110,7 +107,9 @@ ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると
 
 **サンプル出力**
 
-`http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D`
+```
+http://su.addthis.com/red/usync?pid=16&puid=28777806459181003670799219185178493848&url=http%3A%2F%2Fdpm.demdex.net%2Fibs%3Adpid%3D420%26dpuuid%3D%7B%7Buid%7D%7D
+```
 
 ### visitor.idSyncByDataSource
 
@@ -129,7 +128,9 @@ ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると
 
 **サンプル出力**
 
-`http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765`
+```
+http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
+```
 
 >[!MORE_LIKE_THIS]
 >
