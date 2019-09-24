@@ -5,7 +5,7 @@ seo-description: コンテンツセキュリティポリシー（CSP）は、Web
 seo-title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -53,14 +53,14 @@ CSP の使用は一般的であり、よく理解されています。このド�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>訪問者 ID サービス</b> </p> </td> 
-   <td colname="col2"> <p>CSP に <span class="codeph">*.demdex.net</span> を追加します。 </p> <p><span class="codeph"> demdex.net</span> ドメインの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies および Experience Cloud Identity Service</a> の生成と、ID 同期用に使用されます。<a href="https://marketing.adobe.com/resources/help/ja_JP/aam/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> 
+   <td colname="col2"> <p>CSP に <span class="codeph">*.demdex.net</span> を追加します。 </p> <p><span class="codeph"> demdex.net</span> ドメインの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies および Experience Cloud Identity Service</a> の生成と、ID 同期用に使用されます。<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!MORE_LIKE_THIS]
 >
->* [コンテンツセキュリティポリシーのリファレンス](https://content-security-policy.com/)
->* [MDN：コンテンツセキュリティポリシー](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/CSP)
->* [Wikipedia：コンテンツセキュリティポリシー](https://ja.wikipedia.org/wiki/Content_Security_Policy)
+>* [コンテンツセキュリティポリシーリファレンス](https://content-security-policy.com/)
+>* [MDN：コンテンツセキュリティポリシー](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+>* [Wikipedia：コンテンツセキュリティポリシー](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
