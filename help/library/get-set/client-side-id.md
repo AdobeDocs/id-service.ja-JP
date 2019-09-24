@@ -5,7 +5,7 @@ seo-description: この ID サービス関数を呼び出して、ID サービ�
 seo-title: isClientSideMarketingCloudVisitorID
 title: isClientSideMarketingCloudVisitorID
 uuid: 1c39ac60-1d2b-4ed4-a2ea-30d680e61e10
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
