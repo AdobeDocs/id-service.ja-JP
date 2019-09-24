@@ -5,7 +5,7 @@ seo-description: この設定を使用すると、appendSupplementalDataIDTo ヘ
 seo-title: sdidParamExpiry
 title: sdidParamExpiry
 uuid: cdaf7e2d-b196-4c70-936d-8a98191cbb85
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
