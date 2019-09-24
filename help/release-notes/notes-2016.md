@@ -5,7 +5,7 @@ seo-description: 2016 年の Experience Cloud Identity Service の機能リリ�
 seo-title: 2016 年リリースノート
 title: 2016 年リリースノート
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 2016 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 
-これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/) にも記載されています。過去の [!DNL Experience Cloud] のお知らせについては、[以前のリリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/?f=c_legacy_releases.html)を参照してください。
+これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)にも記載されています。過去の発表内容については、[以前のリリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)を参照してください。[!DNL Experience Cloud]
 
 ## バージョン 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -32,7 +32,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 * サーバー側環境での ID サービスの実装方法に関する説明を追加しました。
 * クロスドメイン遷移時に Experience Cloud と Analytics の ID を上書きできるブール関数である `Visitor.overwriteCrossDomainMCIDAndAID` が追加されました。[訪問者 ID の上書き](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)を参照してください。
 
-* `TS = UTC` timestamp が `visitor.appendVisitorIDsTo` 関数のプロパティとして追加されました。ID サービスではタイムスタンプを使用して、5 分間隔でリダイレクト URL に ID を使用するかどうかを決定します。[訪問者 ID 追加関数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)を参照してください。
+* `TS = UTC` timestamp が `visitor.appendVisitorIDsTo` 関数のプロパティとして追加されました。ID サービスではタイムスタンプを使用して、5 分間隔でリダイレクト URL に ID を使用するかどうかを決定します。詳しくは、[訪問者 ID 追加関数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)を参照してください。
 
 * 地域 ID を返す新しい関数である `Visitor.getLocationHint,` が追加されました。[地域 ID（ロケーションヒント）の取得](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)を参照してください。
 
@@ -81,7 +81,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 **既知の問題**
 
-[!DNL Audience Manager] DIL コードと visitorAPI.js コードを同じページに使用しているお客様は、DIL 変数 `secureDataCollection= false` を設定する必要があります。[secureDataCollection](https://marketing.adobe.com/resources/help/ja_JP/aam/?f=dil-secure-data-collection.html) を参照してください。
+[!DNL Audience Manager] DIL コードと visitorAPI.js コードを同じページに使用しているお客様は、DIL 変数 `secureDataCollection= false` を設定する必要があります。[secureDataCollection](https://marketing.adobe.com/resources/help/en_US/aam/?f=dil-secure-data-collection.html) を参照してください。
 
 ## バージョン 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -145,7 +145,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
  <tbody> 
   <tr> 
    <td colname="col1"> <p><span class="codeph">iframe.sandbox</span> 属性の変更 </p> </td> 
-   <td colname="col2"> <p>iFrame で、<span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span> が設定できるようになりました。 </p> <p>これらの 2 トークンのみを許可することは、セキュリティを強化し、ID サービスに ID 同期で必要となる基本機能を提供するのに役立ちます。 </p> <p>sandbox 属性は、Internet Explorer のバージョン 9 以前ではサポートされていません。詳細については、この <a href="https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame ドキュメント</a>の属性の節を参照してください。 </p> </td> 
+   <td colname="col2"> <p>iFrame で、<span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span> が設定できるようになりました。 </p> <p>これらの 2 トークンのみを許可することは、セキュリティを強化し、ID サービスに ID 同期で必要となる基本機能を提供するのに役立ちます。 </p> <p>sandbox 属性は、Internet Explorer のバージョン 9 以前ではサポートされていません。詳細については、この <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame ドキュメント</a>の属性の節を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Experience Cloud ID（MID）のエンコード </p> </td> 
