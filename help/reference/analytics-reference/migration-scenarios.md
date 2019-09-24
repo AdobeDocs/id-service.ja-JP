@@ -5,7 +5,7 @@ seo-description: サーバーのサンプル設定および必要な移行手順
 seo-title: Experience Cloud Identity Service の移行シナリオ
 title: Experience Cloud Identity Service の移行シナリオ
 uuid: 9e229045-6508-48c4-ae39-9537b4941853
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
