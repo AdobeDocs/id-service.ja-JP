@@ -5,7 +5,7 @@ seo-description: これらの手順は、Experience Cloud Identity Service を�
 seo-title: Experience Cloud Identity Service の Target への実装
 title: Experience Cloud Identity Service の Target への実装
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -25,7 +25,7 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ## 手順 1：ID サービスコードの入手 {#section-b32ba0548aa546a79dd38be59832a53e}
 
-[!UICONTROL ID サービス]では、`VisitorAPI.js` コードライブラリが必要です。このコードを入手するには、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください。
+[!UICONTROL ID サービス]では、`VisitorAPI.js` コードライブラリが必要です。このコードを入手するには、[カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)にお問い合わせください。
 
 ## 手順 2：ID サービスコードへの Visitor.getInstance 関数の追加 {#section-287ef2958e9f43858fe9d630ae519e22}
 
@@ -54,7 +54,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## 手順 3：Visitor.getInstance への Experience Cloud 組織 ID の追加 {#section-522b1877be9243c39b222859b821f0ce}
 
-`Visitor.getInstance` 関数の `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` を [!DNL Experience Cloud] 組織 ID に置き換えます。組織 ID がわからない場合、[!DNL Experience Cloud] 管理ページで確認できます。また、[管理 - コアサービス](https://marketing.adobe.com/resources/help/ja_JP/mcloud/admin_getting_started.html)も参照してください。編集後の関数は、以下のサンプルのようになります。
+`Visitor.getInstance` 関数の `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` を [!DNL Experience Cloud] 組織 ID に置き換えます。組織 ID がわからない場合、[!DNL Experience Cloud] 管理ページで確認できます。[管理 - コアサービス](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)も参照してください。編集後の関数は、以下のサンプルのようになります。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
