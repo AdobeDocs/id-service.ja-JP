@@ -4,7 +4,7 @@ seo-description: オプトインサービスを使用すると、サイトを訪
 seo-title: オプトインサービス
 title: オプトインサービス
 uuid: aebd72ad-4118-471b-9755-d08a72caa0fd
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 ---
@@ -18,7 +18,7 @@ source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 オプトインサービスを使用すると、訪問者が複数のアドビソリューションのオプトインを一度に実行できるか、権限に合わせてソリューションを順番に表示できるかを指定できます。承認プロセスが完了し、顧客によって記録されると、すべてのアドビソリューションから CMP 訪問者の承認を取得できます。
 
-オプトインサービスは、[Adobe Experience Platform Launch](https://docs.adobelaunch.com/) を[オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)と共に使用すると簡単に実装および設定できます。また、[DTM](../../implementation-guides/opt-in-service/optin-dtm.md) を使用して実装および設定することもできます。
+The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). また、[DTM](../../implementation-guides/opt-in-service/optin-dtm.md) を使用して実装および設定することもできます。
 
 開始するには、[オプトインサービスの設定](../../implementation-guides/opt-in-service/getting-started.md)を参照してください。
 
