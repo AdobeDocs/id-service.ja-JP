@@ -4,7 +4,7 @@ seo-description: Experience Cloud ソリューション（オプトインでは�
 seo-title: オプトインサービスの設定
 title: オプトインサービスの設定
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
 
 ---
@@ -22,7 +22,7 @@ Experience Cloud ソリューション（オプトインでは「カテゴリー
 
 1. ECID バージョン 4.0。
 
-   最新 ECID リリースを[ダウンロード](https://github.com/Adobe-Marketing-Cloud/id-service/releases)します。
+   最新の ECID リリースを[ダウンロード](https://github.com/Adobe-Marketing-Cloud/id-service/releases)してください。
 
 1. サポートしているライブラリ：
 
@@ -42,7 +42,7 @@ Experience Cloud ソリューション（オプトインでは「カテゴリー
 
 1. 会社のプライバシー要件は、GDPR に準拠し続けるために選んだ方法に対して特異的になります。社内のプライバシー担当チームから同意前の状態での使用が認められているライブラリに注意してください。
 
-[Adobe Launch](https://docs.adobelaunch.com/) を使用している場合は、[オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)を活用してオプトインサービスを設定します。
+[Adobe Launch](https://docs.adobelaunch.com/) を使用すると、 [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
 
 ## オプトインのカテゴリー{#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
