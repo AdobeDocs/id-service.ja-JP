@@ -4,7 +4,7 @@ seo-description: Web サイトでオプトインを有効にしたら、検証�
 seo-title: オプトインサービスの検証
 title: オプトインサービスの検証
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
 
 ---
