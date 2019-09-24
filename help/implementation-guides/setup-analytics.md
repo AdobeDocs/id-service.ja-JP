@@ -5,7 +5,7 @@ seo-description: これらの手順は、Experience Cloud Identity Service を�
 seo-title: Experience Cloud Identity Service の Analytics への実装
 title: Experience Cloud Identity Service の Analytics への実装
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -96,7 +96,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## 手順 3：Visitor.getInstance への Experience Cloud 組織 ID の追加 {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-`Visitor.getInstance` 関数の `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` を [!DNL Experience Cloud] 組織 ID に置き換えます。組織 ID がわからない場合、[!DNL Experience Cloud] 管理ページで確認できます。また、[管理 - コアサービス](https://marketing.adobe.com/resources/help/ja_JP/mcloud/admin_getting_started.html)も参照してください。編集後の関数は、以下のサンプルのようになります。
+`Visitor.getInstance` 関数の `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` を [!DNL Experience Cloud] 組織 ID に置き換えます。組織 ID がわからない場合、[!DNL Experience Cloud] 管理ページで確認できます。[管理 - コアサービス](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)も参照してください。編集後の関数は、以下のサンプルのようになります。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -134,7 +134,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 
 
-トラッキングサーバーの見つけ方が分からない場合は、[FAQ](../faq-intro/faq.md) および [trackingServer および trackingServerSecure 変数の適切な生成](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html#)を参照してください。
+If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
 
 ## 手順 5：AppMeasurement.js または s_code.js ファイルの更新 {#section-b53113aea1bd4de896e0e4e9a7edee19}
 
@@ -164,7 +164,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 手順 7：（オプション）猶予期間の設定 {#section-7bbb2f72c26e4abeb8881e18366797a3}
 
-これらの使用例のいずれかがお客様の状況に当てはまる場合は、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)までお問い合わせいただき、一時的な[猶予期間](../reference/analytics-reference/grace-period.md)を設定するよう依頼してください。猶予期間は最大 180 日間有効です。必要に応じて、猶予期間を更新できます。
+If any of these use cases apply to your situation, ask [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html) to set up a temporary [grace period](../reference/analytics-reference/grace-period.md). 猶予期間は最大 180 日間有効です。必要に応じて、猶予期間を更新できます。
 
 **部分的実装**
 
@@ -184,7 +184,7 @@ ID サービスを使用するページと使用しないページが混在し�
 
 データ収集プロセスで `post_visid_high` 列と `post_visid_low` 列を使用できるようになった後で、猶予期間を停止します。
 
-[クリックストリームデータ列リファレンス](https://marketing.adobe.com/resources/help/ja_JP/sc/clickstream/datafeeds_reference.html)も参照してください。
+[クリックストリームデータ列リファレンス](https://marketing.adobe.com/resources/help/en_US/sc/clickstream/datafeeds_reference.html)を参照してください。
 
 **クリックストリームデータ収集**
 
@@ -197,7 +197,7 @@ ID サービスを使用するページと使用しないページが混在し�
 ID サービスの実装状況をテストするには、以下の項目を確認します。
 
 * [AMCV cookie](../introduction/cookies.md)（ページがホストされているドメイン内）
-* [Adobe Debugger ツール](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/debugger.html)を使用した [!DNL Analytics] 画像リクエストの MID 値。
+* [!DNL Analytics] イメージリクエストの MID 値（[Adobe Debugger ツール](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html)を使用）
 
 詳しくは、[Experience Cloud Identity Service のテストと検証](../implementation-guides/test-verify.md)を参照してください。
 
