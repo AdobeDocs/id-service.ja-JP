@@ -5,7 +5,7 @@ seo-description: 訪問者 ID サービスをデプロイすると、以下の 5
 seo-title: Analytics ID の操作の順序
 title: Analytics ID の操作の順序
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -28,12 +28,12 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>1<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/ja_JP/sc/implement/?f=visid_custom" format="http" scope="external">vid（s.visitorID）</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_custom" format="http" scope="external">vid（s.visitorID）</a> </p> </td> 
    <td colname="col3"> <p><span class="codeph">s.visitorID</span> が設定されている </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>2<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/ja_JP/sc/implement/?f=visid_analytics" format="http" scope="external">aid（s_vi Cookie）</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_analytics" format="http" scope="external">aid（s_vi Cookie）</a> </p> </td> 
    <td colname="col3"> <p><span class="keyword">Experience Cloud</span> ID サービスをデプロイする前に、訪問者に既存の s_vi Cookie がある場合、または<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">猶予期間</a>を設定している場合。 </p> </td> 
   </tr> 
   <tr> 
@@ -43,12 +43,12 @@ source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>4<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/ja_JP/sc/implement/?f=visid_fallback" format="http" scope="external">fid（H.25.3 以降の代替の Cookie、または JavaScript 版 AppMeasurement）</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external">fid（H.25.3 以降の代替の Cookie、または JavaScript 版 AppMeasurement）</a> </p> </td> 
    <td colname="col3"> <p>ブラウザーがサードパーティ Cookie を受け入れず、Analytics トラッキングサーバーがサードパーティトラッキングサーバーとして設定されている場合 </p> <p> <p>注意：<span class="codeph">fid</span> は、従来の識別子で、サイトに ID サービスを実装している場合、使用されません。この場合、ファーストパーティである<a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie</a> がもう使用していないので、<span class="codeph"> fid</span> は必要ありません。fid は、レガシーコードをサポートするために、および歴史的な理由により、保持されています。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>5<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/ja_JP/sc/implement/?f=visid_fallback" format="http" scope="external"> IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/?f=visid_fallback" format="http" scope="external"> IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス</a> </p> </td> 
    <td colname="col3"> <p>訪問者のブラウザーが Cookie を受け入れない場合。 </p> </td> 
   </tr> 
  </tbody> 
