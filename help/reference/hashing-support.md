@@ -4,7 +4,7 @@ keywords: ID サービス
 seo-description: Experience Cloud ID Service（ECID）は、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、SHA-256 ハッシュアルゴリズムをサポートします。これは、ハッシュされた識別子を Experience Cloud に送信するための、オプションの JavaScript メソッドです。顧客 ID の送信前にハッシュする独自の方法を引き続き使用できます。
 seo-title: setCustomerIDs の SHA256 ハッシュサポート
 title: setCustomerIDs の SHA256 ハッシュサポート
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
 
 ---
@@ -34,7 +34,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID、認証状態およびハッシュタイプ（SHA-256）を各訪問者に関連付けることができます。ハッシュタイプを指定していない場合、ハッシュ化しないと見なされます。
 
-`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://docs.adobe.com/content/help/ja-JP/core-services/interface/customer-attributes/attributes.html)として Experience Cloud にアップロードし、様々なソリューションからこのデータにアクセスできます。
+`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html)として Experience Cloud にアップロードして、異なるソリューションからこのデータにアクセスすることができます。
 
 顧客 ID、認証状態およびハッシュタイプは、後で使用するために Cookie に格納されることはありません。**&#x200B;代わりに、顧客 ID、認証状態およびハッシュタイプは、[`getCustomerIDs`](/help/library/get-set/getcustomerids.md) を使用して取得するために、以下に示すように、インスタンス変数に格納されます。
 
@@ -67,9 +67,9 @@ ts=1563299964843
 
 ## Adobe Experience Platform Launch でのアクションの追加 {#add-action-launch}
 
-Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。Launch について詳しくは、[Launch 製品ドキュメント](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)を参照してください。
+Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。起動について詳しくは、起動製品ドキュメント [を参照してください](https://docs.adobe.com/content/help/en/launch/using/overview.html)。
 
-Launch でアクションを追加するには、Adobe Launch の[ルールに関するドキュメント](https://docs.adobe.com/help/ja-JP/launch/using/reference/manage-resources/rules.html)および以下の画面キャプチャを参照してください。
+「起動」にアクションを追加するには、Adobe Launchのルールに関す [るドキュメントを読み](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) 、以下の画面キャプチャを参照してください。
 
 ![](/help/reference/assets/hashing-support.png)
 
