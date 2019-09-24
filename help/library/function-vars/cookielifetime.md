@@ -5,7 +5,7 @@ seo-description: この変数を使用すると、AMCV Cookie のデフォルト
 seo-title: cookieLifetime
 title: cookieLifetime
 uuid: cd945db3-429a-4625-ac3f-69ac259377a3
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
