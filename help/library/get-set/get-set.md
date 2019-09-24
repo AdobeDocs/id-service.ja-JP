@@ -5,7 +5,7 @@ seo-description: ID サービスとのインタラクションを可能にする
 seo-title: メソッド
 title: メソッド
 uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
