@@ -5,7 +5,7 @@ seo-description: Experience Cloud ID フィールドを Data Workbench に統合
 seo-title: Data Workbench と Experience Cloud Identity Service
 title: Data Workbench と Experience Cloud Identity Service
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 ---
@@ -15,9 +15,9 @@ source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 
 Experience Cloud ID フィールドを Data Workbench に統合するための手順を示しています。このプロセスにより、永続的な Experience Cloud ID をデータフィードで使用できます。その結果、Adobe Experience Cloud の他の製品とより緊密に統合して、高度な訪問者トラッキングを実行できるようになります。
 
-[Data Workbench](https://marketing.adobe.com/resources/help/ja_JP/insight/) を更新して ID サービスを使用するには、次の手順を実行します。
+ID サービスを使用するように [Data Workbench](https://marketing.adobe.com/resources/help/en_US/insight/) を更新するには：
 
-1. 現在の[デコーダーグループ](https://marketing.adobe.com/resources/help/ja_JP/insight/dataset/c_text_file_dec_groups.html)設定ファイルを見つけます。
+1. 現在の[デコーダーグループ](https://marketing.adobe.com/resources/help/en_US/insight/dataset/c_text_file_dec_groups.html)設定ファイルを探します。
 
    通常、[!DNL Decoder Group] は、パス  のプロファイルマネージャー`Dataset\Log Processing\Decoding Instructions.cfg`にあります。1. 設定ファイルから現在のデコーダー形式をコピーします。
 1. 元の記述の下にそのデコーダー形式を貼り付けます。
