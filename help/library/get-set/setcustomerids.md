@@ -5,7 +5,7 @@ seo-description: setCustomerIDs は、顧客 ID とその認証状態を定義�
 seo-title: setCustomerIDs
 title: setCustomerIDs
 uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 21fb12b817b7c8cd34e6022ca6c188229228d1df
 
 ---
