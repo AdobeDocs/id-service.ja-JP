@@ -5,7 +5,7 @@ seo-description: Experience Cloud Identity Service の機能リリース、更�
 seo-title: 2019 年リリースノート
 title: 2019 年リリースノート
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4532d09cc9b4d83fa62c13bd1adac7abdae222b1
 
 ---
@@ -41,7 +41,7 @@ Experience Cloud Identity Service の機能リリース、更新、変更点で�
 
 ## バージョン 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**オプトインサービス**。オプトインは、Experience Cloud ID（ECID）の拡張であり、使用すると、Experience Cloud ライブラリで Web ページに訪問者に対する Cookie を作成可能にするかどうか（およびどのライブラリで作成可能にするか）を指定できます。[Experience Platform Launch](https://docs.adobelaunch.com/) を使用すれば、Analytics、Target、Audience Manager などの選ばれたすべての Experience Cloud ソリューションを導入済みの同意管理システムにオプトインできるようになり、Experience Cloud ソリューションの訪問者オプトイン同意の収集を簡素化できます。
+**オプトインサービス**。オプトインは、Experience Cloud ID（ECID）の拡張であり、使用すると、Experience Cloud ライブラリで Web ページに訪問者に対する Cookie を作成可能にするかどうか（およびどのライブラリで作成可能にするか）を指定できます。Using [Experience Platform Launch](https://docs.adobelaunch.com/), you can simplify gathering visitor opt-in consents for Experience Cloud solution by enabling Analytics, Target, Audience Manager, and other or all select Experience Cloud solutions to opt-in to your consent management system.
 
 ## バージョン 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
