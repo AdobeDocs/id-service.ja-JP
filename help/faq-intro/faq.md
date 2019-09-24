@@ -5,7 +5,7 @@ seo-description: ID サービス利用の特長、機能、課題に関するよ
 seo-title: ID サービス FAQ
 title: ID サービス FAQ
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -35,7 +35,7 @@ VisitorAPI.js をモバイルアプリのローカルファイルとしてホス
 
 VisitorAPI.js ライブラリはページ上部にあるコードの `<head>` セクションに配置してください。これにより、ページ本文の読み込み前に ID の呼び出しがおこなわれるので、ID が問題なく返される可能性が高くなります。
 
-ID サービスの呼び出しは非同期的であり、[demdex.net ドメイン](https://marketing.adobe.com/resources/help/ja_JP/aam/demdex-calls.html)への唯一の呼び出しです。ID サービス呼び出しにより、ページ上で他の要素が読み込まれないようにブロックされることはありません。
+ID サービス呼び出しは非同期であり、[demdex.net ドメイン](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) への唯一の呼び出しです。ID サービス呼び出しにより、ページ上で他の要素が読み込まれないようにブロックされることはありません。
 
 [!DNL Target] を使用している場合、ページの `<body>` に ID サービスコードを配置すると、[!DNL Target] 呼び出しがブロックされる可能性が高くなります。ページ本文に ID サービスコードを配置しなければならない場合は、`<body>` 開始タグの後にこのコードを配置してください。
 
@@ -67,7 +67,7 @@ ID サービスの呼び出しは非同期的であり、[demdex.net ドメイ�
 
 一般的に、リソースリクエストには、JSON-P よりも CORS を使用する方が望ましいと言えます。JSON-P の場合、一部のブラウザーはリクエストをキューに追加し、ページ上の他の同期呼び出しや非同期呼び出しリクエストを基準にして優先順位を下げます。CORS を使用すると、ブラウザーのコールスタック内でのこれらのリクエストの優先度の高さを確保できます。
 
-詳しくは、[Experience Cloud Identity Service での CORS のサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)を参照してください。
+[Experience Cloud Identity Service での CORS のサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)を参照してください。
 
 ## セキュリティ {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
@@ -87,5 +87,5 @@ ID サービスの呼び出しは非同期的であり、[demdex.net ドメイ�
 
 >[!MORE_LIKE_THIS]
 >
->* [カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)
+>* [カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
