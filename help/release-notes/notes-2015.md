@@ -5,7 +5,7 @@ seo-description: 2015 年版のリリースノートと更新情報です。
 seo-title: 2015 年リリースノート
 title: 2015 年リリースノート
 uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
