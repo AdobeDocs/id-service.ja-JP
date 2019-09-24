@@ -5,7 +5,7 @@ seo-description: 2017 年の Experience Cloud Identity Service の機能リリ�
 seo-title: 2017 年リリースノート
 title: 2017 年リリースノート
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 2017 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 
-これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/) にも記載されています。古い ID サービスのリリースノートについては、[以前ののリリースノート](https://marketing.adobe.com/resources/help/ja_JP/whatsnew/?f=c_legacy_releases.html)またはこのページの下にあるリンクを参照してください。
+これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)にも記載されています。以前の ID サービスリリースノートについては、[以前のリリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)またはこのページの下部にあるリンクを参照してください。
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **改訂されたドキュメント**
 
-[FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
+Updated and revised the[FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
 
 ## バージョン 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -192,7 +192,7 @@ ID サービスが原因で、AMCV Cookie に格納された ID を使用する�
 
 **新しいドキュメント**
 
-[各種 Experience Cloud ソリューションおよびサービスでの DNS プリフェッチの使用`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/ja_JP/mcloud/dns-prefetch.html)
+[様々な Experience Cloud ソリューションおよびサービスによる DNS プリフェッチの使用`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
 
 ## バージョン 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
