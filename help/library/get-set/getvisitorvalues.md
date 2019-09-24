@@ -5,7 +5,7 @@ seo-description: これは、デフォルトで Analytics の識別子、ID サ�
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -100,7 +100,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>データ収集地域 ID。これは、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。 </p> <p><a href="https://marketing.adobe.com/resources/help/ja_JP/aam/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>および<a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>データ収集地域 ID。これは、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。 </p> <p><a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>および<a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint</a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
