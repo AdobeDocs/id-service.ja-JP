@@ -5,7 +5,7 @@ seo-description: 児童オンラインプライバシー保護法（COPPA）で�
 seo-title: Experience Cloud Identity Service での COPPA のサポート
 title: Experience Cloud Identity Service での COPPA のサポート
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 584b6240c3e0286111689499ca5df5d98aa9fab2
 
 ---
@@ -45,6 +45,6 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 
 >[!MORE_LIKE_THIS]
 >
->* [アドビプライバシーセンター](http://www.adobe.com/jp/privacy.html)
+>* [アドビプライバシーセンター](http://www.adobe.com/privacy.html)
 >* [COPPA とは](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
 
