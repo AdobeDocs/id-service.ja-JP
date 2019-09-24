@@ -5,7 +5,7 @@ seo-description: 同じレポートスイートにデータを送信する複数
 seo-title: ID サービスの猶予期間
 title: ID サービスの猶予期間
 uuid: 10a7db7d-de32-4379-914f-edaf929efa32
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 
 ---
@@ -33,4 +33,4 @@ Analytics JavaScript ファイルが 1 つのみで、他の AppMeasurement ラ�
 
 ## 猶予期間を有効にするには {#section-512d5cd8570e483cbdd8b04457a16ced}
 
-[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください。
+Contact [Customer Care](https://helpx.adobe.com/marketing-cloud/contact-support.html).
