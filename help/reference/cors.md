@@ -5,7 +5,7 @@ seo-description: ブラウザーは、クロスオリジンリソース共有（
 seo-title: Experience Cloud Identity Service での CORS のサポート
 title: Experience Cloud Identity Service での CORS のサポート
 uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -76,7 +76,7 @@ CORS は、異なるドメイン間でリソースをリクエストするため
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>強化されたセキュリティ</b> </p> </td> 
-   <td colname="col2"> <p>CORS は、<a href="https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> を使用して、データをリクエストおよび転送します。この方法は、JSONP リクエストよりも安全です。DCS からの応答に含まれている可能性のある、任意の JavaScript を実行する方法がないことを保証します。CORS XMLHttpRequest 応答ペイロードは、ID サービス JavaScript によって解析され、単純にコールバック関数で実行されることはありません。 </p> <p> <p>注意：Cookie を受け入れるために、<span class="codeph">XMLHttpRequest</span> オブジェクトの <span class="codeph">withCredentials</span> プロパティを <span class="codeph">true</span> に設定する必要があります。このプロパティは、Chrome、Firefox、Internet Explorer（v10 以降）、Opera および Safari でサポートされます。 </p> </p> </td> 
+   <td colname="col2"> <p>CORS は、<a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> を使用して、データをリクエストおよび転送します。この方法は、JSONP リクエストよりも安全です。DCS からの応答に含まれている可能性のある、任意の JavaScript を実行する方法がないことを保証します。CORS XMLHttpRequest 応答ペイロードは、ID サービス JavaScript によって解析され、単純にコールバック関数で実行されることはありません。 </p> <p> <p>注意：Cookie を受け入れるために、<span class="codeph">XMLHttpRequest</span> オブジェクトの <span class="codeph">withCredentials</span> プロパティを <span class="codeph">true</span> に設定する必要があります。このプロパティは、Chrome、Firefox、Internet Explorer（v10 以降）、Opera および Safari でサポートされます。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>パフォーマンスの向上</b> </p> </td> 
