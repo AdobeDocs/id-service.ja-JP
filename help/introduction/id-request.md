@@ -5,7 +5,7 @@ seo-description: ID のリクエストと応答のプロセスについて、概
 seo-title: Experience Cloud Identity Service による ID のリクエスト方法と設定方法
 title: Experience Cloud Identity Service による ID のリクエスト方法と設定方法
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
@@ -19,7 +19,7 @@ ID のリクエストと応答のプロセスについて、概要を説明し�
 >
 >Experience Cloud Identity Service による訪問者 ID の作成方法がわからない場合は、[Experience Cloud](../introduction/cookies.md) を参照してください。
 
-**ヒント：**[クロスドメイントラッキングに関する ID サービスのビデオ](https://helpx.adobe.com/jp/marketing-cloud-core/kb/MCID/CrossDomain.html)も参照してください。
+**ヒント：**[クロスドメイントラッキングに関する ID サービスのビデオ](https://helpx.adobe.com/marketing-cloud-core/kb/MCID/CrossDomain.html)も参照してください。
 
 ## Experience Cloud ID のリクエスト {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
@@ -32,7 +32,7 @@ ID のリクエストと応答のプロセスについて、概要を説明し�
 この例では、「食品会社」が管理するピザサイトに新しい訪問者がアクセスします。「食品会社」のこのピザ Web サイトには ID サービスコードが含まれています。ピザサイトが読み込まれるときに、この ID サービスコードは、pizza ドメインの AMCV Cookie があるかをチェックします。
 
 * AMCV Cookie が設定されている場合、そのサイトの訪問者には Experience Cloud ID が割り当てられています。この場合、その ID を使用して訪問者を追跡し、他の Experience Cloud ソリューションとデータを共有することになります。
-* AMCV Cookie が設定されていない場合、ID サービスコードは、`dpm.demdex.net/id` にある地域の[データ収集サーバー](https://marketing.adobe.com/resources/help/ja_JP/aam/?f=c_compcollect.html)（DCS）を呼び出します（[Demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/ja_JP/aam/demdex-calls.html)も参照してください）。この呼び出しには、「食品会社」の組織 ID が含まれます。この組織 ID は、ID サービスコードの `Visitor.getInstance` 関数に設定されます。
+* AMCV Cookie が設定されていない場合、ID サービスコードは、[ にある地域別](https://marketing.adobe.com/resources/help/en_US/aam/?f=c_compcollect.html)データ収集サーバー`dpm.demdex.net/id`（DCS）を呼び出します（[Demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)も参照してください）。この呼び出しには、「食品会社」の組織 ID が含まれます。この組織 ID は、ID サービスコードの `Visitor.getInstance` 関数に設定されます。
 
 ![](assets/request1.png)
 
