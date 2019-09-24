@@ -5,7 +5,7 @@ seo-description: 他の Experience Cloud ソリューションでの ID サー�
 seo-title: 他の Experience Cloud ソリューションに関する FAQ
 title: 他の Experience Cloud ソリューションに関する FAQ
 uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ---
