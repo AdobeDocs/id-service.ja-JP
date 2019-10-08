@@ -6,7 +6,7 @@ seo-title: getMarketingCloudVisitorID
 title: getMarketingCloudVisitorID
 uuid: 93e16220-b5b3-4d81-9189-30031bc15129
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: 4a5fbc971dc950c65e5c8f92dffdfe5dde528b54
 
 ---
 
@@ -26,7 +26,7 @@ var useMarketingCloudID = function(id){
 }; 
  
 //get the Experience Cloud ID and pass it to the function 
-var mcID = visitor.getMarketingCloudVisitorID(useMarketingClouidID)
+var mcID = visitor.getMarketingCloudVisitorID(useMarketingCloudID)
 ```
 
 >[!TIP]
