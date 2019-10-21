@@ -6,7 +6,7 @@ seo-title: Cookie と Experience Cloud Identity Service
 title: Cookie と Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
-source-git-commit: 57161205bb48a82db223a733f384ea8338596b7e
+source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
 
 ---
 
@@ -122,9 +122,9 @@ Experience Cloud ID（MID）は、組織 ID と demdex ID から計算によっ�
 
 ページが読み込まれると、ID サービスは MID の作成を開始します。このプロセスでは、`visitorAPI.js` コードライブラリに含まれるコードによって ID サービスへのイベント呼び出しが発行され、その呼び出しを通じて組織 ID が送信されます。ID サービスは MID と demdex ID を作成して、前者を AMCV Cookie に、後者を demdex Cookie にそれぞれ返します。
 
-## cookieのセキュリティフラグ
+## cookieフラグ
 
-次の表に、Experience Cloud cookieのセキュリティフラグとの連携を示します。
+次の表に、Experience Cloud cookieのフラグを示します。
 
 | cookie（設定者） | httpOnly | セキュア | SameSite |
 |--- |--- |--- |--- |
