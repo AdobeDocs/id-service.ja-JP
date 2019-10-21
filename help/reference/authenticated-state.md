@@ -5,7 +5,7 @@ seo-description: 通常の Experience Cloud 訪問者 ID に加えて、追加�
 seo-title: 顧客 ID と認証状態
 title: 顧客 ID と認証状態
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 
 ---
@@ -17,11 +17,11 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 
 ## 認証状態 {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html)として [!DNL Experience Cloud] にアップロードして、異なるソリューションからこのデータにアクセスすることができます。
+`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://docs.adobe.com/content/help/ja-JP/core-services/interface/customer-attributes/attributes.html)として [!DNL Experience Cloud] にアップロードして、異なるソリューションからこのデータにアクセスすることができます。
 
 >[!IMPORTANT]
 >
->顧客属性とコアサービス機能には、`setCustomerIDs`（顧客 ID の同期）が必要です。顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。[!DNL Target] には、顧客属性を機能させるために `Visitor.AuthState.AUTHENTICATED` が必要です。例については、[コアサービス - ソリューションを有効にする方法](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html)を参照してください。
+>顧客属性とコアサービス機能には、`setCustomerIDs`（顧客 ID の同期）が必要です。顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。[!DNL Target] には、顧客属性を機能させるために `Visitor.AuthState.AUTHENTICATED` が必要です。例については、[コアサービス - ソリューションを有効にする方法](https://docs.adobe.com/content/help/ja-JP/core-services/interface/about-core-services/core-services.html)を参照してください。
 
 Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オプションの `AuthState` オブジェクトが含まれます。`AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。認証状態は整数値として返されます。
 
@@ -90,7 +90,7 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
 >[!IMPORTANT]
 >
 >* ID は大文字と小文字が区別されます。
->* IDに対しては、エンコードされていない値のみを使用します。
+>* エンコードされていない ID 値のみを使用してください。
 >* 顧客 ID と認証状態は訪問者 ID Cookie に保存されません。ページまたはアプリケーションコンテキストごとに設定する必要があります。
 >* 顧客 ID には、個人識別情報（PII）は含めないでください。PII（電子メールアドレスなど）を使用して訪問者を識別する場合は、情報をハッシュ化または暗号化して格納することをお勧めします。ECID ライブラリは、ハッシュユーザー識別子をサポートしています。[setCustomerIDs の SHA256 ハッシュサポート](/help/reference/hashing-support.md)を参照してください。
 >
@@ -215,9 +215,9 @@ Object customerIDs = visitor.getCustomerIDs();
 
 [!DNL Experience Cloud] ID サービスは、アドビの Android および iOS SDK コードで顧客 ID と認証状態をサポートします。以下のコードライブラリを参照してください。
 
-* [Android SDK のメソッド](https://docs.adobe.com/content/help/en/mobile-services/android/overview.html)
-* [iOS SDK のメソッド](https://docs.adobe.com/content/help/en/mobile-services/ios/overview.html)
+* [Android SDK のメソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/overview.html)
+* [iOS SDK のメソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/overview.html)
 
 ## Analytics および Audience Manager ユーザー向けの注意点 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトとデータソースに関連付けられた統合コードが一致する必要があります。詳しくは、[マージルールコードの設定](https://docs.adobe.com/help/en/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code)ドキュメントの「[!UICONTROL 訪問者 ID サービス]」の節を参照してください。
+宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトとデータソースに関連付けられた統合コードが一致する必要があります。詳しくは、[マージルールコードの設定](https://docs.adobe.com/help/ja-JP/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code)ドキュメントの「[!UICONTROL 訪問者 ID サービス]」の節を参照してください。
