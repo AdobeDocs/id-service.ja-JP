@@ -5,13 +5,13 @@ seo-description: ID サービスは組織 ID、Experience Cloud AMCV Cookie お�
 seo-title: Cookie と Experience Cloud Identity Service
 title: Cookie と Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
 
 ---
 
 
-# Cookie と Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookie と Experience Cloud Identity Service {#cookies-and-the-experience-cloud-id-service}
 
 ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
 
@@ -33,7 +33,7 @@ ID サービスは、正常に機能するために AMCV Cookie、AMCVS Cookie �
 * コンピューターを不安定にしたりパフォーマンスの問題を引き起こしたりする。
 * ID サービスを使用していないサイトでユーザーを追跡する。
 
-## AMCV Cookie{#section-c55af54828dc4cce89f6118655d694c8}
+## AMCV Cookie {#section-c55af54828dc4cce89f6118655d694c8}
 
 ID サービスによって設定される Cookie の属性は次のとおりです。
 
@@ -87,7 +87,7 @@ AMCVS Cookie は、ブラウザーのファーストパーティドメインに�
 
 ![](assets/AMCVS-cookie.png)
 
-## demdex Cookie{#section-7ff7d96d6e4141b08a84a75a63d7814c}
+## demdex Cookie {#section-7ff7d96d6e4141b08a84a75a63d7814c}
 
 以下の表に、demdex Cookie の重要な属性の一覧とその定義を示します。
 
@@ -114,7 +114,7 @@ AMCVS Cookie は、ブラウザーのファーストパーティドメインに�
  </tbody> 
 </table>
 
-For related information, see [Understanding Calls to the Demdex Domain](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html).
+関連情報については「[Demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/ja_JP/aam/demdex-calls.html)」を参照してください。
 
 ## Experience Cloud ID の生成 {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -122,17 +122,17 @@ Experience Cloud ID（MID）は、組織 ID と demdex ID から計算によっ�
 
 ページが読み込まれると、ID サービスは MID の作成を開始します。このプロセスでは、`visitorAPI.js` コードライブラリに含まれるコードによって ID サービスへのイベント呼び出しが発行され、その呼び出しを通じて組織 ID が送信されます。ID サービスは MID と demdex ID を作成して、前者を AMCV Cookie に、後者を demdex Cookie にそれぞれ返します。
 
-## cookieフラグ
+## Cookie フラグ
 
-次の表に、Experience Cloud cookieのフラグを示します。
+Experience Cloud Cookie のフラグを次の表に示します。
 
-| cookie（設定者） | httpOnly | セキュア | SameSite |
+| Cookie（設定者） | httpOnly | セキュア | SameSite |
 |--- |--- |--- |--- |
-| demdex（http応答） | × | ○ | "None" |
-| AMCV(JavaScript) | × | 設定可能 | Unset（既定はLax） |
-| AMCVS(JavaScript) | × | 設定可能 | Unset（既定はLax） |
+| demdex（http 応答） | × | ○ | "None" |
+| AMCV（JavaScript） | × | 設定可能 | Unset（既定は Lax） |
+| AMCVS（JavaScript） | × | 設定可能 | Unset（既定は Lax） |
 
-*注意：セキュア属性を使用したAMCVおよびAMCVS cookieの設定について詳しくは、secureCookieのトピックを参照してく[ださい](https://docs.adobe.com/content/help/en/id-service/using/id-service-api/configurations/securecookie.html)。*
+*注意：セキュア属性を使用した AMCV および AMCVS の　Ccokie の設定について詳しくは、[secureCookie](https://docs.adobe.com/content/help/ja-JP/id-service/using/id-service-api/configurations/securecookie.html) のトピックを参照してください。*
 
 ## 次の手順 {#section-8db1727a63bc4ff68b495f270315d453}
 
