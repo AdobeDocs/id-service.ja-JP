@@ -6,7 +6,7 @@ seo-title: Analytics と Identity Service に関する FAQ
 title: Analytics と Identity Service に関する FAQ
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -88,7 +88,7 @@ Identity Service の使用時に不整合が生じる一般的な原因を以下
 >
 >上記 3 つのシナリオが発生する可能性はきわめて低いですが、VisitorAPI.js および AppMeasurement.js の最新アップデートをデフォルト設定で使用すると、これらのシナリオによる重大な影響や目立つ影響を避けることができます。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
