@@ -6,7 +6,7 @@ seo-title: コンテンツセキュリティポリシーおよび Experience Clo
 title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -58,7 +58,7 @@ CSP の使用は一般的であり、よく理解されています。このド�
  </tbody> 
 </table>
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [コンテンツセキュリティポリシーリファレンス](https://content-security-policy.com/)
 >* [MDN：コンテンツセキュリティポリシー](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
