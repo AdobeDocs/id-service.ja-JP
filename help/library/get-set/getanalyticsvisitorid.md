@@ -6,7 +6,7 @@ seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -50,7 +50,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 `aid` パラメーターは、組織が ID サービスを完全に導入する前の[猶予期間](../../reference/analytics-reference/grace-period.md)を使用している場合に、クエリ文字列内で使用されます。サイトに訪問しているユーザーが新規ユーザーであり、組織が猶予期間を使用していない場合、訪問者には [!DNL Experience Cloud]（`mid` ID）パラメーターが送信されます。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
->* [Analytics Cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
+>* [Analytics の cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_analytics.html)
 
