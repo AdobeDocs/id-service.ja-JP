@@ -6,7 +6,7 @@ seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
 translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -137,7 +137,7 @@ POST パラメーターは、ユーザーデータをデバイスグラフに含
 Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 -->
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
 
