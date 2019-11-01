@@ -6,7 +6,7 @@ seo-title: Target のサーバー側実装を使用する A4T での ID サー�
 title: Target のサーバー側実装を使用する A4T での ID サービスの使用
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -197,7 +197,7 @@ Response.send("
 * AppMeasurement が、SDID を含むページヒットに関するデータを [!DNL Analytics] に送信します。
 * [!DNL Analytics] および [!DNL Target] は、この訪問者の SDID を比較します。同一の SDID の場合、[!DNL Target] および [!DNL Analytics] は、サーバー側呼び出しとクライアント側呼び出しを共に結合します。この時点で、両方のソリューションは、この訪問者を同じ人物として認識します。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [Node Package Manager によるサーバー側 ID サービスパッケージ](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
 
