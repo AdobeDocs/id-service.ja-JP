@@ -6,7 +6,7 @@ seo-title: ID 同期と一致率について
 title: ID 同期と一致率について
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -72,7 +72,7 @@ ID 同期は、ターゲットパブリッシング iFrame で実行される UR
 
 [!DNL Adobe Media Optimizer] は、iFrame ベースの ID 同期プロセスの例外です。[!DNL Media Optimizer] は信頼されているドメインなので、ID 同期は [!UICONTROL Destination Publishing iFrame] 内ではなく親ページからおこなわれます。同期中、ID サービスは `cm.eversttech.net` の [!DNL Media Optimizer] を呼び出します。cm.eversttech.net はアドビが [!DNL Media Optimizer]Media Manager を買収する以前に使用されていた従来のドメイン名です。[!DNL Media Optimizer] にデータを送信すると一致率の向上に役立ちます。バージョン 2.0 以降を使用している ID サービスのお客様の場合、このデータ送信は自動的におこなわれます。[Media Manager の cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html) も参照してください。
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
 
