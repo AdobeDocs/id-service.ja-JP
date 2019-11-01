@@ -6,7 +6,7 @@ seo-title: Dynamic Tag Management を使用した実装
 title: Dynamic Tag Management を使用した実装
 uuid: c4f752c4-392e-4909-b178-911706857064
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -98,11 +98,6 @@ mcvid-dtm-implement.xml
 1. 「**[!UICONTROL ツールを作成]**」および「**[!UICONTROL 変更を保存]**」をクリックします。
 
    保存したら、ID サービスは DTM のツールとして設定されます。ただし、まだ使用する準備は整っていません。DTM ツールは、DTM 公開／承認プロセスを経る必要があり、追加のパラメーターを設定することもできます。DTM 承認プロセスについて詳しくは、[ユーザーの基礎知識ジャンプスタート](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html)ビデオを参照してください。DTM に追加できる追加パラメーターについて詳しくは、[DTM 用の Experience Cloud Identity Service 設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)を参照してください。
-
->[!MORE_LIKE_THIS]
->
->* [Web プロパティ](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
-
 
 ## DTM 用の Experience Cloud Identity Service 設定 {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
@@ -285,3 +280,8 @@ DCS 応答に MID がない場合、アカウントは適切にプロビジョ�
 ![](assets/charles_response_unsuccessful.png)
 
 エラーコードについて詳しくは、[DCS エラーコード、メッセージおよび例](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html)を参照してください。
+
+>[!MORELIKETHIS]
+>
+>* [Web プロパティ](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
+
