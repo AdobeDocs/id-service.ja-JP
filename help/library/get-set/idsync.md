@@ -6,7 +6,7 @@ seo-title: URL またはデータソースによる ID 同期
 title: URL またはデータソースによる ID 同期
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
-source-git-commit: b83b192655f59a728b488b4e2a9aa2efbcf093f0
+source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
 
@@ -132,7 +132,7 @@ http://su.addthis.com/red/usync?pid=16&puid=287778064591810036707992191851784938
 http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 ```
 
->[!MORE_LIKE_THIS]
+>[!MORELIKETHIS]
 >
 >* [DIL idSync](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
