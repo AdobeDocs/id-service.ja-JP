@@ -5,7 +5,7 @@ seo-description: 従来の実装では、Dynamic Tag Management（DTM）を使�
 seo-title: Dynamic Tag Management を使用した実装
 title: Dynamic Tag Management を使用した実装
 uuid: c4f752c4-392e-4909-b178-911706857064
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -21,11 +21,11 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 >[!NOTE]
 >
->Currently, [Adobe Experience Platform Launch](https://docs.adobelaunch.com/) is the preferred and recommended implementation tool because it helps simplify complex tag management tasks and automates code placement beyond the capabilities of DTM. [Launch による実装](../implementation-guides/ecid-implement-with-launch.md)を参照してください。
+>現在、[Adobe Experience Platform Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html) は、複雑なタグ管理タスクの簡略化およびコード配置の自動化に DTM の機能よりも役立つので、実装することをお勧めします。[Launch による実装](../implementation-guides/ecid-implement-with-launch.md)を参照してください。
 
 ## Dynamic Tag Management と ID サービス {#section-4a4c4fac5d0a4cbbaff8e1833f73657c}
 
-[Dynamic Tag Managementでは](https://marketing.adobe.com/resources/help/en_US/dtm/) 、IDサービスインスタンスと関連するソリューション統合の設定、デプロイ、管理を [!DNL Experience Cloud] 行えます。 DTM を使用すると、ID サービスとその他の Experience Cloud ソリューションが緊密に統合されるため、実装プロセスを簡略化できます。Experience Cloud ID ツールを追加して設定し、以下のような情報を指定するだけです。
+[Dynamic Tag Management](https://marketing.adobe.com/resources/help/ja_JP/dtm/) では、ID サービスインスタンスおよび [!DNL Experience Cloud] と関連するソリューション統合の設定、デプロイ、管理をおこなえます。DTM を使用すると、ID サービスとその他の Experience Cloud ソリューションが緊密に統合されるため、実装プロセスを簡略化できます。Experience Cloud ID ツールを追加して設定し、以下のような情報を指定するだけです。
 
 * Experience Cloud 組織 ID（Experience Cloud にリンクすると自動的に設定されます）
 * Analytics トラッキングサーバー（セキュアおよび非セキュア）
@@ -35,7 +35,7 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 **DTM はじめに**
 
-DTM は、シンプルでありながら強力なツールです。まだ使用していないのであれば、使用することを強くお勧めします。このサービスの使用を開始するには、DTM [ドキュメント](https://marketing.adobe.com/resources/help/en_US/dtm/c_overview.html)および [DTM ジャンプスタートビデオ](https://marketing.adobe.com/resources/help/en_US/dtm/jump-start-videos.html)を参照してください。DTM を使用した ID サービスの設定方法の手順については、以下の節の情報および手順を参照してください。
+DTM は、シンプルでありながら強力なツールです。まだ使用していないのであれば、使用することを強くお勧めします。このサービスの使用を開始するには、DTM [ドキュメント](https://marketing.adobe.com/resources/help/ja_JP/dtm/c_overview.html)および [DTM ジャンプスタートビデオ](https://marketing.adobe.com/resources/help/ja_JP/dtm/jump-start-videos.html)を参照してください。DTM を使用した ID サービスの設定方法の手順については、以下の節の情報および手順を参照してください。
 
 ## デプロイのガイドライン {#concept-54a2ec49af8f4bfca9207b1d404e8e1a}
 
@@ -49,9 +49,9 @@ mcvid-dtm-deployment.xml
 
 始める前に、組織とソリューションが [!DNL Experience Cloud] 用にプロビジョニングされていることを確認してください。また、[!DNL Dyanamic Tag Management] について理解している必要があります。このドキュメントは、操作を開始する際に役立つ情報を提供します。
 
-* [コアサービス向けのソリューションの有効化](https://marketing.adobe.com/resources/help/en_US/mcloud/core_services.html):Experience cloudを実装し、管理者になります。 このプロセスでは、顧客属性や Experience Cloud オーディエンスなどコアサービスのソリューションを最新化します。
-* [Dynamic Tag Management はじめに](https://marketing.adobe.com/resources/help/en_US/dtm/get_started.html)
-* [ジャンプスタートビデオ](https://marketing.adobe.com/resources/help/en_US/dtm/jump-start-videos.html):基本的なDTMタスクの実行方法を説明する短いビデオのシリーズです。
+* [コアサービス向けのソリューションの有効化](https://marketing.adobe.com/resources/help/ja_JP/mcloud/core_services.html)：Experience Cloud を実装し、管理者になります。このプロセスでは、顧客属性や Experience Cloud オーディエンスなどコアサービスのソリューションを最新化します。
+* [Dynamic Tag Management の概要](https://marketing.adobe.com/resources/help/ja_JP/dtm/get_started.html)
+* [ジャンプスタートビデオ](https://marketing.adobe.com/resources/help/ja_JP/dtm/jump-start-videos.html)：基本的な DTM タスクの実行方法を紹介する短いビデオのシリーズです。
 
 **ID サービスコードの配置と読み込み順序**
 
@@ -64,11 +64,11 @@ ID サービスは、[!DNL Adobe] データ収集サーバーに一意の ID を
 
 **地域データ収集の検証**
 
-Customers must provide a CNAME or use `*.sc.omtrdc` for [regional data collection](https://marketing.adobe.com/resources/help/en_US/whitepapers/rdc/) (RDC). [!DNL Adobe] のコンサルタントから、特定の RDC 設定を取得します。
+顧客は、[地域データ収集](https://marketing.adobe.com/resources/help/ja_JP/whitepapers/rdc/)（RDC）に関して、CNAME を提供するか、`*.sc.omtrdc` を使用する必要があります。[!DNL Adobe] のコンサルタントから、特定の RDC 設定を取得します。
 
 **Analytics レポートスイートの設定**
 
-新規 [!DNL Analytics] ユーザーは、データ収集用の[レポートスイートを作成](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)する必要があります。
+新規 [!DNL Analytics] ユーザーは、データ収集用の[レポートスイートを作成](https://marketing.adobe.com/resources/help/ja_JP/reference/new_report_suite.html)する必要があります。
 
 ## DTM を使用した Experience Cloud Identity Service の実装 {#task-a659cf19dea84ad48edabe0b72ef9f5c}
 
@@ -76,9 +76,9 @@ Dynamic Tag Management（DTM）を使用して ID サービスを実装するに
 
 **前提条件**
 
-* [!DNL Experience Cloud] のソリューションを有効にして、管理者権限があることを確認します。See [Enable your solutions for core services](https://marketing.adobe.com/resources/help/en_US/mcloud/core_services.html).
+* [!DNL Experience Cloud] のソリューションを有効にして、管理者権限があることを確認します。[コアサービス向けにソリューションを有効化](https://marketing.adobe.com/resources/help/ja_JP/mcloud/core_services.html)を参照してください。
 
-* DTM で Web プロパティを作成します。DTM の [Web プロパティの作成](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)ドキュメントや[管理者のジャンプスタートビデオ](https://marketing.adobe.com/resources/help/en_US/dtm/admin-jump-start.html)を参照してください。
+* DTM で Web プロパティを作成します。DTM の [Web プロパティの作成](https://marketing.adobe.com/resources/help/ja_JP/dtm/web_property.html)ドキュメントや[管理者のジャンプスタートビデオ](https://marketing.adobe.com/resources/help/ja_JP/dtm/admin-jump-start.html)を参照してください。
 
 <!--
 mcvid-dtm-implement.xml
@@ -92,12 +92,12 @@ mcvid-dtm-implement.xml
 
    >[!NOTE]
    >
-   >この操作によって、「**[!UICONTROL Experience Cloud 組織 ID]**」ボックスに組織 ID が入力されます。DTM アカウントが [!DNL Experience Cloud] にリンクされていない場合、この ID を指定する必要があります。アカウントをリンクするには、[Experience Cloud でのアカウントのリンク](https://marketing.adobe.com/resources/help/en_US/mcloud/organizations.html)を参照してください。組織 ID を見つける方法については、[要件](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)を参照してください。
+   >この操作によって、「**[!UICONTROL Experience Cloud 組織 ID]**」ボックスに組織 ID が入力されます。DTM アカウントが [!DNL Experience Cloud] にリンクされていない場合、この ID を指定する必要があります。アカウントをリンクするには、[Experience Cloud でのアカウントのリンク](https://marketing.adobe.com/resources/help/ja_JP/mcloud/organizations.html)を参照してください。組織 ID を見つける方法については、[要件](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)を参照してください。
 
-1. **[!UICONTROL トラッキングサーバー]**&#x200B;ボックスに、トラッキングサーバーの名前を入力します。If you're not sure how to find your tracking server see the [FAQ](../faq-intro/faq.md) and [Correctly Populate the trackingServer and trackingServerSecure variables](https://helpx.adobe.com/analytics/kb/determining-data-center.html#).
+1. **[!UICONTROL トラッキングサーバー]**&#x200B;ボックスに、トラッキングサーバーの名前を入力します。トラッキングサーバーの見つけ方が分からない場合は、[FAQ](../faq-intro/faq.md) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html#)を参照してください。
 1. 「**[!UICONTROL ツールを作成]**」および「**[!UICONTROL 変更を保存]**」をクリックします。
 
-   保存したら、ID サービスは DTM のツールとして設定されます。ただし、まだ使用する準備は整っていません。DTM ツールは、DTM 公開／承認プロセスを経る必要があり、追加のパラメーターを設定することもできます。DTM 承認プロセスについて詳しくは、[ユーザーの基礎知識ジャンプスタート](https://marketing.adobe.com/resources/help/en_US/dtm/user-basics-jump-start.html)ビデオを参照してください。DTM に追加できる追加パラメーターについて詳しくは、[DTM 用の Experience Cloud Identity Service 設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)を参照してください。
+   保存したら、ID サービスは DTM のツールとして設定されます。ただし、まだ使用する準備は整っていません。DTM ツールは、DTM 公開／承認プロセスを経る必要があり、追加のパラメーターを設定することもできます。DTM 承認プロセスについて詳しくは、[ユーザーの基礎知識ジャンプスタート](https://marketing.adobe.com/resources/help/ja_JP/dtm/user-basics-jump-start.html)ビデオを参照してください。DTM に追加できる追加パラメーターについて詳しくは、[DTM 用の Experience Cloud Identity Service 設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)を参照してください。
 
 ## DTM 用の Experience Cloud Identity Service 設定 {#concept-fb6cb6a0e6cc4f10b92371f8671f6b59}
 
@@ -115,7 +115,7 @@ mcvid-dtm-settings.xml
 
 ## 組織 ID {#section-949b5a0d8af940558b04ff675cf53f77}
 
-これは、プロビジョニングされた [!DNL Experience Cloud] の会社に必要で、その会社に関連付けられた ID です。組織は、管理者がユーザーおよびグループを設定し、[!DNL Experience Cloud] でのシングルサインオンアクセスを制御することを可能にするエンティティです。組織 ID は、24 文字の英数字から成る文字列で、その後に @AdobeOrg（必須）が続きます。[!DNL Experience Cloud] 管理者は、[Experience Cloud／ツール](https://marketing.adobe.com/resources/help/en_US/mcloud/admin_getting_started.html)でこの ID を見つけることができます。
+これは、プロビジョニングされた [!DNL Experience Cloud] の会社に必要で、その会社に関連付けられた ID です。組織は、管理者がユーザーおよびグループを設定し、[!DNL Experience Cloud] でのシングルサインオンアクセスを制御することを可能にするエンティティです。組織 ID は、24 文字の英数字から成る文字列で、その後に @AdobeOrg（必須）が続きます。[!DNL Experience Cloud] 管理者は、[Experience Cloud／ツール](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/admin-getting-started.translate.html)でこの ID を見つけることができます。
 
 ![](assets/orgID.png)
 
@@ -141,7 +141,7 @@ Anatytics のデータ収集に使用されるトラッキングサーバーの�
 
 トラッキングサーバーの URL がわからない場合は、`s_code.js` または `AppMeasurement.js` ファイルを確認します。`s.trackingServer` 変数で URL を設定することもできます。
 
-[trackingServer](https://marketing.adobe.com/resources/help/en_US/sc/implement/trackingServer.html) および [Correctly Populate the trackingServer and trackingServerSecure variable](https://helpx.adobe.com/analytics/kb/determining-data-center.html#) を参照してください。
+[trackingServer](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/trackingServer.html) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html#) を参照してください。
 
 **トラッキングサーバー保護**
 
@@ -149,7 +149,7 @@ Anatytics のデータ収集に使用されるセキュリティで保護され�
 
 トラッキングサーバーの URL がわからない場合は、`s_code.js` または `AppMeasurement.js` ファイルを確認します。`s.trackingServerSecure` 変数で URL を設定することもできます。
 
-[trackingServer](https://marketing.adobe.com/resources/help/en_US/sc/implement/trackingServer.html) および [Correctly Populate the trackingServer and trackingServerSecure variable](https://helpx.adobe.com/analytics/kb/determining-data-center.html#) を参照してください。
+[trackingServer](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/trackingServer.html) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html#) を参照してください。
 
 **Experience Cloud サーバー**
 
@@ -181,7 +181,7 @@ Anatytics のデータ収集に使用されるセキュリティで保護され�
 
 **統合コード**
 
-統合コードは、一意の、顧客が提供する ID です。統合コードには、[ で](https://marketing.adobe.com/resources/help/en_US/aam/create-datasource.html)データソースを作成[!DNL Audience Manager]するために使用された値が含まれている必要があります。
+統合コードは、一意の、顧客が提供する ID です。統合コードには、[ で](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source)データソースを作成[!DNL Audience Manager]するために使用された値が含まれている必要があります。
 
 **値**
 
@@ -211,13 +211,13 @@ ID サービスのテストと検証を始める前に知っておくべき重�
 
 **ツール**
 
-[Adobe Debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html) および [Charles HTTP プロキシ](https://www.charlesproxy.com/)を使用すると、Analytics を使用して ID サービスが適切に動作するように設定されていることを判定できます。この節の情報は、Adobe Debugger および Charles が返す結果に基づいています。ただし、お客様に最適なツールやデバッガーを自由に使用することができます。
+[Adobe Debugger](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/debugger.html) および [Charles HTTP プロキシ](https://www.charlesproxy.com/)を使用すると、Analytics を使用して ID サービスが適切に動作するように設定されていることを判定できます。この節の情報は、Adobe Debugger および Charles が返す結果に基づいています。ただし、お客様に最適なツールやデバッガーを自由に使用することができます。
 
-## Adobe Debugger を使用したテスト {#section-861365abc24b498e925b3837ea81d469}
+## Adobe Debugger を使用したテスト{#section-861365abc24b498e925b3837ea81d469}
 
 [!DNL Adobe] Debugger の応答に [!DNL Experience Cloud ID]（MID）が表示される場合、サービス統合は適切に設定されています。MID について詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
 
-To verify the status of the ID service with the [!DNL Adobe] [debugger](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger.html):
+[[!DNL Adobe] Debugger](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/debugger.html) を使用した ID サービスのステータスを検証するには：
 
 1. ブラウザーの Cookie をクリアするか、匿名ブラウジングセッションを開きます。
 1. ID サービスコードを含むテストページを読み込みます。
@@ -243,7 +243,7 @@ mid=20265673158980419722735089753036633573
 
 **失敗**
 
-デバッガーが以下の動作をする場合は、[カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)にお問い合わせください。
+デバッガーが以下の動作をする場合は、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください。
 
 * MID を返さない。
 * パートナー ID がプロビジョニングされていないことを示すエラーメッセージを返す。
@@ -269,7 +269,7 @@ Charles を使用して HTTP 呼び出しを監視する場合、どこを見て
 
 ### Charles での成功した ID サービス応答
 
-[データ収集サーバー](https://marketing.adobe.com/resources/help/en_US/aam/c_compcollect.html)（DCS）からの応答が MID を返す場合、アカウントは ID サービスに関して適切にプロビジョニングされています。MID は、キーと値のペアとして返されます（`d_mid: visitor Experience Cloud ID` という構文が使用されます）。以下に示すように、「[!UICONTROL 応答]」タブで、MID を探します。
+[データ収集サーバー](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/system-components/components-data-collection.translate.html)（DCS）からの応答が MID を返す場合、アカウントは ID サービスに関して適切にプロビジョニングされています。MID は、キーと値のペアとして返されます（`d_mid: visitor Experience Cloud ID` という構文が使用されます）。以下に示すように、「[!UICONTROL 応答]」タブで、MID を探します。
 
 ![](assets/charles_response_success.png)
 
@@ -279,9 +279,9 @@ DCS 応答に MID がない場合、アカウントは適切にプロビジョ�
 
 ![](assets/charles_response_unsuccessful.png)
 
-エラーコードについて詳しくは、[DCS エラーコード、メッセージおよび例](https://marketing.adobe.com/resources/help/en_US/aam/dcs_error_codes.html)を参照してください。
+エラーコードについて詳しくは、[DCS エラーコード、メッセージおよび例](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.translate.html)を参照してください。
 
 >[!MORELIKETHIS]
 >
->* [Web プロパティ](https://marketing.adobe.com/resources/help/en_US/dtm/web_property.html)
+>* [Web プロパティ](https://marketing.adobe.com/resources/help/ja_JP/dtm/web_property.html)
 
