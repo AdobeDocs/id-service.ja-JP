@@ -5,7 +5,7 @@ seo-description: Adobe Media Manager および ID サービスを含む、ID 同
 seo-title: ID 同期と一致率について
 title: ID 同期と一致率について
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -43,7 +43,7 @@ ID サービスは、リアルタイムに ID を同期します。このプロ�
 * 可能な限り高速に読み込みます。これが速すぎる場合、ウィンドウ読み込みイベントの後で iFrame を読み込むことができます（非推奨）。詳しくは、[idSyncAttachIframeOnWindowLoad](../library/function-vars/idsyncattachiframeonwindowload.md#reference-b86b7112e0814a4c82c4e24c158508f4) を参照してください。
 * iFrame のコードが親ページのアクセス権を取得したり、親ページに影響を与えたりすることを防ぎます。
 
-また、[Experience Cloud Identity Service による ID のリクエスト方法と設定方法](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)も参照してください。
+詳しくは、[Experience Cloud Identity Service による ID のリクエスト方法と設定方法](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)も参照してください。
 
 **手順3：ID 同期の実行**
 
@@ -51,11 +51,11 @@ ID 同期は、ターゲットパブリッシング iFrame で実行される UR
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-[受信データ転送のための ID 同期](https://marketing.adobe.com/resources/help/en_US/aam/c_id_sync_in.html)も参照してください。
+[受信データ転送のための ID 同期](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.translate.html)も参照してください。
 
 **手順 4：ID の格納**
 
-同期した ID は、[エッジおよびコアデータサーバー](https://marketing.adobe.com/resources/help/en_US/aam/c_compedge.html)に格納されます。
+同期した ID は、[エッジおよびコアデータサーバー](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/system-components/components-edge.translate.html)に格納されます。
 
 ## ID 同期を管理する同期サービス {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -70,9 +70,9 @@ ID 同期は、ターゲットパブリッシング iFrame で実行される UR
 
 ## Adobe Media Manager を使用した ID 同期 {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer] は、iFrame ベースの ID 同期プロセスの例外です。[!DNL Media Optimizer] は信頼されているドメインなので、ID 同期は [!UICONTROL Destination Publishing iFrame] 内ではなく親ページからおこなわれます。同期中、ID サービスは `cm.eversttech.net` の [!DNL Media Optimizer] を呼び出します。cm.eversttech.net はアドビが [!DNL Media Optimizer]Media Manager を買収する以前に使用されていた従来のドメイン名です。[!DNL Media Optimizer] にデータを送信すると一致率の向上に役立ちます。バージョン 2.0 以降を使用している ID サービスのお客様の場合、このデータ送信は自動的におこなわれます。[Media Manager の cookie](https://marketing.adobe.com/resources/help/en_US/whitepapers/cookies/cookies_media_optimizer.html) も参照してください。
+[!DNL Adobe Media Optimizer] は、iFrame ベースの ID 同期プロセスの例外です。[!DNL Media Optimizer] は信頼されているドメインなので、ID 同期は [!UICONTROL Destination Publishing iFrame] 内ではなく親ページからおこなわれます。同期中、ID サービスは `cm.eversttech.net` の [!DNL Media Optimizer] を呼び出します。cm.eversttech.net はアドビが [!DNL Media Optimizer]Media Manager を買収する以前に使用されていた従来のドメイン名です。[!DNL Media Optimizer] にデータを送信すると一致率の向上に役立ちます。バージョン 2.0 以降を使用している ID サービスのお客様の場合、このデータ送信は自動的におこなわれます。[Media Manager の cookie](https://marketing.adobe.com/resources/help/ja_JP/whitepapers/cookies/cookies_media_optimizer.html) も参照してください。
 
 >[!MORELIKETHIS]
 >
->* [demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html)
+>* [demdex ドメインの呼び出しについて](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/demdex-calls.translate.html)
 
