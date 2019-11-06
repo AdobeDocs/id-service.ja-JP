@@ -5,7 +5,7 @@ seo-description: ID サービス利用の特長、機能、課題に関するよ
 seo-title: ID サービス FAQ
 title: ID サービス FAQ
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -35,7 +35,7 @@ VisitorAPI.js をモバイルアプリのローカルファイルとしてホス
 
 VisitorAPI.js ライブラリはページ上部にあるコードの `<head>` セクションに配置してください。これにより、ページ本文の読み込み前に ID の呼び出しがおこなわれるので、ID が問題なく返される可能性が高くなります。
 
-ID サービス呼び出しは非同期であり、[demdex.net ドメイン](https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html) への唯一の呼び出しです。ID サービス呼び出しにより、ページ上で他の要素が読み込まれないようにブロックされることはありません。
+ID サービス呼び出しは非同期であり、[demdex.net ドメイン](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/demdex-calls.translate.html) への唯一の呼び出しです。ID サービス呼び出しにより、ページ上で他の要素が読み込まれないようにブロックされることはありません。
 
 [!DNL Target] を使用している場合、ページの `<body>` に ID サービスコードを配置すると、[!DNL Target] 呼び出しがブロックされる可能性が高くなります。ページ本文に ID サービスコードを配置しなければならない場合は、`<body>` 開始タグの後にこのコードを配置してください。
 
@@ -87,5 +87,5 @@ ID サービス呼び出しは非同期であり、[demdex.net ドメイン](htt
 
 >[!MORELIKETHIS]
 >
->* [カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)
 
