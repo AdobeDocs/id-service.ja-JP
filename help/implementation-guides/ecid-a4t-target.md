@@ -5,7 +5,7 @@ seo-description: これらの手順は、Target、Analytics、ID サービスの
 seo-title: Target のサーバー側実装を使用する A4T での ID サービスの使用
 title: Target のサーバー側実装を使用する A4T での ID サービスの使用
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -166,7 +166,7 @@ Response.send("
 
 ![](assets/server_side_dtm.png)
 
-また、[DTM 用の Experience Cloud Identity Service 設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)も参照してください。
+[DTM 用の Experience Cloud Identity Service 設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)も参照してください。
 
 **DTM を使用しないサーバー状態の取得**
 
