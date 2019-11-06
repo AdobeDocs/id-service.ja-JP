@@ -5,7 +5,7 @@ seo-description: ID サービスから Adobe Experience Cloud Device Co-op に�
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -30,7 +30,7 @@ ID サービスから Adobe Experience Cloud Device Co-op にデータを送信�
 `isCoopSafe` を使用するには、以下の要件を満たす必要があります。
 
 * バージョン 2.4 以降の ID サービスコードを使用する。
-* [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/en_US/mcdc/) に参加する。Co-op への参加を検討している場合は、このドキュメントをよく読み、デバイスグラフの作成にデータがどのように使用されるかに関する懸念に `isCoopSafe` で対処できるかどうかを確認する必要があります。
+* [Experience Cloud Device Co-op](https://marketing.adobe.com/resources/help/ja_JP/mcdc/) に参加する。Co-op への参加を検討している場合は、このドキュメントをよく読み、デバイスグラフの作成にデータがどのように使用されるかに関する懸念に `isCoopSafe` で対処できるかどうかを確認する必要があります。
 
 * [!DNL Adobe]コンサルタントに依頼して、Device Co-op アカウントにホワイトリストまたはブラックリストのフラグを設定する。これらのフラグをセルフサービスで有効にする方法はありません。
 
@@ -139,5 +139,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://marketing.adobe.com/resources/help/en_US/aam/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.translate.html)
 
