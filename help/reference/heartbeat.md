@@ -5,7 +5,7 @@ seo-description: ビデオハートビートには、Experience Cloud Identity S
 seo-title: ビデオハートビートと Experience Cloud Identity Service
 title: ビデオハートビートと Experience Cloud Identity Service
 uuid: 07986a78-23ac-4fd4-ab8f-be9275616a29
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 ---
@@ -17,5 +17,5 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 >[!MORELIKETHIS]
 >
->* [ビデオハートビートを使用した Analytics でのビデオの測定](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/)
+>* [ビデオハートビートを使用した Analytics でのビデオの測定](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.translate.html)
 
