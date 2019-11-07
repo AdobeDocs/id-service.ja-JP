@@ -5,7 +5,7 @@ audience: end-user
 user-guide-title: Experience Cloud Identity Service ヘルプ
 user-guide-url: /content/help/ja-JP/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
+source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
 
 ---
 
@@ -19,9 +19,9 @@ source-git-commit: 11578e184a86625a246fee84c65fcdee1a086c45
    + [Cookie と ID サービス](introduction/cookies.md)
    + [ ID サービスによる ID のリクエスト方法と設定方法](introduction/id-request.md)
    + [同期と一致率について](introduction/match-rates.md)
-+ 実装ガイド{#implementation-guides}
-   + [実装ガイド](implementation-guides/implementation-guides.md)
++ 実装 {#implementation}
    + [実装方法](implementation-guides/implementation-methods.md)
+   + [実装ガイド](implementation-guides/implementation-guides.md)
    + [Experience Platform Launch を使用した実装](implementation-guides/ecid-implement-with-launch.md)
    + [DTM を使用した実装](implementation-guides/standard.md)
    + [Analytics の実装](implementation-guides/setup-analytics.md)
