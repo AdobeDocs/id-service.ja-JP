@@ -7,7 +7,7 @@ solution: Experience Cloud
 title: 実装ガイド
 uuid: null
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
 
 ---
 
@@ -16,7 +16,9 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 Experience Cloud Identity Service の標準的な実装および非標準的な実装の手順とコードサンプルです。
 
-重要：これらの手順を実行する前に、ID サービスの要件をよくお読みください。
+>[!IMPORTANT]
+>
+>これらの手順を実行する前に、[ID サービスの要件](../reference/requirements.md)をよくお読みください。
 
 ## 標準的な実装
 
@@ -24,7 +26,6 @@ A standard implementation uses [Adobe Exprience Platform Launch](https://docs.ad
 
 ## 実装リソース
 
-* [実装ガイド](implementation-guides.md)
 * [実装方法](implementation-methods.md)
 * [Experience Platform Launch を使用した実装](ecid-implement-with-launch.md)
 * [Dynamic Tag Management を使用した実装](standard.md)
