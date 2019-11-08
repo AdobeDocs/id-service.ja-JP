@@ -6,14 +6,14 @@ seo-title: 実装方法
 title: 実装方法
 uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
 translation-type: tm+mt
-source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
+source-git-commit: 6c1ff82104bc021d047bb066829328d5fd9eedbf
 
 ---
 
 
 # 実装方法
 
-標準実装方法は、、 [!DNL Experience Cloud ID Service] (DTM)または非標 [!DNL Experience Platform Launch]準の方 [!DNL Dynamic Tag Manager] 法を使用して選択できます。
+標準実装方法は、または非 [!DNL Experience Cloud ID Service] 標準の方法を使 [!DNL Experience Platform Launch] 用して選択できます。
 
 >[!IMPORTANT]
 >
@@ -26,7 +26,3 @@ IDサービスの実装には、を使 [!DNL Experience Platform Launch](https:/
 ## 非標準的な実装{#section-2c4f2db1f9704315a7cccab6d2e07113}
 
 The procedures and code samples in this guide can help you set up the [!DNL Experience Cloud] ID service in a manual, or non-standard manner. これらの実装は技術的に難しく複雑である場合が多いことにご注意ください。自前の少ないエンジニアリングリソースを必要としたり、アドビのコンサルタントの契約サポート時間を消費する可能性があります。
-
->[!TIP]
->
->別の方法として、を使用してIDサービスを実装できま [!DNL Dynamic Tag Manager](https://docs.adobe.com/content/help/en/dtm/using/dtm-home.html)す。 ただし、新規のお客様はを使用する必要がありま [!DNL Experience Platform Launch]す。 からにアップグレードす [!DNL Experience Platform Launch] るには、 [!DNL Dynamic Tag Manager]「DTMから [起動へのアップグレード](https://docs.adobe.com/content/help/en/launch/using/reference/upgrade/overview.html)」を参照してください。
