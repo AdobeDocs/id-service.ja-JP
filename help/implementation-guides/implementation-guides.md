@@ -6,7 +6,7 @@ seo-title: ID サービスの実装ガイド
 solution: Experience Cloud
 title: 実装ガイド
 uuid: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e75a448a2fa1c384c88f00648a6f868a886c6569
 
 ---
@@ -22,7 +22,7 @@ Experience Cloud Identity Service の標準的な実装および非標準的な�
 
 ## 標準的な実装
 
-A standard implementation uses [Adobe Exprience Platform Launch](https://docs.adobelaunch.com/) to help you get started with the ID service and integrate it with other Experience Cloud solutions. ID サービスの実装には Experience Platform Launch を使用することを強くお勧めします。
+標準的な実装では、[Adobe Exprience Platform Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html) を使用して ID サービスの利用を開始し、他の Experience Cloud ID ソリューションと統合します。ID サービスの実装には Experience Platform Launch を使用することを強くお勧めします。
 
 ## 実装リソース
 
