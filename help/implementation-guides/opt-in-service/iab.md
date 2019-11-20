@@ -1,20 +1,20 @@
 ---
-description: オプトインの IAB プラグインを使用して、同意管理プラットフォーム（CMP）を接続します。
-seo-description: オプトインの IAB プラグインを使用して、同意管理プラットフォーム（CMP）を接続します。
+description: IAB Transparency and Consent Framework(TCF)用のオプトインのAudience Managerプラグインを使用して、同社の同意管理プラットフォーム(CMP)に接続します。
+seo-description: IAB Transparency and Consent Framework(TCF)用のAudience Managerプラグインを使用して、同社の同意管理プラットフォーム(CMP)に接続します。
 seo-title: （ベータ）IAB フレームワークを使用したオプトインサービスの使用
 title: （ベータ）IAB フレームワークを使用したオプトインサービスの使用
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
 
 ---
 
 
 # （ベータ）IAB フレームワークを使用したオプトインサービスの使用{#beta-using-opt-in-services-with-iab-framework}
 
-オプトインの IAB プラグインを使用して、同意管理プラットフォーム（CMP）を接続します。
+Audience Managerのオプトイン用IABプラグインを使用して、同社の同意管理プラットフォーム(CMP)に接続します。
 
-Audience Manager customers using [IAB Transparency and Consent Framework (TCF)](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) can connect their Consent Management Platform (CMP) with Opt-in’s IAB plugin. オプトインは、（ECID）JavaScript ライブラリ内に組み込まれている機能です。CMP 内で設定された訪問者の設定に応じて、個々のアドビソリューションライブラリを無効化することができます。ECID ライブラリに IAB プラグインが実装されると、訪問者の設定は、IAB 準拠の CMP からオプトインへ自動的にマッピングされます。これらの環境設定により、Audience Manager ベースのライブラリ（DIL および ECID）と、同意を受信したときの関連する呼び出しが有効になります。
+IAB Transparency and Consent Framework(TCF)を使用するAudience Managerのお客様は [](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) 、Consent Management Platform(CMP)をオプトインのAudience Manager Plugin for IAB TCFと接続できます。 オプトインは、（ECID）JavaScript ライブラリ内に組み込まれている機能です。CMP 内で設定された訪問者の設定に応じて、個々のアドビソリューションライブラリを無効化することができます。ECID ライブラリに IAB プラグインが実装されると、訪問者の設定は、IAB 準拠の CMP からオプトインへ自動的にマッピングされます。これらの環境設定により、Audience Manager ベースのライブラリ（DIL および ECID）と、同意を受信したときの関連する呼び出しが有効になります。
 
 ## IAB をサポートする CMP の実装 {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
