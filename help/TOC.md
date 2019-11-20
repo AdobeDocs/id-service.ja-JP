@@ -1,11 +1,11 @@
 ---
 cloud: platform-cloud
-product: ID サービス
+product: ID Service
 audience: end-user
-user-guide-title: Experience Cloud Identity Service ヘルプ
-user-guide-url: /content/help/ja-JP/id-service/using/home.html
-translation-type: ht
-source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
+user-guide-title: Experience Cloud Identity Service Help
+user-guide-url: /content/help/en/id-service/using/home.html
+translation-type: tm+mt
+source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
 
 ---
 
@@ -32,7 +32,7 @@ source-git-commit: 9de8fc07d30b5b641bc1445420973052605d25b6
    + [ID サービスとの直接統合](implementation-guides/direct-integration.md)
    + [直接統合の使用例](implementation-guides/direct-integration-examples.md)
    + [ ID サービスのテストと検証](implementation-guides/test-verify.md)
-   + オプトインドキュメント{#opt-in-service}
+   + オプトインサービス {#opt-in-service}
       + [オプトインサービスの概要](implementation-guides/opt-in-service/optin-overview.md)
       + [オプトインサービスの設定](implementation-guides/opt-in-service/getting-started.md)
       + [オプトインサービスの検証](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
