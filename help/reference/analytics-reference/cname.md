@@ -1,50 +1,53 @@
 ---
 description: 'null'
-keywords: 操作の順序;ID サービス
+keywords: order of operations;ID Service
 seo-description: 'null'
 seo-title: データ収集 CNAME およびクロスドメイントラッキング
 title: データ収集 CNAME およびクロスドメイントラッキング
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: 588c4b29ebd3cccea4f2ab032f69a4b6c6e97f2a
 
 ---
 
 
-# データ収集 CNAME およびクロスドメイントラッキング{#data-collection-cnames-and-cross-domain-tracking}
+# データ収集とID{#data-collection-and-identity}
 
-メインのエントリサイトがあり、顧客が他のドメインを訪問する前にメインのエントリサイトで顧客の識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザー（Safari など）でもクロスドメイントラッキングをおこなうことができます。
+Analyticsでは、訪問者をID付けする方法が3つあります。
 
-サードパーティ Cookie を受け入れるブラウザーでは、訪問者 ID をリクエストしたときに、データ収集サーバーによって Cookie が設定されます。訪問者 ID サービスはこの Cookie を使用することで、同じ Experience Cloud 組織 ID を使用するように設定されているすべてのドメインで、同じ Experience Cloud 訪問者 ID を返すことができます。
+- 訪問者IDサ [ービスの使用](https://docs.adobe.com/content/help/en/id-service/using/home.md)
+- 従来のAnalytics [訪問者IDの使用](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-overview.md)
+- 独自のIDを提供する
 
-サードパーティ Cookie を受け入れないブラウザーでは、各ドメインに対して新しい Experience Cloud 訪問者 ID が割り当てられます。
+## Using the Visitor ID Service{#using-the-visitor-id-service}
 
-訪問者 ID サービスでは、demdex.net Cookie を利用することで、Cookie を受け入れて複数のドメインにまたがって使用できるブラウザーでも、Cookie を受け入れないブラウザーでも、Analytics の s_vi Cookie と同じレベルのクロスドメイントラッキングを実現できます。
+訪問者IDサービスは、訪問者を識別するための推奨される方法です。 2つのコンポーネントに基づいています
 
-## データ収集 CNAME {#section-48fd186d376a48079769d12c4bd9f317}
+- ファーストパーティID — 自社のWebサイトへの訪問者の測定に使用できるファーストパーティID。 このIDは、最初のパーティIDに格納され、クライアント側のcookieとサーバー側のcookie（CNAME付き）の両方に格納されます。
+- サードパーティID（オプション） — demdex.netに保存される別のサードパーティIDで、複数のドメイン（example.comやexample.netなど）での訪問者の測定に使用できます。
 
-Analytics Cookie がデータ収集サーバーによって設定されていたときには、多くの企業が、サードパーティ Cookie を拒否するブラウザーの問題を回避するために、[ファーストパーティ Cookie 実装](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/)の一部としてデータ収集サーバーの CNAME レコードを設定していました。このプロセスでは、データ収集サーバーのドメインを Web サイトのドメインと一致させることで、訪問者 ID Cookie がファーストパーティ Cookie として設定されるようにしていました。
+Analyticsは常にファーストパーティIDを使用し、サードパーティIDが有効で、各サイトのファーストパーティIDが同じである場合、 ただし、サードパーティIDが設定によって無効になっている場合や、ブラウザーがサードパーティcookieをブロックしている場合は、2つのサイトのトラフィックを相互に関連付ける方法はありません。
 
-しかし訪問者 ID サービスでは、JavaScript を使用して現在の Web サイトのドメインに直接訪問者 Cookie を設定するので、そのような方法でファーストパーティ Cookie を設定する必要はなくなりました。
+## 従来のAnalyticsドメイン
 
-単一の Web プロパティ（単一のドメイン）を持つお客様は、データ収集 CNAME を廃止し、代わりにデフォルトのデータ収集ホスト名を使用できます（`omtrdc.net` または `2o7.net`）。
+訪問者IDサービスが導入される前、数年前には、多くのお客様がネイティブの分析ドメインを使用してID cookieを設定していました。 これには、 `omtrdc.net`または `2o7.net` CNAMEドメインが含まれます。 `omtrdc.net`、およ `2o7.net` び場合によっては、CNAMEのドメインがサードパーティCookieの保存に使用されます。 この方法で設定されたcookieは、常に1人の顧客に限定され、顧客が複数の会社でデータを組み合わせることができなくなりました。 サードパーティのCNAMEDドメイン（フレンドリーサードパーティドメインとも呼ばれる）は、顧客が所有するサイト(例：com、example.co.jp)でユーザーを追跡する場合にのみ使用します。 この方法は、より堅牢でプライバシーに対応した訪問者IDサービスを可能にするために廃止されています。 お客様は、可能な限り早急に、ドメインごとにCNAMEを持つ訪問者IDサービスに移行する必要があります。
 
-ただし、データ収集で CNAME を使用すると、サードパーティ Cookie を受け入れないブラウザーでも、メインのランディングドメインとその他のドメインにまたがって訪問者を追跡できるというメリットがあります。複数の Web プロパティ（複数のドメイン）を持つ企業では、データ収集 CNAME を維持した方がメリットがある場合もあります。以下の節で、クロスドメイン訪問者トラッキングのしくみについて説明しています。
+## 自分のIDの入力
 
-## CNAME によるクロスドメイントラッキングのしくみ {#section-78925af798e24917b9abed79de290ad9}
+顧客がアドビの識別システムを完全にバイパスして、カスタム訪問者IDを指定することで独自の識別システムを実 [装できる](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-custom.md)。 このルートを選択した場合は、注意が必要な点がいくつかあります。
 
-Apple Safari などのブラウザーではファーストパーティ Cookie をサードパーティのコンテキストで使用できるしくみがあるため、CNAME を利用して、同じトラッキングサーバーを使用するプライマリドメインとその他のドメインとにまたがって顧客を追跡できます。
+- オプトアウトおよび適切なプライバシーコントロールを実装する必要があります。
+- そのIDはAnalyticsにのみ適用されます
+- そのIDを保持する必要があります。
 
-例えば、プライマリサイトが `mymainsite.com` にあるとします。CNAME レコードを設定して、セキュリティで保護されたデータ収集サーバー `smetrics.mymainsite.com` を参照します。
+## データ収集CNAMES
 
-ユーザーが `mymainsite.com` を訪問すると、データ収集サーバーによって ID サービス Cookie が設定されます。これが可能であるのは、データ収集サーバーのドメインと Web サイトのドメインが一致しているからです。このような Cookie の使用方法を、「*ファーストパーティコンテキスト*」または単に「*ファーストパーティ Cookie*」と呼びます。
+アドビでは、訪問者IDサービスと併せてCNAMEを使用することをお勧めします。 これにより、ファーストパーティ訪問者IDがHTTP cookieを使用して保持され、cookieの耐久性が向上します。
 
-同じデータ収集サーバーを他のサイトでも使用し（例えば、`myothersiteB.com` と `myothersiteA.com` など）、訪問者が後でそのようなサイトを訪問する場合、`mymainsite.com` の訪問時に設定された Cookie がデータ収集サーバーへの HTTPS リクエストに含まれて送信されます（ブラウザーは Cookie が対応しているドメインが現在の Web サイトのドメインと一致していなくても、そのすべての Cookie をすべての HTTPS リクエストでそのドメインに送信することに注意してください）。このような Cookie の使用方法を、*サードパーティコンテキスト*&#x200B;または単に&#x200B;*サードパーティ Cookie* と呼びます。これにより、同じ訪問者 ID を他のドメインでも使用することができます。ブラウザーは、サードパーティのコンテキストの Cookie をファーストパーティ Cookie とは異なる方法で処理します。
+## オプトアウト
 
-*注意：Safari は、設定に関わらず、サードパーティコンテキストのすべての Cookie をブロックします。*
-
-このことから、訪問者を複数のドメインで識別するには、ユーザーが共通して訪問するドメインを収集ドメインにする必要があります。データ収集ドメインとして使用できる&#x200B;*共通の*&#x200B;ドメインがない場合は、クロスドメイントラッキングのためにデータ収集ドメインの CNAME を保持するメリットはありません。訪問者がメインエントリサイトを最初に訪問しない場合は、セカンダリサイトとメインサイトで訪問者が異なる訪問者として識別されます。
+アドビでは、アドビのシステムとオプトアウトシグナルを共有するAPIを提供しており、ユーザーが追跡をオプトアウトする方法を提供できます。 詳しい説明は、オプトアウトとオプト [インを参照](https://docs.adobe.com/content/help/en/analytics/implementation/javascript-implementation/data-collection/opt-out.md)[してください](https://docs.adobe.com/content/help/en/id-service/using/implementation-guides/opt-in-service/optin-overview.md)
 
 ## Experience Cloud Identity Service で CNAME サポートを有効にする {#section-25d4feb686d944e3a877d7aad8dbdf9a}
 
-データ収集サーバーの CNAME のサポートは、`visitor.marketingCloudServerSecure` 変数を設定することで有効になります。
+データ収集サーバーのCNAMEサ [ポートは、CNAMEの設定と、Experience Cloud](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-first-party.md) Identity Serviceで変数を設定し、AppMeasurementで設定することで有効 `visitor.marketingCloudServerSecure``s.trackingServerSecure` になります。
