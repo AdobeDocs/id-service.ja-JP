@@ -4,7 +4,7 @@ seo-title: Safari ITP での ECID ライブラリの手法
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 seo-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 translation-type: tm+mt
-source-git-commit: 51abd7b0f38da4c3375c0d2fe48d8bf96bdfb387
+source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
 
@@ -28,6 +28,10 @@ ITP のルールは、開発者に制御を取り戻すことに注力してい�
 **現在、他の Analytics 訪問者トラッキングメソッドが CNAME と共に使用されているのに、アドビが ECID ライブラリに注力しているのはなぜですか？**
 
 ECID ライブラリ、AMCV Cookie および ECID（MID とも呼ばれる）は、すべてのアドビソリューションを 1 つの ID のもとに統合するための方法として開始されました。この ID は、引き続きアドビ製品ロードマップにおいて優先度の高い Cookie レベル ID であり、Adobe Experience Platform のデフォルト Cookie ID です。
+
+**CNAME は、顧客が複数ドメイントラッキングを有効にするのに役立ちますか？**
+
+CNAME と共に以前から存在していたのと同じルールおよび注意事項がまだ存在します。場合によっては、CNAME が複数ドメインのシナリオで役立つことがあります。メインのエントリサイトがあり、ユーザーが他のドメインを訪問する前にメインのエントリサイトでユーザーの識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザーでも複数ドメイントラッキングをおこなうことができます。ただし、一部のシナリオで CNAME が複数ドメインに役立っている間は、ECID の CNAME 実装への移行の理由は、複数ドメイントラッキングのためではなく、永続的な訪問者 ID のためということになります。CNAME および複数ドメインについて詳しくは、[データ収集 CNAME およびクロスドメイントラッキング](/help/reference/analytics-reference/cname.md)を参照してください。
 
 その他の FAQ は、追加の ITP 変更がリリースされたら、こちらに追加されます。For more inquiries, please visit [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics).
 
