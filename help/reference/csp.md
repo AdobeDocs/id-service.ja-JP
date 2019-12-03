@@ -1,12 +1,12 @@
 ---
 description: コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
-keywords: ID サービス
+keywords: ID Service
 seo-description: コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
 seo-title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: fbfea06bc2a4493b6d9b84a8f367749e1d803650
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
 
-## CSP レビュー{#section-5fde5c00a678455c914b8307a8caab82}
+## CSP レビュー {#section-5fde5c00a678455c914b8307a8caab82}
 
 CSP は HTTP ヘッダー `Content-Security-Policy` を使用してブラウザーが許可したりページに読み込んだりするリソースのタイプを制御します。CSP を適用すると以下の問題を防ぐことができます。
 
@@ -53,14 +53,17 @@ CSP の使用は一般的であり、よく理解されています。このド�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>訪問者 ID サービス</b> </p> </td> 
-   <td colname="col2"> <p>CSP に <span class="codeph">*.demdex.net</span> を追加します。 </p> <p><span class="codeph"> demdex.net</span> ドメインの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies および Experience Cloud Identity Service</a> の生成と、ID 同期用に使用されます。<a href="https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/demdex-calls.translate.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> 
-  </tr> 
+   <td colname="col2"> <p>CSP に <span class="codeph">*.demdex.net</span> を追加します。 </p> <p><span class="codeph"> demdex.net</span> ドメインの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies および Experience Cloud Identity Service</a> の生成と、ID 同期用に使用されます。<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> </tr> 
+ <tr>
+ <td colname="col1"> <p> <b>Activity mapプラグイン</b> </p> </td> 
+ <td colname="col2"> <p>*omniture.comを含めるようにCSPを変更します。 </p></td> 
+ </tr>
  </tbody> 
 </table>
 
 >[!MORELIKETHIS]
 >
 >* [コンテンツセキュリティポリシーリファレンス](https://content-security-policy.com/)
->* [MDN：コンテンツセキュリティポリシー](https://developer.mozilla.org/ja/docs/Web/HTTP/CSP)
->* [Wikipedia：コンテンツセキュリティポリシー](https://ja.wikipedia.org/wiki/Content_Security_Policy)
+>* [MDN：コンテンツセキュリティポリシー](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+>* [Wikipedia：コンテンツセキュリティポリシー](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
