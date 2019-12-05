@@ -5,13 +5,13 @@ seo-description: 'null'
 seo-title: データ収集 CNAME およびクロスドメイントラッキング
 title: データ収集 CNAME およびクロスドメイントラッキング
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
 
 
-# データ収集 CNAME およびクロスドメイントラッキング{#data-collection-cnames-and-cross-domain-tracking}
+# データ収集 CNAME およびクロスドメイントラッキング {#data-collection-cnames-and-cross-domain-tracking}
 
 メインのエントリサイトがあり、顧客が他のドメインを訪問する前にメインのエントリサイトで顧客の識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザー（Safari など）でもクロスドメイントラッキングをおこなうことができます。
 
@@ -23,7 +23,7 @@ source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ## データ収集 CNAME {#section-48fd186d376a48079769d12c4bd9f317}
 
-Analytics Cookie がデータ収集サーバーによって設定されていたときには、多くの企業が、サードパーティ Cookie を拒否するブラウザーの問題を回避するために、[ファーストパーティ Cookie 実装](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/)の一部としてデータ収集サーバーの CNAME レコードを設定していました。このプロセスでは、データ収集サーバーのドメインを Web サイトのドメインと一致させることで、訪問者 ID Cookie がファーストパーティ Cookie として設定されるようにしていました。
+Analytics Cookie がデータ収集サーバーによって設定されていたときには、多くの企業が、サードパーティ Cookie を拒否するブラウザーの問題を回避するために、[ファーストパーティ Cookie 実装](https://docs.adobe.com/content/help/ja-JP/core-services/interface/ec-cookies/cookies-first-party.translate.html)の一部としてデータ収集サーバーの CNAME レコードを設定していました。このプロセスでは、データ収集サーバーのドメインを Web サイトのドメインと一致させることで、訪問者 ID Cookie がファーストパーティ Cookie として設定されるようにしていました。
 
 しかし訪問者 ID サービスでは、JavaScript を使用して現在の Web サイトのドメインに直接訪問者 Cookie を設定するので、そのような方法でファーストパーティ Cookie を設定する必要はなくなりました。
 
