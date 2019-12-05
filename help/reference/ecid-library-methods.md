@@ -3,7 +3,7 @@ title: Safari ITP での ECID ライブラリの手法
 seo-title: Safari ITP での ECID ライブラリの手法
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 seo-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 ---
@@ -13,7 +13,7 @@ source-git-commit: 8f4175b942ed4228ccd1f96791aa668be8aff95d
 
 Safari は ITP を使用したクロスドメイントラッキングと強く結びついているので、アドビでは、お客様および消費者のプライバシーおよび選択肢をサポートするライブラリのベストプラクティスを維持する必要があります。
 
-2019 年 2 月 21 日に、Apple は ITP（Intelligent Tracking Prevention）の最新アップデートを発表しました。サードパーティ Cookie に注力していた以前のバージョンと異なり、このバージョンでは、ファーストパーティ Cookie 用の新しい Tracking Prevention 測定を説明しています。document.cookie API（多くの場合、「クライアント側」Cookie とも呼ばれる）を使用して設定されたすべてのファーストパーティ永続 Cookie は、7 日を上限として期限が切れます。サードパーティ Cookie は、ITP の以前のバージョンで記載されているように、引き続きブロックされます。For more details on ITP 2.1 and the impact of Adobe solutions, read [Safari ITP 2.1 Impact on Adobe Experience Cloud and Experience Platform Customers](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac).
+2019 年 2 月 21 日に、Apple は ITP（Intelligent Tracking Prevention）の最新アップデートを発表しました。サードパーティ Cookie に注力していた以前のバージョンと異なり、このバージョンでは、ファーストパーティ Cookie 用の新しい Tracking Prevention 測定を説明しています。document.cookie API（多くの場合、「クライアント側」Cookie とも呼ばれる）を使用して設定されたすべてのファーストパーティ永続 Cookie は、7 日を上限として期限が切れます。サードパーティ Cookie は、ITP の以前のバージョンで記載されているように、引き続きブロックされます。ITP 2.1 およびアドビソリューションへの影響について詳しくは、[Safari ITP 2.1 が Adobe Experience Cloud および Experience Platform のお客様に与える影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)を参照してください。
 
 ## Safari ITP 用 Adobe ECID に関する FAQ
 
@@ -33,7 +33,7 @@ ECID ライブラリ、AMCV Cookie および ECID（MID とも呼ばれる）は
 
 CNAME と共に以前から存在していたのと同じルールおよび注意事項がまだ存在します。場合によっては、CNAME が複数ドメインのシナリオで役立つことがあります。メインのエントリサイトがあり、ユーザーが他のドメインを訪問する前にメインのエントリサイトでユーザーの識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザーでも複数ドメイントラッキングをおこなうことができます。ただし、一部のシナリオで CNAME が複数ドメインに役立っている間は、ECID の CNAME 実装への移行の理由は、複数ドメイントラッキングのためではなく、永続的な訪問者 ID のためということになります。CNAME および複数ドメインについて詳しくは、[データ収集 CNAME およびクロスドメイントラッキング](/help/reference/analytics-reference/cname.md)を参照してください。
 
-その他の FAQ は、追加の ITP 変更がリリースされたら、こちらに追加されます。For more inquiries, please visit [Adobe Experience League](https://experienceleague.adobe.com/#recommended/solutions/analytics).
+その他の FAQ は、追加の ITP 変更がリリースされたら、こちらに追加されます。その他の質問については、[Adobe Experience League](https://experienceleague.adobe.com/?lang=ja#recommended/solutions/analytics) を参照してください。
 
 ## ITP 関連の変更、方法および設定
 
@@ -47,7 +47,7 @@ ITP および ECID ライブラリの使用に関する取り組みについて�
 
 ITP 2.1 は、クライアント側 Cookie の書き込み機能を阻止し、正確な訪問者トラッキング情報をお客様に提供する機能を低下させます。そのため、訪問者の Experience Cloud ID（ECID）をファーストパーティ Cookie に格納するという変更が、アドビの CNAME トラッキングサーバーに導入されています。
 
-この変更は、ファーストパーティのコンテキストで Analytics CNAME を使用している ECID お客様にのみ役立ちます。Analytics のお客様で現在 CNAME を使用していない場合や Analytics のお客様でない場合でも、CNAME レコードが適しています。Contact Customer Care or your account representative to start the process of registering for a [CNAME](https://marketing.adobe.com/resources/help/en_US/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html).
+この変更は、ファーストパーティのコンテキストで Analytics CNAME を使用している ECID お客様にのみ役立ちます。Analytics のお客様で現在 CNAME を使用していない場合や Analytics のお客様でない場合でも、CNAME レコードが適しています。カスタマーケアまたは担当のアカウント担当者に問い合わせて、[CNAME](https://marketing.adobe.com/resources/help/ja_JP/whitepapers/first_party_cookies/adobe_managed_cert_pgm.html) の登録プロセスを開始してください。
 
 この変更を活用するには、ECID ライブラリ v. 4.3.0 以降にアップグレードしてください。
 
@@ -57,7 +57,7 @@ demdex.net に対して ID リクエストがおこなわれ、ECID が取得さ
 
 この新しい `s_ecid` Cookie は、AMCV Cookie と同じオプトアウトステータスに従います。ecid が `s_ecid` Cookie から読み取られる場合、常に demdex が即座に呼び出されて、その ID の最新のオプトアウトステータスが取得され、AMCV Cookie に格納されます。
 
-In addition, if your consumer has opted out of Analytics tracking via this [method](https://marketing.adobe.com/resources/help/en_US/sc/implement/opt_out_link.html), this `s_ecid` cookie will be deleted.
+さらに、消費者がこの[方法](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/opt_out_link.html)を使用して Analytics トラッキングをオプトアウトした場合、この `s_ecid` Cookie は削除されます。
 
 trackingServer または trackingServerSecure を使用してライブラリを初期化する際に、トラッキングサーバー名が Visitor JS ライブラリに提供される必要があります。これは、Analytics 設定の trackingServer 設定に一致する必要があります。
 
