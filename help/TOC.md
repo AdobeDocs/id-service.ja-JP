@@ -4,8 +4,8 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
+translation-type: tm+mt
+source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
 
 ---
 
@@ -94,6 +94,7 @@ source-git-commit: cb75ac6a9d7a5a001fcb0a1d9d978d3845a4e829
    + [ID サービスでの CORS のサポート](reference/cors.md)
    + [顧客 ID と認証状態](reference/authenticated-state.md)
    + [Safari ITP での ECID ライブラリの手法](reference/ecid-library-methods.md)
+   + [個別訪問者数の識別](reference/unique-vis-method.md)
    + [AMCV Cookie または ID サービスからの地域およびユーザー ID の取得](reference/regions.md)
    + [ID サービスの要件](reference/requirements.md)
    + [ビデオハートビートと ID サービス](reference/heartbeat.md)
