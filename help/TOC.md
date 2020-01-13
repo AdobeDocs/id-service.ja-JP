@@ -4,7 +4,7 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
 
 ---
