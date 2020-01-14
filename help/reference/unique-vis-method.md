@@ -20,7 +20,7 @@ source-git-commit: 453a14a4b725dd14f445b089d083a83a5d2ffaa4
 | 3 | [mid（ID サービスによって設定された AMCV_ cookie）](https://marketing.adobe.com/resources/help/ja_JP/mcvid/) | 5 | 訪問者のブラウザーが cookie（ファーストパーティ）を受け入れ、ID サービスがデプロイ済みである。 |
 | 4 | [fid（H.25.3 以降でのフォールバック cookie、または JavaScript 版 AppMeasurement）](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/visid_fallback.html) | 4 | 訪問者のブラウザーが cookie（ファーストパーティ）を受け入れる。 |
 | 5 | [HTTP モバイル購読者ヘッダー](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/visid_mobile.html) | 2 | デバイスがモバイルデバイスとして認識される。 |
-| 6 | [IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/visid_fallback.html) | 1 | 訪問者のブラウザーが cookie を受け入れない。  
+| 6 | [IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス](https://marketing.adobe.com/resources/help/ja_JP/sc/implement/visid_fallback.html) | 1 | 訪問者のブラウザーが cookie を受け入れない。 |
 
 
 個別訪問者数のレポート方法について詳しくは、[Analytics の個別訪問者数](https://docs.adobe.com/content/help/ja-JP/analytics/components/variables/dimensions-reports/reports-unique-visitors-v15-dsc.html)を参照してください。
