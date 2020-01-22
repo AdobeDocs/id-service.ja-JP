@@ -5,8 +5,8 @@ seo-description: コンテンツセキュリティポリシー（CSP）は、Web
 seo-title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
-source-git-commit: fbfea06bc2a4493b6d9b84a8f367749e1d803650
+translation-type: tm+mt
+source-git-commit: e3d63e2ad5f1f58f5444f2aa353b4144b0454fc4
 
 ---
 
@@ -53,10 +53,10 @@ CSP の使用は一般的であり、よく理解されています。このド�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>訪問者 ID サービス</b> </p> </td> 
-   <td colname="col2"> <p>CSP に <span class="codeph">*.demdex.net</span> を追加します。 </p> <p><span class="codeph"> demdex.net</span> ドメインの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies および Experience Cloud Identity Service</a> の生成と、ID 同期用に使用されます。<a href="https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/demdex-calls.translate.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> </tr> 
+   <td colname="col2"> <p>CSP に <span class="codeph">*.demdex.net</span> を追加します。 </p> <p><span class="codeph"> demdex.net</span> ドメインの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies および Experience Cloud Identity Service</a> の生成と、ID 同期用に使用されます。<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map プラグイン</b> </p> </td> 
- <td colname="col2"> <p>CSP を変更して、*omniture.com を追加します。 </p></td> 
+ <td colname="col2"> <p>*.adobe.comを含めるようにCSPを変更します。 **注意**:2020年1月より前にActivity mapを既にインストール済みの場合、ブラウザーには*.omniture.comへの初期リクエストが表示されますが、*.adobe.comにリダイレクトされます。 </p></td> 
  </tr>
  </tbody> 
 </table>
@@ -64,6 +64,6 @@ CSP の使用は一般的であり、よく理解されています。このド�
 >[!MORELIKETHIS]
 >
 >* [コンテンツセキュリティポリシーリファレンス](https://content-security-policy.com/)
->* [MDN：コンテンツセキュリティポリシー](https://developer.mozilla.org/ja/docs/Web/HTTP/CSP)
->* [Wikipedia：コンテンツセキュリティポリシー](https://ja.wikipedia.org/wiki/Content_Security_Policy)
+>* [MDN：コンテンツセキュリティポリシー](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+>* [Wikipedia：コンテンツセキュリティポリシー](https://en.wikipedia.org/wiki/Content_Security_Policy)
 
