@@ -1,12 +1,12 @@
 ---
-description: Adobe Experience Cloud での Experience Platform Identity Service の役割です。
-keywords: ID サービス
-seo-description: Adobe Experience Cloud での Experience Platform Identity Service の役割です。
+description: Adobe Experience Cloud での Experience Cloud Identity Service の役割です。
+keywords: ID Service
+seo-description: Adobe Experience Cloud での Experience Cloud Identity Service の役割です。
 seo-title: ID サービスについて
 title: 概要
 uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
 translation-type: tm+mt
-source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
+source-git-commit: 6c314656c134a697540c289560c67ca3ab88bc63
 
 ---
 
