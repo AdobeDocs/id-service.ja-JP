@@ -1,12 +1,12 @@
 ---
 description: Experience Cloud Identity Service の機能リリース、更新、変更点です。
-keywords: ID サービス
+keywords: ID Service
 seo-description: Experience Cloud Identity Service の機能リリース、更新、変更点です。
 seo-title: 2019 年リリースノート
 title: 2019 年リリースノート
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 translation-type: tm+mt
-source-git-commit: 4532d09cc9b4d83fa62c13bd1adac7abdae222b1
+source-git-commit: ba84c4dac9023ab13f5176c5665adbbdaeb00d33
 
 ---
 
@@ -38,6 +38,20 @@ Experience Cloud Identity Service の機能リリース、更新、変更点で�
 **ITP 2.1 をサポート**&#x200B;します。ファーストパーティ CNAME でトラッキングサーバーが設定されている場合、新しい cookie（s_ecid）が ECID 値と共に配置されます。ECID ライブラリは、この値を参照して、7 日以上 ID を保持します。[Safari ITP での ECID ライブラリの手法](/help/reference/ecid-library-methods.md)を参照してください。
 
 **secureCookie 設定のバグを修正しました。**
+
+## バージョン 4.1
+
+新しいAPI `publishDestinations` の変更に応じて更新します。 この更新により、必要に応じて、ID — 同期中にページのリファラー情報を表示できます。（CORE-23693）
+
+## バージョン 4.2
+
+IAB TCF用Audience Managerプラグインがサポートされ、ECIDオプトインオブジェクトを介して利用できます。
+
+**修正点**
+
+* IAB + optInが顧客の再訪問のためにMIDを取得できない(CORE-26022)
+* DTMのオプトインdoesOptInApply設定に関するバグを修正しました。(DTM-12958)
+* ECIDオプトアウトはID同期を無効にします(CORE-23814)。
 
 ## バージョン 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
