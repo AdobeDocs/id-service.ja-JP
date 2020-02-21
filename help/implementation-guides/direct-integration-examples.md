@@ -5,15 +5,15 @@ seo-description: 直接統合と Experience Cloud ID（MID）に関連する 2 �
 seo-title: 直接統合の使用例
 title: 直接統合の使用例
 uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 
 ---
 
 
-# 直接統合の使用例{#direct-integration-use-cases}
+# 直接統合の使用例 {#direct-integration-use-cases}
 
-以下の例は、直接統合とExperience Cloud ID（ECIDまたはMID）に関連する2つの一般的な使用例をカバーしています。 このIDは、サイト訪問者の一意の永続的なIDです。
+直接統合と Experience Cloud ID（ECID または MID）に関連する 2 つの一般的な使用例を示します。この ID は、サイト訪問者に割り当てられる一意の永続的 ID です。
 
 >[!TIP]
 >
