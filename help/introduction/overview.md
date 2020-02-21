@@ -1,24 +1,24 @@
 ---
-description: Adobe Experience cloudでのExperience Cloud IDサービスの役割。
-seo-description: Experience Cloud IDサービス（旧称、訪問者IDサービスまたはMarketing Cloud IDサービス）を使用すると、顧客属性やオーディエンスなどのExperience cloudサービスの共通の識別フレームワークを有効にできます。
-seo-title: Experience Cloud IDサービスの概要
-title: Experience Cloud IDサービスの概要
-translation-type: tm+mt
+description: Adobe Experience Cloud における Experience Cloud Identity Service の役割です。
+seo-description: Experience Cloud ID サービス（以前の訪問者 ID サービスまたは Marketing Cloud ID サービス）を使用すると、顧客属性やオーディエンスなど、Experience Cloud サービス向けの共通識別フレームワークを有効にします。
+seo-title: Experience Cloud ID サービスの概要
+title: Experience Cloud ID サービスの概要
+translation-type: ht
 source-git-commit: 98b72f87b188debd6a5f6b86822c3f714647de61
 
 ---
 
 
-# Experience Cloud IDサービスの概要
+# Experience Cloud ID サービスの概要
 
-The [!UICONTROL Experience Cloud Identity Service] enables the common identification framework for Experience Cloud Core Services (such as customer attributes and audiences) solutions in the Experience Platform Identity Service.
+[!UICONTROL Experience Cloud ID サービス]は、Experience Platform ID サービスにおける Experience Cloud コアサービス（顧客属性やオーディエンスなど）ソリューションのための共通の識別フレームワークです
 
 >[!NOTE]
 >
-> IDサービスへの参照は、略語、またはECID、Marketing Cloud IDサービス(MID)、訪問者IDサービスなどの旧称として表示される場合があります。 これらは、 [!UICONTROL Experience Cloud IDサービスを参照します]。 また、 [!UICONTROL Experience Platform Identity Serviceも表示されます]。 明確にするには：
+> ECID、Marketing Cloud ID サービス（MID）、訪問者 ID サービスなど、略語や以前の名前で ID サービスを表す場合があります。これらは、[!UICONTROL Experience Cloud ID サービス]を表しています。また、[!UICONTROL Experience Platform ID サービス]を目にすることもあります。これらの違いをまとめると次のようになります。
 
-* [!UICONTROL エクスペリエンスプラットフォームIDサービス]:IDをリンクするサービス。 これは、ユーザーベースのエクスペリエンス管理のためのデバイスリンクサービスです。
-* [!UICONTROL Experience Cloud IDサービス] (ECID):サイト訪問者に割り当てられた一意の永続的なID。 これは、プラットフォームIDサービスで使用できる特定のエンティティです。
+* [!UICONTROL Experience Platform ID サービス]：ID をリンクさせるサービス。ユーザーベースのエクスペリエンス管理を実現するための、デバイスリンクサービスです。
+* [!UICONTROL Experience Cloud ID サービス]（ECID）：サイト訪問者に割り当てられた一意の永続的 ID。Platform ID サービスで使用できる特定のエンティティです。
 
 組織が ID サービスを実装する場合、この ID を使用することで、同じサイト訪問者およびそのデータを様々な Experience Cloud ソリューションで識別できます。
 
@@ -26,7 +26,7 @@ The [!UICONTROL Experience Cloud Identity Service] enables the common identifica
 
 また、この ID サービスは、様々なソリューション専用 ID（例：Analytics AID）を置き換えることができます。そして、[顧客 ID と認証状態](/help/reference/authenticated-state.md)機能を使用すると、ID サービスを通じて顧客 ID を Experience Cloud に渡すことが可能になります。ただし、ID サービスは、既に登録されたソリューションのみと連携することに注意してください。登録していない製品には ID サービスからアクセスできません。
 
-いずれは、ID サービスは、多くの現在および将来の Experience Cloud 機能、強化、サービスにとって不可欠な要素になります。現在、ID サービスは、[Analytics](http://www.adobe.com/marketing-cloud/web-analytics.html)、[Audience Manager](http://www.adobe.com/marketing-cloud/data-management-platform.html) および [Target](http://www.adobe.com/marketing-cloud/testing-targeting.html) をサポートしています。さらに、Adobe Experience Cloud Device Co-op に参加する場合に必要です。ID サービスを実装していない場合、今が移行戦略を検討し始めるチャンスです。ID サービスの重要性と役割について詳しくは、[なぜ新しい Experience Cloud Identity Service に注目すべきか](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)/を参照してください。
+いずれは、ID サービスは、多くの現在および将来の Experience Cloud 機能、強化、サービスにとって不可欠な要素になります。現在、ID サービスは、[Analytics](http://www.adobe.com/jp/marketing-cloud/web-analytics.html)、[Audience Manager](http://www.adobe.com/jp/marketing-cloud/data-management-platform.html) および [Target](http://www.adobe.com/jp/marketing-cloud/testing-targeting.html) をサポートしています。さらに、Adobe Experience Cloud Device Co-op に参加する場合に必要です。ID サービスを実装していない場合、今が移行戦略を検討し始めるチャンスです。ID サービスの重要性と役割について詳しくは、[なぜ新しい Experience Cloud Identity Service に注目すべきか](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)/を参照してください。
 
 ## 機能の概要
 
@@ -34,7 +34,7 @@ The [!UICONTROL Experience Cloud Identity Service] enables the common identifica
 
 * プロファイルと ID をリンクするために使用できる共通キーまたは ID を作成する。
 * 複数のソリューションをまたいで一意にデバイスを識別する。
-* 顧客のドメインにファーストパーティ Cookie を設定し、同ドメインでトラッキングをおこなえるようにする。詳しくは、 cookieおよびExperience Cloud IDサービス [に関するドキュメントを参照](https://docs.adobe.com/content/help/en/id-service/using/intro/cookies.html) してください。
+* 顧客のドメインにファーストパーティ Cookie を設定し、同ドメインでトラッキングをおこなえるようにする。 [cookies and Experience Cloud ID サービス](https://docs.adobe.com/content/help/ja-JP/id-service/using/intro/cookies.html)のドキュメントを参照してください。
 * エイリアス と ID マッピングを Experience Cloud の顧客とパートナーから受け取る。
 * Experience Cloud 内の ID 同期を管理する。
 * 広告技術エコシステム全体にわたり様々なサードパーティとの ID 同期をサポートする。
