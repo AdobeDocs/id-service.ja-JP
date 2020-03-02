@@ -1,28 +1,28 @@
 ---
-description: Experience Cloud Identity Service の機能リリース、更新、変更点です。
+description: Experience Cloud ID サービスの機能リリース、更新、変更点です。
 keywords: ID Service
-seo-description: Experience Cloud Identity Service の機能リリース、更新、変更点です。
+seo-description: Experience Cloud ID サービスの機能リリース、更新、変更点です。
 seo-title: 2019 年リリースノート
 title: 2019 年リリースノート
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ---
 
 
-# Experience Cloud release notes - 2019 {#release-notes}
+# Experience Cloud リリースノート - 2019 {#release-notes}
 
-Experience Cloud Identity Service の機能リリース、更新、変更点です。
+Experience Cloud ID サービスの機能リリース、更新、変更点です。
 
 ## バージョン 4.4.1
 
-ECID起動拡張でのメディア解析用の事前オプトイン承認チェックボックスの追加(CORE-33185)
+ECID Launch 拡張機能でのメディア解析用に、事前オプトイン承認チェックボックスを追加しました（CORE-33185）
 
 **修正点**
 
-* ECID起動拡張preOptInApprovals入力文字列解析に関する問題(CORE-34041)
-* trackingServerが使用されている場合のパフォーマンス低下(CORE-32387)
+* ECID Launch 拡張機能 preOptInApprovals 入力文字列解析に関する問題（CORE-34041）
+* trackingServer 使用時のパフォーマンス低下（CORE-32387）
 
 ## バージョン 4.4 {#version-4point4}
 
@@ -40,27 +40,27 @@ ECID起動拡張でのメディア解析用の事前オプトイン承認チェ�
 
 ## バージョン 4.3 {#version-4point3}
 
-**ITP 2.1 をサポート**&#x200B;します。ファーストパーティ CNAME でトラッキングサーバーが設定されている場合、新しい cookie（s_ecid）が ECID 値と共に配置されます。ECID ライブラリは、この値を参照して、7 日以上 ID を保持します。[Safari ITP での ECID ライブラリの手法](/help/reference/ecid-library-methods.md)を参照してください。
+**ITP 2.1 をサポートします**。ファーストパーティ CNAME でトラッキングサーバーが設定されている場合、新しい cookie（s_ecid）が ECID 値と共に配置されます。ECID ライブラリは、この値を参照して、7 日以上 ID を保持します。[Safari ITP での ECID ライブラリの手法](/help/reference/ecid-library-methods.md)を参照してください。
 
 **secureCookie 設定のバグを修正しました。**
 
 ## バージョン 4.1
 
-新しいAPI `publishDestinations` の変更に応じて更新します。 この更新により、必要に応じて、ID — 同期中にページのリファラー情報を表示できます。（CORE-23693）
+新しい API の変更に伴い、`publishDestinations` を更新しました。この更新により、必要に応じて、ID — 同期中にページのリファラー情報を表示できます。（CORE-23693）
 
 ## バージョン 4.2
 
-IAB TCF用Audience Managerプラグインがサポートされ、ECIDオプトインオブジェクトを介して利用できます。
+ECID オプトインオブジェクトで使用できる、IAB TCF 用の Audience Manager プラグインをサポートします。
 
 **修正点**
 
-* IAB + optInが顧客の再訪問のためにMIDを取得できない(CORE-26022)
-* DTMのオプトインdoesOptInApply設定に関するバグを修正しました。(DTM-12958)
-* ECIDオプトアウトはID同期を無効にします(CORE-23814)。
+* IAB と OptIn で、再訪問する顧客の MID を取得できない（CORE-26022）
+* DTM のオプトイン doesOptInApply 設定に関するバグを修正しました。（DTM-12958）
+* ECID オプトアウトで ID 同期が無効になる（CORE-23814）
 
 ## バージョン 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**オプトインサービス**。オプトインは、Experience Cloud ID（ECID）の拡張であり、使用すると、Experience Cloud ライブラリで Web ページに訪問者に対する Cookie を作成可能にするかどうか（およびどのライブラリで作成可能にするか）を指定できます。Using [Experience Platform Launch](https://docs.adobelaunch.com/), you can simplify gathering visitor opt-in consents for Experience Cloud solution by enabling Analytics, Target, Audience Manager, and other or all select Experience Cloud solutions to opt-in to your consent management system.
+**オプトインサービス**。オプトインは、Experience Cloud ID（ECID）の拡張であり、使用すると、Experience Cloud ライブラリで Web ページに訪問者に対する Cookie を作成可能にするかどうか（およびどのライブラリで作成可能にするか）を指定できます。[Experience Platform Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html) を使用すれば、Analytics、Target、Audience Manager などの選ばれたすべての Experience Cloud ソリューションを導入済みの同意管理システムにオプトインできるようになり、Experience Cloud ソリューションの訪問者オプトイン同意の収集を簡素化できます。
 
 ## バージョン 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
