@@ -1,20 +1,20 @@
 ---
-description: Experience Cloud Identity Service の機能リリース、更新、変更点です。
+description: Experience Cloud ID サービスの機能リリース、更新、変更点です。
 keywords: ID Service
-seo-description: Experience Cloud Identity Service の機能リリース、更新、変更点です。
+seo-description: Experience Cloud ID サービスの機能リリース、更新、変更点です。
 seo-title: 2020 年リリースノート
 title: 2020 年リリースノート
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
 
 ---
 
 
-# Experience cloudリリースノート — 2020 {#release-notes}
+# Experience Cloud リリースノート - 2020 {#release-notes}
 
-Experience Cloud IDサービス(ECID)の機能のリリース、更新または変更です。
+Experience Cloud ID サービス（ECID）の機能リリース、更新、変更点です。
 
 ## バージョン 4.5
 
-* バージョン4.5以降では、ECIDはメソッドに送信された空のIDを拒否 `setCustomerIDs` します。 （CORE-38828）
-* オプトインがANDとして設定されていない場合に発生 `doesOptInApply=false` する問 `isIabContext=true.` 題を修正しました。(CORE-38351)
+* バージョン 4.5 以降では、ECID は `setCustomerIDs` メソッドに送信された空の ID を拒否します。（CORE-38828）
+* オプトインが誤って `doesOptInApply=false` および `isIabContext=true.` として設定されている際の問題を修正しました（CORE-38351）
