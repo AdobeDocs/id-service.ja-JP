@@ -4,8 +4,8 @@ product: ID Service
 audience: end-user
 user-guide-title: Experience Cloud Identity Service Help
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
+translation-type: tm+mt
+source-git-commit: 5c20510d9b2174b14599eab04fb694389ff87589
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
       + [DTM を使用したオプトインの設定](implementation-guides/opt-in-service/optin-dtm.md)
       + [オプトインの使用例](implementation-guides/opt-in-service/use-cases.md)
       + [オプトインリファレンス](implementation-guides/opt-in-service/api.md)
-      + [（ベータ）IAB フレームワークを使用したオプトインサービスの使用](implementation-guides/opt-in-service/iab.md)
+      + [IABフレームワークでのオプトインサービスの使用](implementation-guides/opt-in-service/iab.md)
 + ID サービスの API {#id-service-api}
    + [ID サービス API の概要](library/library.md)
    + 設定 {#configurations}
