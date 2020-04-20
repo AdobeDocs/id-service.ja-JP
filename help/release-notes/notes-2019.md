@@ -5,8 +5,8 @@ seo-description: Experience Cloud ID サービスの機能リリース、更新�
 seo-title: 2019 年リリースノート
 title: 2019 年リリースノート
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: ht
-source-git-commit: 25a9af7a28462bc0bd26cf4a5a58203e76a83366
+translation-type: tm+mt
+source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
 
@@ -17,12 +17,12 @@ Experience Cloud ID サービスの機能リリース、更新、変更点です
 
 ## バージョン 4.4.1
 
-ECID Launch 拡張機能でのメディア解析用に、事前オプトイン承認チェックボックスを追加しました（CORE-33185）
+ECID Launch Extension追加でのメディア解析のプリオプトイン承認チェックボックス。
 
 **修正点**
 
-* ECID Launch 拡張機能 preOptInApprovals 入力文字列解析に関する問題（CORE-34041）
-* trackingServer 使用時のパフォーマンス低下（CORE-32387）
+* ECID起動拡張preOptInApprovals入力文字列の解析に関する問題。
+* trackingServerが使用されている場合のパフォーマンス低下。
 
 ## バージョン 4.4 {#version-4point4}
 
@@ -32,11 +32,11 @@ ECID Launch 拡張機能でのメディア解析用に、事前オプトイン�
 
 **修正点、機能強化、改善点**
 
-* `cookieDomain` の設定を更新しました。ECID ライブラリは、`initConfig` の空の文字列 `cookieDomain` を除外して、トップレベル cookie ドメインを使用できるようになりました（getDomain メソッドで返されます）。（CORE-29223）
-* `getVisitorValues` の `localVisitor` に関連するバグを修正しました。（CORE-31287）
-* `getVisitorValue` メソッドで返される Safari ブラウザーの MCOPTOUT 値に不整合があるバグを修正しました。（CORE-29719）
+* `cookieDomain` の設定を更新しました。ECID ライブラリは、`initConfig` の空の文字列 `cookieDomain` を除外して、トップレベル cookie ドメインを使用できるようになりました（getDomain メソッドで返されます）。
+* `getVisitorValues` の `localVisitor` に関連するバグを修正しました。
+* `getVisitorValue` メソッドで返される Safari ブラウザーの MCOPTOUT 値に不整合があるバグを修正しました。
 * オプトインライブラリを更新し、イベントから登録解除するための `optIn.off` を追加しました。
-* `setTimeout` が一部のお客様サイトでコンテンツセキュリティポリシー（CSP）に違反する、setTimeout 関数に関するバグを修正しました。（CORE-30623）
+* `setTimeout` が一部のお客様サイトでコンテンツセキュリティポリシー（CSP）に違反する、setTimeout 関数に関するバグを修正しました。
 
 ## バージョン 4.3 {#version-4point3}
 
@@ -46,7 +46,7 @@ ECID Launch 拡張機能でのメディア解析用に、事前オプトイン�
 
 ## バージョン 4.1
 
-新しい API の変更に伴い、`publishDestinations` を更新しました。この更新により、必要に応じて、ID — 同期中にページのリファラー情報を表示できます。（CORE-23693）
+新しい API の変更に伴い、`publishDestinations` を更新しました。この更新により、必要に応じて、ID — 同期中にページのリファラー情報を表示できます。
 
 ## バージョン 4.2
 
@@ -54,9 +54,9 @@ ECID オプトインオブジェクトで使用できる、IAB TCF 用の Audien
 
 **修正点**
 
-* IAB と OptIn で、再訪問する顧客の MID を取得できない（CORE-26022）
-* DTM のオプトイン doesOptInApply 設定に関するバグを修正しました。（DTM-12958）
-* ECID オプトアウトで ID 同期が無効になる（CORE-23814）
+* IAB + OptInで、顧客の再訪問に関するMIDを取得できない。
+* DTMでのオプトインdoesOptInApply設定に関するバグを修正しました。
+* ECIDオプトアウトはID同期を無効にします。
 
 ## バージョン 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
@@ -67,4 +67,4 @@ ECID オプトインオブジェクトで使用できる、IAB TCF 用の Audien
 | 項目 | 説明 |
 |---|---|
 | `disableIdSyncs` フラグに文字列を渡すと動作しない | 修正しました。`getInstance` 関数の `disableidSyncs` パラメーターに設定された値は現在、有効になっています。 |
-| サードパーティ iFrame が ECID を取得しない | Safari モバイル上の ECID および機能していない各種 iFrame の ECID を修正しました。 |
+| サードパーティiFrameがECIDを取得しない | Safari MobileのECIDと、様々なiFrameのECIDが機能しない問題を修正しました。 |
