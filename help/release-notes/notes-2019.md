@@ -5,7 +5,7 @@ seo-description: Experience Cloud ID サービスの機能リリース、更新�
 seo-title: 2019 年リリースノート
 title: 2019 年リリースノート
 uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8ece066545f4ca4a7bd1eca67c8f02dcd2a88369
 
 ---
@@ -17,12 +17,12 @@ Experience Cloud ID サービスの機能リリース、更新、変更点です
 
 ## バージョン 4.4.1
 
-ECID Launch Extension追加でのメディア解析のプリオプトイン承認チェックボックス。
+ECID Launch 拡張機能でのメディア解析用に、事前オプトイン承認チェックボックスを追加しました。
 
 **修正点**
 
-* ECID起動拡張preOptInApprovals入力文字列の解析に関する問題。
-* trackingServerが使用されている場合のパフォーマンス低下。
+* ECID Launch 拡張機能 preOptInApprovals 入力文字列解析に関する問題を修正しました。
+* trackingServer 使用時のパフォーマンスの低下の問題を修正しました。
 
 ## バージョン 4.4 {#version-4point4}
 
@@ -54,9 +54,9 @@ ECID オプトインオブジェクトで使用できる、IAB TCF 用の Audien
 
 **修正点**
 
-* IAB + OptInで、顧客の再訪問に関するMIDを取得できない。
-* DTMでのオプトインdoesOptInApply設定に関するバグを修正しました。
-* ECIDオプトアウトはID同期を無効にします。
+* IAB と OptIn で、再訪問する顧客の MID を取得できない問題を修正しました。
+* DTM のオプトイン doesOptInApply 設定に関するバグを修正しました。
+* ECID オプトアウトで ID 同期が無効になる問題を修正しました。
 
 ## バージョン 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
@@ -67,4 +67,4 @@ ECID オプトインオブジェクトで使用できる、IAB TCF 用の Audien
 | 項目 | 説明 |
 |---|---|
 | `disableIdSyncs` フラグに文字列を渡すと動作しない | 修正しました。`getInstance` 関数の `disableidSyncs` パラメーターに設定された値は現在、有効になっています。 |
-| サードパーティiFrameがECIDを取得しない | Safari MobileのECIDと、様々なiFrameのECIDが機能しない問題を修正しました。 |
+| サードパーティ iFrame が ECID を取得しない問題を修正しました。 | Safari モバイル上の ECID および機能していない各種 iFrame の ECID を修正しました。 |
