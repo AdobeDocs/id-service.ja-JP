@@ -4,7 +4,7 @@ keywords: ID Service
 seo-description: Experience Cloud ID サービスの機能リリース、更新、変更点です。
 seo-title: 2020 年リリースノート
 title: 2020 年リリースノート
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4da0f3da99a96d2be7421f49e0e88286d0505e0
 
 ---
@@ -16,11 +16,10 @@ Experience Cloud ID サービス（ECID）の機能リリース、更新、変�
 
 ## バージョン 4.6
 
-* デフォル `loadSSL` トでフラグをオンにしました。 IDサービスへのすべての呼び出しは、デフォルトでオ `https` ンになります。  ページからhttpでIDサービスを呼び出す場合は、falseに設定でき `non-ssl` ます。
-* が報告する問題を修正するために、バージ `Internet-Explorer (IE)` ョンの検出に使用する関数を更新しまし `ESLint`た。
-ECIDがoptInに設定され、後で更新され `Internet-Explorer (IE) 11` る場合のパフォーマンスの問 `pre-approval` 題を修正しました。
+* デフォルトで `loadSSL` フラグをオンにしました。ID サービスへのすべての呼び出しは、デフォルトにより、`https` でオンになります。`non-ssl` ページから http で ID サービスを呼び出す場合は、false に設定できます。
+* `ESLint` によって報告される問題を修正するため、`Internet-Explorer (IE)` のバージョン検出に使用する関数を更新しました。ECID に optIn `pre-approval` が提供され、後で承認された場合、`Internet-Explorer (IE) 11` でパフォーマンスの問題が発生するバグを修正しました。
 
 ## バージョン 4.5
 
 * バージョン 4.5 以降では、ECID は `setCustomerIDs` メソッドに送信された空の ID を拒否します。
-* Fixed an issue occurring when opt-in is configured as `doesOptInApply=false` and `isIabContext=true`.
+* オプトインが誤って `doesOptInApply=false` および `isIabContext=true` として設定されている際の問題を修正しました。
