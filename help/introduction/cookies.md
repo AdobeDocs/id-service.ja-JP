@@ -1,37 +1,37 @@
 ---
-description: ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
-keywords: playstation;ID サービス
-seo-description: ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
+description: IDサービスは、組織ID、Experience Cloud AMCV cookieおよびdemdex cookieを使用して、サイト訪問者の一意の永続的な識別子を作成し、保存します。 これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
+keywords: playstation;ID Service
+seo-description: IDサービスは、組織ID、Experience Cloud AMCV cookieおよびdemdex cookieを使用して、サイト訪問者の一意の永続的な識別子を作成し、保存します。 これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
 seo-title: Cookie と Experience Cloud Identity Service
 title: Cookie と Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: ht
-source-git-commit: 7d7ecdf65cca67539b1b63c8811a0bad04c694c3
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # Cookie と Experience Cloud Identity Service {#cookies-and-the-experience-cloud-id-service}
 
-ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
+IDサービスは、組織ID、Experience Cloud AMCV cookieおよびdemdex cookieを使用して、サイト訪問者の一意の永続的な識別子を作成し、保存します。 これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
 
 ## ID サービス Cookie について {#section-f438168beaec409ab8b2cc58bd021e26}
 
-ID サービスは、正常に機能するために AMCV Cookie、AMCVS Cookie および demdex Cookie を使用します。これらの Cookie は ID サービスで使用されるデータが格納されるファイルです。このような ID サービス Cookie は、他のファーストパーティ Cookie やサードパーティ Cookie を制御する場合と同様のルールに従っており、危険なものでも悪意があるものでもなく、ブラウザーの Web サイトやサービスで保存される他のファーストパーティ Cookie やサードパーティ Cookie と変わりません。ID サービスで使用される Cookie について詳しくは、次の各セクションを参照してください。
+IDサービスは、AMCV、AMCVS、demdexの各cookieを利用して正しく機能します。 これらのcookieは、IDサービスが使用するデータを保存するファイルにすぎません。 これらのIDサービスのcookieは、他のファーストパーティcookieやサードパーティcookieを制御するのと同じ規則に従って、Webサイトやブラウザー内のサービスに保存される、他のファーストパーティcookieやサードパーティcookieとは危険でも悪意のあるものでもありません。 ID サービスで使用される Cookie について詳しくは、次の各セクションを参照してください。
 
 ### ID サービス Cookie で実行できること
 
-* サイト訪問者に一意の ID（MID）を設定して保存する。
-* ID サービスがデータを収集して他の Experience Cloud ソリューションと共有できるように、この一意の ID を維持する。
-* 複数のドメインをまたいでユーザーを追跡する。ただし、そのためには、同じ組織が他のドメインも所有している必要があり、それらのドメインに ID サービスコードがデプロイされている必要があります。
+* サイト訪問者(MID)の一意のIDを設定し、保存します。
+* この一意のIDを保持して、IDサービスが他のExperience Cloudソリューションとデータを収集および共有できるようにします。
+* ドメイン間でのユーザーの追跡。 ただし、そのためには、同じ組織が他のドメインも所有している必要があり、それらのドメインに ID サービスコードがデプロイされている必要があります。
 
 ### ID サービス Cookie で実行できないこと
 
-* コンピューターウィルスを格納して転送し、実行する。
-* 電子メールアドレスなどの個人を特定できる情報（PII）にアクセスしたり、そのような情報を保存したりする。
-* コンピューターのハードウェアまたはソフトウェアを制御する。
-* コンピューターを不安定にしたりパフォーマンスの問題を引き起こしたりする。
-* ID サービスを使用していないサイトでユーザーを追跡する。
+* コンピューターウイルスの保存、送信、または実行。
+* 電子メールアドレスなど、個人の特定できる情報(PII)にアクセスしたり、保存したりします。
+* コンピュータハードウェアまたはソフトウェアを制御します。
+* コンピューターを不安定にするか、パフォーマンスの問題を引き起こします。
+* IDサービスを使用しないサイトのユーザーを追跡します。
 
 ## AMCV Cookie {#section-c55af54828dc4cce89f6118655d694c8}
 
@@ -49,7 +49,7 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **内容**
 
-AMCV Cookie には Experience Cloud 訪問者 ID（MID）が含まれます。MID は、`mid|<Experience Cloud ID>` という構文に従うキーと値のペアとして保存されます。
+AMCV cookieには、Experience Cloud訪問者ID(MID)が含まれます。 MID は、`mid|<Experience Cloud ID>` という構文に従うキーと値のペアとして保存されます。
 
 完全形式のキーと値のペアは以下のようになります。
 
@@ -57,13 +57,13 @@ AMCV Cookie には Experience Cloud 訪問者 ID（MID）が含まれます。MI
 mid|20265673158980419722735089753036633573
 ```
 
-この永続的な識別子によって、クロスソリューションのデータ共有が可能になります。
+この永続的な識別子により、クロスソリューションのデータ共有が可能になります。
 
 **ドメイン**
 
-AMCV Cookie は、ブラウザーのファーストパーティドメインに設定されます。つまり、ユーザーが現在訪問しているサイトのドメインに設定されます。その結果、ID サービスコードおよびその他の Experience Cloud コードライブラリが、AMCV Cookie に保存されている MID を読み取ることができます。
+AMCV cookieは、ブラウザーのファーストパーティドメインに設定されます。 つまり、ユーザーが現在訪問しているサイトのドメインに設定されます。 したがって、IDサービスコードおよびその他のExperience Cloudコードライブラリは、AMCV cookieに保存されているMIDを読み取ることができます。
 
-ただし、AMCV Cookie はファーストパーティドメインに設定されているので、異なるドメインでユーザーを追跡して識別するために使用することはできません。その代わりに、ID サービスは組織 ID と demdex ID を利用して、サイトの訪問者が別のドメインに移動したときに正しい MID を返します。
+ただし、AMCV cookieはファーストパーティドメインに設定されているので、異なるドメインでユーザーを追跡および識別するために使用することはできません。 代わりに、IDサービスは組織IDとdemdex IDに依存して、サイト訪問者が別のドメインに移動したときに正しいMIDを返します。
 
 ## AMCVS Cookie {#section-92a9454f1ac645948f9059b9fad928bf}
 
@@ -79,17 +79,17 @@ AMCVS_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **内容**
 
-AMCVS Cookie は、セッションが初期化されたことを示すフラグの役割を果たします。その値は常に「`1`」となり、セッションが終了したときに中断されます。
+AMCVS cookieは、セッションが初期化されたことを示すフラグとして機能します。 その値は常に「`1`」となり、セッションが終了したときに中断されます。
 
 **ドメイン**
 
-AMCVS Cookie は、ブラウザーのファーストパーティドメインに設定されます。つまり、ユーザーが現在訪問しているサイトのドメインに設定されます。
+AMCVS cookieは、ブラウザーのファーストパーティドメインに設定されます。 つまり、ユーザーが現在訪問しているサイトのドメインに設定されます。
 
 ![](assets/AMCVS-cookie.png)
 
 ## demdex Cookie {#section-7ff7d96d6e4141b08a84a75a63d7814c}
 
-以下の表に、demdex Cookie の重要な属性の一覧とその定義を示します。
+次の表に、demdex cookieの重要な属性のリストと定義を示します。
 
 <table id="table_18E3CAF3550E4BB6A199736AACE39202"> 
  <thead> 
@@ -101,26 +101,26 @@ AMCVS Cookie は、ブラウザーのファーストパーティドメインに�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>名前</b> </p> </td> 
-   <td colname="col2"> <p>Cookie 名は「demdex」です。 </p> </td> 
+   <td colname="col2"> <p>cookie名は「demdex」です。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>内容</b> </p> </td> 
-   <td colname="col2"> <p>demdex Cookie には DCS によって生成される demdex ID が含まれています。 </p> </td> 
+   <td colname="col2"> <p>demdex cookieにはDCSによって生成されるdemdex IDが含まれます。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>ドメイン</b> </p> </td> 
-   <td colname="col2"> <p>demdex Cookie は、ブラウザーの demdex.net というサードパーティドメインに設定されます。サードパーティドメインは、ユーザーが現在訪問しているサイトとは異なります。 </p> <p>ファーストパーティの AMCV Cookie とは異なり、demdex Cookie および demdex ID は異なるドメインをまたいで維持されます。demdex ID と組織 ID は、ID サービスが正しい訪問者 ID を使用してサイト訪問者を識別し、正しい訪問者 ID を返すための共通の値です。 </p> </td> 
+   <td colname="col2"> <p>demdex cookieは、ブラウザーのdemdex.netというサードパーティドメインに設定されます。 このドメインは、ユーザーが現在訪問しているサイトとは別のドメインです。 </p> <p>ファーストパーティのAMCV cookieとは異なり、demdex cookieとdemdex IDは異なるドメインで保持されます。 demdex IDと組織IDは、IDサービスが正しい訪問者IDを持つサイト訪問者を返し、識別できる共通の値です。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-関連情報については「[Demdex ドメインの呼び出しについて](https://marketing.adobe.com/resources/help/ja_JP/aam/demdex-calls.html)」を参照してください。
+関連情報については「[Demdex ドメインの呼び出しについて](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/demdex-calls.html)」を参照してください。
 
 ## Experience Cloud ID の生成 {#section-15f69c0bac394b4b9966a23fbc586d17}
 
-Experience Cloud ID（MID）は、組織 ID と demdex ID から計算によって生成されます。これらの ID が変わらない限り、特定のユーザーに関する正しい MID を生成できるかどうかは、単純に計算上の問題になります。同じ組織 ID と demdex ID があれば、いつでも同じ MID 値が得られます。そのため、ID サービスは、同じ組織で管理され、ID サービスコードが設定されている複数のドメインをまたいで訪問者を追跡することができます。
+Experience Cloud ID（MID）は、組織 ID と demdex ID から計算によって生成されます。これらのIDが一定である限り、特定のユーザーに対して適切なMIDを生成することは、単純に計算上の問題です。 同じ組織IDとdemdex IDを持つユーザーは、毎回同じMID値を取得します。 これにより、IDサービスは、管理対象のドメイン間で、IDサービスコードを使用して設定した訪問者を追跡できます。
 
-ページが読み込まれると、ID サービスは MID の作成を開始します。このプロセスでは、`visitorAPI.js` コードライブラリに含まれるコードによって ID サービスへのイベント呼び出しが発行され、その呼び出しを通じて組織 ID が送信されます。ID サービスは MID と demdex ID を作成して、前者を AMCV Cookie に、後者を demdex Cookie にそれぞれ返します。
+ページの読み込み時にMIDを作成するIDサービス開始。 このプロセスでは、`visitorAPI.js` コードライブラリに含まれるコードによって ID サービスへのイベント呼び出しが発行され、その呼び出しを通じて組織 ID が送信されます。ID サービスは MID と demdex ID を作成して、前者を AMCV Cookie に、後者を demdex Cookie にそれぞれ返します。
 
 ## Cookie フラグ
 
@@ -128,7 +128,7 @@ Experience Cloud Cookie のフラグを次の表に示します。
 
 | Cookie（設定者） | httpOnly | セキュア | SameSite |
 |--- |--- |--- |--- |
-| demdex（http 応答） | × | ○ | "None" |
+| demdex（http 応答） | × | ○ | &quot;None&quot; |
 | AMCV（JavaScript） | × | 設定可能 | Unset（既定は Lax） |
 | AMCVS（JavaScript） | × | 設定可能 | Unset（既定は Lax） |
 
