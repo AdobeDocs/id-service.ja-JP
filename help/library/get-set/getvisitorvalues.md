@@ -1,12 +1,12 @@
 ---
 description: これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
-keywords: ID サービス
+keywords: ID Service
 seo-description: これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
 seo-title: getVisitorValues
 title: getVisitorValues
 uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -37,7 +37,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 ## 使用例 1：デフォルトデータセットのリクエスト {#section-36a31683558742a5915db3a391e09f7b}
 
-このコードは標準データセットを返します。リクエストとレスポンスは、以下の例のようになります。
+このコードは、標準データセットを返します。 リクエストと応答は、次の例のようになります。
 
 ```js
 //Call the ID service 
@@ -47,7 +47,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 visitor.getVisitorValues(visitorIdsCallback);
 ```
 
-デフォルトのレスポンスの例はあくまでもデモ用であり、一部の値が短縮されています。
+デフォルトのサンプル応答では、デモ用に一部の値が短縮されています。
 
 ```js
 //Formatted IDs in JSON response 
@@ -62,7 +62,7 @@ visitor.getVisitorValues(visitorIdsCallback);
 
 ## 使用例 2：カスタムデータセットのリクエスト {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-このコードはオプションの配列を使用し、`visitor.FIELDS` 列挙を使用して特定の ID セットを返します。この場合は、訪問者の Experience Cloud ID（MCID）と Analytics ID（MCAID）のみが必要です。リクエストとレスポンスは、以下の例のようになります。
+このコードはオプションの配列を使用し、`visitor.FIELDS` 列挙を使用して特定の ID セットを返します。この場合、訪問者のExperience Cloud ID(MCID)とAnalytics ID(MCAID)のみが必要です。 リクエストと応答は、次の例のようになります。
 
 ```js
 //Call the ID service 
@@ -72,7 +72,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIELDS.MCAID]);
 ```
 
-カスタマイズされたレスポンスの例では、リクエストで指定された ID のみが返されます。
+カスタマイズされたサンプル応答は、要求で指定されたIDのみを返します。
 
 ```js
 //Formatted IDs in JSON response 
@@ -84,7 +84,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
 
 ## レスポンスパラメーターの定義 {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-以下の表に、レスポンスパラメーターとその定義を示します。これらは `visitor.FIELDS` 列挙に含まれるすべての値でもあります。特定の変数に値がない場合、このメソッドは空の文字列を返すことに注意してください。
+以下の表に、レスポンスパラメーターとその定義を示します。これらは `visitor.FIELDS` 列挙に含まれるすべての値でもあります。注意：特定の変数に値がない場合、このメソッドは、空の文字列を返します。
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -100,7 +100,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>データ収集地域 ID。これは、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。 </p> <p><a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>および<a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>データ収集領域ID。 これは、特定のIDサービスデータセンターの地理的な場所を示す数値識別子です。 </p> <p><a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>および<a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint</a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -108,11 +108,11 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>訪問者の Experience Cloud ID です。 </p> <p>詳しくは、<a href="../../introduction/cookies.md" format="dita" scope="local">Cookie と Experience Cloud Identity Service</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>訪問者のExperience Cloud ID。 </p> <p>See <a href="../../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service </a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 
-   <td colname="col2"> <p>訪問者がデータ収集をオプトアウトしたかを示すフラグです。 </p> <p>以下の値が含まれます。 </p> <p> 
+   <td colname="col2"> <p>訪問者がデータ収集をオプトアウトしたかどうかを示すフラグ。 </p> <p>次の値があります。 </p> <p> 
      <ul id="ul_E82431DE12B449F8822499364B363798"> 
       <li id="li_2BAB7C15A38A408E8FC4B85E70B66E46"> <span class="codeph">'isoptedout-true'</span>：訪問者はデータ収集をオプトアウトしています。 </li> 
       <li id="li_BB80AE4CEBC44166BC04428B212FEF51"> <span class="codeph">'isoptedout-false'</span>：訪問者はデータ収集をオプトアウトしていません。 </li> 
