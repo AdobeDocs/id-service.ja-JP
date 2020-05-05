@@ -1,19 +1,19 @@
 ---
-description: これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
-keywords: ID サービス
-seo-description: これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
+description: この実装により、お客様はJavaScriptまたはSDKコードを受け入れたり、使用したりできないデバイスでIDサービスを使用できます。 ゲーム機、スマートTV、その他のインターネット対応アプライアンスなどのデバイスが含まれます。 構文、コードサンプルおよび定義については、この節を参照してください。
+keywords: ID Service
+seo-description: この実装により、お客様はJavaScriptまたはSDKコードを受け入れたり、使用したりできないデバイスでIDサービスを使用できます。 ゲーム機、スマートTV、その他のインターネット対応アプライアンスなどのデバイスが含まれます。 構文、コードサンプルおよび定義については、この節を参照してください。
 seo-title: Experience Cloud Identity Service との直接統合
 title: Experience Cloud Identity Service との直接統合
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
 
 # Experience Cloud Identity Service との直接統合 {#direct-integration-with-the-experience-cloud-id-service}
 
-これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
+この実装により、お客様はJavaScriptまたはSDKコードを受け入れたり、使用したりできないデバイスでIDサービスを使用できます。 ゲーム機、スマートTV、その他のインターネット対応アプライアンスなどのデバイスが含まれます。 構文、コードサンプルおよび定義については、この節を参照してください。
 
 ## 構文{#section-a4754afec5ad40b6be00d6f1011d68bb}
 
@@ -21,19 +21,19 @@ VisitorAPI.js または SDK コードライブラリを使用できないデバ�
 
 ![](assets/directSyntax.png)
 
-この構文の例において、`d_` というプレフィックスは呼び出し内のキーと値のペアがシステムレベルの変数であることを示します。ID サービスには多くの `d_` パラメーターを渡すことができますが、上のコードに示されているキーと値のペアに特に注目してください。他の変数について詳しくは、[DCS API 呼び出しでサポートされる属性](https://marketing.adobe.com/resources/help/en_US/aam/dcs-keys.html)を参照してください。
+この構文の例において、`d_` というプレフィックスは呼び出し内のキーと値のペアがシステムレベルの変数であることを示します。ID サービスには多くの `d_` パラメーターを渡すことができますが、上のコードに示されているキーと値のペアに特に注目してください。For more information about other variables, see [Supported Attributes for DCS API calls](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html).
 
-ID サービスは HTTP 呼び出しと HTTPS 呼び出しをサポートします。セキュアなページからデータを渡す際には HTTPS を使用してください。
+IDサービスは、HTTP呼び出しとHTTPS呼び出しをサポートします。 HTTPSを使用して、セキュリティで保護されたページからデータを渡します。
 
 ## リクエストのサンプル {#section-26302b8851704888b6f8e6b2071bcdb0}
 
-リクエストは以下のサンプルのようになります。長い変数は短縮されています。
+リクエストは、以下に示すサンプルのようになります。 長い変数が短縮されました。
 
 ![](assets/directExample.png)
 
 ## レスポンスのサンプル {#section-89bc103b3e9e4a8b98e74c32897b1200}
 
-ID サービスは、以下のような JSON オブジェクトでデータを返します。レスポンスは異なる場合があります。
+以下に示すように、IDサービスはJSONオブジェクトでデータを返します。 回答が異なる場合があります。
 
 ```js
 {
@@ -58,15 +58,15 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p><span class="keyword">アドビ</span>が管理する従来のドメインです。<a href="https://marketing.adobe.com/resources/help/en_US/aam/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">アドビ</span>が管理する従来のドメインです。<a href="https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 訪問者 IDです。See<a href="../introduction/cookies.md" format="dita" scope="local">Cookie と Experience Cloud Identity Service</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud訪問者ID。 See <a href="../introduction/cookies.md" format="dita" scope="local"> Cookies and the Experience Cloud Identity Service</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 組織 IDです。この ID の探し方については、<a href="../reference/requirements.md" format="dita" scope="local">Experience Cloud Identity Service の要件</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud組織ID。 このIDの検索方法については、Experience Cloud IDサービスの <a href="../reference/requirements.md" format="dita" scope="local"> 要件を参照してください</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cid</span> </p> </td> 
@@ -88,7 +88,7 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>ID サービスは地理的に分散された負荷分散型システムです。呼び出しを処理するデータセンターの地域は ID で識別されます。<a href="https://marketing.adobe.com/resources/help/en_US/aam/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>IDサービスは、地理的に分散され、負荷分散が行われるシステムです。 IDは、呼び出しを処理するデータセンターの領域を識別します。 <a href="https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
@@ -96,18 +96,18 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_blob</span> </p> </td> 
-   <td colname="col2"> <p>暗号化された JavaScript メタデータのチャンクです。サイズ制限により blob は 512 バイト以下に制限されています。 </p> </td> 
+   <td colname="col2"> <p>JavaScriptメタデータの暗号化されたチャンクです。 サイズ制約により、blobは512バイト以下に制限されます。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_ver</span> </p> </td> 
-   <td colname="col2"> <p>必須. API バージョン番号を設定します。この設定は <span class="codeph">d_ver=2</span> のままにしてください。 </p> </td> 
+   <td colname="col2"> <p>必須. APIのバージョン番号を設定します。 この設定は <span class="codeph">d_ver=2</span> のままにしてください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**レスポンスパラメーター**
+**応答パラメーター**
 
-一部のレスポンスパラメーターはリクエストの一部であり、上の節で定義されています。
+一部の応答パラメーターはリクエストの一部であり、上の節で定義されています。
 
 <table id="table_58D0E8876DDC4A81B1F24F845E87EC18"> 
  <thead> 
@@ -119,7 +119,7 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> id_sync_ttl</span> </p> </td> 
-   <td colname="col2"> <p>再同期の間隔（秒数）。デフォルトの間隔は、604,800 秒（7 日間）です。 </p> </td> 
+   <td colname="col2"> <p>再同期間隔（秒単位）。 デフォルトの間隔は604,800秒（7日間）です。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
