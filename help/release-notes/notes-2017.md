@@ -1,12 +1,12 @@
 ---
 description: 2017 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
-keywords: ID サービス
+keywords: ID Service
 seo-description: 2017 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 seo-title: 2017 年リリースノート
 title: 2017 年リリースノート
 uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 2017 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 
-これらの変更点は、[Experience Cloud リリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/)にも記載されています。以前の ID サービスリリースノートについては、[以前のリリースノート](https://marketing.adobe.com/resources/help/en_US/whatsnew/?f=c_legacy_releases.html)またはこのページの下部にあるリンクを参照してください。
+これらの変更は、 [Experience Cloudリリースノートにも記載されています](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)。
 
 >[!NOTE]
 >
@@ -49,9 +49,9 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **問題の修正とその他の変更**
 
-* Chrome でブラウザーの戻るボタンをクリックしたときに ID サービスがエラー状態になる問題を修正しました。
-* ID サービスで、イベント呼び出し応答の地域 ID が変更されたときに ID 同期が再実行されるようになりました。
-* 新たに追加したドキュメント、 [コンテンツセキュリティポリシーおよび Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3) で、ID サービスで使用されるアドビドメインへの呼び出しをホワイトリストに登録する方法を説明しています。
+* Chrome関連のバグを修正しました。この問題により、ブラウザーの「戻る」ボタンをクリックしたときにIDサービスでエラーが発生していました。
+* イベント呼び出しの応答内の地域IDが変更された場合に、IDサービスがID同期を再実行するようになりました。
+* Added new documentation, [Content Security Policies and the Experience Cloud Identity Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3), that explains how to whitelist calls to Adobe domains used by the ID service.
 
 ## バージョン 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
 
@@ -74,7 +74,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **改訂されたドキュメント**
 
-Updated and revised the[FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
+を更新および修正しました。[FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
 
 ## バージョン 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -101,8 +101,8 @@ Updated and revised the[FAQ](/help/faq-intro/faq-intro.md) を更新および改
 
 **問題の修正とその他の変更**
 
-* VisitorAPI.js バージョン 2.2 で、Internet Explorer において ID サービスと Target が連携しなかった問題を修正しました。
-* ID サービスが Destination Publishing iFrame にデータを送信する方法を改善するために、コードを改訂しました。これにより、CPU 負荷を低減できます。
+* VisitorAPI.js v2.2で、IDサービスとターゲットがInternet Explorerで連携しなかったバグを修正しました。
+* IDサービスがターゲットパブリッシングiFrameにデータを送信する方法を改善するために、コードを改訂しました。 これにより、CPU使用率を削減できます。
 
 ## バージョン 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
@@ -118,12 +118,12 @@ Updated and revised the[FAQ](/help/faq-intro/faq-intro.md) を更新および改
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain および whitelistIframeDomains </a> </p> </td> 
-   <td colname="col2"> <p>これらの設定を使用すると、iFrame と親ページに実装されている ID サービスコードのインスタンスが互いに通信できるようになります。これらの設定は、自社が管理しているドメインの iFrame に ID サービスコードを読み込む場合の 2 つの具体的な使用例（親ページまたはドメインを制御できる場合とできない場合）に関わる問題の解決に役立つように設計されています。 </p> </td> 
+   <td colname="col2"> <p>これらの設定により、iFrameに実装されたIDサービスコードの異なるインスタンスと親ページ上の異なるインスタンス間で通信が可能になります。 親ページやドメインを制御している場合と制御していない場合の2つの特定の使用例、および制御するドメインのiFrameにIDサービスコードを読み込んでいる場合の問題を解決できるように設計されています。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 5 月のドキュメント更新 {#section-1d36b91bb7a140ce8a145251ffac9f2f}
+## Documentation Updates for May {#section-1d36b91bb7a140ce8a145251ffac9f2f}
 
 <table id="table_CD031A716A694E8FA89695C9B614BC91"> 
  <thead> 
@@ -188,11 +188,11 @@ Updated and revised the[FAQ](/help/faq-intro/faq-intro.md) を更新および改
 
 **修正点**
 
-ID サービスが原因で、AMCV Cookie に格納された ID を使用する代わりに ID の重複したサーバーコールを送信していた問題を修正しました。（MCID-296）
+IDサービスで、AMCV cookieに保存されたIDを使用する代わりに、IDに対する冗長なサーバーコールが行われる問題を修正しました。 （MCID-296）
 
 **新しいドキュメント**
 
-[様々な Experience Cloud ソリューションおよびサービスによる DNS プリフェッチの使用`Learn how to use DNS prefetch to help reduce page load times.`](https://marketing.adobe.com/resources/help/en_US/mcloud/dns-prefetch.html)
+[様々なExperience CloudソリューションおよびサービスでのDNSプリフェッチの使用](https://docs.adobe.com/content/help/en/core-services/interface/more-resources/dns-prefetch.html)
 
 ## バージョン 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -204,9 +204,9 @@ ID サービスが原因で、AMCV Cookie に格納された ID を使用する�
 
 **修正点および改善点**
 
-* AppMeasurement から Analytics に対してトラッキングコールを実行できない問題を修正しました。（MCID-254、MCID-256、MCID-286）
-* 訪問者が demdex.net ドメインを除外するように設定された広告ブロッカーを利用している場合に ID サービスがトラッキングを停止するまでに時間がかかる問題を修正しました。demdex.net ドメインをブロックしない広告ブロックツールがほとんどなので、これはまれな問題です。（MCID-233）
-* お客様の Web サイトでの ID サービスコードとカスタムスクリプトがコンフリクトすることがある問題を修正しました。この問題が原因で、Internet Explorer 9 で Web ページを読み込めませんでした。（MCID-206）
+* AppMeasurementがAnalyticsに対してトラッキングコールを実行できなかった問題を修正しました。 (MCID-254、MCID-256、MCID-286)
+* 訪問者がdemdex.netドメインを除外するように設定された広告ブロッカーを使用している場合、IDサービスが即座に失敗する問題を修正しました。 ほとんどの広告ブロッキングツールはdemdex.netドメインをブロックしないので、これはまれな問題です。 （MCID-233）
+* 顧客のWebサイトでIDサービスコードとカスタムスクリプトが相互に作用することが原因で発生していたバグを修正しました。 この問題により、Internet Explorer 9でWebページを読み込めませんでした。 （MCID-206）
 
 ## 以前の年度 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
