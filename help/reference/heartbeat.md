@@ -1,12 +1,12 @@
 ---
 description: ビデオハートビートには、Experience Cloud Identity Service が必要です。JavaScript や Flash のビデオを測定する場合は、サイトページやビデオ再生に ID サービスを実装することで、訪問者がビデオを視聴するときに個別にカウントされないようにすることができます。
-keywords: ID サービス
+keywords: ID Service
 seo-description: ビデオハートビートには、Experience Cloud Identity Service が必要です。JavaScript や Flash のビデオを測定する場合は、サイトページやビデオ再生に ID サービスを実装することで、訪問者がビデオを視聴するときに個別にカウントされないようにすることができます。
 seo-title: ビデオハートビートと Experience Cloud Identity Service
 title: ビデオハートビートと Experience Cloud Identity Service
 uuid: 07986a78-23ac-4fd4-ab8f-be9275616a29
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ---
 
@@ -17,5 +17,5 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 >[!MORELIKETHIS]
 >
->* [ビデオハートビートを使用した Analytics でのビデオの測定](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.translate.html)
+>* [Adobe Analytics でのオーディオおよびビデオの測定 ](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html)
 
