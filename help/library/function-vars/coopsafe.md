@@ -5,13 +5,16 @@ seo-description: ID サービスから Adobe Experience Cloud Device Co-op に�
 seo-title: isCoopSafe
 title: isCoopSafe
 uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '604'
+ht-degree: 100%
 
 ---
 
 
-# isCoopSafe{#iscoopsafe}
+# isCoopSafe {#iscoopsafe}
 
 ID サービスから Adobe Experience Cloud Device Co-op にデータを送信するかどうかを指定する任意のブール型設定です。
 
@@ -30,7 +33,7 @@ ID サービスから Adobe Experience Cloud Device Co-op にデータを送信�
 `isCoopSafe` を使用するには、以下の要件を満たす必要があります。
 
 * バージョン 2.4 以降の ID サービスコードを使用する。
-* Experience Cloud Device Co-opに参加 [します](https://docs.adobe.com/content/help/en/device-co-op/using/about/overview.html)。 Co-op への参加を検討している場合は、このドキュメントをよく読み、デバイスグラフの作成にデータがどのように使用されるかに関する懸念に `isCoopSafe` で対処できるかどうかを確認する必要があります。
+* [Experience Cloud Device Co-op](https://docs.adobe.com/content/help/ja-JP/device-co-op/using/about/overview.html) に参加する。Co-op への参加を検討している場合は、このドキュメントをよく読み、デバイスグラフの作成にデータがどのように使用されるかに関する懸念に `isCoopSafe` で対処できるかどうかを確認する必要があります。
 
 * [!DNL Adobe]コンサルタントに依頼して、Device Co-op アカウントにホワイトリストまたはブラックリストのフラグを設定する。これらのフラグをセルフサービスで有効にする方法はありません。
 
@@ -54,8 +57,8 @@ ID サービスから Adobe Experience Cloud Device Co-op にデータを送信�
    <td colname="col1"> <p> <b>サードパーティサイトの DIL</b> </p> </td> 
    <td colname="col2"> <p><span class="codeph">isCoopSafe</span> を ID サービスコードに追加して、以下の場合にサードパーティサイトで使用します。 </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
-      <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">認証済みの訪問者が利用条件に同意しているか、同意していないかを確認できない。 </li> 
-      <li id="li_26D0561BF32B4278B0A6B5082C17FED8">Device Co-opがそのデータをどのように使用してデバイスグラフを作成するかを制御する必要がある。 </li> 
+      <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">認証済み訪問者が使用規約同意書に同意したかどうかを確認できない。 </li> 
+      <li id="li_26D0561BF32B4278B0A6B5082C17FED8">Device Co-op によるデバイスグラフの作成でデータがどのように利用されるかを管理する必要がある。 </li> 
      </ul> </p> </td> 
   </tr> 
  </tbody> 
@@ -73,7 +76,7 @@ Device Co-op で顧客データを利用するか利用しないかをブール�
 
 **コードサンプル**
 
-IDサービスコードがインスタンス化される場合に設定します。
+ID サービスコードをインスタンス化する際には、次のように設定します。
 
 ```js
 var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here",{ 
@@ -95,7 +98,7 @@ POST パラメーターは、ユーザーデータをデバイスグラフに含
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 設定ステータス </th> 
-   <th colname="col2" class="entry"> POSTパラメータ </th> 
+   <th colname="col2" class="entry"> POST パラメーター </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -112,7 +115,7 @@ POST パラメーターは、ユーザーデータをデバイスグラフに含
 
 ## インスタンス化後の API {#section-9281c39c8b6249d7864100b5cbca7dc6}
 
-これらの API を使用すると `isCoopSafe` のステータスを変更できます。これらは、サイトまたはページが更新されない単一のページアプリで、訪問者のインスタンス化後/ログイン後のステータスを変更できるので、必要です。 例えば、ユーザーがサイトまたはアプリに対して認証し、後でDevice Co-opにデータの使用を許可する利用条件ポリシーに同意する場合は、これらのAPIを呼び出す必要があります。
+これらの API を使用すると `isCoopSafe` のステータスを変更できます。これらを使用すると、ページが更新されない場合にサイトやシングルページアプリで訪問者のインスタンス化後またはログイン後のステータスを変更できます。例えば、ユーザーがサイトやアプリで認証をおこない、後で Device Co-op によるデータ利用を許可する使用規約ポリシーに同意した場合に、これらの API を呼び出す必要があります。
 
 <table id="table_BAA96B1F82BE48C3A61A1AF1367BA45C"> 
  <thead> 
@@ -139,5 +142,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
 
