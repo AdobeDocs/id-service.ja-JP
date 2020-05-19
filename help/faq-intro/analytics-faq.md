@@ -5,25 +5,28 @@ seo-description: Analytics での Identity Service 利用の特徴、機能、�
 seo-title: Analytics と Identity Service に関する FAQ
 title: Analytics と Identity Service に関する FAQ
 uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '989'
+ht-degree: 100%
 
 ---
 
 
-# Analytics と Identity Service に関する FAQ{#analytics-and-id-service-faqs}
+# Analytics と Identity Service に関する FAQ {#analytics-and-id-service-faqs}
 
 Analytics での Identity Service 利用の特徴、機能、問題に関するよくある質問です。
 
 ## トラッキングサーバー {#section-9a2ad7842e364c869e1650480d17f8ef}
 
-**自分のトラッキングサーバー情報を見つける方法**
+**トラッキングサーバーの情報を見つけるにはどうすればよいですか。**
 
-適切に設定されたすべてのAppMeasurementコードには、トラッキングサーバー情報が含まれます。
+適切に設定された AppMeasurement コードにはトラッキングサーバーの情報が含まれています。
 
-ただし、場合によっては、Analytics AppMeasurementファイルが別々のファイルに分割されることがあります。 例えば、あるファイルに設定変数を入れ、プラグイン用の2つ目のファイルを使用してから、3つ目のファイルにAppMeasurementコードを入れる場合があります。 これは推奨されません。
+しかし、お客様側で Analytics の AppMeasurement ファイルが複数のファイルに分割されている場合があります。例えば、1 つ目のファイルに設定変数を入れ、2 つ目のファイルをプラグインで使用し、3 つ目のファイルに AppMeasurement コードを入れるお客様がいます。このような方法は推奨されません。
 
-トラッキングサーバー情報が見つからない場合は、Analyticsインスタンスが正しく設定されていない可能性があります。 トラッキングサーバーの情報が見つからない場合は、 [カスタマーケアにお問い合わせください](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html) 。
+トラッキングサーバーの情報が見つからない場合は、Analytics のインスタンスが正しく設定されない可能性があります。トラッキングサーバーの情報が見つからない場合は[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください。
 
 **Identity Service を使用していて、トラッキングサーバーを変更すると、どうなりますか。**
 
@@ -31,31 +34,31 @@ Identity Service で既に識別されているユーザーの場合、何も変
 
 ## 実装と設定 {#section-6028f55d5b514ae6a631c6a79f42fb89}
 
-**ドメイン間で訪問者を追跡するためにCNAMEを設定する必要がありますか。**
+**訪問者をドメイン間で追跡する場合は、CNAME を設定する必要がありますか。**
 
-顧客が他のドメインを訪問する前に識別できるメインエントリサイトがある場合、CNAMEは、サードパーティcookieを受け入れないブラウザー（Safariなど）でクロスドメイントラッキングを有効にできます。
+メインのエントリサイトがあり、顧客が他のドメインを訪問する前にメインのエントリサイトで顧客の識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザー（Safari など）でもクロスドメイントラッキングをおこなうことができます。
 
-サードパーティcookieを受け入れるブラウザーでは、訪問者IDの取得をリクエストする際に、 [demdex.netドメインにcookieが設定されます](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/demdex-calls.html) 。 Identity Service はこの Cookie を使用することで、同じ組織 ID を使用するように設定されているすべてのドメインで、同じ Experience Cloud 訪問者 ID を返すことができます。サードパーティcookieを拒否するブラウザーでは、各ドメインに新しいExperience Cloud訪問者IDが割り当てられます。
+サードパーティ Cookie を受け入れるブラウザーでは、訪問者 ID の取得をリクエストしたときに、[demdex.net ドメイン](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/demdex-calls.html)に Cookie が設定されます。Identity Service はこの Cookie を使用することで、同じ組織 ID を使用するように設定されているすべてのドメインで、同じ Experience Cloud 訪問者 ID を返すことができます。サードパーティ Cookie を受け入れないブラウザーでは、各ドメインに対して新しい Experience Cloud 訪問者 ID が割り当てられます。
 
-CNAMEを設定した場合でも、メインエントリサイトを最初に訪問しないと、サードパーティcookieを受け入れないブラウザーでは、セカンダリサイトとメインサイトで訪問者が異なって識別されます。
+CNAME を設定しても、訪問者がメインのエントリサイトを最初に訪問しないと、サードパーティ Cookie を受け入れないブラウザーでは、セカンダリサイトとメインサイトで訪問者が別々に識別されます。
 
-**AnalyticsリクエストにExperience Cloud ID(MID)パラメーターがないのはなぜですか。**
+**Analytics リクエストに Experience Cloud ID（MID）パラメーターがない理由を教えてください。**
 
 Identity Service が正しく情報を返しているにもかかわらず `MID` パラメーターがない場合は、サポートされているバージョンの AppMeasurement にアップグレードしていることを確認してください。
 
 **サイトで H コードおよび JavaScript 版 AppMeasurement と共に Identity Service を使用できますか。**
 
-はい。両方のファイルが同じVisitorAPI.jsファイルを参照している限り、HコードとJavaScript版AppMeasurementの両方をサイトで使用できます。
+はい。両方のファイルが同じ VisitorAPI.js ファイルを参照していれば、H コードと JavaScript 版 AppMeasurement の両方をサイトで使用できます。
 
-ただし、HコードはvisitorAPI.jsコードバージョン1.6以降ではサポートされません。 visitorAPI.js v 1.6（またはそれ以降）にアップグレードする場合は、Hコードを使用し続けることはできません。
+ただし、H コードは、visitorAPI.js コードバージョン 1.6 以降ではサポートされません。visitorAPI.js v 1.6（またはそれ以降）にアップグレードする場合、H コードを使用し続けることはできません。
 
-**猶予期間とは何ですか。猶予期間の設定方法を教えてください。**
+**猶予期間とはどのようなもので、どのように設定すればよいですか。**
 
-See [The Identity Service Grace Period](../reference/analytics-reference/grace-period.md) and contact [Customer Care](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html).
+[ID サービスの猶予期間](../reference/analytics-reference/grace-period.md)を参照し、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問合せください。
 
 **Identity Service を使用するためにリアルタイムデータ収集（RDC）に移行しなければならない理由を教えてください。**
 
-RDCは、全体的なパフォーマンスのメリットをもたらし、アドビのエッジノートのグローバルネットワークを利用する将来の新機能に備えるために必要です。 See [Analytics Requirements: Regional Data Collection (RDC)](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f).
+RDC は、全体的なパフォーマンスのメリットがあり、アドビのエッジノードのグローバルネットワークを利用する将来の新機能に備えるために必要です。[Analytics の要件：地域別データ収集（RDC）](../reference/requirements.md#section-7d04bb013bc84a25bae3b148bc0ca25f)を参照してください。
 
 ## レポート {#section-123cd55a32e54a45a23beb140becfa8f}
 
@@ -63,22 +66,22 @@ RDCは、全体的なパフォーマンスのメリットをもたらし、ア�
 
 Identity Service の使用時に不整合が生じる一般的な原因を以下に示します。
 
-* 従来のs_vi cookieを引き続き使用。 これは、データ収集の不一致に寄与します。
-* 重複が調査からポップアップに移動したときに訪問者をカウントする。
+* 従来の s_vi Cookie を継続して使用している。これはデータ収集の不整合につながります。
+* 訪問者が調査からポップアップに移動したときに二重にカウントされている。
 
 ## Cookie {#section-b7d5384fbedd47b09e1030211c39a3d1}
 
 **Identity Service が AMCV Cookie を設定できない場合、Analytics ではどのようなことが起こりますか。**
 
-これが新しい訪問者のAnalyticsデータに影響する可能性がある場合は、次の3つのシナリオが考えられます。
+この問題が新規訪問者の Analytics データに影響するシナリオとしては次の 3 つが考えられます。
 
-1. AMCV cookieが正常に設定される前に（30秒のタイムアウト時間内に）、エンドユーザーがページを離れる。
+1. AMCV Cookie が設定される前に（30 秒のタイムアウト期間内に）エンドユーザーがページを離れた。
 
-   訪問者が読み込みが完了する前にページを離れた場合、Analyticsヒットは送信されません。 Analyticsはこのシナリオからデータを受け取らず、データが失われ、ページが早く閉じられたものと見なします。 外部の地域を含むアドビのテストに基づき、このシナリオは平均でトラフィックの1%未満を占めていることがわかりました。 このシナリオは Identity Service が存在しない場合でも発生することに注意してください。これはページ下部に Analytics データ収集コードが含まれていることの結果です。
+   読み込み完了前に訪問者がページを離れた場合、Analytics ヒットは送信されません。この場合、Analytics はデータを受信できず、ページが早期に閉じられたためにデータが失われたものとみなします。さまざまな地方を対象にアドビが実施したテストによると、このシナリオに相当するトラフィックは平均で全トラフィックの 1 ％未満であることがわかっています。このシナリオは Identity Service が存在しない場合でも発生することに注意してください。これはページ下部に Analytics データ収集コードが含まれていることの結果です。
 
 1. 接続が遅すぎるか、ブラウザーの読み込みが遅すぎるために、30 秒のタイムアウト期間内にエンドユーザーに Identity Service または Analytics の ID が割り当てられない。
 
-   この場合は、Identity Service も Analytics ID も設定されず、訪問者にはクライアント側の ID が割り当てられます。これによりAnalyticsデータを取り込むことができますが、Analytics IDが設定された後続のページでは、訪問者のプロファイルは中断されます。 また、クライアント側IDは、オーディエンスマネージャーまたはAnalyticsに保存されている既存の訪問者プロファイルとは一致しません。 また、2つの異なる訪問者が同じレポートスイートに送信される場合、このクライアント側IDは、Analyticsでも2つの異なるドメインとして表示されます。
+   この場合は、Identity Service も Analytics ID も設定されず、訪問者にはクライアント側の ID が割り当てられます。この場合も Analytics データは収集できますが、次のページで Analytics ID が設定されるまで、訪問者のプロファイルは中断されます。また、クライアント側 ID は、Audience Manager または Analytics に格納されている既存の訪問者プロファイルと一致しません。2 つのドメインが同じレポートスイートに送信されている場合、クライアント側 ID は 2 人の別々の訪問者として Analytics に表示されます。
 
 1. 30 秒のタイムアウト期間内に Identity Service の ID がエンドユーザーに割り当てられていないが、標準の Analytics トラッキング ID は割り当てられ、猶予期間は無効になっている。
 
