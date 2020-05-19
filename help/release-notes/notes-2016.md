@@ -5,8 +5,11 @@ seo-description: 2016 年の Experience Cloud Identity Service の機能リリ�
 seo-title: 2016 年リリースノート
 title: 2016 年リリースノート
 uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1162'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 2016 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 
-これらの変更は、 [Experience Cloudリリースノートにも記載されています](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)。
+これらの変更点は、[Experience Cloud リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)にも記載されています。
 
 ## バージョン 1.10 {#section-7d719b3213344a46858835042e0214ed}
 
@@ -32,7 +35,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 * サーバー側環境での ID サービスの実装方法に関する説明を追加しました。
 * クロスドメイン遷移時に Experience Cloud と Analytics の ID を上書きできるブール関数である `Visitor.overwriteCrossDomainMCIDAndAID` が追加されました。[訪問者 ID の上書き](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)を参照してください。
 
-* `TS = UTC` timestamp が `visitor.appendVisitorIDsTo` 関数のプロパティとして追加されました。IDサービスはタイムスタンプを使用して、5分のエージング間隔に基づいて、リダイレクトURLでIDを使用する必要があるかどうかを判断します。 See [Append Visitor ID Function](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce).
+* `TS = UTC` timestamp が `visitor.appendVisitorIDsTo` 関数のプロパティとして追加されました。ID サービスではタイムスタンプを使用して、5 分間隔でリダイレクト URL に ID を使用するかどうかを決定します。[訪問者 ID 追加関数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)を参照してください。
 
 * 地域 ID を返す新しい関数である `Visitor.getLocationHint,` が追加されました。[地域 ID（ロケーションヒント）の取得](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)を参照してください。
 
@@ -47,9 +50,9 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **修正点および改善点**
 
-* オーディエンスマネージャーの一意のユーザーID(AAMUUID)をExperience Cloud IDとしてIDサービスに渡していた問題を修正しました。
-* AMCV cookieの有効期限(TTL)が切れた場合、cookieにExperience Cloud IDが含まれている限り、IDサービスはその情報をサーバーに返します。 この呼び出しの後、IDサービスは非同期的に呼び出してCookieを更新します。 IDサービスはサーバーの応答を待つ必要がないので、パフォーマンスを向上させるのに役立ちます。 既存の AMCV cookie の値を使用して、更新をリクエストできます。
-* IDサービスは、直接ページ上でExperience Cloud ID(MID)をAdobe Media Managerおよび他の内部Adobeドメインと自動的に同期します。 自動同期は、すべての既存アカウントおよび新規アカウントで有効です。これにより、Media Managerの一致率を向上できます。 VisitorAPI.js バージョン 1.8 またはそれ以降で適用されます。[ID 同期と一致率について](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)も参照してください。
+* Audience Manager の一意のユーザー ID（AAMUUID）を Experience Cloud ID として ID サービスに渡していた問題を修正しました。
+* AMCV Cookie の有効期間（TTL：time-to-live）が切れた場合でも、Experience Cloud ID が Cookie に含まれている限り ID サービスはその情報をサーバーに戻します。この呼び出しの後、ID サービスは非同期で呼び出しをおこない、Cookie を更新します。ID サービスはサーバーからの応答を待つ必要がないので、パフォーマンスの改善に役立ちます。既存の AMCV cookie の値を使用して、更新をリクエストできます。
+* ID サービスは直接ページ上で自動的に Experience Cloud ID（MID）を Adobe Media Manager と他の内部アドビドメインに同期します。自動同期は、すべての既存アカウントおよび新規アカウントで有効です。これは、Media Manager の一致率の改善に役立ちます。VisitorAPI.js バージョン 1.8 またはそれ以降で適用されます。[ID 同期と一致率について](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)も参照してください。
 
 **新規および改訂されたドキュメント**
 
@@ -69,7 +72,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **修正点および改善点**
 
-* 関数 `idSyncAttachIframeOnWindowLoad` で設定できるオプションのブール値のフラグとして、`Visitor.getInstance` が追加されました。`idSyncAttachIframeOnWindowLoad= true` の場合、ID サービスは、ウィンドウの読み込み時に ID 同期 iFrame を読み込みます。デフォルトでは、ID サービスは、可能な限り迅速に iFrame を読み込みます。このフラグは、廃止される *に代わるものです。*`idSyncAttachIframeASAP`[Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
+* 関数 `idSyncAttachIframeOnWindowLoad` で設定できるオプションのブール値のフラグとして、`Visitor.getInstance` が追加されました。`idSyncAttachIframeOnWindowLoad= true` の場合、ID サービスは、ウィンドウの読み込み時に ID 同期 iFrame を読み込みます。デフォルトでは、ID サービスは、可能な限り迅速に iFrame を読み込みます。このフラグは、廃止される *に*&#x200B;代わるもの`idSyncAttachIframeASAP`です。[Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
 
 * ドメイン、ネイティブアプリおよびハイブリッドアプリから Web 移行への [!DNL Experience Cloud] ID のトラッキングをサポートする機能が追加されました。[訪問者 ID 追加ヘルパー関数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)を参照してください。
 
@@ -81,7 +84,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **既知の問題**
 
-[!DNL Audience Manager] DIL コードと visitorAPI.js コードを同じページに使用しているお客様は、DIL 変数 `secureDataCollection= false` を設定する必要があります。secureDataCollectionを参照して [ください](https://docs.adobe.com/content/help/en/audience-manager/user-guide/dil-api/dil-overview.html)。
+[!DNL Audience Manager] DIL コードと visitorAPI.js コードを同じページに使用しているお客様は、DIL 変数 `secureDataCollection= false` を設定する必要があります。[secureDataCollection](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/dil-api/dil-overview.html) を参照してください。
 
 ## バージョン 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -100,8 +103,8 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>接触チャネル間のリソース共有(CORS) </p> </td> 
-   <td colname="col2"> <p>CORSを使用すると、ブラウザーは現在のドメイン以外のドメインのリソースをリクエストできます。 Experience Cloud Identity Service は、クライアント側のクロスオリジンリソースリクエストを可能にする CORS 標準規格をサポートしています。CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。 </p> <p>以下を参照してください。 </p> 
+   <td colname="col1"> <p>クロスオリジンリソース共有（CORS） </p> </td> 
+   <td colname="col2"> <p>CORS を利用すると、ブラウザーから、現在のドメイン以外のドメインのリソースをリクエストできます。Experience Cloud Identity Service は、クライアント側のクロスオリジンリソースリクエストを可能にする CORS 標準規格をサポートしています。CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。 </p> <p>以下を参照してください。 </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
      <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">Experience Cloud Identity Service での CORS のサポート</a> </li> 
     </ul> </td> 
@@ -113,8 +116,8 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 * `dpm.demdex.net` への ID 同期呼び出しに `d_fieldgroup` パラメーターが追加されました。この新しいパラメーターは、内部のトラブルシューティングおよびデバッグの目的で使用されます。
 
-* IDサービスのiFrameにタイトル属性が追加されました。 iFrameタイトルを指定すると、スクリーンリーダーがオンラインコンテンツの操作時に支援が必要なユーザーに対して、ページ情報を提供するのに役立ちます。 iFrame のタイトル属性は `Adobe ID Syncing iFrame` に設定されます。
-* 関数 `Visitor.getInstance` で設定できるオプションのフラグとして、`idSyncAttachIframeASAP: true` が追加されました。`true` の場合、ID サービスは ID 同期 iFrame をできるだけ早く読み込みます。これは、ID同期の一致率を向上させるために設計されています。 デフォルトでは、IDサービスはウィンドウの読み込み時にiFrameを読み込みます。 [Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
+* ID サービスが生成する iFrame にタイトル属性が追加されました。iFrame のタイトルを指定すると、目の不自由な利用者向けにスクリーンリーダーで読み上げ可能なページ情報を提供できます。iFrame のタイトル属性は `Adobe ID Syncing iFrame` に設定されます。
+* 関数 `Visitor.getInstance` で設定できるオプションのフラグとして、`idSyncAttachIframeASAP: true` が追加されました。`true` の場合、ID サービスは ID 同期 iFrame をできるだけ早く読み込みます。これにより、ID 同期の一致率が向上します。デフォルトでは、ID サービスはウィンドウの読み込み時に iFrame を読み込みます。[Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
 
 * AppMeasurement で無限ループが発生するコールバック関数の問題を修正しました。
 * `loadTimeout` 間隔のデフォルトが 500 ミリ秒から 30,000 ミリ秒に変更されました。[Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
@@ -156,7 +159,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **修正点**
 
-従来のAnalytics訪問者IDがない場合に、訪問者APIがオーディエンスマネージャーとの余分な再同期呼び出しを強制しなくなりました。
+訪問者 API は、従来の Analytics 訪問者 ID がない場合の、Audience Manager を使用した余分な再同期の呼び出しを強制しなくなりました。
 
 ## バージョン 1.5.x {#section-a62ae48275324058b57edf66ee5a579f}
 
@@ -164,7 +167,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 **ドキュメントの更新**
 
-* [AndroidおよびiOS向けSDK要件](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
+* [Android および iOS 向け SDK 要件](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
 * [Data Workbench と Experience Cloud Identity Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
 * [Experience Cloud Identity Service のテストと検証](../implementation-guides/test-verify.md)
 
@@ -203,7 +206,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 * [Experience Cloud Identity Service の Analytics への実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)：ID サービスを [!DNL Analytics] で使用するための設定方法に関する新しい手順です。
 
-* [Experience Cloud Identity Service 移行の判断ポイント](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257)：テキストをわかりやすく修正しました。単一のドメインを使用する場合は、データ収集CNAMEの管理を終了したい場合に、そのドメインの使用を停止できます。 ただし、CNAMEが機能している場合は変更する必要はありません。
+* [Experience Cloud Identity Service 移行の判断ポイント](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257)：テキストをわかりやすく修正しました。単一のドメインを使用する場合は、データ収集 CNAME の管理を終了したい場合に、その使用を停止できます。ただし、CNAME が機能している場合には、変更する必要はありません。
 
 ## バージョン 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
@@ -221,7 +224,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../reference/authenticated-state.md" format="dita" scope="local"> 顧客 ID と認証状態 </a> </p> </td> 
-   <td colname="col2"> <p>テキストを改訂しました。 顧客IDは、エンコードされていない値でのみ渡す必要があります。 IDをエンコードすると、重複でエンコードされた識別子が作成されます。 </p> </td> 
+   <td colname="col2"> <p>テキストを修正しました。顧客 ID はエンコードされていない値でのみ渡す必要があります。ID のエンコードによって、識別子が二重にエンコードされます。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
