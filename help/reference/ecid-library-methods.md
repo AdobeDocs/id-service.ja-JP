@@ -3,8 +3,11 @@ title: Safari ITP での ECID ライブラリの手法
 seo-title: Safari ITP での ECID ライブラリの手法
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 seo-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '1090'
+ht-degree: 100%
 
 ---
 
@@ -39,7 +42,7 @@ CNAME と共に以前から存在していたのと同じルールおよび注�
 
 Safari 内でのトラッキングのための追加の方法が作成されたら、リファレンスとしてこのページに追加されます。
 
->[!NOTE]*以下のすべてのドキュメントでは、ECID*、*MID*、*MCID* は同じです。
+>[!NOTE] 以下のすべてのドキュメントでは、*ECID*、*MID*、*MCID* は同じです。
 
 ITP および ECID ライブラリの使用に関する取り組みについては、以下を参照してください。
 
@@ -57,7 +60,7 @@ demdex.net に対して ID リクエストがおこなわれ、ECID が取得さ
 
 この新しい `s_ecid` Cookie は、AMCV Cookie と同じオプトアウトステータスに従います。ecid が `s_ecid` Cookie から読み取られる場合、常に demdex が即座に呼び出されて、その ID の最新のオプトアウトステータスが取得され、AMCV Cookie に格納されます。
 
-さらに、消費者がこの[方法](https://docs.adobe.com/content/help/en/analytics/implementation/js/opt-out.html)を使用して Analytics トラッキングをオプトアウトした場合、この `s_ecid` Cookie は削除されます。
+さらに、消費者がこの[方法](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/js/opt-out.html)を使用して Analytics トラッキングをオプトアウトした場合、この `s_ecid` Cookie は削除されます。
 
 trackingServer または trackingServerSecure を使用してライブラリを初期化する際に、トラッキングサーバー名が Visitor JS ライブラリに提供される必要があります。これは、Analytics 設定の trackingServer 設定に一致する必要があります。
 
@@ -77,7 +80,7 @@ trackingServer または trackingServerSecure を使用してライブラリを�
 
 * アドビに訪問者の ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から ECID が抽出されます。
 
-   このリクエストにはサードパーティ Cookie が含まれますが、このケースではサードパーティ Cookie を利用できません。
+   このリクエストにはサードパーティ Cookie が含まれますが、この場合、サードパーティ Cookie を利用できません。
 
 * 宛先ページの ID サービスコードは、ECID で渡された値を使用して訪問者を追跡します。
 
