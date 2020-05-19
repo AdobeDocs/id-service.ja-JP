@@ -1,19 +1,22 @@
 ---
-description: この関数を使用すると、ブラウザーがサードパーティcookieをブロックした場合に、複数のドメインで訪問者のExperience Cloud IDを共有できます。 この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
+description: この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の Experience Cloud ID を共有できます。この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 keywords: ID Service
-seo-description: この関数を使用すると、ブラウザーがサードパーティcookieをブロックした場合に、複数のドメインで訪問者のExperience Cloud IDを共有できます。 この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
+seo-description: この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の Experience Cloud ID を共有できます。この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 seo-title: appendVisitorIDsTo（クロスドメイントラッキング）
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '446'
+ht-degree: 100%
 
 ---
 
 
 # appendVisitorIDsTo（クロスドメイントラッキング）{#appendvisitoridsto-cross-domain-tracking}
 
-この関数を使用すると、ブラウザーがサードパーティcookieをブロックした場合に、複数のドメインで訪問者のExperience Cloud IDを共有できます。 この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
+この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の Experience Cloud ID を共有できます。この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 
 内容：
 
@@ -25,16 +28,16 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ## ブラウザーでサードパーティ Cookie がブロックされている場合の複数のドメインをまたいだ訪問者の追跡 {#section-7251d88befd440b4b79520e33c5aa44a}
 
-ID サービスは、ユーザーがサイトを訪問したときにファーストパーティ Cookie とサードパーティ Cookie をブラウザーに書き込みます（[Cookie と Experience Cloud Identity Service ](../../introduction/cookies.md)を参照）。ファーストパーティcookieには、その訪問者の一意のIDであるMIDが含まれます。 サードパーティcookieには、IDサービスがMIDを生成する際に使用する別のIDが含まれます。 ブラウザーがこのサードパーティCookieをブロックした場合、IDサービスは次の操作を行えません。
+ID サービスは、ユーザーがサイトを訪問したときにファーストパーティ Cookie とサードパーティ Cookie をブラウザーに書き込みます（[Cookie と Experience Cloud Identity Service ](../../introduction/cookies.md)を参照）。ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。サードパーティ Cookie には、ID サービスで MID を生成するために使用される別の ID が含まれます。ブラウザーでサードパーティ Cookie がブロックされている場合、ID サービスは以下のことができなくなります。
 
-* サイト訪問者が別のドメインに移動する際に、そのサイトドメインの一意のIDを再生成してください。
-* 組織が所有する異なるドメイン間で訪問者を追跡します。
+* サイト訪問者が別のドメインに移動したときに、その訪問者の一意の ID を再生成する。
+* 同じ組織が所有する異なるドメインにわたって訪問者を追跡する。
 
-この問題を解決するには、` Visitor.appendVisitorIDsTo( *`url`*)` を実装します。このプロパティを使用すると、ブラウザーがサードパーティcookieをブロックしている場合でも、IDサービスは複数のドメインにわたってサイト訪問者を追跡できます。 次のように機能します。
+この問題を解決するには、` Visitor.appendVisitorIDsTo( *`url`*)` を実装します。これにより、ブラウザーがサードパーティ Cookie をブロックしても、ID サービスが複数ドメインにわたってサイト訪問者を適切に追跡できます。このプロパティは以下のように動作します。
 
 * 訪問者が同じ組織の他のドメインを参照すると、` Visitor.appendVisitorIDsTo( *`url`*)` によって、元のドメインから宛先ドメインへの URL リダイレクトのクエリパラメーターとして MID が追加されます。
-* 宛先訪問者のIDのリクエストをアドビに送信する代わりに、宛先ドメインのIDサービスコードがURLからMIDを抽出します。 このリクエストにはサードパーティ Cookie が含まれますが、この場合、サードパーティ Cookie を利用できません。
-* 宛先ページのIDサービスコードは、渡されたMIDを使用して訪問者を追跡します。
+* アドビに訪問者の ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から MID が抽出されます。このリクエストにはサードパーティ Cookie が含まれますが、この場合、サードパーティ Cookie を利用できません。
+* 宛先ページの ID サービスコードは、MID で渡された値を使用して訪問者を追跡します。
 
 詳しくは、コードサンプルを参照してください。
 
@@ -78,8 +81,8 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://docs.adobe.com/content/help/en/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Android ID サービスメソッド </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://docs.adobe.com/content/help/en/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> iOS ID サービスメソッド </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://docs.adobe.com/content/help/ja-JP/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Android ID サービスメソッド </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> iOS ID サービスメソッド </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
