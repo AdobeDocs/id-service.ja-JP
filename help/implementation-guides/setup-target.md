@@ -1,19 +1,22 @@
 ---
-description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Target のお客様向けです。ただし、IDサービスの実装にはDTMを使用することを強くお勧めします。 DTMは、実装ワークフローを合理化し、適切なコード配置と順序付けを自動的に確認します。
+description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Target のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 keywords: ID Service
-seo-description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Target のお客様向けです。ただし、IDサービスの実装にはDTMを使用することを強くお勧めします。 DTMは、実装ワークフローを合理化し、適切なコード配置と順序付けを自動的に確認します。
+seo-description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Target のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 seo-title: Experience Cloud Identity Service の Target への実装
 title: Experience Cloud Identity Service の Target への実装
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '459'
+ht-degree: 100%
 
 ---
 
 
-# Experience Cloud Identity Service の Target への実装{#implement-the-experience-cloud-id-service-for-target}
+# Experience Cloud Identity Service の Target への実装 {#implement-the-experience-cloud-id-service-for-target}
 
-これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Target のお客様向けです。ただし、IDサービスの実装にはDTMを使用することを強くお勧めします。 DTMは、実装ワークフローを合理化し、適切なコード配置と順序付けを自動的に確認します。
+これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Target のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 
 >[!IMPORTANT]
 >
@@ -25,17 +28,17 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 ## 手順 1：ID サービスコードの入手 {#section-b32ba0548aa546a79dd38be59832a53e}
 
-[!UICONTROL ID サービス]では、`VisitorAPI.js` コードライブラリが必要です。このコードを取得するには、 [カスタマーケアにお問い合わせください](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html) 。
+[!UICONTROL ID サービス]では、`VisitorAPI.js` コードライブラリが必要です。このコードを入手するには、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください。
 
 ## 手順 2：ID サービスコードへの Visitor.getInstance 関数の追加 {#section-287ef2958e9f43858fe9d630ae519e22}
 
-**パート1: 以下の訪問者.getInstance関数をコピーします**
+**パート 1：以下の Visitor.getInstance 関数をコピーします**
 
 ```js
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE"); 
 ```
 
-**パート2: 関数追加コードをVisitorAPI.jsファイルに**
+**パート 2：VisitorAPI.js ファイルに関数コードを追加します**
 
 `Visitor.getInstance` 関数をファイル末尾のコードブロックの後に配置します。編集後のファイルは以下のようになります。
 
@@ -54,7 +57,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 ## 手順 3：Visitor.getInstance への Experience Cloud 組織 ID の追加 {#section-522b1877be9243c39b222859b821f0ce}
 
-`Visitor.getInstance` 関数の `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` を [!DNL Experience Cloud] 組織 ID に置き換えます。組織 ID がわからない場合、[!DNL Experience Cloud] 管理ページで確認できます。「 [管理 — コアサービス](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/admin-getting-started.html)」も参照してください。 編集後の関数は、以下のサンプルのようになります。
+`Visitor.getInstance` 関数の `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` を [!DNL Experience Cloud] 組織 ID に置き換えます。組織 ID がわからない場合、[!DNL Experience Cloud] 管理ページで確認できます。[管理 - コアサービス](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/admin-getting-started.html)も参照してください。編集後の関数は、以下のサンプルのようになります。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg");`
 
@@ -72,9 +75,9 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 
 **テストと検証**
 
-IDサービスの導入状況をテストするには：
+ID サービスの実装状況をテストするには：
 
-* ページがホストされているドメイン内のAMCV cookieを確認します。
+* ページがホストされているドメインの AMCV Cookie を確認します。
 * `mboxMCGVID` が [!DNL Target] のリクエストに存在し、[!DNL Experience Cloud] ID（MID）が含まれていることを確認します。
 
 AMCV Cookie と MID について詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
