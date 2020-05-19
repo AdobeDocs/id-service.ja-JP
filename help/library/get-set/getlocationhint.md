@@ -1,27 +1,30 @@
 ---
-description: Experience Cloud Identity Service 地域 ID を返します。地域ID（またはロケーションヒント）は、特定のIDサービスデータセンターの地理的な場所を示す数値識別子です。 オーディエンスマネージャーに対するサーバー側API呼び出しを行うには、地域IDが必要です。
+description: Experience Cloud Identity Service 地域 ID を返します。地域 ID（またはロケーションヒント）は、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
 keywords: ID Service
-seo-description: Experience Cloud Identity Service 地域 ID を返します。地域ID（またはロケーションヒント）は、特定のIDサービスデータセンターの地理的な場所を示す数値識別子です。 オーディエンスマネージャーに対するサーバー側API呼び出しを行うには、地域IDが必要です。
+seo-description: Experience Cloud Identity Service 地域 ID を返します。地域 ID（またはロケーションヒント）は、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
 seo-title: getLocationHint
 title: getLocationHint
 uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '230'
+ht-degree: 100%
 
 ---
 
 
-# getLocationHint{#getlocationhint}
+# getLocationHint {#getlocationhint}
 
-Experience Cloud Identity Service 地域 ID を返します。地域ID（またはロケーションヒント）は、特定のIDサービスデータセンターの地理的な場所を示す数値識別子です。 オーディエンスマネージャーに対するサーバー側API呼び出しを行うには、地域IDが必要です。
+Experience Cloud Identity Service 地域 ID を返します。地域 ID（またはロケーションヒント）は、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
 
 **構文：** ` var *`変数名`* = visitor.getLocationHint()`
 
-For a list of region IDs and corresponding locations, see [DCS Region IDs, Locations, and Host Names](https://docs.adobe.com/content/help/en/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html).
+地域 ID と対応する場所の一覧は、[DCS 地域 ID、場所、ホスト名](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html)を参照してください。
 
 **コードサンプル**
 
-ロケーションヒント関数は、AMCV cookieから地域IDを読み取ります。 地域IDが既にAMCV cookieに設定されている場合は、即座にコールバックが発生します。 地域IDが設定されていない場合、関数は、地域IDをコールバックに渡す前に、サーバーからの応答を待ちます。 コードは、以下の例のようになります。
+ロケーションヒント関数は、AMCV Cookie から地域 ID を読み取ります。地域 ID が既に AMCV Cookie に設定されている場合、即座にコールバックが発生します。地域 ID が設定されていない場合、関数は、地域 ID がコールバックに渡されるまで、サーバーからの応答を待ちます。コードは、以下の例のようになります。
 
 ```js
 //callback function 
