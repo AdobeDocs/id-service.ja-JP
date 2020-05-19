@@ -1,19 +1,22 @@
 ---
-description: getInstanceは、指定されたExperience Cloud組織IDの訪問者IDオブジェクトを返します。 これは、s.訪問者を使用してAppMeasurementに提供される訪問者IDオブジェクトを初期化するために必要です。
+description: getInstance は、指定した Experience Cloud 組織 ID に対応する訪問者 ID オブジェクトを返します。このメソッドは、s.visitor を使用して AppMeasurement に提供される訪問者 ID オブジェクトを初期化するために必要です。
 keywords: ID Service
-seo-description: getInstanceは、指定されたExperience Cloud組織IDの訪問者IDオブジェクトを返します。 これは、s.訪問者を使用してAppMeasurementに提供される訪問者IDオブジェクトを初期化するために必要です。
+seo-description: getInstance は、指定した Experience Cloud 組織 ID に対応する訪問者 ID オブジェクトを返します。このメソッドは、s.visitor を使用して AppMeasurement に提供される訪問者 ID オブジェクトを初期化するために必要です。
 seo-title: getInstance
 title: getInstance
 uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '254'
+ht-degree: 100%
 
 ---
 
 
-# getInstance{#getinstance}
+# getInstance {#getinstance}
 
-getInstanceは、指定されたExperience Cloud組織IDの訪問者IDオブジェクトを返します。 これは、s.訪問者を使用してAppMeasurementに提供される訪問者IDオブジェクトを初期化するために必要です。
+getInstance は、指定した Experience Cloud 組織 ID に対応する訪問者 ID オブジェクトを返します。このメソッドは、s.visitor を使用して AppMeasurement に提供される訪問者 ID オブジェクトを初期化するために必要です。
 
 **構文**
 
@@ -33,7 +36,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!CAUTION]
 >
->訪問者関数を `var visitor = new Visitor` でインスタンス化&#x200B;*しないで*&#x200B;ください。ここに記載されている正しい関数呼び出しを使用してください。Applies to [!UICONTROL VisitorAPI.js] code library v3.0 or higher.
+>訪問者関数を `var visitor = new Visitor` でインスタンス化&#x200B;*しないで*&#x200B;ください。ここに記載されている正しい関数呼び出しを使用してください。この警告は [!UICONTROL VisitorAPI.js] コードライブラリ v3.0 以降に適用されます。
 
 **ActionScript／Flash**
 
@@ -51,7 +54,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-`getInstance` により既存のインスタンスが見つからない場合は、新しいインスタンスが作成されて返されます。これは、の [ 関数と似 `s_gi()` てい ](https://docs.adobe.com/content/help/en/analytics/implementation/vars/functions/s-gi.html)[!DNL AppMeasurement]ます。
+`getInstance` により既存のインスタンスが見つからない場合は、新しいインスタンスが作成されて返されます。この動作は、[!DNL AppMeasurement] の [`s_gi()` 関数](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/vars/functions/s-gi.html)と同様です。
 
 **一般的な使用例**
 
