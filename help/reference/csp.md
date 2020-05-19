@@ -1,47 +1,50 @@
 ---
-description: コンテンツセキュリティポリシー(CSP)は、Webページに読み込まれるリソースの種類をブラウザーで制御できるHTTPヘッダーおよびセキュリティ機能です。 このセクションは、IDサービスを使用し、ホワイトリストを使用して信頼されたドメインのリソースを受け入れる厳密なCSPがある場合に確認します。 ここに示すAdobeドメインをCSPホワイトリストに追加する必要があります。
+description: コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
 keywords: ID Service
-seo-description: コンテンツセキュリティポリシー(CSP)は、Webページに読み込まれるリソースの種類をブラウザーで制御できるHTTPヘッダーおよびセキュリティ機能です。 このセクションは、IDサービスを使用し、ホワイトリストを使用して信頼されたドメインのリソースを受け入れる厳密なCSPがある場合に確認します。 ここに示すAdobeドメインをCSPホワイトリストに追加する必要があります。
+seo-description: コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
 seo-title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '539'
+ht-degree: 100%
 
 ---
 
 
 # コンテンツセキュリティポリシーおよび Experience Cloud Identity Service {#content-security-policies-and-the-experience-cloud-id-service}
 
-コンテンツセキュリティポリシー(CSP)は、Webページに読み込まれるリソースの種類をブラウザーで制御できるHTTPヘッダーおよびセキュリティ機能です。 このセクションは、IDサービスを使用し、ホワイトリストを使用して信頼されたドメインのリソースを受け入れる厳密なCSPがある場合に確認します。 ここに示すAdobeドメインをCSPホワイトリストに追加する必要があります。
+コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
 
-## CSPの確認 {#section-5fde5c00a678455c914b8307a8caab82}
+## CSP レビュー {#section-5fde5c00a678455c914b8307a8caab82}
 
-CSP は HTTP ヘッダー `Content-Security-Policy` を使用してブラウザーが許可したりページに読み込んだりするリソースのタイプを制御します。CSPを適用すると、次の防止に役立ちます。
+CSP は HTTP ヘッダー `Content-Security-Policy` を使用してブラウザーが許可したりページに読み込んだりするリソースのタイプを制御します。CSP を適用すると以下の問題を防ぐことができます。
 
-* ソースが不明またはホワイトリストに含まれていない場合に、JavaScriptファイルが読み込まれない。
+* ソースが不明な JavaScript ファイルや、ホワイトリストに含まれていない JavaScript ファイルの読み込み。
 * クロスサイトスクリプティング（XXS）攻撃。
-* データ挿入攻撃。
-* サイトデファクセメント攻撃。
+* データインジェクション攻撃。
+* サイト改ざん攻撃。
 * マルウェアの配布。
 
-CSPの使用は一般的でよく理解されています。 CSPの詳細を説明するのは、このドキュメントの目的ではありません（詳細については、以下の関連情報のリンクを参照してください）。 重要なのは、CSPを使用し、セキュリティポリシーが厳しい場合、CSPに追加する必要のあるAdobeドメイン名を理解することです。 これらのドメインを追加すると、サイトにアクセスする訪問者ブラウザーから、使用するExperience Cloudリソースに対する重要な呼び出しを行うことができます。
+CSP の使用は一般的であり、よく理解されています。このドキュメントの目的は CSP について詳しく説明することではありません（詳しくは、後にある関連情報リンクを参照してください）。重要なのは、厳格なセキュリティポリシーを適用する必要がある場合に、CSP に追加する必要があるアドビのドメイン名を理解することです。これらのドメインを追加することで、お客様のサイトにアクセスした訪問者のブラウザーが、使用する Experience Cloud リソースに対する重要な呼び出しをおこなえるようになります。
 
 ## ホワイトリストに追加する必要がある Experience Cloud ドメイン {#section-30693e9a96834edfbf04de9e698cf2aa}
 
-使用する各リストExperience Cloudソリュ追加ーションまたはサービスのCSPへのドメイン名またはURLです。
+現在使用している Experience Cloud ソリューションまたはサービスごとに、これらのドメイン名または URL を CSP に追加してください。
 
 <table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Experience Cloudソリューションまたはサービス </th> 
+   <th colname="col1" class="entry"> Experience Cloud ソリューションまたはサービス </th> 
    <th colname="col2" class="entry"> 説明 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>AppMeasurement</b> </p> </td> 
-   <td colname="col2"> <p>CSPを変更して次を含めます： </p> <p> 
+   <td colname="col2"> <p>CSP に以下を追加します。 </p> <p> 
      <ul id="ul_7522AE83A03A4115A84DF5B32D6DD79B"> 
       <li id="li_AB1EC161FB154BEDA1BEFE76C8A38A90"> <span class="codeph"> *.2o7.net</span> </li> 
       <li id="li_4B12A283716746949201528CD6AF529E"> <span class="codeph"> *.omtrdc.net</span> </li> 
