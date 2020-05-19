@@ -5,8 +5,11 @@ seo-description: 一部の実装では、追加の Analytics イベント（購�
 seo-title: JavaScript を利用したサーバー側実装
 title: JavaScript を利用したサーバー側実装
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '211'
+ht-degree: 100%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 
 一部の実装では、追加の Analytics イベント（購入など）をサーバーから送信できるようにするために、訪問者 ID を JavaScript からサーバーに渡します。
 
-IDサービスAPIには、サーバーに渡すID値を取得するた [めのメソッドgetMarketingCloudVisitorID](../../library/get-set/getmcvid.md) 、 [getAnalyticsVisitorID](../../library/get-set/getanalyticsvisitorid.md)が用意されています。
+ID サービス API には、サーバーに渡す ID の値を取得するメソッド [getMarketingCloudVisitorID](../../library/get-set/getmcvid.md) および [getAnalyticsVisitorID](../../library/get-set/getanalyticsvisitorid.md) が用意されています。
 
 Experience Cloud 訪問者 ID と Analytics 訪問者 ID の両方を確認して、（存在する場合は）両方の ID を送信し、既存の Analytics 訪問者プロファイルに関連付けられているすべてのデータが送信されるようにします。
 
@@ -23,13 +26,13 @@ Experience Cloud 訪問者 ID と Analytics 訪問者 ID の両方を確認し�
 >
 >Java 版 AppMeasurement は、現在 Experience Cloud Identity Service をサポートしていません。
 
-## Data Insertion API {#section-955ce7664a4646d38b3005cb2df40baf}
+## データ挿入 API {#section-955ce7664a4646d38b3005cb2df40baf}
 
 `<visitorID>` 要素に Analytics 訪問者 ID を含めます（設定されている場合）。
 
 `<marketingCloudVisitorID>` 要素に Experience Cloud 訪問者 ID を含めます。
 
-「 [サポートされるXMLタグ](https://www.adobe.io)」を参照してください。
+[サポートされる XML タグ](https://www.adobe.io)を参照してください。
 
 ## Java 版 AppMeasurement {#section-d664b94934924d048300d9c2b6560085}
 
