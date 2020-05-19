@@ -5,19 +5,22 @@ seo-description: Experience Cloud Identity Service が実装される前に s_vi
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
 uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '338'
+ht-degree: 100%
 
 ---
 
 
-# getAnalyticsVisitorID{#getanalyticsvisitorid}
+# getAnalyticsVisitorID {#getanalyticsvisitorid}
 
 Experience Cloud Identity Service が実装される前に s_vi Cookie に保存されていた従来の Analytics ID を返します（存在する場合）。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
 
 **構文** `var analyticsID = visitor.getAnalyticsVisitorID()`
 
-通常、この関数は、訪問者IDを読み取る必要があるカスタムソリューションで使用されます。 標準の実装では使用されません。 `getAnalyticsVisitorID` は、[!DNL Analytics] ID を読み取ってシステムまたはアプリケーションに送信するコールバック関数とも連携します。
+この関数は、通常、訪問者 ID を読み取る必要があるカスタムソリューションで使用されます。標準の実装では使用されません。`getAnalyticsVisitorID` は、[!DNL Analytics] ID を読み取ってシステムまたはアプリケーションに送信するコールバック関数とも連携します。
 
 **サンプルコード**
 
@@ -44,7 +47,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 `aid` パラメーターは次の場合に、クエリ文字列内で使用されます。
 
 * [!DNL Experience Cloud] ID サービスが正しくデプロイされている場合。
-* サイトに訪問しているユーザーの [!DNL Analytics]s_vi Cookie[ に既に ](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) ID が保存されている場合。
+* サイトに訪問しているユーザーの [!DNL Analytics]s_vi Cookie[ に既に ](https://docs.adobe.com/content/help/ja-JP/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) ID が保存されている場合。
 
 **例 2**
 
@@ -52,5 +55,5 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!MORELIKETHIS]
 >
->* [Analytics の cookie](https://docs.adobe.com/content/help/en/core-services/interface/ec-cookies/cookies-privacy.html)
+>* [Analytics の cookie](https://docs.adobe.com/content/help/ja-JP/core-services/interface/ec-cookies/cookies-privacy.html)
 
