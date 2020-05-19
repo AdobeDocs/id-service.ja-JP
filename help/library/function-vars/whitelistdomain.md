@@ -1,19 +1,22 @@
 ---
-description: これらの設定により、iFrameに実装されたIDサービスコードの異なるインスタンスと親ページ上の異なるインスタンス間で通信が可能になります。 親ページやドメインを制御している場合と制御していない場合の2つの特定の使用例、および制御するドメインのiFrameにIDサービスコードを読み込んでいる場合の問題を解決できるように設計されています。 これらは、VisitorAPI.jsコードバージョン2.2以降で使用できます。
+description: これらの設定を使用すると、iFrame と親ページに実装されている ID サービスコードのインスタンスが互いに通信できるようになります。これらの設定は、自社が管理しているドメインの iFrame に ID サービスコードを読み込む場合の 2 つの具体的な使用例（親ページまたはドメインを制御できる場合とできない場合）に関わる問題の解決に役立つように設計されています。これらは、VisitorAPI.js コードバージョン 2.2 以降で利用できます。
 keywords: ID Service
-seo-description: これらの設定により、iFrameに実装されたIDサービスコードの異なるインスタンスと親ページ上の異なるインスタンス間で通信が可能になります。 親ページやドメインを制御している場合と制御していない場合の2つの特定の使用例、および制御するドメインのiFrameにIDサービスコードを読み込んでいる場合の問題を解決できるように設計されています。 これらは、VisitorAPI.jsコードバージョン2.2以降で使用できます。
+seo-description: これらの設定を使用すると、iFrame と親ページに実装されている ID サービスコードのインスタンスが互いに通信できるようになります。これらの設定は、自社が管理しているドメインの iFrame に ID サービスコードを読み込む場合の 2 つの具体的な使用例（親ページまたはドメインを制御できる場合とできない場合）に関わる問題の解決に役立つように設計されています。これらは、VisitorAPI.js コードバージョン 2.2 以降で利用できます。
 seo-title: whitelistParentDomain および whitelistIframeDomains
 title: whitelistParentDomain および whitelistIframeDomains
 uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '932'
+ht-degree: 100%
 
 ---
 
 
-# whitelistParentDomain および whitelistIframeDomains{#whitelistparentdomain-and-whitelistiframedomains}
+# whitelistParentDomain および whitelistIframeDomains {#whitelistparentdomain-and-whitelistiframedomains}
 
-これらの設定により、iFrameに実装されたIDサービスコードの異なるインスタンスと親ページ上の異なるインスタンス間で通信が可能になります。 親ページやドメインを制御している場合と制御していない場合の2つの特定の使用例、および制御するドメインのiFrameにIDサービスコードを読み込んでいる場合の問題を解決できるように設計されています。 これらは、VisitorAPI.jsコードバージョン2.2以降で使用できます。
+これらの設定を使用すると、iFrame と親ページに実装されている ID サービスコードのインスタンスが互いに通信できるようになります。これらの設定は、自社が管理しているドメインの iFrame に ID サービスコードを読み込む場合の 2 つの具体的な使用例（親ページまたはドメインを制御できる場合とできない場合）に関わる問題の解決に役立つように設計されています。これらは、VisitorAPI.js コードバージョン 2.2 以降で利用できます。
 
 内容：
 
@@ -25,9 +28,9 @@ source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
  <li> <a href="../../library/function-vars/whitelistdomain.md#section-30c6a9f4dcdc4265a1149260b97cc057" format="dita" scope="local"> サポートされる訪問者 API メソッド </a> </li> 
 </ul>
 
-## 構文{#section-f645198bbaba4fba8961acb6e88d1470}
+## 構文 {#section-f645198bbaba4fba8961acb6e88d1470}
 
-このコードを使用する場合は、両方の設定要素が必要です。
+このコードを使用する際には、どちらの設定要素も必要です。
 
 <table id="table_237108A4D40F4AAC981D0060BA68F881"> 
  <thead> 
@@ -66,16 +69,16 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 ## 使用例 {#section-fc2eeb93546b406fae3b102dbcd11de7}
 
-これらの設定は、ブラウザーがサードパーティcookieをブロックする場合、および次のいずれかの条件が適用される場合、IDサービスcookieを設定し、訪問者IDを割り当てる問題の解決に役立ちます。
+これらの設定は、ブラウザーがサードパーティ Cookie をブロックし、以下のいずれかの条件に該当する場合に発生する、ID サービス Cookie 設定と訪問者 ID 割り当ての問題の解決に役立ちます。
 
-* 親ページ/ドメインを制御していない。
-* IDサービスコードは親ページにインストールされていませんが、iFrameに実装されています。
+* 親ページまたはドメインを自社で管理していない。
+* ID サービスコードが親ページにインストールされていないが、iFrame には実装されている。
 
 >[!TIP]
 >
->また、 [ビデオハートビートを含むiFrameでビデオを提供する場合は、これらの設定を実装する必要がある場合があります](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html)。 ビデオハートビートが正しく機能するには、IDサービスID(MID)が必要です。
+>iFrame で[ビデオハートビート](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html)を使用してビデオを提供している場合も、これらの設定を実装することが推奨されます。ビデオハートビートを正しく動作させるには ID サービスの ID（MID）が必要です。
 
-**使用例1: このブラウザーはサードパーティCookieをブロックし、IDサービスはiFrameと親ページに実装されます**
+**使用例 1：ブラウザーがサードパーティ Cookie をブロックし、ID サービスが iFrame および親ページに実装されている**
 
 <table id="table_B479AA96DBE64685A253A6DF98D81B31"> 
  <thead> 
@@ -87,30 +90,30 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>条件</b> </p> </td> 
-   <td colname="col2"> <p>この使用例には、次の条件が含まれます。 </p> <p> 
+   <td colname="col2"> <p>この使用例には以下の条件が含まれます。 </p> <p> 
      <ul id="ul_DC748846585745B0AB74398D82BDA53A"> 
-      <li id="li_6E04CF0B6A204B4D8856656B0C9EF2A5">会社Aは、ホームページにIDサービスを実装します。 </li> 
-      <li id="li_B53AE0F0C69844E7B6C4D3464C57883B">会社Aは、iFrameでIDサービスをホームページに実装しています。 </li> 
-      <li id="li_07E0A6D7BEB140E4B9FB6C7B9629B860">会社Aは親ページとiFrameを所有し、両方にIDサービスを実装しています。 </li> 
-      <li id="li_76967BD69DDB40A8A9C915DADC58AC62">顧客が、サードパーティcookieをブロックするブラウザーに親ページを読み込みます。 </li> 
+      <li id="li_6E04CF0B6A204B4D8856656B0C9EF2A5">A 社が自社のホームページに ID サービスを実装する。 </li> 
+      <li id="li_B53AE0F0C69844E7B6C4D3464C57883B">A 社が自社のホームページの iFrame の ID サービスを実装する。 </li> 
+      <li id="li_07E0A6D7BEB140E4B9FB6C7B9629B860">A 社が親ページおよび iFrame を所有し、両方に ID サービスを実装済みである。 </li> 
+      <li id="li_76967BD69DDB40A8A9C915DADC58AC62">顧客がサードパーティ Cookie をブロックするブラウザーで親ページを読み込む。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>結果</b> </p> </td> 
-   <td colname="col2"> <p>次の条件の場合、IDサービスは次の操作を行います。 </p> <p> 
+   <td colname="col2"> <p>これらの条件に当てはまる場合、ID サービスの動作は以下のようになります。 </p> <p> 
      <ul id="ul_12356701501E40DFA57903494FFE58F7"> 
-      <li id="li_B57EDF1B0762486F95FA6526C047390C">親ページで正しく機能します。 AMCV cookieをリクエストおよび設定し、サイト訪問者に一意のIDを割り当てます。 </li> 
-      <li id="li_BA9F42C759E747EAAE14DD3FBB6130A5">iFrameでは機能しません。 これは、ブラウザーがiFrameをサードパーティドメインと見なし、IDサービスがAMCV cookieを設定できないためです。 </li> 
+      <li id="li_B57EDF1B0762486F95FA6526C047390C">親ページでは正しく動作します。AMCV Cookie を要求して設定し、サイト訪問者に一意の ID を割り当てます。 </li> 
+      <li id="li_BA9F42C759E747EAAE14DD3FBB6130A5">iFrame では動作しません。これは、ブラウザーが iFrame をサードパーティドメインとみなして、ID サービスによる AMCV Cookie の設定を禁止するためです。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>ソリューション</b> </p> </td> 
-   <td colname="col2"> <p>これらのホワイトリスト設定を使用して、iFrame の ID サービス <span class="codeph">Visitor.getInstance</span> 関数を変更します。コードで親ドメインと子ドメインを指定します。 これらの設定により、iFrameのIDサービスコードは、訪問者IDの親ページにあるIDサービスコードを確認できます。 </p> <p>iFrame内のIDサービスコードが応答の親ページを受け取らない場合、これらの設定によってローカル訪問者IDが生成されます。 </p> </td> 
+   <td colname="col2"> <p>これらのホワイトリスト設定を使用して、iFrame の ID サービス <span class="codeph">Visitor.getInstance</span> 関数を変更します。コードの親ドメインおよび子ドメインを指定します。これらの設定により、iFrame の ID サービスコードが親ページの ID サービスコードをチェックして訪問者 ID を確認できるようになります。 </p> <p>iFrame の ID サービスコードが親ページの応答を受信しない場合、これらの設定によってローカルの訪問者 ID が生成されます。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-**使用例2: 制御しない、またはIDサービスを使用しない親ページに埋め込まれたiFrameからIDをリクエストする**
+**ユースケース 2：自社で管理していない iFrame、または ID サービスを使用していない親ページに埋め込まれた iFrame から ID をリクエストする**
 
 <table id="table_1F21710F9D5F493BA6BA5974F2966DF4"> 
  <thead> 
@@ -122,39 +125,39 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>条件</b> </p> </td> 
-   <td colname="col2"> <p>この使用例には、次の条件が含まれます。 </p> <p> 
+   <td colname="col2"> <p>この使用例には以下の条件が含まれます。 </p> <p> 
      <ul id="ul_356E8FB0B1D14F46A844FE5281967E28"> 
-      <li id="li_1285D945361842268B46FB492A3B5AA5">会社AはIDサービスを使用しません。 </li> 
-      <li id="li_880D6D473F8342FF9BB49FCE111FD61A">会社Aがページ上のiFrameを読み込みます。 このiFrameは会社Bが所有し、会社Aとは別のドメインに読み込まれます。 </li> 
-      <li id="li_7988F0272B094FE0B398006AD4E6F81B">ブラウザーは、サードパーティCookieをブロックします。 </li> 
+      <li id="li_1285D945361842268B46FB492A3B5AA5">A 社は ID サービスを利用しない。 </li> 
+      <li id="li_880D6D473F8342FF9BB49FCE111FD61A">A 社がページ上の iFrame を読み込む。この iFrame は B 社が所有し、A 社とは別のドメインで読み込まれる。 </li> 
+      <li id="li_7988F0272B094FE0B398006AD4E6F81B">ブラウザーはサードパーティ Cookie をブロックする。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>結果</b> </p> </td> 
-   <td colname="col2"> <p>次の条件の場合、IDサービスは次の操作を行います。 </p> <p> 
+   <td colname="col2"> <p>これらの条件に当てはまる場合、ID サービスの動作は以下のようになります。 </p> <p> 
      <ul id="ul_A92D90896E5A42C5804AC5CE83E8EB25"> 
-      <li id="li_9734EA9C5D9D4F908DE783188C9E5530">iFrameでは機能しません。 これは、ブラウザーがiFrameをサードパーティドメインと見なし、IDサービスがAMCV cookieを設定できないためです。 </li> 
-      <li id="li_3F4BE9048E774902A867D67E5A80674D">会社Aはこのサービスを使用していないため、親ページから訪問者IDを取得できません。 </li> 
+      <li id="li_9734EA9C5D9D4F908DE783188C9E5530">iFrame では動作しません。これは、ブラウザーが iFrame をサードパーティドメインとみなして、ID サービスによる AMCV Cookie の設定を禁止するためです。 </li> 
+      <li id="li_3F4BE9048E774902A867D67E5A80674D">A 社はこのサービスを利用していないので、親ページから訪問者 ID を取得できません。 </li> 
      </ul> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>ソリューション</b> </p> </td> 
-   <td colname="col2"> <p>これらのホワイトリスト設定を使用して、iFrame の ID サービス <span class="codeph">Visitor.getInstance</span> 関数を変更します。コードで親ドメインと子ドメインを指定します。 これらの設定により、iFrameのIDサービスコードは、訪問者IDの親ページにあるIDサービスコードを確認できます。 </p> <p>iFrame内のIDサービスコードが応答の親ページを受け取らない場合、これらの設定によってローカル訪問者IDが生成されます。 </p> </td> 
+   <td colname="col2"> <p>これらのホワイトリスト設定を使用して、iFrame の ID サービス <span class="codeph">Visitor.getInstance</span> 関数を変更します。コードの親ドメインおよび子ドメインを指定します。これらの設定により、iFrame の ID サービスコードが親ページの ID サービスコードをチェックして訪問者 ID を確認できるようになります。 </p> <p>iFrame の ID サービスコードが親ページの応答を受信しない場合、これらの設定によってローカルの訪問者 ID が生成されます。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## 設定の安全性とセキュリティ {#section-2b1ce31fab034e1ca0f6b1c3cc57a6e2}
 
-以下の理由から、これらの設定は安全に実装できます。
+これらの設定は、以下の理由により安全に実装できます。
 
-* 親ドメインとiFrameドメインに実装されるIDサービスでは、同じ組織IDを使用する必要があります。 これらのホワイトリストの設定は、親の組織IDとiFrameの組織IDが異なる場合は機能しません。
-* これらの設定は、コードで指定されたドメインおよびiFrameとのみ通信します。
-* iFrameと親ページ間の通信は、特定の形式に従います。 親ページのIDサービスが、期待された形式で要求を受け取らない場合、この共有プロセスは失敗します。
+* ID サービスは親ドメインに実装され、iFrame ドメインは同じ組織 ID を使用する必要があります。親または iFrame の組織 ID が異なる場合、これらのホワイトリスト設定は無効です。
+* これらの設定はコードで指定されているドメインおよび iFrame とのみ通信をおこないます。
+* iFrame と親ページの間の通信は、特定のフォーマットに従います。親ページの ID サービスが想定されているフォーマットでリクエストを受信しない場合、この共有プロセスは失敗します。
 
 ## サポートされる訪問者 API メソッド {#section-30c6a9f4dcdc4265a1149260b97cc057}
 
-これらのホワイトリストの設定を実装する場合、IDサービスは限られた一連のパブリックAPIメソッドをサポートします。 サポートされる方法は、前述の使用事例のシナリオによって異なります。
+これらのホワイトリスト設定を実装する際に ID サービスでサポートされる公開 API メソッドは限定されています。サポートされるメソッドは、上記の使用例シナリオによって異なります。
 
 <table id="table_0FF9E529FD1C43A8A3B2B0D789C8E83C"> 
  <thead> 
