@@ -1,25 +1,28 @@
 ---
-description: 次の手順に従って、Experience Cloud IDフィールドをData Workbenchに統合します。 このプロセスにより、永続的なExperience Cloud IDをデータフィードで使用でき、Adobe Experience Cloudの他の製品との統合を強化し、訪問者追跡を強化できます。
+description: Experience Cloud ID フィールドを Data Workbench に統合するための手順を示しています。このプロセスにより、永続的な Experience Cloud ID をデータフィードで使用できます。その結果、Adobe Experience Cloud の他の製品とより緊密に統合して、高度な訪問者トラッキングを実行できるようになります。
 keywords: ID Service
-seo-description: 次の手順に従って、Experience Cloud IDフィールドをData Workbenchに統合します。 このプロセスにより、永続的なExperience Cloud IDをデータフィードで使用でき、Adobe Experience Cloudの他の製品との統合を強化し、訪問者追跡を強化できます。
+seo-description: Experience Cloud ID フィールドを Data Workbench に統合するための手順を示しています。このプロセスにより、永続的な Experience Cloud ID をデータフィードで使用できます。その結果、Adobe Experience Cloud の他の製品とより緊密に統合して、高度な訪問者トラッキングを実行できるようになります。
 seo-title: Data Workbench と Experience Cloud Identity Service
 title: Data Workbench と Experience Cloud Identity Service
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+workflow-type: ht
+source-wordcount: '260'
+ht-degree: 100%
 
 ---
 
 
 # Data Workbench と Experience Cloud Identity Service {#data-workbench-and-the-experience-cloud-id-service}
 
-次の手順に従って、Experience Cloud IDフィールドをData Workbenchに統合します。 このプロセスにより、永続的なExperience Cloud IDをデータフィードで使用でき、Adobe Experience Cloudの他の製品との統合を強化し、訪問者追跡を強化できます。
+Experience Cloud ID フィールドを Data Workbench に統合するための手順を示しています。このプロセスにより、永続的な Experience Cloud ID をデータフィードで使用できます。その結果、Adobe Experience Cloud の他の製品とより緊密に統合して、高度な訪問者トラッキングを実行できるようになります。
 
-IDサービスを使用するように [Data Workbenchを更新するには](https://docs.adobe.com/content/help/ja-JP/data-workbench/using/home.html) :
+ID サービスを使用するように [Data Workbench](https://docs.adobe.com/content/help/ja-JP/data-workbench/using/home.html) を更新するには：
 
-1. 現在の [デコーダーグループ設定ファイルを探します](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html) 。
+1. 現在の[デコーダーグループ](https://docs.adobe.com/content/help/ja-JP/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html)設定ファイルを探します。
 
-   通常、[!DNL Decoder Group] は、パス  のプロファイルマネージャー`Dataset\Log Processing\Decoding Instructions.cfg`にあります。1. 設定ファイルから現在のデコーダー形式をコピーします。
+   通常、[!DNL Decoder Group] は、パス `Dataset\Log Processing\Decoding Instructions.cfg` の[!UICONTROL プロファイルマネージャー]にあります。1. 設定ファイルから現在のデコーダー形式をコピーします。
 1. 元の記述の下にそのデコーダー形式を貼り付けます。
 1. デコーダー形式を開き、リストの最後に以下の新しいフィールド位置を追加します。
 
@@ -27,7 +30,7 @@ IDサービスを使用するように [Data Workbenchを更新するには](htt
    * `x-tnt-action`
    これらのフィールドをまだ使用したり定義したりしない場合は、空のままにします。**デコード命令**
 
-前述の新しいフィールドを含む、完全なデコーダーの内容については、以下を参照してください。
+前述の新しいフィールドを含む完全なデコーダーの内容については、以下を参照してください。
 
 ```js
 Log Processing Include = LogProcessingInclude:   
