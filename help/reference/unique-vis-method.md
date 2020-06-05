@@ -2,7 +2,7 @@
 title: 個別訪問者数の識別
 description: Adobe ECID（ID サービス）のドキュメント
 translation-type: tm+mt
-source-git-commit: d39cb79bac3a0a277e6390a8127c1f1b68579fa6
+source-git-commit: 8ad5ae179540596913fccc59070aecc57b09f586
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 56%
@@ -17,10 +17,10 @@ ht-degree: 56%
 
 | 使用順序 | クエリパラメーター（収集メソッド） | post_visid_type列の値 | 次の場合に表示 |
 |---|---|---|---|
-|  1  | vid [(s.visitorID)](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.html)  | 0  | `s.visitorID` が設定されている場合)。 |
-|  2  | aid  [(s_vi cookie)](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.html)  | 3  | Visitor had an existing s_vi cookie before you deployed the Visitor ID service, or you have a Visitor ID [grace period](https://docs.adobe.com/content/help/ja-JP/id-service/using/reference/analytics-reference/grace-period.html) configured.  |
-|  3  | mid[（IDサービスによって設定されるAMCV_ cookie）](https://docs.adobe.com/content/help/ja-JP/id-service/using/home.html)  |  5  |  訪問者のブラウザーがcookie（ファーストパーティ）を受け入れ、[!UICONTROL IDサービス]がデプロイされている。  |
-|  4  | fid [(fallback cookie on H.25.3 or newer, or AppMeasurement for JavaScript)](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.html)  |  4  |  訪問者のブラウザーがcookie（ファーストパーティ）を受け入れる場合。  |
+|  1  | vid [s.visitorID](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.html)  | 0  | `s.visitorID` が設定されている場合)。 |
+|  2  | aid  [s_vi cookie](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.html)  | 3  | Visitor had an existing s_vi cookie before you deployed the Visitor ID service, or you have a Visitor ID [grace period](https://docs.adobe.com/content/help/ja-JP/id-service/using/reference/analytics-reference/grace-period.html) configured.  |
+|  3  | IDサービスによって設定されるmid[AMCV_ cookie](https://docs.adobe.com/content/help/ja-JP/id-service/using/home.html)  |  5  |  訪問者のブラウザーがcookie（ファーストパーティ）を受け入れ、[!UICONTROL IDサービス]がデプロイされている。  |
+|  4  | fid [fallback cookie on H.25.3 or newer, or AppMeasurement for JavaScript](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.html)  |  4  |  訪問者のブラウザーがcookie（ファーストパーティ）を受け入れる場合。  |
 |  5  |  [HTTPモバイル加入者ヘッダー](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.html)  |  2  |  デバイスがモバイルデバイスとして認識される。  |
 |  6  |  [IP Address, User Agent, Gateway IP Address](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.html)  |  1  |  訪問者のブラウザーがcookieを受け入れません。 |
 
