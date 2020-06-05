@@ -5,11 +5,11 @@ seo-description: コンテンツセキュリティポリシー（CSP）は、Web
 seo-title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
-source-wordcount: '539'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 87%
 
 ---
 
@@ -66,6 +66,10 @@ CSP の使用は一般的であり、よく理解されています。このド�
  <tr>
  <td colname="col1"> <p> <b>Activity Map プラグイン</b> </p> </td> 
  <td colname="col2"> <p>CSP に *.adobe.com を追加します。**メモ**：2020 年 1 月より前に Activity Map をインストールした場合、ブラウザーには「*.omniture.com」への初期リクエストが表示されますが、「*.adobe.com」にリダイレクトされます。 </p></td> 
+ </tr>
+ <tr>
+ <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
+ <td colname="col2"> <p>クエリ文字列パラメータに対するコントロールがある場合は、必ずパラメータ's_kwcid'と'ef_id'をホワイトリストに入れてください。 技術的には、広告分析では's_kwcid'のみが使用されますが、Ad Cloud検索またはDSPを使用する場合は'ef_id'も使用されます。 これらのクエリ文字列パラメーターは英数字です。 's_kwcid'パラメーターは、 文字と'ef_id'パラメータには、":"文字を使用します。 「!」 文字を含める場合は、ホワイトリストに登録する必要があります。</p></td> 
  </tr>
  </tbody> 
 </table>
