@@ -5,11 +5,11 @@ seo-description: コンテンツセキュリティポリシー（CSP）は、Web
 seo-title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '619'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ CSP の使用は一般的であり、よく理解されています。このド�
  </tr>
  <tr>
  <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>クエリ文字列パラメータに対するコントロールがある場合は、必ずパラメータ's_kwcid'と'ef_id'をホワイトリストに入れてください。 技術的には、広告分析では's_kwcid'のみが使用されますが、Ad Cloud検索またはDSPを使用する場合は'ef_id'も使用されます。 これらのクエリ文字列パラメーターは英数字です。 's_kwcid'パラメーターは、 文字と'ef_id'パラメータには、":"文字を使用します。 「!」 文字を含める場合は、ホワイトリストに登録する必要があります。</p></td> 
+ <td colname="col2"> <p>クエリー文字列パラメーターを制御できる場合は、必ずパラメーター「s_kwcid」と「ef_id」をホワイトリストに入れてください。技術的には、Advertising Analytics は「s_kwcid」のみを使用しますが、Ad Cloud 検索または DSP を使用する場合は「ef_id」も使用されます。これらのクエリー文字列パラメーターは英数字です。「s_kwcid」パラメーターは、「!」文字、「ef_id」パラメータには、「:」文字を使用します。URL の「!」文字をブロックする場合は、ホワイトリストに登録する必要があります。</p></td> 
  </tr>
  </tbody> 
 </table>
