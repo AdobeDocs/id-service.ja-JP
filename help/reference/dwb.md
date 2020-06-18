@@ -5,9 +5,9 @@ seo-description: Experience Cloud ID フィールドを Data Workbench に統合
 seo-title: Data Workbench と Experience Cloud Identity Service
 title: Data Workbench と Experience Cloud Identity Service
 uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 100%
 
@@ -28,6 +28,7 @@ ID サービスを使用するように [Data Workbench](https://docs.adobe.com/
 
    * `x-mcvisid`
    * `x-tnt-action`
+
    これらのフィールドをまだ使用したり定義したりしない場合は、空のままにします。**デコード命令**
 
 前述の新しいフィールドを含む完全なデコーダーの内容については、以下を参照してください。
