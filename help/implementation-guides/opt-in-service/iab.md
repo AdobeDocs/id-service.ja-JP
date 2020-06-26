@@ -4,22 +4,22 @@ seo-description: IAB Transparency and Consent Framework（TCF）用の Audience 
 seo-title: IAB フレームワークを使用したオプトインサービスの使用
 title: IAB フレームワークを使用したオプトインサービスの使用
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4c37c8dd3b76dbf17b955864f0562363350eaecd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
 
 # IAB フレームワークを使用したオプトインサービスの使用 {#using-opt-in-services-with-iab-framework}
 
->[!IMPORTANT] 次のドキュメントはIAB 2.0にのみ適用されます。IAB 2.0と連携するには、訪問者.jsバージョン5.0を使用する必要があります。
+>[!IMPORTANT] 次のドキュメントは IAB 2.0 にのみ適用されます。IAB 2.0 と連携するには、Visitor.js バージョン 5.0 を使用する必要があります。
 
-オプトインのIAB Transparency and Consent Framework(TCF)プラグインを使用して、Consent Management Platform(CMP)に接続します。
+オプトインの IAB Transparency and Consent Framework（TCF）プラグインを使用して、同意管理プラットフォーム（CMP）に接続します。
 
-IAB TCFを使用しているAdobeオーディエンスマネージャーのお客様は、 [IAB TCF](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) (Consent Management Platform)をオプトインのIAB TCFプラグインと接続できます。 オプトインは、（ECID）JavaScript ライブラリ内に組み込まれている機能です。CMP 内で設定された訪問者の設定に応じて、個々のアドビソリューションライブラリを無効化することができます。ECIDライブラリでオプトインのIAB TCFプラグインが実装されると、IAB TCFをサポートするCMPからの訪問者環境設定が自動的にオプトインにマッピングされます。 これらの環境設定により、Audience Manager ベースのライブラリ（DIL および ECID）と、同意を受信したときの関連する呼び出しが有効になります。
+[IAB TCF](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) を使用する Adobe Audience Manager のお客様は 、オプトインの IAB TCF プラグインを使用して、Consent Management Platform（CMP）に接続できます。オプトインは、（ECID）JavaScript ライブラリ内に組み込まれている機能です。CMP 内で設定された訪問者の設定に応じて、個々のアドビソリューションライブラリを無効化することができます。ECID ライブラリにオプトインの IAB TCF プラグインが実装されると、訪問者の設定は、IAB TCF 対応の CMP からオプトインへ自動的にマッピングされます。これらの環境設定により、Audience Manager ベースのライブラリ（DIL および ECID）と、同意を受信したときの関連する呼び出しが有効になります。
 
 ## IAB をサポートする CMP の実装 {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
@@ -30,13 +30,13 @@ IAB TCFを使用しているAdobeオーディエンスマネージャーのお�
 
 詳細については、[Interactive Advertising Bureau のドキュメント](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/TCF-Implementation-Guidelines.md)を参照してください。
 
-## Enable Opt-in&#39;s IAB TCF plugin within your ECID Javascript Library {#section-77bf1b9ed67241a59e56c21ab752e82f}
+## ECID Javascript ライブラリ内でのオプトイン IAB TCF プラグインの有効化 {#section-77bf1b9ed67241a59e56c21ab752e82f}
 
 >[!NOTE]
 >
 >オプトインは ECID 4.0 以降でのみ利用できます。
 
-Adobe Experience Platform Launchを使用して、サイトにオプトインのIAB TCFプラグインを実装します。 IAB で手動でオプトインを有効にする場合は、訪問者オブジェクト内で次の設定が true に設定されていることを確認してください。
+Adobe Experience Platform Launch を使用して、サイトにオプトインの IAB TCF プラグインを実装します。IAB で手動でオプトインを有効にする場合は、訪問者オブジェクト内で次の設定が true に設定されていることを確認してください。
 
 ```javascript
 Visitor.getInstance("YOUR_ORG_ID", {  
@@ -49,9 +49,9 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 >[!IMPORTANT]
 >
->Audience Manager では、*目的 1、10 に対する同意が必要です*。また、Cookie をデプロイして ID 同期を開始または有効化するために、ベンダーの同意が必要です。Read more about the Opt-in&#39;s IAB TCF plugin in Audience Manager documentation [here](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html).
+>Audience Manager では、*目的 1、10 に対する同意が必要です*。また、Cookie をデプロイして ID 同期を開始または有効化するために、ベンダーの同意が必要です。オプトインの IAB TCF プラグインの詳細については、[こちら](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html)にある Audience Manager のドキュメントを参照してください。
 
-For more information on how to validate Opt-in&#39;s IAB TCF plugin, check use case #4 in the validation guide [here](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0).
+オプトインのび IAB TCF プラグインを検証する方法について詳しくは、[こちら](../../implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md#section-ca5c6f92fbdf4fd29b4acb6b644efbd0)の検証ガイドの使用例 4 を参照してください。
 
 ## 関連ドキュメント {#section-55da1110051a4b39b1037803f4a7b264}
 
