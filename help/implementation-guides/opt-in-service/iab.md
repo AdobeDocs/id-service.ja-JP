@@ -4,9 +4,9 @@ seo-description: IAB Transparency and Consent Framework（TCF）用の Audience 
 seo-title: IAB フレームワークを使用したオプトインサービスの使用
 title: IAB フレームワークを使用したオプトインサービスの使用
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: ht
-source-git-commit: 4c37c8dd3b76dbf17b955864f0562363350eaecd
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
 
@@ -15,7 +15,9 @@ ht-degree: 100%
 
 # IAB フレームワークを使用したオプトインサービスの使用 {#using-opt-in-services-with-iab-framework}
 
->[!IMPORTANT] 次のドキュメントは IAB 2.0 にのみ適用されます。IAB 2.0 と連携するには、Visitor.js バージョン 5.0 を使用する必要があります。
+>[!IMPORTANT]
+>
+> 次のドキュメントは IAB 2.0 にのみ適用されます。IAB 2.0 と連携するには、Visitor.js バージョン 5.0 を使用する必要があります。
 
 オプトインの IAB Transparency and Consent Framework（TCF）プラグインを使用して、同意管理プラットフォーム（CMP）に接続します。
 
