@@ -5,11 +5,11 @@ seo-description: これらの手順は、Experience Cloud Identity Service を�
 seo-title: Experience Cloud Identity Service の Analytics への実装
 title: Experience Cloud Identity Service の Analytics への実装
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1087'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -22,8 +22,6 @@ ht-degree: 100%
 >
 >* [始める前に、要件を確認してください](../reference/requirements.md)。
 >* このコードを本番環境に実装する前に、開発環境で設定してテストしてください。
->
-
 
 
 次の手順に従い、Adobe Analytics 用 ID サービスを実装します。
@@ -54,8 +52,6 @@ ht-degree: 100%
 >
 >* 以前のバージョンの ID サービス API では、この関数を別の場所に別の構文で配置する必要がありました。[バージョン 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572) より前のバージョンから移行する場合は、ここで説明する新しい場所と構文について注意してください。
 >* すべて大文字で書かれたコードは、実際の値用のプレースホルダーです。このテキストを組織 ID、トラッキングサーバー URL、またはその他の指定された値に置き換えます。
->
-
 
 
 **パート 1：以下の Visitor.getInstance 関数をコピーします**
@@ -130,11 +126,10 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!NOTE]
 >
->使用されている場合は、以下のように [!DNL Experience Cloud] サーバーの URL をトラッキングサーバーの URL に対応させます。
+>When used, match the [!DNL Experience Cloud] server URLs to their corresponding tracking server URLs like this:
+>
 >* [!DNL Experience Cloud] サーバー URL = トラッキングサーバー URL
 >* [!DNL Experience Cloud] サーバーセキュア URL = トラッキングサーバーセキュア URL
->
-
 
 
 トラッキングサーバーの見つけ方がわからない場合は、[FAQ](../faq-intro/faq.md) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html#)を参照してください。
