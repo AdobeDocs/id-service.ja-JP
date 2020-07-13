@@ -5,9 +5,9 @@ seo-description: コンテンツセキュリティポリシー（CSP）は、Web
 seo-title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
 uuid: 7399edf3-01c1-4730-834e-e2dd2c5791ff
-translation-type: ht
-source-git-commit: acf10dd734132662698791e473c1f3f4dda85d67
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '619'
 ht-degree: 100%
 
@@ -75,6 +75,7 @@ CSP の使用は一般的であり、よく理解されています。このド�
 </table>
 
 >[!MORELIKETHIS]
+>
 >* [コンテンツセキュリティポリシーリファレンス](https://content-security-policy.com/)
 >* [MDN：コンテンツセキュリティポリシー](https://developer.mozilla.org/ja/docs/Web/HTTP/CSP)
 >* [Wikipedia：コンテンツセキュリティポリシー](https://en.wikipedia.org/wiki/Content_Security_Policy)
