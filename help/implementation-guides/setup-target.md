@@ -5,9 +5,9 @@ seo-description: これらの手順は、Experience Cloud Identity Service を�
 seo-title: Experience Cloud Identity Service の Target への実装
 title: Experience Cloud Identity Service の Target への実装
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 100%
 
@@ -22,8 +22,6 @@ ht-degree: 100%
 >
 >* [始める前に、要件を確認してください](../reference/requirements.md)。
 >* このコードを本番環境に実装する前に、開発環境で設定してテストしてください。
->
-
 
 
 ## 手順 1：ID サービスコードの入手 {#section-b32ba0548aa546a79dd38be59832a53e}
