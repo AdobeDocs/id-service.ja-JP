@@ -1,12 +1,15 @@
 ---
 description: 通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID と認証状態を各訪問者に関連付けることができます。
-keywords: ID サービス
+keywords: ID Service
 seo-description: 通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID と認証状態を各訪問者に関連付けることができます。
 seo-title: 顧客 ID と認証状態
 title: 顧客 ID と認証状態
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: ht
-source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
+source-wordcount: '659'
+ht-degree: 69%
 
 ---
 
@@ -23,13 +26,13 @@ source-git-commit: ee07ec0fd83932ab5006dcdbece61608f4e4606e
 >
 >顧客属性とコアサービス機能には、`setCustomerIDs`（顧客 ID の同期）が必要です。顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。[!DNL Target] には、顧客属性を機能させるために `Visitor.AuthState.AUTHENTICATED` が必要です。例については、[コアサービス - ソリューションを有効にする方法](https://docs.adobe.com/content/help/ja-JP/core-services/interface/about-core-services/core-services.html)を参照してください。
 
-Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オプションの `AuthState` オブジェクトが含まれます。`AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。認証状態は整数値として返されます。
+Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オプションの `AuthState` オブジェクトが含まれます。`AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。 認証状態は整数で返されます。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> 認証状態 </th> 
-   <th colname="col2" class="entry"> ステータス整数値 </th> 
+   <th colname="col2" class="entry"> ステータス整数 </th> 
    <th colname="col3" class="entry"> ユーザーステータス </th> 
   </tr> 
  </thead>
@@ -52,9 +55,9 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
  </tbody> 
 </table>
 
-## 認証状態のユースケース {#section-fe9560cc490943b29dac2c4fb6efd72c}
+## 認証状態の使用例 {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
-ユーザーが Web プロパティに対して実行するアクションやユーザーの認証の有無に応じて、ユーザーに認証状態を割り当てることができます。下の表にいくつかの例を示します。
+ユーザーがWebプロパティで実行する操作や認証されているかどうかに応じて、認証状態をユーザーに割り当てることができます。 次の表の例を参照してください。
 
 <table id="table_3769E79304014C4F87094B87A8ACE4E0"> 
  <thead> 
@@ -66,9 +69,9 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
-   <td colname="col2"> <p>この状態は、次のようなシナリオに使用されます。 </p> <p> 
+   <td colname="col2"> <p>この状態は、次のようなシナリオで使用できます。 </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
-      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">電子メールの閲覧（このアクションでは多くの場合、閲覧者が対象となる受信者になりますが、電子メールが転送されたことも考えられます）。 </li> 
+      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">電子メールの読み取り(この操作は読者が意図した受信者であるが、電子メールも転送された可能性があることを意味します)。 </li> 
       <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">電子メールからランディングページへのクリックスルー。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -78,7 +81,7 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
-   <td colname="col2"> <p>ユーザーは過去に認証されましたが、アクティブにログアウトしました。ユーザーは意図的に認証済みの状態から切断しました。ユーザーは、認証済みとして扱われることを希望していません。 </p> </td> 
+   <td colname="col2"> <p>ユーザーは認証されましたが、アクティブにログアウトしました。 ユーザーが認証済み状態から切断することを意図し、意図していた。 ユーザーが認証済みとして扱われなくなります。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -91,10 +94,8 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
 >
 >* ID は大文字と小文字が区別されます。
 >* エンコードされていない ID 値のみを使用してください。
->* 顧客 ID と認証状態は訪問者 ID Cookie に保存されません。ページまたはアプリケーションコンテキストごとに設定する必要があります。
->* 顧客 ID には、個人識別情報（PII）は含めないでください。PII（電子メールアドレスなど）を使用して訪問者を識別する場合は、情報をハッシュ化または暗号化して格納することをお勧めします。ECID ライブラリは、ハッシュユーザー識別子をサポートしています。[setCustomerIDs の SHA256 ハッシュサポート](/help/reference/hashing-support.md)を参照してください。
->
-
+>* 顧客IDと認証状態は、訪問者ID cookieに保存されません。 ページまたはアプリケーションコンテキストごとに設定する必要があります。
+>* 顧客IDに個人識別情報(PII)を含めないでください。 PII（電子メールアドレスなど）を使用して訪問者を識別する場合は、情報をハッシュ化または暗号化して格納することをお勧めします。ECID ライブラリは、ハッシュユーザー識別子をサポートしています。[setCustomerIDs の SHA256 ハッシュサポート](/help/reference/hashing-support.md)を参照してください。
 
 
 ```js
@@ -146,7 +147,7 @@ visitor.setCustomerIDs({
 
 ## 顧客 ID と認証状態の返送 {#section-71a610546188478fa9a3185a01d6e83b}
 
-顧客 ID と関連する認証状態を返すには、`getCustomerIDs` を使用します。このメソッドは、訪問者の認証状態を整数値として返します。
+顧客 ID と関連する認証状態を返すには、`getCustomerIDs` を使用します。このメソッドは、訪問者の認証状態を整数で返します。
 
 **構文**
 
@@ -168,7 +169,7 @@ visitor.setCustomerIDs({
 
 **例**
 
-返された顧客 ID と認証状態データは以下の例のようになります。
+返された顧客IDと認証状態データは、次の例のようになります。
 
 ```js
 Object customerIDs = visitor.getCustomerIDs(); 
@@ -211,12 +212,12 @@ Object customerIDs = visitor.getCustomerIDs();
  }
 ```
 
-## SDK のサポート {#section-861c6b3b1ba645dda133dccb22ec7bb0}
+## SDKのサポート {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-[!DNL Experience Cloud] ID サービスは、アドビの Android および iOS SDK コードで顧客 ID と認証状態をサポートします。以下のコードライブラリを参照してください。
+[!DNL Experience Cloud] ID サービスは、アドビの Android および iOS SDK コードで顧客 ID と認証状態をサポートします。次のコードライブラリを参照してください。
 
 * [Android SDK のメソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/overview.html)
-* [iOS SDK のメソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/overview.html)
+* [iOS SDKのメソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/overview.html)
 
 ## Analytics および Audience Manager ユーザー向けの注意点 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
