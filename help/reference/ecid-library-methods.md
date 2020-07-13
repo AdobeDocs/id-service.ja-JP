@@ -3,9 +3,9 @@ title: Safari ITP での ECID ライブラリの手法
 seo-title: Safari ITP での ECID ライブラリの手法
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 seo-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1090'
 ht-degree: 100%
 
@@ -42,7 +42,9 @@ CNAME と共に以前から存在していたのと同じルールおよび注�
 
 Safari 内でのトラッキングのための追加の方法が作成されたら、リファレンスとしてこのページに追加されます。
 
->[!NOTE] 以下のすべてのドキュメントでは、*ECID*、*MID*、*MCID* は同じです。
+>[!NOTE]
+>
+>*以下のすべてのドキュメントでは、ECID*、*MID*、*MCID* は同じです。
 
 ITP および ECID ライブラリの使用に関する取り組みについては、以下を参照してください。
 
