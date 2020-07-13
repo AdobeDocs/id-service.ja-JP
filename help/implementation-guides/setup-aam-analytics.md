@@ -5,9 +5,9 @@ seo-description: これらの手順は、Experience Cloud Identity Service を�
 seo-title: Experience Cloud Identity Service の Analytics および Audience Manager への実装
 title: Experience Cloud Identity Service の Analytics および Audience Manager への実装
 uuid: d46050ae-87de-46cc-911b-d6346c7fd511
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1303'
 ht-degree: 100%
 
@@ -23,8 +23,6 @@ ht-degree: 100%
 >* [始める前に、要件を確認してください](../reference/requirements.md)。
 >* この手順には、AppMeasurement が必要です。s_code を使用するお客様は、この手順を完了できません。
 >* このコードを本番環境に実装する前に、開発環境で設定してテストしてください。
->
-
 
 
 ## 手順 1：サーバー側転送の計画 {#section-880797cc992d4755b29cada7b831f1fc}
@@ -55,8 +53,6 @@ ID サービスでは、`VisitorAPI.js` コードライブラリが必要です�
 >
 >* 以前のバージョンの ID サービス API では、この関数を別の場所に別の構文で配置する必要がありました。[バージョン 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572) より前のバージョンから移行する場合は、ここで説明する新しい場所と構文について注意してください。
 >* すべて大文字で書かれたコードは、実際の値用のプレースホルダーです。このテキストを組織 ID、トラッキングサーバー URL、またはその他の指定された値に置き換えます。
->
-
 
 
 **パート 1：以下の Visitor.getInstance 関数をコピーします**
