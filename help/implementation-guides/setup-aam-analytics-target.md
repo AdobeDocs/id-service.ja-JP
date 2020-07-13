@@ -5,11 +5,11 @@ seo-description: これらの手順は、Experience Cloud Identity Service を�
 seo-title: Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装
 title: Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
+workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -20,11 +20,10 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->ID サービスの[要件](../reference/requirements.md)を読んで、この実装に特有の以下の要件に注意してください。
+>Read the ID service [requirements](../reference/requirements.md) before you begin and note the following requirements that are specific to this implementation:
+>
 >* s_code を使用するお客様は、この手順を完了できません。この手順を完了するには、mbox コード v61 にアップグレードします。
 >* このコードを本番環境に実装する&#x200B;*前に*、開発環境で設定してテストしてください。
->
-
 
 
 ## 手順 1：サーバー側転送の計画 {#section-880797cc992d4755b29cada7b831f1fc}
@@ -54,8 +53,6 @@ ID サービスでは、`VisitorAPI.js` コードライブラリが必要です�
 >
 >* 以前のバージョンの ID サービス API では、この関数を別の場所に別の構文で配置する必要がありました。[バージョン 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572) より前のバージョンから移行する場合は、ここで説明する新しい場所と構文について注意してください。
 >* すべて大文字で書かれたコードは、実際の値用のプレースホルダーです。このテキストを組織 ID、トラッキングサーバー URL、またはその他の指定された値に置き換えます。
->
-
 
 
 **パート 1：以下の Visitor.getInstance 関数をコピーします**
