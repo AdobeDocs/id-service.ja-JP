@@ -5,11 +5,11 @@ seo-description: これらの手順は、Experience Cloud Identity Service を�
 seo-title: Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装
 title: Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1572'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->Read the ID service [requirements](../reference/requirements.md) before you begin and note the following requirements that are specific to this implementation:
+>ID サービスの[要件](../reference/requirements.md)を読んで、この実装に特有の以下の要件に注意してください。
 >
 >* s_code を使用するお客様は、この手順を完了できません。この手順を完了するには、mbox コード v61 にアップグレードします。
 >* このコードを本番環境に実装する&#x200B;*前に*、開発環境で設定してテストしてください。
@@ -236,7 +236,7 @@ mboxMCAVID が表示される場合、[!DNL Analytics] AID に対するその値
 
 **デプロイ**
 
-## 手順10：デプロイ {#section-4188fa95e7dc455a986b48a6c517c1c9}
+## 手順 10：デプロイ {#section-4188fa95e7dc455a986b48a6c517c1c9}
 
 テストの合格後に、コードをデプロイします。
 
