@@ -5,11 +5,11 @@ seo-description: これらの手順は、Experience Cloud Identity Service を�
 seo-title: Experience Cloud Identity Service の Analytics への実装
 title: Experience Cloud Identity Service の Analytics への実装
 uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1087'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -126,7 +126,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 >[!NOTE]
 >
->When used, match the [!DNL Experience Cloud] server URLs to their corresponding tracking server URLs like this:
+>使用されている場合は、以下のように [!DNL Experience Cloud] サーバーの URL をトラッキングサーバーの URL に対応させます。
 >
 >* [!DNL Experience Cloud] サーバー URL = トラッキングサーバー URL
 >* [!DNL Experience Cloud] サーバーセキュア URL = トラッキングサーバーセキュア URL
