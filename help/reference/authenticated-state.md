@@ -5,11 +5,11 @@ seo-description: 通常の Experience Cloud 訪問者 ID に加えて、追加�
 seo-title: 顧客 ID と認証状態
 title: 顧客 ID と認証状態
 uuid: 643df363-224a-463e-a332-be59926b47e7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 69%
 >
 >顧客属性とコアサービス機能には、`setCustomerIDs`（顧客 ID の同期）が必要です。顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。[!DNL Target] には、顧客属性を機能させるために `Visitor.AuthState.AUTHENTICATED` が必要です。例については、[コアサービス - ソリューションを有効にする方法](https://docs.adobe.com/content/help/ja-JP/core-services/interface/about-core-services/core-services.html)を参照してください。
 
-Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オプションの `AuthState` オブジェクトが含まれます。`AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。 認証状態は整数で返されます。
+Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オプションの `AuthState` オブジェクトが含まれます。`AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。認証状態は整数で返されます。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -57,7 +57,7 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
 
 ## 認証状態の使用例 {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
-ユーザーがWebプロパティで実行する操作や認証されているかどうかに応じて、認証状態をユーザーに割り当てることができます。 次の表の例を参照してください。
+ユーザーが Web プロパティで実行するアクションや認証されているかどうかに応じて、認証状態をユーザーに割り当てることができます。次の表の例を参照してください。
 
 <table id="table_3769E79304014C4F87094B87A8ACE4E0"> 
  <thead> 
@@ -71,7 +71,7 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
    <td colname="col2"> <p>この状態は、次のようなシナリオで使用できます。 </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
-      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">電子メールの読み取り(この操作は読者が意図した受信者であるが、電子メールも転送された可能性があることを意味します)。 </li> 
+      <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">電子メールの読み取り（このアクションは読者が意図した受信者であることを意味しますが、電子メールが転送された可能性もあります）。 </li> 
       <li id="li_FAB7ACFC69624631BD01FC0ED84B23C5">電子メールからランディングページへのクリックスルー。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -81,7 +81,7 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
-   <td colname="col2"> <p>ユーザーは認証されましたが、アクティブにログアウトしました。 ユーザーが認証済み状態から切断することを意図し、意図していた。 ユーザーが認証済みとして扱われなくなります。 </p> </td> 
+   <td colname="col2"> <p>ユーザーは認証されましたが、アクティブにログアウトしました。ユーザーが認証済み状態から意図的に切断した。ユーザーが認証済みとして扱われなくなります。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -94,8 +94,8 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
 >
 >* ID は大文字と小文字が区別されます。
 >* エンコードされていない ID 値のみを使用してください。
->* 顧客IDと認証状態は、訪問者ID cookieに保存されません。 ページまたはアプリケーションコンテキストごとに設定する必要があります。
->* 顧客IDに個人識別情報(PII)を含めないでください。 PII（電子メールアドレスなど）を使用して訪問者を識別する場合は、情報をハッシュ化または暗号化して格納することをお勧めします。ECID ライブラリは、ハッシュユーザー識別子をサポートしています。[setCustomerIDs の SHA256 ハッシュサポート](/help/reference/hashing-support.md)を参照してください。
+>* 顧客 ID と認証状態は、訪問者 ID Cookie に保存されません。ページまたはアプリケーションコンテキストごとに設定する必要があります。
+>* 顧客 ID に個人識別情報（PII）を含めないでください。PII（電子メールアドレスなど）を使用して訪問者を識別する場合は、情報をハッシュ化または暗号化して格納することをお勧めします。ECID ライブラリは、ハッシュユーザー識別子をサポートしています。[setCustomerIDs の SHA256 ハッシュサポート](/help/reference/hashing-support.md)を参照してください。
 
 
 ```js
@@ -169,7 +169,7 @@ visitor.setCustomerIDs({
 
 **例**
 
-返された顧客IDと認証状態データは、次の例のようになります。
+返された顧客 ID と認証状態データは、次の例のようになります。
 
 ```js
 Object customerIDs = visitor.getCustomerIDs(); 
@@ -212,12 +212,12 @@ Object customerIDs = visitor.getCustomerIDs();
  }
 ```
 
-## SDKのサポート {#section-861c6b3b1ba645dda133dccb22ec7bb0}
+## SDK のサポート {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
 [!DNL Experience Cloud] ID サービスは、アドビの Android および iOS SDK コードで顧客 ID と認証状態をサポートします。次のコードライブラリを参照してください。
 
 * [Android SDK のメソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/overview.html)
-* [iOS SDKのメソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/overview.html)
+* [iOS SDK のメソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/overview.html)
 
 ## Analytics および Audience Manager ユーザー向けの注意点 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
