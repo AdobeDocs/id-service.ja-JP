@@ -5,9 +5,9 @@ seo-description: この関数を使用すると、ブラウザーでサードパ
 seo-title: appendVisitorIDsTo（クロスドメイントラッキング）
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 100%
 
@@ -55,11 +55,7 @@ var visitor = Visitor.getInstance(...);
 //Append visitor IDs to the destination URL 
 var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL); 
      //Result of appendVisitorIDsTo includes destination URL, Experience Cloud ID (MCMID), and Analytics ID (MCAID) 
-     "www.destination.com?adobe_mc=MCMID=1234|MCAID=5678 
-<draft-comment>
-  |TS=123675879 
-</draft-comment>" 
- 
+     "www.destination.com?adobe_mc=MCMID=1234|MCAID=5678"
 //Redirect to the destination
 ```
 
