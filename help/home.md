@@ -5,10 +5,10 @@ seo-description: Adobe Experience Cloud Identity Service（ID サービス）は
 seo-title: Experience Cloud Identity Service
 title: Experience Cloud Identity Service
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
-translation-type: ht
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
-source-wordcount: '322'
+translation-type: tm+mt
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
+source-wordcount: '303'
 ht-degree: 100%
 
 ---
@@ -34,10 +34,10 @@ Adobe Experience Cloud Identity Service（ID サービス）は、Experience Clo
       <li id="li_B28082F3D075413D89E5AFB718657E17"> <a href="library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe </a> </li> 
       <li id="li_7744A4898EA542B9BF009D2066810050"> <a href="library/function-vars/idsyncontainerid.md#reference-5cfbed2240fa4def90f535f017a36015" format="dita" scope="local"> idSyncContainerID </a> </li> 
      </ul> </p> 
-    <draft-comment> 
-     <p> <b>お知らせ：</b> </p> 
-     <p> <p>重要：Internet Explorer 6、7 および 8 の ID サービスのサポートは廃止され、将来のリリースで終了します。 </p> </p> 
-    </draft-comment> </td> 
+     <!-- 
+     <p> <b>Announcements:</b> </p> 
+     <p> <p>Important:  ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release. </p> </p> 
+     --> </td> 
    <td colname="col2"> <p> <b>リリースノート</b> </p> <p><b>バージョン 4.4</b> 2019 年 7 月 17 日リリースには、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、<a href="reference/hashing-support.md" format="dita" scope="local">SHA-256 ハッシュアルゴリズム</a>のサポートが含まれます。</p><p><b>バージョン 4.0</b> 2019 年 2 月 12 日リリースには、ユーザーがサイトにアクセスする際に、ユーザーのデバイスまたはブラウザーに cookie を配置できるかどうかを識別する<a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">オプトインサービス</a>が含まれています。 </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> 新機能と修正点については、最新の <a href="https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud リリースノート</a>を参照してください。 </li> 
