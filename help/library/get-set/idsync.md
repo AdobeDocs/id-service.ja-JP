@@ -1,19 +1,22 @@
 ---
-description: ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると、ターゲットパブリッシング iFrame で ID 同期を手動で実装できます。これらは、VisitorAPI.js バージョン 1.10 以降で利用できます。
-keywords: ID サービス
-seo-description: ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると、ターゲットパブリッシング iFrame で ID 同期を手動で実装できます。これらは、VisitorAPI.js バージョン 1.10 以降で利用できます。
+description: IDサービスの関数idSyncByURLとidSyncByDataSourceを使用すると、ターゲットパブリッシングiFrameでID同期を手動で実装できます。 これらは、VisitorAPI.jsバージョン1.10以降で利用できます。
+keywords: ID Service
+seo-description: IDサービスの関数idSyncByURLとidSyncByDataSourceを使用すると、ターゲットパブリッシングiFrameでID同期を手動で実装できます。 これらは、VisitorAPI.jsバージョン1.10以降で利用できます。
 seo-title: URL またはデータソースによる ID 同期
 title: URL またはデータソースによる ID 同期
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: ht
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+translation-type: tm+mt
+source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 52%
 
 ---
 
 
 # URL またはデータソースによる ID 同期{#id-synchronization-by-url-or-data-source}
 
-ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると、ターゲットパブリッシング iFrame で ID 同期を手動で実装できます。これらは、VisitorAPI.js バージョン 1.10 以降で利用できます。
+IDサービスの関数idSyncByURLとidSyncByDataSourceを使用すると、ターゲットパブリッシングiFrameでID同期を手動で実装できます。 これらは、VisitorAPI.jsバージョン1.10以降で利用できます。
 
 ## 構文、プロパティおよびマクロ {#section-90ac61617482463aaf4c57009b830332}
 
@@ -23,7 +26,7 @@ ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> コード </th> 
-   <th colname="col2" class="entry"> ユーザー ID の同期 </th> 
+   <th colname="col2" class="entry"> ユーザーIDの同期 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -33,17 +36,14 @@ ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <p> <span class="codeph"> visitor.idSyncByDataSource(); </span> </p> </td> 
-   <td colname="col2"> <p>既に DPID および DPUUID がわかっており、標準 ID 同期 URL 形式で <span class="keyword">Audience Manager</span> に送信したい場合。 </p> <p> 
-     <draft-comment>
-       ユーザー ID が既に判明していて、それを Audience Manager に送信する場合に使用します。 
-     </draft-comment> </p> </td> 
+   <td colname="col2"> <p>既に DPID および DPUUID がわかっており、標準 ID 同期 URL 形式で <span class="keyword">Audience Manager</span> に送信したい場合。 </p> <p></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **プロパティ**
 
-以下の表に、両方の関数で利用可能なプロパティのリストと定義を示します。
+次の表のリストと、両方の関数で使用できるプロパティの定義を示します。
 
 <table id="table_5343BE784E694C67B09A0A8878CF8001"> 
  <thead> 
@@ -57,29 +57,29 @@ ID サービスの関数、idSyncByURL と idSyncByDataSource を使用すると
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpid </span> </td> 
    <td colname="col2"> 文字列 </td> 
-   <td colname="col3"> <p>Audience Manager によって割り当てられたデータプロバイダー ID。 </p> </td> 
+   <td colname="col3"> <p>Audience Managerによって割り当てられたデータプロバイダーID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
    <td colname="col2"> 文字列 </td> 
-   <td colname="col3"> <p>ユーザーに関するデータプロバイダーの一意の ID。 </p> </td> 
+   <td colname="col3"> <p>ユーザーに対するデータプロバイダーの一意のID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
    <td colname="col2"> 数値 </td> 
-   <td colname="col3"> <p> <i>（オプション）</i> Cookie の有効期限を設定します。整数である必要があります。デフォルトは、20,160 分（14 日）です。 </p> </td> 
+   <td colname="col3"> <p> <i>（オプション）</i> Cookieの有効期限を設定します。 整数である必要があります。 デフォルトは20160分（14日）です。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
    <td colname="col2"> 文字列 </td> 
-   <td colname="col3"> <p>リンク先 URL。 </p> </td> 
+   <td colname="col3"> <p>宛先 URL </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **マクロ**
 
-両方の関数は、以下のマクロを受け付けます。
+どちらの関数も次のマクロを受け付けます。
 
 * `%TIMESTAMP%`：タイムスタンプを生成します（ミリ秒単位）。キャッシュバスティングに使用されます。
 * `%DID%`：ユーザーの Audience Manager ID を挿入します。
