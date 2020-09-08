@@ -1,22 +1,22 @@
 ---
-description: IDサービスの関数idSyncByURLとidSyncByDataSourceを使用すると、ターゲットパブリッシングiFrameでID同期を手動で実装できます。 これらは、VisitorAPI.jsバージョン1.10以降で利用できます。
+description: ID サービスの idSyncByURL 関数と idSyncByDataSource 関数を使用すると、Destination Publishing iFrame で ID 同期を手動で実装できます。これらは、VisitorAPI.js バージョン 1.10 以降で利用できます。
 keywords: ID Service
-seo-description: IDサービスの関数idSyncByURLとidSyncByDataSourceを使用すると、ターゲットパブリッシングiFrameでID同期を手動で実装できます。 これらは、VisitorAPI.jsバージョン1.10以降で利用できます。
+seo-description: ID サービスの idSyncByURL 関数と idSyncByDataSource 関数を使用すると、Destination Publishing iFrame で ID 同期を手動で実装できます。これらは、VisitorAPI.js バージョン 1.10 以降で利用できます。
 seo-title: URL またはデータソースによる ID 同期
 title: URL またはデータソースによる ID 同期
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 
-# URL またはデータソースによる ID 同期{#id-synchronization-by-url-or-data-source}
+# URL またはデータソースによる ID 同期 {#id-synchronization-by-url-or-data-source}
 
-IDサービスの関数idSyncByURLとidSyncByDataSourceを使用すると、ターゲットパブリッシングiFrameでID同期を手動で実装できます。 これらは、VisitorAPI.jsバージョン1.10以降で利用できます。
+ID サービスの idSyncByURL 関数と idSyncByDataSource 関数を使用すると、Destination Publishing iFrame で ID 同期を手動で実装できます。これらは、VisitorAPI.js バージョン 1.10 以降で利用できます。
 
 ## 構文、プロパティおよびマクロ {#section-90ac61617482463aaf4c57009b830332}
 
@@ -26,7 +26,7 @@ IDサービスの関数idSyncByURLとidSyncByDataSourceを使用すると、タ�
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> コード </th> 
-   <th colname="col2" class="entry"> ユーザーIDの同期 </th> 
+   <th colname="col2" class="entry"> ユーザー ID の同期 </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -57,17 +57,17 @@ IDサービスの関数idSyncByURLとidSyncByDataSourceを使用すると、タ�
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpid </span> </td> 
    <td colname="col2"> 文字列 </td> 
-   <td colname="col3"> <p>Audience Managerによって割り当てられたデータプロバイダーID。 </p> </td> 
+   <td colname="col3"> <p>Audience Manager によって割り当てられたデータプロバイダー ID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> dpuuid </span> </td> 
    <td colname="col2"> 文字列 </td> 
-   <td colname="col3"> <p>ユーザーに対するデータプロバイダーの一意のID。 </p> </td> 
+   <td colname="col3"> <p>ユーザーに対するデータプロバイダーの一意の ID。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> minutesToLive </span> </td> 
    <td colname="col2"> 数値 </td> 
-   <td colname="col3"> <p> <i>（オプション）</i> Cookieの有効期限を設定します。 整数である必要があります。 デフォルトは20160分（14日）です。 </p> </td> 
+   <td colname="col3"> <p> <i>（オプション）</i> Cookie の有効期限を設定します。整数である必要があります。デフォルトは 20160 分（14 日）です。 </p> </td> 
   </tr> 
   <tr valign="top"> 
    <td colname="col1"> <span class="codeph"> url </span> </td> 
