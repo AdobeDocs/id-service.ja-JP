@@ -4,7 +4,7 @@ seo-title: Google Chrome SameSiteのラベル付けの変更
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 seo-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 translation-type: tm+mt
-source-git-commit: f74a028532e95ab17f5d2e64697d69eb64e03391
+source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 3%
@@ -64,7 +64,9 @@ Chromeの新しいデフォルトのSameSite設定 `lax` になった場合、CN
 
 この変更に対応するために、Analyticsでは、 `s_vi` cookieのSameSite値をに明示的に設定するようにな `lax`りました。 このCookieをわかりやすいサードパーティのコンテキストで使用するには、SameSite値をに設定します。つまり、常にHTTPSを使用する必要があ `none`ります。 セキュアなCNAMEのSameSite値を変更する場合は、カスタマーケアにお問い合わせください。
 
-> [!IMPORTANT] ECIDを使用するAnalyticsのお客様、ドメインごとに個別のCNAMEを使用するお客様、またはサードパーティのAnalyticsデータ収集のみを使用するお客様には、このアクションは必要ありません。
+>[!IMPORTANT]
+>
+>ECIDを使用するAnalyticsのお客様、ドメインごとに個別のCNAMEを使用するお客様、またはサードパーティのAnalyticsデータ収集のみを使用するお客様には、このアクションは必要ありません。
 
 ## Adobe標準訪問者Cookie
 
