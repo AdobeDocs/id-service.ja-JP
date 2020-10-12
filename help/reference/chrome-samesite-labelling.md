@@ -1,125 +1,125 @@
 ---
-title: Google Chrome SameSiteのラベル付けの変更
-seo-title: Google Chrome SameSiteのラベル付けの変更
+title: Google Chrome SameSite のラベル付けの変更
+seo-title: Google Chrome SameSite のラベル付けの変更
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 seo-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 translation-type: tm+mt
 source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
 workflow-type: tm+mt
 source-wordcount: '1079'
-ht-degree: 3%
+ht-degree: 100%
 
 ---
 
 
-# Google Chrome SameSiteのラベル付けの変更 {#google-chrome-samesite-labelling-changes}
+# Google Chrome SameSite のラベル付けの変更 {#google-chrome-samesite-labelling-changes}
 
-SameSite属性は、ファーストパーティシナリオとサードパーティシナリオでcookieを起動するタイミングと方法をブラウザーに通知します。 SameSite属性には、次の3つの値のいずれかを指定できます。 `strict`、 `lax`または `none`。 Chrome、Firefox、Edge、Safari、Operaは2017年11月 `strict` 以降、2018年 `lax` で `none` 導入されています。 ただし、古いブラウザーではこの設定がサポートされない場合があります。
+SameSite 属性は、ファーストパーティシナリオとサードパーティシナリオで cookie を起動するタイミングと方法をブラウザーに通知します。SameSite 属性には、`strict`、`lax` または `none` の3つの値のいずれかを指定できます。Chrome、Firefox、Edge、Safari、Opera は 2017 年 11 月 以降 `strict` および `lax` でサポートされ、`none` は 2018 年に導入されました。ただし、古いブラウザーではこの設定がサポートされない場合があります。
 
-2020年2月、GoogleはChrome 80をリリースし、cookieに指定されたSameSite属性値がない場合のデフォルト設定 `none``lax` をからに変更しました。 この設定は、「クロスサイト」とも呼ばれるサードパーティコンテキストでcookieが使用されるのを防ぎます。 その後のサードパーティCookieは、に設定され、セキュリティで保護されているとラベル付けさ `SameSite=none` れる必要があります。
+2020 年 2 月、Google は Chrome 80 をリリースし、cookie で SameSite 属性値が指定されていない場合のデフォルト設定を `none` から `lax` に変更しました。この設定は、「クロスサイト」とも呼ばれるサードパーティコンテキストで cookie が使用されるのを防ぎます。その後のサードパーティ cookie は、`SameSite=none` に設定し、セキュアとしてラベル付けする必要があります。
 
-SameSite属性値が指定されていないCookieは、デフォルトでに設定され `lax`ます。
+SameSite 属性値が指定されていない cookie は、デフォルトで `lax` に設定され ます。
 
-SameSite属性の詳細については、 [cookie標準ドキュメント](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1) （英語）を参照してください。
+SameSite 属性の詳細については、[Cookie 標準ドキュメント](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-03#section-4.1)を参照してください。
 
-## SameSite属性値
+## SameSite 属性値
 
-| SameSite属性値 | 説明 |
+| SameSite 属性値 | 説明 |
 | ------ | ------------ |
-| `strict` | この設定を持つCookieは、参照ページとランディングページの両方がCookieと同じドメインに属している場合にのみ送信されます。 |
-| `lax` | この設定を持つCookieは、ブラウザーのURLに表示されるドメインがCookieのドメインと一致する場合にのみ送信されます。 これは、ChromeのCookieの新しいデフォルトです。 |
-| `none` | この設定を持つCookieは、「クロスサイト」など、外部またはサードパーティからのアクセスに使用できます。 この変更より前 `none` は、がcookieのデフォルトのSameSite設定だったので、この設定を使用すると、cookieの動作が従来の動作と最も似た動作になります。 ただし、Googleでは、この設定を持つCookieにsecureフラグを指定する必要があります。つまり、CookieはHTTPS経由のリクエストと共にのみ作成され、送信されます。 保護フラグを指定しないクロスサイトCookieはすべてGoogleによって拒否されます。 |
+| `strict` | この設定を持つ Cookie は、参照元ページとランディングページの両方が Cookie と同じドメインに属している場合にのみ送信されます。 |
+| `lax` | この設定を持つ Cookie は、ブラウザーの URL に表示されるドメインが Cookie のドメインと一致する場合にのみ送信されます。これは、Chrome の Cookie の新しいデフォルトです。 |
+| `none` | この設定を持つ Cookie は、「クロスサイト」など、外部またはサードパーティからのアクセスに使用できます。この変更がおこなわれるより前、`none` は cookie に対するデフォルトの SameSite 設定でした。そのため、この設定を使用すると、cookie の動作が従来の動作と最も似た動作になります。ただし、Google では現在、この設定を持つ cookie に secure フラグを指定する必要があります。つまり、cookie は常に HTTPS 経由リクエストで作成および送信されます。secure フラグの付いていないクロスサイト cookie はすべて Google によって拒否されます。 |
 
-## Adobe Experience Cloudのお客様に必要な情報
+## Adobe Experience Cloud の顧客が知っておくべき情報
 
-**JavaScriptの更新は不要**
+**JavaScript の更新は不要**
 
-Adobe製品では、適切な属性を持つサードパーティcookieを設定するためのサーバー側の更新が既にリリースされています。 お客様はJavaScriptライブラリの更新は必要ありません。
+アドビ製品は、サードパーティ cookie に適切な属性を設定するため、サーバーサイドのアップデートをリリースしました。顧客側で JavaScript ライブラリを更新する必要ありません。
 
-**サードパーティのエンドポイントでHTTPSが使用されていることを確認する**
+**サードパーティのエンドポイントで HTTPS が使用されていることを確認する**
 
-すべてのお客様は、JavaScriptの設定で、Adobeサービスの呼び出しにHTTPSが使用されていることを確認する必要があります。 ターゲット、Audience ManagerおよびExperience CloudIDサービス(ECID)は、サードパーティのHTTP呼び出しをそれぞれのHTTPSエンドポイントにリダイレクトしているので、待ち時間が長くなる可能性があります。 つまり、設定を変更する必要はありません。 Analyticsのお客様は、HTTPSのみを使用するように実装を更新する必要があります。これは、Analyticsに固有のリダイレクトによってデータが失われる可能性があるためです。
+すべての顧客は、JavaScript 設定でアドビのサービスへの呼び出しに HTTPS が使用されていることを確認する必要があります。Target、Audience Manager および Experience Cloud ID サービス（ECID）は、サードパーティの HTTP 呼び出しをそれぞれの HTTPS エンドポイントにリダイレクトしているので、待機時間が長くなる可能性があります。つまり、設定を変更する必要はありません。Analytics の顧客は、HTTPS のみを使用するように実装を更新する必要があります。これは、Analytics に固有のリダイレクトによってデータが失われる可能性があるためです。
 
-**正しくラベル付けされたcookieは、意図したとおりにデータを収集する必要があります**
+**正しくラベル付けされた cookie は、意図したとおりにデータを収集する**
 
-cookieに正しいラベルが付いている限り、ブラウザーはcookieをブロックするためのアクションを実行しません。 ユーザーには、特定の種類のCookieをブロックするオプションがありますが、現在のところ、これはオプトイン設定のみであると見なされます。
+Cookie に正しいラベルが付けられている限り、ブラウザーは cookie をブロックするアクションを実行しません。コンシューマーには特定の種類の cookie をブロックするオプションがありますが、現在のところ、これはオプトイン設定のみのようです。
 
-**ラベルが更新されていない既存のサードパーティCookieは無視されます**
+**ラベルが更新されていない既存のサードパーティ cookie は無視されます**
 
-Chrome 80でSameSite=の適用が開始される前に作成されたサードパーティCookie`none` 、およびこれらのフラグが存在しない場合は、Chrome 80ではセキュアフラグ設定が無視されます。
+Chrome 80 で SameSite=`none` と secure フラグ設定の適用が開始される前に作成されたサードパーティ cookie は、これらのフラグが存在しない場合、Chrome 80 では無視されます。
 
-既存のAdobeのサードパーティCookieには、これらのフラグがないものが多く、Chrome 80にアップグレードする前にEdgeサーバーが更新する必要があります。そうしないと、それらのCookieが失われます。 Edgeサーバーは、cookieが使用されているWebサイトにユーザーがアクセスすると自動的に更新されます。
+既存の Adobe サードパーティ cookie には、これらのフラグがないものが多く、ユーザーが Chrome 80 にアップグレードする前に Edge サーバーで更新する必要があります。そうしないと、それらの cookie は失われます。Cookie を使用している Web サイトにユーザーがアクセスすると、Edge サーバーは自動的に更新されます。
 
-ほとんどのAdobe製品には、cookieに適切なフラグが割り当てられています。 ただし、サードパーティのデータ収集を使用し、ECIDを使用しないAnalyticsの導入は例外です。 顧客は、新規訪問者が少し増えた場合に、それがなければ再訪問者になったと思われる新規訪問者数が一時的に増加する可能性があります。
+ほとんどのアドビ製品では、適切なフラグが cookie に割り当てられています。ただし、サードパーティのデータ収集を使用し、ECID を使用しない Analytics 実装は例外です。本来は再訪問者とするべき訪問者が新規訪問者としてカウントされ、新規訪問者数が一時的に増加する場合があります。
 
-**宛先とマーケットプレイスのパートナーに対して、cookieの一致が減少する可能性がある(Audience Managerのみ)**
+**宛先と Marketplace のパートナーに対して、cookie の一致が減少する可能性がある（Audience Manager のみ）**
 
-AdobeはCookieの更新を制御できますが、Adobeはパートナーに必要な変更を強制できません。 対象パートナーやマーケットプレイスパートナーを使用しているAudience Managerのお客様が、まだこれらの更新を行っていない場合、cookieの一致が減少する可能性があります。
+アドビは cookie の更新を制御できますが、必要な変更を加えるようパートナーを強制することはできません。宛先パートナーや Marketplace パートナーを使用している Audience Manager の顧客が、まだこれらの更新を行っていない場合、cookie の一致が減少する可能性があります。
 
-**Analytics対応のサードパーティCookie(Analytics`s_vi`cookieのみ)**
+**Analytics 対応のサードパーティ cookie（Analytics `s_vi` cookies のみ）**
 
-一部のAnalyticsの導入では、Analytics CNAMEエイリアスを使用して、そのCNAMEのドメインで `s_vi` cookieを作成できるようにします。 CNAMEがWebサイトと同じドメインにある場合、これはファーストパーティCookieとして指定されます。 ただし、複数のドメインを所有し、すべてのドメインで同じCNAMEをデータ収集に使用する場合は、それらの他のドメインではサードパーティCookieとして指定されます。
+一部の Analytics 実装では、Analytics CNAME エイリアスを使用して、その CNAME のドメインで `s_vi` cookie を作成できるようにします。CNAME が Web サイトと同じドメインにある場合、これはファーストパーティ cookie として指定されます。ただし、複数のドメインを所有し、すべてのドメインで同じ CNAME をデータ収集に使用する場合、他のドメインではサードパーティ cookie として指定されます。
 
-Chromeの新しいデフォルトのSameSite設定 `lax` になった場合、CNAMEは他のドメインでは表示されなくなります。
+`lax` が Chrome の新しいデフォルトの SameSite 設定になると、CNAME は他のドメインでは表示されなくなります。
 
-この変更に対応するために、Analyticsでは、 `s_vi` cookieのSameSite値をに明示的に設定するようにな `lax`りました。 このCookieをわかりやすいサードパーティのコンテキストで使用するには、SameSite値をに設定します。つまり、常にHTTPSを使用する必要があ `none`ります。 セキュアなCNAMEのSameSite値を変更する場合は、カスタマーケアにお問い合わせください。
+この変更に対応するため、Analytics では明示的に、`s_vi` cookie の SameSite 値を `lax` に設定するようになりました。この cookie をわかりやすいサードパーティのコンテキストで使用するには、SameSite 値を `none` に設定します。つまり、常に HTTPS を使用する必要があります。セキュアな CNAME に対して SameSite の値を変更する場合は、カスタマーケアにお問い合わせくだください。
 
 >[!IMPORTANT]
 >
->ECIDを使用するAnalyticsのお客様、ドメインごとに個別のCNAMEを使用するお客様、またはサードパーティのAnalyticsデータ収集のみを使用するお客様には、このアクションは必要ありません。
+> ECID を使用する Analytics のお客様、ドメインごとに個別の CNAME を使用するお客様、またはサードパーティの Analytics データ収集のみを使用するお客様は、このアクションを実行する必要はありません。
 
-## Adobe標準訪問者Cookie
+## アドビ標準訪問者 Cookie
 
-次の表に、一般的な訪問者標準cookieのみを示します。 Cookieのその他の設定については、製品固有のドキュメントを参照するか、Adobeの担当者にお問い合わせください。
+次の表には、一般的な標準訪問者 cookie のみを示します。Cookie のその他の設定については、製品固有のドキュメントを参照するか、アドビ担当者にお問い合わせください。
 
 ### ECID
 
-| cookie | タイプ | SameSite属性 | セキュア属性 |
+| cookie | タイプ | SameSite 属性 | セキュア属性 |
 | ------ | ---- | ------------------ | ---------------- |
-| AMCV_###@AdobeOrg | クライアントサイドのファーストパーティ | 値が追加されない*Chromeのデフォルトは `lax` 、 | 設定可能 |
-| AMCVS_###@AdobeOrg | クライアントサイドのファーストパーティ | 値が追加されない*Chromeのデフォルトは `lax` 、 | 設定可能 |
-| s_ecid | サーバーサイドのファーストパーティ | SameSite==`lax` | 未設定 |
+| AMCV_###@AdobeOrg | クライアントサイドのファーストパーティ | 値は追加されません。*Chrome のデフォルトは `lax` 設定になります。 | 設定可能 |
+| AMCVS_###@AdobeOrg | クライアントサイドのファーストパーティ | 値は追加されません。*Chrome のデフォルトは `lax` 設定になります。 | 設定可能 |
+| s_ecid | サーバーサイドのファーストパーティ | SameSite==`lax` | 設定なし |
 
 ### Audience Manager
 
-| cookie | タイプ | SameSite属性 | セキュア属性 |
+| cookie | タイプ | SameSite 属性 | セキュア属性 |
 | ------ | ---- | ------------------ | ---------------- |
 | Demdex | サードパーティ | `none` | セキュアに設定 |
 | Dextp | サードパーティ | `none` | セキュアに設定 |
 
 ### Analytics
 
-| cookie | タイプ | SameSite属性 | セキュア属性 |
+| cookie | タイプ | SameSite 属性 | セキュア属性 |
 | ------ | ---- | ------------------ | ---------------- |
-| s_vi | <ul><li> サーバーサイドのファーストパーティ( `CNAME` </li> <li>2o7.netまたはomtrdc.netを使用している場合はサードパーティ</li></ul> | <ul><li>`lax` ファーストパーティの場合</li> <li>`none` 第三者が</li></ul> *顧客は、カスタマーケアチケットを介して、ファーストパーティドメインの設定を編集できます。* | HTTPSリクエストを使用する場合 `none` に設定 |
-| s_fid | クライアントサイドのファーストパーティ | 値が追加されません。*Chromeのデフォルトは `lax` 、 | 未設定 |
+| s_vi | <ul><li> `CNAME` を使用している場合はサーバーサイドのファーストパーティ </li> <li>2o7.net または omtrdc.net を使用している場合はサードパーティ</li></ul> | <ul><li>`lax`（ファーストパーティの場合）</li> <li>`none`（サードパーティの場合）</li></ul> *顧客は、カスタマーケアチケットを介して、ファーストパーティドメインの設定を編集できます* | 設定（`none` および HTTPS リクエストを使用する場合） |
+| s_fid | クライアントサイドのファーストパーティ | 値は追加されません。*Chrome のデフォルトは `lax` 設定になります。 | 設定なし |
 
 ### Target
 
-| cookie | タイプ | SameSite属性 | セキュア属性 |
+| cookie | タイプ | SameSite 属性 | セキュア属性 |
 | ------ | ---- | ------------------ | ---------------- |
-| mbox | ファーストパーティ | 値が追加されない*Chromeのデフォルトは `lax` 、 | 未設定 |
+| mbox | ファーストパーティ | 値は追加されません。*Chrome のデフォルトは `lax` 設定になります。 | 設定なし |
 
 ### Ad Cloud
 
-| cookie | タイプ | SameSite属性 | セキュア属性 |
+| cookie | タイプ | SameSite 属性 | セキュア属性 |
 | ------ | ---- | ------------------ | ---------------- |
-| everest_g_v2 | サードパーティ | `none` *Google ChromeおよびChromiumベースのブラウザーのみ* | HTTPSリクエストを使用する場合 `none` に設定 |
-| data_adcloud | ファーストパーティ | 値が追加されない*Chromeのデフォルトは `lax` 、 | 未設定 |
-| ev_tm | サードパーティ | `none` *Google ChromeおよびChromiumベースのブラウザーのみ* | HTTPSリクエストを使用する場合 `none` に設定 |
+| everest_g_v2 | サードパーティ | `none` *Google Chrome および Chromium ベースのブラウザーのみ* | 設定（`none` および HTTPS リクエストを使用する場合） |
+| data_adcloud | ファーストパーティ | 値は追加されません。*Chrome のデフォルトは `lax` 設定になります。 | 設定なし |
+| ev_tm | サードパーティ | `none` *Google Chrome および Chromium ベースのブラウザーのみ* | 設定（`none` および HTTPS リクエストを使用する場合） |
 
 ### Bizible
 
-| cookie | タイプ | SameSite属性 | セキュア属性 |
+| cookie | タイプ | SameSite 属性 | セキュア属性 |
 | ------ | ---- | ------------------ | ---------------- |
-| _buid | サードパーティ | `none` | Secure |
+| _buid | サードパーティ | `none` | セキュア |
 
 ### Marketo Munchkin
 
-| cookie | タイプ | SameSite属性 | セキュア属性 |
+| cookie | タイプ | SameSite 属性 | セキュア属性 |
 | ------ | ---- | ------------------ | ---------------- |
-| _mkto_trk | クライアントサイドのファーストパーティ | 値が追加されない*Chromeのデフォルトは `lax` 、 | 外部ページ用に設定可能 |
+| _mkto_trk | クライアントサイドのファーストパーティ | 値は追加されません。*Chrome のデフォルトは `lax` 設定になります。 | 外部ページ用に設定可能 |
 
-> !![IMPORTANT] AdobeのサードパーティCookieがサーバーサイドで設定されている
+> !![IMPORTANT] Adobe のサードパーティ cookie がサーバーサイドで設定されている
 
-詳しくは、 [ターゲットのGoogle Chrome SameSiteポリシーのドキュメントを参照してください](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html)。
+詳しくは、[Target の Google Chrome SameSite ポリシー](https://docs.adobe.com/content/help/ja-JP/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html)のドキュメントを参照してください。
