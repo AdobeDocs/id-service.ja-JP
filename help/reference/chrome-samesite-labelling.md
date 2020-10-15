@@ -3,9 +3,9 @@ title: Google Chrome SameSite のラベル付けの変更
 seo-title: Google Chrome SameSite のラベル付けの変更
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 seo-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1079'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Chrome 80 で SameSite=`none` と secure フラグ設定の適用が開始され
 
 >[!IMPORTANT]
 >
-> ECID を使用する Analytics のお客様、ドメインごとに個別の CNAME を使用するお客様、またはサードパーティの Analytics データ収集のみを使用するお客様は、このアクションを実行する必要はありません。
+>ECID を使用する Analytics のお客様、ドメインごとに個別の CNAME を使用するお客様、またはサードパーティの Analytics データ収集のみを使用するお客様は、このアクションを実行する必要はありません。
 
 ## アドビ標準訪問者 Cookie
 
