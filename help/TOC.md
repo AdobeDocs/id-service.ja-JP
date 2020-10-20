@@ -9,8 +9,8 @@ user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
 source-git-commit: 47a32f41de23391cf24529c32a5d1098aa010c07
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '388'
+ht-degree: 100%
 
 ---
 
