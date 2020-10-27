@@ -1,18 +1,23 @@
 ---
 cloud: experience-cloud
-product: ID サービス
+product: ID Service
+solution: Experience Cloud Services
+type: Documentation
 audience: end-user
 solution-title: ラーニングとサポート
 solution-hub-url: https://helpx.adobe.com/jp/support/experience-cloud/core-services.html
 solution-image: assets/experience-cloud-logo-24.png
-getting-started-title: 導入
+getting-started-title: はじめに
 getting-started-url: https://helpx.adobe.com/jp/experience-cloud-core-services/get-started.html
 tutorials-title: チュートリアル
 tutorials-url: https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html
-git-repo: https://github.com/AdobeDocs/id-service.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/id-service.ja-JP
 index: true
-translation-type: ht
-source-git-commit: a5c04a6ab1bf257d13bf10e1fdd52a81c6b979c8
+translation-type: tm+mt
+source-git-commit: 9e26a3f7b4ae756a991c8870eb031bb011c0999e
+workflow-type: tm+mt
+source-wordcount: '36'
+ht-degree: 100%
 
 ---
 
