@@ -13,9 +13,9 @@ tutorials-title: チュートリアル
 tutorials-url: https://docs.adobe.com/content/help/en/core-services-learn/tutorials/overview.html
 git-repo: https://git.corp.adobe.com/AdobeDocs/id-service.ja-JP
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9e26a3f7b4ae756a991c8870eb031bb011c0999e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '36'
 ht-degree: 100%
 
