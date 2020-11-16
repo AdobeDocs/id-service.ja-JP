@@ -7,7 +7,7 @@ breadcrumb-title: ID サービスガイド
 user-guide-description: ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。このサービスを、Analytics、Audience Manager、Target などのサービスや、その他の Experience Cloud のソリューションまたは機能の ID 生成コードの代わりに使用できます。
 user-guide-url: /content/help/en/id-service/using/home.html
 translation-type: tm+mt
-source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
+source-git-commit: 0bf1464a7caf3f2a8a06178ed5c2d2525e79cfd6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 97%
@@ -43,7 +43,7 @@ ht-degree: 97%
       + [オプトインサービスの検証](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [Experience Platform Launch を使用したオプトインの設定](implementation-guides/opt-in-service/launch.md)
       + [DTM を使用したオプトインの設定](implementation-guides/opt-in-service/optin-dtm.md)
-      + [ユーザーの同意に基づいてExperience Cloudアクティビティを制御する](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent)
+      + [ユーザーの同意に基づいてExperience Cloudアクティビティを制御する](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [オプトインの使用例](implementation-guides/opt-in-service/use-cases.md)
       + [オプトインリファレンス](implementation-guides/opt-in-service/api.md)
       + [IAB フレームワークを使用したオプトインサービスの使用](implementation-guides/opt-in-service/iab.md)
