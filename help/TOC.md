@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 0bf1464a7caf3f2a8a06178ed5c2d2525e79cfd6
 workflow-type: tm+mt
 source-wordcount: '396'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 97%
       + [オプトインサービスの検証](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
       + [Experience Platform Launch を使用したオプトインの設定](implementation-guides/opt-in-service/launch.md)
       + [DTM を使用したオプトインの設定](implementation-guides/opt-in-service/optin-dtm.md)
-      + [ユーザーの同意に基づいてExperience Cloudアクティビティを制御する](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
+      + [ユーザーの同意に基づいて Experience Cloud アクティビティを制御する](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [オプトインの使用例](implementation-guides/opt-in-service/use-cases.md)
       + [オプトインリファレンス](implementation-guides/opt-in-service/api.md)
       + [IAB フレームワークを使用したオプトインサービスの使用](implementation-guides/opt-in-service/iab.md)
