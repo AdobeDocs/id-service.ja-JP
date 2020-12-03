@@ -1,12 +1,15 @@
 ---
 description: ID サービスが他のドメインに対する呼び出しをおこなえないようにするブール型のフラグ（オプション）。
-keywords: クロスドメイントラッキング;ID サービス
+keywords: cross domain tracking;ID Service
 seo-description: ID サービスが他のドメインに対する呼び出しをおこなえないようにするブール型のフラグ（オプション）。
 seo-title: disableThirdPartyCalls
 title: disableThirdPartyCalls
 uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 58%
 
 ---
 
@@ -21,15 +24,15 @@ ID サービスが他のドメインに対する呼び出しをおこなえな�
 
 **目的**
 
-この変数は、以下を必要とするお客様向けに設計されています。
+この変数は、次の情報を必要とするお客様向けに設計されています。
 
-* ID サービスが認証済みの安全なページから呼び出しをおこなうのを防ぐ。
-* サイト訪問者に Experience Cloud ID（MID）を持たせる。
-* その他の Experience Cloud ソリューションを適切に動作させる。
+* IDサービスが認証済みのセキュリティで保護されたページから呼び出しをおこなうのを防ぐ。
+* Experience CloudID(MID)を持つサイト訪問者。
+* その他のExperience Cloudソリューションを適切に動作させる。
 
 **実装方法**
 
-他の Experience Cloud ソリューションが MID を使用しているので、ID サービスは、この ID を返して設定するために Adobe を呼び出します。ID サービスが Web サイトの認証済みセクションから呼び出しをおこなわないようにする必要がある場合、最初に認証を求められないページからの呼び出しを必須にすることができます。サイト訪問者が MID を取得したら、サイトの認証済みセクションの ID サービスコードで `disableThirdPartyCalls= true` を設定できます。ここでは、すべてではないにせよ、ほとんどの顧客が、サイトの安全な部分へのアクセス権を取得する前に認証ページに移動することを想定しています。
+他のExperience CloudソリューションがMIDを使用しているので、IDサービスはAdobeを呼び出してこのIDを返し、設定します。 ID サービスが Web サイトの認証済みセクションから呼び出しをおこなわないようにする必要がある場合、最初に認証を求められないページからの呼び出しを必須にすることができます。サイト訪問者が MID を取得したら、サイトの認証済みセクションの ID サービスコードで `disableThirdPartyCalls= true` を設定できます。ここでは、すべてではないにせよ、ほとんどの顧客が、サイトの安全な部分にアクセスする前に認証ページに移動することを前提としています。
 
 **コードサンプル**
 
