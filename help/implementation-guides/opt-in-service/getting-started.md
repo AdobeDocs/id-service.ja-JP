@@ -6,6 +6,9 @@ title: オプトインサービスの設定
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
 translation-type: tm+mt
 source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
+workflow-type: tm+mt
+source-wordcount: '941'
+ht-degree: 78%
 
 ---
 
@@ -22,27 +25,27 @@ Experience Cloud ソリューション（オプトインでは「カテゴリー
 
 1. ECID バージョン 4.0。
 
-   最新の ECID リリースを[ダウンロード](https://github.com/Adobe-Marketing-Cloud/id-service/releases)してください。
+   [最新のECIDリリースをダウンロードします](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 。
 
-1. サポートしているライブラリ：
+1. サポートするライブラリ：
 
-   * ECID 4.0 以降
-   * AppMeasurement 2.11 以降
+   * ECID 4.0以降
+   * AppMeasurement 2.11以降
    * DIL 9.0
-   * AT.js バージョン 1.7.0
-   * AT.js Launch 拡張のバージョン 9.0
-   * （Analytics の場合）拡張 1.6 を含む AppMeasurement 2.11
-   * （Target の場合）拡張 0.9.1
+   * AT.jsバージョン1.7.0
+   * AT.js起動拡張機能バージョン9.0
+   * Analyticsの場合、App Measurement 2.11（拡張子1.6付き）
+   * ターゲットの場合、拡張子0.9.1
 
-1. オプトインで使用する同意管理フレームワークを熟知し、その他の前提条件を把握します。
+1. オプトインで使用する同意管理フレームワークに精通し、その他の前提条件を理解していること。
 
    <!--
    For IAB, see here for additional pre-reqs.
    -->
 
-1. 会社のプライバシー要件は、GDPR に準拠し続けるために選んだ方法に対して特異的になります。社内のプライバシー担当チームから同意前の状態での使用が認められているライブラリに注意してください。
+1. 会社のプライバシー要件は、GDPRへの準拠を選択する方法に固有です。 会社のプライバシーチームが事前同意の状態で使用しても問題ないライブラリを確認してください。
 
-[Adobe Launch](https://docs.adobelaunch.com/) を使用すると、 [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
+If using [Adobe Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html), take advantage of the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
 
 ## オプトインのカテゴリー{#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -64,7 +67,7 @@ adobe.OptInCategories = {
 
 オプトインサービスの設定は、グローバルな `getInstance()` オブジェクトをインスタンス化する Visitor JS `adobe` 関数で指定します。以下に、オプトインサービス用の Visitor JS [設定](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf)を示します。
 
-**グローバルな`Visitor`オブジェクトの初期化におけるオプトインの設定例**
+**グローバルな `Visitor` オブジェクトの初期化におけるオプトインの設定例**
 
 ```
 // FORMAT: Object<adobe.OptInCategories enum: boolean> 
@@ -87,9 +90,9 @@ Visitor.getInstance("YOUR_ORG_ID", {
 });
 ```
 
-**同意に対する変更の処理**
+**同意への変更の処理**
 
-訪問者は、サイトを訪問中にいつでも、CMP を使用して初めて環境設定を設定したり、設定した設定を変更したりできます。Visitor JS が初期設定で初期化された後、訪問者の権限を変更できます。同意を管理するための関数の一覧については、[同意の変更](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc)を参照してください。
+サイトでの訪問者の体験の中でいつでも、初めて環境設定を行ったり、CMPを使用して環境設定を変更したりできます。 初期設定で訪問者JSを初期化したら、訪問者の権限を変更できます。 同意を管理するための関数の一覧については、[同意の変更](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc)を参照してください。
 
 <!--
 <p> *** <b>sample code block </b>*** </p>
@@ -109,9 +112,9 @@ adobe.optIn.complete();
 
 ## 訪問者のオプトイン権限の確認 {#section-f136a9024e054d84881e6667fb7c94eb}
 
-訪問者が自身の権限を変更した場合は、変更後の権限を調査して、オプトインサービスでおこなわれた変更を同意ストアと同期する必要があります。訪問者の設定を確認するには、次の例のように[権限関数](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)を使用します。
+訪問者が自身の権限を変更した場合は、変更後の権限を調査して、オプトインサービスでおこなわれた変更を同意ストアと同期する必要があります。次に示すように、 [権限機能を使用して訪問者の環境設定をInspectします](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)。
 
-**fetchPermissions のサンプル**
+**fetchPermissionsサンプル**
 
 ```
 optIn.fetchPermissions(function (permissions) { 
@@ -133,13 +136,13 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-上記のサンプルおよびこのドキュメントで取り上げている関数、プロパティおよび設定の詳細については、[API ドキュメント](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)を参照してください。
+See [API documentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) for more details on these and any functions, properties, or configurations mentioned in this document.
 
 ## 訪問者の設定の保存 {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
 オプトインサービスでは、開発環境や CRM を使用できない環境に適した同意設定を保存することができます。`isOptInStorageEnabled` 設定プロパティを *true* として指定すると、オプトインサービスにより、ドメイン内の訪問者のシステムに Cookie が作成されます。
 
-`adobe.optIn` オブジェクトはステートレスであり、保存メカニズムは備えていません。その代わり、既存の同意管理プラットフォーム（CMP）でカスタムデータの保存が許可されている場合にそのプラットフォームでアドビの同意設定を管理することを目的としています。また、訪問者のブラウザーの Cookie に訪問者の設定を保存することもできます。オプトインサービスにユーザーの環境設定を指定する方法は 2 つあります。
+`adobe.optIn` オブジェクトはステートレスであり、保存メカニズムは備えていません。カスタムデータの保存が可能な場合は、代わりに、既存のConsent Management Platform(CMP)でAdobeの同意設定を管理することを意図しています。 または、訪問者の設定を訪問者のブラウザー上のCookieに保存できます。 オプトインサービスにユーザーの環境設定を指定する方法は 2 つあります。
 
 * CMP か訪問者のブラウザーの Cookie かに関わらず、同意保持ソリューションで訪問者の設定をタイムリーに取得できる場合は、Visitor の初期化中にこれらの設定をオプトインサービスに指定できます。
 * ただし、取得プロセスに時間がかかる場合や、非同期プロセスとして最善の役割を果たしている場合には、サービスの `approve()` 関数を使用して、読み込みに成功したときにこれらの設定を指定できます。
