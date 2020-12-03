@@ -6,6 +6,9 @@ title: Launch を使用した実装
 uuid: b3282f8e-82b8-4635-8c80-1b365e8a9693
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '189'
+ht-degree: 52%
 
 ---
 
@@ -16,9 +19,9 @@ Adobe Experience Platform Launch は、Experience Cloud Identity Service を設�
 
 ## Launch について {#section-611711602854464ea351a4af80a8dafe}
 
-[Adobe Experience Platform Launchは](https://docs.adobelaunch.com/) 、Adobe Experience cloudに組み込まれた次世代のAdobeタグ管理機能です。 Launch を使用すると、クライアントは以下のことが可能になります。
+[Adobe Experience Platform Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html) は、Adobe Experience Cloudに組み込まれたAdobeタグ管理機能の次世代です。 Launchを使用すると、クライアントは次のことができます。
 
 * 拡張機能と呼ばれる統合機能を使用してクライアント側の Web 製品をデプロイする
-* 他のベンダーやアドビのマーケティング製品と広告製品の間でデータを一貫して記録、定義、管理および共有する
-* Launch は高度な JavaScript 配信システムであり、条件および実行済みのアクションを評価して、クライアント側のライブラリと製品を効率的かつ効果的にデプロイします。これには、プログラムで Adobe Experience Cloud を操作するための一連の堅牢な API とともに、拡張の管理と構築のための拡張性の高い手法が用意されています。
+* 他のベンダーのマーケティング製品と広告製品の間やAdobeから、一貫してデータをキャプチャ、定義、管理、共有
+* Launchは、条件を評価し、アクションを実行してクライアント側のライブラリと製品を効率的かつ効果的にデプロイする、高度なJavaScript配信システムです。 これは、拡張機能の管理と構築に高いスケーラブルなアプローチを提供します。また、プログラム的にAdobe Experience Cloudとやり取りするための堅牢なAPIのセットも提供します。
 
