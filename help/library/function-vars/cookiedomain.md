@@ -1,12 +1,15 @@
 ---
 description: URL の末尾 2 つのパートのいずれかが 3 文字以上から成るマルチパートのトップレベルドメインの場合に必須です。
-keywords: ID サービス
+keywords: ID Service
 seo-description: URL の末尾 2 つのパートのいずれかが 3 文字以上から成るマルチパートのトップレベルドメインの場合に必須です。
 seo-title: cookieDomain
 title: cookieDomain
 uuid: a57e5477-c07b-4d54-8aea-8e8b152f1423
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
+workflow-type: tm+mt
+source-wordcount: '74'
+ht-degree: 100%
 
 ---
 
