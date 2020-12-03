@@ -5,9 +5,9 @@ seo-description: これを実装すると、アドビの JavaScript コードや
 seo-title: Experience Cloud Identity Service との直接統合
 title: Experience Cloud Identity Service との直接統合
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 100%
 
