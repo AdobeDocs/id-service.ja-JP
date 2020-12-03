@@ -1,12 +1,15 @@
 ---
 description: getMarketingCloudVisitorID は、Experience Cloud 訪問者 ID を返します。
-keywords: ID サービス
+keywords: ID Service
 seo-description: getMarketingCloudVisitorID は、Experience Cloud 訪問者 ID を返します。
 seo-title: getMarketingCloudVisitorID
 title: getMarketingCloudVisitorID
 uuid: 93e16220-b5b3-4d81-9189-30031bc15129
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 4a5fbc971dc950c65e5c8f92dffdfe5dde528b54
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +20,7 @@ getMarketingCloudVisitorID は、Experience Cloud 訪問者 ID を返します�
 
 **構文：** ` var *`変数名`* = visitor.getMarketingCloudVisitorID()`
 
-このメソッドは、通常、訪問者 ID を読み取る必要があるカスタムソリューションで使用されます。標準の実装では使用されません。`getMarketingCloudVisitorID` は、[!DNL Analytics] ID を読み取ってシステムまたはアプリケーションに送信するコールバック関数とも連携します。
+このメソッドは、通常、訪問者IDを読み取る必要があるカスタムソリューションで使用されます。 標準の実装では使用されません。`getMarketingCloudVisitorID` は、[!DNL Analytics] ID を読み取ってシステムまたはアプリケーションに送信するコールバック関数とも連携します。
 
 ```js
 //callback function 
