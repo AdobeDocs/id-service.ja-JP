@@ -1,9 +1,9 @@
 ---
 title: 個別訪問者数の識別
 description: Adobe ECID（ID サービス）のドキュメント
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 8ad5ae179540596913fccc59070aecc57b09f586
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 100%
 
