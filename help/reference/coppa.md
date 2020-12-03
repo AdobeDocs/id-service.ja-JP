@@ -1,12 +1,15 @@
 ---
 description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を Experience Cloud Identity Service コードに追加して、ブラウザーのサードパーティドメインに Cookie を設定できなくすることができます。
-keywords: ID サービス
+keywords: ID Service
 seo-description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を Experience Cloud Identity Service コードに追加して、ブラウザーのサードパーティドメインに Cookie を設定できなくすることができます。
 seo-title: Experience Cloud Identity Service での COPPA のサポート
 title: Experience Cloud Identity Service での COPPA のサポート
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 77%
 
 ---
 
@@ -21,14 +24,14 @@ source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 
 **Cookie とトラッキング**
 
-Web ページを読み込む際に、[!DNL Experience Cloud] ID サービスが [!DNL Adobe] データ収集サーバー（DCS）を呼び出します。DCS の応答には Experience Cloud Cookie と demdex.net Cookie が含まれます。
+Web ページを読み込む際に、[!DNL Experience Cloud] ID サービスが [!DNL Adobe] データ収集サーバー（DCS）を呼び出します。DCSの応答には、Experience Cloudcookieとdemdex.net cookieが含まれます。
 
-* Experience Cloud Cookie はファーストパーティドメインに設定されます。異なるドメインが連動してアクセスを許可していない限り、この Cookie を使用して異なるドメインで訪問者を追跡することはできません。
-* demdex.net Cookie は、サードパーティドメインに設定されます。この Cookie には、訪問者を異なるドメインで追跡するために使用できる一意の識別子が含まれます。
+* Experience CloudCookieはファーストパーティドメインに設定されます。 異なるドメイン間で訪問者を追跡する場合は、それらのドメインが連携してアクセスを許可する場合を除き、このメソッドを使用することはできません。
+* demdex.net cookieは、サードパーティドメインに設定されます。 このIDには、異なるドメイン間で訪問者を追跡するために使用できる一意の識別子が含まれます。
 
-**Cookie と COPPA の遵守**
+**CookieとCOPPAの準拠**
 
-子供を対象とした（または主に子供向けの）Web サイトに、異なるドメインで訪問者を追跡するサードパーティ Cookie がある場合、COPPA により親の同意が求められます。内部 Web サイト分析で COPPA をより簡単に遵守するには、以下のように `disableThirdPartyCookies:true` 関数に `Visitor.getInstance` 変数を追加します。
+子供を対象とする（または主に子供向けの）Webサイトに関して異なるドメイン間で訪問者を追跡するサードパーティCookieによって、COPPAの親の同意が求められます。 内部 Web サイト分析で COPPA をより簡単に遵守するには、以下のように `disableThirdPartyCookies:true` 関数に `Visitor.getInstance` 変数を追加します。
 
 ```js
 //Call the ID service 
