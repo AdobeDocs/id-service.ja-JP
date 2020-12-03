@@ -5,9 +5,9 @@ seo-description: 従来の実装では、Dynamic Tag Management（DTM）を使�
 seo-title: Dynamic Tag Management を使用した実装
 title: Dynamic Tag Management を使用した実装
 uuid: c4f752c4-392e-4909-b178-911706857064
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2056'
 ht-degree: 100%
 
