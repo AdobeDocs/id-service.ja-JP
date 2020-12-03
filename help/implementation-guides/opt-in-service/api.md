@@ -6,6 +6,9 @@ title: オプトインリファレンス
 uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
 translation-type: tm+mt
 source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
+workflow-type: tm+mt
+source-wordcount: '897'
+ht-degree: 73%
 
 ---
 
@@ -14,7 +17,7 @@ source-git-commit: 4fbfefddcf36855f32f2a4047e19ef0b22fc508c
 
 オプトインライブラリおよび設定用 API のリファレンスです。
 
-同意の設定は、カテゴリとしてオプトインの関数に指定します。
+同意の設定は、カテゴリーとしてオプトインの関数に指定します。
 
 ```
 adobe.OptInCategories = { 
@@ -25,15 +28,15 @@ adobe.OptInCategories = {
 }
 ```
 
-## オプトインの設定パラメーター {#section-d66018342baf401389f248bb381becbf}
+## オプトイン設定パラメーター {#section-d66018342baf401389f248bb381becbf}
 
 このセクションでは、API を使用してオプトインを設定する方法について説明します。設定および実装の大部分は、Experience Platform Launch 拡張を使用しておこなうことができます。
 
 オプトインの設定は、グローバルな `getInstance()` オブジェクトをインスタンス化する、Visitor JavaScript `adobe` 関数で指定されます。以下に、オプトインサービスに関連した Visitor JS 設定を示します。
 
-**`doesOptInApply (boolean or function that evaluates to a boolean)`**：
+**`doesOptInApply (boolean or function that evaluates to a boolean)`**:
 
-false の場合は、訪問者がオプトインをおこなう必要はありません。結果として、オプトインまたはオプトアウトの対象となるカテゴリーに関わらず、Experience Cloud では Cookie が作成されます。この設定では、全体的にオプトインの有効と無効を切り替えます。
+falseの場合は、訪問者が必要としないことを示オプトインします。 結果として、オプトインまたはオプトアウトの対象となるカテゴリーに関わらず、Experience Cloud では Cookie が作成されます。この設定は、全体的にオプトインを有効または無効にします。
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -47,31 +50,31 @@ false の場合は、訪問者がオプトインをおこなう必要はあり�
 
 オプトインを有効にして（現在のお客様のドメイン内にある）ファーストパーティ Cookie に権限を保存します
 
-（オプション）**`optInCookiesDomain (string)`**
+(オプション) **`optInCookiesDomain (string)`**
 
 オプトイン Cookie に使用するファーストパーティドメインまたはサブドメイン（`isOptInStorageEnabled` が true の場合）
 
-（オプション）**`optInStorageExpiry (integer)`**
+(オプション) **`optInStorageExpiry (integer)`**
 
-デフォルトの有効期限 13 ヶ月を上書きする秒数
+デフォルトの13か月の有効期限を上書きする秒数
 
-## 同意変更パラメーター {#section-c3d85403ff0d4394bd775c39f3d001fc}
+## 同意パラメータの変更 {#section-c3d85403ff0d4394bd775c39f3d001fc}
 
-訪問者は、サイトを訪問中にいつでも、CMP を使用して初めて環境設定を設定したり、設定した設定を変更したりできます。Visitor JS が初期設定で初期化されたら、以下の関数を使用して訪問者の権限を変更できます。
+訪問者は、サイトでの体験の中でいつでも、初めて環境設定を行ったり、CMPを使用して環境設定を変更したりできます。 初期設定で訪問者JSを初期化したら、次の関数を使用して訪問者の権限を変更できます。
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 
-リスト内のすべてのカテゴリーに対して訪問者を承認、つまりオプトインする関数。shouldWaitForComplete パラメーターの詳細については、[オプトインワークフロー](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5)を参照してください。
+リスト内のすべてのカテゴリーに対して訪問者を承認、つまりオプトインする関数。shouldWaitForCompleteパラメーターについて詳しくは、オプトイン [ワークフローを参照してください](../../implementation-guides/opt-in-service/getting-started.md#section-70cd243dec834c8ea096488640ae20a5)。
 
 **`adobe.optIn.deny(categories, shouldWaitForComplete)`**
 
 指定したすべてのカテゴリーに対して訪問者を拒否、つまりオプトアウトする関数。
 
-**`adobe.optIn.approveAll()`**：
+**`adobe.optIn.approveAll()`**:
 
 サイトで Cookie を作成するための権限を訪問者が一括で許可または拒否するように、サイトで作成する権限に関するリクエストをフレーズ化する場合は、応答に応じて `approveAll()` または `denyAll()` を使用します。
 
-**`adobe.optIn.denyAll()`**：
+**`adobe.optIn.denyAll()`**:
 
 サイトで Cookie を作成するための権限を訪問者が一括で許可または拒否するように、サイトで作成する権限に関するリクエストをフレーズ化する場合は、応答に応じて `approveAll()` または `denyAll()` を使用します。
 
@@ -105,7 +108,7 @@ false の場合は、訪問者がオプトインをおこなう必要はあり�
 
 `adobe.optIn.fetchPermissions(callback, shouldAutoSubscribe)`
 
-権限のリストを非同期で取得します。コールバックは、権限の許可または拒否プロセスが完了すると、権限のリストで呼び出されます。`shouldAutoSubscribe`の値に *true* を指定すると、将来のオプトインの変更に備えてコールバックが登録されます。`adobe.OptIn` のプロパティを以下に示します。
+権限のリストを非同期で取得します。 このコールバックは、権限の付与/拒否プロセスが完了すると、権限のリストと共に呼び出されます。 `shouldAutoSubscribe`の値に *true* を指定すると、将来のオプトインの変更に備えてコールバックが登録されます。`adobe.OptIn` のプロパティを以下に示します。
 
 **`permissions`**
 
@@ -113,7 +116,7 @@ false の場合は、訪問者がオプトインをおこなう必要はあり�
 
 **`status`**
 
-* pending
+* 保留中
 * changed
 * complete
 
@@ -123,11 +126,11 @@ true または false。初期化で指定した設定を表します。
 
 **`isPending`**
 
-status の値に応じて true または false。まだ明示的に権限を承認または拒否していない訪問者について、このプロパティでは true が返されます。
+ステータスの値に応じて、trueまたはfalse。 権限を明示的に受け入れたか拒否していない訪問者の場合、このプロパティに対してオプトインレポートがtrueになります
 
 **`isComplete`**
 
-status の値に応じて true または false。ワークフロー形式の同意が開始されたものの完了していない場合、このプロパティでは false が返されることがあります。
+ステータスの値に応じてtrueまたはfalse。 ワークフロースタイルの同意が開始されたが完了していない場合に、このプロパティのオプトインでfalseが報告されることがあります。
 
 ## オプトインオブジェクトのメソッド {#section-e0417801a82548d199d833010033e433}
 
@@ -159,7 +162,7 @@ status の値に応じて true または false。ワークフロー形式の同�
 
 **`fetchPermissions(callback, shouldAutoSubscribe)`**
 
-権限のリストを取得する非同期 API。コールバックは、権限の許可または拒否プロセスが完了すると、権限のリストで呼び出されます。**`shouldAutoSubscribe`：**&#x200B;ヘルパーユーティリティは、このコールバックを自動的に今後のすべてのイベントにサブスクライブします。つまり、オプトインで承認または拒否がトリガーされるたびに、このコールバックが呼び出されます。これにより、手動でイベントにサブスクライブしなくても、常に更新されます。
+権限のリストを取得する非同期API。 このコールバックは、権限の付与/拒否プロセスが完了すると、権限のリストと共に呼び出されます。 **`shouldAutoSubscribe`:** ヘルパーユーティリティは、このコールバックを自動的に将来のすべてのイベントにサブスクライブします。 つまり、の承認または拒否トリガーのたびにコールバックが呼び出されオプトインます。 この方法により、イベントを自分で登録することなく、常に更新されます。
 
 **例**
 
@@ -188,23 +191,23 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-**`complete()`：**
+**`complete()`:**
 
 >[!NOTE]
 >
 >`shouldWaitForComplete` パラメーターを approve または deny に渡した場合にのみ使用してください。この API により、承認プロセスが完了します。例：`adobe.optIn.complete()`。
 
-**`approveAll()`：**
+**`approveAll()`:**
 
 既存のカテゴリーをすべて承認します。
 
 **`denyAll()`**
 
-既存のカテゴリをすべて拒否します。
+既存のカテゴリーをすべて拒否します。
 
 ## オプトインオブジェクトのイベント {#section-06f25b33cab54bafb053183e937fb710}
 
-**`complete`：**
+**`complete`:**
 
 承認プロセスが完了したときにイベントトリガーを完了します。`shouldWaitForComplete` を渡さずに approve または deny を呼び出すか、`approveAll` または `denyAll` を呼び出すと、このイベントがトリガーされます。また、`shouldWaitForComplete` を渡した場合は、`complete` が呼び出されるとこのイベントがトリガーされます。
 
