@@ -1,9 +1,9 @@
 ---
 title: オプトインを使用し、ユーザーの同意に基づいて Experience Cloud アクティビティを制御する
 description: Adobe Opt-In Object は、Adobe Experience Platform ID サービスの拡張機能です。エンドユーザーの同意に基づいて、Experience Cloud ソリューション Web ページ上に cookie を作成したり、ビーコンを開始したりできるようにするか、およびどのソリューションを使用するかを制御できます。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Adobe [!UICONTROL Opt-In] Object は、Adobe [!UICONTROL Experience Platform ID 
 
 [!UICONTROL また、オプトイン]は、Adobe Experience Platform Launch で最も簡単に設定できます。次の短いビデオを閲覧して、方法をご確認ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
 Experience Platform Launch を使用していない場合は、[ドキュメント](https://marketing.adobe.com/resources/help/ja_JP/mcvid/getting-started.html)に示すように、グローバル訪問者オブジェクトの初期化時に[!UICONTROL オプトイン]を設定できます。
 
@@ -46,7 +46,7 @@ Experience Platform Launch を使用していない場合は、[ドキュメン�
 
 次のビデオでは、ページでの[!UICONTROL オプトイン]の仕組みに関する簡単なデモを参照し、Experience Cloud ソリューションで cookie を設定できるかどうか、ビーコンを開始できるかどうかなどにどのような影響があるかを確認します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12&captions=jpn)
+>[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
 
 **注意：**&#x200B;この記事の作成時点では、[!UICONTROL オプトイン]が組み込まれていない Experience Cloud ソリューションのライブラリもあったことに注意してください。現在、[!UICONTROL オプトイン]がサポートされているライブラリは、次のとおりです。
 
