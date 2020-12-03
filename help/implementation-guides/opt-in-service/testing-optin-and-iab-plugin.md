@@ -6,6 +6,9 @@ title: オプトインサービスの検証
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
 translation-type: tm+mt
 source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 27%
 
 ---
 
@@ -24,15 +27,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 ![](assets/use_case_1_1.png)
 
-ページを読み込む前に、キャッシュと Cookie を消去します。
+ページを読み込む前に、キャッシュとCookieをクリアします。
 
-Chrome で、Web ページを右クリックして「検証」を選択します。上のスクリーンショットのように、「*Network*」タブを選択して、ブラウザーからのリクエストを表示します。
+Chromeで、Webページを右クリックし、「Inspect」を選択します。 上のスクリーンショットのように、「 *Network* 」タブを選択して、ブラウザーからの要求を表示します。
 
-この例では、ECID、AAM、Analytics、Target という Adobe JS タグがページにインストールされています。
+上の例では、次のAdobeJSタグがページにインストールされています。ECID、AAM、Analytics、ターゲット。
 
 **オプトインが期待どおりに動作していることを証明する方法：**
 
-アドビのサーバーに対するリクエストは表示されません。
+Adobeサーバーへのリクエストは表示されません。
 
 * demdex.net/id
 * demdex.net/event
@@ -42,15 +45,15 @@ Chrome で、Web ページを右クリックして「検証」を選択します
 
 >[!NOTE]
 >
->`http://dpm.demdex.net/optOutStatus` の呼び出しが表示される場合があります。これは、訪問者のオプトアウトステータスを取得するために使用される読み取り専用のエンドポイントです。このエンドポイントでは、サードパーティ Cookie が作成されることも、ページから情報が収集されることもありません。
+>`http://dpm.demdex.net/optOutStatus` の呼び出しが表示される場合があります。これは、訪問者のオプトアウトステータスを取得するために使用される読み取り専用のエンドポイントです。このエンドポイントでは、サードパーティCookieが作成されず、ページから情報が収集されません。
 
-アドビのタグによって作成された Cookie（AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2）は表示されません。
+Adobeタグによって作成されたCookieは表示されません。(AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2)
 
-Chrome で、「*Application*」タブに移動し、「*Storage*」の「*Cookies*」セクションを展開して、Web サイトのドメイン名を選択します。
+Chromeの「 *Application* （アプリケーション） *」タブで、「* ストレージ *」の下の「Cookies*」セクションを展開し、Webサイトのドメイン名を選択します。
 
 ![](assets/use_case_1_2.png)
 
-## 使用例 2：オプトインとストレージを有効にする {#section-bd28326f52474fa09a2addca23ccdc0f}
+## 使用例2:オプトインとストレージを有効にする {#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -59,9 +62,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-使用例 2 で唯一異なる点は、訪問者から提供されたオプトインの権限が含まれる&#x200B;*新しい Cookie* として **adobeujs-optin** が表示されることです。
+使用例2の違いは、訪問者が提供するオプトイン権限 *を含む新しいcookie* が表示される点だけです。 **adobeujs-optin**
 
-## 使用例 3：オプトインを有効にして Adobe Analytics を事前承認する {#section-257fe582b425496cbf986d0ec12d3692}
+## 使用例3:オプトインと事前承認のAdobe Analyticsを有効にする {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -73,15 +76,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-Adobe Analytics ではオプトインが事前に承認されているので、「Network」タブには、トラッキングサーバーに対するリクエストが表示されます。
+Adobe Analyticsは事前にオプトインが承認されているので、「ネットワーク」タブにトラッキングサーバーへのリクエストが表示されます。
 
 ![](assets/use_case_3_1.png)
 
-さらに、「Application」タブには、Analytics の Cookie が表示されます。
+「アプリケーション」タブにAnalytics cookieが表示されます。
 
 ![](assets/use_case_3_2.png)
 
-## 使用例 4：オプトインと IAB を有効にする {#section-64331998954d4892960dcecd744a6d88}
+## 使用例4:オプトインとIABを有効にする {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -90,9 +93,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-**ページに現在の IAB の同意を表示する方法：**
+**ページで現在のIABの同意を表示する方法：**
 
-開発者ツールを開き、「*Console*」タブを選択します。次のコードスニペットを貼り付けて、Enter キーを押します。
+開発者ツールを開き、「 *コンソール* 」タブを選択します。 次のコードスニペットを貼り付け、Enterキーを押します。
 
 ```
 <codeblock>
@@ -102,15 +105,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
   
 ```
 
-次の出力例は、目的 1、2、5 が承認され、Audience Manager ベンダー ID が承認されたときのものです。
+以下は、目的1、2、5が承認され、Audience ManagerベンダーIDが承認された場合の出力例です。
 
-* demdex.net/id：この呼び出しがある場合は、ECID が demdex.net に対して ID をリクエストしたことがわかります。
-* demdex.net/event：この呼び出しがある場合は、DIL データ収集呼び出しが期待どおりに動作していることがわかります。
-* demdex.net/dest5.html：この呼び出しがある場合は、ID 同期がトリガーされていることがわかります。
+* demdex.net/id:この呼び出しが存在する場合、ECIDがdemdex.netからIDをリクエストしたことを証明します
+* demdex.net/event:この呼び出しが存在する場合、DILのデータ収集呼び出しが期待どおりに動作していることが証明されます。
+* demdex.net/dest5.html:この呼び出しが存在する場合、ID同期がトリガーされていることを証明します。
 
 ![](assets/use_case_4_1.png)
 
-次のいずれかが当てはまる場合、アドビのサーバーに対するリクエストは表示されず、アドビ Cookie もありません。
+次のいずれかが無効な場合、Adobeサーバーへのリクエストは表示されず、Adobecookieも表示されません。
 
-* 目的 1、2 または 5 が承認されていない。
-* Audience Manager ベンダー ID が承認されていない。
+* 目的1、2、または5は承認されません。
+* Audience ManagerベンダーIDが承認されていません。
