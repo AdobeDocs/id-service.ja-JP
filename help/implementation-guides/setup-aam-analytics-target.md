@@ -5,9 +5,9 @@ seo-description: これらの手順は、Experience Cloud Identity Service を�
 seo-title: Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装
 title: Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1572'
 ht-degree: 100%
 
