@@ -5,9 +5,9 @@ seo-description: ID サービスの idSyncByURL 関数と idSyncByDataSource 関
 seo-title: URL またはデータソースによる ID 同期
 title: URL またはデータソースによる ID 同期
 uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 100%
 
