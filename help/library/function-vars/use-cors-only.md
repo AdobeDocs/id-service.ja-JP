@@ -1,12 +1,15 @@
 ---
 description: ブラウザーが Experience Cloud Identity Service からリソースをリクエストする方法を制御するブール型フラグです（オプション）。
-keywords: ID サービス
+keywords: ID Service
 seo-description: ブラウザーが Experience Cloud Identity Service からリソースをリクエストする方法を制御するブール型フラグです（オプション）。
 seo-title: useCORSOnly
 title: useCORSOnly
 uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
+workflow-type: tm+mt
+source-wordcount: '161'
+ht-degree: 73%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 
 **概要**
 
-`false` に設定すると、ブラウザーは、CORS または JSONP を使用してリソースチェックを実行します。ただし、ID サービスは常に、最初に CORS を使用してリソースをリクエストしようとします。CORS をサポートしていない古いブラウザーでは、JSONP に切り替わります。CORS のみを使用するようにブラウザーを強制する必要がある場合、`useCORSOnly:true` 関数呼び出しで `Visitor.getInstance` を設定します。
+`false` に設定すると、ブラウザーは、CORS または JSONP を使用してリソースチェックを実行します。ただし、IDサービスは常に、最初にCORSを使用してリソースをリクエストしようとします。 CORS をサポートしていない古いブラウザーでは、JSONP に切り替わります。CORS のみを使用するようにブラウザーを強制する必要がある場合、`useCORSOnly:true` 関数呼び出しで `Visitor.getInstance` を設定します。
 
 >[!IMPORTANT]
 >
->厳格なセキュリティ要件がある場合は、`Set useCORSOnly: true` を設定します。すべての訪問者が CORS をサポートするブラウザーを使用しているという確信がある場合にのみ、このモードを有効にする必要があります。ユーザーエクスペリエンスは、CORS をサポートしていないブラウザーの影響を受けません。ただし、CORS をサポートしていないブラウザーは、[!DNL Adobe Experience Cloud] を使用してリソースをリクエストしたり、データを交換したりできません。
+>厳格なセキュリティ要件がある場合は、`Set useCORSOnly: true` を設定します。すべての訪問者でCORSをサポートするブラウザーを使用していると確信している場合にのみ、このモードを有効にしてください。 ユーザーエクスペリエンスは、CORSをサポートしないブラウザーの影響を受けません。 ただし、CORS をサポートしていないブラウザーは、[!DNL Adobe Experience Cloud] を使用してリソースをリクエストしたり、データを交換したりできません。
 
 **コードサンプル**
 
