@@ -1,11 +1,14 @@
 ---
 description: Experience Cloud ID Service（ECID）は、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、SHA-256 ハッシュアルゴリズムをサポートします。これは、ハッシュされた識別子を Experience Cloud に送信するための、オプションの JavaScript メソッドです。顧客 ID の送信前にハッシュする独自の方法を引き続き使用できます。
-keywords: ID サービス
+keywords: ID Service
 seo-description: Experience Cloud ID Service（ECID）は、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、SHA-256 ハッシュアルゴリズムをサポートします。これは、ハッシュされた識別子を Experience Cloud に送信するための、オプションの JavaScript メソッドです。顧客 ID の送信前にハッシュする独自の方法を引き続き使用できます。
 seo-title: setCustomerIDs の SHA256 ハッシュサポート
 title: setCustomerIDs の SHA256 ハッシュサポート
 translation-type: tm+mt
 source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 91%
 
 ---
 
@@ -19,7 +22,7 @@ Experience Cloud ID Service（ECID）は、顧客 ID または電子メールア
 
 ## ECID での `setCustomerIDs` メソッドの使用 {#use-setcustomerids-method}
 
-最初の方法は、[`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) メソッドを利用します。
+The first method leverages using the [`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`) method.
 
 ハッシュ化する前に、ECID ライブラリは、customerIDs のデータの正規化を実行します。このプロセスでは、customerIDs の両端の空白をトリミングし、すべての文字を小文字に変換します。例えば、電子メールアドレスの場合、「 ecid@adobe.com 」は「ecid@adobe.com」になります。
 
@@ -34,7 +37,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID、認証状態およびハッシュタイプ（SHA-256）を各訪問者に関連付けることができます。ハッシュタイプを指定していない場合、ハッシュ化しないと見なされます。
 
-`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://docs.adobe.com/content/help/en/core-services/interface/customer-attributes/attributes.html)として Experience Cloud にアップロードして、異なるソリューションからこのデータにアクセスすることができます。
+`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。For example, you can upload these IDs as [customer attributes](https://docs.adobe.com/content/help/ja-JP/core-services/interface/customer-attributes/attributes.html) to the Experience Cloud and access this data across the different solutions.
 
 顧客 ID、認証状態およびハッシュタイプは、後で使用するために Cookie に格納されることはありません。**&#x200B;代わりに、顧客 ID、認証状態およびハッシュタイプは、[`getCustomerIDs`](/help/library/get-set/getcustomerids.md) を使用して取得するために、以下に示すように、インスタンス変数に格納されます。
 
@@ -63,13 +66,13 @@ ts=1563299964843
 
 | パラメーター | 説明 |
 |------------|----------|
-| `d_cid_ic` | 統合コード、一意の ユーザー ID（DPUUID）および認証状態 ID を ID サービスに渡します。統合コードおよび DPUUID を非表示の制御文字、<code>%01</code> で区切ります。<br> 例：<code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>認証状態</b> <br> これは、d_cid_ic パラメーターのオプションの ID です。整数で表され、以下に示す認証状態によってユーザーを識別します。<br> <ul><li>0（不明または認証なし）</li><li>1（現在、このインスタンス／ページ／アプリコンテキストに対して認証済み）</li><li>2（ログアウト済み）</li></ul> <br>例：<br> <ul><li>不明：...d_cid=123%01456%01<b>0</b></li><li>認証済み：...d_cid=123%01456%01<b>1</b></li><li>ログアウト済み：...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | 統合コード、一意の ユーザー ID（DPUUID）および認証状態 ID を ID サービスに渡します。統合コードおよび DPUUID を非表示の制御文字、%01</code> で区切ります。<br> 例：d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>認証状態</b> <br> これは、d_cid_ic パラメーターのオプションの ID です。整数で表され、以下に示す認証状態によってユーザーを識別します。<br> <ul><li>0（不明または認証なし）</li><li>1（現在、このインスタンス／ページ／アプリコンテキストに対して認証済み）</li><li>2（ログアウト済み）</li></ul> <br>例：<br> <ul><li>不明：...d_cid=123%01456%01<b>0</b></li><li>認証済み：...d_cid=123%01456%01<b>1</b></li><li>ログアウト済み：...d_cid=123%01456%01<b>2</b></li></ul> |
 
 ## Adobe Experience Platform Launch でのアクションの追加 {#add-action-launch}
 
-Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。起動について詳しくは、起動製品ドキュメント [を参照してください](https://docs.adobe.com/content/help/en/launch/using/overview.html)。
+Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。起動について詳しくは、 [起動製品ドキュメントを参照してください](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)。
 
-「起動」にアクションを追加するには、Adobe Launchのルールに関す [るドキュメントを読み](https://docs.adobe.com/help/en/launch/using/reference/manage-resources/rules.html) 、以下の画面キャプチャを参照してください。
+「起動」にアクションを追加するには、「Adobe起動」の [ルールドキュメントを読み](https://docs.adobe.com/help/ja-JP/launch/using/reference/manage-resources/rules.html) 、次の画面キャプチャを確認します。
 
 ![](/help/reference/assets/hashing-support.png)
 
