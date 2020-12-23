@@ -3,11 +3,11 @@ title: Safari ITP での ECID ライブラリの手法
 seo-title: Safari ITP での ECID ライブラリの手法
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 seo-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 012bf5db473b37b17e7af957c08da71b253c718f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '810'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 72%
 
 >[!NOTE]
 >
->2020年11月12日にBig Sur OSリリースの一環としてリリースされたITPに対する最新の変更を反映するため、更新が行われました。
+>2020 年 11 月 12 日に Big Sur OS リリースの一環としてリリースされた ITP に対する最新の変更を反映するため、アップデートがおこなわれました。
 
 Safari は ITP を使用したクロスドメイントラッキングと強く結びついているので、アドビでは、お客様および消費者のプライバシーおよび選択肢をサポートするライブラリのベストプラクティスを維持する必要があります。
 
-2020年11月10日時点で、すべてのファーストパーティ永続的cookieは、ドキュメントのcookie（「クライアント側」cookieとも呼ばれる）を通じて設定され、cookieはSafariおよびモバイルiOSのファーストパーティCNAME実装を通じて設定され、7日間の有効期限が切れます。 以前のバージョンのITPでの説明に従い、サードパーティCookieは引き続きブロックされます。 ITP 2.1 およびアドビソリューションへの影響について詳しくは、[Safari ITP 2.1 が Adobe Experience Cloud および Experience Platform のお客様に与える影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)を参照してください。
+2020 年 11 月 10 日時点で、document.cookie API（「クライアント側」Cookie とも呼ばれる）を通じて設定されたすべてのファーストパーティの永続的な Cookie と、Safari およびモバイル iOS のファーストパーティ CNAME 実装を通じて設定されたCookie の有効期限は 7 日間です。 サードパーティ Cookie は、ITP の以前のバージョンで記載されているように、引き続きブロックされます。ITP 2.1 およびアドビソリューションへの影響について詳しくは、[Safari ITP 2.1 が Adobe Experience Cloud および Experience Platform のお客様に与える影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)を参照してください。
 
-## ITP関連の変更、方法、設定
+## ITP 関連の変更、方法および設定
 
 Safari 内でのトラッキングのための追加の方法が作成されたら、リファレンスとしてこのページに追加されます。
 
@@ -32,15 +32,15 @@ Safari 内でのトラッキングのための追加の方法が作成された�
 
 ITP および ECID ライブラリの使用に関する取り組みについては、以下を参照してください。
 
-## ITPおよびAppleのWebKitに関する現在のECIDライブラリの動作
+## ITP および Apple の WebKit に関する現在の ECID ライブラリの動作
 
-ITP 2.1 は、クライアント側 Cookie の書き込み機能を阻止し、正確な訪問者トラッキング情報をお客様に提供する機能を低下させます。そのため、AdobeのCNAMEトラッキングサーバーに、訪問者のExperience CloudID(ECID)をファーストパーティcookieに保存するための変更が導入されています。
+ITP 2.1 は、クライアント側 Cookie の書き込み機能を阻止し、正確な訪問者トラッキング情報をお客様に提供する機能を低下させます。そのため、訪問者の Experience Cloud ID（ECID）をファーストパーティ Cookie に格納するという変更が、アドビの CNAME トラッキングサーバーに導入されています。
 
 この変更は、ファーストパーティのコンテキストで Analytics CNAME を使用している ECID お客様にのみ役立ちます。Analytics のお客様で現在 CNAME を使用していない場合や Analytics のお客様でない場合でも、CNAME レコードが適しています。カスタマーケアまたは担当のアカウント担当者に問い合わせて、[CNAME](https://docs.adobe.com/content/help/ja-JP/core-services/interface/ec-cookies/cookies-first-party.html) の登録プロセスを開始してください。
 
 この変更を活用するには、ECID ライブラリ v. 4.3.0 以降にアップグレードしてください。
 
-ITP 2.1を使用したECIDライブラリの動作と、ビッグスールのリリースの一環としてAppleが行った最新の変更について、以下の概要を説明します
+ITP 2.1 を使用した ECID ライブラリの動作と、Big Sur のリリースの一環として Apple がおこなった最新の変更について、以下の概要を説明します。
 
 **デザイン**
 
@@ -48,15 +48,15 @@ demdex.net に対して ID リクエストがおこなわれ、ECID が取得さ
 
 >[!IMPORTANT]
 >
->Big Surの更新の一環として、CNAMEを介して設定された `s_ecid` cookieも7日間の有効期限に保持されます。
+>Big Sur のアップデートの一環として、CNAME を介して設定された `s_ecid` Cookie も 7 日間の有効期限に保持されます。
 
 この新しい `s_ecid` Cookie は、AMCV Cookie と同じオプトアウトステータスに従います。ecid が `s_ecid` Cookie から読み取られる場合、常に demdex が即座に呼び出されて、その ID の最新のオプトアウトステータスが取得され、AMCV Cookie に格納されます。
 
 さらに、消費者がこの[方法](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/js/opt-out.html)を使用して Analytics トラッキングをオプトアウトした場合、この `s_ecid` Cookie は削除されます。
 
-The tracking server name should be supplied to the VisitorJS library when initializing the library using `trackingServer` or `trackingServerSecure`. This should match the `trackingServer` config in the Analytics configs.
+`trackingServer` または `trackingServerSecure` を使用してライブラリを初期化する際に、トラッキングサーバー名が VisitorJS ライブラリに提供される必要があります。これは、Analytics 設定の`trackingServer` 設定に一致する必要があります。
 
-If you choose not to take advantage of this method, add the following config to your ECID library implementation: `discardtrackingServerECID`. この設定がtrueに設定されている場合、訪問者ライブラリはファーストパーティのトラッキングサーバーによって設定されたMIDを読み取りません。
+この方法を利用しないことを選択する場合、次の設定を ECID ライブラリ実装に追加します：`discardtrackingServerECID`この設定が true に設定されている場合、訪問者ライブラリは、ファーストパーティトラッキングサーバーによって設定された MID を読み込みません。
 
 ![](assets/itp-proposal-v1.png)
 
