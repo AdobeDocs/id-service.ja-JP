@@ -1,6 +1,6 @@
 ---
 description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を Experience Cloud Identity Service コードに追加して、ブラウザーのサードパーティドメインに Cookie を設定できなくすることができます。
-keywords: ID Service
+keywords: ID サービス
 seo-description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を Experience Cloud Identity Service コードに追加して、ブラウザーのサードパーティドメインに Cookie を設定できなくすることができます。
 seo-title: Experience Cloud Identity Service での COPPA のサポート
 title: Experience Cloud Identity Service での COPPA のサポート
@@ -8,7 +8,7 @@ uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
 translation-type: tm+mt
 source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '403'
 ht-degree: 77%
 
 ---
@@ -31,7 +31,7 @@ Web ページを読み込む際に、[!DNL Experience Cloud] ID サービスが 
 
 **CookieとCOPPAの準拠**
 
-子供を対象とする（または主に子供向けの）Webサイトに関して異なるドメイン間で訪問者を追跡するサードパーティCookieによって、COPPAの親の同意が求められます。 内部 Web サイト分析で COPPA をより簡単に遵守するには、以下のように `disableThirdPartyCookies:true` 関数に `Visitor.getInstance` 変数を追加します。
+子供、トリガーCOPPA親の同意の要件に対する（または主に子供向けの）Webサイトに関する異なるドメイン間の訪問者を追跡するサードパーティCookie。 内部 Web サイト分析で COPPA をより簡単に遵守するには、以下のように `disableThirdPartyCookies:true` 関数に `Visitor.getInstance` 変数を追加します。
 
 ```js
 //Call the ID service 
