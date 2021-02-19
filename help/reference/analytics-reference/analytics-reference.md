@@ -1,6 +1,6 @@
 ---
 description: ID サービスの機能は、Adobe Analytics に特有のものです。
-keywords: ID Service
+keywords: ID サービス
 seo-description: ID サービスの機能は、Adobe Analytics に特有のものです。
 seo-title: Analytics リファレンス
 title: Analytics リファレンス
@@ -8,7 +8,7 @@ uuid: 215f0394-a436-4f0c-9a52-3b387048e40e
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '82'
 ht-degree: 100%
 
 ---
