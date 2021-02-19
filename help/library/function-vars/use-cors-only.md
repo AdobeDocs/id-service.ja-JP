@@ -1,6 +1,6 @@
 ---
 description: ブラウザーが Experience Cloud Identity Service からリソースをリクエストする方法を制御するブール型フラグです（オプション）。
-keywords: ID Service
+keywords: ID サービス
 seo-description: ブラウザーが Experience Cloud Identity Service からリソースをリクエストする方法を制御するブール型フラグです（オプション）。
 seo-title: useCORSOnly
 title: useCORSOnly
@@ -8,8 +8,8 @@ uuid: 607dc035-dffc-4f4d-be51-08ef6c0a8fad
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 73%
+source-wordcount: '163'
+ht-degree: 74%
 
 ---
 
