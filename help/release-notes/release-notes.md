@@ -1,13 +1,13 @@
 ---
-description: Experience Cloud ID サービスの機能リリース、更新、変更点です。
-keywords: ID Service
+description: Experience Cloud Identity Service の機能リリース、更新、変更点です。
+keywords: ID サービス
 seo-description: Experience Cloud ID サービスの機能リリース、更新、変更点です。
 seo-title: 2020 年リリースノート
 title: 2020 年リリースノート
 translation-type: tm+mt
 source-git-commit: d0057a8242dafca63101b1a2f569766bde11bea7
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '147'
 ht-degree: 100%
 
 ---
