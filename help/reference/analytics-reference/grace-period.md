@@ -1,6 +1,6 @@
 ---
 description: 同じレポートスイートにデータを送信する複数の JavaScript ファイルがある場合、またはサイト上で Flash ビデオによる測定などの他のテクノロジーを使用している場合は、猶予期間を設定することをお勧めします。
-keywords: ID Service
+keywords: ID サービス
 seo-description: 同じレポートスイートにデータを送信する複数の JavaScript ファイルがある場合、またはサイト上で Flash ビデオによる測定などの他のテクノロジーを使用している場合は、猶予期間を設定することをお勧めします。
 seo-title: ID サービスの猶予期間
 title: ID サービスの猶予期間
@@ -8,7 +8,7 @@ uuid: 10a7db7d-de32-4379-914f-edaf929efa32
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '458'
 ht-degree: 82%
 
 ---
@@ -32,8 +32,8 @@ ht-degree: 82%
 
 Analytics JavaScriptファイルが1つだけで、他のAppMeasurementライブラリを使用していない場合は、猶予期間は必要ありません。 1 つの JavaScript ファイルを更新すると、新しい訪問者は、訪問の間、一貫して Experience Cloud ID を使用して識別されます。
 
-*同じレポートスイートにデータを送信する複数のJavaScriptファイルがある場合、またはサイト上でFlashビデオ測定などの他のテクノロジーを使用している場合*、猶予期間を設定することをお勧めします。
+*同じレポートスイート*&#x200B;にデータを送信する複数のJavaScriptファイルがある場合、またはFlashビデオ測定など、サイト上の他のテクノロジーを使用している場合は、猶予期間を設定することをお勧めします。
 
-## 猶予期間を有効にする方法を教えてください。 {#section-512d5cd8570e483cbdd8b04457a16ced}
+## 猶予期間を有効にする方法を教えてください。{#section-512d5cd8570e483cbdd8b04457a16ced}
 
-Contact [Customer Care](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html).
+[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問い合わせください。
