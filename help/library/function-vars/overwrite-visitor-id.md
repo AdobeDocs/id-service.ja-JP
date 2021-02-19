@@ -1,6 +1,6 @@
 ---
 description: このプロパティは、訪問者のExperience CloudとAnalytics IDが1つのドメインから2つ目のドメインに移動すると、それらを上書きします。 IDを上書きするには、IDサービスを所有し、各ドメインに実装している必要があります。 このコードでは、制御していないドメインのIDを上書きできません。
-keywords: ID Service
+keywords: ID サービス
 seo-description: このプロパティは、訪問者のExperience CloudとAnalytics IDが1つのドメインから2つ目のドメインに移動すると、それらを上書きします。 IDを上書きするには、IDサービスを所有し、各ドメインに実装している必要があります。 このコードでは、制御していないドメインのIDを上書きできません。
 seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
@@ -8,7 +8,7 @@ uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '448'
 ht-degree: 19%
 
 ---
