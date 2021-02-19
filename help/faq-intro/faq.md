@@ -1,6 +1,6 @@
 ---
 description: ID サービス利用の特長、機能、課題に関するよくある質問
-keywords: ID Service
+keywords: ID サービス
 seo-description: ID サービス利用の特長、機能、課題に関するよくある質問
 seo-title: ID サービス FAQ
 title: ID サービス FAQ
@@ -8,8 +8,8 @@ uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 100%
+source-wordcount: '806'
+ht-degree: 99%
 
 ---
 
@@ -22,7 +22,7 @@ ID サービス利用の特長、機能、課題に関するよくある質問
 
 **ID サービスにはどのような機能がありますか。**
 
-詳しくは、[概要](../introduction/overview.md)を参照してください。
+[概要](../introduction/overview.md)を参照してください。
 
 **ID サービスが Experience Cloud ID を取得するための呼び出しをおこないません。なぜですか。**
 
