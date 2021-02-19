@@ -21,7 +21,7 @@ ht-degree: 73%
 
 オプトインサービスを使用すると、訪問者が複数のアドビソリューションのオプトインを一度に実行できるか、権限に合わせてソリューションを順番に表示できるかを指定できます。承認プロセスが完了し、顧客によって記録されると、すべてのアドビソリューションから CMP 訪問者の承認を取得できます。
 
-The Opt-in service is implemented and configured easily using [Adobe Experience Platform Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html) with the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md). また、[DTM](../../implementation-guides/opt-in-service/optin-dtm.md) を使用して実装および設定することもできます。
+オプトインサービスは、[Adobe Experience Platform Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)と[オプトイン拡張子](../../implementation-guides/opt-in-service/launch.md)を使用して、容易に実装および設定できます。 また、[DTM](../../implementation-guides/opt-in-service/optin-dtm.md) を使用して実装および設定することもできます。
 
 開始するには、[オプトインサービスの設定](../../implementation-guides/opt-in-service/getting-started.md)を参照してください。
 
@@ -33,7 +33,7 @@ The Opt-in service is implemented and configured easily using [Adobe Experience 
 >
 >このドキュメントの内容は法的な助言ではなく、その代用になるものでもありません。導入を設定する際の同意と慣行に関するアドバイスについては、会社の法務部にオプトインお問い合わせください。
 
-## Experience Cloudソリューション全体のオプトイン {#section-053e6224505542cf961896f0ca869e52}
+## Experience Cloudソリューション間のオプトイン{#section-053e6224505542cf961896f0ca869e52}
 
 オプトインサービスは、自身のニーズに応じて同意オプトインワークフローを作成するためのツールです。これにより、ユーザーまたは同意の管理者から同意が得られる前と後に反応（タグを実行）するようワークフローを設計できます。
 
@@ -42,7 +42,7 @@ The Opt-in service is implemented and configured easily using [Adobe Experience 
 * 同意収集要件がユーザーに対して一般に適用されるかどうかを示します。
 * Cookieの生成を許可するソリューションを指定します。
 * カテゴリがユーザーに明示的に同意しない、または拒否されないソリューションに対して、デフォルトの環境設定を適用します。
-* ユーザーの同意設定に対する変更に基づいてカスタム応答をトリガーし、ユーザーの設定を保持または更新できます。
+* ユーザーの同意設定に対する変更に基づくトリガーのカスタム応答。ユーザーの設定を保持または更新できます。
 
 オプトインサービスを使用すると、ユーザーが選択する前に同意前の状態で一部の Cookie を読み込めるようサイトを設定できます。オプトインサービスは、ユーザーの同意後または選択が可能になった後に新規顧客が Cookie を読み込めるように設定できます。また、既存の同意管理プラットフォームにオプトイン同意を保存して取得したり、単にCookieに権限を保存したりするこオプトインともできます。
 
