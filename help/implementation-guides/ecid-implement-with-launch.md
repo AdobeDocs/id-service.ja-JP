@@ -19,7 +19,7 @@ Adobe Experience Platform Launch は、Experience Cloud Identity Service を設�
 
 ## Launch について {#section-611711602854464ea351a4af80a8dafe}
 
-[Adobe Experience Platform Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html) は、Adobe Experience Cloudに組み込まれたAdobeタグ管理機能の次世代です。 Launchを使用すると、クライアントは次のことができます。
+[Adobe Experience Platform・](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html) ランチは、Adobe Experience Cloudに組み込まれたAdobeタグ管理機能の次世代版です。Launchを使用すると、クライアントは次のことができます。
 
 * 拡張機能と呼ばれる統合機能を使用してクライアント側の Web 製品をデプロイする
 * 他のベンダーのマーケティング製品と広告製品の間やAdobeから、一貫してデータをキャプチャ、定義、管理、共有
