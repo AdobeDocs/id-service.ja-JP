@@ -1,6 +1,6 @@
 ---
 description: この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の Experience Cloud ID を共有できます。この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
-keywords: ID Service
+keywords: ID サービス
 seo-description: この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の Experience Cloud ID を共有できます。この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 seo-title: appendVisitorIDsTo（クロスドメイントラッキング）
 title: appendVisitorIDsTo（クロスドメイントラッキング）
@@ -8,7 +8,7 @@ uuid: 06b453ee-73c5-4625-82d9-877ad2b4f702
 translation-type: tm+mt
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '448'
 ht-degree: 100%
 
 ---
