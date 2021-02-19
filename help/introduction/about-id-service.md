@@ -1,6 +1,6 @@
 ---
 description: Adobe Experience Cloud での Experience Cloud Identity Service の役割です。
-keywords: ID Service
+keywords: ID サービス
 seo-description: Adobe Experience Cloud での Experience Cloud Identity Service の役割です。
 seo-title: ID サービスについて
 title: 概要
@@ -8,7 +8,7 @@ uuid: c52d6155-00a0-4fc5-9d8e-5ce00b8d01e6
 translation-type: tm+mt
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '356'
 ht-degree: 69%
 
 ---
@@ -28,7 +28,7 @@ Experience Cloud Identity Service は、Experience Cloud コアサービス、�
 
 ![](assets/ecid-new.png)
 
-また、IDサービスは、様々なソリューション固有のID（例：Analytics AID）を置き換えることができます。 And, through the [Customer IDs and Authentication States](../reference/authenticated-state.md) functionality, the ID service lets you pass in your own customer IDs to the [!DNL Experience Cloud]. ただし、IDサービスは、既に登録済みのソリューションとのみ機能します。 登録していない製品は、他の製品にアクセスできません。
+また、IDサービスは、様々なソリューション固有のID（例：Analytics AID）を置き換えることができます。 また、[顧客IDと認証状態](../reference/authenticated-state.md)機能を使用して、IDサービスを使用して独自の顧客IDを[!DNL Experience Cloud]に渡すことができます。 ただし、IDサービスは、既に登録済みのソリューションとのみ機能します。 登録していない製品は、他の製品にアクセスできません。
 
 いずれは、ID サービスは、多くの現在および将来の [!DNL Experience Cloud] 機能、強化、サービスにとって不可欠な要素になります。現在、ID サービスは、[Analytics](http://www.adobe.com/jp/marketing-cloud/web-analytics.html)、[Audience Manager](http://www.adobe.com/jp/marketing-cloud/data-management-platform.html) および [Target](http://www.adobe.com/jp/marketing-cloud/testing-targeting.html) をサポートしています。さらに、[!DNL Adobe Experience Cloud] Device Co-op に参加する場合に必要です。ID サービスを実装していない場合、今が移行戦略を検討し始めるチャンスです。ID サービスの重要性と役割について詳しくは、[なぜ新しい Experience Cloud Identity Service に注目すべきか](http://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)/を参照してください。
 
