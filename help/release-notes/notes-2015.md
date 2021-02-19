@@ -1,6 +1,6 @@
 ---
 description: 2015 年版のリリースノートと更新情報です。
-keywords: ID Service
+keywords: ID サービス
 seo-description: 2015 年版のリリースノートと更新情報です。
 seo-title: 2015 年リリースノート
 title: 2015 年リリースノート
@@ -8,7 +8,7 @@ uuid: 49423699-1e0f-49e4-9135-2ae84b4f92df
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '415'
 ht-degree: 66%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 66%
 * 同期または送信するデータがない場合に、IDサービスがiframeをリクエストできない問題を修正しました。 （AAM-20164）
 * IDサービスで、マルチパートのトップレベルドメインcookieを適切に設定できない問題を修正しました。 例えば、`my_company.co.uk` のようなドメインの場合、状況によっては、ID サービスは、`co.uk` にのみ Cookie を設定していました。（AN-104683）
 
-   これは、次の条件の *すべてを満たす一部のクライアントにのみ影響しました* 。
+   これは、次の条件の&#x200B;*すべて*&#x200B;を満たすクライアントにのみ影響しました。
 
    * IDサービスを使用する。
    * [猶予期限&#x200B;](../reference/analytics-reference/grace-period.md)*を有効にしているか、*&#x200B;猶予期限がファーストパーティ cookie を使用していて、ユーザーが cookie をブロックしている。
