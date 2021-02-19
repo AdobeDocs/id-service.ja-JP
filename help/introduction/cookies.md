@@ -1,6 +1,6 @@
 ---
 description: ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
-keywords: playstation;ID Service
+keywords: playstation;ID サービス
 seo-description: ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
 seo-title: Cookie と Experience Cloud Identity Service
 title: Cookie と Experience Cloud Identity Service
@@ -8,7 +8,7 @@ uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '997'
 ht-degree: 100%
 
 ---
