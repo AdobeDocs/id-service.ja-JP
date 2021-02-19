@@ -1,6 +1,6 @@
 ---
 description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Analytics、Audience Manager および Target のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
-keywords: ID Service
+keywords: ID サービス
 seo-description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Analytics、Audience Manager および Target のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 seo-title: Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装
 title: Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装
@@ -8,7 +8,7 @@ uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
 translation-type: tm+mt
 source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
 workflow-type: tm+mt
-source-wordcount: '1572'
+source-wordcount: '1574'
 ht-degree: 100%
 
 ---
@@ -144,7 +144,7 @@ Analytics は、データ収集にトラッキングサーバーを使用しま�
 
 >[!IMPORTANT]
 >
->この時点で、[!DNL Audience Manager] DIL コードを削除して、Audience Management モジュールに置き換える必要があります。手順については、[サーバー側転送の実装](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/server-side-forwarding/ssf.html)を参照してください。
+>この時点で、[!DNL Audience Manager] DIL コードを削除して、Audience Management モジュールに置き換える必要があります。手順については、[サーバー側転送の実装](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)を参照してください。
 
 ***（オプション、推奨）* カスタム prop の作成。**
 
