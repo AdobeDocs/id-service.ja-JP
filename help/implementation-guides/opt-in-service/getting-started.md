@@ -25,7 +25,7 @@ Experience Cloud ソリューション（オプトインでは「カテゴリー
 
 1. ECID バージョン 4.0。
 
-   [最新のECIDリリースをダウンロードします](https://github.com/Adobe-Marketing-Cloud/id-service/releases) 。
+   [最新のECIDリリースを](https://github.com/Adobe-Marketing-Cloud/id-service/releases) ダウンロードします。
 
 1. サポートするライブラリ：
 
@@ -45,7 +45,7 @@ Experience Cloud ソリューション（オプトインでは「カテゴリー
 
 1. 会社のプライバシー要件は、GDPRへの準拠を選択する方法に固有です。 会社のプライバシーチームが事前同意の状態で使用しても問題ないライブラリを確認してください。
 
-If using [Adobe Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html), take advantage of the [Opt-in extension](../../implementation-guides/opt-in-service/launch.md) to configure Opt-in service.
+[Adobeの起動](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)を使用する場合は、[オプトイン拡張子](../../implementation-guides/opt-in-service/launch.md)を利用してオプトインサービスを設定します。
 
 ## オプトインのカテゴリー{#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
@@ -112,7 +112,7 @@ adobe.optIn.complete();
 
 ## 訪問者のオプトイン権限の確認 {#section-f136a9024e054d84881e6667fb7c94eb}
 
-訪問者が自身の権限を変更した場合は、変更後の権限を調査して、オプトインサービスでおこなわれた変更を同意ストアと同期する必要があります。次に示すように、 [権限機能を使用して訪問者の環境設定をInspectします](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)。
+訪問者が自身の権限を変更した場合は、変更後の権限を調査して、オプトインサービスでおこなわれた変更を同意ストアと同期する必要があります。[権限関数](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)を使用して、訪問者の環境設定をInspectします。例：
 
 **fetchPermissionsサンプル**
 
@@ -136,7 +136,7 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-See [API documentation](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867) for more details on these and any functions, properties, or configurations mentioned in this document.
+これらと、このドキュメントで取り上げる関数、プロパティ、または設定の詳細については、[APIドキュメント](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)を参照してください。
 
 ## 訪問者の設定の保存 {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
