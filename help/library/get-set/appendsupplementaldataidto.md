@@ -1,6 +1,6 @@
 ---
 description: このヘルパーメソッドを使用すると、Supplemental Data ID(SDID)をクエリ文字列パラメーターとしてリダイレクトURLに追加できます。 これは、A4Tを使用する場合に便利です。ページ間でSDIDを保持し、それらの個別の訪問を結合する必要がある場合に便利です。 この関数を使用するには、ソースドメインと宛先ドメインに同じ組織IDを持つIDサービスを実装している必要があります。
-keywords: ID Service
+keywords: ID サービス
 seo-description: このヘルパーメソッドを使用すると、Supplemental Data ID(SDID)をクエリ文字列パラメーターとしてリダイレクトURLに追加できます。 これは、A4Tを使用する場合に便利です。ページ間でSDIDを保持し、それらの個別の訪問を結合する必要がある場合に便利です。 この関数を使用するには、ソースドメインと宛先ドメインに同じ組織IDを持つIDサービスを実装している必要があります。
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
@@ -8,7 +8,7 @@ uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '412'
 ht-degree: 28%
 
 ---
