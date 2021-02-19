@@ -1,6 +1,6 @@
 ---
 description: 次の例は、直接統合とExperience CloudID(MID)に関連する2つの一般的な使用例を示しています。 MIDは、サイト訪問者の一意の永続的なIDです。
-keywords: ID Service
+keywords: ID サービス
 seo-description: 次の例は、直接統合とExperience CloudID(MID)に関連する2つの一般的な使用例を示しています。 MIDは、サイト訪問者の一意の永続的なIDです。
 seo-title: 直接統合の使用例
 title: 直接統合の使用例
@@ -8,7 +8,7 @@ uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 translation-type: tm+mt
 source-git-commit: ec67177fc6491e4c8cea835d198574c9fdb4b01f
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '475'
 ht-degree: 40%
 
 ---
@@ -54,8 +54,8 @@ ht-degree: 40%
      <li id="li_10A6F5A9C54D44A08F4F2E405E6019E2">MID(1234)。 </li> 
      <li id="li_4869572B40E54C54B88A2474DAC475A8">データプロバイダーID。 これは、会社に割り当てられる一意のIDです。 このIDを4444と呼びましょう。 </li> 
      <li id="li_05C8ED47488C4E289D84093127EC7B19">訪問者のID (9876)。 </li> 
-     <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>（オプション）</i> 、この訪問者の認証状態を定義するステータスID。 </li> 
-    </ul> <p>また、 <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> 直接統合ガイドに記載されているその他のパラメーター(例：</a> d_blob<span class="codeph"> 、</span> dcs_region <span class="codeph"></span>など)がある場合は、 それらも受け取ってもいい。 </p> </td> 
+     <li id="li_3D1556AD18C843828A362CC604A9F76B"> <i>（オプション）</i> この訪問者の認証状態を定義するステータスID。 </li> 
+    </ul> <p>また、<a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">直接統合ガイド</a>に記載されている他のパラメーター（例：<span class="codeph"> d_blob</span>、<span class="codeph"> dcs_region</span>など）がある場合は、 それらも受け取ってもいい。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>ソリューションとコードのサンプル</b> </p> </td> 
@@ -90,7 +90,7 @@ ht-degree: 40%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>アクション</b> </p> </td> 
-   <td colname="col2"> <p>これらの条件の場合、組織IDを含むIDサービスを呼び出します。 </p> <p>また、 <a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local"> 直接統合ガイドに記載されているその他のパラメーター(例：</a> d_blob<span class="codeph"> 、</span> dcs_region <span class="codeph"></span>など)がある場合は、 それらも受け取ってもいい。 </p> </td> 
+   <td colname="col2"> <p>これらの条件の場合、組織IDを含むIDサービスを呼び出します。 </p> <p>また、<a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">直接統合ガイド</a>に記載されている他のパラメーター（例：<span class="codeph"> d_blob</span>、<span class="codeph"> dcs_region</span>など）がある場合は、 それらも受け取ってもいい。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>ソリューションとコードのサンプル</b> </p> </td> 
