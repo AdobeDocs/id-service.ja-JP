@@ -1,6 +1,6 @@
 ---
 description: これらの設定を使用すると、iFrame と親ページに実装されている ID サービスコードのインスタンスが互いに通信できるようになります。これらの設定は、自社が管理しているドメインの iFrame に ID サービスコードを読み込む場合の 2 つの具体的な使用例（親ページまたはドメインを制御できる場合とできない場合）に関わる問題の解決に役立つように設計されています。これらは、VisitorAPI.js コードバージョン 2.2 以降で利用できます。
-keywords: ID Service
+keywords: ID サービス
 seo-description: これらの設定を使用すると、iFrame と親ページに実装されている ID サービスコードのインスタンスが互いに通信できるようになります。これらの設定は、自社が管理しているドメインの iFrame に ID サービスコードを読み込む場合の 2 つの具体的な使用例（親ページまたはドメインを制御できる場合とできない場合）に関わる問題の解決に役立つように設計されています。これらは、VisitorAPI.js コードバージョン 2.2 以降で利用できます。
 seo-title: whitelistParentDomain および whitelistIframeDomains
 title: whitelistParentDomain および whitelistIframeDomains
@@ -8,7 +8,7 @@ uuid: 6b66a4d0-fea2-4d98-963e-0c4f4ab1efb6
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '934'
 ht-degree: 100%
 
 ---
@@ -182,7 +182,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
    <td colname="col1"> <p> <b>例 2</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_CCAD7E362E7F4DAB9D5C3E166EEE6BDD"> 
-      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID </span> </li> 
+      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID  </span> </li> 
       <li id="li_C6022223C8314B9C923202207C7472EA"> <span class="codeph"> getMarketingCloudVisitorID </span> </li> 
      </ul> </p> </td> 
   </tr> 
