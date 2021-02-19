@@ -29,7 +29,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 ページを読み込む前に、キャッシュとCookieをクリアします。
 
-Chromeで、Webページを右クリックし、「Inspect」を選択します。 上のスクリーンショットのように、「 *Network* 」タブを選択して、ブラウザーからの要求を表示します。
+Chromeで、Webページを右クリックし、「Inspect」を選択します。 上のスクリーンショットのように、「*Network*」タブを選択して、ブラウザーからの要求を表示します。
 
 上の例では、次のAdobeJSタグがページにインストールされています。ECID、AAM、Analytics、ターゲット。
 
@@ -49,11 +49,11 @@ Adobeサーバーへのリクエストは表示されません。
 
 Adobeタグによって作成されたCookieは表示されません。(AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2)
 
-Chromeの「 *Application* （アプリケーション） *」タブで、「* ストレージ *」の下の「Cookies*」セクションを展開し、Webサイトのドメイン名を選択します。
+Chromeで、「*アプリケーション*」タブに移動し、「*ストレージ*」の下の「*Cookies*」セクションを展開し、Webサイトのドメイン名を選択します。
 
 ![](assets/use_case_1_2.png)
 
-## 使用例2:オプトインとストレージを有効にする {#section-bd28326f52474fa09a2addca23ccdc0f}
+## 使用例2:オプトインとストレージを有効にする{#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -62,9 +62,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-使用例2の違いは、訪問者が提供するオプトイン権限 *を含む新しいcookie* が表示される点だけです。 **adobeujs-optin**
+使用事例2の唯一の違いは、*新しいcookie*&#x200B;が表示され、訪問者が提供するオプトイン権限が含まれることです。**adobeujs-optin**
 
-## 使用例3:オプトインと事前承認のAdobe Analyticsを有効にする {#section-257fe582b425496cbf986d0ec12d3692}
+## 使用例3:オプトインと事前承認のAdobe Analyticsを有効にする{#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -84,7 +84,7 @@ Adobe Analyticsは事前にオプトインが承認されているので、「�
 
 ![](assets/use_case_3_2.png)
 
-## 使用例4:オプトインとIABを有効にする {#section-64331998954d4892960dcecd744a6d88}
+## 使用例4:オプトインとIABを有効にする{#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -95,7 +95,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 **ページで現在のIABの同意を表示する方法：**
 
-開発者ツールを開き、「 *コンソール* 」タブを選択します。 次のコードスニペットを貼り付け、Enterキーを押します。
+開発者ツールを開き、「*コンソール*」タブを選択します。 次のコードスニペットを貼り付け、Enterキーを押します。
 
 ```
 <codeblock>
