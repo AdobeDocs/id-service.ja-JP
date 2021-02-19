@@ -19,11 +19,11 @@ ht-degree: 16%
 
 ## ヒントとトラブルシューティング {#section-5c566366410f4a8f89eca0d3f556d99f}
 
-* 訪問者JSの初期化は同期的で、ページの読み込み中に実行されます。 待ち時間の長いCMPや権限の持続性を扱う場合は、 [オプトイン設定で説明されている非同期関数を使用することをお勧めします](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047)。
+* 訪問者JSの初期化は同期的で、ページの読み込み中に実行されます。 待ち時間の長いCMPや権限の持続性を扱う場合は、[オプトイン設定](../../implementation-guides/opt-in-service/getting-started.md#section-cf9ab638780141c9b62dc57cf00b7047)で説明されている非同期関数を使用することをお勧めします。
 * オプトインは、ドメインごとの実装です。 クロスドメイン実装は処理されません。
 * 特定のライブラリに対するサードパーティ呼び出しを無効にするには、各ライブラリでその環境設定を個別に設定する必要があります。
 
-## オプトインシナリオ {#section-1178053c065c430bba26f82ef383a71c}
+## オプトインシナリオ{#section-1178053c065c430bba26f82ef383a71c}
 
 以下の使用例は、オプトインサービスを使用するためのアイデアの例です。
 
@@ -43,13 +43,13 @@ ht-degree: 16%
   </tr> 
   <tr> 
    <td colname="col1"> <p>ファーストパーティの測定は、事前同意の状態で収集しても問題ありません。 その他のタイプのデータの使用は、同意を受け取るまで妨げられています。 </p> </td> 
-   <td colname="col2"> <p>オプトインを使用して、Analytics + ECIDライブラリを事前同意の状態で有効にします。 </p> <p>サ追加ードパーティcookieをブロックするためのECIDライブラリに対する「disablethirdpartycookies」設定と、事前同意状態のID同期 </p> </td> 
-   <td colname="col3"> <p>AdobeDemdex呼び出しはECID取得のためにトリガーされますが、Demdex cookie、他のサードパーティcookieまたはID同期は存在しません。 </p> <p>Analyticsの同意前/後の状態で、一貫した訪問者を維持します。 事前同意状態の収集は、事後同意データ収集に結び付けられます。 </p> </td> 
+   <td colname="col2"> <p>オプトインを使用して、Analytics + ECIDライブラリを事前同意の状態で有効にします。 </p> <p>サ追加ードパーティcookieをブロックするためのECIDライブラリに対する「disablethirdpartycookies」設定と、事前同意状態でのID同期 </p> </td> 
+   <td colname="col3"> <p>AdobeDemdex呼び出しはECID取得のトリガーを行いますが、Demdex cookie、他のサードパーティcookieまたはID同期は存在しません。 </p> <p>Analyticsの同意前/後の状態で、一貫した訪問者を維持します。 事前同意状態の収集は、事後同意データ収集に結び付けられます。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ファーストパーティの測定とターゲティングは、事前同意の状態で受け入れられます。 その他のタイプのデータの使用は、同意を受け取るまで妨げられています。 </p> </td> 
    <td colname="col2"> <p>オプトインを使用して、Analytics + ECID +ターゲットライブラリを事前同意の状態で有効にします。 </p> <p>ECID ライブラリに <span class="codeph">isablethirdpartycookies</span> 設定を追加し、同意前の状態のサードパーティ Cookie と ID 同期をブロックします。同意後の状態のフラグを削除します。 </p> </td> 
-   <td colname="col3"> <p>AdobeDemdex呼び出しはECID取得のためにトリガーされますが、Demdex cookie、他のサードパーティcookieまたはID同期は存在しません。 </p> <p>ファーストパーティのソリューションの同意前/後の状態で一貫した訪問者を維持します。 事前同意状態の収集は、事後同意データ収集に結び付けられます。 </p> </td> 
+   <td colname="col3"> <p>AdobeDemdex呼び出しはECID取得のトリガーを行いますが、Demdex cookie、他のサードパーティCookieまたはID同期は存在しません。 </p> <p>ファーストパーティのソリューションの同意前/後の状態で一貫した訪問者を維持します。 事前同意状態の収集は、事後同意データ収集に結び付けられます。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>事前同意状態でのCookieの設定は許可されません </p> </td> 
