@@ -1,6 +1,6 @@
 ---
 description: タイムアウト間隔をミリ秒単位で設定します。 他のソリューション(分析、Audience Manager、ターゲットなど)を伝えるために使用 IDサービスからの応答を待機する時間。
-keywords: ID Service
+keywords: ID サービス
 seo-description: タイムアウト間隔をミリ秒単位で設定します。 他のソリューション(分析、Audience Manager、ターゲットなど)を伝えるために使用 IDサービスからの応答を待機する時間。
 seo-title: loadTimeout
 title: loadTimeout
@@ -8,8 +8,8 @@ uuid: f627e044-bd73-49a4-8a90-6d19aa566751
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '167'
-ht-degree: 14%
+source-wordcount: '169'
+ht-degree: 15%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 14%
 
 **構文：** ` loadTimeout: *`間隔（ミリ秒）`*`
 
-デフォルト値は30,000ミリ秒（30秒）です。 デフォルト値は変更しないこ *とを強くお勧めします* 。
+デフォルト値は30,000ミリ秒（30秒）です。 デフォルト値は&#x200B;*変更しないことを強くお勧めします。*
 
 >[!NOTE]
 >
