@@ -1,6 +1,6 @@
 ---
 description: Experience Cloud Identity Service が実装される前に s_vi Cookie に保存されていた従来の Analytics ID を返します（存在する場合）。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
-keywords: ID Service
+keywords: ID サービス
 seo-description: Experience Cloud Identity Service が実装される前に s_vi Cookie に保存されていた従来の Analytics ID を返します（存在する場合）。訪問者に Analytics ID が割り当てられたことがない場合は、空の文字列を返します。
 seo-title: getAnalyticsVisitorID
 title: getAnalyticsVisitorID
@@ -8,7 +8,7 @@ uuid: 6bb8ddfc-9fc1-4105-b377-d9b4d247a0f8
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '340'
 ht-degree: 100%
 
 ---
