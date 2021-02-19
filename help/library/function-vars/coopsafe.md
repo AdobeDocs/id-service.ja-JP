@@ -1,6 +1,6 @@
 ---
 description: ID サービスから Adobe Experience Cloud Device Co-op にデータを送信するかどうかを指定する任意のブール型設定です。
-keywords: ID Service
+keywords: ID サービス
 seo-description: ID サービスから Adobe Experience Cloud Device Co-op にデータを送信するかどうかを指定する任意のブール型設定です。
 seo-title: isCoopSafe
 title: isCoopSafe
@@ -8,7 +8,7 @@ uuid: 4dfa1f35-0a88-48d1-9484-d88cb53ad461
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
