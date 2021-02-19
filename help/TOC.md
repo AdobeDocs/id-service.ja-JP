@@ -101,7 +101,7 @@ ht-degree: 100%
    + [ID サービスでの CORS のサポート](reference/cors.md)
    + [顧客 ID と認証状態](reference/authenticated-state.md)
    + [Safari ITP での ECID ライブラリの手法](reference/ecid-library-methods.md)
-   + [個別訪問者数の識別](reference/unique-vis-method.md)
+   + [ユニーク訪問者数の識別](reference/unique-vis-method.md)
    + [AMCV Cookie または ID サービスからの地域およびユーザー ID の取得](reference/regions.md)
    + [ID サービスの要件](reference/requirements.md)
    + [ビデオハートビートと ID サービス](reference/heartbeat.md)
