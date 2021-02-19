@@ -3,9 +3,9 @@ title: Safari ITP での ECID ライブラリの手法
 seo-title: Safari ITP での ECID ライブラリの手法
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 seo-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 012bf5db473b37b17e7af957c08da71b253c718f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 100%
 
