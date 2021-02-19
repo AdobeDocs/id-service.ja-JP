@@ -1,6 +1,6 @@
 ---
 description: ID サービスの idSyncByURL 関数と idSyncByDataSource 関数を使用すると、Destination Publishing iFrame で ID 同期を手動で実装できます。これらは、VisitorAPI.js バージョン 1.10 以降で利用できます。
-keywords: ID Service
+keywords: ID サービス
 seo-description: ID サービスの idSyncByURL 関数と idSyncByDataSource 関数を使用すると、Destination Publishing iFrame で ID 同期を手動で実装できます。これらは、VisitorAPI.js バージョン 1.10 以降で利用できます。
 seo-title: URL またはデータソースによる ID 同期
 title: URL またはデータソースによる ID 同期
@@ -8,7 +8,7 @@ uuid: ff83d910-8375-4295-9f2a-e14c15eee09a
 translation-type: tm+mt
 source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '275'
 ht-degree: 100%
 
 ---
