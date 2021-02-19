@@ -1,6 +1,6 @@
 ---
 description: Experience Cloud Identity Service をデプロイする前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法や JavaScript ファイルによってデータを収集する場合の潜在的な問題について理解する必要があります。
-keywords: ID Service
+keywords: ID サービス
 seo-description: Experience Cloud Identity Service をデプロイする前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法や JavaScript ファイルによってデータを収集する場合の潜在的な問題について理解する必要があります。
 seo-title: Experience Cloud Identity Service 移行の判断ポイント
 title: Experience Cloud Identity Service 移行の判断ポイント
@@ -8,7 +8,7 @@ uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 100%
 
 ---
