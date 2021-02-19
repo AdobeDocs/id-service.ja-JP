@@ -1,6 +1,6 @@
 ---
 description: これらのプロパティを Visitor.getInstance 静的メソッドに渡して ID サービスを設定します。
-keywords: Organization ID;ID Service
+keywords: 組織 ID;ID サービス
 seo-description: これらのプロパティを Visitor.getInstance 静的メソッドに渡して ID サービスを設定します。
 seo-title: 設定
 title: 設定
@@ -8,8 +8,8 @@ uuid: 2dfe1ed6-f3a6-4f5c-976b-eeb43738c20c
 translation-type: tm+mt
 source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 82%
+source-wordcount: '100'
+ht-degree: 83%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->*Experience Cloud ID Javascript ライブラリ*&#x200B;は最近移行しました。The latest release of the ECID JS libraries can be found at [https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases).
+>*Experience Cloud ID Javascript ライブラリ*&#x200B;は最近移行しました。ECID JSライブラリの最新リリースは、[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases)で入手できます。
 
 関連記事：
 
