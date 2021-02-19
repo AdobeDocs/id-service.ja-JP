@@ -1,6 +1,6 @@
 ---
 description: 他の Experience Cloud ソリューションでの ID サービス利用の特徴、機能、問題に関するよくある質問です。
-keywords: ID Service
+keywords: ID サービス
 seo-description: 他の Experience Cloud ソリューションでの ID サービス利用の特徴、機能、問題に関するよくある質問です。
 seo-title: 他の Experience Cloud ソリューションに関する FAQ
 title: 他の Experience Cloud ソリューションに関する FAQ
@@ -8,7 +8,7 @@ uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '211'
 ht-degree: 75%
 
 ---
