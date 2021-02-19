@@ -1,6 +1,6 @@
 ---
 description: このプロパティは ID 同期に使用するデータソースコンテナ ID を設定します。
-keywords: ID Service
+keywords: ID サービス
 seo-description: このプロパティは ID 同期に使用するデータソースコンテナ ID を設定します。
 seo-title: idSyncContainerID
 title: idSyncContainerID
@@ -8,7 +8,7 @@ uuid: e35dc48b-1aa1-41e3-91c1-ef1e9d2d8b90
 translation-type: tm+mt
 source-git-commit: f7f23d89649a888f5e9d8c94526b550fbda7045b
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '336'
 ht-degree: 58%
 
 ---
@@ -85,7 +85,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 ## DIL および VisitorAPI.js を使用する場合のコンテナ ID の設定 {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-If you have deployed [!UICONTROL DIL ]*and* VisitorAPI.js on the same page:
+[!UICONTROL DIL ]*と* VisitorAPI.jsを同じページにデプロイした場合：
 
 * ID 同期において、訪問者 ID サービスコードが DIL よりも優先されます。
 * ID サービスコードでのみ、`idSyncContainerID` コンフィギュレーションを設定します。
