@@ -8,7 +8,7 @@ uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 100%
 
 ---
@@ -54,7 +54,7 @@ Identity Service が正しく情報を返しているにもかかわらず `MID`
 
 **猶予期間とはどのようなもので、どのように設定すればよいですか。**
 
-[ID サービスの猶予期間](../reference/analytics-reference/grace-period.md)を参照し、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問合せください。
+[ID サービスの猶予期間](../reference/analytics-reference/grace-period.md)を参照し、[カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)にお問合せください。
 
 **Identity Service を使用するためにリアルタイムデータ収集（RDC）に移行しなければならない理由を教えてください。**
 
@@ -93,5 +93,5 @@ Identity Service の使用時に不整合が生じる一般的な原因を以下
 
 >[!MORELIKETHIS]
 >
->* [カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)
+>* [カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
