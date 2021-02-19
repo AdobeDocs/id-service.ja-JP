@@ -1,6 +1,6 @@
 ---
 description: これらの設定を使用して、Experience Cloud Identity Service への呼び出しに使用されるデフォルトのドメイン名を、独自のサブドメイン名に変更します。
-keywords: ID Service
+keywords: ID サービス
 seo-description: これらの設定を使用して、Experience Cloud Identity Service への呼び出しに使用されるデフォルトのドメイン名を、独自のサブドメイン名に変更します。
 seo-title: audienceManagerServer および audienceManagerServerSecure
 title: audienceManagerServer および audienceManagerServerSecure
@@ -8,7 +8,7 @@ uuid: e21cacbf-5151-4d34-b0f7-9e90275f4c7c
 translation-type: tm+mt
 source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '245'
 ht-degree: 100%
 
 ---
