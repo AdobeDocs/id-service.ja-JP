@@ -1,6 +1,6 @@
 ---
 description: 2018 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
-keywords: ID Service
+keywords: ID サービス
 seo-description: 2018 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 seo-title: 2018 年リリースノート
 title: 2018 年リリースノート
@@ -8,8 +8,8 @@ uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
 translation-type: tm+mt
 source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 35%
+source-wordcount: '491'
+ht-degree: 36%
 
 ---
 
@@ -71,8 +71,8 @@ ht-degree: 35%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>個別訪問者数の非現実的なスパイク </p> </td> 
-   <td colname="col2"> <p>Experience Cloud Identity Service 3.1.0 のリリースでは、このバージョンが実装された際に、個別訪問者数で非現実的なスパイクが作成される問題が見つかりました。この動作は、最新バージョンのECID v3.1.0でのみ表示され、Safariブラウザーのプライバシー設定で「現在のWebサイトのみを許可」オプションが選択されている場合にのみ表示されます。 バージョン3.1.2では、この問題が修正されています。 </p> </td> 
+   <td colname="col1"> <p>ユニーク訪問者数の非現実的なスパイク </p> </td> 
+   <td colname="col2"> <p>Experience Cloud Identity Service 3.1.0 のリリースでは、このバージョンが実装された際に、ユニーク訪問者数で非現実的なスパイクが作成される問題が見つかりました。この動作は、最新バージョンのECID v3.1.0でのみ表示され、Safariブラウザーのプライバシー設定で「現在のWebサイトのみを許可」オプションが選択されている場合にのみ表示されます。 バージョン3.1.2では、この問題が修正されています。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
