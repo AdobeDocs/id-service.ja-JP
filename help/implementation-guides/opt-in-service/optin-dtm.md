@@ -21,7 +21,7 @@ DTM を使用してオプトインサービスを設定します。
 
 必須：
 
-* ECID 4.0.0以降にアップグレードします。 「 [ECIDのダウンロード](https://github.com/Adobe-Marketing-Cloud/id-service/releases)」を参照してください。
+* ECID 4.0.0以降にアップグレードします。 [ECIDのダウンロード](https://github.com/Adobe-Marketing-Cloud/id-service/releases)を参照してください。
 
 DTM の「一般」ページにある[設定フィールド](/help/implementation-guides/opt-in-service/api.md)を入力します。
 
