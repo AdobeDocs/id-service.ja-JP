@@ -6,9 +6,9 @@ seo-title: Analytics および Experience Cloud ID の設定
 title: Analytics および Experience Cloud ID の設定
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
+source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '945'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Web サーバーからの HTTP 応答がブラウザーの Cookie に設定さ�
 
 JavaScript は、ファーストパーティドメイン（現在の Web サイトのドメイン）の Cookie セットの読み取りと書き込みを実行できます。これにより、[!DNL Experience Cloud] ID サービスではすべての訪問者 ID を含む `AMCV_###@AdobeOrg` Cookie を設定できるので、トラッキングサーバーのドメインが Web サイトのドメインと一致していない場合でも、訪問者 ID Cookie を保存できます。CNAME レコードおよび SSL 証明書を使用するオーバーヘッドが不要となるので、ほとんどの場合においてこの方法で ID サービス Cookie を設定することをお勧めします。
 
-ただし、状況によっては、クロスドメイントラッキングでは HTTP ヘッダーに Cookie を設定する方がメリットが大きい場合もあります。これについては[データ収集 CNAME およびクロスドメイントラッキング](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d)で説明します。
+<!---However, there are a few situations where setting the cookie in the HTTP header is beneficial for cross-domain tracking, which is described in [Data Collection CNAMEs and Cross-Domain Tracking](../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d).-->
 
 ## カスタム Analytics ID {#section-b6a7bd19e9ff432390010062450808f6}
 
