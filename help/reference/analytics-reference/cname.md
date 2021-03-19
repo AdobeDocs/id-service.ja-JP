@@ -1,14 +1,14 @@
 ---
-description: 'null'
+description: メインのエントリサイトがあり、顧客が他のドメインを訪問する前にメインのエントリサイトで顧客の識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザー（Safari など）でもクロスドメイントラッキングをおこなうことができます。
 keywords: 操作の順序;ID サービス
-seo-description: 'null'
+seo-description: メインのエントリサイトがあり、顧客が他のドメインを訪問する前にメインのエントリサイトで顧客の識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザー（Safari など）でもクロスドメイントラッキングをおこなうことができます。
 seo-title: データ収集 CNAME およびクロスドメイントラッキング
 title: データ収集 CNAME およびクロスドメイントラッキング
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
 translation-type: tm+mt
-source-git-commit: 9fe63cf3983a2ed6642837b02a3c3441ef745d70
+source-git-commit: 053d45656e941adc1950d49099c30da1d9a72aa0
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '675'
 ht-degree: 100%
 
 ---
