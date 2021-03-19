@@ -6,10 +6,10 @@ user-guide-title: Experience Cloud ID サービスヘルプ
 breadcrumb-title: ID サービスガイド
 user-guide-description: ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。このサービスを、Analytics、Audience Manager、Target などのサービスや、その他の Experience Cloud のソリューションまたは機能の ID 生成コードの代わりに使用できます。
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: cc198b092480f66611b6302ed3cb25dd2a0b22b3
-workflow-type: ht
-source-wordcount: '400'
+translation-type: tm+mt
+source-git-commit: 560fbedd698c569b82992c54b8c9cfe176424b4f
+workflow-type: tm+mt
+source-wordcount: '394'
 ht-degree: 100%
 
 ---
@@ -93,7 +93,6 @@ ht-degree: 100%
       + [ID サービス移行の判断ポイント](reference/analytics-reference/migration-decisions.md)
       + [ID サービスの移行シナリオ](reference/analytics-reference/migration-scenarios.md)
       + [Analytics および ID のリクエスト](reference/analytics-reference/legacy-analytics.md)
-      + [データ収集 CNAME およびクロスドメイントラッキング](reference/analytics-reference/cname.md)
       + [JavaScript を利用したサーバー側実装](reference/analytics-reference/server-side.md)
       + [ID サービスの猶予期間](reference/analytics-reference/grace-period.md)
    + [Google Chrome SameSite のラベル付けの変更](reference/chrome-samesite-labelling.md)
