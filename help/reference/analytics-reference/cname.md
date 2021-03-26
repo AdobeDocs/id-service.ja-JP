@@ -5,9 +5,9 @@ seo-description: メインのエントリサイトがあり、顧客が他のド
 seo-title: データ収集 CNAME およびクロスドメイントラッキング
 title: データ収集 CNAME およびクロスドメイントラッキング
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 053d45656e941adc1950d49099c30da1d9a72aa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '675'
 ht-degree: 100%
 
