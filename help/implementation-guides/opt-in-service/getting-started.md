@@ -4,16 +4,16 @@ seo-description: Experience Cloud ソリューション（オプトインでは�
 seo-title: オプトインサービスの設定
 title: オプトインサービスの設定
 uuid: f1c27139-cef2-4122-af12-c839cfc82e6e
-translation-type: tm+mt
-source-git-commit: 7d0df419c4af7f8a58ffa56b1176bf638bc0045b
-workflow-type: tm+mt
+exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '941'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-
-# オプトインサービスの設定{#setting-up-opt-in-service}
+# オプトインサービスの設定 {#setting-up-opt-in-service}
 
 Experience Cloud ソリューション（オプトインでは「カテゴリー」と呼ばれます）で使用される単一の参照ポイントとしてオプトインサービスを実装し、訪問者のデバイスに Cookie を作成するかどうかを決定します。
 
@@ -25,17 +25,17 @@ Experience Cloud ソリューション（オプトインでは「カテゴリー
 
 1. ECID バージョン 4.0。
 
-   [最新のECIDリリースを](https://github.com/Adobe-Marketing-Cloud/id-service/releases) ダウンロードします。
+   アドビの最新 ECID リリースを[ダウンロード](https://github.com/Adobe-Marketing-Cloud/id-service/releases)してください。
 
-1. サポートするライブラリ：
+1. 補助ライブラリ：
 
-   * ECID 4.0以降
-   * AppMeasurement 2.11以降
+   * ECID 4.0 以降
+   * AppMeasurement 2.11 以降
    * DIL 9.0
-   * AT.jsバージョン1.7.0
-   * AT.js起動拡張機能バージョン9.0
-   * Analyticsの場合、App Measurement 2.11（拡張子1.6付き）
-   * ターゲットの場合、拡張子0.9.1
+   * AT.js バージョン 1.7.0
+   * AT.js Launch 拡張バージョン 9.0
+   * Analytics の場合、App Measurement 2.11（拡張機能 1.6 付き）
+   * Target の場合、拡張機能 0.9.1
 
 1. オプトインで使用する同意管理フレームワークに精通し、その他の前提条件を理解していること。
 
@@ -43,11 +43,11 @@ Experience Cloud ソリューション（オプトインでは「カテゴリー
    For IAB, see here for additional pre-reqs.
    -->
 
-1. 会社のプライバシー要件は、GDPRへの準拠を選択する方法に固有です。 会社のプライバシーチームが事前同意の状態で使用しても問題ないライブラリを確認してください。
+1. 会社のプライバシー要件は、GDPR への準拠を選択する方法によって異なります。 会社のプライバシーチームが事前同意状態で使用しても問題ないライブラリを確認してください。
 
-[Adobeの起動](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)を使用する場合は、[オプトイン拡張子](../../implementation-guides/opt-in-service/launch.md)を利用してオプトインサービスを設定します。
+[Adobe Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html) を使用している場合は、[オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)を活用してオプトインサービスを設定します。
 
-## オプトインのカテゴリー{#section-9ab0492ab4414f0ca16dc08d3a905f47}
+## オプトインのカテゴリー {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
 訪問者のオプトインの環境設定は Adobe Experience Cloud ソリューションとは相対的で、各ソリューションがカテゴリーとして表されます。カテゴリーは `adobe.OptInCategories` オブジェクトで指定されます。例えば、ECID コンポーネントは `adobe.OptInCategories` となります。`ECID`をインストールします。以下は、`adobe.OptInCategories` の定義です。
 
@@ -90,9 +90,9 @@ Visitor.getInstance("YOUR_ORG_ID", {
 });
 ```
 
-**同意への変更の処理**
+**同意に対する変更の処理**
 
-サイトでの訪問者の体験の中でいつでも、初めて環境設定を行ったり、CMPを使用して環境設定を変更したりできます。 初期設定で訪問者JSを初期化したら、訪問者の権限を変更できます。 同意を管理するための関数の一覧については、[同意の変更](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc)を参照してください。
+訪問者は、サイトに滞在している間はいつでも、初めて環境設定を行ったり、CMP を使用して環境設定を変更したりできます。 初期設定で訪問者 JS を初期化したら、訪問者の権限を変更できます。 同意を管理するための関数の一覧については、[同意の変更](../../implementation-guides/opt-in-service/api.md#section-c3d85403ff0d4394bd775c39f3d001fc)を参照してください。
 
 <!--
 <p> *** <b>sample code block </b>*** </p>
@@ -112,9 +112,9 @@ adobe.optIn.complete();
 
 ## 訪問者のオプトイン権限の確認 {#section-f136a9024e054d84881e6667fb7c94eb}
 
-訪問者が自身の権限を変更した場合は、変更後の権限を調査して、オプトインサービスでおこなわれた変更を同意ストアと同期する必要があります。[権限関数](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)を使用して、訪問者の環境設定をInspectします。例：
+訪問者が自身の権限を変更した場合は、変更後の権限を調査して、オプトインサービスでおこなわれた変更を同意ストアと同期する必要があります。[権限関数](../../implementation-guides/opt-in-service/api.md#section-7fe57279b5b44b4f8fe47e336df60155)を使用して、訪問者の環境設定を調べます。次に例を示します。
 
-**fetchPermissionsサンプル**
+**fetchPermissions サンプル**
 
 ```
 optIn.fetchPermissions(function (permissions) { 
@@ -136,14 +136,13 @@ function callback() {
 optIn.fetchPermissions(callback, true);
 ```
 
-これらと、このドキュメントで取り上げる関数、プロパティ、または設定の詳細については、[APIドキュメント](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)を参照してください。
+これらおよびこのドキュメントに記載されているあらゆる関数、プロパティ、設定の詳細については、[API ドキュメント](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)を参照してください。
 
 ## 訪問者の設定の保存 {#section-ef2884ae67e34879bf7c7c3372706c9f}
 
 オプトインサービスでは、開発環境や CRM を使用できない環境に適した同意設定を保存することができます。`isOptInStorageEnabled` 設定プロパティを *true* として指定すると、オプトインサービスにより、ドメイン内の訪問者のシステムに Cookie が作成されます。
 
-`adobe.optIn` オブジェクトはステートレスであり、保存メカニズムは備えていません。カスタムデータの保存が可能な場合は、代わりに、既存のConsent Management Platform(CMP)でAdobeの同意設定を管理することを意図しています。 または、訪問者の設定を訪問者のブラウザー上のCookieに保存できます。 オプトインサービスにユーザーの環境設定を指定する方法は 2 つあります。
+`adobe.optIn` オブジェクトはステートレスであり、保存メカニズムは備えていません。カスタムデータの保存が許可されている場合は、代わりに、既存の同意管理プラットフォーム（CMP）でアドビの同意設定を管理することを目的しています。 または、訪問者の環境設定を訪問者のブラウザー上の Cookie に保存できます。 オプトインサービスにユーザーの環境設定を指定する方法は 2 つあります。
 
 * CMP か訪問者のブラウザーの Cookie かに関わらず、同意保持ソリューションで訪問者の設定をタイムリーに取得できる場合は、Visitor の初期化中にこれらの設定をオプトインサービスに指定できます。
 * ただし、取得プロセスに時間がかかる場合や、非同期プロセスとして最善の役割を果たしている場合には、サービスの `approve()` 関数を使用して、読み込みに成功したときにこれらの設定を指定できます。
-
