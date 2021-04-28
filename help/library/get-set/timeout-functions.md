@@ -5,16 +5,16 @@ seo-description: これらの ID サービス関数を呼び出して、Experien
 seo-title: callTimeOut メソッド
 title: callTimeOut メソッド
 uuid: e5047498-11db-4945-b356-c92b7d447573
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '155'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-
-# callTimeOut メソッド{#calltimeout-methods}
+# callTimeOut メソッド {#calltimeout-methods}
 
 これらの ID サービス関数を呼び出して、Experience Cloud Identity Service、Analytics または Audience Manager ID リクエストのタイムアウトステータスを判定します。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 
@@ -67,4 +67,3 @@ ht-degree: 96%
   </tr> 
  </tbody> 
 </table>
-
