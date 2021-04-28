@@ -5,14 +5,14 @@ seo-description: これを実装すると、アドビの JavaScript コードや
 seo-title: Experience Cloud Identity Service との直接統合
 title: Experience Cloud Identity Service との直接統合
 uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '714'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity Service との直接統合 {#direct-integration-with-the-experience-cloud-id-service}
 
@@ -126,4 +126,3 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
   </tr> 
  </tbody> 
 </table>
-
