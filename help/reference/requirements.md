@@ -5,14 +5,14 @@ seo-description: ここでは、Experience Cloud Identity Service に必要な�
 seo-title: Experience Cloud Identity Service の要件
 title: Experience Cloud Identity Service の要件
 uuid: 608b1082-6e9e-4101-b6cb-60027950109b
-translation-type: tm+mt
-source-git-commit: 6e77622817d9881efd9039d9073ba4ae14e8e14e
-workflow-type: tm+mt
+exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '783'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity Service の要件 {#requirements-for-the-experience-cloud-id-service}
 
@@ -81,9 +81,9 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
  </tbody> 
 </table>
 
-## Analytics の要件：地域別データ収集（RDC）{#section-7d04bb013bc84a25bae3b148bc0ca25f}
+## Analytics の要件：地域別データ収集（RDC） {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-すべてのトラッキングサーバーは RDC に変換されているので、Analyticsトラッキングサーバーを変更する必要はありません。[詳細情報...](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/rdc/regional-data-collection.translate.html)
+すべてのトラッキングサーバーは RDC に変換されているので、Analyticsトラッキングサーバーを変更する必要はありません。[詳細情報...](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/rdc/regional-data-collection.html)
 
 ## コードライブラリとバージョンの要件 {#section-ad7542a4317d430fa79fc6b095beb84d}
 
