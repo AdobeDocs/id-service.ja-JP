@@ -5,14 +5,14 @@ seo-description: 児童オンラインプライバシー保護法（COPPA）で�
 seo-title: Experience Cloud Identity Service での COPPA のサポート
 title: Experience Cloud Identity Service での COPPA のサポート
 uuid: 621b5ebd-92e7-4635-be85-8d7e36589fcb
-translation-type: tm+mt
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
-workflow-type: tm+mt
+exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity Service での COPPA のサポート {#coppa-support-in-the-experience-cloud-id-service}
 
@@ -24,14 +24,14 @@ ht-degree: 77%
 
 **Cookie とトラッキング**
 
-Web ページを読み込む際に、[!DNL Experience Cloud] ID サービスが [!DNL Adobe] データ収集サーバー（DCS）を呼び出します。DCSの応答には、Experience Cloudcookieとdemdex.net cookieが含まれます。
+Web ページを読み込む際に、[!DNL Experience Cloud] ID サービスが [!DNL Adobe] データ収集サーバー（DCS）を呼び出します。DCS の応答には、Experience Cloud Cookieと demdex.net Cookie が含まれています。
 
-* Experience CloudCookieはファーストパーティドメインに設定されます。 異なるドメイン間で訪問者を追跡する場合は、それらのドメインが連携してアクセスを許可する場合を除き、このメソッドを使用することはできません。
-* demdex.net cookieは、サードパーティドメインに設定されます。 このIDには、異なるドメイン間で訪問者を追跡するために使用できる一意の識別子が含まれます。
+* Experience Cloud Cookie はファーストパーティドメインに設定されます。 これは、異なるドメインをまたいで訪問者を追跡するために使用することはできません（ドメインが連携してアクセスを許可する場合を除く）。
+* demdex.net Cookie は、サードパーティドメインに設定されます。 これには、異なるドメインをまたいで訪問者を追跡するために使用できる一意の識別子が含まれています。
 
-**CookieとCOPPAの準拠**
+**Cookie と COPPA への準拠**
 
-子供、トリガーCOPPA親の同意の要件に対する（または主に子供向けの）Webサイトに関する異なるドメイン間の訪問者を追跡するサードパーティCookie。 内部 Web サイト分析で COPPA をより簡単に遵守するには、以下のように `disableThirdPartyCookies:true` 関数に `Visitor.getInstance` 変数を追加します。
+子供向け（または主に子供向け）の web サイトで、異なるドメインをまたいで訪問者を追跡するサードパーティ Cookie は、COPPA の保護者同意要件をトリガーします。 内部 Web サイト分析で COPPA をより簡単に遵守するには、以下のように `disableThirdPartyCookies:true` 関数に `Visitor.getInstance` 変数を追加します。
 
 ```js
 //Call the ID service 
