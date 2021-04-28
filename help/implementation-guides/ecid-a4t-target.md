@@ -1,28 +1,28 @@
 ---
-description: これらの手順は、ターゲット、Analytics、IDサービスのサーバー側とクライアント側の実装を混在させるA4Tのお客様向けです。 NodeJSまたはRhino環境でIDサービスを実行する必要があるお客様も、この情報を確認する必要があります。 IDサービスのこのインスタンスは、Node Package Manager(NPM)からダウンロードしてインストールできる、短縮版のVisitorAPI.jsコードライブラリを使用します。 インストール手順およびその他の設定要件については、この節を参照してください。
+description: これらの手順は、Target、Analytics、ID サービスのサーバーサイドとクライアントサイドの実装が混在している A4T ユーザー向けのものです。 NodeJS または Rhino 環境で ID サービスを実行する必要があるユーザーも、この情報を確認する必要があります。 ID サービスのこのインスタンスでは、Node Package Manager （NPM）からダウンロードしてインストールできる短縮バージョンの VisitorAPI.js コードライブラリを使用します。 インストール手順およびその他の設定要件については、この節を参照してください。
 keywords: ID サービス
-seo-description: これらの手順は、ターゲット、Analytics、IDサービスのサーバー側とクライアント側の実装を混在させるA4Tのお客様向けです。 NodeJSまたはRhino環境でIDサービスを実行する必要があるお客様も、この情報を確認する必要があります。 IDサービスのこのインスタンスは、Node Package Manager(NPM)からダウンロードしてインストールできる、短縮版のVisitorAPI.jsコードライブラリを使用します。 インストール手順およびその他の設定要件については、この節を参照してください。
+seo-description: これらの手順は、Target、Analytics、ID サービスのサーバーサイドとクライアントサイドの実装が混在している A4T ユーザー向けのものです。 NodeJS または Rhino 環境で ID サービスを実行する必要があるユーザーも、この情報を確認する必要があります。 ID サービスのこのインスタンスでは、Node Package Manager （NPM）からダウンロードしてインストールできる短縮バージョンの VisitorAPI.js コードライブラリを使用します。 インストール手順およびその他の設定要件については、この節を参照してください。
 seo-title: Target のサーバー側実装を使用する A4T での ID サービスの使用
 title: Target のサーバー側実装を使用する A4T での ID サービスの使用
 uuid: debbc5ca-7f8b-4331-923e-0e6339057de2
-translation-type: tm+mt
-source-git-commit: c4c0b791230422f17292b72fd45ba5689a60adae
-workflow-type: tm+mt
+exl-id: 6f201378-29a1-44b7-b074-6004246fc999
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '915'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
-
 # Target のサーバー側実装を使用する A4T での ID サービスの使用 {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
-これらの手順は、ターゲット、Analytics、IDサービスのサーバー側とクライアント側の実装を混在させるA4Tのお客様向けです。 NodeJSまたはRhino環境でIDサービスを実行する必要があるお客様も、この情報を確認する必要があります。 IDサービスのこのインスタンスは、Node Package Manager(NPM)からダウンロードしてインストールできる、短縮版のVisitorAPI.jsコードライブラリを使用します。 インストール手順およびその他の設定要件については、この節を参照してください。
+これらの手順は、Target、Analytics、ID サービスのサーバーサイドとクライアントサイドの実装が混在している A4T ユーザー向けのものです。 NodeJS または Rhino 環境で ID サービスを実行する必要があるユーザーも、この情報を確認する必要があります。 ID サービスのこのインスタンスでは、Node Package Manager （NPM）からダウンロードしてインストールできる短縮バージョンの VisitorAPI.js コードライブラリを使用します。 インストール手順およびその他の設定要件については、この節を参照してください。
 
 ## はじめに {#section-ab0521ff5bbd44c592c3eaab31c1de8b}
 
-A4T（および他のお客様）は、以下が必要な場合に、このバージョンのIDサービスを使用できます。
+A4T （および他の顧客）は、以下が必要な場合に、このバージョンの ID サービスを使用できます。
 
-* サーバーでWebページコンテンツをレンダリングし、最終表示用にブラウザーに渡します。
+* web ページコンテンツをサーバー上でレンダリングして最終表示用にブラウザーに渡す。
 * サーバー側 [!DNL Target] 呼び出しをおこなう。
 * [!DNL Analytics] に対するクライアント側（ブラウザー内）呼び出しをおこなう。
 * 個別の [!DNL Target] および [!DNL Analytics] ID を同期して、あるソリューションで見られた訪問者が他のソリューションで見られた人物と同じかどうかを判定する。
@@ -39,18 +39,18 @@ A4T（および他のお客様）は、以下が必要な場合に、このバ�
 
 ## 手順 1：ページのリクエスト {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-訪問者がWebページの読み込みをHTTPリクエストすると、サーバー側のアクティビティが開始します。 この手順中、サーバーはこのリクエストを受け取り、[AMCV cookie](../introduction/cookies.md)をチェックします。 AMCV Cookie には、訪問者の [!DNL Experience Cloud] ID（MID）が含まれます。
+web ページを読み込む HTTP リクエストを訪問者が実行すると、サーバーサイドアクティビティが開始します。 このステップで、サーバーはこのリクエストを受け取り、[AMCV cookie](../introduction/cookies.md) をチェックします。 AMCV Cookie には、訪問者の [!DNL Experience Cloud] ID（MID）が含まれます。
 
 ## 手順 2：ID サービスペイロードの生成 {#section-c86531863db24bd9a5b761c1a2e0d964}
 
-次に、サーバー側 *`payload request`* を ID サービスにする必要があります。ペイロードリクエスト：
+次に、サーバー側 *`payload request`* を ID サービスにする必要があります。ペイロードリクエストは以下を行います。
 
-* AMCV cookieをIDサービスに渡します。
-* 以下に説明する後続の手順で、ターゲットおよびAnalyticsで必要なデータをリクエストします。
+* AMCV cookie を ID サービスに渡す。
+* 以下に説明する後続の手順で Target と Analytics で必要になるデータをリクエストします。
 
 >[!NOTE]
 >
->このメソッドは、[!DNL Target] から 1 つの mbox をリクエストします。1回の呼び出しで複数のmboxをリクエストする必要がある場合は、[generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload)を参照してください。
+>このメソッドは、[!DNL Target] から 1 つの mbox をリクエストします。1 回の呼び出しで複数の mbox をリクエストする必要がある場合は、[generateBatchPayload](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server#generatebatchpayload) を参照してください。
 
 ペイロードリクエストは、以下のコードサンプルのようになります。このコードサンプルでは、`visitor.setCustomerIDs` 関数はオプションです。詳しくは、[顧客 ID および認証の状態](../reference/authenticated-state.md)を参照してください。
 
@@ -127,7 +127,7 @@ ID サービスは、以下の例のように、JSON オブジェクトでペイ
 
 ## 手順 4：ID サービスのサーバー状態の取得 {#section-8ebfd177d42941c1893bfdde6e514280}
 
-サーバー状態データには、サーバー上で行われた作業に関する情報が含まれます。 クライアント側IDサービスコードには、この情報が必要です。 [!DNL Dynamic Tag Manager]（DTM）を使用して ID サービスを実装したお客様は、このツールを使用してサーバー状態データを渡すように DTM を設定できます。非標準のプロセスで ID サービスを設定した場合、独自のコードを使用してサーバー状態を返す必要があります。クライアント側 ID サービスおよび [!DNL Analytics] コードは、ページが読み込まれる際に Adobe に状態データを渡します。
+サーバー状態データには、サーバー上で行われた作業に関する情報が含まれています。 クライアントサイドの ID サービスコードには、この情報が必要です。 [!DNL Dynamic Tag Manager]（DTM）を使用して ID サービスを実装したお客様は、このツールを使用してサーバー状態データを渡すように DTM を設定できます。非標準のプロセスで ID サービスを設定した場合、独自のコードを使用してサーバー状態を返す必要があります。クライアント側 ID サービスおよび [!DNL Analytics] コードは、ページが読み込まれる際に Adobe に状態データを渡します。
 
 **DTM を使用したサーバー状態の取得**
 
@@ -169,7 +169,7 @@ Response.send("
 
 ![](assets/server_side_dtm.png)
 
-「[DTM](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)のExperience CloudIDサービスの設定」も参照してください。
+[DTM の Experience Cloud ID サービス設定](../implementation-guides/standard.md#concept-fb6cb6a0e6cc4f10b92371f8671f6b59)も参照してください。
 
 **DTM を使用しないサーバー状態の取得**
 
@@ -196,7 +196,7 @@ Response.send("
 
 この時点で、Web サーバーは訪問者のブラウザーにページコンテンツを送信します。これ以降、（サーバーではなく）ブラウザーが残りのすべての ID サービスおよび [!DNL Analytics] の呼び出しをおこないます。例えば、ブラウザーでは次のようになります。
 
-* IDサービスは、サーバーから状態データを受け取り、SDIDをAppMeasurementに渡します。
+* ID サービスがサーバーから状態データを受け取り、SDID を AppMeasurement に渡します。
 * AppMeasurement が、SDID を含むページヒットに関するデータを [!DNL Analytics] に送信します。
 * [!DNL Analytics] および [!DNL Target] は、この訪問者の SDID を比較します。同一の SDID の場合、[!DNL Target] および [!DNL Analytics] は、サーバー側呼び出しとクライアント側呼び出しを共に結合します。この時点で、両方のソリューションは、この訪問者を同じ人物として認識します。
 
