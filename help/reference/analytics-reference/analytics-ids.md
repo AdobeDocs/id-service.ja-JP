@@ -5,14 +5,14 @@ seo-description: Experience Cloud Identity Service は、従来の Analytics 訪
 seo-title: Analytics および Experience Cloud ID の設定
 title: Analytics および Experience Cloud ID の設定
 uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
+exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
 translation-type: ht
-source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '945'
 ht-degree: 100%
 
 ---
-
 
 # Analytics および Experience Cloud ID の設定 {#setting-analytics-and-experience-cloud-ids}
 
@@ -83,7 +83,7 @@ JavaScript は、ファーストパーティドメイン（現在の Web サイ�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <img id="image_23D8C0EB69EC4084BC237B5B98C036F4" src="assets/step5_icon.png" /> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/ja-JP/analytics/components/metrics/unique-visitors.html" format="http" scope="external"> IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス</a> </p> </td> 
    <td colname="col3"> <p>訪問者のブラウザーが Cookie を受け入れない場合。 </p> </td> 
   </tr> 
  </tbody> 
