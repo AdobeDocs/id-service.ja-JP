@@ -1,14 +1,14 @@
 ---
 title: オプトインを使用し、ユーザーの同意に基づいて Experience Cloud アクティビティを制御する
 description: Adobe Opt-In Object は、Adobe Experience Platform ID サービスの拡張機能です。エンドユーザーの同意に基づいて、Experience Cloud ソリューション Web ページ上に cookie を作成したり、ビーコンを開始したりできるようにするか、およびどのソリューションを使用するかを制御できます。
-translation-type: tm+mt
-source-git-commit: 3aba8820ef40d068c732a637be5ab67652a8d35d
-workflow-type: tm+mt
+exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '554'
 ht-degree: 100%
 
 ---
-
 
 # ユーザーの同意に基づいて Experience Cloud アクティビティを制御する
 
@@ -18,7 +18,7 @@ Adobe [!UICONTROL Opt-In] Object は、Adobe [!UICONTROL Experience Platform ID 
 
 プライバシー規制の重要な側面は、個人データの利用方法や利用者に関するユーザーの同意の取得と伝達です。最新バージョンの [!UICONTROL ID サービス]には、ユーザー（UI）と Adobe ソリューションの間に配置され、エンドユーザーの同意があるかどうかに基づいて、Adobe Experience Cloud のソリューションタグの条件付き実行（事前承諾や事後承諾など）を提供する機能が含まれます。これについては、次の画像で示します。
 
-![[!UICONTROL オプトイン]の仕組みを示す図](assets/opt-in.png)
+![ [!UICONTROL オプトイン]の仕組みを示す図 ](assets/opt-in.png)
 
 [!UICONTROL オプトイン]が基本的にゲートキーパーとなるか、キーマスターとなるかは、あなた次第です。
 
