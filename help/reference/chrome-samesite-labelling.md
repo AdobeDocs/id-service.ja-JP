@@ -3,14 +3,14 @@ title: Google Chrome SameSite のラベル付けの変更
 seo-title: Google Chrome SameSite のラベル付けの変更
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 seo-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
-translation-type: tm+mt
-source-git-commit: 592ca6ca6a72e57b728e286d0b730c5bd93c0c7b
-workflow-type: tm+mt
+exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '1079'
 ht-degree: 100%
 
 ---
-
 
 # Google Chrome SameSite のラベル付けの変更 {#google-chrome-samesite-labelling-changes}
 
@@ -112,7 +112,7 @@ Chrome 80 で SameSite=`none` と secure フラグ設定の適用が開始され
 
 | cookie | タイプ | SameSite 属性 | セキュア属性 |
 | ------ | ---- | ------------------ | ---------------- |
-| _buid | サードパーティ | `none` | セキュア |
+| _buid | サードパーティ | `none` | 安全 |
 
 ### Marketo Munchkin
 
