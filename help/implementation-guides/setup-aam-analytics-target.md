@@ -5,14 +5,14 @@ seo-description: これらの手順は、Experience Cloud Identity Service を�
 seo-title: Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装
 title: Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装
 uuid: 9d446b77-ca62-4325-8bb0-ff43a52313c0
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '1574'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装 {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
@@ -144,7 +144,7 @@ Analytics は、データ収集にトラッキングサーバーを使用しま�
 
 >[!IMPORTANT]
 >
->この時点で、[!DNL Audience Manager] DIL コードを削除して、Audience Management モジュールに置き換える必要があります。手順については、[サーバー側転送の実装](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)を参照してください。
+>この時点で、[!DNL Audience Manager] DIL コードを削除して、Audience Management モジュールに置き換える必要があります。手順については、[サーバー側転送の実装](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/server-side-forwarding/ssf.html)を参照してください。
 
 ***（オプション、推奨）* カスタム prop の作成。**
 
@@ -244,4 +244,3 @@ mboxMCAVID が表示される場合、[!DNL Analytics] AID に対するその値
 
 * Analytics ID（AID）と MID がイメージリクエストに含まれていることを確認します。
 * [停止条件](../implementation-guides/setup-aam-analytics-target.md#section-aceacdb7d5794f25ac6ff46f82e148e1)が満たされたら、必ず猶予期間を無効にします。
-
