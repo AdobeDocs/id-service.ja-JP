@@ -5,14 +5,14 @@ seo-description: これらの説明、ツール、手順は、ID サービスが
 seo-title: Experience Cloud Identity Service のテストと検証
 title: Experience Cloud Identity Service のテストと検証
 uuid: 442de9c3-c265-4412-89bd-aeaa286ddad6
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '723'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity Service のテストと検証 {#test-and-verify-the-experience-cloud-id-service}
 
@@ -36,7 +36,7 @@ ID サービスのテストと検証を始める前に知っておくべき重�
 
 [!DNL Adobe] Debugger の応答に [!DNL Experience Cloud ID]（MID）が表示される場合、サービス統合は適切に設定されています。MID について詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
 
-[[!DNL Adobe] Debugger](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) を使用した ID サービスのステータスを検証するには：
+[!DNL Adobe] [Debugger](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/validate/debugger.html) を使用した ID サービスのステータスを検証するには：
 
 1. ブラウザーの Cookie をクリアするか、匿名ブラウジングセッションを開きます。
 1. ID サービスコードを含むテストページを読み込みます。
