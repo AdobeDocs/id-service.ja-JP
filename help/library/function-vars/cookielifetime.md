@@ -5,16 +5,16 @@ seo-description: この変数を使用すると、AMCV Cookie のデフォルト
 seo-title: cookieLifetime
 title: cookieLifetime
 uuid: cd945db3-429a-4625-ac3f-69ac259377a3
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: bdbabdcd-a87b-412c-8c2f-3f39820f939a
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '64'
 ht-degree: 100%
 
 ---
 
-
-# cookieLifetime{#cookielifetime}
+# cookieLifetime {#cookielifetime}
 
 この変数を使用すると、AMCV Cookie のデフォルトのライフタイム間隔を上書きできます。
 
@@ -37,4 +37,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    cookieLifetime:31536000 
 });
 ```
-
