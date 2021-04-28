@@ -5,14 +5,14 @@ seo-description: ID サービス利用の特長、機能、課題に関するよ
 seo-title: ID サービス FAQ
 title: ID サービス FAQ
 uuid: e8d8f819-3d73-4fa2-864c-4867071c14ee
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '806'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
-
 
 # ID サービス FAQ {#id-service-faqs}
 
