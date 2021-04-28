@@ -5,14 +5,14 @@ seo-description: getInstance は、指定した Experience Cloud 組織 ID に�
 seo-title: getInstance
 title: getInstance
 uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '256'
 ht-degree: 100%
 
 ---
-
 
 # getInstance {#getinstance}
 
