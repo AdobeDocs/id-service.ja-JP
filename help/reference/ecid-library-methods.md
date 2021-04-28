@@ -3,24 +3,24 @@ title: Safari ITP での ECID ライブラリの手法
 seo-title: Safari ITP での ECID ライブラリの手法
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 seo-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
-translation-type: tm+mt
-source-git-commit: 012bf5db473b37b17e7af957c08da71b253c718f
-workflow-type: tm+mt
+exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '810'
 ht-degree: 100%
 
 ---
 
-
 # Safari ITP での ECID ライブラリの手法
 
 >[!NOTE]
 >
->2020 年 11 月 12 日に Big Sur OS リリースの一環としてリリースされた ITP に対する最新の変更を反映するため、アップデートがおこなわれました。
+>2020 年 11 月 12 日（PT）に Big Sur OS リリースの一環としてリリースされた ITP に対する最新の変更を反映するため、アップデートがおこなわれました。
 
 Safari は ITP を使用したクロスドメイントラッキングと強く結びついているので、アドビでは、お客様および消費者のプライバシーおよび選択肢をサポートするライブラリのベストプラクティスを維持する必要があります。
 
-2020 年 11 月 10 日時点で、document.cookie API（「クライアント側」Cookie とも呼ばれる）を通じて設定されたすべてのファーストパーティの永続的な Cookie と、Safari およびモバイル iOS のファーストパーティ CNAME 実装を通じて設定されたCookie の有効期限は 7 日間です。 サードパーティ Cookie は、ITP の以前のバージョンで記載されているように、引き続きブロックされます。ITP 2.1 およびアドビソリューションへの影響について詳しくは、[Safari ITP 2.1 が Adobe Experience Cloud および Experience Platform のお客様に与える影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)を参照してください。
+2020 年 11 月 10 日（PT）時点で、document.cookie API（「クライアント側」Cookie とも呼ばれる）を通じて設定されたすべてのファーストパーティの永続的な Cookie と、Safari およびモバイル iOS のファーストパーティ CNAME 実装を通じて設定されたCookie の有効期限は 7 日間です。 サードパーティ Cookie は、ITP の以前のバージョンで記載されているように、引き続きブロックされます。ITP 2.1 およびアドビソリューションへの影響について詳しくは、[Safari ITP 2.1 が Adobe Experience Cloud および Experience Platform のお客様に与える影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)を参照してください。
 
 ## ITP 関連の変更、方法および設定
 
