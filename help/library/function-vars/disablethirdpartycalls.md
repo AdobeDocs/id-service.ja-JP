@@ -5,34 +5,34 @@ seo-description: ID サービスが他のドメインに対する呼び出しを
 seo-title: disableThirdPartyCalls
 title: disableThirdPartyCalls
 uuid: e92ce1f5-67a4-476c-9d04-41d4e96b1592
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: 1d5b4e80-1b2d-4401-9057-449a6abf5db5
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '216'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
-
-# disableThirdPartyCalls{#disablethirdpartycalls}
+# disableThirdPartyCalls {#disablethirdpartycalls}
 
 ID サービスが他のドメインに対する呼び出しをおこなえないようにするブール型のフラグ（オプション）。
 
-**構文：** ` `disableThirdPartyCalls: true|false``（デフォルトは `false`。）
+**構文：** ` `disableThirdPartyCalls: true false``（デフォルトは `false`。）
 
 `disableThirdPartyCalls: true` の場合、この ID サービスは他のドメインの呼び出しをおこないません。
 
 **目的**
 
-この変数は、次の情報を必要とするお客様向けに設計されています。
+この変数は、以下を必要とする顧客向けに設計されています。
 
-* IDサービスが認証済みのセキュリティで保護されたページから呼び出しをおこなうのを防ぐ。
-* Experience CloudID(MID)を持つサイト訪問者。
-* その他のExperience Cloudソリューションを適切に動作させる。
+* 顧客の安全な認証済みページから ID サービスが呼び出しを行うのを防ぐ。
+* Experience Cloud ID（MID）を持つサイト訪問者。
+* 適切に動作する他の Experience Cloud ソリューション。
 
 **実装方法**
 
-他のExperience CloudソリューションがMIDを使用しているので、IDサービスはAdobeを呼び出してこのIDを返し、設定します。 ID サービスが Web サイトの認証済みセクションから呼び出しをおこなわないようにする必要がある場合、最初に認証を求められないページからの呼び出しを必須にすることができます。サイト訪問者が MID を取得したら、サイトの認証済みセクションの ID サービスコードで `disableThirdPartyCalls= true` を設定できます。ここでは、すべてではないにせよ、ほとんどの顧客が、サイトの安全な部分にアクセスする前に認証ページに移動することを前提としています。
+他の Experience Cloud ソリューションが MID に基づいているので、ID サービスは Adobe を呼び出してこの ID を返したり設定したりします。ID サービスが Web サイトの認証済みセクションから呼び出しをおこなわないようにする必要がある場合、最初に認証を求められないページからの呼び出しを必須にすることができます。サイト訪問者が MID を取得したら、サイトの認証済みセクションの ID サービスコードで `disableThirdPartyCalls= true` を設定できます。ここでは、すべてではないにせよ、ほとんどの顧客がサイトの安全な部分にアクセスするために認証ページに移動することを前提としています。
 
 **コードサンプル**
 
@@ -49,4 +49,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
    disableThirdPartyCalls: true 
 }); 
 ```
-
