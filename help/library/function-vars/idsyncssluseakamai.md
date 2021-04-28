@@ -5,16 +5,16 @@ seo-description: 宛先の公開テンプレートで HTTPS 接続に Akamai を
 seo-title: idSyncSSLUseAkamai
 title: idSyncSSLUseAkamai
 uuid: 501ccc37-c3ab-4454-bfcf-3e3c3e8b5ca3
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: 74c24eb5-bf3d-4e6b-ac7d-1a37d940d77f
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '52'
 ht-degree: 100%
 
 ---
 
-
-# idSyncSSLUseAkamai{#idsyncssluseakamai}
+# idSyncSSLUseAkamai {#idsyncssluseakamai}
 
 宛先の公開テンプレートで HTTPS 接続に Akamai を使用するかを指定します。
 
@@ -34,4 +34,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
     ... 
 });
 ```
-
