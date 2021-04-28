@@ -5,14 +5,14 @@ seo-description: ID のリクエストと応答のプロセスについて、概
 seo-title: Experience Cloud Identity Service による ID のリクエスト方法と設定方法
 title: Experience Cloud Identity Service による ID のリクエスト方法と設定方法
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '806'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity Service による ID のリクエスト方法と設定方法 {#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
@@ -64,4 +64,3 @@ DCS が組織 ID と demdex ID を受け取った後、サイト訪問者の正�
 この例では、訪問者は「食品会社」のサイトを離れ、「スポーツ会社」が所有するサッカーサイトに移動します。訪問者がサッカーサイトにアクセスしたときの ID チェックとリクエストの処理は、前の例で説明したとおりに実行されます。ただし、「スポーツ会社」には独自の組織 ID があるので、ID サービスが返す MID は異なります。新しい MID は「スポーツ会社」が管理するドメインに固有のものであり、この MID によってこの会社が [!DNL Experience Cloud] の複数のソリューションで訪問者データを追跡して共有することができます。demdex ID は、サードパーティ Cookie に保存されており、異なるドメインで維持されるので、この訪問者に対して同じものになります。
 
 ![](assets/req_resp.png)
-
