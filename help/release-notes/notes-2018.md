@@ -5,14 +5,14 @@ seo-description: 2018 年の Experience Cloud Identity Service の機能リリ�
 seo-title: 2018 年リリースノート
 title: 2018 年リリースノート
 uuid: 771b5b11-a8e3-464c-b65e-b15135584ace
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
-
 
 # 2018 年リリースノート {#release-notes}
 
@@ -29,8 +29,8 @@ ht-degree: 36%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>AMCV cookieのセキュリティの強化 </p> </td> 
-   <td colname="col2"> <p>内部セキュリティスキャン中に、DTMライブラリを使用する場合に、セッション管理に使用されるcookieで正しい属性を指定できないことが検出されました。 この場合、cookieの情報が誤って共有される可能性があります。 この問題を解決するために、お客様がAMCV cookieを安全なものとして設定できる設定を導入しました。 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a> を参照してください。 </p> </td> 
+   <td colname="col1"> <p>AMCV Cookie のセキュリティの強化 </p> </td> 
+   <td colname="col2"> <p>内部セキュリティスキャンで、DTM ライブラリ使用時に、セッション管理に使用する Cookie で正しい属性を指定できないことがわかりました。 この結果、Cookie の情報が誤って共有されるおそれがあります。 この問題を解決するために、お客様が AMCV Cookie を安全なものとして指定できる設定を導入しました。 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a> を参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -46,16 +46,16 @@ ht-degree: 36%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>AMCV cookieのセキュリティの強化 </p> </td> 
-   <td colname="col2"> <p>内部セキュリティスキャン中に、DTMライブラリを使用する場合に、セッション管理に使用されるcookieで正しい属性を指定できないことが検出されました。 この場合、cookieの情報が誤って共有される可能性があります。 この問題を解決するために、お客様がAMCV cookieを安全なものとして設定できる設定を導入しました。 secureCookie を参照してください。 </p> </td> 
+   <td colname="col1"> <p>AMCV Cookie のセキュリティの強化 </p> </td> 
+   <td colname="col2"> <p>内部セキュリティスキャンで、DTM ライブラリ使用時に、セッション管理に使用する Cookie で正しい属性を指定できないことがわかりました。 この結果、Cookie の情報が誤って共有されるおそれがあります。 この問題を解決するために、お客様が AMCV Cookie を安全なものとして指定できる設定を導入しました。 secureCookie を参照してください。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>統合コードとIDは数値または空以外の文字列にする必要があります </p> </td> 
-   <td colname="col2"> <p>データに数値でも空でもない統合'code'または'id'が含まれている場合に、'setCustomerIDs'の検証で発生していた問題を修正しました。 </p> </td> 
+   <td colname="col1"> <p>統合コードと ID を数値または空以外の文字列にする必要がある </p> </td> 
+   <td colname="col2"> <p>数値でも空以外の文字列でもない統合「code」または「id」がデータに含まれている場合の、「setCustomerIDs」の検証に関する問題を修正しました。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> ECID JSはパブリックGitリポジトリで使用可能 </td> 
-   <td colname="col2"> ECID JSは、すべてのExperience Cloudのお客様向けに、公開Gitリポジトリ(https://github.com/Adobe-Marketing-Cloud/id-service/releases)で利用できるようになりました。 </td> 
+   <td colname="col1"> ECID JS がパブリック Git リポジトリで使用可能 </td> 
+   <td colname="col2"> ECID JS がパブリック Git リポジトリ（https://github.com/Adobe-Marketing-Cloud/id-service/releases）ですべての Experience Cloud ユーザーに公開されました。 </td> 
   </tr> 
  </tbody> 
 </table>
@@ -72,7 +72,7 @@ ht-degree: 36%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>ユニーク訪問者数の非現実的なスパイク </p> </td> 
-   <td colname="col2"> <p>Experience Cloud Identity Service 3.1.0 のリリースでは、このバージョンが実装された際に、ユニーク訪問者数で非現実的なスパイクが作成される問題が見つかりました。この動作は、最新バージョンのECID v3.1.0でのみ表示され、Safariブラウザーのプライバシー設定で「現在のWebサイトのみを許可」オプションが選択されている場合にのみ表示されます。 バージョン3.1.2では、この問題が修正されています。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud Identity Service 3.1.0 のリリースでは、このバージョンが実装された際に、ユニーク訪問者数で非現実的なスパイクが作成される問題が見つかりました。この動作は、最新バージョンの ECID v3.1.0 で、Safari ブラウザーのプライバシー設定で「現在の Web サイトからのみ許可」オプションを選択した場合にのみ発生します。バージョン 3.1.2 では、この問題が修正されています。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -92,8 +92,8 @@ ht-degree: 36%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Cookieが正しくないドメインに設定されている </p> </td> 
-   <td colname="col2"> <p>一時訪問者ーのcookieが、configで指定されたドメイン(initConfig)で設定されるのではなく、「デフォルト」のcookieドメインでcookieを設定していたバグを修正しました。 </p> </td> 
+   <td colname="col1"> <p>正しくないドメインに設定された Cookie </p> </td> 
+   <td colname="col2"> <p>一時訪問者の Cookieが、設定（initConfig）で指定されるドメインではなく、「デフォルト」の Cookie ドメインで設定されていたバグを修正しました。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -110,15 +110,15 @@ ht-degree: 36%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>複数の ID 同期要求に対応するためのスレッドの生成 </p> </td> 
-   <td colname="col2"> <p><b>Iframe</b> </p> <p>複数のID同期を実行するお客様の場合、継続的なCPUの計算が行われるため、UIがブロックされることがあります。 ID同期要求を100ミリ秒ずつ分離するスレッドを導入します。 </p> <p>この変更により、訪問者2.3.0以降およびDIL6.10以降を使用しているお客様のパフォーマンスが向上します。 </p> </td> 
+   <td colname="col2"> <p><b>Iframe</b> </p> <p>複数の ID 同期を実行する場合は、CPU での計算処理が連続して行われるので、UI がブロックされることがあります。 ID 同期リクエストを 100 ミリ秒ごとに分離するスレッドイールドを導入しています。 </p> <p>この変更により、Visitor 2.3.0 以降および DIL 6.10 以降を使用している顧客のパフォーマンスが向上します。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> サードパーティの呼び出しを無効にする機能を追加 </td> 
    <td colname="col2"> <p><b>JavaScript - 3.0.0</b> </p> <p>サードパーティの同期呼び出しを無効にできるように、以下の設定の名前を変更しました。 </p> <p>idSyncDisableSyncs を disableIdSyncs に変更 </p> <p>idSyncDisable3rdPartySyncing を disableThirdPartyCookies に変更 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Internet Explorerのサポート </p> </td> 
-   <td colname="col2"> <p>IDサービスは、Internet Explorer 6、7、8および9をサポートしなくなりました。 </p> </td> 
+   <td colname="col1"> <p>Internet Explorer のサポート </p> </td> 
+   <td colname="col2"> <p>ID サービスでは、Internet Explorer 6、7、8 および 9 をサポートしなくなりました。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>getInstance ドキュメントの更新 </p> </td> 
@@ -126,4 +126,3 @@ ht-degree: 36%
   </tr> 
  </tbody> 
 </table>
-
