@@ -5,14 +5,14 @@ seo-description: これらの手順は、Experience Cloud Identity Service を�
 seo-title: Experience Cloud Identity Service の Target への実装
 title: Experience Cloud Identity Service の Target への実装
 uuid: cb3581fa-4c4b-43aa-bb8e-8db85a6a1ef2
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '461'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity Service の Target への実装 {#implement-the-experience-cloud-id-service-for-target}
 
