@@ -5,14 +5,14 @@ seo-description: 訪問者 ID サービスをデプロイすると、以下の 5
 seo-title: Analytics ID の操作の順序
 title: Analytics ID の操作の順序
 uuid: cb1d136e-093f-43b0-a7e1-96f1e61fdad0
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 8ee340fe-ef3b-40e6-9441-7ee0c9e20357
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '331'
 ht-degree: 100%
 
 ---
-
 
 # Analytics ID の操作の順序 {#order-of-operations-for-analytics-ids}
 
@@ -51,9 +51,8 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>5<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/ja-JP/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/ja-JP/analytics/components/metrics/unique-visitors.html" format="http" scope="external"> IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス</a> </p> </td> 
    <td colname="col3"> <p>訪問者のブラウザーが Cookie を受け入れない場合。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
