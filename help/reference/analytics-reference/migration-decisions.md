@@ -5,14 +5,14 @@ seo-description: Experience Cloud Identity Service をデプロイする前に�
 seo-title: Experience Cloud Identity Service 移行の判断ポイント
 title: Experience Cloud Identity Service 移行の判断ポイント
 uuid: ee56b5de-fcf3-4cfb-9e53-762af7c4d2ff
+exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 translation-type: ht
-source-git-commit: a76eb7cc579ca859769e6caa256a3a0a3f66ca33
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
 workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
 ---
-
 
 # Experience Cloud Identity Service 移行の判断ポイント
 
@@ -125,4 +125,3 @@ Experience Cloud Identity Service をデプロイする前に、このサービ�
   </tr> 
  </tbody> 
 </table>
-
