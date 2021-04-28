@@ -4,14 +4,14 @@ keywords: ID サービス
 seo-description: Experience Cloud ID Service（ECID）は、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、SHA-256 ハッシュアルゴリズムをサポートします。これは、ハッシュされた識別子を Experience Cloud に送信するための、オプションの JavaScript メソッドです。顧客 ID の送信前にハッシュする独自の方法を引き続き使用できます。
 seo-title: setCustomerIDs の SHA256 ハッシュサポート
 title: setCustomerIDs の SHA256 ハッシュサポート
-translation-type: tm+mt
-source-git-commit: ac1131be75fd04b51cd1d646086e1802a43afb18
-workflow-type: tm+mt
+exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '666'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
-
 
 # の SHA256 ハッシュサポート `setCustomerIDs` {#hashing-support}
 
@@ -22,7 +22,7 @@ Experience Cloud ID Service（ECID）は、顧客 ID または電子メールア
 
 ## ECID での `setCustomerIDs` メソッドの使用 {#use-setcustomerids-method}
 
-1つ目の方法は、[`setCustomerIDs`](/help/library/get-set/setcustomerids.md) (`customerIDs<object>`, `hashType<string>`)メソッドを使用します。
+最初の方法では、[`setCustomerIDs`](/help/library/get-set/setcustomerids.md)（`customerIDs<object>`、`hashType<string>`）のメソッドを利用します。
 
 ハッシュ化する前に、ECID ライブラリは、customerIDs のデータの正規化を実行します。このプロセスでは、customerIDs の両端の空白をトリミングし、すべての文字を小文字に変換します。例えば、電子メールアドレスの場合、「 ecid@adobe.com 」は「ecid@adobe.com」になります。
 
@@ -37,7 +37,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID、認証状態およびハッシュタイプ（SHA-256）を各訪問者に関連付けることができます。ハッシュタイプを指定していない場合、ハッシュ化しないと見なされます。
 
-`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらのIDを[顧客属性](https://docs.adobe.com/content/help/ja-JP/core-services/interface/customer-attributes/attributes.html)としてExperience Cloudにアップロードし、異なるソリューションでこのデータにアクセスできます。
+`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://docs.adobe.com/content/help/ja-JP/core-services/interface/customer-attributes/attributes.html)として Experience Cloud にアップロードして、様々なソリューションからこのデータにアクセスすることができます。
 
 顧客 ID、認証状態およびハッシュタイプは、後で使用するために Cookie に格納されることはありません。**&#x200B;代わりに、顧客 ID、認証状態およびハッシュタイプは、[`getCustomerIDs`](/help/library/get-set/getcustomerids.md) を使用して取得するために、以下に示すように、インスタンス変数に格納されます。
 
@@ -70,9 +70,9 @@ ts=1563299964843
 
 ## Adobe Experience Platform Launch でのアクションの追加 {#add-action-launch}
 
-Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。起動について詳しくは、[製品ドキュメント](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)の起動を参照してください。
+Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。Launch について詳しくは、[Launch 製品ドキュメント](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)を参照してください。
 
-「起動」にアクションを追加するには、「Adobe起動」の[ルールドキュメント](https://docs.adobe.com/help/ja-JP/launch/using/reference/manage-resources/rules.html)を読み、次の画面キャプチャを参照してください。
+Launch にアクションを追加するには、Adobe Launch の[ルールドキュメント](https://docs.adobe.com/help/ja-JP/launch/using/reference/manage-resources/rules.html)を読み、以下のスクリーンキャプチャを参照してください。
 
 ![](/help/reference/assets/hashing-support.png)
 
