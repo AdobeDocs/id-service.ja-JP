@@ -5,16 +5,16 @@ seo-description: プログラムによる Experience Cloud Identity Service と�
 seo-title: ID サービスの API
 title: ID サービスの API
 uuid: 9663cf9d-64be-4b68-a0e1-c1a1eb70fbd5
-translation-type: tm+mt
-source-git-commit: e6d65f1bfed187d7440512e8f3c2de0550506c95
-workflow-type: tm+mt
+exl-id: 60ae4927-e905-4252-b9ec-9cc74073e8d5
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '91'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
-
-# ID サービスの API{#id-service-api}
+# ID サービスの API {#id-service-api}
 
 プログラムによる Experience Cloud Identity Service との連携を可能にするプロパティ、メソッド、設定について説明します。
 
@@ -23,5 +23,4 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->*Experience Cloud ID Javascript ライブラリ*&#x200B;は最近移行しました。ECID JSライブラリの最新リリースは、[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases)で入手できます。
-
+>*Experience Cloud ID Javascript ライブラリ*&#x200B;は最近移行しました。ECID JS ライブラリの最新リリースは、[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) にあります。
