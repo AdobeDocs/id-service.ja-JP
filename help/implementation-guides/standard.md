@@ -5,14 +5,14 @@ seo-description: 従来の実装では、Dynamic Tag Management（DTM）を使�
 seo-title: Dynamic Tag Management を使用した実装
 title: Dynamic Tag Management を使用した実装
 uuid: c4f752c4-392e-4909-b178-911706857064
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '2058'
 ht-degree: 100%
 
 ---
-
 
 # Dynamic Tag Management を使用した実装 {#implementation-with-dynamic-tag-management}
 
@@ -78,7 +78,7 @@ Dynamic Tag Management（DTM）を使用して ID サービスを実装するに
 
 **前提条件**
 
-* [!DNL Experience Cloud] のソリューションを有効にして、管理者権限があることを確認します。[コアサービス向けにソリューションを有効化](https://docs.adobe.com/content/help/en/core-services/interface/about-core-services/core-services.html)を参照してください。
+* [!DNL Experience Cloud] のソリューションを有効にして、管理者権限があることを確認します。[コアサービス向けにソリューションを有効化](https://docs.adobe.com/content/help/ja-JP/core-services/interface/about-core-services/core-services.html)を参照してください。
 
 * DTM で Web プロパティを作成します。DTM の [Web プロパティの 作成](https://docs.adobe.com/content/help/ja-JP/dtm/using/admin/web-property.html)ドキュメントを参照してください。
 
@@ -143,7 +143,7 @@ Anatytics のデータ収集に使用されるトラッキングサーバーの�
 
 トラッキングサーバーの URL がわからない場合は、`s_code.js` または `AppMeasurement.js` ファイルを確認します。`s.trackingServer` 変数で URL を設定することもできます。
 
-[trackingServer](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/vars/page-vars/page-variables.html) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/analytics/kb/determining-data-center.html#) を参照してください。
+[trackingServer](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/vars/page-vars/page-variables.html) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html#) を参照してください。
 
 **トラッキングサーバー保護**
 
@@ -151,7 +151,7 @@ Anatytics のデータ収集に使用されるセキュリティで保護され�
 
 トラッキングサーバーの URL がわからない場合は、`s_code.js` または `AppMeasurement.js` ファイルを確認します。`s.trackingServerSecure` 変数で URL を設定することもできます。
 
-[trackingServer](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/page-variables.html) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/analytics/kb/determining-data-center.html#) を参照してください。
+[trackingServer](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/vars/page-vars/page-variables.html) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html#) を参照してください。
 
 **Experience Cloud サーバー**
 
@@ -219,7 +219,7 @@ ID サービスのテストと検証を始める前に知っておくべき重�
 
 [!DNL Adobe] Debugger の応答に [!DNL Experience Cloud ID]（MID）が表示される場合、サービス統合は適切に設定されています。MID について詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
 
-[[!DNL Adobe] Debugger](https://docs.adobe.com/content/help/en/analytics/implementation/validate/debugger.html) を使用した ID サービスのステータスを検証するには：
+[!DNL Adobe] [Debugger](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/validate/debugger.html) を使用した ID サービスのステータスを検証するには：
 
 1. ブラウザーの Cookie をクリアするか、匿名ブラウジングセッションを開きます。
 1. ID サービスコードを含むテストページを読み込みます。
@@ -285,5 +285,5 @@ DCS 応答に MID がない場合、アカウントは適切にプロビジョ�
 
 >[!MORELIKETHIS]
 >
->* [Web プロパティ](https://docs.adobe.com/content/help/en/dtm/using/admin/web-property.html)
+>* [Web プロパティ](https://docs.adobe.com/content/help/ja-JP/dtm/using/admin/web-property.html)
 
