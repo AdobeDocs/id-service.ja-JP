@@ -5,22 +5,22 @@ seo-description: ID サービスとのインタラクションを可能にする
 seo-title: メソッド
 title: メソッド
 uuid: 184d0a62-0c8d-481b-9afe-b7a67bdafdce
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: 59a930f0-c0a8-477e-abad-f019d7d02d3b
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '90'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
-
-# メソッド{#methods}
+# メソッド {#methods}
 
 ID サービスとのインタラクションを可能にするパブリックメソッドです。
 
 >[!NOTE]
 >
->*Experience Cloud ID Javascript ライブラリ*&#x200B;は最近移行しました。ECID JSライブラリの最新リリースは、[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases)で入手できます。
+>*Experience Cloud ID Javascript ライブラリ*&#x200B;は最近移行しました。ECID JS ライブラリの最新リリースは、[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) にあります。
 
 関連記事：
 
@@ -37,4 +37,3 @@ ID サービスとのインタラクションを可能にするパブリック�
 + [getVisitorValues](getvisitorvalues.md)
 + [isClientSideMarketingCloudVisitorID](client-side-id.md)
 + [resetState](resetstate.md)
-
