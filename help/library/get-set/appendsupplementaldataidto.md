@@ -1,22 +1,22 @@
 ---
-description: このヘルパーメソッドを使用すると、Supplemental Data ID(SDID)をクエリ文字列パラメーターとしてリダイレクトURLに追加できます。 これは、A4Tを使用する場合に便利です。ページ間でSDIDを保持し、それらの個別の訪問を結合する必要がある場合に便利です。 この関数を使用するには、ソースドメインと宛先ドメインに同じ組織IDを持つIDサービスを実装している必要があります。
+description: このヘルパーメソッドを使用すると、補助的なデータ ID（SDID）をクエリ文字列パラメーターとしてリダイレクト URL に追加できます。 これは、A4T の使用時に、SDID をあるページから別のページへと保持し、それらの個別の訪問を結合する必要がある場合に便利です。 この関数を使用するには、ソースドメインと宛先ドメインに同じ組織 ID を持つ ID サービスを実装しておく必要があります。
 keywords: ID サービス
-seo-description: このヘルパーメソッドを使用すると、Supplemental Data ID(SDID)をクエリ文字列パラメーターとしてリダイレクトURLに追加できます。 これは、A4Tを使用する場合に便利です。ページ間でSDIDを保持し、それらの個別の訪問を結合する必要がある場合に便利です。 この関数を使用するには、ソースドメインと宛先ドメインに同じ組織IDを持つIDサービスを実装している必要があります。
+seo-description: このヘルパーメソッドを使用すると、補助的なデータ ID（SDID）をクエリ文字列パラメーターとしてリダイレクト URL に追加できます。 これは、A4T の使用時に、SDID をあるページから別のページへと保持し、それらの個別の訪問を結合する必要がある場合に便利です。 この関数を使用するには、ソースドメインと宛先ドメインに同じ組織 ID を持つ ID サービスを実装しておく必要があります。
 seo-title: appendSupplementalDataIDTo
 title: appendSupplementalDataIDTo
 uuid: f3504d82-8da3-4971-818b-3df57df4ec2d
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
+# appendSupplementalDataIDTo {#appendsupplementaldataidto}
 
-# appendSupplementalDataIDTo{#appendsupplementaldataidto}
-
-このヘルパーメソッドを使用すると、Supplemental Data ID(SDID)をクエリ文字列パラメーターとしてリダイレクトURLに追加できます。 これは、A4Tを使用する場合に便利です。ページ間でSDIDを保持し、それらの個別の訪問を結合する必要がある場合に便利です。 この関数を使用するには、ソースドメインと宛先ドメインに同じ組織IDを持つIDサービスを実装している必要があります。
+このヘルパーメソッドを使用すると、補助的なデータ ID（SDID）をクエリ文字列パラメーターとしてリダイレクト URL に追加できます。 これは、A4T の使用時に、SDID をあるページから別のページへと保持し、それらの個別の訪問を結合する必要がある場合に便利です。 この関数を使用するには、ソースドメインと宛先ドメインに同じ組織 ID を持つ ID サービスを実装しておく必要があります。
 
 内容：
 
@@ -53,7 +53,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219
 
 ## sdidParamExpiry を使用した SDID タイムアウトの変更 {#section-99946715cefa4acc95200b093db5297e}
 
-[sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) 設定を使用すると、`appendSupplementalDataIDTo` ヘルパー関数を使用して、あるページから別のページに SDID を渡す際に、デフォルトの ID の有効期限を変更できます。デフォルトでは、受信側ページのIDサービスコードは、参照元ページから送信されたURLからSDIDを取得するために30秒かかります。 受信ページのIDサービスコードが30秒以内にSDIDを取得できない場合は、新しいSDIDを要求します。 この機能は主に、あるページから別のページにSDIDを渡す必要があり、このタイムアウト間隔を制御する必要があるA4Tのお客様向けです。
+[sdidParamExpiry](../../library/function-vars/sdidparamexpiry.md#reference-cef3fd03c43b4772b2422e220b40a458) 設定を使用すると、`appendSupplementalDataIDTo` ヘルパー関数を使用して、あるページから別のページに SDID を渡す際に、デフォルトの ID の有効期限を変更できます。デフォルトでは、受信側ページの ID サービスコードで、参照元ページから送信された URL から SDID を取得するのに 30 秒かかります。 受信側ページの ID サービスコードが 30 秒以内に SDID を取得できない場合は、新しい SDID をリクエストします。 この機能は、あるページから別のページに SDID を渡す必要があり、このタイムアウト間隔を制御する必要がある A4T ユーザーを主に対象としています。
 
 デフォルトの SDID タイムアウトを変更したい場合は、次の構文を使用して `sdidParamExpiry` を `Visitor.getInstance` 関数に追加します。
 
@@ -61,7 +61,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219
 
 **コードサンプル**
 
-設定したIDサービスコードは、次の例のようになります。 次の例では、SDIDタイムアウトを15秒に設定します。
+設定すると、ID サービスコードは次のサンプルのようになります。 このサンプルでは、SDID タイムアウトを 15 秒に設定しています。
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
@@ -74,4 +74,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 var pageB = "www.domain.com/pageB"; 
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219"); 
 ```
-
