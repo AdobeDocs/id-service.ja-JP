@@ -4,16 +4,16 @@ seo-description: Web サイトでオプトインを有効にしたら、検証�
 seo-title: オプトインサービスの検証
 title: オプトインサービスの検証
 uuid: 1743360a-d757-4e50-8697-0fa92b302cbc
-translation-type: tm+mt
-source-git-commit: 0c300aa92991c0dec2ccdeeb34f9d886dcac7671
-workflow-type: tm+mt
+exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '471'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
-
-# オプトインサービスの検証{#validating-opt-in-service}
+# オプトインサービスの検証 {#validating-opt-in-service}
 
 Web サイトでオプトインを有効にしたら、検証方法を使用して、ブラウザーの開発者ツールでサービスが期待どおりに動作しているかどうかをテストします。
 
@@ -27,15 +27,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 ![](assets/use_case_1_1.png)
 
-ページを読み込む前に、キャッシュとCookieをクリアします。
+ページを読み込む前に、キャッシュと Cookie をクリアします。
 
-Chromeで、Webページを右クリックし、「Inspect」を選択します。 上のスクリーンショットのように、「*Network*」タブを選択して、ブラウザーからの要求を表示します。
+Chrome で web ページを右クリックし、「検証」を選択します。 上のスクリーンショットのように、「*ネットワーク*」タブを選択して、ブラウザーからのリクエストを表示します。
 
-上の例では、次のAdobeJSタグがページにインストールされています。ECID、AAM、Analytics、ターゲット。
+上の例では、アドビ JS タグ ECID、AAM、Analytics、Target がページにインストールされています。
 
 **オプトインが期待どおりに動作していることを証明する方法：**
 
-Adobeサーバーへのリクエストは表示されません。
+アドビサーバーへのリクエストは表示されません。
 
 * demdex.net/id
 * demdex.net/event
@@ -45,15 +45,15 @@ Adobeサーバーへのリクエストは表示されません。
 
 >[!NOTE]
 >
->`http://dpm.demdex.net/optOutStatus` の呼び出しが表示される場合があります。これは、訪問者のオプトアウトステータスを取得するために使用される読み取り専用のエンドポイントです。このエンドポイントでは、サードパーティCookieが作成されず、ページから情報が収集されません。
+>`http://dpm.demdex.net/optOutStatus` の呼び出しが表示される場合があります。これは、訪問者のオプトアウトステータスを取得するために使用される読み取り専用のエンドポイントです。最終的に、このエンドポイントでは、サードパーティの Cookie が作成されることはなく、ページから情報が収集されることもありません。
 
-Adobeタグによって作成されたCookieは表示されません。(AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2)
+アドビタグによって作成された Cookie（AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2）は表示されません。
 
-Chromeで、「*アプリケーション*」タブに移動し、「*ストレージ*」の下の「*Cookies*」セクションを展開し、Webサイトのドメイン名を選択します。
+Chromeで、「*Application*」タブに移動し、「*Storage*」の下の「*Cookies*」セクションを展開し、web サイトのドメイン名を選択します。
 
 ![](assets/use_case_1_2.png)
 
-## 使用例2:オプトインとストレージを有効にする{#section-bd28326f52474fa09a2addca23ccdc0f}
+## ユースケース 2：オプトインとストレージを有効にする {#section-bd28326f52474fa09a2addca23ccdc0f}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -62,9 +62,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-使用事例2の唯一の違いは、*新しいcookie*&#x200B;が表示され、訪問者が提供するオプトイン権限が含まれることです。**adobeujs-optin**
+ユースケース 2 の唯一の違いは、訪問者から提供されるオプトイン権限を含んだ&#x200B;*新しい Cookie*（**adobeujs-optin**）が表示されることです。
 
-## 使用例3:オプトインと事前承認のAdobe Analyticsを有効にする{#section-257fe582b425496cbf986d0ec12d3692}
+## ユースケース 3：オプトインを有効にし Adobe Analytics を事前承認する {#section-257fe582b425496cbf986d0ec12d3692}
 
 ```
 var preApproveAnalytics = {}; 
@@ -76,15 +76,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-Adobe Analyticsは事前にオプトインが承認されているので、「ネットワーク」タブにトラッキングサーバーへのリクエストが表示されます。
+Adobe Analytics は事前にオプトインが承認されているので、「Network」タブにトラッキングサーバーへのリクエストが表示されます。
 
 ![](assets/use_case_3_1.png)
 
-「アプリケーション」タブにAnalytics cookieが表示されます。
+また、「Application」タブに Analytics Cookie が表示されます。
 
 ![](assets/use_case_3_2.png)
 
-## 使用例4:オプトインとIABを有効にする{#section-64331998954d4892960dcecd744a6d88}
+## ユースケース 4：オプトインと IAB を有効にする {#section-64331998954d4892960dcecd744a6d88}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -93,9 +93,9 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-**ページで現在のIABの同意を表示する方法：**
+**ページでの現在の IAB 同意を表示する方法：**
 
-開発者ツールを開き、「*コンソール*」タブを選択します。 次のコードスニペットを貼り付け、Enterキーを押します。
+デベロッパーツールを開き、「*Console*」タブを選択します。 次のコードスニペットを貼り付け、Enter キーを押します。
 
 ```
 <codeblock>
@@ -105,15 +105,15 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
   
 ```
 
-以下は、目的1、2、5が承認され、Audience ManagerベンダーIDが承認された場合の出力例です。
+目的 1、2、5 が承認され、Audience Manager ベンダー ID が承認された場合の出力例を次に示します。
 
-* demdex.net/id:この呼び出しが存在する場合、ECIDがdemdex.netからIDをリクエストしたことを証明します
-* demdex.net/event:この呼び出しが存在する場合、DILのデータ収集呼び出しが期待どおりに動作していることが証明されます。
-* demdex.net/dest5.html:この呼び出しが存在する場合、ID同期がトリガーされていることを証明します。
+* demdex.net/id：この呼び出しが存在する場合は、ECID が demdex.net から ID をリクエストしたことの証明になります
+* demdex.net/event：この呼び出しが存在する場合は、DIL のデータ収集呼び出しが正常に動作していることの証明になります。
+* demdex.net/dest5.html：この呼び出しが存在する場合は、ID 同期がトリガーされていることの証明になります。
 
 ![](assets/use_case_4_1.png)
 
-次のいずれかが無効な場合、Adobeサーバーへのリクエストは表示されず、Adobecookieも表示されません。
+次のいずれかの場合、アドビサーバーへのリクエストは表示されず、アドビ Cookie も表示されません。
 
-* 目的1、2、または5は承認されません。
-* Audience ManagerベンダーIDが承認されていません。
+* 目的 1、2、5 のいずれかが承認されていない。
+* Audience Manager ベンダー ID が承認されていない。
