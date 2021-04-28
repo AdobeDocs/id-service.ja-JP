@@ -5,14 +5,14 @@ seo-description: Experience Cloud Identity Service 地域 ID を返します。�
 seo-title: getLocationHint
 title: getLocationHint
 uuid: cdc312b7-d270-4a5c-a2bb-0fbb37f1e2f4
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '232'
 ht-degree: 100%
 
 ---
-
 
 # getLocationHint {#getlocationhint}
 
@@ -36,4 +36,3 @@ var callback = function (
 //Get the region ID 
 visitor.getLocationHint(callback, true); 
 ```
-
