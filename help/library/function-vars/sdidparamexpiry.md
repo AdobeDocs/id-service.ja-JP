@@ -1,24 +1,24 @@
 ---
-description: この設定では、appendSupplementalDataIDToヘルパー関数を使用して、ページ間でそのIDを渡す場合に、デフォルトのSupplemental Data ID(SDID)の有効期限間隔を上書きできます。 デフォルトでは、受信側ページのIDサービスコードは、参照元ページから送信されたURLからSDIDを取得するために30秒かかります。 受信ページのIDサービスコードが30秒以内にSDIDを取得できない場合は、新しいSDIDを要求します。 この機能は主に、あるページから別のページにSDIDを渡す必要があり、このタイムアウト間隔を制御する必要があるA4Tのお客様向けです。
+description: この設定では、appendSupplementalDataIDTo ヘルパー関数を使用して、あるページから別のページにデフォルトの補助的なデータ ID（SDID）を渡す場合、その ID の有効間隔を上書きできます。 デフォルトでは、受信側ページの ID サービスコードで、参照元ページから送信された URL から SDID を取得するのに 30 秒かかります。 受信側ページの ID サービスコードが 30 秒以内に SDID を取得できない場合は、新しい SDID をリクエストします。 この機能は、あるページから別のページに SDID を渡す必要があり、このタイムアウト間隔を制御する必要がある A4T ユーザーを主に対象としています。
 keywords: ID サービス
-seo-description: この設定では、appendSupplementalDataIDToヘルパー関数を使用して、ページ間でそのIDを渡す場合に、デフォルトのSupplemental Data ID(SDID)の有効期限間隔を上書きできます。 デフォルトでは、受信側ページのIDサービスコードは、参照元ページから送信されたURLからSDIDを取得するために30秒かかります。 受信ページのIDサービスコードが30秒以内にSDIDを取得できない場合は、新しいSDIDを要求します。 この機能は主に、あるページから別のページにSDIDを渡す必要があり、このタイムアウト間隔を制御する必要があるA4Tのお客様向けです。
+seo-description: この設定では、appendSupplementalDataIDTo ヘルパー関数を使用して、あるページから別のページにデフォルトの補助的なデータ ID（SDID）を渡す場合、その ID の有効間隔を上書きできます。 デフォルトでは、受信側ページの ID サービスコードで、参照元ページから送信された URL から SDID を取得するのに 30 秒かかります。 受信側ページの ID サービスコードが 30 秒以内に SDID を取得できない場合は、新しい SDID をリクエストします。 この機能は、あるページから別のページに SDID を渡す必要があり、このタイムアウト間隔を制御する必要がある A4T ユーザーを主に対象としています。
 seo-title: sdidParamExpiry
 title: sdidParamExpiry
 uuid: cdaf7e2d-b196-4c70-936d-8a98191cbb85
-translation-type: tm+mt
-source-git-commit: bc5c81455023e22e64877bb861dfe141e158599c
-workflow-type: tm+mt
+exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
+# sdidParamExpiry {#sdidparamexpiry}
 
-# sdidParamExpiry{#sdidparamexpiry}
+この設定では、appendSupplementalDataIDTo ヘルパー関数を使用して、あるページから別のページにデフォルトの補助的なデータ ID（SDID）を渡す場合、その ID の有効間隔を上書きできます。 デフォルトでは、受信側ページの ID サービスコードで、参照元ページから送信された URL から SDID を取得するのに 30 秒かかります。 受信側ページの ID サービスコードが 30 秒以内に SDID を取得できない場合は、新しい SDID をリクエストします。 この機能は、あるページから別のページに SDID を渡す必要があり、このタイムアウト間隔を制御する必要がある A4T ユーザーを主に対象としています。
 
-この設定では、appendSupplementalDataIDToヘルパー関数を使用して、ページ間でそのIDを渡す場合に、デフォルトのSupplemental Data ID(SDID)の有効期限間隔を上書きできます。 デフォルトでは、受信側ページのIDサービスコードは、参照元ページから送信されたURLからSDIDを取得するために30秒かかります。 受信ページのIDサービスコードが30秒以内にSDIDを取得できない場合は、新しいSDIDを要求します。 この機能は主に、あるページから別のページにSDIDを渡す必要があり、このタイムアウト間隔を制御する必要があるA4Tのお客様向けです。
-
-**SDIDタイムアウトの上書き**
+**SDID タイムアウトの上書き**
 
 デフォルトの SDID タイムアウトを変更したい場合は、次の構文を使用して `sdidParamExpiry` を `Visitor.getInstance` 関数に追加します。
 
@@ -26,7 +26,7 @@ ht-degree: 7%
 
 **コードサンプル**
 
-設定したIDサービスコードは、このサンプルのようになります。 次の例では、SDIDタイムアウトを15秒に設定します。 この設定は、[appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d)ヘルパーメソッドと連携します。
+設定する場合、ID サービスコードは次のサンプルのようになります。 このサンプルでは、SDID タイムアウトを 15 秒に設定しています。 この設定は、[appendSupplementalDataIDTo](../../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d) ヘルパーメソッドと連携します。
 
 ```js
 var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
@@ -39,4 +39,3 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 var pageB = "www.domain.com/pageB"; 
 var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, "67987653465787219"); 
 ```
-
