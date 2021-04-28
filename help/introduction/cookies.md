@@ -5,14 +5,14 @@ seo-description: ID サービスは組織 ID、Experience Cloud AMCV Cookie お�
 seo-title: Cookie と Experience Cloud Identity Service
 title: Cookie と Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 727c6381-56b9-44b8-8e59-355d072769be
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '997'
 ht-degree: 100%
 
 ---
-
 
 # Cookie と Experience Cloud Identity Service {#cookies-and-the-experience-cloud-id-service}
 
@@ -129,7 +129,7 @@ Experience Cloud ID（MID）は、組織 ID と demdex ID から計算によっ�
 
 Experience Cloud Cookie のフラグを次の表に示します。
 
-| cookie（設定元） | httpOnly | Secure | SameSite |
+| cookie（設定元） | httpOnly | 安全 | SameSite |
 |--- |--- |--- |--- |
 | demdex（http 応答） | × | ○ | &quot;None&quot; |
 | AMCV（JavaScript） | × | 設定可能 | Unset（既定は Lax） |
