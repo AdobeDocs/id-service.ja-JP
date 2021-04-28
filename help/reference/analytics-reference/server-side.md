@@ -5,14 +5,14 @@ seo-description: 一部の実装では、追加の Analytics イベント（購�
 seo-title: JavaScript を利用したサーバー側実装
 title: JavaScript を利用したサーバー側実装
 uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
-translation-type: tm+mt
-source-git-commit: d2bc0e7fedc4e48d51f5dad158f9f8bfcb0cb4f3
-workflow-type: tm+mt
+exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '213'
 ht-degree: 100%
 
 ---
-
 
 # JavaScript を利用したサーバー側実装 {#server-side-implementation-mixed-with-javascript}
 
