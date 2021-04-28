@@ -4,14 +4,14 @@ seo-description: IAB Transparency and Consent Framework（TCF）用の Audience 
 seo-title: IAB フレームワークを使用したオプトインサービスの使用
 title: IAB フレームワークを使用したオプトインサービスの使用
 uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
-translation-type: tm+mt
-source-git-commit: ddff95876722b981f22c7e3196ff2ce9b696010e
-workflow-type: tm+mt
+exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
+translation-type: ht
+source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
+workflow-type: ht
 source-wordcount: '493'
 ht-degree: 100%
 
 ---
-
 
 # IAB フレームワークを使用したオプトインサービスの使用 {#using-opt-in-services-with-iab-framework}
 
