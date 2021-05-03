@@ -14,9 +14,9 @@ tutorials-url: https://docs.adobe.com/content/help/ja-JP/core-services-learn/tut
 git-repo: https://git.corp.adobe.com/AdobeDocs/id-service.ja-JP
 description: ID サービス
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 6fa0d2eafa06878d8d4778ac7d45f7737b86d5a4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '38'
 ht-degree: 100%
 
