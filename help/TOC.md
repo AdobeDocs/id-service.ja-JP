@@ -5,11 +5,11 @@ user-guide-title: Experience Cloud ID サービスヘルプ
 breadcrumb-title: ID サービスガイド
 user-guide-description: ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。このサービスを、Analytics、Audience Manager、Target などのサービスや、その他の Experience Cloud のソリューションまたは機能の ID 生成コードの代わりに使用できます。
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 6fa0d2eafa06878d8d4778ac7d45f7737b86d5a4
-workflow-type: ht
-source-wordcount: '394'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 01d50f9def8916b45fac846de235363836ba0429
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 99%
 
 ---
 
@@ -87,6 +87,7 @@ ht-degree: 100%
    + [Reference の概要](reference/reference.md)
    + Analytics リファレンス {#analytics-reference}
       + [Analytics リファレンスの概要](reference/analytics-reference/analytics-reference.md)
+      + [CNAME実装の概要](reference/analytics-reference/cname.md)
       + [Analytics および Experience Cloud ID の設定](reference/analytics-reference/analytics-ids.md)
       + [Analytics ID の操作の順序](reference/analytics-reference/analytics-order-of-operations.md)
       + [ID サービス移行の判断ポイント](reference/analytics-reference/migration-decisions.md)
