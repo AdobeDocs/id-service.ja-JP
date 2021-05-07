@@ -2,50 +2,20 @@
 description: メインのエントリサイトがあり、顧客が他のドメインを訪問する前にメインのエントリサイトで顧客の識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザー（Safari など）でもクロスドメイントラッキングをおこなうことができます。
 keywords: 操作の順序;ID サービス
 seo-description: メインのエントリサイトがあり、顧客が他のドメインを訪問する前にメインのエントリサイトで顧客の識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザー（Safari など）でもクロスドメイントラッキングをおこなうことができます。
-seo-title: データ収集 CNAME およびクロスドメイントラッキング
-title: データ収集 CNAME およびクロスドメイントラッキング
+seo-title: CNAME実装の概要
+title: CNAME実装の概要
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: ht
-source-git-commit: 053d45656e941adc1950d49099c30da1d9a72aa0
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: ebeca9e285af71872c05d58ba252ca65bde24f3d
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 28%
 
 ---
 
 
-# データ収集 CNAME およびクロスドメイントラッキング {#data-collection-cnames-and-cross-domain-tracking}
+# CNAME実装の概要{#cname-implementation-overview}
 
-メインのエントリサイトがあり、顧客が他のドメインを訪問する前にメインのエントリサイトで顧客の識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザー（Safari など）でもクロスドメイントラッキングをおこなうことができます。
+CNAMEの実装を使用すると、Adobeが使用する収集ドメインをカスタマイズして、独自のドメインと一致させることができます。 これにより、Adobeは、JavaScriptを使用してクライアント側ではなく、サーバー側でファーストパーティcookieを設定できます。 以前は、これらのサーバーサイドのファーストパーティcookieには、Appleのインテリジェントトラッキング防止(ITP)ポリシーに基づいて課された制限は適用されませんでした。 しかし、2020年11月、[!DNL Apple]はポリシーを更新し、CNAMEを使用して設定されたcookieにもこれらの制限が適用されるようにしました。 現在、CNAMEを介してサーバー側に設定されたCookieと、JavaScriptを介してクライアント側に設定されたCookieの両方が、ITPの下で7日または24時間の有効期限に制限されています。 ITPポリシーの詳細については、この[!DNL Apple]ドキュメント[をトラッキング防止](https://webkit.org/tracking-prevention/#intelligent-tracking-prevention-itp)に対して参照してください。
 
-サードパーティ Cookie を受け入れるブラウザーでは、訪問者 ID をリクエストしたときに、データ収集サーバーによって Cookie が設定されます。訪問者 ID サービスはこの Cookie を使用することで、同じ Experience Cloud 組織 ID を使用するように設定されているすべてのドメインで、同じ Experience Cloud 訪問者 ID を返すことができます。
-
-サードパーティ Cookie を受け入れないブラウザーでは、各ドメインに対して新しい Experience Cloud 訪問者 ID が割り当てられます。
-
-訪問者 ID サービスでは、demdex.net Cookie を利用することで、Cookie を受け入れて複数のドメインにまたがって使用できるブラウザーでも、Cookie を受け入れないブラウザーでも、Analytics の s_vi Cookie と同じレベルのクロスドメイントラッキングを実現できます。
-
-## データ収集 CNAME {#section-48fd186d376a48079769d12c4bd9f317}
-
-Analytics Cookie がデータ収集サーバーによって設定されていたときには、多くの企業が、サードパーティ Cookie を拒否するブラウザーの問題を回避するために、[ファーストパーティ Cookie 実装](https://docs.adobe.com/content/help/ja-JP/core-services/interface/ec-cookies/cookies-first-party.html)の一部としてデータ収集サーバーの CNAME レコードを設定していました。このプロセスでは、データ収集サーバーのドメインを Web サイトのドメインと一致させることで、訪問者 ID Cookie がファーストパーティ Cookie として設定されるようにしていました。
-
-しかし訪問者 ID サービスでは、JavaScript を使用して現在の Web サイトのドメインに直接訪問者 Cookie を設定するので、そのような方法でファーストパーティ Cookie を設定する必要はなくなりました。
-
-単一の Web プロパティ（単一のドメイン）を持つお客様は、データ収集 CNAME を廃止し、代わりにデフォルトのデータ収集ホスト名を使用できます（`omtrdc.net` または `2o7.net`）。
-
-ただし、データ収集で CNAME を使用すると、サードパーティ Cookie を受け入れないブラウザーでも、メインのランディングドメインとその他のドメインにまたがって訪問者を追跡できるというメリットがあります。複数の Web プロパティ（複数のドメイン）を持つ企業では、データ収集 CNAME を維持した方がメリットがある場合もあります。以下の節で、クロスドメイン訪問者トラッキングのしくみについて説明しています。
-
-## クロス デバイス トラッキング {#section-78925af798e24917b9abed79de290ad9}
-
-訪問者 ID サービスは、ユーザーのプライバシーとブラウザーの設定で許可されている場合、ドメインをまたいで（ただし、同じ所有会社内の）訪問者を追跡するために、demdex.net をドメインとして使用します。
-
-CNAME には、クロスドメインに関するそれ以外のメリットはありません。例えば、プライマリサイトが `mymainsite.com` にあるとします。CNAME レコードを設定して、セキュリティで保護されたデータ収集サーバー `smetrics.mymainsite.com` を参照します。
-
-ユーザーが `mymainsite.com` を訪問すると、データ収集サーバーによって ID サービス Cookie が設定されます。これが可能であるのは、データ収集サーバーのドメインと Web サイトのドメインが一致しているからです。このような Cookie の使用方法を、「*ファーストパーティコンテキスト*」または単に「*ファーストパーティ Cookie*」と呼びます。
-
-同じデータ収集サーバーを他のサイトでも使用し（例えば、`myothersiteB.com` と `myothersiteA.com` など）、訪問者が後でそのようなサイトを訪問する場合、`mymainsite.com` の訪問時に設定された Cookie がデータ収集サーバーへの HTTPS リクエストに含まれて送信されます（ブラウザーは Cookie が対応しているドメインが現在の Web サイトのドメインと一致していなくても、そのすべての Cookie をすべての HTTPS リクエストでそのドメインに送信することに注意してください）。CNAME を使用している場合であっても、これを「*サードパーティコンテキスト*&#x200B;での cookie の使用」、または「*サードパーティ cookie*」と呼びます。アドビでは、一意のドメインごとに CNAME を設定することをお勧めします。
-
-*注意：Safari は、設定に関わらず、サードパーティコンテキストのすべての Cookie をブロックします。*
-
-## Experience Cloud Identity Service で CNAME サポートを有効にする {#section-25d4feb686d944e3a877d7aad8dbdf9a}
-
-データ収集サーバーの CNAME のサポートは、`visitor.marketingCloudServerSecure` 変数を設定することで有効になります。
+CNAMEの導入ではcookieの有効期間に関して何のメリットも得られませんが、広告ブロッカーや一般的でないブラウザーなど、データがトラッカーとして分類されるドメインに送信されないというメリットがある可能性があります。 このような場合、CNAMEを使用すると、これらのツールを使用するユーザーにとってデータ収集が中断されるのを防ぐことができます。
