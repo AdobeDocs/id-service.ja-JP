@@ -6,11 +6,10 @@ seo-title: Cookie と Experience Cloud Identity Service
 title: Cookie と Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
+source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
+workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -28,7 +27,7 @@ ID サービスは、正常に機能するために AMCV Cookie、AMCVS Cookie �
 * ID サービスがデータを収集して他の Experience Cloud ソリューションと共有できるように、この一意の ID を維持する。
 * 複数のドメインをまたいでユーザーを追跡する。ただし、そのためには、同じ組織が他のドメインも所有している必要があり、それらのドメインに ID サービスコードがデプロイされている必要があります。
 
-### ID サービス Cookie で実行できないこと
+### IDサービスのcookieで実行できない処理
 
 * コンピューターウィルスを格納して転送し、実行する。
 * 電子メールアドレスなどの個人を特定できる情報（PII）にアクセスしたり、そのような情報を保存したりする。
@@ -52,12 +51,12 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **内容**
 
-AMCV Cookie には Experience Cloud 訪問者 ID（MID）が含まれます。MID は、`mid|<Experience Cloud ID>` という構文に従うキーと値のペアとして保存されます。
+AMCV Cookie には Experience Cloud 訪問者 ID（MID）が含まれます。MID は、`MCMID|<Experience Cloud ID>` という構文に従うキーと値のペアとして保存されます。
 
 完全形式のキーと値のペアは以下のようになります。
 
 ```
-mid|20265673158980419722735089753036633573
+MCMID|20265673158980419722735089753036633573
 ```
 
 この永続的な識別子によって、クロスソリューションのデータ共有が可能になります。
