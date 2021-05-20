@@ -2,20 +2,20 @@
 description: メインのエントリサイトがあり、顧客が他のドメインを訪問する前にメインのエントリサイトで顧客の識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザー（Safari など）でもクロスドメイントラッキングをおこなうことができます。
 keywords: 操作の順序;ID サービス
 seo-description: メインのエントリサイトがあり、顧客が他のドメインを訪問する前にメインのエントリサイトで顧客の識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザー（Safari など）でもクロスドメイントラッキングをおこなうことができます。
-seo-title: CNAME実装の概要
-title: CNAME実装の概要
+seo-title: CNAME 実装の概要
+title: CNAME 実装の概要
 uuid: ba42c822-b677-4139-b1ed-4d98d3320fd0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ebeca9e285af71872c05d58ba252ca65bde24f3d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '259'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
 
-# CNAME実装の概要{#cname-implementation-overview}
+# CNAME 実装の概要 {#cname-implementation-overview}
 
-CNAMEの実装を使用すると、Adobeが使用する収集ドメインをカスタマイズして、独自のドメインと一致させることができます。 これにより、Adobeは、JavaScriptを使用してクライアント側ではなく、サーバー側でファーストパーティcookieを設定できます。 以前は、これらのサーバーサイドのファーストパーティcookieには、Appleのインテリジェントトラッキング防止(ITP)ポリシーに基づいて課された制限は適用されませんでした。 しかし、2020年11月、[!DNL Apple]はポリシーを更新し、CNAMEを使用して設定されたcookieにもこれらの制限が適用されるようにしました。 現在、CNAMEを介してサーバー側に設定されたCookieと、JavaScriptを介してクライアント側に設定されたCookieの両方が、ITPの下で7日または24時間の有効期限に制限されています。 ITPポリシーの詳細については、この[!DNL Apple]ドキュメント[をトラッキング防止](https://webkit.org/tracking-prevention/#intelligent-tracking-prevention-itp)に対して参照してください。
+CNAME 実装を使用すると、アドビで使用される収集ドメインをカスタマイズして、独自のドメインと一致させることができます。 これにより、アドビは JavaScript を使用して、クライアントサイドではなくサーバーサイドでファーストパーティ Cookie を設定できます。 これまでは、これらのサーバーサイドのファーストパーティ Cookie は、Apple の Intelligent Tracking Prevention（ITP）ポリシーに基づいて課せられる制限の対象ではありませんでした。 しかし、2020 年 11 月、[!DNL Apple] はポリシーを更新し、CNAME を使用して設定された Cookie にもこれらの制限が適用されるようにしました。 現在、CNAME を使用してサーバーサイドで設定された Cookie と、JavaScript を使用してクライアントサイドで設定された Cookie はどちらも、ITP の下で 7 日間または 24 時間の有効期限に制限されています。 ITP ポリシーの詳細については、[トラッキング防止](https://webkit.org/tracking-prevention/#intelligent-tracking-prevention-itp)に関する [!DNL Apple] ドキュメントを参照してください。
 
-CNAMEの導入ではcookieの有効期間に関して何のメリットも得られませんが、広告ブロッカーや一般的でないブラウザーなど、データがトラッカーとして分類されるドメインに送信されないというメリットがある可能性があります。 このような場合、CNAMEを使用すると、これらのツールを使用するユーザーにとってデータ収集が中断されるのを防ぐことができます。
+CNAME の実装には、Cookie の有効期限に関しては何のメリットもありませんが、場合によっては、広告ブロッカーや一般的でないブラウザーで、トラッカーとして分類したドメインへのデータの送信を防止できるといったメリットがあります。 このような場合、CNAME を使用すると、これらのツールを使用しているユーザーのデータ収集が中断されるのを防ぐことができます。
