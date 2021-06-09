@@ -6,11 +6,10 @@ seo-title: Experience Cloud Identity Service による ID のリクエスト方�
 title: Experience Cloud Identity Service による ID のリクエスト方法と設定方法
 uuid: ff7f5b7e-e959-4391-b75c-b7a36286e0ea
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
 source-wordcount: '806'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -35,7 +34,7 @@ ID のリクエストと応答のプロセスについて、概要を説明し�
 この例では、「食品会社」が管理するピザサイトに新しい訪問者がアクセスします。「食品会社」のこのピザ Web サイトには ID サービスコードが含まれています。ピザサイトが読み込まれるときに、この ID サービスコードは、pizza ドメインの AMCV Cookie があるかをチェックします。
 
 * AMCV Cookie が設定されている場合、そのサイトの訪問者には Experience Cloud ID が割り当てられています。この場合、その ID を使用して訪問者を追跡し、他の Experience Cloud ソリューションとデータを共有することになります。
-* AMCV Cookie が設定されていない場合、ID サービスコードは、`dpm.demdex.net/id` にある地域別[データ収集サーバー](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/rdc/regional-data-collection.html)（DCS）を呼び出します（[Demdex ドメインの呼び出しについて](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/demdex-calls.html)も参照してください）。この呼び出しには、「食品会社」の組織 ID が含まれます。この組織 ID は、ID サービスコードの `Visitor.getInstance` 関数に設定されます。
+* AMCV Cookieが設定されていない場合、IDサービスコードは、`dpm.demdex.net/id`にある地域[データ収集サーバー](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en)(DCS)を呼び出します（[Demdexドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)も参照してください）。 この呼び出しには、「食品会社」の組織 ID が含まれます。この組織 ID は、ID サービスコードの `Visitor.getInstance` 関数に設定されます。
 
 ![](assets/request1.png)
 
