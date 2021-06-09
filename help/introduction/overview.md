@@ -4,10 +4,9 @@ seo-description: Experience Cloud ID サービス（以前の訪問者 ID サー
 seo-title: Experience Cloud ID サービスの概要
 title: Experience Cloud ID サービスの概要
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '615'
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
+source-wordcount: '606'
 ht-degree: 100%
 
 ---
@@ -37,7 +36,7 @@ ht-degree: 100%
 
 * プロファイルと ID のリンクに使用できる共通キーまたは ID を作成します。
 * 複数のソリューションにわたってデバイスを一意に識別します。
-* 同じドメインでトラッキングを確実に行えるように、顧客のドメインにファーストパーティ Cookie を設定します。詳しくは、[Cookie と Experience Cloud ID サービス](https://docs.adobe.com/content/help/ja-JP/id-service/using/intro/cookies.html)に関するドキュメントを参照してください。
+* 同じドメインでトラッキングを確実に行えるように、顧客のドメインにファーストパーティ Cookie を設定します。詳しくは、[Cookie と Experience Cloud ID サービス](./cookies.md)に関するドキュメントを参照してください。
 * エイリアス と ID マッピングを Experience Cloud の顧客とパートナーから受け取る。
 * Experience Cloud 内の ID 同期を管理する。
 * 広告技術エコシステム全体にわたり様々なサードパーティとの ID 同期をサポートする。
