@@ -6,11 +6,10 @@ seo-title: ID 同期と一致率について
 title: ID 同期と一致率について
 uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '833'
-ht-degree: 100%
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 95%
 
 ---
 
@@ -54,11 +53,11 @@ ID 同期は、ターゲットパブリッシング iFrame で実行される UR
 
 `http://abc.com?partner_id=abc&sync_id=123&redir=http://dpm.demdex.net/ibs:dpid=<ADOBE_PARTNER_ID>&dpuuid=<PARTNER_UUID>`
 
-[受信データ転送のための ID 同期](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html)も参照してください。
+[受信データ転送のための ID 同期](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/sending-audience-data/batch-data-transfer-process/id-sync-http.html?lang=en)も参照してください。
 
 **手順 4：ID の格納**
 
-同期した ID は、[エッジおよびコアデータサーバー](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/system-components/components-edge.html)に格納されます。
+同期した ID は、[エッジおよびコアデータサーバー](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-edge.html?lang=en)に格納されます。
 
 ## ID 同期を管理する同期サービス {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
@@ -73,9 +72,9 @@ ID 同期は、ターゲットパブリッシング iFrame で実行される UR
 
 ## Adobe Advertising Cloud との ID 同期 {#section-642c885ea65d45ffb761f78838735016}
 
-[!DNL Adobe Media Optimizer]（以前の [!DNL Adobe Advertising Cloud]）、iFrame ベースの ID 同期プロセスの例外です。[!DNL Advertising Cloud] は信頼されているドメインなので、ID 同期は [!UICONTROL Destination Publishing iFrame] 内ではなく親ページからおこなわれます。同期中、ID サービスは `cm.eversttech.net` の [!DNL Advertising Cloud] を呼び出します。cm.eversttech.net はアドビが [!DNL Advertising Cloud]Media Manager を買収する以前に使用されていた従来のドメイン名です。[!DNL Advertising Cloud] にデータを送信すると一致率の向上に役立ちます。バージョン 2.0 以降を使用している ID サービスのお客様の場合、このデータ送信は自動的におこなわれます。[Advertising Cloud Cookies](https://docs.adobe.com/content/help/ja-JP/core-services/interface/ec-cookies/cookies-advertising-cloud.html) も参照してください。
+[!DNL Adobe Media Optimizer]（以前の [!DNL Adobe Advertising Cloud]）、iFrame ベースの ID 同期プロセスの例外です。[!DNL Advertising Cloud] は信頼されているドメインなので、ID 同期は [!UICONTROL Destination Publishing iFrame] 内ではなく親ページからおこなわれます。同期中、ID サービスは `cm.eversttech.net` の [!DNL Advertising Cloud] を呼び出します。cm.eversttech.net はアドビが [!DNL Advertising Cloud]Media Manager を買収する以前に使用されていた従来のドメイン名です。[!DNL Advertising Cloud] にデータを送信すると一致率の向上に役立ちます。バージョン 2.0 以降を使用している ID サービスのお客様の場合、このデータ送信は自動的におこなわれます。[Advertising Cloud Cookies](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-advertising-cloud.html?lang=en) も参照してください。
 
 >[!MORELIKETHIS]
 >
->* [demdex ドメインの呼び出しについて](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/demdex-calls.html)
+>* [demdex ドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)
 
