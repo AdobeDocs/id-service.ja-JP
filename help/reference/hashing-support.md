@@ -5,11 +5,10 @@ seo-description: Experience Cloud ID Service（ECID）は、顧客 ID または�
 seo-title: setCustomerIDs の SHA256 ハッシュサポート
 title: setCustomerIDs の SHA256 ハッシュサポート
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '666'
-ht-degree: 100%
+source-git-commit: cca52e1ece7a31199cb86a286dd772a41f01eeaa
+workflow-type: tm+mt
+source-wordcount: '667'
+ht-degree: 97%
 
 ---
 
@@ -70,7 +69,7 @@ ts=1563299964843
 
 ## Adobe Experience Platform Launch でのアクションの追加 {#add-action-launch}
 
-Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。Launch について詳しくは、[Launch 製品ドキュメント](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html)を参照してください。
+Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。platform launchについて詳しくは、[Launch製品ドキュメント](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en)を参照してください。
 
 Launch にアクションを追加するには、Adobe Launch の[ルールドキュメント](https://docs.adobe.com/help/ja-JP/launch/using/reference/manage-resources/rules.html)を読み、以下のスクリーンキャプチャを参照してください。
 
