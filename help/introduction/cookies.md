@@ -6,10 +6,10 @@ seo-title: Cookie と Experience Cloud Identity Service
 title: Cookie と Experience Cloud Identity Service
 uuid: c5cbd235-37ee-4605-8792-b1a991e190ad
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: d2bc28329c68c54a85dcf714083b3fcb5afc5a14
-workflow-type: ht
-source-wordcount: '997'
-ht-degree: 100%
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
+source-wordcount: '987'
+ht-degree: 99%
 
 ---
 
@@ -116,7 +116,7 @@ AMCVS Cookie は、ブラウザーのファーストパーティドメインに�
  </tbody> 
 </table>
 
-関連情報については、[Demdex ドメインの呼び出しについて](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/demdex-calls.html)を参照してください。
+関連情報については、[Demdex ドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)を参照してください。
 
 ## Experience Cloud ID の生成 {#section-15f69c0bac394b4b9966a23fbc586d17}
 
@@ -134,7 +134,7 @@ Experience Cloud Cookie のフラグを次の表に示します。
 | AMCV（JavaScript） | × | 設定可能 | Unset（既定は Lax） |
 | AMCVS（JavaScript） | × | 設定可能 | Unset（既定は Lax） |
 
-*注意：セキュア属性を使用した AMCV および AMCVS の Ccokie の設定について詳しくは、[secureCookie](https://docs.adobe.com/content/help/ja-JP/id-service/using/id-service-api/configurations/securecookie.html) のトピックを参照してください。*
+*注意：セキュア属性を使用した AMCV および AMCVS の Ccokie の設定について詳しくは、[secureCookie](../library/function-vars/securecookie.md) のトピックを参照してください。*
 
 ## 次の手順 {#section-8db1727a63bc4ff68b495f270315d453}
 
