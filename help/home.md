@@ -3,14 +3,13 @@ description: 'Experience Cloud Identity Service は、Experience Cloud のすべ
 keywords: ID サービス
 seo-description: Adobe Experience Cloud Identity Service（ID サービス）は、Experience Cloud のすべてのソリューションにわたって訪問者を識別する、普遍的、永続的な ID を提供します。このサービスを、Analytics、Audience Manager、Target などのサービスや、その他の Experience Cloud のソリューションまたは機能の ID 生成コードの代わりに使用できます。
 seo-title: Experience Cloud Identity Service
-title: Experience Cloud Identity Service
+title: Experience CloudIDサービス
 uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '305'
-ht-degree: 100%
+source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+workflow-type: tm+mt
+source-wordcount: '303'
+ht-degree: 92%
 
 ---
 
@@ -40,12 +39,12 @@ Adobe Experience Cloud Identity Service（ID サービス）は、Experience Clo
      --> </td> 
    <td colname="col2"> <p> <b>リリースノート</b> </p> <p><b>バージョン 4.4</b> 2019 年 7 月 17 日リリースには、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、<a href="reference/hashing-support.md" format="dita" scope="local">SHA-256 ハッシュアルゴリズム</a>のサポートが含まれます。</p><p><b>バージョン 4.0</b> 2019 年 2 月 12 日リリースには、ユーザーがサイトにアクセスする際に、ユーザーのデバイスまたはブラウザーに cookie を配置できるかどうかを識別する<a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">オプトインサービス</a>が含まれています。 </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
-      <li id="li_45A7CD556FE44F4DAB035C736A058F36"> 新機能と修正点については、最新の <a href="https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html" format="https" scope="external">Experience Cloud リリースノート</a>を参照してください。 </li> 
-      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">過去のリリースについては、<a href="https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html" format="html" scope="external">以前のリリースノート</a>を参照してください。 </li> 
+      <li id="li_45A7CD556FE44F4DAB035C736A058F36"> 新機能と修正点については、最新の <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=en" format="https" scope="external">Experience Cloud リリースノート</a>を参照してください。 </li> 
+      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">過去のリリースについては、<a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=en" format="html" scope="external">以前のリリースノート</a>を参照してください。 </li> 
      </ul> </p> <p> <b>Experience Cloud リソース</b> </p> <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
       <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"> <a href="http://www.adobe.com/jp/privacy.html" format="http" scope="external"> アドビプライバシーセンター</a> </li> 
-      <li id="li_A54C1EB170EA4B8FA6A81B90AB0C39DD"> <a href="https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.html" scope="external" format="http"> Adobe Experience Cloud</a> </li> 
+      <li id="li_A54C1EB170EA4B8FA6A81B90AB0C39DD"> <a href="https://experienceleague.adobe.com/docs/home.html?lang=en" scope="external" format="http"> Adobe Experience Cloud</a> </li> 
       <li id="li_1938F7044F544481A6CC0F45CC22B80A"> <a href="http://helpx.adobe.com/jp/learning.html?promoid=KAUDK" scope="external" format="http"> アドビトレーニングおよびチュートリアル</a> </li> 
       <li id="li_C71459E0D1464C05B8B9387C43541F17"> <a href="https://helpx.adobe.com/jp/support/experience-cloud.html" scope="external" format="https"> 製品ドキュメントのホーム</a> </li> 
      </ul> </p> </td> 
