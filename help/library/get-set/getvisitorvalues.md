@@ -1,20 +1,16 @@
 ---
 description: これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
 keywords: ID サービス
-seo-description: これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
-seo-title: getVisitorValues
 title: getVisitorValues
-uuid: 7fb831b3-cf7e-40e2-a219-07fec28ad49c
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '449'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '409'
 ht-degree: 100%
 
 ---
 
-# getVisitorValues {#getvisitorvalues}
+# getVisitorValues{#getvisitorvalues}
 
 これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
 
