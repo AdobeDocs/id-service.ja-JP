@@ -3,10 +3,10 @@ description: これを実装すると、アドビの JavaScript コードや SDK
 keywords: ID サービス
 title: Experience Cloud Identity Service との直接統合
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 100%
+source-wordcount: '656'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ VisitorAPI.js または SDK コードライブラリを使用できないデバ�
 
 ![](assets/directSyntax.png)
 
-この構文の例において、`d_` というプレフィックスは呼び出し内のキーと値のペアがシステムレベルの変数であることを示します。ID サービスには多くの `d_` パラメーターを渡すことができますが、上のコードに示されているキーと値のペアに特に注目してください。他の変数について詳しくは、[DCS API 呼び出しでサポートされる属性](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html)を参照してください。
+この構文の例において、`d_` というプレフィックスは呼び出し内のキーと値のペアがシステムレベルの変数であることを示します。ID サービスには多くの `d_` パラメーターを渡すことができますが、上のコードに示されているキーと値のペアに特に注目してください。他の変数について詳しくは、[DCS API 呼び出しでサポートされる属性](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-keys.html)を参照してください。
 
 ID サービスは HTTP 呼び出しと HTTPS 呼び出しをサポートします。セキュアなページからデータを渡す際には HTTPS を使用してください。
 
@@ -57,7 +57,7 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dpm.demdex.net</span> </p> </td> 
-   <td colname="col2"> <p><span class="keyword">アドビ</span>が管理する従来のドメインです。<a href="https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">アドビ</span>が管理する従来のドメインです。<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html" format="https" scope="external">Demdex ドメインの呼び出しについて</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
@@ -87,7 +87,7 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> dcs_region</span> </p> </td> 
-   <td colname="col2"> <p>ID サービスは地理的に分散された負荷分散型システムです。呼び出しを処理するデータセンターの地域は ID で識別されます。<a href="https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>ID サービスは地理的に分散された負荷分散型システムです。呼び出しを処理するデータセンターの地域は ID で識別されます。<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_cb</span> </p> </td> 
