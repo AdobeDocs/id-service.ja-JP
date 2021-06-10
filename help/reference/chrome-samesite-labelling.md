@@ -2,10 +2,10 @@
 title: Google Chrome SameSite のラベル付けの変更
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '1067'
-ht-degree: 100%
+source-wordcount: '1065'
+ht-degree: 99%
 
 ---
 
@@ -119,4 +119,4 @@ Chrome 80 で SameSite=`none` と secure フラグ設定の適用が開始され
 
 > !![IMPORTANT] Adobe のサードパーティ cookie がサーバーサイドで設定されている
 
-詳しくは、[Target の Google Chrome SameSite ポリシー](https://docs.adobe.com/content/help/ja-JP/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html)のドキュメントを参照してください。
+詳しくは、[Target の Google Chrome SameSite ポリシー](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html)のドキュメントを参照してください。
