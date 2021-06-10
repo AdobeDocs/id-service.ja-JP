@@ -1,13 +1,11 @@
 ---
 description: Experience Cloud ID Service（ECID）は、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、SHA-256 ハッシュアルゴリズムをサポートします。これは、ハッシュされた識別子を Experience Cloud に送信するための、オプションの JavaScript メソッドです。顧客 ID の送信前にハッシュする独自の方法を引き続き使用できます。
 keywords: ID サービス
-seo-description: Experience Cloud ID Service（ECID）は、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、SHA-256 ハッシュアルゴリズムをサポートします。これは、ハッシュされた識別子を Experience Cloud に送信するための、オプションの JavaScript メソッドです。顧客 ID の送信前にハッシュする独自の方法を引き続き使用できます。
-seo-title: setCustomerIDs の SHA256 ハッシュサポート
 title: setCustomerIDs の SHA256 ハッシュサポート
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: cca52e1ece7a31199cb86a286dd772a41f01eeaa
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '608'
 ht-degree: 97%
 
 ---
