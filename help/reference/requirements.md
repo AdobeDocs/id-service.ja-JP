@@ -3,10 +3,10 @@ description: ここでは、Experience Cloud Identity Service に必要な適切
 keywords: ID サービス
 title: Experience Cloud Identity Service の要件
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 100%
+source-wordcount: '730'
+ht-degree: 91%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 100%
      <li id="li_1F16C6D412944197BEA56BC24730782C"> これらの DTM 埋め込みコードのいずれかをマークアップまたはページコードの他の場所に配置する。 </li> 
      <li id="li_05615C01F3A947BBBD41046E68377224"> 非同期メソッド、呼び出し／コールバックメソッド、ラッパーを使用して、DTM コードを付加、追加または読み込む。 </li> 
      <li id="li_B2137DFF627B473FA876580449026D2B">同じページに埋め込みコードの複数のインスタンスを含める。 </li> 
-    </ul> <p><a href="https://docs.adobe.com/content/help/ja-JP/dtm/using/client-side/deployment.html" format="https" scope="external">埋め込みコードとホスティングオプション</a>も参照してください。 </p> </td> 
+    </ul> <p><a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html" format="https" scope="external">埋め込みコードとホスティングオプション</a>も参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> 非標準的な実装 </a> </p> </td> 
@@ -64,7 +64,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>有効</b> </p> </td> 
-   <td colname="col2"> <p>会社が <span class="keyword">Experience Cloud</span> を有効にしているものの、組織 ID がない場合は、<a href="https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/organizations.html" format="https" scope="external">組織 ID</a> を確認してください（<i>組織 ID を見つける</i>セクションまで下にスクロールしてください）。 </p> </td> 
+   <td colname="col2"> <p>会社が <span class="keyword">Experience Cloud</span> を有効にしているものの、組織 ID がない場合は、<a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=ja" format="https" scope="external">組織 ID</a> を確認してください（<i>組織 ID を見つける</i>セクションまで下にスクロールしてください）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>不明</b> </p> </td> 
@@ -72,14 +72,14 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>無効</b> </p> </td> 
-   <td colname="col2"> <p> 会社が Experience Cloud を有効にしていない場合は、はじめに、<a href="https://docs.adobe.com/content/help/ja-JP/core-services/interface/about-core-services/core-services.html" format="https" scope="external">コアサービス - ソリューションを有効にする方法</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p> 会社が Experience Cloud を有効にしていない場合は、はじめに、<a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=ja" format="https" scope="external">コアサービス - ソリューションを有効にする方法</a>を参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Analytics の要件：地域別データ収集（RDC） {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-すべてのトラッキングサーバーは RDC に変換されているので、Analyticsトラッキングサーバーを変更する必要はありません。[詳細情報...](https://docs.adobe.com/content/help/ja-JP/analytics/technotes/rdc/regional-data-collection.html)
+すべてのトラッキングサーバーは RDC に変換されているので、Analyticsトラッキングサーバーを変更する必要はありません。[詳細情報...](https://experienceleague.adobe.com/docs/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html)
 
 ## コードライブラリとバージョンの要件 {#section-ad7542a4317d430fa79fc6b095beb84d}
 
@@ -107,7 +107,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
   </tr> 
   <tr> 
    <td colname="col1" morerows="2"> <p> <b> <span class="keyword"> Analytics </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p><a href="https://docs.adobe.com/content/help/ja-JP/analytics/implementation/js/overview.html" format="https" scope="external">JavaScript 版 AppMeasurement</a> を参照してください。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> AppMeasurement.js</span> </p> <p><a href="https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja" format="https" scope="external">JavaScript 版 AppMeasurement</a> を参照してください。 </p> </td> 
    <td colname="col4"> <p>1.6.4 以降。 </p> </td> 
   </tr> 
   <tr> 
@@ -115,21 +115,21 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
    <td colname="col4"> <p>H.27 </p> <p> <p>注意：<span class="keyword"> Analytics</span> s_code バージョン H.27 は、ID サービスバージョン 1.6.0 のリリースからサポートされなくなりました。コードを AppMeasurement の最新バージョンにアップグレードしてください。 </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p>ビデオハートビート </p> <p><a href="https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html" format="https" scope="external">JavaScript 向けビデオハートビート 2.x</a> を参照してください。 </p> </td> 
+   <td colname="col3"> <p>ビデオハートビート </p> <p><a href="https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html" format="https" scope="external">JavaScript 向けビデオハートビート 2.x</a> を参照してください。 </p> </td> 
    <td colname="col4"> <p>2.0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b> <span class="keyword"> Audience Manager </span> </b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> <a href="https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">データ統合ライブラリ</a>（DIL）を参照してください。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> dil.js</span> </p> <p> <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html" format="https" scope="external">データ統合ライブラリ</a>（DIL）を参照してください。 </p> </td> 
    <td colname="col4"> <p>5.0 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1" morerows="1"> <p> <b><span class="keyword">Target </span></b> </p> </td> 
-   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p><a href="https://docs.adobe.com/content/help/ja-JP/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">mbox コード</a>を参照してください。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p><a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-technical.html" format="https" scope="external">mbox コード</a>を参照してください。 </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p><a href="https://docs.adobe.com/content/help/ja-JP/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">at.js 実装</a>を参照してください。 </p> </td> 
+   <td colname="col3"> <p> <span class="codeph"> at.js</span> </p> <p><a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/at-js/how-atjs-works.html" format="https" scope="external">at.js 実装</a>を参照してください。 </p> </td> 
    <td colname="col4"> <p>0.9.1 </p> </td> 
   </tr> 
  </tbody> 
@@ -148,9 +148,9 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
 
 ID サービスに関して、SDK コードが有効になっている必要があります。[Adobe Mobile Services](https://mobilemarketing.adobe.com/) アカウントから、各アプリ用の最新 SDK コードを有効にして、ダウンロードします。関連トピック:
 
-* [SDK 訪問者 ID サービスの設定](https://docs.adobe.com/content/help/ja-JP/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
-* [Android SDK のメソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
-* [iOS SDK のメソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
+* [SDK 訪問者 ID サービスの設定](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html)
+* [Android SDK のメソッド](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html)
+* [iOS SDK のメソッド](https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/marketing-cloud.html)
 
 >[!MORELIKETHIS]
 >
