@@ -1,16 +1,13 @@
 ---
 description: Experience Cloud Identity Service の標準的な実装および非標準的な実装の手順とコードサンプルです。
 keywords: ID サービス
-seo-description: Experience Cloud Identity Service の標準的な実装および非標準的な実装の手順とコードサンプルです。
-seo-title: ID サービスの実装ガイド
 solution: Experience Cloud
 title: 実装ガイド
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '207'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '190'
 ht-degree: 100%
 
 ---
@@ -25,7 +22,7 @@ Experience Cloud Identity Service の標準的な実装および非標準的な�
 
 ## 標準的な実装
 
-標準的な実装では、[Adobe Exprience Platform Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html) を使用して ID サービスの利用を開始し、他の Experience Cloud ID ソリューションと統合します。ID サービスの実装には Experience Platform Launch を使用することを強くお勧めします。
+標準的な実装では、[Adobe Exprience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=ja) を使用して ID サービスの利用を開始し、他の Experience Cloud ID ソリューションと統合します。ID サービスの実装には Experience Platform Launch を使用することを強くお勧めします。
 
 ## 実装リソース
 
