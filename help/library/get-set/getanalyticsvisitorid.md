@@ -3,10 +3,10 @@ description: Experience Cloud Identity Service が実装される前に s_vi Coo
 keywords: ID サービス
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 100%
+source-wordcount: '298'
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 `aid` パラメーターは次の場合に、クエリ文字列内で使用されます。
 
 * [!DNL Experience Cloud] ID サービスが正しくデプロイされている場合。
-* サイトに訪問しているユーザーの [!DNL Analytics]s_vi Cookie[ に既に ](https://docs.adobe.com/content/help/ja-JP/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) ID が保存されている場合。
+* サイトに訪問しているユーザーの [!DNL Analytics]s_vi Cookie[ に既に ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679) ID が保存されている場合。
 
 **例 2**
 
@@ -51,5 +51,5 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 >[!MORELIKETHIS]
 >
->* [Analytics の cookie](https://docs.adobe.com/content/help/ja-JP/core-services/interface/ec-cookies/cookies-privacy.html)
+>* [Analytics の cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-privacy.html)
 
