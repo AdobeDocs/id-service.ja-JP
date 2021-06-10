@@ -1,15 +1,11 @@
 ---
 description: Experience Cloud Identity Service は、従来の Analytics 訪問者 ID 方式を置き換えるものです。
 keywords: ID サービス
-seo-description: Experience Cloud Identity Service は、従来の Analytics 訪問者 ID 方式を置き換えるものです。
-seo-title: Analytics および Experience Cloud ID の設定
 title: Analytics および Experience Cloud ID の設定
-uuid: 421cf597-a3e0-4ca3-8ce8-d0c80cbb6aca
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '945'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '927'
 ht-degree: 100%
 
 ---
