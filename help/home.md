@@ -1,15 +1,12 @@
 ---
 description: 'Experience Cloud Identity Service は、Experience Cloud のすべてのソリューションにわたって訪問者を識別する、普遍的、永続的な ID を提供します。 '
 keywords: ID サービス
-seo-description: Adobe Experience Cloud Identity Service（ID サービス）は、Experience Cloud のすべてのソリューションにわたって訪問者を識別する、普遍的、永続的な ID を提供します。このサービスを、Analytics、Audience Manager、Target などのサービスや、その他の Experience Cloud のソリューションまたは機能の ID 生成コードの代わりに使用できます。
-seo-title: Experience Cloud Identity Service
-title: Experience CloudIDサービス
-uuid: b68194b5-e549-4f6f-bfaf-7744926aeaac
+title: Experience Cloud Identity Service
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 92%
+source-wordcount: '253'
+ht-degree: 91%
 
 ---
 
