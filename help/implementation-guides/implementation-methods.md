@@ -1,15 +1,11 @@
 ---
 description: Experience Cloud ID サービスの標準実装方法と非標準実装方法を比較してください。
 keywords: ID サービス
-seo-description: Experience Cloud ID サービスの標準実装方法と非標準実装方法を比較してください。
-seo-title: 実装方法
 title: 実装方法
-uuid: d41250e2-09f4-4a8b-8ade-54d43e9281c9
 exl-id: 0fe40a3c-bdcd-4290-bcd7-25344ff108d6
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '151'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '138'
 ht-degree: 100%
 
 ---
