@@ -1,20 +1,16 @@
 ---
 description: Experience Cloud Identity Service が ID 同期 iFrame を読み込む方法を制御するブール型フラグです（オプション）。
 keywords: ID サービス
-seo-description: Experience Cloud Identity Service が ID 同期 iFrame を読み込む方法を制御するブール型フラグです（オプション）。
-seo-title: idSyncAttachIframeOnWindowLoad
 title: idSyncAttachIframeOnWindowLoad
-uuid: aa2c2fa4-2cab-4e08-8d35-729a6c3e459a
 exl-id: 44c45378-f007-4d87-913a-d6bb9961948c
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '95'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '77'
 ht-degree: 100%
 
 ---
 
-# idSyncAttachIframeOnWindowLoad {#idsyncattachiframeonwindowload}
+# idSyncAttachIframeOnWindowLoad{#idsyncattachiframeonwindowload}
 
 Experience Cloud Identity Service が ID 同期 iFrame を読み込む方法を制御するブール型フラグです（オプション）。
 
