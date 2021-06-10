@@ -3,9 +3,9 @@ description: これらの設定を使用すると、iFrame と親ページに実
 keywords: ID サービス
 title: whitelistParentDomain および whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '860'
 ht-degree: 100%
 
 ---
@@ -72,7 +72,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 >[!TIP]
 >
->iFrame で[ビデオハートビート](https://docs.adobe.com/content/help/ja-JP/media-analytics/using/media-overview.html)を使用してビデオを提供している場合も、これらの設定を実装することが推奨されます。ビデオハートビートを正しく動作させるには ID サービスの ID（MID）が必要です。
+>iFrame で[ビデオハートビート](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html)を使用してビデオを提供している場合も、これらの設定を実装することが推奨されます。ビデオハートビートを正しく動作させるには ID サービスの ID（MID）が必要です。
 
 **使用例 1：ブラウザーがサードパーティ Cookie をブロックし、ID サービスが iFrame および親ページに実装されている**
 
