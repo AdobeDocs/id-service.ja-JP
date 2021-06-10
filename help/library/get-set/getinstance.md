@@ -1,20 +1,16 @@
 ---
 description: getInstance は、指定した Experience Cloud 組織 ID に対応する訪問者 ID オブジェクトを返します。このメソッドは、s.visitor を使用して AppMeasurement に提供される訪問者 ID オブジェクトを初期化するために必要です。
 keywords: ID サービス
-seo-description: getInstance は、指定した Experience Cloud 組織 ID に対応する訪問者 ID オブジェクトを返します。このメソッドは、s.visitor を使用して AppMeasurement に提供される訪問者 ID オブジェクトを初期化するために必要です。
-seo-title: getInstance
 title: getInstance
-uuid: 259b88a6-e3d0-4aab-b935-566099bdab98
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '256'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
 
-# getInstance {#getinstance}
+# getInstance{#getinstance}
 
 getInstance は、指定した Experience Cloud 組織 ID に対応する訪問者 ID オブジェクトを返します。このメソッドは、s.visitor を使用して AppMeasurement に提供される訪問者 ID オブジェクトを初期化するために必要です。
 
