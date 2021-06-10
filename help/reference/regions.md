@@ -1,15 +1,11 @@
 ---
 description: AMCV Cookie には、サイト訪問者の Experience Cloud ID（MID）および地域 ID が含まれます。これらの ID は、キーと値のペアとして格納されます。mid user ID は、訪問者の Experience Cloud ID を保持します。aamlh region ID は、サイト訪問者の地域 ID を保持します。AMCV Cookie を解析することで、この情報を復元できます。
 keywords: ID サービス
-seo-description: AMCV Cookie には、サイト訪問者の Experience Cloud ID（MID）および地域 ID が含まれます。これらの ID は、キーと値のペアとして格納されます。mid user ID は、訪問者の Experience Cloud ID を保持します。aamlh region ID は、サイト訪問者の地域 ID を保持します。AMCV Cookie を解析することで、この情報を復元できます。
-seo-title: AMCV Cookie または ID サービスからの地域およびユーザー ID の取得
 title: AMCV Cookie または ID サービスからの地域およびユーザー ID の取得
-uuid: bdd9d001-f29f-4ff0-800b-8182243da218
 exl-id: 986e761e-4bc7-4511-86b7-7d13a7761a2b
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '297'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '228'
 ht-degree: 100%
 
 ---
