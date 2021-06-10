@@ -1,15 +1,11 @@
 ---
 description: Experience Cloud ID フィールドを Data Workbench に統合するための手順を示しています。このプロセスにより、永続的な Experience Cloud ID をデータフィードで使用できます。その結果、Adobe Experience Cloud の他の製品とより緊密に統合して、高度な訪問者トラッキングを実行できるようになります。
 keywords: ID サービス
-seo-description: Experience Cloud ID フィールドを Data Workbench に統合するための手順を示しています。このプロセスにより、永続的な Experience Cloud ID をデータフィードで使用できます。その結果、Adobe Experience Cloud の他の製品とより緊密に統合して、高度な訪問者トラッキングを実行できるようになります。
-seo-title: Data Workbench と Experience Cloud Identity Service
 title: Data Workbench と Experience Cloud Identity Service
-uuid: 9448abc8-04fb-47d2-be08-1dfbddb0764e
 exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '262'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '210'
 ht-degree: 100%
 
 ---
