@@ -1,15 +1,11 @@
 ---
 description: 他の Experience Cloud ソリューションでの ID サービス利用の特徴、機能、問題に関するよくある質問です。
 keywords: ID サービス
-seo-description: 他の Experience Cloud ソリューションでの ID サービス利用の特徴、機能、問題に関するよくある質問です。
-seo-title: 他の Experience Cloud ソリューションに関する FAQ
 title: 他の Experience Cloud ソリューションに関する FAQ
-uuid: 7d848663-6cbb-4d80-ab06-7b6d2dc20e2b
 exl-id: d1164951-01c9-4375-981a-f87d8a280e4b
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '211'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '186'
 ht-degree: 100%
 
 ---
