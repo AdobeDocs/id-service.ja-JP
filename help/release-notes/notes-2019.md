@@ -1,15 +1,11 @@
 ---
-description: Experience Cloud ID サービスの機能リリース、更新、変更点です。
+description: Experience Cloud Identity Service の機能リリース、更新、変更点です。
 keywords: ID サービス
-seo-description: Experience Cloud Identity Service の機能リリース、更新、変更点です。
-seo-title: 2019 年リリースノート
 title: 2019 年リリースノート
-uuid: a5a59410-7f85-48f9-a30a-fef1c2e2b558
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '424'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '415'
 ht-degree: 100%
 
 ---
@@ -63,7 +59,7 @@ ECID オプトインオブジェクトで使用できる、IAB TCF 用の Audien
 
 ## バージョン 4.0 {#section-51a4be943bbe41558f196ef2654513e2}
 
-**オプトインサービス**。オプトインは、Experience Cloud ID（ECID）の拡張であり、使用すると、Experience Cloud ライブラリで Web ページに訪問者に対する Cookie を作成可能にするかどうか（およびどのライブラリで作成可能にするか）を指定できます。[Experience Platform Launch](https://docs.adobe.com/content/help/ja-JP/launch/using/overview.html) を使用すれば、Analytics、Target、Audience Manager などの選ばれたすべての Experience Cloud ソリューションを導入済みの同意管理システムにオプトインできるようになり、Experience Cloud ソリューションの訪問者オプトイン同意の収集を簡素化できます。
+**オプトインサービス**。オプトインは、Experience Cloud ID（ECID）の拡張であり、使用すると、Experience Cloud ライブラリで Web ページに訪問者に対する Cookie を作成可能にするかどうか（およびどのライブラリで作成可能にするか）を指定できます。[Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=ja) を使用すれば、Analytics、Target、Audience Manager などの選ばれたすべての Experience Cloud ソリューションを導入済みの同意管理システムにオプトインできるようになり、Experience Cloud ソリューションの訪問者オプトイン同意の収集を簡素化できます。
 
 ## バージョン 3.4 {#section-046ce29b43af47cc849d4091098f5927}
 
