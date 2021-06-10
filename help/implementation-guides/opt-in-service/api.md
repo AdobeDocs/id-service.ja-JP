@@ -1,14 +1,10 @@
 ---
 description: オプトインライブラリおよび設定用 API のリファレンスです。
-seo-description: オプトインライブラリおよび設定用 API のリファレンスです。
-seo-title: オプトインリファレンス
 title: オプトインリファレンス
-uuid: d5023a34-2f3e-464d-b21f-579b2f416ce6
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '897'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '886'
 ht-degree: 100%
 
 ---
