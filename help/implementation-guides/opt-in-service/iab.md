@@ -1,14 +1,10 @@
 ---
 description: IAB Transparency and Consent Framework（TCF）用のオプトインの Audience Manager プラグインを使用して、同社の同意管理プラットフォーム（CMP）に接続します。
-seo-description: IAB Transparency and Consent Framework（TCF）用の Audience Manager プラグインを使用して、同社の同意管理プラットフォーム（CMP）に接続します。
-seo-title: IAB フレームワークを使用したオプトインサービスの使用
 title: IAB フレームワークを使用したオプトインサービスの使用
-uuid: 8df39d9c-c016-490e-b4db-d02e4044b480
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '493'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '470'
 ht-degree: 100%
 
 ---
