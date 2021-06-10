@@ -3,9 +3,9 @@ description: Experience Cloud Identity Service の機能リリース、更新、
 keywords: ID サービス
 title: 2020 年リリースノート
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 100%
 
 ---
@@ -24,4 +24,4 @@ Experience Cloud ID サービス（ECID）の機能リリース、更新、変�
 * バージョン 4.5 以降では、ECID は `setCustomerIDs` メソッドに送信された空の ID を拒否します。
 * オプトインが誤って `doesOptInApply=false` および `isIabContext=true` として設定されている際の問題を修正しました。
 
-すべての製品の月別リリースノートについては、[Experience Cloud リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)を参照してください。
+すべての製品の月別リリースノートについては、[Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)を参照してください。
