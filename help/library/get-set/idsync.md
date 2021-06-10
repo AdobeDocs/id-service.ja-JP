@@ -3,10 +3,10 @@ description: ID サービスの idSyncByURL 関数と idSyncByDataSource 関数�
 keywords: ID サービス
 title: URL またはデータソースによる ID 同期
 exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 100%
+source-wordcount: '239'
+ht-degree: 96%
 
 ---
 
@@ -129,5 +129,5 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 
 >[!MORELIKETHIS]
 >
->* [DIL idSync](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
+>* [DIL idSync](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync)
 
