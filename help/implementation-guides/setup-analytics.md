@@ -3,10 +3,10 @@ description: これらの手順は、Experience Cloud Identity Service を使用
 keywords: ID サービス
 title: Experience Cloud Identity Service の Analytics への実装
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 100%
+source-wordcount: '1025'
+ht-degree: 98%
 
 ---
 
@@ -91,7 +91,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 
 ## 手順 3：Visitor.getInstance への Experience Cloud 組織 ID の追加 {#section-7b8a6e76dc124d0e9ab1ce96ab2ffb0e}
 
-`Visitor.getInstance` 関数の `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` を [!DNL Experience Cloud] 組織 ID に置き換えます。組織 ID がわからない場合、[!DNL Experience Cloud] 管理ページで確認できます。[管理 - コアサービス](https://docs.adobe.com/content/help/ja-JP/core-services/interface/manage-users-and-products/admin-getting-started.html)も参照してください。編集後の関数は、以下のサンプルのようになります。
+`Visitor.getInstance` 関数の `INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE` を [!DNL Experience Cloud] 組織 ID に置き換えます。組織 ID がわからない場合、[!DNL Experience Cloud] 管理ページで確認できます。[管理 - コアサービス](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=ja)も参照してください。編集後の関数は、以下のサンプルのようになります。
 
 `var visitor = Visitor.getInstance("1234567ABC@AdobeOrg", { ...`
 
@@ -178,7 +178,7 @@ ID サービスを使用するページと使用しないページが混在し�
 
 データ収集プロセスで `post_visid_high` 列と `post_visid_low` 列を使用できるようになった後で、猶予期間を停止します。
 
-[クリックストリームデータ列リファレンス](https://docs.adobe.com/content/help/ja-JP/analytics/export/analytics-data-feed/data-feed-overview.html)を参照してください。
+[クリックストリームデータ列リファレンス](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html)を参照してください。
 
 **クリックストリームデータ収集**
 
@@ -191,7 +191,7 @@ ID サービスを使用するページと使用しないページが混在し�
 ID サービスの実装状況をテストするには、以下の項目を確認します。
 
 * [AMCV cookie](../introduction/cookies.md)（ページがホストされているドメイン内）
-* [!DNL Analytics] イメージリクエストの MID 値（[Adobe Debugger ツール](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/validate/debugger.html)を使用）
+* [!DNL Analytics] イメージリクエストの MID 値（[Adobe Debugger ツール](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html)を使用）
 
 詳しくは、[Experience Cloud Identity Service のテストと検証](../implementation-guides/test-verify.md)を参照してください。
 
