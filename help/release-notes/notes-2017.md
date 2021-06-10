@@ -3,10 +3,10 @@ description: 2017 年の Experience Cloud Identity Service の機能リリース
 keywords: ID サービス
 title: 2017 年リリースノート
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 100%
+source-wordcount: '744'
+ht-degree: 99%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 2017 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 
-これらの変更点は、[Experience Cloud リリースノート](https://docs.adobe.com/content/help/ja-JP/release-notes/experience-cloud/current.html)にも記載されています。
+これらの変更点は、[Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)にも記載されています。
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ ID サービスが原因で、AMCV Cookie に格納された ID を使用する�
 
 **新しいドキュメント**
 
-[様々な Experience Cloud ソリューションおよびサービスによる DNS プリフェッチの使用](https://docs.adobe.com/content/help/ja-JP/core-services/interface/more-resources/dns-prefetch.html)
+[様々な Experience Cloud ソリューションおよびサービスによる DNS プリフェッチの使用](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html)
 
 ## バージョン 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
