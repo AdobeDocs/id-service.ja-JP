@@ -1,15 +1,11 @@
 ---
 description: 他の Experience Cloud Identity Service 機能に関する情報です。
 keywords: ID サービス
-seo-description: 他の Experience Cloud Identity Service 機能に関する情報です。
-seo-title: リファレンス
 title: リファレンス
-uuid: 9e8f50db-1fdf-4fbc-89e5-4431bb6402d5
 exl-id: 9a14300c-206c-4960-b594-517809f7e979
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '104'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '93'
 ht-degree: 100%
 
 ---
