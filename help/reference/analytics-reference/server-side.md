@@ -1,15 +1,11 @@
 ---
 description: 一部の実装では、追加の Analytics イベント（購入など）をサーバーから送信できるようにするために、訪問者 ID を JavaScript からサーバーに渡します。
 keywords: ID サービス
-seo-description: 一部の実装では、追加の Analytics イベント（購入など）をサーバーから送信できるようにするために、訪問者 ID を JavaScript からサーバーに渡します。
-seo-title: JavaScript を利用したサーバー側実装
 title: JavaScript を利用したサーバー側実装
-uuid: 256ea0e7-1eb4-4c92-9a7e-f61cb1ed13c7
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '213'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '181'
 ht-degree: 100%
 
 ---
