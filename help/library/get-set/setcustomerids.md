@@ -1,20 +1,16 @@
 ---
 description: setCustomerIDs は、顧客 ID とその認証状態を定義する 1 つ以上のキーと値のペアを設定します。
 keywords: ID サービス
-seo-description: setCustomerIDs は、顧客 ID とその認証状態を定義する 1 つ以上のキーと値のペアを設定します。
-seo-title: setCustomerIDs
 title: setCustomerIDs
-uuid: 4f960f98-cec2-4db6-84ea-0259e2128ea2
 exl-id: 8fc549d3-2a6f-4214-bb0d-3e0bc1501ce2
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '73'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '58'
 ht-degree: 100%
 
 ---
 
-# setCustomerIDs {#setcustomerids}
+# setCustomerIDs{#setcustomerids}
 
 setCustomerIDs は、顧客 ID とその認証状態を定義する 1 つ以上のキーと値のペアを設定します。
 
