@@ -3,10 +3,10 @@ description: 訪問者 ID サービスをデプロイすると、以下の 5 つ
 keywords: ID サービス
 title: Analytics ID の操作の順序
 exl-id: 8ee340fe-ef3b-40e6-9441-7ee0c9e20357
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 100%
+source-wordcount: '300'
+ht-degree: 90%
 
 ---
 
@@ -27,12 +27,12 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b><sup>1</sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/ja-JP/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external">vid（s.visitorID）</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html" format="http" scope="external">vid（s.visitorID）</a> </p> </td> 
    <td colname="col3"> <p><span class="codeph">s.visitorID</span> が設定されている </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>2<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/ja-JP/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external">aid（s_vi Cookie）</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html" format="http" scope="external">aid（s_vi Cookie）</a> </p> </td> 
    <td colname="col3"> <p><span class="keyword">Experience Cloud</span> ID サービスをデプロイする前に、訪問者に既存の s_vi Cookie がある場合、または<a href="../../reference/analytics-reference/grace-period.md" format="dita" scope="local">猶予期間</a>を設定している場合。 </p> </td> 
   </tr> 
   <tr> 
@@ -42,12 +42,12 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>4<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/ja-JP/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external">fid（H.25.3 以降の代替の Cookie、または JavaScript 版 AppMeasurement）</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/analytics-ids.html" format="http" scope="external">fid（H.25.3 以降の代替の Cookie、または JavaScript 版 AppMeasurement）</a> </p> </td> 
    <td colname="col3"> <p>ブラウザーがサードパーティ Cookie を受け入れず、Analytics トラッキングサーバーがサードパーティトラッキングサーバーとして設定されている場合 </p> <p> <p>注意：<span class="codeph">fid</span> は、従来の識別子で、サイトに ID サービスを実装している場合、使用されません。この場合、ファーストパーティである<a href="../../introduction/cookies.md" format="dita" scope="local"> AMCV cookie</a> がもう使用していないので、<span class="codeph"> fid</span> は必要ありません。fid は、レガシーコードをサポートするために、および歴史的な理由により、保持されています。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>5<sup></sup></b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://docs.adobe.com/content/help/ja-JP/analytics/components/metrics/unique-visitors.html" format="http" scope="external"> IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス</a> </p> </td> 
+   <td colname="col2"> <p> <a href="https://experienceleague.adobe.com/docs/analytics/technotes/visitor-identification.html" format="http" scope="external"> IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス</a> </p> </td> 
    <td colname="col3"> <p>訪問者のブラウザーが Cookie を受け入れない場合。 </p> </td> 
   </tr> 
  </tbody> 
