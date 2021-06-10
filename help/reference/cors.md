@@ -1,15 +1,11 @@
 ---
 description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Cloud Identity Service は、これらのクライアント側のクロスオリジンリソースリクエストを可能にする CORS 標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。
 keywords: ID サービス
-seo-description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。Experience Cloud Identity Service は、これらのクライアント側のクロスオリジンリソースリクエストを可能にする CORS 標準規格をサポートしています。古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。
-seo-title: Experience Cloud Identity Service での CORS のサポート
 title: Experience Cloud Identity Service での CORS のサポート
-uuid: e656b573-72a8-4312-a7d5-5cc3818f0a9e
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '674'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '616'
 ht-degree: 100%
 
 ---
