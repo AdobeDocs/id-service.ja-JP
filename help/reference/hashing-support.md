@@ -3,9 +3,9 @@ description: Experience Cloud ID Service（ECID）は、顧客 ID または電�
 keywords: ID サービス
 title: setCustomerIDs の SHA256 ハッシュサポート
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 97%
 
 ---
@@ -34,7 +34,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID、認証状態およびハッシュタイプ（SHA-256）を各訪問者に関連付けることができます。ハッシュタイプを指定していない場合、ハッシュ化しないと見なされます。
 
-`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://docs.adobe.com/content/help/ja-JP/core-services/interface/customer-attributes/attributes.html)として Experience Cloud にアップロードして、様々なソリューションからこのデータにアクセスすることができます。
+`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=ja)として Experience Cloud にアップロードして、様々なソリューションからこのデータにアクセスすることができます。
 
 顧客 ID、認証状態およびハッシュタイプは、後で使用するために Cookie に格納されることはありません。**&#x200B;代わりに、顧客 ID、認証状態およびハッシュタイプは、[`getCustomerIDs`](/help/library/get-set/getcustomerids.md) を使用して取得するために、以下に示すように、インスタンス変数に格納されます。
 
