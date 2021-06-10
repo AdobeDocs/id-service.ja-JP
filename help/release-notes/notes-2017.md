@@ -1,15 +1,11 @@
 ---
 description: 2017 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 keywords: ID サービス
-seo-description: 2017 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
-seo-title: 2017 年リリースノート
 title: 2017 年リリースノート
-uuid: 79452df0-49db-42b8-96fe-01aa7629fbb5
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '762'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '748'
 ht-degree: 100%
 
 ---
@@ -77,7 +73,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **改訂されたドキュメント**
 
-[FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
+Updated and revised the[FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
 
 ## バージョン 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
