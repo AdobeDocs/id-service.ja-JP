@@ -3,10 +3,10 @@ description: 通常の Experience Cloud 訪問者 ID に加えて、追加の顧
 keywords: ID サービス
 title: 顧客 ID と認証状態
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '628'
+ht-degree: 98%
 
 ---
 
@@ -16,11 +16,11 @@ ht-degree: 100%
 
 ## 認証状態 {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://docs.adobe.com/content/help/ja-JP/core-services/interface/customer-attributes/attributes.html)として [!DNL Experience Cloud] にアップロードして、異なるソリューションからこのデータにアクセスすることができます。
+`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=ja)として [!DNL Experience Cloud] にアップロードして、異なるソリューションからこのデータにアクセスすることができます。
 
 >[!IMPORTANT]
 >
->顧客属性とコアサービス機能には、`setCustomerIDs`（顧客 ID の同期）が必要です。顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。[!DNL Target] には、顧客属性を機能させるために `Visitor.AuthState.AUTHENTICATED` が必要です。例については、[コアサービス - ソリューションを有効にする方法](https://docs.adobe.com/content/help/ja-JP/core-services/interface/about-core-services/core-services.html)を参照してください。
+>顧客属性とコアサービス機能には、`setCustomerIDs`（顧客 ID の同期）が必要です。顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。[!DNL Target] には、顧客属性を機能させるために `Visitor.AuthState.AUTHENTICATED` が必要です。例については、[コアサービス - ソリューションを有効にする方法](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=ja)を参照してください。
 
 Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オプションの `AuthState` オブジェクトが含まれます。`AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。認証状態は整数で返されます。
 
@@ -212,8 +212,8 @@ Object customerIDs = visitor.getCustomerIDs();
 
 [!DNL Experience Cloud] ID サービスは、アドビの Android および iOS SDK コードで顧客 ID と認証状態をサポートします。次のコードライブラリを参照してください。
 
-* [Android SDK のメソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/android/overview.html)
-* [iOS SDK のメソッド](https://docs.adobe.com/content/help/ja-JP/mobile-services/ios/overview.html)
+* [Android SDK のメソッド](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
+* [iOS SDK のメソッド](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
 
 ## Analytics および Audience Manager ユーザー向けの注意点 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
