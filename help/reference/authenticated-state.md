@@ -1,15 +1,11 @@
 ---
 description: 通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID と認証状態を各訪問者に関連付けることができます。
 keywords: ID サービス
-seo-description: 通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID と認証状態を各訪問者に関連付けることができます。
-seo-title: 顧客 ID と認証状態
 title: 顧客 ID と認証状態
-uuid: 643df363-224a-463e-a332-be59926b47e7
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '661'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '636'
 ht-degree: 100%
 
 ---
@@ -68,7 +64,7 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN  </span> </p> </td> 
    <td colname="col2"> <p>この状態は、次のようなシナリオで使用できます。 </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
       <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">電子メールの読み取り（このアクションは読者が意図した受信者であることを意味しますが、電子メールが転送された可能性もあります）。 </li> 
@@ -76,11 +72,11 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED  </span> </p> </td> 
    <td colname="col2"> <p>ユーザーは現在、Web サイトまたはアプリのアクティブセッションで認証されています。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT  </span> </p> </td> 
    <td colname="col2"> <p>ユーザーは認証されましたが、アクティブにログアウトしました。ユーザーが認証済み状態から意図的に切断した。ユーザーが認証済みとして扱われなくなります。 </p> </td> 
   </tr> 
  </tbody> 
