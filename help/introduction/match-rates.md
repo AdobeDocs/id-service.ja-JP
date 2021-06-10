@@ -1,14 +1,11 @@
 ---
 description: Adobe Media Manager および ID サービスを含む、ID 同期プロセスと Experience Cloud Identity Service の一致率の概要です。
 keywords: ID サービス
-seo-description: Adobe Media Manager および ID サービスを含む、ID 同期プロセスと Experience Cloud Identity Service の一致率の概要です。
-seo-title: ID 同期と一致率について
 title: ID 同期と一致率について
-uuid: 31bd655f-2b9e-4f8d-9a1f-e81a6110eda8
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-source-git-commit: b907ffcbfbb8851ce6279b614dc58c22f2ce9907
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '805'
 ht-degree: 95%
 
 ---
