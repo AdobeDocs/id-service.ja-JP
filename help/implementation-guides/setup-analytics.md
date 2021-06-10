@@ -1,15 +1,11 @@
 ---
 description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Analytics のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 keywords: ID サービス
-seo-description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Analytics のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
-seo-title: Experience Cloud Identity Service の Analytics への実装
 title: Experience Cloud Identity Service の Analytics への実装
-uuid: 7fbd6fa0-1713-4232-8680-500ed62709d5
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1089'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '1031'
 ht-degree: 100%
 
 ---
