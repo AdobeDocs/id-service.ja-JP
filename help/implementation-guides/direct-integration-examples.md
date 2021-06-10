@@ -1,15 +1,11 @@
 ---
 description: これらの例は、直接統合と Experience Cloud ID（MID）に関連する 2 つの一般的なユースケースを扱っています。 MID はサイト訪問者の一意の永続的な ID です。
 keywords: ID サービス
-seo-description: これらの例は、直接統合と Experience Cloud ID（MID）に関連する 2 つの一般的なユースケースを扱っています。 MID はサイト訪問者の一意の永続的な ID です。
-seo-title: 直接統合の使用例
 title: 直接統合の使用例
-uuid: 6de1eb8b-4783-4545-8a64-ab6b9ef93432
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '475'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '443'
 ht-degree: 100%
 
 ---
@@ -22,6 +18,7 @@ ht-degree: 100%
 >
 >* 使用例を参照する前に、[コード構文と変数](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)をよくお読みください。
 >* MID について詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
+
 >
 
 
