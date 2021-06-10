@@ -1,20 +1,16 @@
 ---
 description: あるドメインから別のドメインに訪問者が移動すると、訪問者の Experience Cloud ID と Analytics ID がこのプロパティで上書きされます。 ID を上書きするには、各ドメインで ID サービスを所有し実装してあることが必要です。 このコードでは、制御の対象でないドメインで ID を上書きできません。
 keywords: ID サービス
-seo-description: あるドメインから別のドメインに訪問者が移動すると、訪問者の Experience Cloud ID と Analytics ID がこのプロパティで上書きされます。 ID を上書きするには、各ドメインで ID サービスを所有し実装してあることが必要です。 このコードでは、制御の対象でないドメインで ID を上書きできません。
-seo-title: overwriteCrossDomainMCIDAndAID
 title: overwriteCrossDomainMCIDAndAID
-uuid: 8e48127a-ac62-4ea0-9756-2a27b20ecbcf
 exl-id: 726261b1-c8d0-4b12-b0cb-52d7e21e7fac
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '448'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '397'
 ht-degree: 100%
 
 ---
 
-# overwriteCrossDomainMCIDAndAID {#overwritecrossdomainmcidandaid}
+# overwriteCrossDomainMCIDAndAID{#overwritecrossdomainmcidandaid}
 
 あるドメインから別のドメインに訪問者が移動すると、訪問者の Experience Cloud ID と Analytics ID がこのプロパティで上書きされます。 ID を上書きするには、各ドメインで ID サービスを所有し実装してあることが必要です。 このコードでは、制御の対象でないドメインで ID を上書きできません。
 
