@@ -1,20 +1,16 @@
 ---
 description: この機能は、単一ページのサイト／画面またはアプリでの ID の使用に関連する問題を解決するために、主に A4T のお客様向けに設計されています。
 keywords: ID サービス
-seo-description: この機能は、単一ページのサイト／画面またはアプリでの ID の使用に関連する問題を解決するために、主に A4T のお客様向けに設計されています。
-seo-title: resetState
 title: resetState
-uuid: ed7be76d-a7ee-4e51-b26c-456ff85fd096
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '400'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
 
-# resetState {#resetstate}
+# resetState{#resetstate}
 
 この機能は、単一ページのサイト／画面またはアプリでの ID の使用に関連する問題を解決するために、主に A4T のお客様向けに設計されています。
 
