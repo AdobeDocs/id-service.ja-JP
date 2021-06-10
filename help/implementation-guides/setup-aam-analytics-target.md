@@ -3,10 +3,10 @@ description: これらの手順は、Experience Cloud Identity Service を使用
 keywords: ID サービス
 title: Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '1508'
-ht-degree: 100%
+source-wordcount: '1498'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## 手順 1：サーバー側転送の計画 {#section-880797cc992d4755b29cada7b831f1fc}
 
-ここで説明する手順に加えて、[!DNL Analytics] および [!DNL Audience Manager] を使用するお客様は、サーバー側転送に移行する必要があります。サーバー側転送を使用すると、DIL（Audience Manager のデータ収集コード）を削除して、[Audience Management モジュール](https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html)に置き換えることができます。詳しくは、[サーバー側転送のドキュメント](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/server-side-forwarding/ssf.html)を参照してください。
+ここで説明する手順に加えて、[!DNL Analytics] および [!DNL Audience Manager] を使用するお客様は、サーバー側転送に移行する必要があります。サーバー側転送を使用すると、DIL（Audience Manager のデータ収集コード）を削除して、[Audience Management モジュール](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html)に置き換えることができます。詳しくは、[サーバー側転送のドキュメント](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/server-side-forwarding/ssf.html)を参照してください。
 
 サーバー側転送への移行には、計画と調整が必要です。この手順には、サイトコードに対する外部の変更と、アカウントをプロビジョニングするためにアドビが取る必要のある内部手順が関係します。実際、これらの移行手順の多くは、並行しておこない、同時にリリースする必要があります。実装パスは、このイベントの順番に従う必要があります。
 
@@ -140,7 +140,7 @@ Analytics は、データ収集にトラッキングサーバーを使用しま�
 
 >[!IMPORTANT]
 >
->この時点で、[!DNL Audience Manager] DIL コードを削除して、Audience Management モジュールに置き換える必要があります。手順については、[サーバー側転送の実装](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/server-side-forwarding/ssf.html)を参照してください。
+>この時点で、[!DNL Audience Manager] DIL コードを削除して、Audience Management モジュールに置き換える必要があります。手順については、[サーバー側転送の実装](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html)を参照してください。
 
 ***（オプション、推奨）* カスタム prop の作成。**
 
@@ -182,7 +182,7 @@ ID サービスを使用するページと使用しないページが混在し�
 
 データ収集プロセスで `post_visid_high` 列と `post_visid_low` 列を使用できるようになった後で、猶予期間を停止します。
 
-[クリックストリームデータ列リファレンス](https://docs.adobe.com/content/help/ja-JP/analytics/export/analytics-data-feed/data-feed-overview.html)も参照してください。
+[クリックストリームデータ列リファレンス](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html)も参照してください。
 
 ## 手順 9：テストと検証 {#section-f857542bfc70496dbb9f318d6b3ae110}
 
@@ -190,7 +190,7 @@ ID サービスを使用するページと使用しないページが混在し�
 
 >[!TIP]
 >
->[Adobe Debugger](https://docs.adobe.com/content/help/ja-JP/analytics/implementation/validate/debugger.html) または [Charles HTTP プロキシ](https://www.charlesproxy.com/)を使用して、これらのソリューション特有の ID をチェックできます。ただし、お客様に最適なツールやデバッガーを自由に使用することができます。
+>[Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) または [Charles HTTP プロキシ](https://www.charlesproxy.com/)を使用して、これらのソリューション特有の ID をチェックできます。ただし、お客様に最適なツールやデバッガーを自由に使用することができます。
 
 **すべてのソリューション**
 
@@ -214,7 +214,7 @@ AID が表示される場合、[!DNL Target] mboxMCAVID に対するその値を
 
 **Audience Manager**
 
-サーバー側転送を検証するには、[サーバー側転送の実装の確認方法](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html)を参照してください。
+サーバー側転送を検証するには、[サーバー側転送の実装の確認方法](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html)を参照してください。
 
 **Target**
 
