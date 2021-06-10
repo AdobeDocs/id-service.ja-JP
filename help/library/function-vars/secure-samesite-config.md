@@ -1,14 +1,11 @@
 ---
 description: Google AMP ページで AMCV Cookie をサポートするために使用できる、ECID 内の設定。
 keywords: ID サービス
-seo-description: Google AMP ページで AMCV Cookie をサポートするために使用できる、ECID 内の設定。
-seo-title: セキュア設定と SameSite 設定
 title: セキュア設定と SameSite 設定
 exl-id: c3bc44fc-5adc-4eae-8169-9d731d148458
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '174'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '154'
 ht-degree: 100%
 
 ---
