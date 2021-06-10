@@ -1,15 +1,11 @@
 ---
 description: 2016 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 keywords: ID サービス
-seo-description: 2016 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
-seo-title: 2016 年リリースノート
 title: 2016 年リリースノート
-uuid: 7a5a314a-3ff8-4561-9c64-6c10d2223887
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '1164'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '1150'
 ht-degree: 100%
 
 ---
