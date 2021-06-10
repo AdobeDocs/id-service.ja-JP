@@ -3,10 +3,10 @@ description: これは、デフォルトで Analytics の識別子、ID サー�
 keywords: ID サービス
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 100%
+source-wordcount: '407'
+ht-degree: 97%
 
 ---
 
@@ -99,7 +99,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>データ収集地域 ID です。これは、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。 </p> <p><a href="https://docs.adobe.com/content/help/ja-JP/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>および<a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>データ収集地域 ID です。これは、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。 </p> <p><a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>および<a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint</a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
