@@ -1,15 +1,11 @@
 ---
 description: これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
 keywords: ID サービス
-seo-description: これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
-seo-title: Experience Cloud Identity Service との直接統合
 title: Experience Cloud Identity Service との直接統合
-uuid: de502f7e-cffd-4130-b3ca-7d6b9a9caae9
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '714'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '662'
 ht-degree: 100%
 
 ---
