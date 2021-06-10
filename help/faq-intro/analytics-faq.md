@@ -1,15 +1,11 @@
 ---
 description: Analytics での Experience Cloud Identity Service 利用の特徴、機能、問題に関するよくある質問です。
 keywords: Experience Cloud Identity Service
-seo-description: Analytics での Identity Service 利用の特徴、機能、問題に関するよくある質問です。
-seo-title: Analytics と Identity Service に関する FAQ
 title: Analytics と Identity Service に関する FAQ
-uuid: 35ed79a9-eccc-4b54-8451-606f091c73b7
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '993'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '972'
 ht-degree: 100%
 
 ---
@@ -54,7 +50,7 @@ Identity Service が正しく情報を返しているにもかかわらず `MID`
 
 **猶予期間とはどのようなもので、どのように設定すればよいですか。**
 
-[ID サービスの猶予期間](../reference/analytics-reference/grace-period.md)を参照し、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問合せください。
+[ID サービスの猶予期間](../reference/analytics-reference/grace-period.md)を参照し、[カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)にお問合せください。
 
 **Identity Service を使用するためにリアルタイムデータ収集（RDC）に移行しなければならない理由を教えてください。**
 
@@ -93,5 +89,5 @@ Identity Service の使用時に不整合が生じる一般的な原因を以下
 
 >[!MORELIKETHIS]
 >
->* [カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)
+>* [カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)
 
