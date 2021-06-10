@@ -1,15 +1,11 @@
 ---
 description: 同じレポートスイートにデータを送信する複数の JavaScript ファイルがある場合、またはサイト上で Flash ビデオによる測定などの他のテクノロジーを使用している場合は、猶予期間を設定することをお勧めします。
 keywords: ID サービス
-seo-description: 同じレポートスイートにデータを送信する複数の JavaScript ファイルがある場合、またはサイト上で Flash ビデオによる測定などの他のテクノロジーを使用している場合は、猶予期間を設定することをお勧めします。
-seo-title: ID サービスの猶予期間
 title: ID サービスの猶予期間
-uuid: 10a7db7d-de32-4379-914f-edaf929efa32
 exl-id: 83b4898c-8358-458b-a798-1e3c9633afe9
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '458'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '417'
 ht-degree: 100%
 
 ---
