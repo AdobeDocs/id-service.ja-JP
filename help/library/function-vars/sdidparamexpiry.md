@@ -1,20 +1,16 @@
 ---
 description: この設定では、appendSupplementalDataIDTo ヘルパー関数を使用して、あるページから別のページにデフォルトの補助的なデータ ID（SDID）を渡す場合、その ID の有効間隔を上書きできます。 デフォルトでは、受信側ページの ID サービスコードで、参照元ページから送信された URL から SDID を取得するのに 30 秒かかります。 受信側ページの ID サービスコードが 30 秒以内に SDID を取得できない場合は、新しい SDID をリクエストします。 この機能は、あるページから別のページに SDID を渡す必要があり、このタイムアウト間隔を制御する必要がある A4T ユーザーを主に対象としています。
 keywords: ID サービス
-seo-description: この設定では、appendSupplementalDataIDTo ヘルパー関数を使用して、あるページから別のページにデフォルトの補助的なデータ ID（SDID）を渡す場合、その ID の有効間隔を上書きできます。 デフォルトでは、受信側ページの ID サービスコードで、参照元ページから送信された URL から SDID を取得するのに 30 秒かかります。 受信側ページの ID サービスコードが 30 秒以内に SDID を取得できない場合は、新しい SDID をリクエストします。 この機能は、あるページから別のページに SDID を渡す必要があり、このタイムアウト間隔を制御する必要がある A4T ユーザーを主に対象としています。
-seo-title: sdidParamExpiry
 title: sdidParamExpiry
-uuid: cdaf7e2d-b196-4c70-936d-8a98191cbb85
 exl-id: 5458ffa5-03d1-4c52-907d-c50fe00ce35d
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '357'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '257'
 ht-degree: 100%
 
 ---
 
-# sdidParamExpiry {#sdidparamexpiry}
+# sdidParamExpiry{#sdidparamexpiry}
 
 この設定では、appendSupplementalDataIDTo ヘルパー関数を使用して、あるページから別のページにデフォルトの補助的なデータ ID（SDID）を渡す場合、その ID の有効間隔を上書きできます。 デフォルトでは、受信側ページの ID サービスコードで、参照元ページから送信された URL から SDID を取得するのに 30 秒かかります。 受信側ページの ID サービスコードが 30 秒以内に SDID を取得できない場合は、新しい SDID をリクエストします。 この機能は、あるページから別のページに SDID を渡す必要があり、このタイムアウト間隔を制御する必要がある A4T ユーザーを主に対象としています。
 
