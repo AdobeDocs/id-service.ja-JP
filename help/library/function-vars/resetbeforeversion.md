@@ -1,20 +1,16 @@
 ---
 description: この設定を使用すると、更新対象の ID サービスのバージョンに基づいて、孤立したり古くなったりした Experience Cloud ID（ECID）を消去できます。
 keywords: ID サービス
-seo-description: この設定を使用すると、更新対象の ID サービスのバージョンに基づいて、孤立したり古くなったりした Experience Cloud ID（ECID）を消去できます。
-seo-title: resetBeforeVersion
 title: resetBeforeVersion
-uuid: b00d18b8-6720-42f9-9c83-bd306184cc0c
 exl-id: 9fa40baa-433d-4f16-824b-521948a92a4b
-translation-type: ht
-source-git-commit: 4453ebf701ea2dc06e6093dd77be6eb0f3b2936e
-workflow-type: ht
-source-wordcount: '270'
+source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+workflow-type: tm+mt
+source-wordcount: '249'
 ht-degree: 100%
 
 ---
 
-# resetBeforeVersion {#resetbeforeversion}
+# resetBeforeVersion{#resetbeforeversion}
 
 この設定を使用すると、更新対象の ID サービスのバージョンに基づいて、孤立したり古くなったりした Experience Cloud ID（ECID）を消去できます。
 
