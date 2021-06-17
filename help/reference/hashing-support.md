@@ -6,7 +6,7 @@ exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
 source-wordcount: '606'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ visitor.setCustomerIDs({email: {id: "ecid@adobe.com", authState: 1}}, "SHA-256")
 
 `setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。例えば、これらの ID を[顧客属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=ja)として Experience Cloud にアップロードして、様々なソリューションからこのデータにアクセスすることができます。
 
-顧客 ID、認証状態およびハッシュタイプは、後で使用するために Cookie に格納されることはありません。**&#x200B;代わりに、顧客 ID、認証状態およびハッシュタイプは、[`getCustomerIDs`](/help/library/get-set/getcustomerids.md) を使用して取得するために、以下に示すように、インスタンス変数に格納されます。
+顧客 ID、認証状態およびハッシュタイプは、後で使用するために Cookie に格納されることは&#x200B;*ありません*。代わりに、顧客 ID、認証状態およびハッシュタイプは、[`getCustomerIDs`](/help/library/get-set/getcustomerids.md) を使用して取得するために、以下に示すように、インスタンス変数に格納されます。
 
 ```
 > visitor.getCustomerIDs();
@@ -67,7 +67,7 @@ ts=1563299964843
 
 ## Adobe Experience Platform Launch でのアクションの追加 {#add-action-launch}
 
-Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。platform launchについて詳しくは、[Launch製品ドキュメント](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=en)を参照してください。
+Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。Platform Launch について詳しくは、[Launch 製品ドキュメント](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=ja)を参照してください。
 
 Launch にアクションを追加するには、Adobe Launch の[ルールドキュメント](https://docs.adobe.com/help/ja-JP/launch/using/reference/manage-resources/rules.html)を読み、以下のスクリーンキャプチャを参照してください。
 
