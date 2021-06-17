@@ -6,7 +6,7 @@ exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
 source-wordcount: '932'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ AMCVS Cookie は、ブラウザーのファーストパーティドメインに�
  </tbody> 
 </table>
 
-関連情報については、[Demdex ドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)を参照してください。
+関連情報については、[Demdex ドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja)を参照してください。
 
 ## Experience Cloud ID の生成 {#section-15f69c0bac394b4b9966a23fbc586d17}
 
