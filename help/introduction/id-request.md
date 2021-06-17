@@ -6,7 +6,7 @@ exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
 source-wordcount: '762'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ID のリクエストと応答のプロセスについて、概要を説明し�
 この例では、「食品会社」が管理するピザサイトに新しい訪問者がアクセスします。「食品会社」のこのピザ Web サイトには ID サービスコードが含まれています。ピザサイトが読み込まれるときに、この ID サービスコードは、pizza ドメインの AMCV Cookie があるかをチェックします。
 
 * AMCV Cookie が設定されている場合、そのサイトの訪問者には Experience Cloud ID が割り当てられています。この場合、その ID を使用して訪問者を追跡し、他の Experience Cloud ソリューションとデータを共有することになります。
-* AMCV Cookieが設定されていない場合、IDサービスコードは、`dpm.demdex.net/id`にある地域[データ収集サーバー](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=en)(DCS)を呼び出します（[Demdexドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=en)も参照してください）。 この呼び出しには、「食品会社」の組織 ID が含まれます。この組織 ID は、ID サービスコードの `Visitor.getInstance` 関数に設定されます。
+* AMCV Cookie が設定されていない場合、ID サービスコードは、`dpm.demdex.net/id` にある地域の[データ収集サーバー](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=ja)（DCS）を呼び出します（[Demdex ドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja)も参照してください）。この呼び出しには、「食品会社」の組織 ID が含まれます。この組織 ID は、ID サービスコードの `Visitor.getInstance` 関数に設定されます。
 
 ![](assets/request1.png)
 
