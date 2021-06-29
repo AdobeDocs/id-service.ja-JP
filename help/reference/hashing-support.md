@@ -4,7 +4,7 @@ keywords: ID サービス
 title: setCustomerIDs の SHA256 ハッシュサポート
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '606'
 ht-degree: 100%
 
