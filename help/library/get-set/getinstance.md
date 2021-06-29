@@ -4,9 +4,9 @@ keywords: ID サービス
 title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '226'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-`getInstance` により既存のインスタンスが見つからない場合は、新しいインスタンスが作成されて返されます。この動作は、[!DNL AppMeasurement] の [`s_gi()` 関数](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html)と同様です。
+`getInstance` により既存のインスタンスが見つからない場合は、新しいインスタンスが作成されて返されます。この動作は、[!DNL AppMeasurement] の [`s_gi()` 関数](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=ja)と同様です。
 
 **一般的な使用例**
 
