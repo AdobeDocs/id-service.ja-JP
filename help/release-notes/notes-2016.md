@@ -4,9 +4,9 @@ keywords: ID サービス
 title: 2016 年リリースノート
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1146'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 99%
 
 **修正点および改善点**
 
-* 関数 `idSyncAttachIframeOnWindowLoad` で設定できるオプションのブール値のフラグとして、`Visitor.getInstance` が追加されました。`idSyncAttachIframeOnWindowLoad= true` の場合、ID サービスは、ウィンドウの読み込み時に ID 同期 iFrame を読み込みます。デフォルトでは、ID サービスは、可能な限り迅速に iFrame を読み込みます。このフラグは、廃止される *に*&#x200B;代わるもの`idSyncAttachIframeASAP`です。[Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
+* 関数 `idSyncAttachIframeOnWindowLoad` で設定できるオプションのブール値のフラグとして、`Visitor.getInstance` が追加されました。`idSyncAttachIframeOnWindowLoad= true` の場合、ID サービスは、ウィンドウの読み込み時に ID 同期 iFrame を読み込みます。デフォルトでは、ID サービスは、可能な限り迅速に iFrame を読み込みます。このフラグは、廃止される *に*&#x200B;代わるもの `idSyncAttachIframeASAP` です。[Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
 
 * ドメイン、ネイティブアプリおよびハイブリッドアプリから Web 移行への [!DNL Experience Cloud] ID のトラッキングをサポートする機能が追加されました。[訪問者 ID 追加ヘルパー関数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)を参照してください。
 
@@ -80,7 +80,7 @@ ht-degree: 99%
 
 **既知の問題**
 
-[!DNL Audience Manager] DIL コードと visitorAPI.js コードを同じページに使用しているお客様は、DIL 変数 `secureDataCollection= false` を設定する必要があります。[secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html) を参照してください。
+[!DNL Audience Manager] DIL コードと visitorAPI.js コードを同じページに使用しているお客様は、DIL 変数 `secureDataCollection= false` を設定する必要があります。[secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=ja) を参照してください。
 
 ## バージョン 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
