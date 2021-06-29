@@ -4,7 +4,7 @@ keywords: ID サービス
 title: whitelistParentDomain および whitelistIframeDomains
 exl-id: 0ed1da79-7129-4f5f-b7ad-901348a13866
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
 ht-degree: 100%
 
@@ -72,7 +72,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 
 >[!TIP]
 >
->iFrame で[ビデオハートビート](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html)を使用してビデオを提供している場合も、これらの設定を実装することが推奨されます。ビデオハートビートを正しく動作させるには ID サービスの ID（MID）が必要です。
+>iFrame で[ビデオハートビート](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ja)を使用してビデオを提供している場合も、これらの設定を実装することが推奨されます。ビデオハートビートを正しく動作させるには ID サービスの ID（MID）が必要です。
 
 **使用例 1：ブラウザーがサードパーティ Cookie をブロックし、ID サービスが iFrame および親ページに実装されている**
 
@@ -178,7 +178,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
    <td colname="col1"> <p> <b>例 2</b> </p> </td> 
    <td colname="col2"> <p> 
      <ul id="ul_CCAD7E362E7F4DAB9D5C3E166EEE6BDD"> 
-      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID  </span> </li> 
+      <li id="li_1F0B006BAD044ECBA5604625DE411E84"> <span class="codeph"> getSupplementalDataID </span> </li> 
       <li id="li_C6022223C8314B9C923202207C7472EA"> <span class="codeph"> getMarketingCloudVisitorID </span> </li> 
      </ul> </p> </td> 
   </tr> 
