@@ -4,7 +4,7 @@ keywords: ID サービス
 title: 2019 年リリースノート
 exl-id: 11439e27-9740-4afc-a2b8-5e35d179f34f
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
 ht-degree: 100%
 
