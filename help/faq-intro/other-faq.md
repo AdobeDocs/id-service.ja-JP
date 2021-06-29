@@ -4,7 +4,7 @@ keywords: ID サービス
 title: 他の Experience Cloud ソリューションに関する FAQ
 exl-id: d1164951-01c9-4375-981a-f87d8a280e4b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '186'
 ht-degree: 100%
 
