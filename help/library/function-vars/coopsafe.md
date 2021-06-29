@@ -4,9 +4,9 @@ keywords: ID サービス
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ ID サービスから Adobe Experience Cloud Device Co-op にデータを送信�
 `isCoopSafe` を使用するには、以下の要件を満たす必要があります。
 
 * バージョン 2.4 以降の ID サービスコードを使用する。
-* [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html) に参加する。Co-op への参加を検討している場合は、このドキュメントをよく読み、デバイスグラフの作成にデータがどのように使用されるかに関する懸念に `isCoopSafe` で対処できるかどうかを確認する必要があります。
+* [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=ja) に参加する。Co-op への参加を検討している場合は、このドキュメントをよく読み、デバイスグラフの作成にデータがどのように使用されるかに関する懸念に `isCoopSafe` で対処できるかどうかを確認する必要があります。
 
 * [!DNL Adobe]コンサルタントに依頼して、Device Co-op アカウントにホワイトリストまたはブラックリストのフラグを設定する。これらのフラグをセルフサービスで有効にする方法はありません。
 
@@ -138,5 +138,5 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 
 >[!MORELIKETHIS]
 >
->* [DIL isCoopSafe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html)
+>* [DIL isCoopSafe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html?lang=ja)
 
