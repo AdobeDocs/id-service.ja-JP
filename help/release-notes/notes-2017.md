@@ -4,9 +4,9 @@ keywords: ID サービス
 title: 2017 年リリースノート
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '744'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **改訂されたドキュメント**
 
-Updated and revised the[FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
+  [FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
 
 ## バージョン 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
@@ -191,7 +191,7 @@ ID サービスが原因で、AMCV Cookie に格納された ID を使用する�
 
 **新しいドキュメント**
 
-[様々な Experience Cloud ソリューションおよびサービスによる DNS プリフェッチの使用](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html)
+[様々な Experience Cloud ソリューションおよびサービスによる DNS プリフェッチの使用](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=ja)
 
 ## バージョン 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
