@@ -4,7 +4,7 @@ keywords: ID サービス
 title: cookieDomain
 exl-id: 280416ad-372a-4a59-a938-0f49c0ce300f
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '56'
 ht-degree: 100%
 
