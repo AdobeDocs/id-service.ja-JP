@@ -3,9 +3,9 @@ title: Safari ITP での ECID ライブラリの手法
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '791'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ ITP および ECID ライブラリの使用に関する取り組みについて�
 
 ITP 2.1 は、クライアント側 Cookie の書き込み機能を阻止し、正確な訪問者トラッキング情報をお客様に提供する機能を低下させます。そのため、訪問者の Experience Cloud ID（ECID）をファーストパーティ Cookie に格納するという変更が、アドビの CNAME トラッキングサーバーに導入されています。
 
-この変更は、ファーストパーティのコンテキストで Analytics CNAME を使用している ECID お客様にのみ役立ちます。Analytics のお客様で現在 CNAME を使用していない場合や Analytics のお客様でない場合でも、CNAME レコードが適しています。カスタマーケアまたは担当のアカウント担当者に問い合わせて、[CNAME](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html) の登録プロセスを開始してください。
+この変更は、ファーストパーティのコンテキストで Analytics CNAME を使用している ECID お客様にのみ役立ちます。Analytics のお客様で現在 CNAME を使用していない場合や Analytics のお客様でない場合でも、CNAME レコードが適しています。カスタマーケアまたは担当のアカウント担当者に問い合わせて、[CNAME](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=ja) の登録プロセスを開始してください。
 
 この変更を活用するには、ECID ライブラリ v. 4.3.0 以降にアップグレードしてください。
 
@@ -49,7 +49,7 @@ demdex.net に対して ID リクエストがおこなわれ、ECID が取得さ
 
 この新しい `s_ecid` Cookie は、AMCV Cookie と同じオプトアウトステータスに従います。ecid が `s_ecid` Cookie から読み取られる場合、常に demdex が即座に呼び出されて、その ID の最新のオプトアウトステータスが取得され、AMCV Cookie に格納されます。
 
-さらに、消費者がこの[方法](https://experienceleague.adobe.com/docs/analytics/implementation/js/opt-out.html)を使用して Analytics トラッキングをオプトアウトした場合、この `s_ecid` Cookie は削除されます。
+さらに、消費者がこの[方法](https://experienceleague.adobe.com/docs/analytics/implementation/js/opt-out.html?lang=ja)を使用して Analytics トラッキングをオプトアウトした場合、この `s_ecid` Cookie は削除されます。
 
 `trackingServer` または `trackingServerSecure` を使用してライブラリを初期化する際に、トラッキングサーバー名が VisitorJS ライブラリに提供される必要があります。これは、Analytics 設定の`trackingServer` 設定に一致する必要があります。
 
