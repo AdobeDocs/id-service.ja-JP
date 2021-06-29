@@ -4,9 +4,9 @@ keywords: ID サービス
 title: 顧客 ID と認証状態
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '628'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.UNKNOWN </span> </p> </td> 
    <td colname="col2"> <p>この状態は、次のようなシナリオで使用できます。 </p> <p> 
      <ul id="ul_086C7446D258443DA7AF5BB96A6AAEC7"> 
       <li id="li_7845BBD62D7B4362AD3FE33DEDA8FBA1">電子メールの読み取り（このアクションは読者が意図した受信者であることを意味しますが、電子メールが転送された可能性もあります）。 </li> 
@@ -72,11 +72,11 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
      </ul> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.AUTHENTICATED </span> </p> </td> 
    <td colname="col2"> <p>ユーザーは現在、Web サイトまたはアプリのアクティブセッションで認証されています。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT  </span> </p> </td> 
+   <td colname="col1"> <p> <span class="codeph"> Visitor.AuthState.LOGGED_OUT </span> </p> </td> 
    <td colname="col2"> <p>ユーザーは認証されましたが、アクティブにログアウトしました。ユーザーが認証済み状態から意図的に切断した。ユーザーが認証済みとして扱われなくなります。 </p> </td> 
   </tr> 
  </tbody> 
@@ -212,8 +212,8 @@ Object customerIDs = visitor.getCustomerIDs();
 
 [!DNL Experience Cloud] ID サービスは、アドビの Android および iOS SDK コードで顧客 ID と認証状態をサポートします。次のコードライブラリを参照してください。
 
-* [Android SDK のメソッド](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)
-* [iOS SDK のメソッド](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html)
+* [Android SDK のメソッド](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=ja)
+* [iOS SDK のメソッド](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=ja)
 
 ## Analytics および Audience Manager ユーザー向けの注意点 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
