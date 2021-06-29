@@ -3,7 +3,7 @@ description: メインのエントリサイトがあり、顧客が他のドメ�
 keywords: 操作の順序;ID サービス
 title: CNAME 実装の概要
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '221'
 ht-degree: 100%
 
