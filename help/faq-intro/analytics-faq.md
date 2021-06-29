@@ -4,9 +4,9 @@ keywords: Experience Cloud Identity Service
 title: Analytics と Identity Service に関する FAQ
 exl-id: 98aeca0d-41a2-4b18-b307-19a6de816e38
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '970'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Identity Service で既に識別されているユーザーの場合、何も変
 
 メインのエントリサイトがあり、顧客が他のドメインを訪問する前にメインのエントリサイトで顧客の識別ができる場合には、CNAME を使用することで、サードパーティ Cookie を受け入れないブラウザー（Safari など）でもクロスドメイントラッキングをおこなうことができます。
 
-サードパーティ Cookie を受け入れるブラウザーでは、訪問者 ID の取得をリクエストしたときに、[demdex.net ドメイン](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html)に Cookie が設定されます。Identity Service はこの Cookie を使用することで、同じ組織 ID を使用するように設定されているすべてのドメインで、同じ Experience Cloud 訪問者 ID を返すことができます。サードパーティ Cookie を受け入れないブラウザーでは、各ドメインに対して新しい Experience Cloud 訪問者 ID が割り当てられます。
+サードパーティ Cookie を受け入れるブラウザーでは、訪問者 ID の取得をリクエストしたときに、[demdex.net ドメイン](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja)に Cookie が設定されます。Identity Service はこの Cookie を使用することで、同じ組織 ID を使用するように設定されているすべてのドメインで、同じ Experience Cloud 訪問者 ID を返すことができます。サードパーティ Cookie を受け入れないブラウザーでは、各ドメインに対して新しい Experience Cloud 訪問者 ID が割り当てられます。
 
 CNAME を設定しても、訪問者がメインのエントリサイトを最初に訪問しないと、サードパーティ Cookie を受け入れないブラウザーでは、セカンダリサイトとメインサイトで訪問者が別々に識別されます。
 
@@ -50,7 +50,7 @@ Identity Service が正しく情報を返しているにもかかわらず `MID`
 
 **猶予期間とはどのようなもので、どのように設定すればよいですか。**
 
-[ID サービスの猶予期間](../reference/analytics-reference/grace-period.md)を参照し、[カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)にお問合せください。
+[ID サービスの猶予期間](../reference/analytics-reference/grace-period.md)を参照し、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)にお問合せください。
 
 **Identity Service を使用するためにリアルタイムデータ収集（RDC）に移行しなければならない理由を教えてください。**
 
@@ -89,5 +89,5 @@ Identity Service の使用時に不整合が生じる一般的な原因を以下
 
 >[!MORELIKETHIS]
 >
->* [カスタマーケア](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+>* [カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)
 
