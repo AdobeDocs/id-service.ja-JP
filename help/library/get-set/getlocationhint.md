@@ -4,9 +4,9 @@ keywords: ID サービス
 title: getLocationHint
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Experience Cloud Identity Service 地域 ID を返します。地域 ID（また
 
 **構文：** ` var *`変数名`* = visitor.getLocationHint()`
 
-地域 ID と対応する場所の一覧は、[DCS 地域 ID、場所、ホスト名](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html)を参照してください。
+地域 ID と対応する場所の一覧は、[DCS 地域 ID、場所、ホスト名](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=ja)を参照してください。
 
 **コードサンプル**
 
