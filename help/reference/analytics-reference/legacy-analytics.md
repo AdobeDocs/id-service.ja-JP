@@ -4,9 +4,9 @@ keywords: ID サービス
 title: Analytics と Experience Cloud ID のリクエスト
 exl-id: 8c682159-e23a-4641-9ffd-e0028dc2f305
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '444'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Experience Cloud Identity Service が従来の Analytics ID と連携する方�
 
 ## AMCV Cookie がブラウザーに設定されていない {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
-[!DNL Experience Cloud]（AMCV）cookie が存在しない場合、[!DNL Adobe] への ID サービス呼び出しでは、従来の Analytics ID の有無によって異なる応答が生成されます。従来の [!DNL Analytics] IDは [s_vi cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html) に保存されます。次の表は、s_ vi cookie の状態に基づいて ID が AMCV cookie にどのように書き込まれるかを示します。
+[!DNL Experience Cloud]（AMCV）cookie が存在しない場合、[!DNL Adobe] への ID サービス呼び出しでは、従来の Analytics ID の有無によって異なる応答が生成されます。従来の [!DNL Analytics] IDは [s_vi cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=ja) に保存されます。次の表は、s_ vi cookie の状態に基づいて ID が AMCV cookie にどのように書き込まれるかを示します。
 
 <table id="table_DC85FECE26DD424E841BA1059AF1E57F"> 
  <thead> 
@@ -47,7 +47,7 @@ Experience Cloud Identity Service が従来の Analytics ID と連携する方�
 
 >[!NOTE]
 >
->s_fid Cookie によって識別されるユーザーの従来の FID 値は AMCV Cookie に移行されません。s_fid Cookie を使用する場合、s_vi Cookie がなく（前述の説明を参照）サイトの新規訪問者であるかのように、ユーザーが移行されます。詳しくは、[Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html) を参照してください。
+>s_fid Cookie によって識別されるユーザーの従来の FID 値は AMCV Cookie に移行されません。s_fid Cookie を使用する場合、s_vi Cookie がなく（前述の説明を参照）サイトの新規訪問者であるかのように、ユーザーが移行されます。詳しくは、[Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=ja) を参照してください。
 
 ## AMCV Cookie がブラウザーに設定されている {#section-01c088fc565c4b24ba1722c7cc240310}
 
