@@ -4,7 +4,7 @@ keywords: ID サービス
 title: resetBeforeVersion
 exl-id: 9fa40baa-433d-4f16-824b-521948a92a4b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '249'
 ht-degree: 100%
 
