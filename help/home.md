@@ -4,7 +4,7 @@ keywords: ID サービス
 title: Experience Cloud Identity Service
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '253'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Adobe Experience Cloud Identity Service（ID サービス）は、Experience Clo
    <td colname="col2"> <p> <b>リリースノート</b> </p> <p><b>バージョン 4.4</b> 2019 年 7 月 17 日リリースには、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、<a href="reference/hashing-support.md" format="dita" scope="local">SHA-256 ハッシュアルゴリズム</a>のサポートが含まれます。</p><p><b>バージョン 4.0</b> 2019 年 2 月 12 日リリースには、ユーザーがサイトにアクセスする際に、ユーザーのデバイスまたはブラウザーに cookie を配置できるかどうかを識別する<a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">オプトインサービス</a>が含まれています。 </p> <p> 
      <ul id="ul_4F06F170F214492780C7D25A069F799F"> 
       <li id="li_45A7CD556FE44F4DAB035C736A058F36"> 新機能と修正点については、最新の <a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja" format="https" scope="external">Experience Cloud リリースノート</a>を参照してください。 </li> 
-      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">過去のリリースについては、<a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=en" format="html" scope="external">以前のリリースノート</a>を参照してください。 </li> 
+      <li id="li_10CC4FBFEFC947CA9AD15F52D9715257">過去のリリースについては、<a href="https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja" format="html" scope="external">以前のリリースノート</a>を参照してください。 </li> 
      </ul> </p> <p> <b>Experience Cloud リソース</b> </p> <p> 
      <ul id="ul_E30EC96BDC624B5591F0470D430B7F41"> 
       <li id="li_F3A5CCFAE0F247CEB41A03CA8E03106B"> <a href="http://www.adobe.com/jp/privacy.html" format="http" scope="external"> アドビプライバシーセンター</a> </li> 
