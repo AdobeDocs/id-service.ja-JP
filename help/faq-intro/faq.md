@@ -4,9 +4,9 @@ keywords: ID サービス
 title: ID サービス FAQ
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '787'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ VisitorAPI.js をモバイルアプリケーションのローカルファイル
 
 VisitorAPI.js ライブラリはページ上部にあるコードの `<head>` セクションに配置してください。これにより、ページ本文の読み込み前に ID の呼び出しがおこなわれるので、ID が問題なく返される可能性が高くなります。
 
-ID サービス呼び出しは非同期であり、[demdex.net ドメイン](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html) への唯一の呼び出しです。ID サービス呼び出しにより、ページ上で他の要素が読み込まれないようにブロックされることはありません。
+ID サービス呼び出しは非同期であり、[demdex.net ドメイン](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja) への唯一の呼び出しです。ID サービス呼び出しにより、ページ上で他の要素が読み込まれないようにブロックされることはありません。
 
 [!DNL Target] を使用している場合、ページの `<body>` に ID サービスコードを配置すると、[!DNL Target] 呼び出しがブロックされる可能性が高くなります。ページ本文に ID サービスコードを配置しなければならない場合は、`<body>` 開始タグの後にこのコードを配置してください。
 
