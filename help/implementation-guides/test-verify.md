@@ -4,9 +4,9 @@ keywords: ID サービス
 title: Experience Cloud Identity Service のテストと検証
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -26,13 +26,13 @@ ID サービスのテストと検証を始める前に知っておくべき重�
 
 **ツール**
 
-[Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) および [Charles HTTP プロキシ](https://www.charlesproxy.com/)を使用すると、Analytics を使用して ID サービスが適切に動作するように設定されていることを判定できます。この節の情報は、Adobe Debugger および Charles が返す結果に基づいています。ただし、お客様に最適なツールやデバッガーを自由に使用することができます。
+[Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=ja) および [Charles HTTP プロキシ](https://www.charlesproxy.com/)を使用すると、Analytics を使用して ID サービスが適切に動作するように設定されていることを判定できます。この節の情報は、Adobe Debugger および Charles が返す結果に基づいています。ただし、お客様に最適なツールやデバッガーを自由に使用することができます。
 
 ## Adobe Debugger を使用したテスト {#section-861365abc24b498e925b3837ea81d469}
 
 [!DNL Adobe] Debugger の応答に [!DNL Experience Cloud ID]（MID）が表示される場合、サービス統合は適切に設定されています。MID について詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
 
-[!DNL Adobe] [Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) を使用した ID サービスのステータスを検証するには：
+[!DNL Adobe] [Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=ja) を使用した ID サービスのステータスを検証するには：
 
 1. ブラウザーの Cookie をクリアするか、匿名ブラウジングセッションを開きます。
 1. ID サービスコードを含むテストページを読み込みます。
@@ -84,7 +84,7 @@ Charles を使用して HTTP 呼び出しを監視する場合、どこを見て
 
 **Charles での成功した ID サービス応答**
 
-[データ収集サーバー](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html)（DCS）からの応答が MID を返す場合、アカウントは ID サービスに関して適切にプロビジョニングされています。MID は、キーと値のペアとして返されます（`d_mid: *`訪問者の Experience Cloud ID`*` という構文が使用されます）。以下に示すように、「[!UICONTROL 応答]」タブで、MID を探します。
+[データ収集サーバー](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=ja)（DCS）からの応答が MID を返す場合、アカウントは ID サービスに関して適切にプロビジョニングされています。MID は、キーと値のペアとして返されます（`d_mid: *`訪問者の Experience Cloud ID`*` という構文が使用されます）。以下に示すように、「[!UICONTROL 応答]」タブで、MID を探します。
 
 ![](assets/charles_response_success.png)
 
@@ -94,4 +94,4 @@ DCS 応答に MID がない場合、アカウントは適切にプロビジョ�
 
 ![](assets/charles_response_unsuccessful.png)
 
-エラーコードについて詳しくは、[DCS エラーコード、メッセージおよび例](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html)を参照してください。
+エラーコードについて詳しくは、[DCS エラーコード、メッセージおよび例](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-error-codes.html?lang=ja)を参照してください。
