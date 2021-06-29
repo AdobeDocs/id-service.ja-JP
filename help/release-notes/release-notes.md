@@ -4,7 +4,7 @@ keywords: ID サービス
 title: 2020 年リリースノート
 exl-id: c9d7876e-debc-4c8e-8ebc-91646610c876
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '132'
 ht-degree: 100%
 
