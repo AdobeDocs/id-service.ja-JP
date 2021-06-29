@@ -4,7 +4,7 @@ keywords: クロスドメイントラッキング;ID サービス
 title: disableThirdPartyCalls
 exl-id: 1d5b4e80-1b2d-4401-9057-449a6abf5db5
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '200'
 ht-degree: 100%
 
