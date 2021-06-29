@@ -4,7 +4,7 @@ keywords: ID サービス
 title: ビデオハートビートと Experience Cloud Identity Service
 exl-id: 5e905925-54ba-43ce-ae87-a9bf193d7b95
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '105'
 ht-degree: 100%
 
@@ -16,5 +16,5 @@ ht-degree: 100%
 
 >[!MORELIKETHIS]
 >
->* [Adobe Analytics でのオーディオおよびビデオの測定 ](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.translate.html)
+>* [Adobe Analytics でのオーディオおよびビデオの測定 ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ja)
 
