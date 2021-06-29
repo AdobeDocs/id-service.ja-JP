@@ -4,7 +4,7 @@ keywords: playstation;ID サービス
 title: Cookie と Experience Cloud Identity Service
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '932'
 ht-degree: 100%
 
