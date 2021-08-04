@@ -3,10 +3,10 @@ description: 従来の実装では、Dynamic Tag Management（DTM）を使用し
 keywords: ID サービス
 title: Dynamic Tag Management を使用した実装
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '1999'
-ht-degree: 100%
+source-git-commit: 0dde49ca194e4a86ea7957629eec79d0b75a1e81
+workflow-type: tm+mt
+source-wordcount: '2008'
+ht-degree: 99%
 
 ---
 
@@ -74,7 +74,7 @@ Dynamic Tag Management（DTM）を使用して ID サービスを実装するに
 
 **前提条件**
 
-* [!DNL Experience Cloud] のソリューションを有効にして、管理者権限があることを確認します。[コアサービス向けにソリューションを有効化](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=ja)を参照してください。
+* [!DNL Experience Cloud] のソリューションを有効にして、管理者権限があることを確認します。[コアサービス向けにソリューションを有効化](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html)を参照してください。
 
 * DTM で Web プロパティを作成します。DTM の [Web プロパティの 作成](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=ja)ドキュメントを参照してください。
 
@@ -105,13 +105,13 @@ mcvid-dtm-implement.xml
 mcvid-dtm-settings.xml
 -->
 
-## これらの設定の見つけ方 {#section-c5b2d1c928944ae2b8565c1b182fe575}
+## これらの設定の見つけ方  {#section-c5b2d1c928944ae2b8565c1b182fe575}
 
 設定は、ID サービスを Dynamic Tag Management（DTM）のツールとして追加して保存した後で利用できます。また、DTM Web プロパティの「[!UICONTROL インストールされているツール]」セクションのギアアイコンをクリックすることで、これらの設定にアクセスできます。
 
 ![](assets/installedTools.png)
 
-## 組織 ID {#section-949b5a0d8af940558b04ff675cf53f77}
+## Organization ID {#section-949b5a0d8af940558b04ff675cf53f77}
 
 これは、プロビジョニングされた [!DNL Experience Cloud] の会社に必要で、その会社に関連付けられた ID です。組織は、管理者がユーザーおよびグループを設定し、[!DNL Experience Cloud] でのシングルサインオンアクセスを制御することを可能にするエンティティです。組織 ID は、24 文字の英数字から成る文字列で、その後に @AdobeOrg（必須）が続きます。[!DNL Experience Cloud] 管理者は、[Experience Cloud／ツール](https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/admin-getting-started.html?lang=ja)でこの ID を見つけることができます。
 
@@ -139,7 +139,7 @@ Anatytics のデータ収集に使用されるトラッキングサーバーの�
 
 トラッキングサーバーの URL がわからない場合は、`s_code.js` または `AppMeasurement.js` ファイルを確認します。`s.trackingServer` 変数で URL を設定することもできます。
 
-[trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=ja) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html#) を参照してください。
+[trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=ja) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/analytics/kb/determining-data-center.html#) を参照してください。
 
 **トラッキングサーバー保護**
 
@@ -147,7 +147,7 @@ Anatytics のデータ収集に使用されるセキュリティで保護され�
 
 トラッキングサーバーの URL がわからない場合は、`s_code.js` または `AppMeasurement.js` ファイルを確認します。`s.trackingServerSecure` 変数で URL を設定することもできます。
 
-[trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html?lang=ja) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html#) を参照してください。
+[trackingServer](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/page-variables.html) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/analytics/kb/determining-data-center.html#) を参照してください。
 
 **Experience Cloud サーバー**
 
@@ -179,7 +179,7 @@ Anatytics のデータ収集に使用されるセキュリティで保護され�
 
 **統合コード**
 
-統合コードは、一意の、顧客が提供する ID です。統合コードには、[ で](hhttps://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source)データソースを作成[!DNL Audience Manager]するために使用された値が含まれている必要があります。
+統合コードは、一意の、顧客が提供する ID です。統合コードには、[ で](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/manage-datasources.html#create-data-source)データソースを作成[!DNL Audience Manager]するために使用された値が含まれている必要があります。
 
 **値**
 
@@ -215,7 +215,7 @@ ID サービスのテストと検証を始める前に知っておくべき重�
 
 [!DNL Adobe] Debugger の応答に [!DNL Experience Cloud ID]（MID）が表示される場合、サービス統合は適切に設定されています。MID について詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
 
-[!DNL Adobe] [Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=ja) を使用した ID サービスのステータスを検証するには：
+[!DNL Adobe] [Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html) を使用した ID サービスのステータスを検証するには：
 
 1. ブラウザーの Cookie をクリアするか、匿名ブラウジングセッションを開きます。
 1. ID サービスコードを含むテストページを読み込みます。
@@ -281,5 +281,5 @@ DCS 応答に MID がない場合、アカウントは適切にプロビジョ�
 
 >[!MORELIKETHIS]
 >
->* [Web プロパティ](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html?lang=ja)
+>* [Web プロパティ](https://experienceleague.adobe.com/docs/dtm/using/admin/web-property.html)
 
