@@ -3,9 +3,9 @@ description: ここでは、Experience Cloud Identity Service に必要な適切
 keywords: ID サービス
 title: Experience Cloud Identity Service の要件
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '730'
+source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
+workflow-type: tm+mt
+source-wordcount: '731'
 ht-degree: 100%
 
 ---
@@ -77,9 +77,9 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
  </tbody> 
 </table>
 
-## Analytics の要件：地域別データ収集（RDC） {#section-7d04bb013bc84a25bae3b148bc0ca25f}
+## Analytics の要件：地域別データ収集（RDC）  {#section-7d04bb013bc84a25bae3b148bc0ca25f}
 
-すべてのトラッキングサーバーは RDC に変換されているので、Analyticsトラッキングサーバーを変更する必要はありません。[詳細情報...](https://experienceleague.adobe.com/docs/analytics/admin/data-collection/regional-data-collection/regional-data-collection.html?lang=ja)
+すべてのトラッキングサーバーは RDC に変換されているので、Analyticsトラッキングサーバーを変更する必要はありません。[詳細情報...](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=ja)
 
 ## コードライブラリとバージョンの要件 {#section-ad7542a4317d430fa79fc6b095beb84d}
 
