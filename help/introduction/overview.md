@@ -3,7 +3,7 @@ description: Adobe Experience Cloud における Experience Cloud Identity Servi
 title: Experience Cloud ID サービスの概要
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
 source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '543'
 ht-degree: 100%
 
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Experience Cloud ID サービスの概要
 
-[!UICONTROL Experience Cloud ID サービス]は、Experience Platform ID サービスにおける Experience Cloud コアサービス（顧客属性やオーディエンスなど）ソリューションのための共通の識別フレームワークです
+[!UICONTROL Experience Cloud ID サービス]は、Experience Platform ID サービスにおける Experience Cloud コアサービス（顧客属性やオーディエンスなど）ソリューションのための共通の識別フレームワークです。
 
 >[!NOTE]
 >
