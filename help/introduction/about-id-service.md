@@ -1,10 +1,10 @@
 ---
-description: Adobe Experience Cloud での Experience Cloud Identity Service の役割です。
+description: Adobe Experience Cloud における Experience Cloud Identity Service の役割です。
 keywords: ID サービス
 title: 概要
 exl-id: d907e299-bde0-4b5f-8c16-867a4eaa8be1
 source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '310'
 ht-degree: 100%
 
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # ID サービスについて{#aboutidservice}
 
-Adobe Experience Cloud での Experience Cloud Identity Service の役割です。
+Adobe Experience Cloud における Experience Cloud Identity Service の役割です。
 
 <!--
 mcvid-functionality.xml
