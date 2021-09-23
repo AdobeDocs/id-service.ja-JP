@@ -4,7 +4,7 @@ keywords: ID サービス
 title: Experience Cloud Identity Service の要件
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '731'
 ht-degree: 100%
 
@@ -101,7 +101,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b><span class="keyword"> Experience Cloud</span> ID サービス</b> </p> </td> 
+   <td colname="col1"> <p> <b> <span class="keyword"> Experience Cloud</span> ID サービス</b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2.0 以降 </p> </td> 
   </tr> 
@@ -124,7 +124,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
    <td colname="col4"> <p>5.0 </p></td> 
   </tr> 
   <tr> 
-   <td colname="col1" morerows="1"> <p> <b><span class="keyword">Target </span></b> </p> </td> 
+   <td colname="col1" morerows="1"> <p> <b> <span class="keyword">Target </span> </b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> mbox.js</span> </p> <p><a href="https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-technical.html?lang=ja" format="https" scope="external">mbox コード</a>を参照してください。 </p> </td> 
    <td colname="col4"> <p>61 </p> </td> 
   </tr> 
