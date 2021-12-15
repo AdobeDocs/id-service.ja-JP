@@ -3,10 +3,10 @@ description: ここでは、Experience Cloud Identity Service に必要な適切
 keywords: ID サービス
 title: Experience Cloud Identity Service の要件
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
-workflow-type: ht
-source-wordcount: '731'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 98%
 
 ---
 
@@ -18,33 +18,13 @@ ht-degree: 100%
 
 成功した、サポートされた実装は、コード要件を満たし（または上回り）、[!DNL Adobe] ヘルプに記載された説明に従っています。サポートされない実装は、予期せぬ結果を生み出し、カスタマーケアおよびアドビのエンジニアリングチームが ID サービスの問題をトラブルシューティングまたは解決するための努力を支援するのを妨げます。
 
-<table id="table_2216C44AA66248DCAA13BF64BDF2D88A"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> 実装タイプ </th> 
-   <th colname="col2" class="entry"> 説明 </th> 
-  </tr> 
- </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445" format="dita" scope="local"> 標準</a> </p> </td> 
-   <td colname="col2"> <p>Dynamic Tag Management（DTM）を使用した標準実装の場合、以下をおこなう必要があります。 </p> 
-    <ul id="ul_59CDE179566844B494F3068FF6333809"> 
-     <li id="li_CCCB6AFC08EE405F94C42216D3CE50AC"> ページの <span class="codeph">&lt;head&gt;</span> セクションに埋め込みヘッドコードを配置する。 </li> 
-     <li id="li_13962F2CB1764091A84863BE499675A2"><span class="codeph">&lt;/body&gt;</span> 終了タグの前に、埋め込みフッターコードを配置する。 </li> 
-    </ul> <p>標準実装は、以下の場合にはサポートされません。 </p> 
-    <ul id="ul_3B62559317ED4C7AA548C3B8DBA281F7"> 
-     <li id="li_1F16C6D412944197BEA56BC24730782C"> これらの DTM 埋め込みコードのいずれかをマークアップまたはページコードの他の場所に配置する。 </li> 
-     <li id="li_05615C01F3A947BBBD41046E68377224"> 非同期メソッド、呼び出し／コールバックメソッド、ラッパーを使用して、DTM コードを付加、追加または読み込む。 </li> 
-     <li id="li_B2137DFF627B473FA876580449026D2B">同じページに埋め込みコードの複数のインスタンスを含める。 </li> 
-    </ul> <p><a href="https://experienceleague.adobe.com/docs/dtm/using/client-side/deployment.html?lang=ja" format="https" scope="external">埋め込みコードとホスティングオプション</a>も参照してください。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <a href="../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113" format="dita" scope="local"> 非標準的な実装 </a> </p> </td> 
-   <td colname="col2"> <p>非標準、または手動の実装の場合、ID サービスをこのガイドの手順で説明するとおりに設定する必要があります。前述の DTM ガイドラインのように、不適切なコード配置および読み込みによって、サポートされない実装が作成されます。 </p> </td> 
-  </tr> 
- </tbody> 
-</table>
+### 標準的な実装
+
+詳しくは、 [Experience Platformタグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja) を参照してください。
+
+### 非標準的な実装
+
+非標準、または手動の実装の場合、ID サービスをこのガイドの手順で説明するとおりに設定する必要があります。前述の DTM ガイドラインのように、不適切なコード配置および読み込みによって、サポートされない実装が作成されます。
 
 ## Experience Cloud の要件：組織 ID {#section-a02f537129a64ffbb690d5738d360c26}
 

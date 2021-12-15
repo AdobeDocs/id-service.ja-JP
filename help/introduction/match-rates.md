@@ -3,14 +3,14 @@ description: Adobe Media Manager および ID サービスを含む、ID 同期�
 keywords: ID サービス
 title: ID 同期と一致率について
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '805'
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '785'
 ht-degree: 100%
 
 ---
 
-# ID 同期と一致率について {#understanding-id-synchronization-and-match-rates}
+# ID 同期と一致率について{#understanding-id-synchronization-and-match-rates}
 
 Adobe Media Manager および ID サービスを含む、ID 同期プロセスと Experience Cloud Identity Service の一致率の概要です。
 
@@ -24,7 +24,7 @@ ID 同期では、ID サービスによって割り当てられた ID を、顧�
 
 **高い一致率の確保**
 
-高い一致率を生成するには、ID サービスを適切に設定することが重要です（[標準実装ガイド](../implementation-guides/standard.md#concept-89cd0199a9634fc48644f2d61e3d2445)を参照）。適切な実装をおこなうことで、使用可能なデータパラメーターを持つ ID を機能させ、同期させるために必要な Cookie を ID サービスが設定できるので、高い一致率を確保できます。ただし、低速なインターネット接続、モバイルデバイスやワイヤレスネットワークからのデータ接続などの要因が、ID サービスによる ID の収集、同期および一致の程度に影響する可能性があります。これらのクライアント側変数は、ID サービスや [!DNL Adobe] では制御できません。
+適切な実装をおこなうことで、使用可能なデータパラメーターを持つ ID を機能させ、同期させるために必要な Cookie を ID サービスが設定できるので、高い一致率を確保できます。ただし、低速なインターネット接続、モバイルデバイスやワイヤレスネットワークからのデータ接続などの要因が、ID サービスによる ID の収集、同期および一致の程度に影響する可能性があります。これらのクライアント側変数は、ID サービスや [!DNL Adobe] では制御できません。
 
 ## ID 同期プロセスの説明 {#section-a541a85cbbc74f5682824b1a2ee2a657}
 

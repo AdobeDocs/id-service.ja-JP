@@ -5,11 +5,10 @@ user-guide-title: Experience Cloud ID サービスヘルプ
 breadcrumb-title: ID サービスガイド
 user-guide-description: ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。このサービスを、Analytics、Audience Manager、Target などのサービスや、その他の Experience Cloud のソリューションまたは機能の ID 生成コードの代わりに使用できます。
 user-guide-url: /content/help/en/id-service/using/home.html
-translation-type: ht
-source-git-commit: 01d50f9def8916b45fac846de235363836ba0429
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 98%
 
 ---
 
@@ -26,8 +25,7 @@ ht-degree: 100%
 + 実装 {#implementation}
    + [実装方法](implementation-guides/implementation-methods.md)
    + [実装ガイド](implementation-guides/implementation-guides.md)
-   + [Experience Platform Launch を使用した実装](implementation-guides/ecid-implement-with-launch.md)
-   + [DTM を使用した実装](implementation-guides/standard.md)
+   + [タグを使用したExperience Platform](implementation-guides/ecid-implement-with-launch.md)
    + [Analytics の実装](implementation-guides/setup-analytics.md)
    + [Target の実装](implementation-guides/setup-target.md)
    + [Analytics および Audience Manager の実装](implementation-guides/setup-aam-analytics.md)
@@ -107,7 +105,7 @@ ht-degree: 100%
    + [ビデオハートビートと ID サービス](reference/heartbeat.md)
    + [Data Workbench と ID サービス](reference/dwb.md)
    + [setCustomerIDs の SHA256 ハッシュサポート](reference/hashing-support.md)
-+ よくある質問（FAQ）{#faqs}
++ よくある質問（FAQ） {#faqs}
    + [FAQ の概要](faq-intro/faq-intro.md)
    + [ID サービス FAQ](faq-intro/faq.md)
    + [Analytics と ID サービスに関する FAQ](faq-intro/analytics-faq.md)
