@@ -1,18 +1,18 @@
 ---
-description: Adobe Media Manager および ID サービスを含む、ID 同期プロセスと Experience Cloud Identity Service の一致率の概要です。
+description: Experience Cloud ID サービス（Adobe Media Manager および ID サービスを含む ）の ID 同期プロセスと一致率の概要です。
 keywords: ID サービス
 title: ID 同期と一致率について
 exl-id: 9386824c-7d04-459b-9417-45b67f8a7b37
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '785'
 ht-degree: 100%
 
 ---
 
-# ID 同期と一致率について{#understanding-id-synchronization-and-match-rates}
+# ID 同期と一致率について {#understanding-id-synchronization-and-match-rates}
 
-Adobe Media Manager および ID サービスを含む、ID 同期プロセスと Experience Cloud Identity Service の一致率の概要です。
+Experience Cloud ID サービス（Adobe Media Manager および ID サービスを含む ）の ID 同期プロセスと一致率の概要です。
 
 ## ID 同期と一致率 {#section-f652aae7234945e89d26dd833c5215fb}
 
