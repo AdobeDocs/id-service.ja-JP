@@ -1,16 +1,16 @@
 ---
 description: これらの手順は、Target、Analytics、ID サービスのサーバーサイドとクライアントサイドの実装が混在している A4T ユーザー向けのものです。 NodeJS または Rhino 環境で ID サービスを実行する必要があるユーザーも、この情報を確認する必要があります。 ID サービスのこのインスタンスでは、Node Package Manager （NPM）からダウンロードしてインストールできる短縮バージョンの VisitorAPI.js コードライブラリを使用します。 インストール手順およびその他の設定要件については、この節を参照してください。
 keywords: ID サービス
-title: Target のサーバー側実装を使用する A4T での ID サービスの使用
+title: A4T での ID サービスの使用と Target のサーバーサイド実装
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
 ht-degree: 100%
 
 ---
 
-# Target のサーバー側実装を使用する A4T での ID サービスの使用 {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
+# A4T での ID サービスの使用と Target のサーバーサイド実装 {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
 これらの手順は、Target、Analytics、ID サービスのサーバーサイドとクライアントサイドの実装が混在している A4T ユーザー向けのものです。 NodeJS または Rhino 環境で ID サービスを実行する必要があるユーザーも、この情報を確認する必要があります。 ID サービスのこのインスタンスでは、Node Package Manager （NPM）からダウンロードしてインストールできる短縮バージョンの VisitorAPI.js コードライブラリを使用します。 インストール手順およびその他の設定要件については、この節を参照してください。
 
@@ -25,17 +25,17 @@ A4T （および他の顧客）は、以下が必要な場合に、このバー�
 
 ## コードのダウンロードと提供されたインターフェイス {#section-32d75561438b4c3dba8861be6557be8a}
 
-サーバー側コードパッケージをダウンロードして、現在のビルドに含まれるインターフェイスを確認するには、[ID サービス NPM リポジトリ](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)を参照してください。
+[ID サービスの NPM リポジトリ](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)を参照して、サーバーサイドのコードパッケージをダウンロードし、現在のビルドに含まれているインターフェイスを確認します。
 
 ## ワークフロー {#section-56b01017922046ed96536404239a272b}
 
-以下の図と節では、サーバー側実装プロセスの各手順で発生することと、設定する必要があることを説明します。
+以下の図と節では、サーバーサイド実装プロセスの各手順で何が行われ、何を設定する必要があるかを説明します。
 
 ![](assets/serverside.png)
 
-## 手順 1：ページのリクエスト {#section-c12e82633bc94e8b8a65747115d0dda8}
+## 手順 1：リクエストページ {#section-c12e82633bc94e8b8a65747115d0dda8}
 
-web ページを読み込む HTTP リクエストを訪問者が実行すると、サーバーサイドアクティビティが開始します。 このステップで、サーバーはこのリクエストを受け取り、[AMCV cookie](../introduction/cookies.md) をチェックします。 AMCV Cookie には、訪問者の [!DNL Experience Cloud] ID（MID）が含まれます。
+web ページを読み込む HTTP リクエストを訪問者が実行すると、サーバーサイドアクティビティが開始します。 このステップで、サーバーはこのリクエストを受け取り、[AMCV cookie](../introduction/cookies.md) をチェックします。 AMCV cookie には、訪問者の [!DNL Experience Cloud] ID（MID）が含まれます。
 
 ## 手順 2：ID サービスペイロードの生成 {#section-c86531863db24bd9a5b761c1a2e0d964}
 
@@ -99,7 +99,7 @@ ID サービスは、以下の例のように、JSON オブジェクトでペイ
 * `mboxAAMB`
 * `mboxMCGLH`
 
-## 手順3：ペイロードの Target 呼び出しへの追加 {#section-62451aa70d2f44ceb9fd0dc2d4f780f7}
+## 手順 3：Target 呼び出しへのペイロードの追加 {#section-62451aa70d2f44ceb9fd0dc2d4f780f7}
 
 サーバーが ID サービスからペイロードデータを受け取ったら、追加のコードをインスタンス化して、[!DNL Target] に渡したデータと結合する必要があります。[!DNL Target] に渡された最終的な JSON オブジェクトは、以下のようになります。
 
