@@ -6,7 +6,7 @@ title: 実装ガイド
 uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
 source-git-commit: 8b8615b65dd3ea0427ba585a6707f059148d05e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
 ht-degree: 100%
 
@@ -34,6 +34,6 @@ Experience Cloud Identity Service の標準的な実装および非標準的な�
 * [Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装](setup-aam-analytics-target.md)
 * [Target のサーバー側実装を使用する A4T での Experience Cloud Identity Service の使用](ecid-a4t-target.md)
 * [Experience Cloud Identity Service との直接統合](direct-integration.md)
-* [直接統合の使用例](direct-integration-examples.md)
+* [直接統合のユースケース](direct-integration-examples.md)
 * [Experience Cloud Identity Service のテストと検証](test-verify.md)
 * [オプトインサービスの概要](opt-in-service/optin-overview.md)
