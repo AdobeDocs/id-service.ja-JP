@@ -1,39 +1,39 @@
 ---
 cloud: platform-cloud
 audience: end-user
-user-guide-title: Experience Cloud ID サービスヘルプ
+user-guide-title: Experience Cloud ID サービスのヘルプ
 breadcrumb-title: ID サービスガイド
 user-guide-description: ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。このサービスを、Analytics、Audience Manager、Target などのサービスや、その他の Experience Cloud のソリューションまたは機能の ID 生成コードの代わりに使用できます。
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Experience Cloud ID サービスヘルプ {#using}
+# Experience Cloud ID サービスのヘルプ {#using}
 
-+ [ID サービスヘルプ](home.md)
++ [ID サービスのヘルプ](home.md)
 + 概要 {#intro}
    + [概要](introduction/overview.md)
    + [ID サービスについて](introduction/about-id-service.md)
    + [Cookie と ID サービス](introduction/cookies.md)
-   + [ ID サービスによる ID のリクエスト方法と設定方法](introduction/id-request.md)
+   + [ID サービスによる ID のリクエスト方法と設定方法](introduction/id-request.md)
    + [同期と一致率について](introduction/match-rates.md)
 + 実装 {#implementation}
    + [実装方法](implementation-guides/implementation-methods.md)
    + [実装ガイド](implementation-guides/implementation-guides.md)
-   + [タグを使用したExperience Platform](implementation-guides/ecid-implement-with-launch.md)
+   + [Experience Platform タグを使用した実装](implementation-guides/ecid-implement-with-launch.md)
    + [Analytics の実装](implementation-guides/setup-analytics.md)
-   + [Target の実装](implementation-guides/setup-target.md)
-   + [Analytics および Audience Manager の実装](implementation-guides/setup-aam-analytics.md)
-   + [Analytics、Audience Manager および Target の実装](implementation-guides/setup-aam-analytics-target.md)
-   + [Target のサーバー側実装を使用する A4T での ID サービスの使用](implementation-guides/ecid-a4t-target.md)
+   + [Target への実装](implementation-guides/setup-target.md)
+   + [Analytics および Audience Manager への実装](implementation-guides/setup-aam-analytics.md)
+   + [Analytics、Audience Manager および Target への実装](implementation-guides/setup-aam-analytics-target.md)
+   + [A4T での ID サービスの使用と Target のサーバーサイド実装](implementation-guides/ecid-a4t-target.md)
    + [ID サービスとの直接統合](implementation-guides/direct-integration.md)
-   + [直接統合の使用例](implementation-guides/direct-integration-examples.md)
-   + [ ID サービスのテストと検証](implementation-guides/test-verify.md)
+   + [直接統合のユースケース](implementation-guides/direct-integration-examples.md)
+   + [ID サービスのテストと検証](implementation-guides/test-verify.md)
    + オプトインサービス {#opt-in-service}
       + [オプトインサービスの概要](implementation-guides/opt-in-service/optin-overview.md)
       + [オプトインサービスの設定](implementation-guides/opt-in-service/getting-started.md)
@@ -41,11 +41,11 @@ ht-degree: 98%
       + [Experience Platform Launch を使用したオプトインの設定](implementation-guides/opt-in-service/launch.md)
       + [DTM を使用したオプトインの設定](implementation-guides/opt-in-service/optin-dtm.md)
       + [ユーザーの同意に基づいて Experience Cloud アクティビティを制御する](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
-      + [オプトインの使用例](implementation-guides/opt-in-service/use-cases.md)
-      + [オプトインリファレンス](implementation-guides/opt-in-service/api.md)
-      + [IAB フレームワークを使用したオプトインサービスの使用](implementation-guides/opt-in-service/iab.md)
-+ ID サービスの API {#id-service-api}
-   + [ID サービス API の概要](library/library.md)
+      + [オプトインのユースケース](implementation-guides/opt-in-service/use-cases.md)
+      + [オプトインのリファレンス](implementation-guides/opt-in-service/api.md)
+      + [IAB フレームワークでのオプトインサービスの使用](implementation-guides/opt-in-service/iab.md)
++ ID Service API {#id-service-api}
+   + [ID Service API の概要](library/library.md)
    + 設定 {#configurations}
       + [設定の概要](library/function-vars/function-vars.md)
       + [audienceManagerServer および audienceManagerServerSecure](library/function-vars/subdomain-config.md)
@@ -82,13 +82,13 @@ ht-degree: 98%
       + [isClientSideMarketingCloudVisitorID](library/get-set/client-side-id.md)
       + [resetState](library/get-set/resetstate.md)
 + リファレンス {#reference}
-   + [Reference の概要](reference/reference.md)
+   + [リファレンスの概要](reference/reference.md)
    + Analytics リファレンス {#analytics-reference}
       + [Analytics リファレンスの概要](reference/analytics-reference/analytics-reference.md)
       + [CNAME 実装の概要](reference/analytics-reference/cname.md)
       + [Analytics および Experience Cloud ID の設定](reference/analytics-reference/analytics-ids.md)
       + [Analytics ID の操作の順序](reference/analytics-reference/analytics-order-of-operations.md)
-      + [ID サービス移行の判断ポイント](reference/analytics-reference/migration-decisions.md)
+      + [ID サービス移行の決定ポイント](reference/analytics-reference/migration-decisions.md)
       + [ID サービスの移行シナリオ](reference/analytics-reference/migration-scenarios.md)
       + [Analytics および ID のリクエスト](reference/analytics-reference/legacy-analytics.md)
       + [JavaScript を利用したサーバー側実装](reference/analytics-reference/server-side.md)
@@ -98,19 +98,19 @@ ht-degree: 98%
    + [ID サービスでの COPPA のサポート](reference/coppa.md)
    + [ID サービスでの CORS のサポート](reference/cors.md)
    + [顧客 ID と認証状態](reference/authenticated-state.md)
-   + [Safari ITP での ECID ライブラリの手法](reference/ecid-library-methods.md)
+   + [Safari ITP の世界における ECID ライブラリのメソッド](reference/ecid-library-methods.md)
    + [ユニーク訪問者数の識別](reference/unique-vis-method.md)
-   + [AMCV Cookie または ID サービスからの地域およびユーザー ID の取得](reference/regions.md)
+   + [AMCV Cookie または ID サービスからの地域 ID およびユーザー ID の取得](reference/regions.md)
    + [ID サービスの要件](reference/requirements.md)
-   + [ビデオハートビートと ID サービス](reference/heartbeat.md)
+   + [ビデオのハートビートと ID サービス](reference/heartbeat.md)
    + [Data Workbench と ID サービス](reference/dwb.md)
    + [setCustomerIDs の SHA256 ハッシュサポート](reference/hashing-support.md)
 + よくある質問（FAQ） {#faqs}
    + [FAQ の概要](faq-intro/faq-intro.md)
-   + [ID サービス FAQ](faq-intro/faq.md)
+   + [ID サービスに関する FAQ](faq-intro/faq.md)
    + [Analytics と ID サービスに関する FAQ](faq-intro/analytics-faq.md)
    + [他の Experience Cloud ソリューションに関する FAQ](faq-intro/other-faq.md)
-+ ID サービスのリリースノート {#release-notes}
++ ID サービスのリリースノート{#release-notes}
    + [2020 年リリースノート](release-notes/release-notes.md)
    + [2019 年リリースノート](release-notes/notes-2019.md)
    + [2018 年リリースノート](release-notes/notes-2018.md)
