@@ -1,18 +1,18 @@
 ---
-description: 他の Experience Cloud ソリューションでの ID サービス利用の特徴、機能、問題に関するよくある質問です。
+description: ID サービスで他の Experience Cloud ソリューションを使用することに関連する特長、機能、問題に関するよくある質問です。
 keywords: ID サービス
 title: 他の Experience Cloud ソリューションに関する FAQ
 exl-id: d1164951-01c9-4375-981a-f87d8a280e4b
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
 ht-degree: 100%
 
 ---
 
-# 他の Experience Cloud ソリューションに関する FAQ{#faqs-for-other-experience-cloud-solutions}
+# 他の Experience Cloud ソリューションに関する FAQ {#faqs-for-other-experience-cloud-solutions}
 
-他の Experience Cloud ソリューションでの ID サービス利用の特徴、機能、問題に関するよくある質問です。
+ID サービスで他の Experience Cloud ソリューションを使用することに関連する特長、機能、問題に関するよくある質問です。
 
 ## Analytics と Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
