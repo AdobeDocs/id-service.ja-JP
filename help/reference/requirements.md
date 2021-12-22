@@ -4,9 +4,9 @@ keywords: ID サービス
 title: Experience Cloud Identity Service の要件
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 98%
 
 成功した、サポートされた実装は、コード要件を満たし（または上回り）、[!DNL Adobe] ヘルプに記載された説明に従っています。サポートされない実装は、予期せぬ結果を生み出し、カスタマーケアおよびアドビのエンジニアリングチームが ID サービスの問題をトラブルシューティングまたは解決するための努力を支援するのを妨げます。
 
-### 標準的な実装
+### 標準実装
 
-詳しくは、 [Experience Platformタグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja) を参照してください。
+標準実装について詳しくは、[Experience Platform タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を参照してください。
 
-### 非標準的な実装
+### 非標準実装
 
 非標準、または手動の実装の場合、ID サービスをこのガイドの手順で説明するとおりに設定する必要があります。前述の DTM ガイドラインのように、不適切なコード配置および読み込みによって、サポートされない実装が作成されます。
 
