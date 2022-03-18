@@ -21,8 +21,7 @@ ht-degree: 100%
 >
 
 
-
-## 使用例 1：Experience Cloud ID（MID）はあるが、自分の訪問者 ID を渡して認証状態を設定したい {#section-a67d89a343754d1286d03cf08d34b806}
+## ユースケース 1：Experience Cloud ID（MID）は持っているが、自分の訪問者 ID を渡して認証状態を設定したい {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -64,7 +63,7 @@ ht-degree: 100%
  </tbody> 
 </table>
 
-## 使用例 2：MID がないので生成する必要がある {#section-8e81291f8b684de8b88fae4002ae0029}
+## ユースケース 2：MID を持っていないので生成する必要がある {#section-8e81291f8b684de8b88fae4002ae0029}
 
 <table id="table_666A92693F8A413096DF6A64770C1141"> 
  <thead> 
