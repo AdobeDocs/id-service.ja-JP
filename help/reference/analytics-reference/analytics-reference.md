@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Analytics リファレンス {#analytics-reference}
+# Analytics リファレンス{#analytics-reference}
 
 ID サービスの機能は、Adobe Analytics に特有のものです。
 
