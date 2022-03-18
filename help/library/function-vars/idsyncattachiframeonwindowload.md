@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Experience Cloud Identity Service が ID 同期 iFrame を読み込む方法を制御するブール型フラグです（オプション）。
 
-**構文：** ` `idSyncAttachIframeOnWindowLoad= true false``（デフォルトは `false`。）
+**構文：** ` `idSyncAttachIframeOnWindowLoad= true|false``（デフォルトは `false`。）
 
 `idSyncAttachIframeOnWindowLoad: true` の場合、ID サービスは、ウィンドウの読み込み時に ID 同期 iFrame を読み込みます。デフォルトでは、ID サービスは、ウィンドウの読み込み時ではなく、可能な限り早く ID 同期 iFrame を読み込みます。
 
