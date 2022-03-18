@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# callTimeOut メソッド {#calltimeout-methods}
+# callTimeOut メソッド{#calltimeout-methods}
 
 これらの ID サービス関数を呼び出して、Experience Cloud Identity Service、Analytics または Audience Manager ID リクエストのタイムアウトステータスを判定します。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 
