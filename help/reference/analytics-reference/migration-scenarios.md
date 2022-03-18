@@ -14,7 +14,7 @@ ht-degree: 100%
 
 サーバーのサンプル設定および必要な移行手順について説明しています。
 
-## 単一の Web プロパティ {#section-6ccfea84628d46c99507cb124e7f5445}
+## 単一の web プロパティ {#section-6ccfea84628d46c99507cb124e7f5445}
 
 * **お客様**：Example Company Inc.
 * **Experience Cloud が有効**：いいえ
@@ -37,7 +37,7 @@ ht-degree: 100%
 
 [!DNL Experience Cloud] ID サービスの展開に備えるために最新の Analytics JavaScript コードに更新する場合は、すべてのハードコーディングされた画像タグを、JavaScript を使用するように更新します。
 
-## 複数の Web プロパティ、複数の JavaScript ファイルおよび Flash ベースのビデオプレーヤー {#section-34647995ff3740b999fdee22d885e515}
+## 複数の web プロパティ、複数の JavaScript ファイルおよび Flash ベースのビデオプレーヤー {#section-34647995ff3740b999fdee22d885e515}
 
 * **お客様**：A Good Customer LLC
 * **Experience Cloud が有効**：はい
