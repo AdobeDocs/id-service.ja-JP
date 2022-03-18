@@ -1,5 +1,5 @@
 ---
-description: ID サービス利用の特長、機能、課題に関するよくある質問
+description: ID サービス利用の特長、機能、課題に関するよくある質問です。
 keywords: ID サービス
 title: ID サービス FAQ
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
@@ -10,9 +10,9 @@ ht-degree: 100%
 
 ---
 
-# ID サービス FAQ {#id-service-faqs}
+# ID サービス FAQ{#id-service-faqs}
 
-ID サービス利用の特長、機能、課題に関するよくある質問
+ID サービス利用の特長、機能、課題に関するよくある質問です。
 
 ## 機能 {#section-659e89f8b9a74cb8afff35587dc96836}
 
