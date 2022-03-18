@@ -24,7 +24,7 @@ ht-degree: 100%
 >
 >猶予期間のサポートには、[!DNL Experience Cloud] ID サービスバージョン 1.3 以降が必要です。
 
-## 猶予期間が必要な場合 {#section-fd34c7ff697348a39f49258b7d39eb42}
+## 猶予期間が必要な場合  {#section-fd34c7ff697348a39f49258b7d39eb42}
 
 Analytics JavaScript ファイルが 1 つだけで、他の AppMeasurement ライブラリを使用していない場合は、猶予期間は必要ありません。 1 つの JavaScript ファイルを更新すると、新しい訪問者は、訪問の間、一貫して Experience Cloud ID を使用して識別されます。
 
