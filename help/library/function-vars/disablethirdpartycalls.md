@@ -14,7 +14,7 @@ ht-degree: 100%
 
 ID サービスが他のドメインに対する呼び出しをおこなえないようにするブール型のフラグ（オプション）。
 
-**構文：** ` `disableThirdPartyCalls: true false``（デフォルトは `false`。）
+**構文：** ` `disableThirdPartyCalls: true|false``（デフォルトは `false`。）
 
 `disableThirdPartyCalls: true` の場合、この ID サービスは他のドメインの呼び出しをおこないません。
 
