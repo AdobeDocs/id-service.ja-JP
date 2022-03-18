@@ -51,7 +51,7 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
  </tbody> 
 </table>
 
-## 認証状態の使用例 {#section-fe9560cc490943b29dac2c4fb6efd72c}
+## 認証状態のユースケース {#section-fe9560cc490943b29dac2c4fb6efd72c}
 
 ユーザーが Web プロパティで実行するアクションや認証されているかどうかに応じて、認証状態をユーザーに割り当てることができます。次の表の例を参照してください。
 
@@ -217,4 +217,4 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## Analytics および Audience Manager ユーザー向けの注意点 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトとデータソースに関連付けられた統合コードが一致する必要があります。詳しくは、[マージルールコードの設定](https://docs.adobe.com/help/ja-JP/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code)ドキュメントの「[!UICONTROL 訪問者 ID サービス]」の節を参照してください。
+宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトが、データソースに関連付けられた統合コードと一致している必要があります。詳しくは、[マージルールコードの設定](https://docs.adobe.com/help/ja-JP/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html#configure-merge-rule-code)ドキュメントの「[!UICONTROL 訪問者 ID サービス]」の節を参照してください。
