@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# whitelistParentDomain および whitelistIframeDomains {#whitelistparentdomain-and-whitelistiframedomains}
+# whitelistParentDomain および whitelistIframeDomains{#whitelistparentdomain-and-whitelistiframedomains}
 
 これらの設定を使用すると、iFrame と親ページに実装されている ID サービスコードのインスタンスが互いに通信できるようになります。これらの設定は、自社が管理しているドメインの iFrame に ID サービスコードを読み込む場合の 2 つの具体的な使用例（親ページまたはドメインを制御できる場合とできない場合）に関わる問題の解決に役立つように設計されています。これらは、VisitorAPI.js コードバージョン 2.2 以降で利用できます。
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 ## コードサンプル {#section-09d0049fe88a473baa69d404c50bf8ae}
 
-設定が完了すると、[!UICONTROL ID サービス]コードはこの例のようになります。
+[!UICONTROL ID サービス]の設定が完了すると、コードはこの例のようになります。
 
 ```js
 //Instantiate Visitor 
@@ -63,7 +63,7 @@ var visitor = Visitor.getInstance("Insert Experience Cloud Organization ID here"
 );
 ```
 
-## 使用例 {#section-fc2eeb93546b406fae3b102dbcd11de7}
+## ユースケース {#section-fc2eeb93546b406fae3b102dbcd11de7}
 
 これらの設定は、ブラウザーがサードパーティ Cookie をブロックし、以下のいずれかの条件に該当する場合に発生する、ID サービス Cookie 設定と訪問者 ID 割り当ての問題の解決に役立ちます。
 
