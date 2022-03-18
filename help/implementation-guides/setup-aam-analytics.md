@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity Service の Analytics および Audience Manager への実装 {#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Experience Cloud Identity Service の Analytics および Audience Manager への実装{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
 これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Analytics および Audience Manager のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 
@@ -21,9 +21,9 @@ ht-degree: 100%
 >* このコードを本番環境に実装する前に、開発環境で設定してテストしてください。
 
 
-## 手順 1：サーバー側転送の計画 {#section-880797cc992d4755b29cada7b831f1fc}
+## 手順 1：サーバーサイド転送の計画 {#section-880797cc992d4755b29cada7b831f1fc}
 
-ここで説明する手順に加えて、[!DNL Analytics] および [!DNL Audience Manager] を使用するお客様は、サーバー側転送に移行する必要があります。サーバー側転送を使用すると、DIL（Audience Manager のデータ収集コード）を削除して、[Audience Management モジュール](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=ja)に置き換えることができます。詳しくは、[サーバー側転送のドキュメント](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/server-side-forwarding/ssf.html)を参照してください。
+ここで説明する手順に加えて、[!DNL Analytics] および [!DNL Audience Manager] を使用するお客様は、サーバーサイド転送に移行する必要があります。サーバー側転送を使用すると、DIL（Audience Manager のデータ収集コード）を削除して、[Audience Management モジュール](https://experienceleague.adobe.com/docs/audience-manager/user-guide/implementation-integration-guides/integration-other-solutions/audience-management-module.html?lang=ja)に置き換えることができます。詳しくは、[サーバー側転送のドキュメント](https://docs.adobe.com/content/help/ja-JP/analytics/admin/admin-tools/server-side-forwarding/ssf.html)を参照してください。
 
 サーバー側転送への移行には、計画と調整が必要です。この手順には、サイトコードに対する外部の変更と、アカウントをプロビジョニングするためにアドビが取る必要のある内部手順が関係します。実際、これらの移行手順の多くは、並行しておこない、同時にリリースする必要があります。実装パスは、このイベントの順番に従う必要があります。
 
@@ -151,7 +151,7 @@ Analytics は、データ収集にトラッキングサーバーを使用しま�
 s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
 ```
 
-## 手順 7：ページへの訪問者 API コードの追加 {#section-c2bd096a3e484872a72967b6468d3673}
+## 手順 7：ページへの Visitor API コードの追加 {#section-c2bd096a3e484872a72967b6468d3673}
 
 ` [!UICONTROL VisitorAPI.js]` ファイルを各ページの `<head>` タグ内に配置します。`VisitorAPI.js` ファイルをページに配置する際には、以下のようにします。
 
