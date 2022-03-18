@@ -73,7 +73,7 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
 
 **改訂されたドキュメント**
 
-  [FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
+  [FAQ](/help/faq-intro/faq-intro.md) を更新および改訂し、[!DNL Experience Cloud] ソリューションごとに独立した FAQ を追加しました。
 
 ## バージョン 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
 
