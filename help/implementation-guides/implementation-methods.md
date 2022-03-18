@@ -20,8 +20,8 @@ ht-degree: 100%
 
 ## 標準的な実装 {#section-ea1e5270f2184f85a2e85214a6ac60cb}
 
-ID サービスの実装には、[[!DNL Experience Platform Launch]](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html?lang=ja)を使用することを強くお勧めします。この方法は、他の [!DNL Experience Cloud] ソリューションとの統合を確実におこない、実装ワークフローを効率化、適切なコードの配置とシーケンシングを自動的に保証します。
+ID サービスの実装には、[[!DNL Experience Platform Launch]](https://experienceleague.adobe.com/docs/launch/using/implement/solutions/idservice-save.html?lang=ja)を使用することを強くお勧めします。この方法は、他の [!DNL Experience Cloud] ソリューションとの統合を確実に行い、実装ワークフローを効率化、適切なコードの配置とシーケンスを自動的に保証します。
 
-## 非標準的な実装 {#section-2c4f2db1f9704315a7cccab6d2e07113}
+## 非標準実装 {#section-2c4f2db1f9704315a7cccab6d2e07113}
 
 これらの手順およびコードサンプルは、[!DNL Experience Cloud] ID サービスを手動、または非標準的な方法で設定する際に役立ちます。これらの実装は、多くの場合、技術的に困難で複雑です。お客様側のエンジニアリングリソースが足りない場合や、Adobe コンサルタントとの契約サポート時間を消費する場合があります。
