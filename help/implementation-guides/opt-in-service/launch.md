@@ -1,5 +1,5 @@
 ---
-description: Adobe Experience Platform Launch を使用したオプトイン用の Experience Cloud ソリューションの有効化をシンプルにします。
+description: Adobe Experience Platform Launch を使用したオプトイン用の Experience Cloud ソリューションの有効化を簡略化します。
 title: Launch を使用したオプトインの設定
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Experience Platform Launch を使用したオプトインの設定 {#configuring-opt-in-with-launch}
 
-Adobe Experience Platform Launch を使用したオプトイン用の Experience Cloud ソリューションの有効化をシンプルにします。
+Adobe Experience Platform Launch を使用したオプトイン用の Experience Cloud ソリューションの有効化を簡略化します。
 
 ## Experience Platform Launch を使用したオプトインシナリオの設定 {#section-8aa1b58bf8374c938aa8cfdeddbad6ff}
 
