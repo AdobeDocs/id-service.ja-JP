@@ -10,9 +10,9 @@ ht-degree: 100%
 
 ---
 
-# Analytics と Identity Service に関する FAQ {#analytics-and-id-service-faqs}
+# Analytics と Identity Service に関する FAQ{#analytics-and-id-service-faqs}
 
-Analytics での Identity Service 利用の特徴、機能、問題に関するよくある質問です。
+Analytics での ID サービス利用の特長、機能、課題に関するよくある質問です。
 
 ## トラッキングサーバー {#section-9a2ad7842e364c869e1650480d17f8ef}
 
