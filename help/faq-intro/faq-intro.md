@@ -14,6 +14,6 @@ ht-degree: 100%
 
 Experience Cloud Identity Service そのもの、および ID サービスと他の Experience Cloud ソリューションの組み合わせに関してよくある質問です。
 
-* [ID サービス FAQ](faq.md)
+* [ID サービスに関する FAQ](faq.md)
 * [Analytics と ID サービスに関する FAQ](analytics-faq.md)
 * [他の Experience Cloud ソリューションに関する FAQ](other-faq.md)
