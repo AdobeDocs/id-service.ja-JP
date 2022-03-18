@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# audienceManagerServer および audienceManagerServerSecure {#audiencemanagerserver-and-audiencemanagerserversecure}
+# audienceManagerServer および audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
 これらの設定を使用して、Experience Cloud Identity Service への呼び出しに使用されるデフォルトのドメイン名を、独自のサブドメイン名に変更します。
 
