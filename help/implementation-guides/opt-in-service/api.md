@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# オプトインリファレンス {#opt-in-reference}
+# オプトインリファレンス{#opt-in-reference}
 
 オプトインライブラリおよび設定用 API のリファレンスです。
 
@@ -114,7 +114,7 @@ false の場合は、訪問者がオプトインする必要がないことを�
 
 * 保留中
 * 変更済み
-* complete
+* 完了
 
 **`doesOptInApply`**
 
