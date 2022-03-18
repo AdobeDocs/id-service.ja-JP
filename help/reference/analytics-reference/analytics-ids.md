@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Analytics および Experience Cloud ID の設定 {#setting-analytics-and-experience-cloud-ids}
+# Analytics および Experience Cloud ID の設定{#setting-analytics-and-experience-cloud-ids}
 
 Experience Cloud Identity Service は、従来の Analytics 訪問者 ID 方式を置き換えるものです。
 
