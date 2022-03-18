@@ -43,7 +43,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 `aid` パラメーターは次の場合に、クエリ文字列内で使用されます。
 
 * [!DNL Experience Cloud] ID サービスが正しくデプロイされている場合。
-* サイトに訪問しているユーザーの [!DNL Analytics]s_vi Cookie[ に既に ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html#section-5d50a078de444d12b7d927d68ff3b679?lang=ja) ID が保存されている場合。
+* サイトに訪問しているユーザーの [!DNL Analytics]s_vi Cookie[ に既に ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=ja#section-5d50a078de444d12b7d927d68ff3b679?lang=ja) ID が保存されている場合。
 
 **例 2**
 
