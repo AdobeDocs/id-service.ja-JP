@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Cookie と Experience Cloud Identity Service {#cookies-and-the-experience-cloud-id-service}
+# Cookie と Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
 
 ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
 
@@ -86,7 +86,7 @@ AMCVS Cookie は、ブラウザーのファーストパーティドメインに�
 
 ![](assets/AMCVS-cookie.png)
 
-## demdex Cookie {#section-7ff7d96d6e4141b08a84a75a63d7814c}
+## Demdex Cookie {#section-7ff7d96d6e4141b08a84a75a63d7814c}
 
 以下の表に、demdex Cookie の重要な属性の一覧とその定義を示します。
 
@@ -135,4 +135,4 @@ Experience Cloud Cookie のフラグを次の表に示します。
 
 ## 次の手順 {#section-8db1727a63bc4ff68b495f270315d453}
 
-[Experience Cloud Identity Service による ID のリクエスト方法と設定方法](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)を参照してください。
+[Experience Cloud ID サービスによる ID のリクエスト方法と設定方法](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)を参照してください。
