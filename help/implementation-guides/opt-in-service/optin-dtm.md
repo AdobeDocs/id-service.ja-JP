@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# DTM を使用したオプトインの設定 {#configuring-opt-in-with-dtm}
+# DTM を使用したオプトインの設定{#configuring-opt-in-with-dtm}
 
 Dynamic Tag Management（DTM）を使用してオプトインサービスを有効にします。
 
