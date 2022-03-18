@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# IAB フレームワークを使用したオプトインサービスの使用 {#using-opt-in-services-with-iab-framework}
+# IAB フレームワークを使用したオプトインサービスの使用{#using-opt-in-services-with-iab-framework}
 
 >[!IMPORTANT]
 >
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 オプトインの IAB Transparency and Consent Framework（TCF）プラグインを使用して、同意管理プラットフォーム（CMP）に接続します。
 
-[IAB TCF](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) を使用する Adobe Audience Manager のお客様は 、オプトインの IAB TCF プラグインを使用して、Consent Management Platform（CMP）に接続できます。オプトインは、（ECID）JavaScript ライブラリ内に組み込まれている機能です。CMP 内で設定された訪問者の設定に応じて、個々のアドビソリューションライブラリを無効化することができます。ECID ライブラリにオプトインの IAB TCF プラグインが実装されると、訪問者の設定は、IAB TCF 対応の CMP からオプトインへ自動的にマッピングされます。これらの環境設定により、Audience Manager ベースのライブラリ（DIL および ECID）と、同意を受信したときの関連する呼び出しが有効になります。
+[IAB TCF](https://iabtechlab.com/standards/gdpr-transparency-and-consent-framework/) を使用する Adobe Audience Manager のお客様は、オプトインの IAB TCF プラグインを使用して、Consent Management Platform（CMP）に接続できます。オプトインは、（ECID）JavaScript ライブラリ内に組み込まれている機能です。CMP 内で設定された訪問者の設定に応じて、個々のアドビソリューションライブラリを無効化することができます。ECID ライブラリにオプトインの IAB TCF プラグインが実装されると、訪問者の設定は、IAB TCF 対応の CMP からオプトインへ自動的にマッピングされます。これらの環境設定により、Audience Manager ベースのライブラリ（DIL および ECID）と、同意を受信したときの関連する呼び出しが有効になります。
 
 ## IAB をサポートする CMP の実装 {#section-9fd2403b548947dbb1921ac6ff9d0c82}
 
