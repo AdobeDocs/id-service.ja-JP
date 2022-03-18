@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity Service による ID のリクエスト方法と設定方法 {#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# Experience Cloud Identity Service による ID のリクエスト方法と設定方法{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 ID のリクエストと応答のプロセスについて、概要を説明します。個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
 
