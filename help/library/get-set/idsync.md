@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# URL またはデータソースによる ID 同期 {#id-synchronization-by-url-or-data-source}
+# URL またはデータソースによる ID 同期{#id-synchronization-by-url-or-data-source}
 
 ID サービスの idSyncByURL 関数と idSyncByDataSource 関数を使用すると、Destination Publishing iFrame で ID 同期を手動で実装できます。これらは、VisitorAPI.js バージョン 1.10 以降で利用できます。
 
@@ -129,5 +129,5 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 
 >[!MORELIKETHIS]
 >
->* [DIL idSync](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-instance-methods.html#idsync?lang=ja)
+>* [DIL idSync](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-instance-methods.html?lang=ja#idsync)
 
