@@ -147,7 +147,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI Missing");
 ```
 
-## 手順 6：ページへの訪問者 API コードの追加 {#section-d46d6aa324c842f2931d901e38d6db1d}
+## 手順 6：ページへの Visitor API コードの追加 {#section-d46d6aa324c842f2931d901e38d6db1d}
 
 `VisitorAPI.js` ファイルを各ページの `<head>` タグ内に配置します。`VisitorAPI.js` ファイルをページに配置する際には、以下のようにします。
 
@@ -180,7 +180,7 @@ ID サービスを使用するページと使用しないページが混在し�
 
 [クリックストリームデータ列リファレンス](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-overview.html?lang=ja)を参照してください。
 
-**クリックストリームデータ収集**
+**クリックストリームデータの取り込み**
 
 ## 手順 8：ID サービスコードのテストとデプロイ {#section-e9c1764ac21a4ec5be1ff338c0e2e01b}
 
