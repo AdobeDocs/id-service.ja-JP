@@ -36,7 +36,7 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 });
 ```
 
-## コンテナの概要と用途 {#section-6aed44fbe9d6401a8f912cb0d98339a7}
+## コンテナの概要と用途  {#section-6aed44fbe9d6401a8f912cb0d98339a7}
 
 **コンテナ**
 
