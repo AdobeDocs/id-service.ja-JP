@@ -10,17 +10,17 @@ ht-degree: 100%
 
 ---
 
-# Analytics と Experience Cloud ID のリクエスト {#analytics-and-experience-cloud-id-requests}
+# Analytics と Experience Cloud ID のリクエスト{#analytics-and-experience-cloud-id-requests}
 
 Experience Cloud Identity Service が従来の Analytics ID と連携する方法について、概要を説明します。
 
 ## 概要 {#section-64d8523ff7634cb987d0c6480f587dd3}
 
-従来、Experience Cloud Identity Service は Adobe Analytics と緊密に統合されていました。現在も ID サービスは Analytics の重要な要素ですが、[!DNL Experience Cloud] の他のソリューションや機能に対しても重要な役割を担うようになっています。この履歴により、Analytics IDの チェックまたは書き込みの仕組みは、[Experience Cloud Identity Service による ID のリクエスト方法と設定方法](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)で説明されている汎用プロセスとは少し異なります。ID チェックの操作の順序について詳しくは、[Analytics ID と Experience Cloud ID の設定](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6)を参照してください。
+従来、Experience Cloud Identity Service は Adobe Analytics と緊密に統合されていました。現在も ID サービスは Analytics の重要な要素ですが、[!DNL Experience Cloud] の他のソリューションや機能に対しても重要な役割を担うようになっています。この履歴により、Analytics IDの チェックまたは書き込みの仕組みは、[Experience Cloud Identity Service による ID のリクエスト方法と設定方法](../../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)で説明されている汎用プロセスとは少し異なります。ID チェックの操作の順序について詳しくは、[Analytics と Experience Cloud ID の設定](../../reference/analytics-reference/analytics-ids.md#concept-f381dd18ee184c6c8e48286937a161d6)を参照してください。
 
-## AMCV Cookie がブラウザーに設定されていない {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
+## ブラウザーで AMCV Cookie が設定されていない {#section-cccf10cd775e4a95a7e98d3c3c0ff9a9}
 
-[!DNL Experience Cloud]（AMCV）cookie が存在しない場合、[!DNL Adobe] への ID サービス呼び出しでは、従来の Analytics ID の有無によって異なる応答が生成されます。従来の [!DNL Analytics] IDは [s_vi cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=ja) に保存されます。次の表は、s_ vi cookie の状態に基づいて ID が AMCV cookie にどのように書き込まれるかを示します。
+[!DNL Experience Cloud]（AMCV）Cookie が存在しない場合、[!DNL Adobe] への ID サービス呼び出しでは、従来の Analytics ID の有無によって異なる応答が生成されます。従来の [!DNL Analytics] IDは [s_vi cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=ja) に保存されます。次の表は、s_ vi cookie の状態に基づいて ID が AMCV cookie にどのように書き込まれるかを示します。
 
 <table id="table_DC85FECE26DD424E841BA1059AF1E57F"> 
  <thead> 
@@ -49,6 +49,6 @@ Experience Cloud Identity Service が従来の Analytics ID と連携する方�
 >
 >s_fid Cookie によって識別されるユーザーの従来の FID 値は AMCV Cookie に移行されません。s_fid Cookie を使用する場合、s_vi Cookie がなく（前述の説明を参照）サイトの新規訪問者であるかのように、ユーザーが移行されます。詳しくは、[Analytics Cookie](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=ja) を参照してください。
 
-## AMCV Cookie がブラウザーに設定されている {#section-01c088fc565c4b24ba1722c7cc240310}
+## ブラウザーで AMCV Cookie が設定されている {#section-01c088fc565c4b24ba1722c7cc240310}
 
-AMCV Cookie が存在する場合、 はその MID を [!DNL Analytics] 識別子として使用します（その Cookie に従来の [!DNL Analytics] Analytics ID 値がない場合）。
+AMCV Cookie が存在する場合、Analytics はその MID を [!DNL Analytics] 識別子として使用します（その Cookie に従来の [!DNL Analytics] ID 値がない場合）。
