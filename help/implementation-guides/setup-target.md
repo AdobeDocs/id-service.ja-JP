@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity Service の Target への実装 {#implement-the-experience-cloud-id-service-for-target}
+# Experience Cloud Identity Service の Target への実装{#implement-the-experience-cloud-id-service-for-target}
 
 これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Target のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
 
@@ -59,7 +59,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION ID-HERE")
 >
 >組織 ID の大文字小文字を変更&#x200B;*しない*&#x200B;でください。この ID は大文字小文字が区別され、割り当てられたとおりに使用する必要があります。
 
-## 手順 4：ページへの訪問者 API コードの追加 {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
+## 手順 4：ページへの Visitor API コードの追加 {#section-02d8dd7678b64a85b5abc1c4ef0845dd}
 
 サイトの `VisitorAPI.js` タグ内の、`<head>` ファイルを参照している箇所の前に `mbox.js` ファイルをデプロイします。最初の [!DNL Experience Cloud] ネットワークの呼び出しが生成される前に [!DNL Target] ID サービスを実行する必要があります。テストと検証の後にこのコードを本番に移行します。
 
