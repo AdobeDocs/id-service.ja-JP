@@ -9,11 +9,11 @@ ht-degree: 100%
 
 ---
 
-# オプトインサービスの検証 {#validating-opt-in-service}
+# オプトインサービスの検証{#validating-opt-in-service}
 
 Web サイトでオプトインを有効にしたら、検証方法を使用して、ブラウザーの開発者ツールでサービスが期待どおりに動作しているかどうかをテストします。
 
-## 使用例 1：オプトインを有効にする {#section-c8fe1ee3711b420c8186c7057abbecb3}
+## ユースケース 1：オプトインを有効にする {#section-c8fe1ee3711b420c8186c7057abbecb3}
 
 ```
 Visitor.getInstance({{YOUR_ORG_ID}}, { 
@@ -58,7 +58,7 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 });
 ```
 
-ユースケース 2 の唯一の違いは、訪問者から提供されるオプトイン権限を含んだ&#x200B;*新しい Cookie*（**adobeujs-optin**）が表示されることです。
+ユースケース 2 の唯一の違いは、訪問者から提供されるオプトイン権限を含む&#x200B;*新しい Cookie*（**adobeujs-optin**）が表示されることです。
 
 ## ユースケース 3：オプトインを有効にし Adobe Analytics を事前承認する {#section-257fe582b425496cbf986d0ec12d3692}
 
