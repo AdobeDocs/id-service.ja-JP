@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# の SHA256 ハッシュサポート `setCustomerIDs` {#hashing-support}
+# `setCustomerIDs` の SHA256 ハッシュサポート  {#hashing-support}
 
 Experience Cloud ID Service（ECID）は、顧客 ID または電子メールアドレスを渡し、ハッシュされた ID を受け取ることが可能な、SHA-256 ハッシュアルゴリズムをサポートします。これは、ハッシュされた識別子を Experience Cloud に送信するための、オプションの JavaScript メソッドです。顧客 ID の送信前にハッシュする独自の方法を引き続き使用できます。setCustomerIDs を使用してハッシュサポートを実装するには、以下の節で説明するように、2 つの方法があります。
 
