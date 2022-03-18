@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# ID サービスの API {#id-service-api}
+# ID サービスの API{#id-service-api}
 
 プログラムによる Experience Cloud Identity Service との連携を可能にするプロパティ、メソッド、設定について説明します。
 
