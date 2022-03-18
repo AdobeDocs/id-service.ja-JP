@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity Service のテストと検証 {#test-and-verify-the-experience-cloud-id-service}
+# Experience Cloud Identity Service のテストと検証{#test-and-verify-the-experience-cloud-id-service}
 
 これらの説明、ツール、手順は、ID サービスが適切に動作しているかどうかを判定するのに役立ちます。これらのテストは、一般に、ID サービスに適用され、様々な ID サービスと Experience Cloud ソリューションの組み合わせに適用されます。
 
