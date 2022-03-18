@@ -22,7 +22,7 @@ Experience Cloud 訪問者 ID と Analytics 訪問者 ID の両方を確認し�
 >
 >Java 版 AppMeasurement は、現在 Experience Cloud Identity Service をサポートしていません。
 
-## データ挿入 API {#section-955ce7664a4646d38b3005cb2df40baf}
+## Data Insertion API {#section-955ce7664a4646d38b3005cb2df40baf}
 
 `<visitorID>` 要素に Analytics 訪問者 ID を含めます（設定されている場合）。
 
@@ -32,4 +32,4 @@ Experience Cloud 訪問者 ID と Analytics 訪問者 ID の両方を確認し�
 
 ## Java 版 AppMeasurement {#section-d664b94934924d048300d9c2b6560085}
 
-Java 版 AppMeasurement は、現在 Experience Cloud Identity Service をサポートしていません。
+Java 版 AppMeasurement は、現在 Experience Cloud ID サービスをサポートしていません。
