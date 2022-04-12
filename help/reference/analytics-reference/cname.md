@@ -3,10 +3,10 @@ description: メインのエントリサイトがあり、顧客が他のドメ�
 keywords: 操作の順序;ID サービス
 title: CNAME 実装の概要
 exl-id: f95dda3c-7bb2-4c7d-a25a-a4d20b58fe27
-source-git-commit: 61f9f1888430ff0fdbb90a8cf6561bf23d204a45
-workflow-type: ht
-source-wordcount: '266'
-ht-degree: 100%
+source-git-commit: d2586fc722be25df1b82caaf2cc6de6a2a6c31bf
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 92%
 
 ---
 
@@ -16,4 +16,4 @@ CNAME 実装を使用すると、アドビで使用される収集ドメイン�
 
 CNAME 実装には Cookie の有効期間に関するメリットはありませんが、他にもメリットがある場合があります。これらのメリットには、広告ブロッカーや、データがトラッカーとして分類するドメインに送信されるのを防ぐ一般的でないブラウザーなどが含まれます。このような場合、CNAME を使用すると、これらのツールを使用しているユーザーのデータ収集が中断されるのを防ぐことができます。
 
-さらに、CNAME 実装では、ユーザーのヒットが最初にルーティングされる場所を制御する&#x200B;**[!UICONTROL カスタム RDC タイプの選択]**&#x200B;を指定できます。ほとんどのお客様は、カスタム RDC タイプを使用しません。
+また、CNAME 実装では、次のことが可能です。 [カスタム RDC タイプを選択](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=ja) ：ユーザーのヒットが最初にルーティングされる場所を制御します。 ほとんどのお客様は、カスタム RDC タイプを使用しません。
