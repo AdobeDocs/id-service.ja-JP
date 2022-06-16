@@ -6,9 +6,9 @@ breadcrumb-title: ID サービスガイド
 user-guide-description: ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。このサービスを、Analytics、Audience Manager、Target などのサービスや、その他の Experience Cloud のソリューションまたは機能の ID 生成コードの代わりに使用できます。
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 121fde9981e85da6cc56eec35fc931d6040356d7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -117,4 +117,4 @@ ht-degree: 98%
    + [2017 年リリースノート](release-notes/notes-2017.md)
    + [2016 年リリースノート](release-notes/notes-2016.md)
    + [2015 年リリースノート](release-notes/notes-2015.md)
-+ [目次に表示されない Analytics テスト](analytics-test-file-hidetoc.md)
++ [TOC に非表示の分析テスト](analytics-test-file-hidetoc.md)
