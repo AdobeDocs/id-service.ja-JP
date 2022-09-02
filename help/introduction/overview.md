@@ -3,9 +3,9 @@ description: Adobe Experience Cloud における Experience Cloud Identity Servi
 title: Experience Cloud ID サービスの概要
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
 source-git-commit: 953a4932e581a7a0019bec354201be4bc39f8b6b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 97%
 
 * プロファイルと ID のリンクに使用できる共通キーまたは ID を作成します。
 * 複数のソリューションにわたってデバイスを一意に識別します。
-* 顧客のドメインにファーストパーティ Cookie を設定し、同じドメインで確実に追跡できるようにします。 詳しくは、[Cookie と Experience Cloud ID サービス](./cookies.md)に関するドキュメントを参照してください。
+* 同じドメインでトラッキングを確実に行えるように、顧客のドメインにファーストパーティ Cookie を設定します。詳しくは、[Cookie と Experience Cloud ID サービス](./cookies.md)に関するドキュメントを参照してください。
 * エイリアス と ID マッピングを Experience Cloud の顧客とパートナーから受け取る。
 * Experience Cloud 内の ID 同期を管理する。
 * 広告技術エコシステム全体にわたり様々なサードパーティとの ID 同期をサポートする。
