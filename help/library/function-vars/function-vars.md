@@ -4,13 +4,13 @@ keywords: 組織 ID;ID サービス
 title: 設定
 exl-id: a369f624-d263-4287-bb7e-b89d584fa245
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '85'
 ht-degree: 100%
 
 ---
 
-# 設定{#configurations}
+# 設定 {#configurations}
 
 これらのプロパティを Visitor.getInstance 静的メソッドに渡して ID サービスを設定します。
 
