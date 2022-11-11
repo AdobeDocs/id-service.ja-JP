@@ -3,9 +3,9 @@ description: ID のリクエストと応答のプロセスについて、概要�
 keywords: ID サービス
 title: Experience Cloud Identity Service による ID のリクエスト方法と設定方法
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
 workflow-type: ht
-source-wordcount: '762'
+source-wordcount: '746'
 ht-degree: 100%
 
 ---
@@ -17,8 +17,6 @@ ID のリクエストと応答のプロセスについて、概要を説明し�
 >[!NOTE]
 >
 >Experience Cloud Identity Service による訪問者 ID の作成方法がわからない場合は、[Experience Cloud](../introduction/cookies.md) を参照してください。
-
-**ヒント：** [クロスドメイントラッキングに関する ID サービスのビデオ](https://helpx.adobe.com/jp/marketing-cloud-core/kb/MCID/CrossDomain.html)も参照してください。
 
 ## Experience Cloud ID のリクエスト {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
