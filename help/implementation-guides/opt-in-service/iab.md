@@ -1,11 +1,11 @@
 ---
-description: IAB Transparency and Consent Framework（TCF）用のオプトインの Audience Manager プラグインを使用して、同社の同意管理プラットフォーム（CMP）に接続します。
+description: IAB Transparency and Consent Framework(TCF) 用のオプトインのAudience Managerプラグインを使用して、同社の同意管理プラットフォーム (CMP) に接続します。
 title: IAB フレームワークを使用したオプトインサービスの使用
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '468'
-ht-degree: 100%
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 89%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 オプトインを IAB TCF と統合するには、以下の手順を完了する必要があります。
 
-1. IAB をサポートし [IAB ベンダーとして登録されている](https://vendorlist.consensu.org/vendorlist.json) CMP を実装するか、IAB TCF の仕様を実装する社内 CMP を開発して IAB TCF に登録します。
+1. IAB をサポートし IAB ベンダーとして登録されている CMP を実装するか、IAB TCF の仕様を実装する社内 CMP を開発して IAB TCF に登録します。
 1. Adobe JS を読み込む前に、`__tcfapi` を定義するか読み込みます。
 
 詳細については、[Interactive Advertising Bureau のドキュメント](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/TCF-Implementation-Guidelines.md)を参照してください。

@@ -3,8 +3,8 @@ description: 一部の実装では、追加の Analytics イベント（購入�
 keywords: ID サービス
 title: JavaScript を利用したサーバー側実装
 exl-id: 1986ee11-2021-4f34-bb56-6eaa87b6dd6d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Experience Cloud 訪問者 ID と Analytics 訪問者 ID の両方を確認し�
 
 `<marketingCloudVisitorID>` 要素に Experience Cloud 訪問者 ID を含めます。
 
-[サポートされる XML タグ](https://www.adobe.io)を参照してください。
+[サポートされる XML タグ](https://developer.adobe.com/)を参照してください。
 
 ## Java 版 AppMeasurement {#section-d664b94934924d048300d9c2b6560085}
 
