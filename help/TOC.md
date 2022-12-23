@@ -3,19 +3,19 @@ cloud: platform-cloud
 audience: end-user
 user-guide-title: Experience Cloud ID サービスのヘルプ
 breadcrumb-title: ID サービスガイド
-user-guide-description: Adobe Experience Cloud ID サービスは、Experience Cloud内のすべてのソリューションにわたって訪問者を識別する、普遍的、永続的な ID を提供します。 これは、Experience Cloudソリューションやサービスの従来の ID 生成コードを置き換えるのに役立ちます。
+user-guide-description: Adobe Experience Cloud ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。これは、Experience Cloud ソリューションおよびサービスの従来の ID 生成コードを置き換えるのに役立ちます。
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '393'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
 # Experience Cloud ID サービスのヘルプ {#using}
 
-+ [ID サービスヘルプ](home.md)
++ [ID サービスのヘルプ](home.md)
 + 概要 {#intro}
    + [概要](introduction/overview.md)
    + [ID サービスについて](introduction/about-id-service.md)
