@@ -4,13 +4,13 @@ keywords: ID サービス
 title: appendSupplementalDataIDTo
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
 source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
-workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 96%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
-# appendSupplementalDataIDTo{#appendsupplementaldataidto}
+# appendSupplementalDataIDTo {#appendsupplementaldataidto}
 
 このヘルパーメソッドを使用すると、補助的なデータ ID（SDID）をクエリ文字列パラメーターとしてリダイレクト URL に追加できます。 これは、A4T の使用時に、SDID をあるページから別のページへと保持し、それらの個別の訪問を結合する必要がある場合に便利です。 この関数を使用するには、ソースドメインと宛先ドメインに同じ組織 ID を持つ ID サービスを実装しておく必要があります。
 
