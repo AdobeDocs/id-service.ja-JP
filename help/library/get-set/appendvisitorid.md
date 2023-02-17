@@ -3,10 +3,10 @@ description: この関数を使用すると、ブラウザーでサードパー�
 keywords: ID サービス
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
+source-git-commit: 622f785384386e108f54b7e5381cc80f53b3ef8e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 100%
+source-wordcount: '378'
+ht-degree: 93%
 
 ---
 
@@ -38,6 +38,10 @@ ID サービスは、ユーザーがサイトを訪問したときにファー�
 詳しくは、コードサンプルを参照してください。
 
 ## 訪問者 ID コードサンプルの追加 {#section-62d55f7f986542b0b9238e483d50d7b0}
+
+>[!IMPORTANT]
+>
+>appendVisitorsIDsTo を介して URL に渡された値を取得するには、 [overwriteCrossDomainMDCIDAndAID](../function-vars/overwrite-visitor-id.md) 変数を true に設定する必要があります。
 
 次の例では、` Visitor.appendVisitorIDsTo( *`url`*)` の基本を学ぶことができます。設定が完了すると、JavaScript コードは以下の例のようになります。
 
