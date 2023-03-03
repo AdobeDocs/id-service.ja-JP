@@ -4,9 +4,9 @@ keywords: ID サービス
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 source-git-commit: 7d37d9ca44db9d7a8d3b32d9a5d5a47d3fa137ce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ID サービスは、ユーザーがサイトを訪問したときにファー�
 
 >[!IMPORTANT]
 >
->appendVisitorsIDsTo を介して URL に渡された値を取得するには、 [overwriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) 変数を true に設定する必要があります。
+>appendVisitorsIDsTo を介して URL に渡された値を取得するには、[overwriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) 変数を true に設定する必要があります。
 
 次の例では、` Visitor.appendVisitorIDsTo( *`url`*)` の基本を学ぶことができます。設定が完了すると、JavaScript コードは以下の例のようになります。
 
