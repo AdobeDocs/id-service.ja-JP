@@ -3,10 +3,10 @@ description: ID サービスは組織 ID、Experience Cloud AMCV Cookie およ�
 keywords: playstation;ID サービス
 title: Cookie と Experience Cloud Identity Service
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '932'
-ht-degree: 100%
+source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
+workflow-type: tm+mt
+source-wordcount: '955'
+ht-degree: 96%
 
 ---
 
@@ -113,7 +113,9 @@ AMCVS Cookie は、ブラウザーのファーストパーティドメインに�
  </tbody> 
 </table>
 
-関連情報については、[Demdex ドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja)を参照してください。
+Demdex に関する開示の詳細については、 [Audience Managerデバイスのストレージ開示](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
+
+関連情報については、 [demdex ドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja).
 
 ## Experience Cloud ID の生成 {#section-15f69c0bac394b4b9966a23fbc586d17}
 
