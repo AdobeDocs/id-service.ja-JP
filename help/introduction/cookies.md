@@ -4,9 +4,9 @@ keywords: playstation;ID サービス
 title: Cookie と Experience Cloud Identity Service
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '955'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -113,9 +113,9 @@ AMCVS Cookie は、ブラウザーのファーストパーティドメインに�
  </tbody> 
 </table>
 
-Demdex に関する開示の詳細については、 [Audience Managerデバイスのストレージ開示](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json).
+Demdex に関する開示について詳しくは、[Audience Manager デバイスのストレージの開示](https://aam-iab-tcf-vendor.s3.amazonaws.com/aam_device_storage_disclosures.json)にアクセスしてください。
 
-関連情報については、 [demdex ドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja).
+関連情報については、[Demdex ドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja)に関するドキュメントを参照してください。
 
 ## Experience Cloud ID の生成 {#section-15f69c0bac394b4b9966a23fbc586d17}
 
