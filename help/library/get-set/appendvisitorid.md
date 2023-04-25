@@ -4,9 +4,9 @@ keywords: ID サービス
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 source-git-commit: 70e0ff00be9037b475084a906405180107f2514c
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '337'
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ ID サービスは、ユーザーがサイトを訪問したときにファー�
 
 ## 訪問者 ID コードサンプルの追加 {#section-62d55f7f986542b0b9238e483d50d7b0}
 
-次のサンプルコードは、 `appendVisitorIDsTo` 関数：
+次のコード例では、`appendVisitorIDsTo` 関数の基本を学ぶことができます。
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];
