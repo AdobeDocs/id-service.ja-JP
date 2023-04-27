@@ -2,10 +2,10 @@
 description: オプトインサービスを使用すると、サイトを訪問したユーザーのデバイスまたはブラウザーに Cookie を設定できるかどうかを訪問者が決定するようにプロトコルを設定できます。
 title: オプトインサービス
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '507'
-ht-degree: 100%
+source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 オプトインサービスを使用すると、訪問者が複数のアドビソリューションのオプトインを一度に実行できるか、権限に合わせてソリューションを順番に表示できるかを指定できます。承認プロセスが完了し、顧客によって記録されると、すべてのアドビソリューションから CMP 訪問者の承認を取得できます。
 
-オプトインサービスは、 [Adobe Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=ja) を[オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)と共に使用すると、容易に実装および設定できます。 また、[DTM](../../implementation-guides/opt-in-service/optin-dtm.md) を使用して実装および設定することもできます。
+オプトインサービスは、 [Adobe Experience Platformのタグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja) と [オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md). また、[DTM](../../implementation-guides/opt-in-service/optin-dtm.md) を使用して実装および設定することもできます。
 
 開始するには、[オプトインサービスの設定](../../implementation-guides/opt-in-service/getting-started.md)を参照してください。
 

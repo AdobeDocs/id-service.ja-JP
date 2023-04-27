@@ -3,9 +3,9 @@ description: Experience Cloud ID Service（ECID）は、顧客 ID または電�
 keywords: ID サービス
 title: setCustomerIDs の SHA256 ハッシュサポート
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
-source-wordcount: '606'
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '602'
 ht-degree: 100%
 
 ---
@@ -67,9 +67,9 @@ ts=1563299964843
 
 ## Adobe Experience Platform Launch でのアクションの追加 {#add-action-launch}
 
-Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。Platform Launch について詳しくは、[Launch 製品ドキュメント](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=ja)を参照してください。
+Experience Platform Launch は、アドビが提供する次世代タグ管理機能です。Platform Launch について詳しくは、[Launch 製品ドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を参照してください。
 
-Launch にアクションを追加するには、Adobe Launch の[ルールドキュメント](https://docs.adobe.com/help/ja-JP/launch/using/reference/manage-resources/rules.html)を読み、以下のスクリーンキャプチャを参照してください。
+Launch にアクションを追加するには、Adobe Launch の[ルールドキュメント](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=ja)を読み、以下のスクリーンキャプチャを参照してください。
 
 ![](/help/reference/assets/hashing-support.png)
 

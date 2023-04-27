@@ -3,9 +3,9 @@ description: ここでは、Experience Cloud Identity Service に必要な適切
 keywords: ID サービス
 title: Experience Cloud Identity Service の要件
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: ht
-source-wordcount: '649'
+source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+workflow-type: tm+mt
+source-wordcount: '650'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>不明</b> </p> </td> 
-   <td colname="col2"> <p> 会社の <span class="keyword">Experience Cloud</span> のステータスが不明である場合は、会社のアドビアカウントの管理者に、会社のメンバーが Adobe ID を使用して <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a> にログインできるかどうかを問い合わせてください。ログインできる場合は有効であり、管理者が組織 ID を参照できる状態にあります。この ID を探す方法については、<a href="https://docs.adobe.com/help/ja-JP/core-services/interface/experience-cloud.html" format="https" scope="external">Experience Cloud 管理</a>の「管理ページ」の節を参照してください。 </p> </td> 
+   <td colname="col2"> <p> 会社の <span class="keyword">Experience Cloud</span> のステータスが不明である場合は、会社のアドビアカウントの管理者に、会社のメンバーが Adobe ID を使用して <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a> にログインできるかどうかを問い合わせてください。ログインできる場合は有効であり、管理者が組織 ID を参照できる状態にあります。この ID を探す方法については、<a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=ja" format="https" scope="external">Experience Cloud 管理</a>の「管理ページ」の節を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>無効</b> </p> </td> 

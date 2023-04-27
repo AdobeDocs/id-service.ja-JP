@@ -3,10 +3,10 @@ description: この関数を使用すると、ブラウザーでサードパー�
 keywords: ID サービス
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: 70e0ff00be9037b475084a906405180107f2514c
-workflow-type: ht
-source-wordcount: '337'
-ht-degree: 100%
+source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 93%
 
 ---
 
@@ -42,6 +42,10 @@ ID サービスは、ユーザーがサイトを訪問したときにファー�
 ## 訪問者 ID コードサンプルの追加 {#section-62d55f7f986542b0b9238e483d50d7b0}
 
 次のコード例では、`appendVisitorIDsTo` 関数の基本を学ぶことができます。
+
+>[!TIP]
+>
+>このコードは、Adobe Analytics拡張機能の一部であるカスタムコードエディターに配置するか、または [AppMeasurement.js](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=ja).
 
 ```js
 var adbeDomains = ["marketo.com", "figma.com", "workfront.com"];

@@ -2,10 +2,10 @@
 description: Experience Cloud ソリューション（オプトインではカテゴリーと呼ばれます）で使用される単一の参照ポイントとしてオプトインサービスを実装し、訪問者のデバイスで Cookie を作成するかどうかを決定します。
 title: オプトインサービスの設定
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
-source-wordcount: '908'
-ht-degree: 100%
+source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Experience Cloud ソリューション（オプトインではカテゴリーと
 
 1. 会社のプライバシー要件は、GDPR への準拠を選択する方法によって異なります。 会社のプライバシーチームが事前同意状態で使用しても問題ないライブラリを確認してください。
 
-[Adobe Launch](https://experienceleague.adobe.com/docs/launch/using/home.html?lang=ja) を使用している場合は、[オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)を活用してオプトインサービスを設定します。
+を使用する場合 [Adobe Experience Platformのタグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)、 [オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md) オプトインサービスを設定する場合。
 
 ## オプトインのカテゴリー {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
