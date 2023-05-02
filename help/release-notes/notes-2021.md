@@ -2,30 +2,31 @@
 description: Experience Cloud Identity Service の機能リリース、更新、変更点です。
 keywords: ID サービス
 title: 2021年リリースノート
-source-git-commit: dce2c0036f697507381d0763c2f6a9538155681c
-workflow-type: tm+mt
+exl-id: f0bbb100-49a9-4bba-8cee-5f40bec87984
+source-git-commit: fcd3e8b65bb84e94eabac7ffec6a34f4cf75ec3d
+workflow-type: ht
 source-wordcount: '103'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
-# Experience CloudID サービスリリースノート — 2021 年
+# Experience Cloud ID サービスリリースノート - 2021
 
 Experience Cloud ID サービスの機能リリース、更新、変更点です。
 
-## 訪問者 5.3.0
+## Visitor 5.3.0
 
 Visitor 5.3.0 のリリースには、次の更新が含まれています。
 
 * ローカル ECID を生成するようにアルゴリズムを更新しました。
-* での最新のオプトイン `Secure` および `SameSite` プライバシー cookie のフラグ。
+* プライバシー cookie の `Secure` および `SameSite` フラグを使用した最新のオプトイン。
 * ページが子 iFrame に読み込まれる際の Firefox ブラウザーの問題に対するパッチ修正。
 
-## 訪問者 5.2.0
+## Visitor 5.2.0
 
-訪問者 5.2.0 のリリースには、次の更新が含まれています。
+Visitor 5.2.0 のリリースには、次の更新が含まれています。
 
-* このバージョンでは、イベントを導入します `onRecieveEcid`:ECID が ID サービスから受け取られると呼び出されます。 以下に例を示します。
+* このバージョンでは、ID サービスから ECID を受信した際に呼び出されるイベント `onRecieveEcid` が導入されています。以下に例を示します。
 
 ```js
 visitorInstance.onRecieveEcid(callback(ecid){
