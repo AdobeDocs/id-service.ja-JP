@@ -3,9 +3,9 @@ description: Experience Cloud ソリューション（オプトインではカ�
 title: オプトインサービスの設定
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '911'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Experience Cloud ソリューション（オプトインではカテゴリーと
 
 1. 会社のプライバシー要件は、GDPR への準拠を選択する方法によって異なります。 会社のプライバシーチームが事前同意状態で使用しても問題ないライブラリを確認してください。
 
-を使用する場合 [Adobe Experience Platformのタグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)、 [オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md) オプトインサービスを設定する場合。
+[Adobe Experience Platform のタグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を使用している場合は、[オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)を活用してオプトインサービスを設定します。
 
 ## オプトインのカテゴリー {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
