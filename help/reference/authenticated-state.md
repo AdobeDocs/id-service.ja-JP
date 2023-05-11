@@ -4,9 +4,9 @@ keywords: ID サービス
 title: 顧客 ID と認証状態
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '629'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -217,4 +217,4 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## Analytics および Audience Manager ユーザー向けの注意点 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトが、データソースに関連付けられた統合コードと一致している必要があります。詳しくは、[マージルールコードの設定](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=en#configure-merge-rule-code)ドキュメントの「[!UICONTROL 訪問者 ID サービス]」の節を参照してください。
+宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトが、データソースに関連付けられた統合コードと一致している必要があります。詳しくは、[マージルールコードの設定](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=ja#configure-merge-rule-code)ドキュメントの「[!UICONTROL 訪問者 ID サービス]」の節を参照してください。
