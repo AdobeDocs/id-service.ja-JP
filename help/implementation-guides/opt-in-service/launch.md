@@ -3,9 +3,9 @@ description: Adobe Experience Platform Launch を使用したオプトイン用�
 title: Launch を使用したオプトインの設定
 exl-id: 9e9d1e2b-196f-474c-b872-de4329dcb017
 source-git-commit: 5858933e9d51ec97b1ba7a8fbe483f1919954543
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '171'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,6 +23,6 @@ Experience Cloud ID 拡張がまだインストールされていない場合は
 
 拡張機能を設定するには、「*拡張機能*」タブを開き、拡張機能の上にカーソルを置きます。 次に、「*設定*」をクリックします。
 
-詳しくは、 [Adobe Experience Cloud ID サービス拡張機能の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=ja).
+その他の参照情報については、[Adobe Experience Cloud ID サービス拡張機能の概要](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=ja)を参照してください。
 
 ![](assets/optin-launch.jpg)
