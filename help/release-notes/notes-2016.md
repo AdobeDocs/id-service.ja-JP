@@ -2,10 +2,12 @@
 description: 2016 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
 keywords: ID サービス
 title: 2016 年リリースノート
+feature-set: Experience Cloud Services
+feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
 workflow-type: ht
-source-wordcount: '1146'
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
