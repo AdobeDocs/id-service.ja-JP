@@ -6,8 +6,8 @@ feature-set: Experience Cloud Services
 feature: TK421
 exl-id: 5e905925-54ba-43ce-ae87-a9bf193d7b95
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '105'
 ht-degree: 100%
 
 ---
