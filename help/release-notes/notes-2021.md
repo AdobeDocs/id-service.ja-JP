@@ -4,7 +4,7 @@ keywords: ID サービス
 title: 2021年リリースノート
 exl-id: f0bbb100-49a9-4bba-8cee-5f40bec87984
 source-git-commit: fcd3e8b65bb84e94eabac7ffec6a34f4cf75ec3d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '103'
 ht-degree: 100%
 

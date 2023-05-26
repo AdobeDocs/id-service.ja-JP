@@ -4,7 +4,7 @@ keywords: ID サービス
 title: resetState
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 100%
 

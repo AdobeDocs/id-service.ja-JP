@@ -3,7 +3,7 @@ description: 同意管理プラットフォーム（CMP）をオプトインの 
 title: IAB フレームワークを使用したオプトインサービスの使用
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 100%
 

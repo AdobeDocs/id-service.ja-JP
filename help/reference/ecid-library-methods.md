@@ -3,7 +3,7 @@ title: Safari ITP での ECID ライブラリの手法
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '791'
 ht-degree: 100%
 

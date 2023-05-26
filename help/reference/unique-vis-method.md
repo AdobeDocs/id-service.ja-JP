@@ -3,8 +3,8 @@ title: ユニーク訪問者数の識別
 description: Adobe ECID（ID サービス）のドキュメント
 exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
 source-git-commit: c65816530ae2269b216f60b9b0450077e5aaac2f
-workflow-type: ht
-source-wordcount: '253'
+workflow-type: tm+mt
+source-wordcount: '250'
 ht-degree: 100%
 
 ---
@@ -23,6 +23,6 @@ ht-degree: 100%
 |  5  |  [HTTP モバイル加入者ヘッダー](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja) |  2  |  デバイスがモバイルデバイスとして認識されている。  |
 |  6  |  [IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=ja) |  1  |  訪問者のブラウザーで cookie が許可されていない。 |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ユニーク訪問者数のレポート方法について詳しくは、[Analytics のユニーク訪問者数](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=ja)を参照してください。

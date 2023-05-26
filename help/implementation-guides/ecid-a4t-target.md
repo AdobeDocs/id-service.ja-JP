@@ -4,7 +4,7 @@ keywords: ID サービス
 title: A4T での ID サービスの使用と Target のサーバーサイド実装
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 100%
 

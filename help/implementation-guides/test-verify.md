@@ -4,7 +4,7 @@ keywords: ID サービス
 title: Experience Cloud Identity Service のテストと検証
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 100%
 
@@ -90,7 +90,7 @@ Charles を使用して HTTP 呼び出しを監視する場合、どこを見て
 
 **Charles での失敗した ID サービス応答**
 
-DCS 応答に MID がない場合、アカウントは適切にプロビジョニングされています。失敗した応答は、以下に示すように、「[!UICONTROL 応答]」タブにエラーコードとメッセージを返します。DCS 応答にこのメッセージが表示された場合は、カスタマーケアにお問い合わせください。
+DCS 応答に MID がない場合、アカウントは適切にプロビジョニングされています。失敗した応答は、以下に示すように、「[!UICONTROL 応答]」タブにエラーコードとメッセージを返します。DCS 応答にこのメッセージが表示された場合は、カスタマーケアへのお問い合わせ。
 
 ![](assets/charles_response_unsuccessful.png)
 

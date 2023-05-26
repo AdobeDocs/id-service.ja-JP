@@ -4,7 +4,7 @@ keywords: ID サービス
 title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 100%
 

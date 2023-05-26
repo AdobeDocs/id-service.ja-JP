@@ -4,7 +4,7 @@ keywords: ID サービス
 title: メソッド
 exl-id: 59a930f0-c0a8-477e-abad-f019d7d02d3b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 100%
 

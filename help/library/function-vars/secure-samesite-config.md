@@ -4,7 +4,7 @@ keywords: ID サービス
 title: セキュア設定と SameSite 設定
 exl-id: c3bc44fc-5adc-4eae-8169-9d731d148458
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 100%
 

@@ -4,7 +4,7 @@ keywords: ID サービス
 title: 2022年リリースノート
 exl-id: 1550f43f-81be-447e-904c-b408785965fe
 source-git-commit: fcd3e8b65bb84e94eabac7ffec6a34f4cf75ec3d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 100%
 

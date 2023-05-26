@@ -4,7 +4,7 @@ keywords: ID サービス
 title: Dynamic Tag Management を使用した実装
 exl-id: 37ccc919-3015-42fa-a88f-639cdf726f48
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2008'
 ht-degree: 100%
 
@@ -273,7 +273,7 @@ Charles を使用して HTTP 呼び出しを監視する場合、どこを見て
 
 ### Charles での失敗した ID サービス応答
 
-DCS 応答に MID がない場合、アカウントは適切にプロビジョニングされています。失敗した応答は、以下に示すように、「[!UICONTROL 応答]」タブにエラーコードとメッセージを返します。DCS 応答にこのメッセージが表示された場合は、カスタマーケアにお問い合わせください。
+DCS 応答に MID がない場合、アカウントは適切にプロビジョニングされています。失敗した応答は、以下に示すように、「[!UICONTROL 応答]」タブにエラーコードとメッセージを返します。DCS 応答にこのメッセージが表示された場合は、カスタマーケアへのお問い合わせ。
 
 ![](assets/charles_response_unsuccessful.png)
 
