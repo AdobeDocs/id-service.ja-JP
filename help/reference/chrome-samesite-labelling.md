@@ -2,10 +2,10 @@
 title: Google Chrome SameSite のラベル付けの変更
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: ee4b7f8df5766372034da2a76e7acb81ba2a65f0
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 100%
+source-wordcount: '1064'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ SameSite 属性の詳細については、[Cookie 標準ドキュメント](http
 | ------ | ------------ |
 | `strict` | この設定を持つ Cookie は、参照元ページとランディングページの両方が Cookie と同じドメインに属している場合にのみ送信されます。 |
 | `lax` | この設定を持つ Cookie は、ブラウザーの URL に表示されるドメインが Cookie のドメインと一致する場合にのみ送信されます。これは、Chrome の Cookie の新しいデフォルトです。 |
-| `none` | この設定を持つ Cookie は、「クロスサイト」など、外部またはサードパーティからのアクセスに使用できます。この変更がおこなわれるより前、`none` は cookie に対するデフォルトの SameSite 設定でした。そのため、この設定を使用すると、cookie の動作が従来の動作と最も似た動作になります。ただし、Google では現在、この設定を持つ cookie に secure フラグを指定する必要があります。つまり、cookie は常に HTTPS 経由リクエストで作成および送信されます。secure フラグの付いていないクロスサイト cookie はすべて Google によって拒否されます。 |
+| `none` | この設定を持つ Cookie は、「クロスサイト」など、外部またはサードパーティからのアクセスに使用できます。 この変更がおこなわれるより前、`none` は cookie に対するデフォルトの SameSite 設定でした。そのため、この設定を使用すると、cookie の動作が従来の動作と最も似た動作になります。ただし、Google では現在、この設定を持つ cookie に secure フラグを指定する必要があります。つまり、cookie は常に HTTPS 経由リクエストで作成および送信されます。secure フラグの付いていないクロスサイト cookie はすべて Google によって拒否されます。 |
 
 ## Adobe Experience Cloud の顧客が知っておくべき情報
 
@@ -51,7 +51,7 @@ Chrome 80 で SameSite=`none` と secure フラグ設定の適用が開始され
 
 **宛先と Marketplace のパートナーに対して、cookie の一致が減少する可能性がある（Audience Manager のみ）**
 
-アドビは cookie の更新を制御できますが、必要な変更を加えるようパートナーを強制することはできません。宛先パートナーや Marketplace パートナーを使用している Audience Manager の顧客が、まだこれらの更新を行っていない場合、cookie の一致が減少する可能性があります。
+Adobeは cookie の更新を制御できますが、Adobeはパートナーに必要な変更を強制することはできません。 宛先パートナーや Marketplace パートナーを使用している Audience Manager の顧客が、まだこれらの更新を行っていない場合、cookie の一致が減少する可能性があります。
 
 **Analytics 対応のサードパーティ cookie（Analytics `s_vi` cookies のみ）**
 
@@ -117,6 +117,6 @@ Chrome 80 で SameSite=`none` と secure フラグ設定の適用が開始され
 | ------ | ---- | ------------------ | ---------------- |
 | _mkto_trk | クライアントサイドのファーストパーティ | 値は追加されません。*Chrome のデフォルトは `lax` 設定になります。 | 外部ページ用に設定可能 |
 
-> !![IMPORTANT] Adobe のサードパーティ cookie がサーバーサイドで設定されている
+>  Adobe のサードパーティ cookie がサーバーサイドで設定されている。
 
-詳しくは、[Target の Google Chrome SameSite ポリシー](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/google-chrome-samesite-cookie-policies.html?lang=ja)のドキュメントを参照してください。
+詳しくは、[Target の Google Chrome SameSite ポリシー](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/google-chrome-samesite-cookie-policies.html)のドキュメントを参照してください。
