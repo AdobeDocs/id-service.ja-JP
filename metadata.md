@@ -11,7 +11,7 @@ role: Architect, Developer, Data Architect, Data Engineer, User, Admin, Leader
 feature-set: Experience Cloud, Experience Platform
 feature: Identities, Integrations
 source-git-commit: 21947ac9d3764802507887f2cb7ede201fc7205c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '13'
 ht-degree: 100%
 
