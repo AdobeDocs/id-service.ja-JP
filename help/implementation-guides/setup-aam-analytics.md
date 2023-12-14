@@ -1,25 +1,24 @@
 ---
-description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Analytics および Audience Manager のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+description: これらの手順は、Experience CloudID サービスを使用し、データ収集タグを使用しない Analytics およびAudience Managerのお客様向けです。 ただし、ID サービスの実装にはタグを使用することを強くお勧めします。 タグは、実装ワークフローを効率化し、適切なコードの配置と順番を自動的に確認します。
 keywords: ID サービス
 title: Experience Cloud Identity Service の Analytics および Audience Manager への実装
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 100%
+source-wordcount: '1183'
+ht-degree: 91%
 
 ---
 
 # Experience Cloud Identity Service の Analytics および Audience Manager への実装{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Analytics および Audience Manager のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+これらの手順は、Experience CloudID サービスを使用し、 [データ収集タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja). ただし、ID サービスの実装にはタグを使用することを強くお勧めします。 タグは、実装ワークフローを効率化し、適切なコードの配置と順番を自動的に確認します。
 
 >[!IMPORTANT]
 >
 >* [始める前に、要件を確認してください](../reference/requirements.md)。
 >* この手順には、AppMeasurement が必要です。s_code を使用するお客様は、この手順を完了できません。
 >* このコードを本番環境に実装する前に、開発環境で設定してテストしてください。
-
 
 ## 手順 1：サーバーサイド転送の計画 {#section-880797cc992d4755b29cada7b831f1fc}
 
@@ -49,7 +48,6 @@ ID サービスでは、`VisitorAPI.js` コードライブラリが必要です�
 >
 >* 以前のバージョンの ID サービス API では、この関数を別の場所に別の構文で配置する必要がありました。[バージョン 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572) より前のバージョンから移行する場合は、ここで説明する新しい場所と構文について注意してください。
 >* すべて大文字で書かれたコードは、実際の値用のプレースホルダーです。このテキストを組織 ID、トラッキングサーバー URL、またはその他の指定された値に置き換えます。
-
 
 **パート 1：以下の Visitor.getInstance 関数をコピーします**
 
