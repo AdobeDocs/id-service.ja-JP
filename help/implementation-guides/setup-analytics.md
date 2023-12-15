@@ -1,24 +1,23 @@
 ---
-description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Analytics のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+description: これらの手順は、Experience CloudID サービスを使用し、データ収集タグを使用しない Analytics のお客様向けです。 ただし、ID サービスの実装にはタグを使用することを強くお勧めします。 タグは、実装ワークフローを効率化し、適切なコードの配置と順番を自動的に確認します。
 keywords: ID サービス
 title: Experience Cloud Identity Service の Analytics への実装
 exl-id: c0271e49-32e5-49ee-bb11-548751ccafad
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 100%
+source-wordcount: '1007'
+ht-degree: 90%
 
 ---
 
 # Experience Cloud Identity Service の Analytics への実装 {#implement-the-experience-cloud-id-service-for-analytics}
 
-これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Analytics のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+これらの手順は、Experience CloudID サービスを使用し、 [データ収集タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja). ただし、ID サービスの実装にはタグを使用することを強くお勧めします。 タグは、実装ワークフローを効率化し、適切なコードの配置と順番を自動的に確認します。
 
 >[!IMPORTANT]
 >
 >* [始める前に、要件を確認してください](../reference/requirements.md)。
 >* このコードを本番環境に実装する前に、開発環境で設定してテストしてください。
-
 
 次の手順に従い、Adobe Analytics 用 ID サービスを実装します。
 
@@ -48,7 +47,6 @@ ht-degree: 100%
 >
 >* 以前のバージョンの ID サービス API では、この関数を別の場所に別の構文で配置する必要がありました。[バージョン 1.4](../release-notes/notes-2015.md#section-f5c596f355b14da28f45c798df513572) より前のバージョンから移行する場合は、ここで説明する新しい場所と構文について注意してください。
 >* すべて大文字で書かれたコードは、実際の値用のプレースホルダーです。このテキストを組織 ID、トラッキングサーバー URL、またはその他の指定された値に置き換えます。
-
 
 **パート 1：以下の Visitor.getInstance 関数をコピーします**
 
@@ -126,7 +124,6 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 >
 >* [!DNL Experience Cloud] サーバー URL = トラッキングサーバー URL
 >* [!DNL Experience Cloud] サーバーセキュア URL = トラッキングサーバーセキュア URL
-
 
 トラッキングサーバーの見つけ方がわからない場合は、[FAQ](../faq-intro/faq.md) と [trackingServer および trackingServerSecure 変数の適切な設定](https://helpx.adobe.com/jp/analytics/kb/determining-data-center.html#)を参照してください。
 

@@ -1,24 +1,23 @@
 ---
-description: これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Target のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+description: これらの手順は、Experience CloudID サービスを使用し、データ収集タグを使用しない Target のお客様向けです。 ただし、ID サービスの実装にはタグを使用することを強くお勧めします。 タグは、実装ワークフローを効率化し、適切なコードの配置と順番を自動的に確認します。
 keywords: ID サービス
 title: Experience Cloud Identity Service の Target への実装
 exl-id: 7a387e98-c8fc-4904-942a-be5e527eada2
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
 workflow-type: tm+mt
-source-wordcount: '401'
-ht-degree: 100%
+source-wordcount: '398'
+ht-degree: 75%
 
 ---
 
 # Experience Cloud Identity Service の Target への実装{#implement-the-experience-cloud-id-service-for-target}
 
-これらの手順は、Experience Cloud Identity Service を使用し、Dynamic Tag Management（DTM）を使用しない Target のお客様向けです。ただし、ID サービスの実装に DTM を使用することを強くお勧めします。DTM は、実装ワークフローを合理化し、適切なコード配置と優先順位付けを自動的に確認します。
+これらの手順は、Experience CloudID サービスを使用し、 [データ収集タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja). ただし、ID サービスの実装にはタグを使用することを強くお勧めします。 タグは、実装ワークフローを効率化し、適切なコードの配置と順番を自動的に確認します。
 
 >[!IMPORTANT]
 >
 >* [始める前に、要件を確認してください](../reference/requirements.md)。
 >* このコードを本番環境に実装する前に、開発環境で設定してテストしてください。
-
 
 ## 手順 1：ID サービスコードの入手 {#section-b32ba0548aa546a79dd38be59832a53e}
 
