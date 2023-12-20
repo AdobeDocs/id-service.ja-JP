@@ -1,18 +1,18 @@
 ---
-description: これらの手順は、Experience CloudID サービスを使用し、データ収集タグを使用しない Analytics およびAudience Managerのお客様向けです。 ただし、ID サービスの実装にはタグを使用することを強くお勧めします。 タグは、実装ワークフローを効率化し、適切なコードの配置と順番を自動的に確認します。
+description: 次の説明は、Experience Cloud ID サービスを使用し、データ収集タグを使用しない Analytics および Audience Manager のお客様を対象としています。ただし、タグを使用して ID サービスを実装することを強くお勧めします。タグは、実装ワークフローを効率化し、適切なコードの配置とシーケンスを自動的に保証します。
 keywords: ID サービス
 title: Experience Cloud Identity Service の Analytics および Audience Manager への実装
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1183'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Experience Cloud Identity Service の Analytics および Audience Manager への実装{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
-これらの手順は、Experience CloudID サービスを使用し、 [データ収集タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja). ただし、ID サービスの実装にはタグを使用することを強くお勧めします。 タグは、実装ワークフローを効率化し、適切なコードの配置と順番を自動的に確認します。
+次の説明は、Experience Cloud ID サービスを使用し、[データ収集タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を使用しない Analytics および Audience Manager のお客様を対象としています。ただし、タグを使用して ID サービスを実装することを強くお勧めします。タグは、実装ワークフローを効率化し、適切なコードの配置とシーケンスを自動的に保証します。
 
 >[!IMPORTANT]
 >
