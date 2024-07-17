@@ -1,16 +1,16 @@
 ---
 description: 次の説明は、Experience Cloud ID サービスを使用し、データ収集タグを使用しない Analytics および Audience Manager のお客様を対象としています。ただし、タグを使用して ID サービスを実装することを強くお勧めします。タグは、実装ワークフローを効率化し、適切なコードの配置とシーケンスを自動的に保証します。
 keywords: ID サービス
-title: Experience Cloud Identity Service の Analytics および Audience Manager への実装
+title: Experience Cloud ID サービスの Analytics および Audience Manager への実装
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
 source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity Service の Analytics および Audience Manager への実装{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
+# Experience Cloud ID サービスの Analytics および Audience Manager への実装{#implement-the-experience-cloud-id-service-for-analytics-and-audience-manager}
 
 次の説明は、Experience Cloud ID サービスを使用し、[データ収集タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を使用しない Analytics および Audience Manager のお客様を対象としています。ただし、タグを使用して ID サービスを実装することを強くお勧めします。タグは、実装ワークフローを効率化し、適切なコードの配置とシーケンスを自動的に保証します。
 
@@ -172,7 +172,7 @@ ID サービスを使用するページと使用しないページが混在し�
 
 実装で s_vi Cookie を読み取る代わりに MID を取得できるようになった後に、猶予期間を停止します。
 
-詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
+詳しくは、[Cookie と Experience Cloud ID サービス](../introduction/cookies.md)を参照してください。
 
 **クリックストリームデータの統合**
 
@@ -192,7 +192,7 @@ ID サービスの実装状況をテストするには、以下の項目を確�
 
 * [AMCV Cookie](../introduction/cookies.md)（ページがホストされているドメイン内）
 * Analytics イメージリクエストの MID 値（[Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=ja) を使用）
-* 詳しくは、[Experience Cloud Identity Service のテストと検証](../implementation-guides/test-verify.md)を参照してください。
+* 詳しくは、[Experience Cloud ID サービスのテストと検証](../implementation-guides/test-verify.md)を参照してください。
 
 サーバー側転送を検証するには、[サーバー側転送の実装の確認方法](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf-verify.html?lang=ja)を参照してください。
 

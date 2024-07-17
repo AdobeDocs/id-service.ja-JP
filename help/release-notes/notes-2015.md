@@ -5,7 +5,7 @@ title: 2015 年リリースノート
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '442'
 ht-degree: 100%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 2015 年 11 月
 
-児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。[Experience Cloud Identity Service での COPPA のサポート](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)を参照してください。バージョン 1.5.3 以降でサポートされています。
+児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。[Experience Cloud ID サービスでの COPPA のサポート](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)を参照してください。バージョン 1.5.3 以降でサポートされています。
 
 ## バージョン 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
@@ -34,7 +34,7 @@ ht-degree: 100%
 * 同期または送信するデータがない場合に、ID サービスが iframe をリクエストできないバグを修正しました。 （AAM-20164）
 * ID サービスでマルチパートのトップレベルドメイン Cookie を適切に設定できないバグを修正しました。 例えば、`my_company.co.uk` のようなドメインの場合、状況によっては、ID サービスは、`co.uk` にのみ Cookie を設定していました。（AN-104683）
 
-   これは、次の条件の&#x200B;*すべて*&#x200B;を満たす少数のクライアントにのみ影響がありました。
+  これは、次の条件の&#x200B;*すべて*&#x200B;を満たす少数のクライアントにのみ影響がありました。
 
    * ID サービスの使用。
    * [猶予期限&#x200B;](../reference/analytics-reference/grace-period.md)*を有効にしているか、*&#x200B;猶予期限がファーストパーティ cookie を使用していて、ユーザーが cookie をブロックしている。
@@ -44,7 +44,7 @@ ht-degree: 100%
 このリリースでのドキュメントの改訂には、次のものが含まれます。
 
 * [API メソッドとコードライブラリ](../library/library.md#concept-ff27497375644a898d47984aefb21c97)：コンテンツとテキストを再構成しました。ほとんどの場合、メソッドごとにページを設けました。
-* [Experience Cloud Identity Service の要件](../reference/requirements.md)：内容を改訂し、テキストを再構成しました。
+* [Experience Cloud ID サービスの要件](../reference/requirements.md)：内容を改訂し、テキストを再構成しました。
 
 ## バージョン 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 

@@ -1,18 +1,18 @@
 ---
-description: 2017 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
+description: 2017 年の Experience Cloud ID サービスの機能リリース、更新、変更点です。
 keywords: ID サービス
 title: 2017 年リリースノート
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 source-git-commit: 384b292413bbc7e43ade97e442ab7195f3b26c7a
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 100%
+source-wordcount: '714'
+ht-degree: 99%
 
 ---
 
 # 2017 年リリースノート {#release-notes}
 
-2017 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
+2017 年の Experience Cloud ID サービスの機能リリース、更新、変更点です。
 
 これらの変更点は、[Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)にも記載されています。
 
@@ -175,7 +175,7 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> ID サービス API のプロパティ、<span class="codeph">idSyncContainerID</span></p> </td> 
+   <td colname="col1"> <p> ID サービス API プロパティ、<span class="codeph"> idSyncContainerID</span></p> </td> 
    <td colname="col2"> <p>このプロパティは、ID 同期用に <span class="keyword">Audience Manager</span> で使用されるコンテナ ID を設定します。<a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 

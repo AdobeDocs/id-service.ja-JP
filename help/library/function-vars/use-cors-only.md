@@ -1,5 +1,5 @@
 ---
-description: ブラウザーが Experience Cloud Identity Service からリソースをリクエストする方法を制御するブール型フラグです（オプション）。
+description: ブラウザーが Experience Cloud ID サービスからリソースをリクエストする方法を制御するブール型フラグです（オプション）。
 keywords: ID サービス
 title: useCORSOnly
 exl-id: 049a082a-8e6b-44cc-bd05-c12aaf3cbe4d
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # useCORSOnly{#usecorsonly}
 
-ブラウザーが Experience Cloud Identity Service からリソースをリクエストする方法を制御するブール型フラグです（オプション）。
+ブラウザーが Experience Cloud ID サービスからリソースをリクエストする方法を制御するブール型フラグです（オプション）。
 
 **構文：** `useCORSOnly: true|false`（デフォルトは `false` です。）
 

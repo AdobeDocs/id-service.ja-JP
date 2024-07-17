@@ -1,16 +1,16 @@
 ---
 description: ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
 keywords: playstation;ID サービス
-title: Cookie と Experience Cloud Identity Service
+title: Cookie と Experience Cloud ID サービス
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 source-git-commit: 33e467ade389144423abf14539aad8a5a5f69d21
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '941'
 ht-degree: 100%
 
 ---
 
-# Cookie と Experience Cloud Identity Service{#cookies-and-the-experience-cloud-id-service}
+# Cookie と Experience Cloud ID サービス{#cookies-and-the-experience-cloud-id-service}
 
 ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
 
@@ -38,7 +38,7 @@ ID サービスによって設定される Cookie の属性は次のとおりで
 
 **名前**
 
-AMCV Cookie 名は、`AMCV_<variable name>@AdobeOrg` という構文に従います。この名前の「`<variable name>`」の部分は、Experience Cloud 組織 ID の一部を示すプレースホルダーです。ID サービスコードの `Visitor.getInstance` 関数によって、この ID が DCS に渡されます。
+AMCV Cookie 名は、`AMCV_<variable name>@AdobeOrg` という構文に従います。この名前の「`<variable name>`」要素は、Experience Cloud 組織 ID の一部を示すプレースホルダーです。ID サービスコードの `Visitor.getInstance` 関数によって、この ID が DCS に渡されます。
 
 完全形式の Cookie 名は以下のようになります。
 
@@ -68,7 +68,7 @@ AMCV Cookie は、ブラウザーのファーストパーティドメインに�
 
 **名前**
 
-AMCVS Cookie 名は、`AMCVS_####@AdobeOrg` 構文に従います。この名前の「####」の部分は、Experience Cloud 組織 ID の一部を示すプレースホルダーです。ID サービスコードの `theVisitor.getInstance` 関数によって、この ID が DCS に渡されます。
+AMCVS Cookie 名は、`AMCVS_####@AdobeOrg` 構文に従います。この名前の「####」要素は、Experience Cloud 組織 ID の一部を示すプレースホルダーです。ID サービスコードの `theVisitor.getInstance` 関数によって、この ID が DCS に渡されます。
 
 完全形式の Cookie 名は以下のようになります。
 

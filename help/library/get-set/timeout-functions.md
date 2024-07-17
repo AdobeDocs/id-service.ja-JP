@@ -5,7 +5,7 @@ title: callTimeOut メソッド
 exl-id: ff3a2c5e-a0a8-4257-b538-0e4ce454b4e8
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '125'
+source-wordcount: '129'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 100%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Experience Cloud Identity Service </p> </td> 
+   <td colname="col1"> <p>Experience Cloud ID サービス </p> </td> 
    <td colname="col2"> <p> <span class="codeph">var <span class="varname"> variableName</span> = visitor.MCIDCallTimedOut()</span> </p> </td> 
   </tr> 
   <tr> 

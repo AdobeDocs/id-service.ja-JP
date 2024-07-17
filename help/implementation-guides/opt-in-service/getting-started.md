@@ -4,7 +4,7 @@ title: オプトインサービスの設定
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '913'
 ht-degree: 100%
 
 ---
@@ -97,7 +97,7 @@ Visitor.getInstance("YOUR_ORG_ID", {
 
 ## オプトインワークフロー {#section-70cd243dec834c8ea096488640ae20a5}
 
-オプトインサービスでは、複数回のリクエストサイクルで権限を収集でき、環境設定が 1 つずつおこなわれるワークフローがサポートされています。以下の関数を使用して *に* true`shouldWaitForComplete` を指定すると、ソリューションでは、1 つのソリューションまたは全カテゴリーのサブセットに対する同意を収集してから、次のソリューションまたは全カテゴリーの別のサブセットに対する同意を収集することができます。最初の呼び出しから、フローの最後に `adobe.optIn.status` が呼び出されるまで、*プロパティは* pending`adobe.optIn.complete()` になります。この呼び出し後、ステータスは *complete* に設定されます。
+オプトインサービスでは、複数回のリクエストサイクルで権限を収集でき、環境設定が 1 つずつおこなわれるワークフローがサポートされています。以下の関数を使用して *に* true`shouldWaitForComplete` を指定すると、ソリューションでは、1 つのソリューションまたは全カテゴリーのサブセットに対する同意を収集してから、次のソリューションまたは全カテゴリーの別のサブセットに対する同意を収集することができます。最初の呼び出しから、フローの最後に `adobe.optIn.status` が呼び出されるまで、*プロパティは*&#x200B;保留`adobe.optIn.complete()`になります。この呼び出し後、ステータスは *complete* に設定されます。
 
 ```
 adobe.optIn.approve(['AAM', 'ECID'], true); 

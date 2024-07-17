@@ -5,7 +5,7 @@ title: 直接統合の使用例
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '440'
 ht-degree: 100%
 
 ---
@@ -17,9 +17,8 @@ ht-degree: 100%
 >[!TIP]
 >
 >* 使用例を参照する前に、[コード構文と変数](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)をよくお読みください。
->* MID について詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
+>* MID について詳しくは、[Cookie と Experience Cloud ID サービス](../introduction/cookies.md)を参照してください。
 >
-
 
 ## ユースケース 1：Experience Cloud ID（MID）は持っているが、自分の訪問者 ID を渡して認証状態を設定したい {#section-a67d89a343754d1286d03cf08d34b806}
 

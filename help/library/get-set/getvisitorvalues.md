@@ -5,7 +5,7 @@ title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '403'
 ht-degree: 100%
 
 ---
@@ -107,7 +107,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>訪問者の Experience Cloud ID です。 </p> <p><a href="../../introduction/cookies.md" format="dita" scope="local">Cookie と Experience Cloud Identity Service</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>訪問者の Experience Cloud ID です。 </p> <p><a href="../../introduction/cookies.md" format="dita" scope="local">Cookie と Experience Cloud ID サービス</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 

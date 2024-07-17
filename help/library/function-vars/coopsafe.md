@@ -5,7 +5,7 @@ title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '563'
 ht-degree: 100%
 
 ---
@@ -139,4 +139,3 @@ Wiki page https://wiki.corp.adobe.com/x/RCfFTg
 >[!MORELIKETHIS]
 >
 >* [DIL isCoopSafe](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/class-level-dil-methods/dil-coopsafe.html?lang=ja)
-

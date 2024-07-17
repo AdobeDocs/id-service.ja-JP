@@ -4,7 +4,7 @@ description: Adobe ECID（ID サービス）ライブラリのドキュメント
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '785'
 ht-degree: 100%
 
 ---
@@ -65,15 +65,15 @@ demdex.net に対して ID リクエストがおこなわれ、ECID が取得さ
 
 * 訪問者が自社の他のドメインを閲覧すると、Visitor.appendVisitorIDsTo(url) は、クエリパラメーターとして追加された ECID を含む URL を返します。
 
-   この URL を使用して、元のドメインから宛先ドメインにリダイレクトします。
+  この URL を使用して、元のドメインから宛先ドメインにリダイレクトします。
 
 * アドビに訪問者の ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から ECID が抽出されます。
 
-   このリクエストにはサードパーティ Cookie が含まれますが、この場合、サードパーティ Cookie を利用できません。
+  このリクエストにはサードパーティ Cookie が含まれますが、この場合、サードパーティ Cookie を利用できません。
 
 * 宛先ページの ID サービスコードは、ECID で渡された値を使用して訪問者を追跡します。
 
-   >[!NOTE]
-   >宛先ページが既に以前の訪問での ECID を持っている場合、既存の Cookie を上書きする決定がこの設定 overwriteCrossDomainMCIDAndAID によって制御されます。この設定について詳しくは、[overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md) を参照してください。
-   >
-   >このメソッドについて詳しくは、[appendVisitorIDsTo（クロスドメイントラッキング）](/help/library/get-set/appendvisitorid.md)リファレンスページを参照してください。
+  >[!NOTE]
+  >宛先ページが既に以前の訪問での ECID を持っている場合、既存の Cookie を上書きする決定がこの設定 overwriteCrossDomainMCIDAndAID によって制御されます。この設定について詳しくは、[overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md) を参照してください。
+  >
+  >このメソッドについて詳しくは、[appendVisitorIDsTo（クロスドメイントラッキング）](/help/library/get-set/appendvisitorid.md)リファレンスページを参照してください。

@@ -1,18 +1,18 @@
 ---
-description: Experience Cloud Identity Service をデプロイする前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法や JavaScript ファイルによってデータを収集する場合の潜在的な問題について理解する必要があります。
+description: Experience Cloud ID サービスをデプロイする前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法や JavaScript ファイルによってデータを収集する場合の潜在的な問題について理解する必要があります。
 keywords: ID サービス
-title: Experience Cloud Identity Service 移行の判断ポイント
+title: Experience Cloud ID サービス移行の判断ポイント
 exl-id: f2802db2-c95f-476f-8c60-f45e8312253c
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 100%
+source-wordcount: '625'
+ht-degree: 94%
 
 ---
 
-# Experience Cloud Identity Service 移行の判断ポイント
+# Experience Cloud ID サービス移行の判断ポイント
 
-Experience Cloud Identity Service をデプロイする前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法や JavaScript ファイルによってデータを収集する場合の潜在的な問題について理解する必要があります。
+Experience Cloud ID サービスをデプロイする前に、このサービスが複数のドメインでの訪問者トラッキングに与える影響と、異なる方法や JavaScript ファイルによってデータを収集する場合の潜在的な問題について理解する必要があります。
 
 この節に示す質問に答えながら、必要な移行手順について判断してください。
 
@@ -53,7 +53,7 @@ Experience Cloud Identity Service をデプロイする前に、このサービ�
  <tbody> 
   <tr> 
    <td colname="col1"> <p>複数のドメイン </p> </td> 
-   <td colname="col2"> <p>複数のドメインで訪問者を追跡しており、顧客が他のドメインを訪問する前にメインエントリサイトを最初に訪問してそこで顧客を識別する場合は、データ収集 CNAME を引き続き使用する必要があります。<!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>ID サービスを使用して CNAME を設定するには、<span class="codeph">visitor.marketingCloudServer</span> と <span class="codeph">visitor.marketingCloudServerSecure</span> の 2 つの追加のトラッキングサーバーパラメーターを指定する必要があることに注意してください。 </p> </td> 
+   <td colname="col2"> <p>複数のドメインをまたいで訪問者を追跡しており、顧客が他のドメインを訪問する前に顧客を識別できるメインエントリサイトもある場合は、データ収集 CNAME を引き続き使用する必要があります。<!--See <a href="../../reference/analytics-reference/cname.md#concept-4df91f8a30ad4ec7a01eb943d579cc9d" format="dita" scope="local"> Data Collection CNAMES and Cross Domain Tracking</a> for a detailed explanation.--> </p> <p>ID サービスを使用して CNAME を設定するには、<span class="codeph">visitor.marketingCloudServer</span> と <span class="codeph">visitor.marketingCloudServerSecure</span> の 2 つの追加のトラッキングサーバーパラメーターを指定する必要があることに注意してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>単一のドメイン </p> </td> 

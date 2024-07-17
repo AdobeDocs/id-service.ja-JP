@@ -1,18 +1,18 @@
 ---
-description: Experience Cloud Identity Service は、従来の Analytics 訪問者 ID 方式を置き換えるものです。
+description: Experience Cloud ID サービスは、従来の Analytics 訪問者 ID 方式を置き換えるものです。
 keywords: ID サービス
 title: Analytics および Experience Cloud ID の設定
 exl-id: 7399ea16-d13e-452c-b8d9-8d0699566aa2
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '885'
 ht-degree: 100%
 
 ---
 
 # Analytics および Experience Cloud ID の設定{#setting-analytics-and-experience-cloud-ids}
 
-Experience Cloud Identity Service は、従来の Analytics 訪問者 ID 方式を置き換えるものです。
+Experience Cloud ID サービスは、従来の Analytics 訪問者 ID 方式を置き換えるものです。
 
 ID サービスの実装後、AppMeasurement の前にこのコードが実行されます。ID サービスは Experience Cloud および Analytics の ID を取得するので、AppMeasurement が読み込まれたときには、これらの値が利用できる状態になっています。
 
@@ -90,4 +90,3 @@ JavaScript は、ファーストパーティドメイン（現在の Web サイ�
 >[!MORELIKETHIS]
 >
 >* [Analytics ID の操作の順序](../../reference/analytics-reference/analytics-order-of-operations.md#concept-b92935b4fff545adb4773f3728bc15ef)
-

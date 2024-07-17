@@ -1,16 +1,16 @@
 ---
 description: これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
 keywords: ID サービス
-title: Experience Cloud Identity Service との直接統合
+title: Experience Cloud ID サービスとの直接統合
 exl-id: 29565b74-5fe7-41f7-b278-6a90559faab9
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '632'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity Service との直接統合 {#direct-integration-with-the-experience-cloud-id-service}
+# Experience Cloud ID サービスとの直接統合 {#direct-integration-with-the-experience-cloud-id-service}
 
 これを実装すると、アドビの JavaScript コードや SDK コードを受け入れたり処理したりすることができないデバイスでも ID サービスを使用できるようになります。これには、ゲーム機やスマート TV など、インターネットに接続可能な機器が含まれます。構文、コードサンプル、定義については、この節を参照してください。
 
@@ -61,7 +61,7 @@ ID サービスは、以下のような JSON オブジェクトでデータを�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_mid</span> </p> </td> 
-   <td colname="col2"> <p>Experience Cloud 訪問者 IDです。<a href="../introduction/cookies.md" format="dita" scope="local">Cookie と Experience Cloud Identity Service</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud 訪問者 IDです。<a href="../introduction/cookies.md" format="dita" scope="local">Cookie と Experience Cloud ID サービス</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> d_orgid</span> </p> </td> 

@@ -1,18 +1,18 @@
 ---
-description: Experience Cloud Identity Service 地域 ID を返します。地域 ID（またはロケーションヒント）は、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
+description: Experience Cloud ID サービス地域 ID を返します。地域 ID（またはロケーションヒント）は、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
 keywords: ID サービス
 title: getLocationHint
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '177'
 ht-degree: 100%
 
 ---
 
 # getLocationHint{#getlocationhint}
 
-Experience Cloud Identity Service 地域 ID を返します。地域 ID（またはロケーションヒント）は、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
+Experience Cloud ID サービス地域 ID を返します。地域 ID（またはロケーションヒント）は、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
 
 **構文：** ` var *`変数名`* = visitor.getLocationHint()`
 

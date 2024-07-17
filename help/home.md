@@ -5,7 +5,7 @@ title: Experience Cloud ID サービス
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
 source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '355'
 ht-degree: 100%
 
 ---
@@ -30,9 +30,9 @@ Experience Cloud ID サービスは、Experience Cloud アプリケーション�
    <td colname="col1"> <p> <b>導入</b> </p> <p> 
      <ul id="ul_D5EC6A54A03F4AB595B588116A7C1296"> 
       <li id="li_845F6DE25A1241439BCDCBC00459D7EB"> <a href="introduction/overview.md" format="dita" scope="local"> 概要 </a> </li> 
-      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local">Experience Cloud Identity Service の要件</a> </li> 
+      <li id="li_47F399E1D4AF4F08BD647DF01A423BA7"> <a href="reference/requirements.md" format="dita" scope="local">Experience Cloud ID サービスの要件</a> </li> 
       <li id="li_CBEEE79B45644F28A52B58DDF23DAD4F"> <a href="https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja" format="html" scope="external">Platform タグを使用した標準実装 </a> </li> 
-     </ul> </p> <p><b>Experience Cloud ID Javascript ライブラリ</b> </p> <p>Experience Cloud Identity Service 向けの JavaScript は、<a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external">https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> にあります。 </p> <p> <b>新しいトピックまたは注目すべきトピック</b> </p> <p> 
+     </ul> </p> <p><b>Experience Cloud ID Javascript ライブラリ</b> </p> <p>Experience Cloud ID サービス向けの JavaScript は、<a href="https://github.com/Adobe-Marketing-Cloud/id-service/releases" format="https" scope="external">https://github.com/Adobe-Marketing-Cloud/id-service/releases</a> にあります。 </p> <p> <b>新しいトピックまたは注目すべきトピック</b> </p> <p> 
      <ul id="ul_B0A25B6827734D55BB1E20D12334AC21"> 
       <li id="li_A66924F4948F4A5ABA545A89A28A6F6A"><a href="implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360" format="dita" scope="local">オプトインサービス</a> </li> 
       <li id="li_92D49CB788AD478EA74BCF5328CB9A14"> <a href="library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues </a> </li> 

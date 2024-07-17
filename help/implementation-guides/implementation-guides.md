@@ -1,5 +1,5 @@
 ---
-description: Experience Cloud Identity Service の標準的な実装および非標準的な実装の手順とコードサンプルです。
+description: Experience Cloud ID サービスの標準的な実装および非標準的な実装の手順とコードサンプルです。
 keywords: ID サービス
 solution: Experience Cloud
 title: 実装ガイド
@@ -7,14 +7,14 @@ uuid: null
 exl-id: af6da32b-72d9-463d-a933-fd1fe960d4d8
 source-git-commit: 39eaffe8b166babb186ec9cd4c0da26b53b999ae
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '179'
 ht-degree: 100%
 
 ---
 
 # 実装ガイド
 
-Experience Cloud Identity Service の標準的な実装および非標準的な実装の手順とコードサンプルです。
+Experience Cloud ID サービスの標準的な実装および非標準的な実装の手順とコードサンプルです。
 
 >[!IMPORTANT]
 >
@@ -28,12 +28,12 @@ Experience Cloud Identity Service の標準的な実装および非標準的な�
 
 * [実装方法](implementation-methods.md)
 * [Experience Platform Launch を使用した実装](ecid-implement-with-launch.md)
-* [Experience Cloud Identity Service の Analytics への実装](setup-analytics.md)
-* [Experience Cloud Identity Service の Target への実装](setup-target.md)
-* [Experience Cloud Identity Service の Analytics および Audience Manager への実装](setup-aam-analytics.md)
-* [Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装](setup-aam-analytics-target.md)
-* [Target のサーバー側実装を使用する A4T での Experience Cloud Identity Service の使用](ecid-a4t-target.md)
-* [Experience Cloud Identity Service との直接統合](direct-integration.md)
+* [Experience Cloud ID サービスの Analytics への実装](setup-analytics.md)
+* [Experience Cloud ID サービスの Target への実装](setup-target.md)
+* [Experience Cloud ID サービスの Analytics および Audience Manager への実装](setup-aam-analytics.md)
+* [Experience Cloud ID サービスの Analytics、Audience Manager および Target への実装](setup-aam-analytics-target.md)
+* [Target のサーバー側実装を使用する A4T での Experience Cloud ID サービスの使用](ecid-a4t-target.md)
+* [Experience Cloud ID サービスとの直接統合](direct-integration.md)
 * [直接統合のユースケース](direct-integration-examples.md)
-* [Experience Cloud Identity Service のテストと検証](test-verify.md)
+* [Experience Cloud ID サービスのテストと検証](test-verify.md)
 * [オプトインサービスの概要](opt-in-service/optin-overview.md)

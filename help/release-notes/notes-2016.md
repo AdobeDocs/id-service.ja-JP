@@ -1,5 +1,5 @@
 ---
-description: 2016 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
+description: 2016 年の Experience Cloud ID サービスの機能リリース、更新、変更点です。
 keywords: ID サービス
 title: 2016 年リリースノート
 feature-set: Experience Cloud Services
@@ -7,14 +7,14 @@ feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
 source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1175'
 ht-degree: 100%
 
 ---
 
 # 2016 年リリースノート {#release-notes}
 
-2016 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
+2016 年の Experience Cloud ID サービスの機能リリース、更新、変更点です。
 
 これらの変更点は、[Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)にも記載されています。
 
@@ -25,8 +25,7 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >* バージョン 1.10 を使用するには [!UICONTROL AppMeasurement] 1.8.0 が必要です。
->* Experience Cloud Identity Service ライブラリ 2.0.0 以降を使用している場合は、Adobe Media Manager の ID 同期はデフォルトで開始されます。[ID 同期と一致率について](/help/introduction/match-rates.md)を参照してください。
-
+>* Experience Cloud ID サービスライブラリ 2.0.0 以降を使用している場合は、Adobe Media Manager の ID 同期はデフォルトで開始されます。[ID 同期と一致率について](/help/introduction/match-rates.md)を参照してください。
 
 **修正点および改善点**
 
@@ -78,7 +77,7 @@ ht-degree: 100%
 
 **新規および改訂されたドキュメント**
 
-改訂：[Experience Cloud Identity Service の要件](../reference/requirements.md)
+改訂：[Experience Cloud ID サービスの要件](../reference/requirements.md)
 
 **既知の問題**
 
@@ -102,9 +101,9 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>クロスオリジンリソース共有（CORS） </p> </td> 
-   <td colname="col2"> <p>CORS を利用すると、ブラウザーから、現在のドメイン以外のドメインのリソースをリクエストできます。Experience Cloud Identity Service は、クライアント側のクロスオリジンリソースリクエストを可能にする CORS 標準規格をサポートしています。CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。 </p> <p>以下を参照してください。 </p> 
+   <td colname="col2"> <p>CORS を利用すると、ブラウザーから、現在のドメイン以外のドメインのリソースをリクエストできます。Experience Cloud ID サービスは、クライアント側のクロスオリジンリソースリクエストを可能にする CORS 標準規格をサポートしています。CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。 </p> <p>以下を参照してください。 </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
-     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">Experience Cloud Identity Service での CORS のサポート</a> </li> 
+     <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">Experience Cloud ID サービスでの CORS のサポート</a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -124,13 +123,13 @@ ht-degree: 100%
 
 **新規**
 
-* [Experience Cloud Identity Service の Analytics への実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
-* [Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
+* [Experience Cloud ID サービスの Analytics への実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
+* [Experience Cloud ID サービスの Analytics、Audience Manager および Target への実装](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **改訂済み**
 
-* [Experience Cloud Identity Service の要件](../reference/requirements.md)
-* [Experience Cloud Identity Service のテストと検証](../implementation-guides/test-verify.md)
+* [Experience Cloud ID サービスの要件](../reference/requirements.md)
+* [Experience Cloud ID サービスのテストと検証](../implementation-guides/test-verify.md)
 
 ## バージョン 1.5.7 {#section-735b4989a5744a42aeb2d97602dbda62}
 
@@ -166,8 +165,8 @@ ht-degree: 100%
 **ドキュメントの更新**
 
 * [Android および iOS 向け SDK 要件](../reference/requirements.md#section-73b2446fba8e463888642c7d7dfd94f1)
-* [Data Workbench と Experience Cloud Identity Service](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
-* [Experience Cloud Identity Service のテストと検証](../implementation-guides/test-verify.md)
+* [Data Workbench と Experience Cloud ID サービス](../reference/dwb.md#task-72df50a051944a47b01b0c0bc3d1e1d8)
+* [Experience Cloud ID サービスのテストと検証](../implementation-guides/test-verify.md)
 
 ## バージョン 1.5.x {#section-0cfeef085cff4cbc8dff6cbc6fc32920}
 
@@ -175,7 +174,7 @@ ht-degree: 100%
 
 **ドキュメントの更新**
 
-[Experience Cloud Identity Service の Target への実装](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
+[Experience Cloud ID サービスの Target への実装](../implementation-guides/setup-target.md#concept-9b5a802132574e1181927ddd00e5c5af)
 
 ## バージョン 1.5.4 {#section-1a44ba147fb3440ea7dec551faee3528}
 
@@ -204,7 +203,7 @@ ht-degree: 100%
 
 * [Experience Cloud Identity Service の Analytics への実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)：ID サービスを [!DNL Analytics] で使用するための設定方法に関する新しい手順です。
 
-* [Experience Cloud Identity Service 移行の判断ポイント](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257)：テキストをわかりやすく修正しました。単一のドメインを使用する場合は、データ収集 CNAME の管理を終了したい場合に、その使用を停止できます。ただし、CNAME が機能している場合には、変更する必要はありません。
+* [Experience Cloud ID サービス移行の判断ポイント](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257)：テキストをわかりやすく修正しました。単一のドメインを使用する場合は、データ収集 CNAME の管理を終了したい場合に、その使用を停止できます。ただし、CNAME が機能している場合には、変更する必要はありません。
 
 ## バージョン 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 

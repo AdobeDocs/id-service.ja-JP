@@ -1,5 +1,5 @@
 ---
-description: getCustomerIDs は、Experience Cloud Identity Service によって設定されたすべての顧客 ID を返します。
+description: getCustomerIDs は、Experience Cloud ID サービスによって設定されたすべての顧客 ID を返します。
 keywords: ID サービス
 title: getCustomerIDs
 exl-id: 4a05509b-99f6-42c8-a539-0784f5b9fabc
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # getCustomerIDs{#getcustomerids}
 
-getCustomerIDs は、Experience Cloud Identity Service によって設定されたすべての顧客 ID を返します。
+getCustomerIDs は、Experience Cloud ID サービスによって設定されたすべての顧客 ID を返します。
 
 <!--
 Is there anything else we can say about this??

@@ -1,5 +1,5 @@
 ---
-description: Experience Cloud Identity Service がサードパーティの demdex.net Cookie を返さないようにするブール型フラグです（オプション）。
+description: Experience Cloud ID サービスがサードパーティの demdex.net Cookie を返さないようにするブール型フラグです（オプション）。
 keywords: ID サービス
 title: disableThirdPartyCookies
 exl-id: 19d12822-0e17-4a1c-8e9c-25a22e20a4a8
@@ -12,7 +12,7 @@ ht-degree: 100%
 
 # disableThirdPartyCookies{#disablethirdpartycookies}
 
-Experience Cloud Identity Service がサードパーティの demdex.net Cookie を返さないようにするブール型フラグです（オプション）。
+Experience Cloud ID サービスがサードパーティの demdex.net Cookie を返さないようにするブール型フラグです（オプション）。
 
 >[!NOTE]
 >

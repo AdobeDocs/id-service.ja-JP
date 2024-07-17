@@ -5,7 +5,7 @@ title: A4T での ID サービスの使用と Target のサーバーサイド実
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '807'
 ht-degree: 100%
 
 ---
@@ -157,9 +157,9 @@ Response.send("
 * **[!UICONTROL 名前：]** serverState
 * **[!UICONTROL 値：]**%serverState%
 
-   >[!IMPORTANT]
-   >
-   >値の名前は、ページコードの `serverState` に設定した変数名に一致する必要があります。
+  >[!IMPORTANT]
+  >
+  >値の名前は、ページコードの `serverState` に設定した変数名に一致する必要があります。
 
 設定は次のようになります。
 
@@ -197,4 +197,3 @@ Response.send("
 >[!MORELIKETHIS]
 >
 >* [Node Package Manager によるサーバー側 ID サービスパッケージ](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
-

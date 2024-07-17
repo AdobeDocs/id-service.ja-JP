@@ -5,7 +5,7 @@ title: CNAME 実装の概要
 exl-id: f95dda3c-7bb2-4c7d-a25a-a4d20b58fe27
 source-git-commit: d2586fc722be25df1b82caaf2cc6de6a2a6c31bf
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '265'
 ht-degree: 100%
 
 ---

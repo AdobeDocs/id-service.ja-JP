@@ -1,18 +1,18 @@
 ---
-description: 2018 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
+description: 2018 年の Experience Cloud ID サービスの機能リリース、更新、変更点です。
 keywords: ID サービス
 title: 2018 年リリースノート
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '500'
 ht-degree: 100%
 
 ---
 
 # 2018 年リリースノート {#release-notes}
 
-2018 年の Experience Cloud Identity Service の機能リリース、更新、変更点です。
+2018 年の Experience Cloud ID サービスの機能リリース、更新、変更点です。
 
 ## バージョン 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -68,7 +68,7 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>ユニーク訪問者数の非現実的なスパイク </p> </td> 
-   <td colname="col2"> <p>Experience Cloud Identity Service 3.1.0 のリリースでは、このバージョンが実装された際に、ユニーク訪問者数で非現実的なスパイクが作成される問題が見つかりました。この動作は、最新バージョンの ECID v3.1.0 で、Safari ブラウザーのプライバシー設定で「現在の Web サイトからのみ許可」オプションを選択した場合にのみ発生します。バージョン 3.1.2 では、この問題が修正されています。 </p> </td> 
+   <td colname="col2"> <p>Experience Cloud ID サービス3.1.0 のリリースでは、このバージョンが実装された際に、ユニーク訪問者数で非現実的なスパイクが作成される問題が見つかりました。この動作は、最新バージョンの ECID v3.1.0 で、Safari ブラウザーのプライバシー設定で「現在の Web サイトからのみ許可」オプションを選択した場合にのみ発生します。バージョン 3.1.2 では、この問題が修正されています。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

@@ -4,7 +4,7 @@ title: オプトインリファレンス
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '888'
 ht-degree: 100%
 
 ---
@@ -76,7 +76,7 @@ false の場合は、訪問者がオプトインする必要がないことを�
 
 ## オプトインワークフローのパラメーター {#section-2c5adfa5459c4e72b96d2693123a53c2}
 
-オプトインでは、環境設定を 1 つずつ指定するような、複数回のリクエストサイクルで権限を収集できるワークフローがサポートされています。以下の関数を使用して *設定に* true`shouldWaitForComplete` を指定すると、ソリューションでは、1 つのソリューションまたは全カテゴリーのサブセットに対する同意を収集してから、次のソリューションまたは全カテゴリーの別のサブセットに対する同意を収集することができます。最初の呼び出しから、フローの最後に `adobe.optIn.status` が呼び出されるまで、`adobe.optIn.complete()` プロパティは pending になります。この呼び出し後、ステータスは *Complete* に設定されます。
+オプトインでは、環境設定を 1 つずつ指定するような、複数回のリクエストサイクルで権限を収集できるワークフローがサポートされています。以下の関数を使用して *設定に* true`shouldWaitForComplete` を指定すると、ソリューションでは、1 つのソリューションまたは全カテゴリーのサブセットに対する同意を収集してから、次のソリューションまたは全カテゴリーの別のサブセットに対する同意を収集することができます。最初の呼び出しから、フローの最後に `adobe.optIn.status` が呼び出されるまで、`adobe.optIn.complete()` プロパティは保留になります。この呼び出し後、ステータスは *Complete* に設定されます。
 
 **`adobe.optIn.approve(categories, shouldWaitForComplete)`**
 

@@ -5,7 +5,7 @@ title: URL またはデータソースによる ID 同期
 exl-id: a22e6b47-00ff-4b51-9958-ddeccc1e507e
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '236'
 ht-degree: 100%
 
 ---
@@ -130,4 +130,3 @@ http://dpm.demdex.net/ibs:dpid=24&dpuuid=98765
 >[!MORELIKETHIS]
 >
 >* [DIL idSync](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-instance-methods.html?lang=ja#idsync)
-

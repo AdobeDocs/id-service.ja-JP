@@ -1,16 +1,16 @@
 ---
 description: サーバーのサンプル設定および必要な移行手順について説明しています。
 keywords: ID サービス
-title: Experience Cloud Identity Service の移行シナリオ
+title: Experience Cloud ID サービスの移行シナリオ
 exl-id: 419532bf-399f-4646-a95f-31c35535d6fc
 source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '378'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity Service の移行シナリオ {#experience-cloud-id-service-migration-scenarios}
+# Experience Cloud ID サービスの移行シナリオ {#experience-cloud-id-service-migration-scenarios}
 
 サーバーのサンプル設定および必要な移行手順について説明しています。
 

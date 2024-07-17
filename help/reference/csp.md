@@ -1,16 +1,16 @@
 ---
 description: コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
 keywords: ID サービス
-title: コンテンツセキュリティポリシーおよび Experience Cloud Identity Service
+title: コンテンツセキュリティポリシーおよび Experience Cloud ID サービス
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '523'
 ht-degree: 100%
 
 ---
 
-# コンテンツセキュリティポリシーおよび Experience Cloud Identity Service {#content-security-policies-and-the-experience-cloud-id-service}
+# コンテンツセキュリティポリシーおよび Experience Cloud ID サービス {#content-security-policies-and-the-experience-cloud-id-service}
 
 コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。ID サービスを使用していて、信頼されているドメインからのリソースを許可するホワイトリストを用いる厳格な CSP がある場合は、このセクションを確認してください。ここに記載されているアドビドメインを CSP ホワイトリストに追加する必要があります。
 
@@ -58,14 +58,14 @@ CSP の使用は一般的であり、よく理解されています。このド�
    <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
    <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Adobe Launch を使用してタグをデプロイする場合は、ドメインのリストに <code>https://assets.adobedtm.com</code> も追加する必要があります。</li></ul></p> <p><span class="codeph">demdex.net</span> ドメインの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies および Experience Cloud Identity Service</a> の生成と、ID 同期用に使用されます。<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> </tr> 
+   <li>Adobe Launch を使用してタグをデプロイする場合は、ドメインのリストに <code>https://assets.adobedtm.com</code> も追加する必要があります。</li></ul></p> <p><span class="codeph">demdex.net</span> ドメインの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies および Experience Cloud ID サービス</a>の生成と、ID 同期用に使用されます。<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> </tr> 
  <tr>
  <td colname="col1"> <p> <b>Activity Map プラグイン</b> </p> </td> 
  <td colname="col2"> <p>CSP に *.adobe.com を追加します。**メモ**：2020 年 1 月より前に Activity Map をインストールした場合、ブラウザーには「*.omniture.com」への初期リクエストが表示されますが、「*.adobe.com」にリダイレクトされます。 </p></td> 
  </tr>
  <tr>
  <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>クエリー文字列パラメーターを制御できる場合は、必ずパラメーター「s_kwcid」と「ef_id」をホワイトリストに入れてください。技術的には、Advertising Analytics は「s_kwcid」のみを使用しますが、Ad Cloud 検索または DSP を使用する場合は「ef_id」も使用されます。これらのクエリー文字列パラメーターは英数字です。「s_kwcid」パラメーターは、「!」文字、「ef_id」パラメータには、「:」文字を使用します。URL の「!」文字をブロックする場合は、ホワイトリストに登録する必要があります。</p></td> 
+ <td colname="col2"> <p>クエリ文字列パラメーターを制御できる場合は、必ずパラメーター「s_kwcid」と「ef_id」を許可リストに入れてください。技術的には、Advertising Analytics は「s_kwcid」のみを使用しますが、Ad Cloud 検索または DSP を使用する場合は「ef_id」も使用されます。これらのクエリ文字列パラメーターは英数字です。「s_kwcid」パラメーターは、「!」文字、「ef_id」パラメータには、「:」文字を使用します。URL の「!」文字をブロックする場合は、ホワイトリストに登録する必要があります。</p></td> 
  </tr>
  </tbody> 
 </table>
@@ -75,4 +75,3 @@ CSP の使用は一般的であり、よく理解されています。このド�
 >* [コンテンツセキュリティポリシーリファレンス](https://content-security-policy.com/)
 >* [MDN：コンテンツセキュリティポリシー](https://developer.mozilla.org/ja/docs/Web/HTTP/CSP)
 >* [Wikipedia：コンテンツセキュリティポリシー](https://en.wikipedia.org/wiki/Content_Security_Policy)
-

@@ -1,18 +1,18 @@
 ---
-description: これらの設定を使用して、Experience Cloud Identity Service への呼び出しに使用されるデフォルトのドメイン名を、独自のサブドメイン名に変更します。
+description: これらの設定を使用して、Experience Cloud ID サービスへの呼び出しに使用されるデフォルトのドメイン名を、独自のサブドメイン名に変更します。
 keywords: ID サービス
 title: audienceManagerServer および audienceManagerServerSecure
 exl-id: b740eb5c-ac4e-46f4-ba7c-1080d8d9292d
 source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '212'
 ht-degree: 100%
 
 ---
 
 # audienceManagerServer および audienceManagerServerSecure{#audiencemanagerserver-and-audiencemanagerserversecure}
 
-これらの設定を使用して、Experience Cloud Identity Service への呼び出しに使用されるデフォルトのドメイン名を、独自のサブドメイン名に変更します。
+これらの設定を使用して、Experience Cloud ID サービスへの呼び出しに使用されるデフォルトのドメイン名を、独自のサブドメイン名に変更します。
 
 **構文：**
 

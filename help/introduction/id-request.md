@@ -1,22 +1,22 @@
 ---
 description: ID のリクエストと応答のプロセスについて、概要を説明します。個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
 keywords: ID サービス
-title: Experience Cloud Identity Service による ID のリクエスト方法と設定方法
+title: Experience Cloud ID サービスによる ID のリクエスト方法と設定方法
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
 source-git-commit: fa2549090e6790763a7ac6b87348789678d18ab6
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '732'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity Service による ID のリクエスト方法と設定方法{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# Experience Cloud ID サービスによる ID のリクエスト方法と設定方法{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
 ID のリクエストと応答のプロセスについて、概要を説明します。個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
 
 >[!NOTE]
 >
->Experience Cloud Identity Service による訪問者 ID の作成方法がわからない場合は、[Experience Cloud](../introduction/cookies.md) を参照してください。
+>Experience Cloud ID サービスによる訪問者 ID の作成方法がわからない場合は、[Experience Cloud](../introduction/cookies.md) を参照してください。
 
 ## Experience Cloud ID のリクエスト {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 

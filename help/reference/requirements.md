@@ -1,18 +1,18 @@
 ---
-description: ここでは、Experience Cloud Identity Service に必要な適切なソリューション、サービス、コードバージョンを使用していることを確認します。
+description: ここでは、Experience Cloud ID サービスに必要な適切なソリューション、サービス、コードバージョンを使用していることを確認します。
 keywords: ID サービス
-title: Experience Cloud Identity Service の要件
+title: Experience Cloud ID サービスの要件
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 source-git-commit: 00ebcaa16ec6b432b480d96fbf79b6a745515b1b
-workflow-type: ht
-source-wordcount: '653'
+workflow-type: tm+mt
+source-wordcount: '572'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity Service の要件 {#requirements-for-the-experience-cloud-id-service}
+# Experience Cloud ID サービスの要件 {#requirements-for-the-experience-cloud-id-service}
 
-ここでは、Experience Cloud Identity Service に必要な適切なソリューション、サービス、コードバージョンを使用していることを確認します。
+ここでは、Experience Cloud ID サービスに必要な適切なソリューション、サービス、コードバージョンを使用していることを確認します。
 
 ## 実装の成功とサポートを確実にする要件 {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
@@ -135,4 +135,3 @@ ID サービスに関して、SDK コードが有効になっている必要が�
 >[!MORELIKETHIS]
 >
 >* [コードライブラリ](../library/library.md#concept-ff27497375644a898d47984aefb21c97)
-

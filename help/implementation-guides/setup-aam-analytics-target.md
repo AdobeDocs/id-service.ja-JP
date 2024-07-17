@@ -1,16 +1,16 @@
 ---
 description: 次の説明は、Experience Cloud ID サービスを使用し、データ収集タグを使用しない Analytics、Audience Manager および Target のお客様を対象としています。ただし、タグを使用して ID サービスを実装することを強くお勧めします。タグは、実装ワークフローを効率化し、適切なコードの配置とシーケンスを自動的に保証します。
 keywords: ID サービス
-title: Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装
+title: Experience Cloud ID サービスの Analytics、Audience Manager および Target への実装
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
 source-git-commit: 792fb5d5192843f345577a99b6179fb6d95fedc0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 100%
 
 ---
 
-# Experience Cloud Identity Service の Analytics、Audience Manager および Target への実装 {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
+# Experience Cloud ID サービスの Analytics、Audience Manager および Target への実装 {#implement-the-experience-cloud-id-service-for-analytics-audience-manager-and-target}
 
 次の説明は、Experience Cloud ID サービスを使用し、[データ収集タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を使用しない Analytics、Audience Manager および Target のお客様を対象としています。ただし、タグを使用して ID サービスを実装することを強くお勧めします。タグは、実装ワークフローを効率化し、適切なコードの配置とシーケンスを自動的に保証します。
 
@@ -172,7 +172,7 @@ ID サービスを使用するページと使用しないページが混在し�
 
 実装で s_vi Cookie を読み取る代わりに MID を取得できるようになった後に、猶予期間を停止します。
 
-詳しくは、[Cookie と Experience Cloud Identity Service](../introduction/cookies.md) を参照してください。
+詳しくは、[Cookie と Experience Cloud ID サービス](../introduction/cookies.md)を参照してください。
 
 **クリックストリームデータの統合**
 

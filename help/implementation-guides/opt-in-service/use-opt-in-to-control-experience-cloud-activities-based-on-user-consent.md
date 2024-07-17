@@ -4,7 +4,7 @@ description: Adobe Opt-in Object は、Adobe Experience Platform ID サービス
 exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
 source-git-commit: 0dca594c090095a01dfa2d02a98dfeba7ca02dca
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '508'
 ht-degree: 100%
 
 ---

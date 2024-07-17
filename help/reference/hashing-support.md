@@ -5,8 +5,8 @@ title: setCustomerIDs の SHA256 ハッシュサポート
 exl-id: fd30634e-6435-4d14-8804-649c1ad3aaaa
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 100%
+source-wordcount: '594'
+ht-degree: 97%
 
 ---
 
@@ -63,7 +63,7 @@ ts=1563299964843
 
 | パラメーター | 説明 |
 |------------|----------|
-| `d_cid_ic` | 統合コード、一意のユーザー ID（DPUUID）および認証状態 ID を ID サービスに渡します。統合コードおよび DPUUID を非表示の制御文字、%01</code> で区切ります。<br> 例：d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>認証状態</b> <br> これは、d_cid_ic パラメーターのオプションの ID です。整数で表され、以下に示す認証状態によってユーザーを識別します。<br> <ul><li>0（不明または認証なし）</li><li>1（現在、このインスタンス／ページ／アプリコンテキストに対して認証済み）</li><li>2（ログアウト済み）</li></ul> <br>例：<br> <ul><li>不明：...d_cid=123%01456%01<b>0</b></li><li>認証済み：...d_cid=123%01456%01<b>1</b></li><li>ログアウト済み：...d_cid=123%01456%01<b>2</b></li></ul> |
+| `d_cid_ic` | 統合コード、一意のユーザー ID（DPUUID）および認証状態 ID を ID サービスに渡します。統合コードと DPUUID を印刷しない制御文字 <code>%01 で区切ります。</code>:<br> 例：<code>d_cid_ic=Integration_code%01DPUUID%01Authentication_state</code> <br> <b>認証状態</b> <br> これは、d_cid_ic パラメーターのオプションの ID です。整数で表され、以下に示す認証状態によってユーザーを識別します。<br> <ul><li>0（不明または認証なし）</li><li>1（現在、このインスタンス／ページ／アプリコンテキストに対して認証済み）</li><li>2（ログアウト済み）</li></ul> <br>例：<br> <ul><li>不明：...d_cid=123%01456%01<b>0</b></li><li>認証済み：...d_cid=123%01456%01<b>1</b></li><li>ログアウト済み：...d_cid=123%01456%01<b>2</b></li></ul> |
 
 ## Adobe Experience Platform Launch でのアクションの追加 {#add-action-launch}
 

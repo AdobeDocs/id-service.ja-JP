@@ -16,9 +16,9 @@ ID サービスの機能は、Adobe Analytics に特有のものです。
 
 + [Analytics および Experience Cloud ID の設定](analytics-ids.md)
 + [Analytics ID の操作の順序](analytics-order-of-operations.md)
-+ [Experience Cloud Identity Service 移行の判断ポイント](migration-decisions.md)
-+ [Experience Cloud Identity Service の移行シナリオ](migration-scenarios.md)
++ [Experience Cloud ID サービス移行の判断ポイント](migration-decisions.md)
++ [Experience Cloud ID サービスの移行シナリオ](migration-scenarios.md)
 + [Analytics と Experience Cloud ID のリクエスト](legacy-analytics.md)
 + [JavaScript を利用したサーバー側実装](server-side.md)
 + [ID サービスの猶予期間](grace-period.md)
-   <!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->
+  <!--+ [Data Collection CNAMEs and Cross-Domain Tracking](cname.md)-->

@@ -1,10 +1,10 @@
 ---
-description: Adobe Experience Cloud における Experience Cloud Identity Service の役割です。
+description: Adobe Experience Cloud における Experience Cloud ID サービスの役割です。
 title: Experience Cloud ID サービスの概要
 exl-id: dc7d6220-d42b-4a3e-bf37-1e4e87280ae1
 source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '463'
 ht-degree: 100%
 
 ---
@@ -48,5 +48,5 @@ Experience Cloud ID サービスは、次のアプリケーションをサポー
 ID サービスを使用するには、お使いのソリューションおよび他のアドビコードライブラリが[特定の要件](/help/reference/requirements.md)を満たしている必要があります。
 
 * [Cookie と Experience Cloud ID サービス](cookies.md)：Experience Cloud ID サービスでは、組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者の一意の永続的な識別子を作成し保存します。これらの Cookie により、ID サービスで異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でのデータ共有が可能になります。
-* [Experience Cloud Identity Service による ID のリクエスト方法と設定方法](id-request.md)：ID リクエストと応答プロセスの概要です。個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
+* [Experience Cloud ID サービスによる ID のリクエスト方法と設定方法](id-request.md)：ID リクエストと応答プロセスの概要です。個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
 * [ID 同期と一致率について](match-rates.md)：Adobe Media Manager や ID サービスなどの Experience Cloud ID サービスにおける ID 同期プロセスと一致率の概要です。

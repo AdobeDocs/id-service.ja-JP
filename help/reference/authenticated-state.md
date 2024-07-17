@@ -5,7 +5,7 @@ title: 顧客 ID と認証状態
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 source-git-commit: 159b37e360b586bbada13e34793009e3067de668
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '595'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 100%
 >
 >顧客属性とコアサービス機能には、`setCustomerIDs`（顧客 ID の同期）が必要です。顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。[!DNL Target] には、顧客属性を機能させるために `Visitor.AuthState.AUTHENTICATED` が必要です。例については、[コアサービス - ソリューションを有効にする方法](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=ja)を参照してください。
 
-Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オプションの `AuthState` オブジェクトが含まれます。`AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。認証状態は整数で返されます。
+Experience Cloud ID サービスv1.5 以降の `setCustomerIDs` には、オプションの `AuthState` オブジェクトが含まれます。`AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。認証状態は、表に示すステータス値を使用して設定します。認証状態は整数で返されます。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -92,7 +92,6 @@ Experience Cloud Identity Service v1.5 以降の `setCustomerIDs` には、オ�
 >* エンコードされていない ID 値のみを使用してください。
 >* 顧客 ID と認証状態は、訪問者 ID Cookie に保存されません。ページまたはアプリケーションコンテキストごとに設定する必要があります。
 >* 顧客 ID に個人識別情報（PII）を含めないでください。PII（電子メールアドレスなど）を使用して訪問者を識別する場合は、情報をハッシュ化または暗号化して格納することをお勧めします。ECID ライブラリは、ハッシュユーザー識別子をサポートしています。[setCustomerIDs の SHA256 ハッシュサポート](/help/reference/hashing-support.md)を参照してください。
-
 
 ```js
 // Single ID with a single authentication state 

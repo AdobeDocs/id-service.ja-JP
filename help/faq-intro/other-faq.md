@@ -16,7 +16,7 @@ ID サービスで他の Experience Cloud ソリューションを使用する�
 
 ## Analytics と Audience Manager {#section-b3dd206d497041acb04554c6fb1c912a}
 
-**Experience Cloud Identity Service を実装すると、ユーザーの訪問履歴が [!DNL Adobe Analytics] から [!DNL Audience Manager] にエクスポートされますか。**
+**Experience Cloud ID サービスを実装すると、ユーザーの訪問履歴が [!DNL Adobe Analytics] から [!DNL Audience Manager] にエクスポートされますか。**
 
 この場合、次の 2 つのことが考えられます。
 

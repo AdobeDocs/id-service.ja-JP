@@ -1,26 +1,26 @@
 ---
-description: Adobe Experience Cloud における Experience Cloud Identity Service の役割です。
+description: Adobe Experience Cloud における Experience Cloud ID サービスの役割です。
 keywords: ID サービス
 title: 概要
 exl-id: d907e299-bde0-4b5f-8c16-867a4eaa8be1
 source-git-commit: 2c87022baeb09a8767d0d9627bf2b607c51b2503
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 100%
+source-wordcount: '301'
+ht-degree: 96%
 
 ---
 
 # ID サービスについて{#aboutidservice}
 
-Adobe Experience Cloud における Experience Cloud Identity Service の役割です。
+Adobe Experience Cloud における Experience Cloud ID サービスの役割です。
 
 <!--
 mcvid-functionality.xml
 -->
 
-## Experience Cloud Identity Service：コアサービスの基礎的要素 {#section-2de0eb1d65664e92a4d8bbb167b84bde}
+## Experience Cloud ID サービス：コアサービスの基礎的要素 {#section-2de0eb1d65664e92a4d8bbb167b84bde}
 
-Experience Cloud Identity Service は、Experience Cloud コアサービス、ソリューション、顧客属性、オーディエンスのための、共通の識別フレームワークです。ID サービスは、サイト訪問者に一意の永続的な ID を割り当てることで機能します。組織が ID サービスを実装している場合、この ID を使用すれば、異なる Experience Cloud ソリューション内で、同じサイト訪問者と彼らのデータを識別できます。
+Experience Cloud ID サービスは、Experience Cloud コアサービス、ソリューション、顧客属性、オーディエンスのための、共通の識別フレームワークです。このサービスは、サイト訪問者に一意の永続的 ID を割り当てることで機能します。 組織が ID サービスを実装している場合、この ID を使用すれば、異なる Experience Cloud ソリューション内で、同じサイト訪問者と彼らのデータを識別できます。
 
 ![](assets/ecid-new.png)
 
