@@ -3,14 +3,18 @@ description: この関数を使用すると、ブラウザーでサードパー�
 keywords: ID サービス
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: c035f0af76f70322e4d79ed842502b26c3f155ac
+source-git-commit: fc630f3a161b65edab1c34ec3b3f07938bf13aaf
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
+source-wordcount: '412'
+ht-degree: 88%
 
 ---
 
 # appendVisitorIDsTo（クロスドメイントラッキング）{#appendvisitoridsto-cross-domain-tracking}
+
+>[!TIP]
+>
+>ECID が最初に（または以前に）拒否された場合、クロスドメイントラッキングは意図したとおりに機能しません。 同意が「NO」に設定された時点で ID であったことを考慮して、URL を介して渡された ID や、以前に Cookie に存在していた既存の ID はチェックされません
 
 この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の Experience Cloud ID を共有できます。この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 
