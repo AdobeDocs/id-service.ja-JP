@@ -3,10 +3,10 @@ description: Experience Cloud ID サービスは、Experience Cloud アプリケ
 keywords: ID サービス; ID サービス; Experience Cloud ID サービス
 title: Experience Cloud ID サービス
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: f7c25f5ebd0690c56c081422949eb34f1f277ae1
+source-git-commit: 507b5c9fed0d6d16828522c0fd9c7db4fdeefe3d
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -16,7 +16,7 @@ Experience Cloud ID サービスは、Experience Cloud アプリケーション�
 
 ## ID のメインエンティティについて
 
-訪問者を一意に識別し ID 情報を解決するうえでアドビがどのように役立つかをより深く理解するには、以下の分類を参照してください。
+訪問者を一意に識別し ID 情報を解決するうえでAdobeがどのように役立つかをより深く理解するには、以下の分類を参照してください。
 
 * **Experience Cloud ID サービス**：Experience Cloud ID サービス&#x200B;**は、Experience Cloud ID（ECID）を設定する役割を果たします**。詳しくは、[Experience Cloud ID サービスの概要](./introduction/overview.md)を参照してください。
 * **Experience Cloud ID（ECID）**：ECID は、Adobe Experience Platform および Adobe Experience Cloud アプリケーションで人物やデバイスの識別に使用される共有の ID 名前空間です。ECID について詳しくは、[ECID の概要](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=ja)を参照してください。
