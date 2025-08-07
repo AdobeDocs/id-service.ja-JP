@@ -3,10 +3,10 @@ description: コンテンツセキュリティポリシー（CSP）は、Web ペ
 keywords: ID サービス
 title: コンテンツセキュリティポリシーおよび Experience Cloud ID サービス
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 2bb47b56b26ce6ea17297a9ee0200f2623e44e71
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 100%
+source-wordcount: '501'
+ht-degree: 81%
 
 ---
 
@@ -30,44 +30,85 @@ CSP の使用は一般的であり、よく理解されています。このド�
 
 現在使用している Experience Cloud ソリューションまたはサービスごとに、これらのドメイン名または URL を CSP に追加してください。
 
-<table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C"> 
- <thead> 
-  <tr> 
-   <th colname="col1" class="entry"> Experience Cloud ソリューションまたはサービス </th> 
-   <th colname="col2" class="entry"> 説明 </th> 
-  </tr> 
+<table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C">
+ <thead>
+  <tr>
+   <th colname="col1" class="entry">Experience Cloud ソリューションまたはサービス</th>
+   <th colname="col2" class="entry">説明</th>
+  </tr>
  </thead>
- <tbody> 
-  <tr> 
-   <td colname="col1"> <p> <b>AppMeasurement</b> </p> </td> 
-   <td colname="col2"> <p>CSP に以下を追加します。 </p> <p> 
-     <ul id="ul_7522AE83A03A4115A84DF5B32D6DD79B"> 
-      <li id="li_AB1EC161FB154BEDA1BEFE76C8A38A90"> <span class="codeph"> *.2o7.net</span> </li> 
-      <li id="li_4B12A283716746949201528CD6AF529E"> <span class="codeph"> *.omtrdc.net</span> </li> 
-     </ul> </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <b>Target</b> </p> </td> 
-   <td colname="col2"> <p>CSP に <span class="codeph">*.tt.omtrdc.net</span> を追加します。 </p> </td> 
-  </tr> 
-  <tr> 
-   <td colname="col1"> <p> <b>Experience Cloud ID サービスと Audience Manager</b> </p> </td> 
-   <td colname="col2"> <p>CSP を変更し、以下のドメインを含めます。</p> 
-   <p><ul>
-   <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
-   <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
-   <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
-   <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-   <li>Adobe Launch を使用してタグをデプロイする場合は、ドメインのリストに <code>https://assets.adobedtm.com</code> も追加する必要があります。</li></ul></p> <p><span class="codeph">demdex.net</span> ドメインの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies および Experience Cloud ID サービス</a>の生成と、ID 同期用に使用されます。<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。 </p> </td> </tr> 
- <tr>
- <td colname="col1"> <p> <b>Activity Map プラグイン</b> </p> </td> 
- <td colname="col2"> <p>CSP に *.adobe.com を追加します。**メモ**：2020 年 1 月より前に Activity Map をインストールした場合、ブラウザーには「*.omniture.com」への初期リクエストが表示されますが、「*.adobe.com」にリダイレクトされます。 </p></td> 
- </tr>
- <tr>
- <td colname="col1"> <p> <b>Advertising Analytics</b> </p> </td> 
- <td colname="col2"> <p>クエリ文字列パラメーターを制御できる場合は、必ずパラメーター「s_kwcid」と「ef_id」を許可リストに入れてください。技術的には、Advertising Analytics は「s_kwcid」のみを使用しますが、Ad Cloud 検索または DSP を使用する場合は「ef_id」も使用されます。これらのクエリ文字列パラメーターは英数字です。「s_kwcid」パラメーターは、「!」文字、「ef_id」パラメータには、「:」文字を使用します。URL の「!」文字をブロックする場合は、ホワイトリストに登録する必要があります。</p></td> 
- </tr>
- </tbody> 
+ <tbody>
+  <tr>
+   <td colname="col1">
+    <p><b>AppMeasurement</b></p>
+   </td>
+   <td colname="col2">
+    <p>CSP に以下を追加します。</p>
+    <ul id="ul_7522AE83A03A4115A84DF5B32D6DD79B">
+     <li id="li_AB1EC161FB154BEDA1BEFE76C8A38A90"><span class="codeph">*.2o7.net</span></li>
+     <li id="li_4B12A283716746949201528CD6AF529E"><span class="codeph">*.omtrdc.net</span></li>
+    </ul>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>ターゲット</b></p>
+   </td>
+   <td colname="col2">
+    <p><span class="codeph">*.tt.omtrdc.net</span> を含めるように CSP を変更します。</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Experience Cloud ID サービスとAudience Manager</b></p>
+   </td>
+   <td colname="col2">
+    <p>CSP を変更し、以下のドメインを含めます。</p>
+    <ul>
+     <li>connect-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+     <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+     <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
+     <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
+     <li>Adobe Launch を使用してタグをデプロイする場合は、ドメインのリストに <code>https://assets.adobedtm.com</code> も追加する必要があります。</li>
+    </ul>
+    <p><span class="codeph">demdex.net</span> ドメインへの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies とExperience Cloud ID サービス </a> の生成と ID 同期に使用されます。 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja" format="https" scope="external">Demdex ドメインの呼び出しについて </a> も参照してください。</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Activity Map プラグイン</b></p>
+   </td>
+   <td colname="col2">
+    <p>CSP に *.adobe.com を追加します。**メモ**：2020 年 1 月より前に Activity Map をインストールした場合、ブラウザーには「*.omniture.com」への初期リクエストが表示されますが、「*.adobe.com」にリダイレクトされます。</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Advertising Analytics</b></p>
+   </td>
+   <td colname="col2">
+    <p>クエリ文字列パラメーターを制限する場合は、次のパラメーターを許可リストに加えます。</p>
+    <ul>
+     <li><code>s_kwcid</code> （<code>!</code> を使用）</li>
+     <li><code>ef_id</code> （<code>:</code> を使用）</li>
+    </ul>
+    <p>URL 内の <code>!</code> 文字をブロックする場合は、その文字も許可リストに加えます。</p>
+    <p>Advertising Analyticsでは <code>s_kwcid</code> のみを使用しますが、Advertising検索、ソーシャル、Commerce、Advertising DSPでも <code>ef_id</code> を使用します。</p>
+   </td>
+  </tr>
+  <tr>
+   <td colname="col1">
+    <p><b>Adobe Advertising</b></p>
+   </td>
+   <td colname="col2">
+    <p>以下のドメインを含めるように CSP を変更します。</p>
+    <ul>
+     <li><code>.everestjs.net</code></li>
+     <li><code>.everesttech.net</code></li>
+    </ul>
+   </td>
+  </tr>
+ </tbody>
 </table>
 
 >[!MORELIKETHIS]
