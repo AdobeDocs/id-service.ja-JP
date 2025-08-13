@@ -5,8 +5,8 @@ title: コンテンツセキュリティポリシーおよび Experience Cloud I
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 source-git-commit: c56bbaa6a3639e421c11a8231e14afb58a4fa305
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 62%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -55,12 +55,12 @@ CSP の使用は一般的であり、よく理解されています。このド�
     <p><b>ターゲット</b></p>
    </td>
    <td colname="col2">
-    <p><span class="codeph">*.tt.omtrdc.net</span> を含めるように CSP を変更します。</p>
+    <p>CSP に <span class="codeph">*.tt.omtrdc.net</span> を追加します。</p>
    </td>
   </tr>
   <tr>
    <td colname="col1">
-    <p><b>Experience Cloud ID サービスとAudience Manager</b></p>
+    <p><b>Experience Cloud ID サービスと Audience Manager</b></p>
    </td>
    <td colname="col2">
     <p>CSP を変更し、以下のドメインを含めます。</p>
@@ -71,7 +71,7 @@ CSP の使用は一般的であり、よく理解されています。このド�
      <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
      <li>Adobe Launch を使用してタグをデプロイする場合は、ドメインのリストに <code>https://assets.adobedtm.com</code> も追加する必要があります。</li>
     </ul>
-    <p><span class="codeph">demdex.net</span> ドメインへの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies とExperience Cloud ID サービス </a> の生成と ID 同期に使用されます。 <a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja" format="https" scope="external">Demdex ドメインの呼び出しについて </a> も参照してください。</p>
+    <p><span class="codeph">demdex.net</span> ドメインの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies および Experience Cloud ID サービス</a>の生成と、ID 同期用に使用されます。 詳しくは、<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。</p>
    </td>
   </tr>
   <tr>
@@ -93,7 +93,7 @@ CSP の使用は一般的であり、よく理解されています。このド�
      <li><code>ef_id</code> （<code>:</code> を使用）</li>
     </ul>
     <p>URL の <code>!</code> 文字をブロックする場合は、それも許可リストに加えるします。</p>
-    <p>Advertising Analyticsでは <code>s_kwcid</code> のみを使用しますが、Advertising検索、ソーシャル、Commerce、Advertising DSPでも <code>ef_id</code> を使用します。</p>
+    <p>Advertising Analytics では <code>s_kwcid</code> のみを使用しますが、Advertising 検索、Social、Commerce、Advertising DSPでも <code>ef_id</code> を使用します。</p>
    </td>
   </tr>
   <tr>
@@ -101,7 +101,7 @@ CSP の使用は一般的であり、よく理解されています。このド�
     <p><b>Adobe Advertising</b></p>
    </td>
    <td colname="col2">
-    <p>以下のドメインを含めるように CSP を変更します。</p>
+    <p>CSP に次のドメインを追加します：</p>
     <ul>
      <li><code>.everestjs.net</code></li>
      <li><code>.everesttech.net</code></li>
