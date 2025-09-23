@@ -4,10 +4,10 @@ user-guide-title: Experience Cloud ID サービスのヘルプ
 breadcrumb-title: ID サービスガイド
 user-guide-description: Adobe Experience Cloud ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。これは、Experience Cloud ソリューションおよびサービスの従来の ID 生成コードを置き換えるのに役立ちます。
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 6ef86bdb7bc10e24dbd3efe2481cb2e6e6c270fb
+source-git-commit: 68beec895b3d1dbab24a243bace52f669dd20247
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 100%
+source-wordcount: '407'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 100%
       + [オプトインのユースケース](implementation-guides/opt-in-service/use-cases.md)
       + [オプトインのリファレンス](implementation-guides/opt-in-service/api.md)
       + [IAB フレームワークでのオプトインサービスの使用](implementation-guides/opt-in-service/iab.md)
-+ ID Service API {#id-service-api}
++ ID サービスの API {#id-service-api}
    + [ID Service API の概要](library/library.md)
    + 設定 {#configurations}
       + [設定の概要](library/function-vars/function-vars.md)
@@ -108,7 +108,7 @@ ht-degree: 100%
    + [ID サービスに関する FAQ](faq-intro/faq.md)
    + [Analytics と ID サービスに関する FAQ](faq-intro/analytics-faq.md)
    + [他の Experience Cloud ソリューションに関する FAQ](faq-intro/other-faq.md)
-+ ID サービスのリリースノート{#release-notes}
++ ID サービスのリリースノート {#release-notes}
    + [2022年リリースノート](release-notes/notes-2022.md)
    + [2021年リリースノート](release-notes/notes-2021.md)
    + [2020 年リリースノート](release-notes/notes-2020.md)
@@ -118,3 +118,4 @@ ht-degree: 100%
    + [2016 年リリースノート](release-notes/notes-2016.md)
    + [2015 年リリースノート](release-notes/notes-2015.md)
 + [TOC に非表示の分析テスト](analytics-test-file-hidetoc.md)
++ [非表示のテストファイル](hidden-file.md)
