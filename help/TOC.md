@@ -5,9 +5,9 @@ breadcrumb-title: ID サービスガイド
 user-guide-description: Adobe Experience Cloud ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。これは、Experience Cloud ソリューションおよびサービスの従来の ID 生成コードを置き換えるのに役立ちます。
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 68beec895b3d1dbab24a243bace52f669dd20247
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,8 +43,8 @@ ht-degree: 98%
       + [オプトインのユースケース](implementation-guides/opt-in-service/use-cases.md)
       + [オプトインのリファレンス](implementation-guides/opt-in-service/api.md)
       + [IAB フレームワークでのオプトインサービスの使用](implementation-guides/opt-in-service/iab.md)
-+ ID サービスの API {#id-service-api}
-   + [ID Service API の概要](library/library.md)
++ ID サービス API {#id-service-api}
+   + [ID サービス API の概要](library/library.md)
    + 設定 {#configurations}
       + [設定の概要](library/function-vars/function-vars.md)
       + [audienceManagerServer および audienceManagerServerSecure](library/function-vars/subdomain-config.md)
