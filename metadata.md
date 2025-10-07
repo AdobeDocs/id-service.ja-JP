@@ -12,7 +12,7 @@ feature-set: Experience Cloud, Experience Platform
 feature: Identities, Integrations
 debug: true
 source-git-commit: 0879c70e64ceed6ae0295c0ec09916da635af310
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '10'
 ht-degree: 100%
 
