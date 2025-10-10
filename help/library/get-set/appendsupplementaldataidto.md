@@ -1,9 +1,9 @@
 ---
 description: このヘルパーメソッドを使用すると、補助的なデータ ID（SDID）をクエリ文字列パラメーターとしてリダイレクト URL に追加できます。 これは、A4T の使用時に、SDID をあるページから別のページへと保持し、それらの個別の訪問を結合する必要がある場合に便利です。 この関数を使用するには、ソースドメインと宛先ドメインに同じ組織 ID を持つ ID サービスを実装しておく必要があります。
 keywords: ID サービス
-title: appendSupplementalDataIDTo
+title: 'appendSupplementalDataIDTo '
 exl-id: 7f0e7fca-4551-4165-a12b-c7e5514d6818
-source-git-commit: 5710539b45a81394061cd4af2ef3edc27b49092e
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 100%
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 ## 構文およびコードサンプル {#section-cbb0b2f73bcc418386796c24c01b2365}
 
-**構文：** ` appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
+**構文：** `appendSupplementalDataIDTo( *`URL`*, *`SDID`*)`
 
 **コードサンプル**
 
@@ -54,7 +54,7 @@ var pageBWithSdid = visitor.appendSupplementalDataIDTo(pageB, theCurrentSDID));
 
 デフォルトの SDID タイムアウトを変更したい場合は、次の構文を使用して `sdidParamExpiry` を `Visitor.getInstance` 関数に追加します。
 
-**構文：** ` sdidParamExpiry: *`時間（秒単位）`*`
+**構文：** `sdidParamExpiry: *`時間（秒単位）`*`
 
 **コードサンプル**
 

@@ -3,7 +3,7 @@ description: getMarketingCloudVisitorID は、Experience Cloud 訪問者 ID を�
 keywords: ID サービス
 title: getMarketingCloudVisitorID
 exl-id: bd81cc0b-0511-492d-beb8-8ba2fe5d4323
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 getMarketingCloudVisitorID は、Experience Cloud 訪問者 ID を返します。
 
-**構文：** ` var *`変数名`* = visitor.getMarketingCloudVisitorID()`
+**構文：** `var *`変数名`* = visitor.getMarketingCloudVisitorID()`
 
 この方法は通常、訪問者 ID の読み取りを必要とするカスタムソリューションで使用されます。 標準の実装では使用されません。`getMarketingCloudVisitorID` は、[!DNL Analytics] ID を読み取ってシステムまたはアプリケーションに送信するコールバック関数とも連携します。
 

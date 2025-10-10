@@ -3,7 +3,7 @@ description: この変数を使用すると、AMCV Cookie のデフォルトの�
 keywords: ID サービス
 title: cookieLifetime
 exl-id: bdbabdcd-a87b-412c-8c2f-3f39820f939a
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 100%
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 デフォルトでは、[!DNL Experience Cloud] ID サービス Cookie は、24 ヶ月後に有効期限が切れます。この間隔を秒単位で設定します。
 
-**構文：** ` cookieLifetime: *`全期間（秒単位）`*`
+**構文：** `cookieLifetime: *`全期間（秒単位）`*`
 
 **コードサンプル**
 

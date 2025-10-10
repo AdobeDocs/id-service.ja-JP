@@ -3,7 +3,7 @@ description: Experience Cloud ID サービス地域 ID を返します。地域 
 keywords: ID サービス
 title: getLocationHint
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Experience Cloud ID サービス地域 ID を返します。地域 ID（またはロケーションヒント）は、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
 
-**構文：** ` var *`変数名`* = visitor.getLocationHint()`
+**構文：** `var *`変数名`* = visitor.getLocationHint()`
 
 地域 ID と対応する場所の一覧は、[DCS 地域 ID、場所、ホスト名](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=ja)を参照してください。
 

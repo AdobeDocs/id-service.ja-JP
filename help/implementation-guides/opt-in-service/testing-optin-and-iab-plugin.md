@@ -2,10 +2,10 @@
 description: Web サイトでオプトインを有効にしたら、検証方法を使用して、ブラウザーの開発者ツールでサービスが期待どおりに動作しているかどうかをテストします。
 title: オプトインサービスの検証
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 95%
+source-wordcount: '434'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ Chrome で web ページを右クリックし、「検証」を選択します�
 >
 >`http://dpm.demdex.net/optOutStatus` の呼び出しが表示される場合があります。これは、訪問者のオプトアウトステータスを取得するために使用される読み取り専用のエンドポイントです。最終的に、このエンドポイントでは、サードパーティの Cookie が作成されることはなく、ページから情報が収集されることもありません。
 
-Adobeタグ（AMCV_{{YOUR_ORG_ID}}、mbox、demdex、s_cc、s_sq、everest_g_v2、everest_session_v2）によって作成された Cookie は表示されません。
+Adobe タグ（`AMCV_{{YOUR_ORG_ID}}`、`mbox`、`demdex`、`s_cc`、`s_sq`、`everest_g_v2`、`everest_session_v2`）によって作成された Cookie は表示されません。
 
 Chromeで、「*Application*」タブに移動し、「*Storage*」の下の「*Cookies*」セクションを展開し、web サイトのドメイン名を選択します。
 

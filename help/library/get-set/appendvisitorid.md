@@ -3,8 +3,8 @@ description: この関数を使用すると、ブラウザーでサードパー�
 keywords: ID サービス
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: f185ae10dac686b6986b171aef8a46a574484283
-workflow-type: ht
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 100%
 
@@ -35,9 +35,9 @@ ID サービスは、ユーザーがサイトを訪問したときにファー�
 * サイト訪問者が別のドメインに移動したときに、その訪問者の一意の ID を再生成する。
 * 同じ組織が所有する異なるドメインにわたって訪問者を追跡する。
 
-この問題を解決するには、` Visitor.appendVisitorIDsTo( *`url`*)` を実装します。これにより、ブラウザーがサードパーティ Cookie をブロックしても、ID サービスが複数ドメインにわたってサイト訪問者を適切に追跡できます。このプロパティは以下のように動作します。
+この問題を解決するには、`Visitor.appendVisitorIDsTo( *`url`*)` を実装します。これにより、ブラウザーがサードパーティ Cookie をブロックしても、ID サービスが複数ドメインにわたってサイト訪問者を適切に追跡できます。このプロパティは以下のように動作します。
 
-* 訪問者が同じ組織の他のドメインを参照すると、` Visitor.appendVisitorIDsTo( *`url`*)` によって、元のドメインから宛先ドメインへの URL リダイレクトのクエリパラメーターとして MID が追加されます。
+* 訪問者が同じ組織の他のドメインを参照すると、`Visitor.appendVisitorIDsTo( *`url`*)` によって、元のドメインから宛先ドメインへの URL リダイレクトのクエリパラメーターとして MID が追加されます。
 * アドビに訪問者の ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から MID が抽出されます。このリクエストにはサードパーティ Cookie が含まれますが、この場合、サードパーティ Cookie を利用できません。
 * 宛先ページの ID サービスコードは、MID で渡された値を使用して訪問者を追跡します。
 
@@ -77,7 +77,7 @@ adbeDomains.forEach(function(domain) {
 >
 >In order for the values passed in the URL via appendVisitorsIDsTo to be picked up, the [ovewriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) variable must be set to true.
 
-The following example can help you get started with ` Visitor.appendVisitorIDsTo( *`url`*)`. When implemented properly, your JavaScript code could look similar to the following example.
+The following example can help you get started with `Visitor.appendVisitorIDsTo( *`url`*)`. When implemented properly, your JavaScript code could look similar to the following example.
 
 ```js
 //Code on Domain A 
@@ -111,8 +111,8 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html?lang=ja" format="https" scope="external"> Android ID Service Methods </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html?lang=ja" format="https" scope="external"> iOS ID Service Methods </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Android ID Service Methods </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> iOS ID Service Methods </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

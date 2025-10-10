@@ -1,20 +1,20 @@
 ---
-description: タイムアウト間隔をミリ秒単位で設定します。 他のソリューション（Analytics、Audience Manager、Target など）に ID サービスからの応答を待つ時間を伝えるために使用します。
+description: タイムアウト間隔をミリ秒単位で設定します。 ID サービスからの応答を待つ時間を、他のソリューション （Analytics、Audience Manager、Target など）に伝えるために使用されます。
 keywords: ID サービス
 title: loadTimeout
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '142'
-ht-degree: 100%
+ht-degree: 69%
 
 ---
 
 # loadTimeout{#loadtimeout}
 
-タイムアウト間隔をミリ秒単位で設定します。 他のソリューション（Analytics、Audience Manager、Target など）に ID サービスからの応答を待つ時間を伝えるために使用します。
+タイムアウト間隔をミリ秒単位で設定します。 ID サービスからの応答を待つ時間を、他のソリューション （Analytics、Audience Manager、Target など）に伝えるために使用されます。
 
-**構文：** ` loadTimeout: *`間隔（ミリ秒）`*`
+**構文：** `loadTimeout: *`間隔（ミリ秒）`*`
 
 デフォルト値は 30,000 ミリ秒（30 秒）です。 デフォルト値を変更&#x200B;*しない*&#x200B;ことを強くお勧めします。
 

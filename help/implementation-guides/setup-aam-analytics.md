@@ -3,7 +3,7 @@ description: 次の説明は、Experience Cloud ID サービスを使用し、�
 keywords: ID サービス
 title: Experience Cloud ID サービスの Analytics および Audience Manager への実装
 exl-id: e31720a1-5c89-4084-88f6-443994dbb2f4
-source-git-commit: 26152f559150f5bd67d4802b8464446482f2e9a1
+source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
 workflow-type: tm+mt
 source-wordcount: '1183'
 ht-degree: 100%
@@ -151,7 +151,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 手順 7：ページへの Visitor API コードの追加 {#section-c2bd096a3e484872a72967b6468d3673}
 
-` [!UICONTROL VisitorAPI.js]` ファイルを各ページの `<head>` タグ内に配置します。`VisitorAPI.js` ファイルをページに配置する際には、以下のようにします。
+`[!UICONTROL VisitorAPI.js]` ファイルを各ページの `<head>` タグ内に配置します。`VisitorAPI.js` ファイルをページに配置する際には、以下のようにします。
 
 * タグは `<head>` セクションの先頭に配置して、他のソリューションタグより先に表示させます。
 * AppMeasurement およびその他の [!DNL Experience Cloud] ソリューションのコードより前に実行する必要があります。
