@@ -18,4 +18,4 @@ ht-degree: 100%
 
 >[!MORELIKETHIS]
 >
->* [Adobe Analytics でのオーディオおよびビデオの測定 ](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ja)
+>* [Adobe Analytics でのオーディオおよびビデオの測定 &#x200B;](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ja)

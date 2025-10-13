@@ -17,7 +17,7 @@ Adobe [!UICONTROL Opt-In] Object は、Adobe [!UICONTROL Experience Platform ID 
 
 プライバシー規制の重要な側面は、個人データの利用方法や利用者に関するユーザーの同意の取得と伝達です。[!UICONTROL ID サービス]の最新バージョン には、エンドユーザーの同意が得られているかどうかに基づいて、Experience Cloud ソリューションタグの条件付き実行（同意の前後など）を提供する機能が含まれます。 このプロセスについては、次の画像をご覧ください。
 
-![ [!UICONTROL オプトイン]の仕組みを示す図 ](assets/opt-in.png)
+![&#x200B; [!UICONTROL オプトイン]の仕組みを示す図 &#x200B;](assets/opt-in.png)
 
 [!UICONTROL オプトイン] は次のように動作します。
 

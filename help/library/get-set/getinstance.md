@@ -50,7 +50,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-`getInstance` により既存のインスタンスが見つからない場合は、新しいインスタンスが作成されて返されます。これは、[!DNL AppMeasurement] の [`s_gi()` 関数 ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=ja) 似ています。
+`getInstance` により既存のインスタンスが見つからない場合は、新しいインスタンスが作成されて返されます。これは、[!DNL AppMeasurement] の [`s_gi()` 関数 &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=ja) 似ています。
 
 **一般的な使用例**
 
