@@ -4,10 +4,10 @@ user-guide-title: Experience Cloud ID サービスのヘルプ
 breadcrumb-title: ID サービスガイド
 user-guide-description: Adobe Experience Cloud ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。これは、Experience Cloud ソリューションおよびサービスの従来の ID 生成コードを置き換えるのに役立ちます。
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 68beec895b3d1dbab24a243bace52f669dd20247
-workflow-type: ht
-source-wordcount: '407'
-ht-degree: 100%
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
    + [実装方法](implementation-guides/implementation-methods.md)
    + [実装ガイド](implementation-guides/implementation-guides.md)
    + [Experience Platform タグを使用した実装](implementation-guides/ecid-implement-with-launch.md)
-   + [Analytics の実装](implementation-guides/setup-analytics.md)
+   + [Analytics の実装](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview)
    + [Target への実装](implementation-guides/setup-target.md)
    + [Analytics および Audience Manager への実装](implementation-guides/setup-aam-analytics.md)
    + [Analytics、Audience Manager および Target への実装](implementation-guides/setup-aam-analytics-target.md)
@@ -81,16 +81,6 @@ ht-degree: 100%
       + [resetState](library/get-set/resetstate.md)
 + リファレンス {#reference}
    + [リファレンスの概要](reference/reference.md)
-   + Analytics リファレンス {#analytics-reference}
-      + [Analytics リファレンスの概要](reference/analytics-reference/analytics-reference.md)
-      + [CNAME 実装の概要](reference/analytics-reference/cname.md)
-      + [Analytics および Experience Cloud ID の設定](reference/analytics-reference/analytics-ids.md)
-      + [Analytics ID の操作の順序](reference/analytics-reference/analytics-order-of-operations.md)
-      + [ID サービス移行の決定ポイント](reference/analytics-reference/migration-decisions.md)
-      + [ID サービスの移行シナリオ](reference/analytics-reference/migration-scenarios.md)
-      + [Analytics および ID のリクエスト](reference/analytics-reference/legacy-analytics.md)
-      + [JavaScript を利用したサーバー側実装](reference/analytics-reference/server-side.md)
-      + [ID サービスの猶予期間](reference/analytics-reference/grace-period.md)
    + [Google Chrome SameSite のラベル付けの変更](reference/chrome-samesite-labelling.md)
    + [コンテンツセキュリティポリシーおよび ID サービス](reference/csp.md)
    + [ID サービスでの COPPA のサポート](reference/coppa.md)
@@ -106,7 +96,6 @@ ht-degree: 100%
 + よくある質問（FAQ） {#faqs}
    + [FAQ の概要](faq-intro/faq-intro.md)
    + [ID サービスに関する FAQ](faq-intro/faq.md)
-   + [Analytics と ID サービスに関する FAQ](faq-intro/analytics-faq.md)
    + [他の Experience Cloud ソリューションに関する FAQ](faq-intro/other-faq.md)
 + ID サービスのリリースノート {#release-notes}
    + [2022年リリースノート](release-notes/notes-2022.md)

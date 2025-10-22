@@ -3,10 +3,10 @@ description: 2015 年版のリリースノートと更新情報です。
 keywords: ID サービス
 title: 2015 年リリースノート
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 100%
+source-wordcount: '440'
+ht-degree: 96%
 
 ---
 
@@ -37,8 +37,7 @@ ht-degree: 100%
   これは、次の条件の&#x200B;*すべて*&#x200B;を満たす少数のクライアントにのみ影響がありました。
 
    * ID サービスの使用。
-   * [猶予期限&#x200B;](../reference/analytics-reference/grace-period.md)*を有効にしているか、*&#x200B;猶予期限がファーストパーティ cookie を使用していて、ユーザーが cookie をブロックしている。
-
+   * [ 猶予期間 ](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)*または* がファーストパーティ cookie を使用しており、ユーザーがサードパーティ cookie をブロックすることを有効にしました。
    * マルチパートのトップレベルドメインのページがある。
 
 このリリースでのドキュメントの改訂には、次のものが含まれます。
@@ -65,8 +64,6 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
     "idSyncContainerID":80 
 });
 ```
-
-[Experience Cloud](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd) に関する説明を参照してください。
 
 ## バージョン 1.3.5 {#section-eed4567f058f446d9a819e4682621aed}
 

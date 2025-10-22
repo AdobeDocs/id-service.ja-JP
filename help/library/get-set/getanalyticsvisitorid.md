@@ -3,10 +3,10 @@ description: Experience Cloud ID サービスが実装される前に s_vi Cooki
 keywords: ID サービス
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 100%
+source-wordcount: '277'
+ht-degree: 99%
 
 ---
 
@@ -43,11 +43,11 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 `aid` パラメーターは次の場合に、クエリ文字列内で使用されます。
 
 * [!DNL Experience Cloud] ID サービスが正しくデプロイされている場合。
-* サイトに訪問しているユーザーの [!DNL Analytics]s_vi Cookie[&#x200B; に既に &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=ja#section-5d50a078de444d12b7d927d68ff3b679?lang=ja) ID が保存されている場合。
+* サイトに訪問しているユーザーの [!DNL Analytics]s_vi Cookie[ に既に ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=ja#section-5d50a078de444d12b7d927d68ff3b679?lang=ja) ID が保存されている場合。
 
 **例 2**
 
-`aid` パラメーターは、組織が ID サービスを完全に導入する前の[猶予期間](../../reference/analytics-reference/grace-period.md)を使用している場合に、クエリ文字列内で使用されます。サイトに訪問しているユーザーが新規ユーザーであり、組織が猶予期間を使用していない場合、訪問者には [!DNL Experience Cloud]（`mid` ID）パラメーターが送信されます。
+`aid` パラメーターは、組織が ID サービスを完全に導入する前の[猶予期間](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)を使用している場合に、クエリ文字列内で使用されます。サイトに訪問しているユーザーが新規ユーザーであり、組織が猶予期間を使用していない場合、訪問者には [!DNL Experience Cloud]（`mid` ID）パラメーターが送信されます。
 
 >[!MORELIKETHIS]
 >

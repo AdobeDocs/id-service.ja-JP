@@ -5,9 +5,9 @@ title: 2016 年リリースノート
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: d027f7fca8cf62d6b5d80ec3c37049ddd1afdd70
+source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1099'
 ht-degree: 100%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->* バージョン 1.10 を使用するには [!UICONTROL AppMeasurement] 1.8.0 が必要です。
+>* バージョン 1.10 には [!UICONTROL AppMeasurement] 1.8.0 が必要です。
 >* Experience Cloud ID サービスライブラリ 2.0.0 以降を使用している場合は、Adobe Media Manager の ID 同期はデフォルトで開始されます。[ID 同期と一致率について](/help/introduction/match-rates.md)を参照してください。
 
 **修正点および改善点**
@@ -123,7 +123,6 @@ ht-degree: 100%
 
 **新規**
 
-* [Experience Cloud ID サービスの Analytics への実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)
 * [Experience Cloud ID サービスの Analytics、Audience Manager および Target への実装](../implementation-guides/setup-aam-analytics-target.md#concept-e7e2dc0d0bbe481db93328b5604b4673)
 
 **改訂済み**
@@ -198,12 +197,6 @@ ht-degree: 100%
   </tr> 
  </tbody> 
 </table>
-
-**ドキュメントの更新**
-
-* [Experience Cloud Identity Service の Analytics への実装](../implementation-guides/setup-analytics.md#concept-9ebbea85cb844a15b557be572cd142fd)：ID サービスを [!DNL Analytics] で使用するための設定方法に関する新しい手順です。
-
-* [Experience Cloud ID サービス移行の判断ポイント](../reference/analytics-reference/migration-decisions.md#concept-ba44803eea3c4cc185232a510cec0257)：テキストをわかりやすく修正しました。単一のドメインを使用する場合は、データ収集 CNAME の管理を終了したい場合に、その使用を停止できます。ただし、CNAME が機能している場合には、変更する必要はありません。
 
 ## バージョン 1.5.3 {#section-7c09ba2832bd4644a1ccc3aa83abe66a}
 
