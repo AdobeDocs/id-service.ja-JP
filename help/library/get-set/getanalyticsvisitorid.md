@@ -47,7 +47,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 **例 2**
 
-`aid` パラメーターは、組織が ID サービスを完全に導入する前の[猶予期間](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)を使用している場合に、クエリ文字列内で使用されます。サイトに訪問しているユーザーが新規ユーザーであり、組織が猶予期間を使用していない場合、訪問者には [!DNL Experience Cloud]（`mid` ID）パラメーターが送信されます。
+`aid` パラメーターは、組織が ID サービスを完全に導入する前の[猶予期間](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/migration)を使用している場合に、クエリ文字列内で使用されます。サイトに訪問しているユーザーが新規ユーザーであり、組織が猶予期間を使用していない場合、訪問者には [!DNL Experience Cloud]（`mid` ID）パラメーターが送信されます。
 
 >[!MORELIKETHIS]
 >
