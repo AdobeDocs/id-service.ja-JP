@@ -52,7 +52,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>ソリューションとコードサンプル</b> </p> </td> 
-   <td colname="col2"> <p>ID サービスへの呼び出しを次のような形式に設定します。 </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>この呼び出しの例には以下が含まれていることに注意してください。 </p> 
+   <td colname="col2"> <p>ID サービスへの呼び出しを次のような形式に設定します。 </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>この呼び出しの例には以下が含まれていることに注意してください。 </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID：<span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">訪問者の独自の ID に結合された MID：<span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -87,7 +87,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>ソリューションとコードサンプル</b> </p> </td> 
-   <td colname="col2"> <p>ID サービスへの呼び出しを次のような形式に設定します。 </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>この呼び出しの例には組織 ID <span class="codeph">d_orgid=5555</span> が含まれていることに注意してください。この訪問者の <span class="keyword">Experience Cloud</span> ID が返されます。 </p> </td> 
+   <td colname="col2"> <p>ID サービスへの呼び出しを次のような形式に設定します。 </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>この呼び出しの例には組織 ID <span class="codeph">d_orgid=5555</span> が含まれていることに注意してください。この訪問者の <span class="keyword">Experience Cloud</span> ID が返されます。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

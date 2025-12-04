@@ -158,7 +158,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 手順 8：（オプション）猶予期間の設定 {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-これらのユースケースのいずれかが状況に当てはまる場合は、[ カスタマーケア ](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html) に依頼して、一時的な猶予期間を設定してください。 猶予期間は最大 180 日です。必要に応じて、猶予期間を更新できます。
+これらのユースケースのいずれかが状況に当てはまる場合は、[&#x200B; カスタマーケア &#x200B;](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html) に依頼して、一時的な猶予期間を設定してください。 猶予期間は最大 180 日です。必要に応じて、猶予期間を更新できます。
 
 **部分的実装**
 

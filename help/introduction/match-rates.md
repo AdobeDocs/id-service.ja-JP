@@ -58,7 +58,7 @@ ID 同期は、ターゲットパブリッシング iFrame で実行される UR
 
 ## ID 同期を管理する同期サービス {#section-cd5784d7ad404a24aa28ad4816a0119a}
 
-*`Sync Services`* という用語は、ID 同期を担当する内部 Experience Cloud [!DNL Experience Cloud]テクノロジーのことを指します。このサービスは、デフォルトで有効になっています。無効にするには、[オプションの変数 ](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) を ID サービス `Visitor.getInstance` 関数に追加します。同期サービスは、以下のような様々な [!DNL Experience Cloud] ID を一致させます。
+*`Sync Services`* という用語は、ID 同期を担当する内部 Experience Cloud [!DNL Experience Cloud]テクノロジーのことを指します。このサービスは、デフォルトで有効になっています。無効にするには、[オプションの変数 &#x200B;](../library/function-vars/disableidsync.md#reference-589d6b489ac64eddb5a7ff758945e414) を ID サービス `Visitor.getInstance` 関数に追加します。同期サービスは、以下のような様々な [!DNL Experience Cloud] ID を一致させます。
 
 * サードパーティ [!DNL Experience Cloud] Cookie ID とファーストパーティ [!DNL Experience Cloud] ID。
 

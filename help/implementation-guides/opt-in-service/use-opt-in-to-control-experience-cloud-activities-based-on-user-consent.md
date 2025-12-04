@@ -17,7 +17,7 @@ Adobe [!UICONTROL Opt-in] Object は、Adobe [!UICONTROL Experience Platform Ide
 
 プライバシー規制の重要な側面は、個人データの利用方法や利用者に関するユーザーの同意の取得と伝達です。[!UICONTROL Identity Service] の最新バージョンには、エンドユーザーの同意が得られているかどうかに基づいて、Experience Cloud ソリューションタグの条件付き実行（同意の前後など）を提供する機能が含まれます。 このプロセスについては、次の画像をご覧ください。
 
-![[!UICONTROL Opt-in] の仕組みを示す図 ](assets/opt-in.png)
+![[!UICONTROL Opt-in] の仕組みを示す図 &#x200B;](assets/opt-in.png)
 
 [!UICONTROL Opt-in] は次のように動作します。
 
@@ -31,7 +31,7 @@ Adobe [!UICONTROL Opt-in] Object は、Adobe [!UICONTROL Experience Platform Ide
 
 >[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
-Experience Platform タグを使用していない場合は、[!UICONTROL Opt-in] ドキュメント [ に記載されているように、グローバル訪問者オブジェクトの初期化で ](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=ja) の設定を行うことができます。
+Experience Platform タグを使用していない場合は、[!UICONTROL Opt-in] ドキュメント [&#x200B; に記載されているように、グローバル訪問者オブジェクトの初期化で &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=ja) の設定を行うことができます。
 
 ## ページでの [!UICONTROL Opt-In] の実装
 

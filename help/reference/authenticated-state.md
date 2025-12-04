@@ -216,5 +216,5 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## Analytics および Audience Manager ユーザー向けの注意点 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトが、データソースに関連付けられた統合コードと一致している必要があります。詳しくは、「[!UICONTROL Visitor ID Service] 結合ルールコードの設定 [ ドキュメントの ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=ja#configure-merge-rule-code) の節を参照してください。
+宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトが、データソースに関連付けられた統合コードと一致している必要があります。詳しくは、「[!UICONTROL Visitor ID Service] 結合ルールコードの設定 [&#x200B; ドキュメントの &#x200B;](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=ja#configure-merge-rule-code) の節を参照してください。
 
