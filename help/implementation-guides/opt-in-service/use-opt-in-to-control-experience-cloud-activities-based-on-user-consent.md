@@ -29,7 +29,7 @@ Adobe [!UICONTROL Opt-in] Object は、Adobe [!UICONTROL Experience Platform Ide
 
 [!UICONTROL Opt-in] は、Adobe Experience Platform タグ（以前の Launch）で最も簡単に設定できます。 方法については、次の短いビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40335/?captions=jpn&quality=12)
 
 Experience Platform タグを使用していない場合は、[!UICONTROL Opt-in] ドキュメント [&#x200B; に記載されているように、グローバル訪問者オブジェクトの初期化で &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=ja) の設定を行うことができます。
 
@@ -43,7 +43,7 @@ Experience Platform タグを使用していない場合は、[!UICONTROL Opt-in
 
 次のビデオでは、ページ上で [!UICONTROL Opt-in] を操作する方法の簡単なデモと、Experience Cloud ソリューションによる cookie の設定、ビーコンの開始などにどのような影響が出るかを説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40340/?captions=jpn&quality=12)
 
 **注意：** この記事の作成時点では、一部のExperience Cloud アプリケーションのライブラリには [!UICONTROL Opt-in] が組み込まれていません。 現在 [!UICONTROL Opt-in] でサポートされているライブラリは次のとおりです。
 
