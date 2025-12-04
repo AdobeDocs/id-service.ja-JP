@@ -2,10 +2,10 @@
 description: オプトインサービスを使用すると、サイトを訪問したユーザーのデバイスまたはブラウザーに Cookie を設定できるかどうかを訪問者が決定するようにプロトコルを設定できます。
 title: オプトインサービス
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
-source-git-commit: 070390ec0534c9066d717fe52ff572f34c110137
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -45,3 +45,4 @@ ht-degree: 100%
 ![](assets/Opt-in-approval.png)
 
 その後、アドビのソリューションは、タグが承認されているかどうかを確認し、変更をサブスクライブして、すべてのオプトイン顧客を取得できます。 オプトインサービスにより、ソリューションの JavaScript ライブラリまたは ECID（実装済みの場合）から直接権限を取得できます。
+

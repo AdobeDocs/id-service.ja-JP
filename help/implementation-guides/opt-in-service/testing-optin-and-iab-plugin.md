@@ -2,7 +2,7 @@
 description: Web サイトでオプトインを有効にしたら、検証方法を使用して、ブラウザーの開発者ツールでサービスが期待どおりに動作しているかどうかをテストします。
 title: オプトインサービスの検証
 exl-id: f0bcb32a-ccad-40a4-b031-2584e4136ace
-source-git-commit: 7ef084bc1add5a4ea8c7be738055b0c21e247eea
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 97%
@@ -113,3 +113,4 @@ Visitor.getInstance({{YOUR_ORG_ID}}, {
 
 * 目的 1、2、5 のいずれかが承認されていない。
 * Audience Manager ベンダー ID が承認されていない。
+

@@ -2,10 +2,10 @@
 description: オプトインサービスを管理するためのユースケースと解決策のサンプルです。
 title: オプトインの使用例
 exl-id: 4c57685f-40b7-4af4-8527-3c2795586f0f
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '424'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 100%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Analytics は事前同意の状態で収集できますが、同意が得られるまで他のすべてのライブラリを読み込むことはできません。 </p> </td> 
+   <td colname="col1"> <p>Analytics は、同意前の状態で収集しても問題ありませんが、同意が得られるまで、他のすべてのライブラリは読み込めません </p> </td> 
    <td colname="col2"> <p>オプトインを使用して、Analytics カテゴリを事前同意状態で有効にします。 </p> </td> 
    <td colname="col3"> <p>Analytics では、事前同意の収集では ECID ではなく Analytics の識別子を使用します。 ECID が承認されると、新しい識別子が使用され、訪問者は、アクティベーションおよび統合に使用できる ECID を受け取るようになります。 </p> <p>事前／事後同意状態での訪問者のフラグメント化が必要です。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ファーストパーティの測定では、事前同意状態で収集しても問題ありません。 その他のタイプのデータ使用は、同意が得られるまで行えません。 </p> </td> 
-   <td colname="col2"> <p>オプトインを使用して、Analytics + ECID ライブラリを事前同意状態で有効にします。 </p> <p>「disablethirdpartycookies」設定を ECID ライブラリに追加して、事前同意状態でサードパーティ Cookie と ID の同期をブロックします。 </p> </td> 
+   <td colname="col2"> <p>オプトインを使用して、Analytics + ECID ライブラリを事前同意状態で有効にします。 </p> <p>同意前状態でサードパーティ Cookie と ID 同期をブロックするには、ECID ライブラリに「disablethirdpartycookies」設定を追加します </p> </td> 
    <td colname="col3"> <p>ECID を取得するための Adobe Demdex 呼び出しがトリガーされますが、Demdex Cookie、他のサードパーティ Cookie、または ID 同期は存在しません。 </p> <p>Analytics の事前／事後同意状態で、一貫した訪問者を維持します。 事前同意状態での収集は、事後同意データ収集に結び付けられます。 </p> </td> 
   </tr> 
   <tr> 
@@ -54,3 +54,4 @@ ht-degree: 100%
   </tr> 
  </tbody> 
 </table>
+

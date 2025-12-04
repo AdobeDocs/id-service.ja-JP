@@ -5,7 +5,7 @@ title: 2016 年リリースノート
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 100%
@@ -218,3 +218,5 @@ ht-degree: 100%
   </tr> 
  </tbody> 
 </table>
+
+

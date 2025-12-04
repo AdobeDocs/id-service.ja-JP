@@ -3,10 +3,10 @@ description: この設定を使用すると、更新対象の ID サービスの
 keywords: ID サービス
 title: resetBeforeVersion
 exl-id: 9fa40baa-433d-4f16-824b-521948a92a4b
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 `resetBeforeVersion` 変数の値として ID サービスのバージョンを指定すると、クライアント側 ID から古い ECID が消去されます。
 
-セッションのタイムアウトなど、条件によっては、ID サービスでサーバーサイド ID が正常に取得されずに、クライアントサイド ID が生成されることがあります。 この場合、孤立したクライアントサイド ID は ID サービスによって追跡されますが、ドメイン間で追跡したり、他のソリューションと適切に同期したりすることはできません。 この動作では、現在の AMCV Cookie のバージョンと `resetBeforeVersion` の値が比較されます。Cookie が存在しないか、Cookie のバージョンが最新リリースバージョンの `resetBeforeVersion` よりも小さい（古い）場合、AMCV Cookie は削除され、ID サービスは新しい ECID をリクエストします。
+セッションのタイムアウトなど、条件によっては、ID サービスでサーバーサイド ID が正常に取得されずに、クライアントサイド ID が生成されることがあります。 この場合、孤立したクライアントサイド ID は ID サービスによって追跡されますが、ドメイン間で追跡したり、他のソリューションと適切に同期したりすることはできません。 この動作では、現在の AMCV Cookie のバージョンと `resetBeforeVersion` の値が比較されます。cookie が存在しない場合か、cookie のバージョンが最新のリリースバージョンの `resetBeforeVersion` よりも古い（古い）場合、AMCV cookie は削除され、ID サービスは新しい ECID をリクエストします。
 
 ブラウザーにサードパーティ Demedex Cookie がある訪問者の場合、ECID が、この Demedex Cookie の UUID を使用して適切に生成されたかどうかがチェックされます。そのチェックの結果が真であるとわかった場合、新しい ECID は同じになり、訪問者は新規と見なされます。 何らかの理由で、クリアされる ECID が demdex Cookie を使用して生成されなかった場合、または demdex Cookie がない場合、訪問者は新しい ECID を受け取り、新規と見なされます。
 
@@ -42,3 +42,4 @@ var visitor = Visitor.getInstance ("Insert Marketing Cloud organization ID here"
     resetBeforeVersion: "3.3" 
 });
 ```
+

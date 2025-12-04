@@ -3,9 +3,9 @@ description: getInstance は、指定した Experience Cloud 組織 ID に対応
 keywords: ID サービス
 title: getInstance
 exl-id: 4941cf51-a8d0-4796-a102-4cd13cd5574d
-source-git-commit: 76e894b6af7b217632bf89dcf94381f55457d45d
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '218'
 ht-degree: 96%
 
 ---
@@ -50,10 +50,11 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ORGANIZATION-ID-HERE",
 });
 ```
 
-`getInstance` により既存のインスタンスが見つからない場合は、新しいインスタンスが作成されて返されます。これは、[`s_gi()` の &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=ja) 関数 [!DNL AppMeasurement] 似ています。
+`getInstance` により既存のインスタンスが見つからない場合は、新しいインスタンスが作成されて返されます。これは、[`s_gi()` の ](https://experienceleague.adobe.com/docs/analytics/implementation/vars/functions/s-gi.html?lang=ja) 関数 [!DNL AppMeasurement] 似ています。
 
 **一般的な使用例**
 
 [!DNL Experience Cloud] ID サービス API は各 [!DNL Adobe Experience Cloud] 組織 ID に対して作成されたすべてのインスタンスのリストを保持しています。ID サービス API を使用するアプリケーションがそのインスタンスへの参照を渡さない場合、新しいインスタンスを作成する代わりに `getInstance` を呼び出すことでそのインスタンスを見つけることができます。同じ Web ページまたはアプリケーションにおいて、異なる組織の複数のインスタンスもサポートされます。
 
 このメソッドは、明確な `init` フェーズは持たないものの、複数の場所で ID サービス API を呼び出す必要があるアプリケーションで役立ちます。それらすべての場所で `getInstance` を呼び出すことができ、その最初の実行時にインスタンスが作成されます。その後の呼び出しでは既存のインスタンスが返されます。
+

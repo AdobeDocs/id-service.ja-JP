@@ -1,18 +1,18 @@
 ---
-description: これらの手順は、Target、Analytics、ID サービスのサーバーサイドとクライアントサイドの実装が混在している A4T ユーザー向けのものです。 NodeJS または Rhino 環境で ID サービスを実行する必要があるユーザーも、この情報を確認する必要があります。 ID サービスのこのインスタンスでは、Node Package Manager （NPM）からダウンロードしてインストールできる短縮バージョンの VisitorAPI.js コードライブラリを使用します。 インストール手順およびその他の設定要件については、この節を参照してください。
+description: これらの手順は、Target、Analytics、ID サービスのサーバーサイドとクライアントサイドの実装が混在している A4T ユーザー向けのものです。 NodeJS または Rhino 環境で ID サービスを実行する必要があるユーザーも、この情報を確認する必要があります。 ID サービスのこのインスタンスでは、Node パッケージマネージャー（NPM）からダウンロードしてインストールできる短縮バージョンの VisitorAPI.js コードライブラリを使用します。インストール手順およびその他の設定要件については、この節を参照してください。
 keywords: ID サービス
 title: A4T での ID サービスの使用と Target のサーバーサイド実装
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
-source-git-commit: e171c94ccfa1f4fe9b8d909d0204adb94f20cbb6
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 100%
+source-wordcount: '803'
+ht-degree: 98%
 
 ---
 
 # A4T での ID サービスの使用と Target のサーバーサイド実装 {#using-the-id-service-with-a-t-and-a-server-side-implementation-of-target}
 
-これらの手順は、Target、Analytics、ID サービスのサーバーサイドとクライアントサイドの実装が混在している A4T ユーザー向けのものです。 NodeJS または Rhino 環境で ID サービスを実行する必要があるユーザーも、この情報を確認する必要があります。 ID サービスのこのインスタンスでは、Node Package Manager （NPM）からダウンロードしてインストールできる短縮バージョンの VisitorAPI.js コードライブラリを使用します。 インストール手順およびその他の設定要件については、この節を参照してください。
+これらの手順は、Target、Analytics、ID サービスのサーバーサイドとクライアントサイドの実装が混在している A4T ユーザー向けのものです。 NodeJS または Rhino 環境で ID サービスを実行する必要があるユーザーも、この情報を確認する必要があります。 ID サービスのこのインスタンスでは、Node パッケージマネージャー（NPM）からダウンロードしてインストールできる短縮バージョンの VisitorAPI.js コードライブラリを使用します。インストール手順およびその他の設定要件については、この節を参照してください。
 
 ## はじめに {#section-ab0521ff5bbd44c592c3eaab31c1de8b}
 
@@ -152,10 +152,10 @@ Response.send("
 
 **DTM 設定**
 
-これらを名前と値のペアとして ID サービスインスタンスの&#x200B;**[!UICONTROL 一般／設定]**&#x200B;セクションに追加します。
+これらを名前と値のペアとして、ID サービスインスタンスの「**[!UICONTROL General > Settings]**」セクションに追加します。
 
-* **[!UICONTROL 名前：]** serverState
-* **[!UICONTROL 値：]**%serverState%
+* **[!UICONTROL Name:]** serverState
+* **[!UICONTROL Value:]** %serverState%
 
   >[!IMPORTANT]
   >
@@ -196,4 +196,5 @@ Response.send("
 
 >[!MORELIKETHIS]
 >
->* [Node Package Manager によるサーバー側 ID サービスパッケージ](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+>* [Node パッケージマネージャーによるサーバーサイド ID サービスパッケージ](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)
+

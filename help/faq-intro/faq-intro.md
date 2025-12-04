@@ -5,10 +5,10 @@ title: よくある質問（FAQ）
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: 930c0849-1d88-408e-a385-214b4d0ffd96
-source-git-commit: f856f0e7e4ff231bcdd0f351b0b330953b3f8e7b
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '59'
+ht-degree: 100%
 
 ---
 
@@ -18,3 +18,4 @@ Experience Cloud Identity Service そのもの、および ID サービスと他
 
 * [ID サービスに関する FAQ](faq.md)
 * [他の Experience Cloud ソリューションに関する FAQ](other-faq.md)
+

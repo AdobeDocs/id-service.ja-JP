@@ -2,7 +2,7 @@
 description: 同意管理プラットフォーム（CMP）をオプトインの IAB Transparency and Consent Framework（TCF）用 Audience Manager プラグインに接続します。
 title: IAB フレームワークを使用したオプトインサービスの使用
 exl-id: 9ac9b232-0797-4e77-a611-9cf5d17a5cb7
-source-git-commit: 159b37e360b586bbada13e34793009e3067de668
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 100%
@@ -57,3 +57,4 @@ Visitor.getInstance("YOUR_ORG_ID", {
 * [アドビのオプトイン](../../implementation-guides/opt-in-service/optin-overview.md#concept-f9b5db0d27a245fbadd3e19162319360) - プラットフォームソリューションでの同意管理に必要なコンポーネントであるオプトインの詳細
 * [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/overview/data-privacy/consent-management/aam-iab-plugin.html?lang=ja) の IAB Transparency and Consent Framework（TCF）サポート
 * [プライバシーの選択肢](https://www.adobe.com/jp/privacy/opt-out.html#customeruse) - ユーザーが自由にプライバシーを選択できる権利として、他のグローバルなオプトアウトツールを使用してすべてのデータ収集からオプトアウトすることもできます。グローバルなオプトアウトは、オプトインおよび IAB TCF の検証よりも優先されます。
+

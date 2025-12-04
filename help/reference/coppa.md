@@ -1,18 +1,18 @@
 ---
-description: 児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を Experience Cloud ID サービスコードに追加して、ブラウザーのサードパーティドメインに Cookie を設定できなくすることができます。
+description: 児童オンラインプライバシー保護法（COPPA）は、検証可能な保護者の同意なしに、13 歳未満の子供から個人情報をオンラインで収集することを禁止しています。 COPPA を遵守するために、オプションの変数を Experience Cloud ID サービスコードに追加して、ブラウザーのサードパーティドメインに Cookie を設定できなくすることができます。
 keywords: ID サービス
 title: Experience Cloud ID サービスでの COPPA のサポート
 exl-id: c7579f90-3011-4e26-b908-08907bf12ba2
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
 # Experience Cloud ID サービスでの COPPA のサポート {#coppa-support-in-the-experience-cloud-id-service}
 
-児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を Experience Cloud ID サービスコードに追加して、ブラウザーのサードパーティドメインに Cookie を設定できなくすることができます。
+児童オンラインプライバシー保護法（COPPA）は、検証可能な保護者の同意なしに、13 歳未満の子供から個人情報をオンラインで収集することを禁止しています。 COPPA を遵守するために、オプションの変数を Experience Cloud ID サービスコードに追加して、ブラウザーのサードパーティドメインに Cookie を設定できなくすることができます。
 
 >[!NOTE]
 >
@@ -46,3 +46,4 @@ var visitor = Visitor.getInstance("insert marketing cloud ID here", {
 >
 >* [アドビプライバシーセンター](http://www.adobe.com/jp/privacy.html)
 >* [COPPA とは](http://www.consumer.ftc.gov/articles/0031-protecting-your-childs-privacy-online#whatis)
+

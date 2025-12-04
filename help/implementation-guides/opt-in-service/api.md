@@ -2,10 +2,10 @@
 description: オプトインライブラリおよび設定用 API のリファレンスです。
 title: オプトインリファレンス
 exl-id: aa61aed7-695b-47e4-a922-9841e00aa09d
-source-git-commit: 06e935a4ba4776baa900d3dc91e294c92b873c0f
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -214,3 +214,4 @@ optIn.fetchPermissions(callback, true);
   adobe.optIn.on("complete", callback); 
 </codeph>
 ```
+

@@ -2,10 +2,10 @@
 title: Safari ITP での ECID ライブラリの手法
 description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
 workflow-type: tm+mt
 source-wordcount: '785'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Safari は ITP を使用したクロスドメイントラッキングと強く結びついているので、アドビでは、お客様および消費者のプライバシーおよび選択肢をサポートするライブラリのベストプラクティスを維持する必要があります。
 
-2020 年 11 月 10 日（PT）時点で、document.cookie API（「クライアント側」Cookie とも呼ばれる）を通じて設定されたすべてのファーストパーティの永続的な Cookie と、Safari およびモバイル iOS のファーストパーティ CNAME 実装を通じて設定されたCookie の有効期限は 7 日間です。 サードパーティ Cookie は、ITP の以前のバージョンで記載されているように、引き続きブロックされます。ITP 2.1 およびアドビソリューションへの影響について詳しくは、[Safari ITP 2.1 が Adobe Experience Cloud および Experience Platform のお客様に与える影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)を参照してください。
+2020 年 11 月 10 日（PT）をもって、document.cookie API を使用して設定されたすべてのファーストパーティ永続 Cookie （「クライアントサイド」 Cookie と呼ばれることが多い）と、Safari およびモバイル iOS ブラウザーのファーストパーティ CNAME 実装を使用して設定された Cookie には、有効期限が 7 日間に制限されています。 サードパーティ Cookie は、ITP の以前のバージョンで記載されているように、引き続きブロックされます。ITP 2.1 およびアドビソリューションへの影響について詳しくは、[Safari ITP 2.1 が Adobe Experience Cloud および Experience Platform のお客様に与える影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)を参照してください。
 
 ## ITP 関連の変更、方法および設定
 
@@ -77,3 +77,4 @@ demdex.net に対して ID リクエストがおこなわれ、ECID が取得さ
   >宛先ページが既に以前の訪問での ECID を持っている場合、既存の Cookie を上書きする決定がこの設定 overwriteCrossDomainMCIDAndAID によって制御されます。この設定について詳しくは、[overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md) を参照してください。
   >
   >このメソッドについて詳しくは、[appendVisitorIDsTo（クロスドメイントラッキング）](/help/library/get-set/appendvisitorid.md)リファレンスページを参照してください。
+
