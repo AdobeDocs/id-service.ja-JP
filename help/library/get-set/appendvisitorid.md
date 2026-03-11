@@ -1,11 +1,11 @@
 ---
-description: この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の Experience Cloud ID を共有できます。この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
+description: この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の Experience Cloud ID を共有できます。 この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。 VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 keywords: ID サービス
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+source-git-commit: 126292a287e219ee3152ce92eec63c620cce1254
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '429'
 ht-degree: 100%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 100%
 
 >[!TIP]
 >
->ECID が最初に（または以前に）拒否された場合、クロスドメイントラッキングは意図したとおりに機能しません。同意が「いいえ」に設定された時点での ID であったことを考慮し、URL を介して渡された既存の ID や、以前に Cookie に存在していた既存の ID はチェックされません。
+>ECID が最初に（または以前に）拒否された場合、クロスドメイントラッキングは意図したとおりに機能しません。 同意が「いいえ」に設定された時点での ID であったことを考慮し、URL を介して渡された既存の ID や、以前に Cookie に存在していた既存の ID はチェックされません。
 
-この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の Experience Cloud ID を共有できます。この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。VisitorAPI.js バージョン 1.7.0 以降で利用できます。
+この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の Experience Cloud ID を共有できます。 この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。 VisitorAPI.js バージョン 1.7.0 以降で利用できます。
 
 内容：
 
@@ -30,15 +30,15 @@ ht-degree: 100%
 
 ## ブラウザーでサードパーティの Cookie がブロックされている場合に複数のドメインをまたいだ訪問者を追跡する {#section-7251d88befd440b4b79520e33c5aa44a}
 
-ID サービスは、ユーザーがサイトを訪問したときにファーストパーティ Cookie とサードパーティ Cookie をブラウザーに書き込みます（[Cookie と Experience Cloud Identity Service ](../../introduction/cookies.md)を参照）。ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。サードパーティ Cookie には、ID サービスで MID を生成するために使用される別の ID が含まれます。ブラウザーでサードパーティ Cookie がブロックされている場合、ID サービスは以下のことができなくなります。
+ID サービスは、ユーザーがサイトを訪問したときにファーストパーティ Cookie とサードパーティ Cookie をブラウザーに書き込みます（[Cookie と Experience Cloud Identity Service ](../../introduction/cookies.md)を参照）。 ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。 サードパーティ Cookie には、ID サービスで MID を生成するために使用される別の ID が含まれます。 ブラウザーでサードパーティ Cookie がブロックされている場合、ID サービスは以下のことができなくなります。
 
 * サイト訪問者が別のドメインに移動したときに、その訪問者の一意の ID を再生成する。
 * 同じ組織が所有する異なるドメインにわたって訪問者を追跡する。
 
-この問題を解決するには、`Visitor.appendVisitorIDsTo( *`url`*)` を実装します。これにより、ブラウザーがサードパーティ Cookie をブロックしても、ID サービスが複数ドメインにわたってサイト訪問者を適切に追跡できます。このプロパティは以下のように動作します。
+この問題を解決するには、`Visitor.appendVisitorIDsTo( *`url`*)` を実装します。 これにより、ブラウザーがサードパーティ Cookie をブロックしても、ID サービスが複数ドメインにわたってサイト訪問者を適切に追跡できます。 このプロパティは以下のように動作します。
 
 * 訪問者が同じ組織の他のドメインを参照すると、`Visitor.appendVisitorIDsTo( *`url`*)` によって、元のドメインから宛先ドメインへの URL リダイレクトのクエリパラメーターとして MID が追加されます。
-* アドビに訪問者の ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から MID が抽出されます。このリクエストにはサードパーティ Cookie が含まれますが、この場合、サードパーティ Cookie を利用できません。
+* アドビに訪問者の ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から MID が抽出されます。 このリクエストにはサードパーティ Cookie が含まれますが、この場合、サードパーティ Cookie を利用できません。
 * 宛先ページの ID サービスコードは、MID で渡された値を使用して訪問者を追跡します。
 
 詳しくは、コードサンプルを参照してください。
@@ -73,7 +73,8 @@ adbeDomains.forEach(function(domain) {
 });
 ```
 
-<!-- >[!IMPORTANT]
+<!-- 
+>[!IMPORTANT]
 >
 >In order for the values passed in the URL via appendVisitorsIDsTo to be picked up, the [ovewriteCrossDomainMCIDAndAID](../function-vars/overwrite-visitor-id.md) variable must be set to true.
 
@@ -91,9 +92,11 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
      //Result of appendVisitorIDsTo includes destination URL, Experience Cloud ID (MCMID), and Analytics ID (MCAID) 
      "www.destination.com?adobe_mc=MCMID=1234|MCAID=5678"
 //Redirect to the destination
-``` -->
+``` 
+-->
 
-<!-- ## Dynamic Tag Management (DTM) and SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
+<!--
+## Dynamic Tag Management (DTM) and SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
 
 <table id="table_6E7152B4FD2B4C4D8C9477C68204C4FF"> 
  <thead> 
@@ -116,5 +119,6 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
     </ul> </td> 
   </tr> 
  </tbody> 
-</table> -->
+</table> 
+-->
 
