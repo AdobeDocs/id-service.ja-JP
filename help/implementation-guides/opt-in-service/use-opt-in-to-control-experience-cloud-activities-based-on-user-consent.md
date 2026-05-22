@@ -3,9 +3,16 @@ title: オプトインを使用し、ユーザーの同意に基づいて Experi
 description: Adobe Opt-in Object は、Adobe Experience Platform ID サービスの拡張機能で、エンドユーザーの同意に基づいて、Experience Cloud ソリューションが web ページに cookie を作成するかどうか、またはビーコンを開始するかどうかを制御するのに役立つよう設計されています。
 exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
 TQID: https://experienceleague.adobe.com/YfYkXzK8wKw6JC3-EB2ljIOfXGXQV5r6Nw2-XYsGW6c
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
 source-wordcount: 517
@@ -35,7 +42,7 @@ Adobe [!UICONTROL Opt-in] オブジェクトは、Adobe [!UICONTROL Experience P
 
 >[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
 
-Experience Platform タグを使用していない場合は、[ ドキュメント ](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=ja)に示すように、[!UICONTROL Opt-in]の設定をグローバル訪問者オブジェクトの初期化に設定できます。
+Experience Platform タグを使用していない場合は、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=ja)に示すように、[!UICONTROL Opt-in]の設定をグローバル訪問者オブジェクトの初期化に設定できます。
 
 ## ページに[!UICONTROL Opt-In]を実装しています
 

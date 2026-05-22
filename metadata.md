@@ -2,7 +2,8 @@
 cloud: Experience Cloud
 product: id service
 solution: Experience Cloud Services
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
 usetq: true
 type: Documentation
 audience: end-user

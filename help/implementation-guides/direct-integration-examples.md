@@ -4,9 +4,15 @@ keywords: ID サービス
 title: 直接統合の使用例
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 TQID: https://experienceleague.adobe.com/1vfYQsSZiqM3SrnP0lmSrZEWpAMsbwVK8sR0MNitetQ
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
 source-wordcount: 457
@@ -56,7 +62,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>ソリューションとコードサンプル</b> </p> </td> 
-   <td colname="col2"> <p>ID サービスへの呼び出しを次のような形式に設定します。 </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>この呼び出しの例には以下が含まれていることに注意してください。 </p> 
+   <td colname="col2"> <p>ID サービスへの呼び出しを次のような形式に設定します。 </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>この呼び出しの例には以下が含まれていることに注意してください。 </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID：<span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">訪問者の独自の ID に結合された MID：<span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -91,7 +97,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>ソリューションとコードサンプル</b> </p> </td> 
-   <td colname="col2"> <p>ID サービスへの呼び出しを次のような形式に設定します。 </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>この呼び出しの例には組織 ID <span class="codeph">d_orgid=5555</span> が含まれていることに注意してください。 この訪問者の <span class="keyword">Experience Cloud</span> ID が返されます。 </p> </td> 
+   <td colname="col2"> <p>ID サービスへの呼び出しを次のような形式に設定します。 </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>この呼び出しの例には組織 ID <span class="codeph">d_orgid=5555</span> が含まれていることに注意してください。 この訪問者の <span class="keyword">Experience Cloud</span> ID が返されます。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
