@@ -3,9 +3,20 @@ description: Experience Cloud ID サービスは、Experience Cloud アプリケ
 keywords: ID サービス; ID サービス; Experience Cloud ID サービス
 title: Experience Cloud ID サービス
 exl-id: fe1368db-06ca-4c79-b655-b7064e316d74
-source-git-commit: 126292a287e219ee3152ce92eec63c620cce1254
+TQID: https://experienceleague.adobe.com/xzEgzuN2NnyOnhCPocQikOXHFRU6zmLWLGdrJL4C3GM
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: 428
 ht-degree: 100%
 
 ---

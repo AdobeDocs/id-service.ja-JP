@@ -3,10 +3,22 @@ description: 2015 年版のリリースノートと更新情報です。
 keywords: ID サービス
 title: 2015 年リリースノート
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/WmeSY7aRbvnZJN0a-lNR-yYzWzF4dfJLPZqA--6lpYQ
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 96%
+source-wordcount: 449
+ht-degree: 94%
 
 ---
 
@@ -18,38 +30,38 @@ ht-degree: 96%
 
 2015 年 11 月
 
-児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。[Experience Cloud ID サービスでの COPPA のサポート](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)を参照してください。バージョン 1.5.3 以降でサポートされています。
+児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。 COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。 [Experience Cloud ID サービスでの COPPA のサポート](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)を参照してください。 バージョン 1.5.3 以降でサポートされています。
 
 ## バージョン 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 2015 年 9 月
 
 * Safari ブラウザーでユーザーがサードパーティ Cookie をブロックしたときに同期サービスが機能しなくなるバグを修正しました。 （AAM-20764）
-* ID サービスの呼び出しで、`d_visid_ver=` パラメーターにバージョン ID が含まれるようになりました。返された ID は、内部チームが問題をトラブルシューティングしたりサポートしたりするのに役立ちます。 （AAM-20824）
+* ID サービスの呼び出しで、`d_visid_ver=` パラメーターにバージョン ID が含まれるようになりました。 返された ID は、内部チームが問題をトラブルシューティングしたりサポートしたりするのに役立ちます。 （AAM-20824）
 
 ## バージョン 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 2015 年 8 月
 
 * 同期または送信するデータがない場合に、ID サービスが iframe をリクエストできないバグを修正しました。 （AAM-20164）
-* ID サービスでマルチパートのトップレベルドメイン Cookie を適切に設定できないバグを修正しました。 例えば、`my_company.co.uk` のようなドメインの場合、状況によっては、ID サービスは、`co.uk` にのみ Cookie を設定していました。（AN-104683）
+* ID サービスでマルチパートのトップレベルドメイン Cookie を適切に設定できないバグを修正しました。 例えば、`my_company.co.uk` のようなドメインの場合、状況によっては、ID サービスは、`co.uk` にのみ Cookie を設定していました。 （AN-104683）
 
   これは、次の条件の&#x200B;*すべて*&#x200B;を満たす少数のクライアントにのみ影響がありました。
 
    * ID サービスの使用。
-   * [&#x200B; 猶予期間 &#x200B;](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/migration)*または* がファーストパーティ cookie を使用しており、ユーザーがサードパーティ cookie をブロックすることを有効にしました。
+   * [猶予期間](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/migration) *または*&#x200B;がファーストパーティ Cookieを使用しており、ユーザーがサードパーティ Cookieをブロックすることを有効にしました。
    * マルチパートのトップレベルドメインのページがある。
 
 このリリースでのドキュメントの改訂には、次のものが含まれます。
 
-* [API メソッドとコードライブラリ](../library/library.md#concept-ff27497375644a898d47984aefb21c97)：コンテンツとテキストを再構成しました。ほとんどの場合、メソッドごとにページを設けました。
+* [API メソッドとコードライブラリ](../library/library.md#concept-ff27497375644a898d47984aefb21c97)：コンテンツとテキストを再構成しました。 ほとんどの場合、メソッドごとにページを設けました。
 * [Experience Cloud ID サービスの要件](../reference/requirements.md)：内容を改訂し、テキストを再構成しました。
 
 ## バージョン 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 2015 年 7 月
 
-[!DNL Experience Cloud] ID サービスは複数の ID と認証状態をサポートします。この変更により、[!DNL Audience Manager] 関数で使用されているユーザー ID への `setCustomerIDs` DPID マッピングのサポートが完全に廃止されました。詳しくは、[顧客 ID と認証状態](../reference/authenticated-state.md)を参照してください。
+[!DNL Experience Cloud] ID サービスは複数の ID と認証状態をサポートします。 この変更により、[!DNL Audience Manager] 関数で使用されているユーザー ID への `setCustomerIDs` DPID マッピングのサポートが完全に廃止されました。 詳しくは、[顧客 ID と認証状態](../reference/authenticated-state.md)を参照してください。
 
 ## バージョン 1.4 {#section-f5c596f355b14da28f45c798df513572}
 
@@ -69,11 +81,11 @@ var visitor = Visitor.getInstance("016D5C175213CCA80A490D05@AdobeOrg",{
 
 2015 年 2 月
 
-AAM Blob およびロケーションヒントのリクエストに関するタイムアウトの処理を修正しました。 これで、タイムアウト時に、システムは現在のページのこれらのフィールドを正しく空欄のままにして、すべてのコールバックを実行するようになりました。タイムアウトはエラー状況として扱われるため、次のページで再試行します。 （AN-94473、AN-94474）
+AAM Blob およびロケーションヒントのリクエストに関するタイムアウトの処理を修正しました。 これで、タイムアウト時に、システムは現在のページのこれらのフィールドを正しく空欄のままにして、すべてのコールバックを実行するようになりました。 タイムアウトはエラー状況として扱われるため、次のページで再試行します。 （AN-94473、AN-94474）
 
 ## バージョン 1.3.4 {#section-bca4a3e7c05546b7af1c9ec47fdb3331}
 
 2015 年 1 月
 
-JSONP リクエストの `<head>/<body>` タグコンテナ用に `<script>` タグの検索を見直しました。また、大文字と小文字の区別に関する設定がそれぞれ異なる多様な DOM 実装（HTML か XHTML）に対応するための `<script>` タグを作成しました。（AN-9355）
+JSONP リクエストの `<head>/<body>` タグコンテナ用に `<script>` タグの検索を見直しました。また、大文字と小文字の区別に関する設定がそれぞれ異なる多様な DOM 実装（HTML か XHTML）に対応するための `<script>` タグを作成しました。 （AN-9355）
 

@@ -5,10 +5,24 @@ title: 2016 年リリースノート
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: f96b9869-6282-4090-b392-797608e25a51
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/u91aLAt-ycKk1U1A1yhAVUAonGhV6fHWNRVTZB0QAXI
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: 1131
+ht-degree: 97%
 
 ---
 
@@ -25,18 +39,18 @@ ht-degree: 100%
 >[!IMPORTANT]
 >
 >* バージョン 1.10 には [!UICONTROL AppMeasurement] 1.8.0 が必要です。
->* Experience Cloud ID サービスライブラリ 2.0.0 以降を使用している場合は、Adobe Media Manager の ID 同期はデフォルトで開始されます。[ID 同期と一致率について](/help/introduction/match-rates.md)を参照してください。
+>* Experience Cloud ID サービスライブラリ 2.0.0 以降を使用している場合は、Adobe Media Manager の ID 同期はデフォルトで開始されます。 [ID 同期と一致率について](/help/introduction/match-rates.md)を参照してください。
 
 **修正点および改善点**
 
 * サーバー側環境での ID サービスの実装方法に関する説明を追加しました。
-* クロスドメイン遷移時に Experience Cloud と Analytics の ID を上書きできるブール関数である `Visitor.overwriteCrossDomainMCIDAndAID` が追加されました。[訪問者 ID の上書き](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)を参照してください。
+* クロスドメイン遷移時に Experience Cloud と Analytics の ID を上書きできるブール関数である `Visitor.overwriteCrossDomainMCIDAndAID` が追加されました。 [訪問者 ID の上書き](../library/function-vars/overwrite-visitor-id.md#reference-9db13d637ce44fb6a8d519de5743ccde)を参照してください。
 
-* `TS = UTC` timestamp が `visitor.appendVisitorIDsTo` 関数のプロパティとして追加されました。ID サービスではタイムスタンプを使用して、5 分間隔でリダイレクト URL に ID を使用するかどうかを決定します。[訪問者 ID 追加関数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)を参照してください。
+* `TS = UTC` timestamp が `visitor.appendVisitorIDsTo` 関数のプロパティとして追加されました。 ID サービスではタイムスタンプを使用して、5 分間隔でリダイレクト URL に ID を使用するかどうかを決定します。 [訪問者 ID 追加関数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)を参照してください。
 
-* 地域 ID を返す新しい関数である `Visitor.getLocationHint,` が追加されました。[地域 ID（ロケーションヒント）の取得](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)を参照してください。
+* 地域 ID を返す新しい関数である `Visitor.getLocationHint,` が追加されました。 [地域 ID（ロケーションヒント）の取得](../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c)を参照してください。
 
-* ターゲットパブリッシング iFrame で ID 同期を手動で実装するための 2 つの関数として、`idSyncByURL` と `idSyncByDataSource` が追加されました。[URL またはデータソースによる ID 同期](../library/get-set/idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48)を参照してください。
+* ターゲットパブリッシング iFrame で ID 同期を手動で実装するための 2 つの関数として、`idSyncByURL` と `idSyncByDataSource` が追加されました。 [URL またはデータソースによる ID 同期](../library/get-set/idsync.md#reference-b01b88c083434cf8abbeabd3c6956c48)を参照してください。
 
 * `disableThirdPartyCalls:true` の場合に AppMeasurement のトラッキングコールがブロックされる問題を修正しました。
 * 異なるドメイン間で Experience Cloud ID（MID）が渡されなかった、ID サービスの問題を修正しました。
@@ -48,8 +62,8 @@ ht-degree: 100%
 **修正点および改善点**
 
 * Audience Manager の一意のユーザー ID（AAMUUID）を Experience Cloud ID として ID サービスに渡していた問題を修正しました。
-* AMCV Cookie の有効期間（TTL：time-to-live）が切れた場合でも、Experience Cloud ID が Cookie に含まれている限り ID サービスはその情報をサーバーに戻します。この呼び出しの後、ID サービスは非同期で呼び出しをおこない、Cookie を更新します。ID サービスはサーバーからの応答を待つ必要がないので、パフォーマンスの改善に役立ちます。既存の AMCV cookie の値を使用して、更新をリクエストできます。
-* ID サービスは直接ページ上で自動的に Experience Cloud ID（MID）を Adobe Media Manager と他の内部アドビドメインに同期します。自動同期は、すべての既存アカウントおよび新規アカウントで有効です。これは、Media Manager の一致率の改善に役立ちます。VisitorAPI.js バージョン 1.8 またはそれ以降で適用されます。[ID 同期と一致率について](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)も参照してください。
+* AMCV Cookie の有効期間（TTL：time-to-live）が切れた場合でも、Experience Cloud ID が Cookie に含まれている限り ID サービスはその情報をサーバーに戻します。 この呼び出しの後、ID サービスは非同期で呼び出しをおこない、Cookie を更新します。 ID サービスはサーバーからの応答を待つ必要がないので、パフォーマンスの改善に役立ちます。 既存の AMCV cookie の値を使用して、更新をリクエストできます。
+* ID サービスは直接ページ上で自動的に Experience Cloud ID（MID）を Adobe Media Manager と他の内部アドビドメインに同期します。 自動同期は、すべての既存アカウントおよび新規アカウントで有効です。 これは、Media Manager の一致率の改善に役立ちます。 VisitorAPI.js バージョン 1.8 またはそれ以降で適用されます。 [ID 同期と一致率について](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)も参照してください。
 
 **新規および改訂されたドキュメント**
 
@@ -61,7 +75,7 @@ ht-degree: 100%
 
 **修正点および改善点**
 
-関数 `disableThirdPartyCalls` で設定できるオプションのブール値のフラグとして、`Visitor.getInstance` が追加されました。`disableThirdPartyCalls= true` の場合、この ID サービスは他のドメインの呼び出しをおこないません。デフォルト値は `disableThirdPartyCalls= false` です。[disableThirdPartyCalls](../library/function-vars/disablethirdpartycalls.md#reference-fba90b095e9746daad46e3abb790d18b) を参照してください。
+関数 `disableThirdPartyCalls` で設定できるオプションのブール値のフラグとして、`Visitor.getInstance` が追加されました。 `disableThirdPartyCalls= true` の場合、この ID サービスは他のドメインの呼び出しをおこないません。 デフォルト値は `disableThirdPartyCalls= false` です。 [disableThirdPartyCalls](../library/function-vars/disablethirdpartycalls.md#reference-fba90b095e9746daad46e3abb790d18b) を参照してください。
 
 ## バージョン 1.7.0 {#section-f7d59104de6644fca3691480383d4644}
 
@@ -69,11 +83,11 @@ ht-degree: 100%
 
 **修正点および改善点**
 
-* 関数 `idSyncAttachIframeOnWindowLoad` で設定できるオプションのブール値のフラグとして、`Visitor.getInstance` が追加されました。`idSyncAttachIframeOnWindowLoad= true` の場合、ID サービスは、ウィンドウの読み込み時に ID 同期 iFrame を読み込みます。デフォルトでは、ID サービスは、可能な限り迅速に iFrame を読み込みます。このフラグは、廃止される *に*&#x200B;代わるもの `idSyncAttachIframeASAP` です。[Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
+* 関数 `idSyncAttachIframeOnWindowLoad` で設定できるオプションのブール値のフラグとして、`Visitor.getInstance` が追加されました。 `idSyncAttachIframeOnWindowLoad= true` の場合、ID サービスは、ウィンドウの読み込み時に ID 同期 iFrame を読み込みます。 デフォルトでは、ID サービスは、可能な限り迅速に iFrame を読み込みます。 このフラグは、廃止される *に*&#x200B;代わるもの `idSyncAttachIframeASAP` です。 [Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
 
-* ドメイン、ネイティブアプリおよびハイブリッドアプリから Web 移行への [!DNL Experience Cloud] ID のトラッキングをサポートする機能が追加されました。[訪問者 ID 追加ヘルパー関数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)を参照してください。
+* ドメイン、ネイティブアプリおよびハイブリッドアプリから Web 移行への [!DNL Experience Cloud] ID のトラッキングをサポートする機能が追加されました。 [訪問者 ID 追加ヘルパー関数](../library/get-set/appendvisitorid.md#reference-ff167ef19e37433fb08ac2b5a86229ce)を参照してください。
 
-* ID サービスが訪問者 [!DNL Experience Cloud] ID をクライアント側またはサーバー側に生成したかどうか、または ID 呼び出しがタイムアウトしたかどうかを判断する関数が visitorAPI.js コードに追加されました。[タイムアウトトラッキング関数](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23)および[クライアント側訪問者 ID 生成のトラッキング](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6)を参照してください。
+* ID サービスが訪問者 [!DNL Experience Cloud] ID をクライアント側またはサーバー側に生成したかどうか、または ID 呼び出しがタイムアウトしたかどうかを判断する関数が visitorAPI.js コードに追加されました。 [タイムアウトトラッキング関数](../library/get-set/timeout-functions.md#reference-912bae0f116540df8c5dc1c008656c23)および[クライアント側訪問者 ID 生成のトラッキング](../library/get-set/client-side-id.md#reference-8244dc6d832c4bbaaa97528096bcc2a6)を参照してください。
 
 **新規および改訂されたドキュメント**
 
@@ -81,7 +95,7 @@ ht-degree: 100%
 
 **既知の問題**
 
-[!DNL Audience Manager] DIL コードと visitorAPI.js コードを同じページに使用しているお客様は、DIL 変数 `secureDataCollection= false` を設定する必要があります。[secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=ja) を参照してください。
+[!DNL Audience Manager] DIL コードと visitorAPI.js コードを同じページに使用しているお客様は、DIL 変数 `secureDataCollection= false` を設定する必要があります。 [secureDataCollection](https://experienceleague.adobe.com/docs/audience-manager/user-guide/dil-api/dil-overview.html?lang=ja) を参照してください。
 
 ## バージョン 1.6.0 {#section-3faaa14bf3934c6a99b8f79ee06fc0d2}
 
@@ -89,7 +103,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->[!DNL Experience Cloud] ID サービスの バージョン 1.6.0 には、JavaScript 版 AppMeasurement バージョン 1.6.2 が&#x200B;*必要*&#x200B;です。ID サービスバージョン 1.6.0 にアップグレードする場合は、適切な AppMeasurement コードバージョンを使用していることを確認してください。
+>[!DNL Experience Cloud] ID サービス *のバージョン 1.6.0では、JavaScript バージョン 1.6.2に* AppMeasurementが必要です。 ID サービスバージョン 1.6.0にアップグレードする場合は、適切なAppMeasurement コードバージョンを使用していることを確認してください。
 
 <table id="table_5472AAFA0DD2495DB8D92DEBE44A07A9"> 
  <thead> 
@@ -101,7 +115,7 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>クロスオリジンリソース共有（CORS） </p> </td> 
-   <td colname="col2"> <p>CORS を利用すると、ブラウザーから、現在のドメイン以外のドメインのリソースをリクエストできます。Experience Cloud ID サービスは、クライアント側のクロスオリジンリソースリクエストを可能にする CORS 標準規格をサポートしています。CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。 </p> <p>以下を参照してください。 </p> 
+   <td colname="col2"> <p>CORS を利用すると、ブラウザーから、現在のドメイン以外のドメインのリソースをリクエストできます。 Experience Cloud ID サービスは、クライアント側のクロスオリジンリソースリクエストを可能にする CORS 標準規格をサポートしています。 CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。 </p> <p>参照： </p> 
     <ul id="ul_15386385108F4E07824041DD6F2DC11E"> 
      <li id="li_DB8D5AA4A7004DE4AE9CBC31A389F5BD"> <a href="../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758" format="dita" scope="local">Experience Cloud ID サービスでの CORS のサポート</a> </li> 
     </ul> </td> 
@@ -111,13 +125,13 @@ ht-degree: 100%
 
 **修正点および改善点**
 
-* `dpm.demdex.net` への ID 同期呼び出しに `d_fieldgroup` パラメーターが追加されました。この新しいパラメーターは、内部のトラブルシューティングおよびデバッグの目的で使用されます。
+* `dpm.demdex.net` への ID 同期呼び出しに `d_fieldgroup` パラメーターが追加されました。 この新しいパラメーターは、内部のトラブルシューティングおよびデバッグの目的で使用されます。
 
-* ID サービスが生成する iFrame にタイトル属性が追加されました。iFrame のタイトルを指定すると、目の不自由な利用者向けにスクリーンリーダーで読み上げ可能なページ情報を提供できます。iFrame のタイトル属性は `Adobe ID Syncing iFrame` に設定されます。
-* 関数 `Visitor.getInstance` で設定できるオプションのフラグとして、`idSyncAttachIframeASAP: true` が追加されました。`true` の場合、ID サービスは ID 同期 iFrame をできるだけ早く読み込みます。これにより、ID 同期の一致率が向上します。デフォルトでは、ID サービスはウィンドウの読み込み時に iFrame を読み込みます。[Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
+* ID サービスが生成する iFrame にタイトル属性が追加されました。 iFrame のタイトルを指定すると、目の不自由な利用者向けにスクリーンリーダーで読み上げ可能なページ情報を提供できます。 iFrame のタイトル属性は `Adobe ID Syncing iFrame` に設定されます。
+* 関数 `Visitor.getInstance` で設定できるオプションのフラグとして、`idSyncAttachIframeASAP: true` が追加されました。 `true` の場合、ID サービスは ID 同期 iFrame をできるだけ早く読み込みます。 これにより、ID 同期の一致率が向上します。 デフォルトでは、ID サービスはウィンドウの読み込み時に iFrame を読み込みます。 [Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
 
 * AppMeasurement で無限ループが発生するコールバック関数の問題を修正しました。
-* `loadTimeout` 間隔のデフォルトが 500 ミリ秒から 30,000 ミリ秒に変更されました。[Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
+* `loadTimeout` 間隔のデフォルトが 500 ミリ秒から 30,000 ミリ秒に変更されました。 [Visitor.getInstance 関数の変数](../library/function-vars/function-vars.md)を参照してください。
 
 **新規および改訂されたドキュメント**
 
@@ -144,11 +158,11 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p><span class="codeph">iframe.sandbox</span> 属性の変更 </p> </td> 
-   <td colname="col2"> <p>iFrame で、<span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span> が設定できるようになりました。 </p> <p>これらの 2 トークンのみを許可することは、セキュリティを強化し、ID サービスに ID 同期で必要となる基本機能を提供するのに役立ちます。 </p> <p>sandbox 属性は、Internet Explorer のバージョン 9 以前ではサポートされていません。詳細については、この <a href="https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame ドキュメント</a>の属性の節を参照してください。 </p> </td> 
+   <td colname="col2"> <p>iFrame で、<span class="codeph">iframe.sandbox='allow-scripts allow-same-origin';</span> が設定できるようになりました。 </p> <p>これらの 2 トークンのみを許可することは、セキュリティを強化し、ID サービスに ID 同期で必要となる基本機能を提供するのに役立ちます。 </p> <p>sandbox 属性は、Internet Explorer のバージョン 9 以前ではサポートされていません。 詳細については、この <a href="https://developer.mozilla.org/ja-JP/docs/Web/HTML/Element/iframe" format="https" scope="external">iFrame ドキュメント</a>の属性の節を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Experience Cloud ID（MID）のエンコード </p> </td> 
-   <td colname="col2"> <p>ID サービスは、サーバーから返される、または <span class="codeph">visitor.setMarketingCloudVisitorID()</span> 関数で設定された、MID 値をエンコードするようになります。MID について詳しくは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookie と Experience Cloud ID</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>ID サービスは、サーバーから返される、または <span class="codeph">visitor.setMarketingCloudVisitorID()</span> 関数で設定された、MID 値をエンコードするようになります。 MID について詳しくは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookie と Experience Cloud ID</a> を参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -193,7 +207,7 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> <p> ID の同期間隔の変更 </p> </td> 
-   <td colname="col2"> <p><span class="keyword">Experience Cloud ID</span> サービスでは、データ収集サーバーが呼び出されるたびに ID の同期が呼び出されるようになりました。これまでは、<span class="keyword">Experience Cloud</span> ID 取得の最初の呼び出し時に 1 回のみリクエストされていました。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">Experience Cloud ID</span> サービスでは、データ収集サーバーが呼び出されるたびに ID の同期が呼び出されるようになりました。 これまでは、<span class="keyword">Experience Cloud</span> ID 取得の最初の呼び出し時に 1 回のみリクエストされていました。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -214,7 +228,7 @@ ht-degree: 100%
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../reference/authenticated-state.md" format="dita" scope="local"> 顧客 ID と認証状態 </a> </p> </td> 
-   <td colname="col2"> <p>テキストを修正しました。顧客 ID はエンコードされていない値でのみ渡す必要があります。ID のエンコードによって、識別子が二重にエンコードされます。 </p> </td> 
+   <td colname="col2"> <p>テキストを修正しました。 顧客 ID はエンコードされていない値でのみ渡す必要があります。 ID のエンコードによって、識別子が二重にエンコードされます。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
