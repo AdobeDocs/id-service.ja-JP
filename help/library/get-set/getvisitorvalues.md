@@ -1,18 +1,22 @@
 ---
-description: これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
+description: これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。 オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
 keywords: ID サービス
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/CF9G6wKlDxjklwedJk8KVmYH7KjA7CRkxtNu-mQ-Kjs
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 421
+ht-degree: 100%
 
 ---
 
 # getVisitorValues{#getvisitorvalues}
 
-これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
+これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。 オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
 
 内容：
 
@@ -36,7 +40,7 @@ ht-degree: 0%
 
 ## ユースケース 1：デフォルトデータセットのリクエスト {#section-36a31683558742a5915db3a391e09f7b}
 
-このコードは、標準データセットを返します。リクエストと応答は、次の例のようになります。
+このコードは、標準データセットを返します。 リクエストと応答は、次の例のようになります。
 
 ```js
 //Call the ID service 
@@ -61,7 +65,7 @@ visitor.getVisitorValues(visitorIdsCallback);
 
 ## ユースケース 2：カスタムデータセットのリクエスト {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-このコードはオプションの配列を使用し、`visitor.FIELDS` 列挙を使用して特定の ID セットを返します。この場合、訪問者の Experience Cloud ID（MCID）と Analytics ID（MCAID）のみが必要です。リクエストと応答は、次の例のようになります。
+このコードはオプションの配列を使用し、`visitor.FIELDS` 列挙を使用して特定の ID セットを返します。 この場合、訪問者の Experience Cloud ID（MCID）と Analytics ID（MCAID）のみが必要です。 リクエストと応答は、次の例のようになります。
 
 ```js
 //Call the ID service 
@@ -83,7 +87,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
 
 ## レスポンスパラメーターの定義 {#section-4c4c300167694c6fbff1d6c612f372b5}
 
-以下の表に、レスポンスパラメーターとその定義を示します。これらは `visitor.FIELDS` 列挙に含まれるすべての値でもあります。特定の変数に値がない場合、このメソッドは空の文字列を返すことに注意してください。
+以下の表に、レスポンスパラメーターとその定義を示します。 これらは `visitor.FIELDS` 列挙に含まれるすべての値でもあります。 特定の変数に値がない場合、このメソッドは空の文字列を返すことに注意してください。
 
 <table id="table_32D0FEEA76CE4F298EED4B8F5C644232"> 
  <thead> 
@@ -99,7 +103,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>データ収集地域 ID です。これは、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。 </p> <p><a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=ja" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>および<a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>データ収集地域 ID です。 これは、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。 </p> <p><a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=ja" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>および<a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint</a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 

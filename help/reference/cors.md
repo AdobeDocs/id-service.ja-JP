@@ -3,9 +3,13 @@ description: ブラウザーは、クロスオリジンリソース共有（CORS
 keywords: ID サービス
 title: Experience Cloud ID サービスでの CORS のサポート
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
-source-git-commit: 3c230d158e3094ebb13b0fa4f1eddb25eecde0b4
+TQID: https://experienceleague.adobe.com/eix2FaBue-Nf--wGzg5jBqB93QGIWtbM78Efjd8QZWM
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: 630
 ht-degree: 96%
 
 ---
@@ -31,7 +35,7 @@ CORS は、異なるドメインをまたいでリソースをリクエストす
 * `Origin`：リクエストのソースを識別するリクエストヘッダー。
 * `Access-Control-Allow-Origin`：リソースがリクエスト元と共有できるかどうかを示す応答ヘッダー。
 
-これらのヘッダーがどのように動作するかを説明します。 この例では、金融機関のサイト `www.finance-website.com` で [!DNL Experience Cloud] ID サービスを実装したとします。 CORS リクエストヘッダーおよび応答ヘッダーでリソースへのアクセスをチェックする方法を次の表に示します。
+これらのヘッダーがどのように動作するかを説明します。 この例では、金融サービス会社がサイト [!DNL Experience Cloud] ID サービスを実装しているとします。`www.finance-website.com` CORS リクエストヘッダーおよび応答ヘッダーでリソースへのアクセスをチェックする方法を次の表に示します。
 
 <table id="table_B004ACF52B5A4D33B1DCF7EA77BE4E6D"> 
  <thead> 

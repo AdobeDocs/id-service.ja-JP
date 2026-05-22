@@ -1,31 +1,34 @@
 ---
-description: Experience Cloud ID フィールドを Data Workbench に統合するための手順を示しています。このプロセスにより、永続的な Experience Cloud ID をデータフィードで使用できます。その結果、Adobe Experience Cloud の他の製品とより緊密に統合して、高度な訪問者トラッキングを実行できるようになります。
+description: Experience Cloud ID フィールドを Data Workbench に統合するための手順を示しています。 このプロセスにより、永続的な Experience Cloud ID をデータフィードで使用できます。その結果、Adobe Experience Cloud の他の製品とより緊密に統合して、高度な訪問者トラッキングを実行できるようになります。
 keywords: ID サービス
 title: Data Workbench と Experience Cloud ID サービス
 exl-id: 1903918d-44e4-4790-ab1f-49f5bb701e31
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/jx-5TA0i00QBj0E3hJ8KKUTM4U7Ca2hsA-CkAuMLpe4
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 216
+ht-degree: 100%
 
 ---
 
 # Data Workbench と Experience Cloud ID サービス {#data-workbench-and-the-experience-cloud-id-service}
 
-Experience Cloud ID フィールドを Data Workbench に統合するための手順を示しています。このプロセスにより、永続的な Experience Cloud ID をデータフィードで使用できます。その結果、Adobe Experience Cloud の他の製品とより緊密に統合して、高度な訪問者トラッキングを実行できるようになります。
+Experience Cloud ID フィールドを Data Workbench に統合するための手順を示しています。 このプロセスにより、永続的な Experience Cloud ID をデータフィードで使用できます。その結果、Adobe Experience Cloud の他の製品とより緊密に統合して、高度な訪問者トラッキングを実行できるようになります。
 
 ID サービスを使用するように [Data Workbench](https://experienceleague.adobe.com/docs/data-workbench/using/home.html?lang=ja) を更新するには：
 
 1. 現在の[デコーダーグループ](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/dataset-include-files/types-dataset-inc-files/c-text-file-dec-groups.html?lang=ja)設定ファイルを探します。
 
-   通常、[!DNL Decoder Group] は、パス `Dataset\Log Processing\Decoding Instructions.cfg` の [!UICONTROL Profile Manager] にあります。1. 設定ファイルから現在のデコーダー形式をコピーします。
+   通常、[!DNL Decoder Group] は、パス `Dataset\Log Processing\Decoding Instructions.cfg` の [!UICONTROL Profile Manager] にあります。 1. 設定ファイルから現在のデコーダー形式をコピーします。
 1. 元の記述の下にそのデコーダー形式を貼り付けます。
 1. デコーダー形式を開き、リストの最後に以下の新しいフィールド位置を追加します。
 
    * `x-mcvisid`
    * `x-tnt-action`
 
-   これらのフィールドをまだ使用したり定義したりしない場合は、空のままにします。**デコード命令**
+   これらのフィールドをまだ使用したり定義したりしない場合は、空のままにします。  **デコード命令**
 
 前述の新しいフィールドを含む完全なデコーダーの内容については、以下を参照してください。
 

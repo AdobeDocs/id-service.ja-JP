@@ -1,18 +1,21 @@
 ---
-description: タイムアウト間隔をミリ秒単位で設定します。 ID サービスからの応答を待つ時間を、他のソリューション （Analytics、Audience Manager、Target など）に伝えるために使用されます。
+description: タイムアウト間隔をミリ秒単位で設定します。 他のソリューション（Analytics、Audience Manager、Targetなど）の情報を伝えるために使用 ID サービスからの応答を待つ時間。
 keywords: ID サービス
 title: loadTimeout
 exl-id: 485264f4-ee24-4042-8be3-259e70462110
-source-git-commit: e185c7d2b7582b52adbe9b525be7868ab8bfa374
+TQID: https://experienceleague.adobe.com/w0-c0ROMsYRLqlHQuBfSAdardHnMfaJ8oTLf1xwL9QQ
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: 143
 ht-degree: 69%
 
 ---
 
 # loadTimeout{#loadtimeout}
 
-タイムアウト間隔をミリ秒単位で設定します。 ID サービスからの応答を待つ時間を、他のソリューション （Analytics、Audience Manager、Target など）に伝えるために使用されます。
+タイムアウト間隔をミリ秒単位で設定します。 他のソリューション（Analytics、Audience Manager、Targetなど）の情報を伝えるために使用 ID サービスからの応答を待つ時間。
 
 **構文：** `loadTimeout: *`間隔（ミリ秒）`*`
 
@@ -20,7 +23,7 @@ ht-degree: 69%
 
 >[!NOTE]
 >
->ID サービスの呼び出しは、ページ上にある他の、アドビ以外のコードに関連して、非同期です。その結果、タイムアウト間隔を増減しても、ページがコンテンツをレンダリングする速度は変わりません。 ただし、タイムアウト間隔が長いと、一般的なネットワーク監視ツールで測定されるページ読み込み時間に影響する可能性がありますが、レンダリング時間は影響を受けません。
+>ID サービスの呼び出しは、ページ上にある他の、アドビ以外のコードに関連して、非同期です。 その結果、タイムアウト間隔を増減しても、ページがコンテンツをレンダリングする速度は変わりません。 ただし、タイムアウト間隔が長いと、一般的なネットワークモニタリングツールで測定されるページ読み込み時間に影響する可能性がありますが、レンダリング時間は影響を受けません。
 
 **コードサンプル**
 
