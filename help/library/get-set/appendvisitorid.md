@@ -4,16 +4,9 @@ keywords: ID サービス
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 TQID: https://experienceleague.adobe.com/F4rWmYj6NidX861-qU8KI9RRbdwNdzP0x4CZUxPZfYw
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
 workflow-type: tm+mt
 source-wordcount: 429
@@ -125,8 +118,8 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html?lang=ja" format="https" scope="external"> Android ID Service Methods </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html?lang=ja" format="https" scope="external"> iOS ID Service Methods </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Android ID Service Methods </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> iOS ID Service Methods </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

@@ -4,19 +4,9 @@ keywords: ID サービス
 title: Experience Cloud ID サービスの Analytics、Audience Manager および Target への実装
 exl-id: d55baa11-e8ec-4c30-b6bc-caccf4c284ba
 TQID: https://experienceleague.adobe.com/wGjBgvbWkETj-JmZ4MYFXiheoS0ctiycXvKIncTZpJw
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66id: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
 source-wordcount: 1562
@@ -172,7 +162,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 手順 8：（オプション）猶予期間の設定 {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-これらのユースケースのいずれかが状況に適用される場合は、[&#x200B; カスタマーケア &#x200B;](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)に一時的な猶予期間の設定を依頼してください。 猶予期間は最大 180 日です。 必要に応じて、猶予期間を更新できます。
+これらのユースケースのいずれかが状況に適用される場合は、[ カスタマーケア ](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)に一時的な猶予期間の設定を依頼してください。 猶予期間は最大 180 日です。 必要に応じて、猶予期間を更新できます。
 
 **部分的実装**
 
@@ -220,7 +210,7 @@ JavaScript リクエストの SDID 識別子をチェックします。 Analytic
 テストで AID が返される場合、以下のいずれかであることを示します。
 
 * 従来の [!DNL Analytics] ID の移行の過程での再訪問者である。
-* [猶予期間](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/migration)を有効にしている。
+* [猶予期間](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)を有効にしている。
 
 AID が表示される場合、[!DNL Target] mboxMCAVID に対するその値をチェックします。 ID サービスが適切に実装されている場合、これらの値は同一です。
 

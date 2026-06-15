@@ -2,12 +2,12 @@
 audience: end-user
 user-guide-title: Experience Cloud ID サービスのヘルプ
 breadcrumb-title: ID サービスガイド
-user-guide-description: Adobe Experience Cloud ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。これは、Experience Cloud ソリューションおよびサービスの従来の ID 生成コードを置き換えるのに役立ちます。
+user-guide-description: Adobe Experience Cloud ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。 これは、Experience Cloud ソリューションおよびサービスの従来の ID 生成コードを置き換えるのに役立ちます。
 user-guide-url: /content/help/en/id-service/using/home.html
 source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 97%
+source-wordcount: '378'
+ht-degree: 94%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 97%
    + [実装方法](implementation-guides/implementation-methods.md)
    + [実装ガイド](implementation-guides/implementation-guides.md)
    + [Experience Platform タグを使用した実装](implementation-guides/ecid-implement-with-launch.md)
-   + [Analytics の実装](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/overview){target=_blank}
+   + [Analyticsの実装](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
    + [Target への実装](implementation-guides/setup-target.md)
    + [Analytics および Audience Manager への実装](implementation-guides/setup-aam-analytics.md)
    + [Analytics、Audience Manager および Target への実装](implementation-guides/setup-aam-analytics-target.md)
@@ -106,5 +106,5 @@ ht-degree: 97%
    + [2017 年リリースノート](release-notes/notes-2017.md)
    + [2016 年リリースノート](release-notes/notes-2016.md)
    + [2015 年リリースノート](release-notes/notes-2015.md)
-+ [hide-from-tocTOC に非表示の分析テスト &#x200B;](analytics-test-file-hidetoc.md)
-+ [hide-from-toc 非表示のテストファイル &#x200B;](hidden-file.md)
++ {hide-from-toc}[目次](analytics-test-file-hidetoc.md)から非表示のAnalytics テスト
++ {hide-from-toc}[非表示のテストファイル ](hidden-file.md)

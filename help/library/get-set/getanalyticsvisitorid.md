@@ -4,16 +4,9 @@ keywords: ID サービス
 title: getAnalyticsVisitorID
 exl-id: 82973de4-4257-4aab-9268-4ab124a01ee2
 TQID: https://experienceleague.adobe.com/xJRR3qXoJpCnyFqKuEZqvEs0MpPCCA0brWOT6WbngX4
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
 workflow-type: tm+mt
 source-wordcount: 306
@@ -54,11 +47,11 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 `aid` パラメーターは次の場合に、クエリ文字列内で使用されます。
 
 * [!DNL Experience Cloud] ID サービスが正しくデプロイされている場合。
-* サイトに訪問しているユーザーの [!DNL Analytics]s_vi Cookie[&#x200B; に既に &#x200B;](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=ja#section-5d50a078de444d12b7d927d68ff3b679?lang=ja) ID が保存されている場合。
+* サイトに訪問しているユーザーの [!DNL Analytics]s_vi Cookie[ に既に ](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-analytics.html?lang=ja#section-5d50a078de444d12b7d927d68ff3b679?lang=ja) ID が保存されている場合。
 
 **例 2**
 
-`aid` パラメーターは、組織が ID サービスを完全に導入する前の[猶予期間](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/migration)を使用している場合に、クエリ文字列内で使用されます。 サイトに訪問しているユーザーが新規ユーザーであり、組織が猶予期間を使用していない場合、訪問者には [!DNL Experience Cloud]（`mid` ID）パラメーターが送信されます。
+`aid` パラメーターは、組織が ID サービスを完全に導入する前の[猶予期間](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)を使用している場合に、クエリ文字列内で使用されます。 サイトに訪問しているユーザーが新規ユーザーであり、組織が猶予期間を使用していない場合、訪問者には [!DNL Experience Cloud]（`mid` ID）パラメーターが送信されます。
 
 >[!MORELIKETHIS]
 >
