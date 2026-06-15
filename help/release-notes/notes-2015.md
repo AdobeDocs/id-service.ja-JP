@@ -49,7 +49,7 @@ ht-degree: 94%
   これは、次の条件の&#x200B;*すべて*&#x200B;を満たす少数のクライアントにのみ影響がありました。
 
    * ID サービスの使用。
-   * [猶予期間](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration) *または*&#x200B;がファーストパーティ Cookieを使用しており、ユーザーがサードパーティ Cookieをブロックすることを有効にしました。
+   * [猶予期間](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/migration) *または*&#x200B;がファーストパーティ Cookieを使用しており、ユーザーがサードパーティ Cookieをブロックすることを有効にしました。
    * マルチパートのトップレベルドメインのページがある。
 
 このリリースでのドキュメントの改訂には、次のものが含まれます。

@@ -25,7 +25,7 @@ ht-degree: 94%
    + [実装方法](implementation-guides/implementation-methods.md)
    + [実装ガイド](implementation-guides/implementation-guides.md)
    + [Experience Platform タグを使用した実装](implementation-guides/ecid-implement-with-launch.md)
-   + [Analyticsの実装](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
+   + [Analyticsの実装](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/overview){target=_blank}
    + [Target への実装](implementation-guides/setup-target.md)
    + [Analytics および Audience Manager への実装](implementation-guides/setup-aam-analytics.md)
    + [Analytics、Audience Manager および Target への実装](implementation-guides/setup-aam-analytics-target.md)

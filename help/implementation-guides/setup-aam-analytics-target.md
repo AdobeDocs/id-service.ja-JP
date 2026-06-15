@@ -220,7 +220,7 @@ JavaScript リクエストの SDID 識別子をチェックします。 Analytic
 テストで AID が返される場合、以下のいずれかであることを示します。
 
 * 従来の [!DNL Analytics] ID の移行の過程での再訪問者である。
-* [猶予期間](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)を有効にしている。
+* [猶予期間](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/migration)を有効にしている。
 
 AID が表示される場合、[!DNL Target] mboxMCAVID に対するその値をチェックします。 ID サービスが適切に実装されている場合、これらの値は同一です。
 
