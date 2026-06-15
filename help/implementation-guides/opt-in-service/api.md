@@ -142,7 +142,7 @@ true または false。初期化で指定した設定を表します。
 
 **`approve(categories, shouldWaitForComplete)`**
 
-**`categories`**：承認する 1 つ以上のカテゴリー。 例： `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
+**`categories`**：承認する 1 つ以上のカテゴリー。 次に例を示します。 `adobe.optIn.approve([adobe.OptInCategories.AAM, adobe.OptInCategories.ECID])`
 **`shouldWaitForComplete`**: （オプション）ブール値パラメーター。デフォルトではfalse。 true を渡した場合は、`adobe.optIn.complete()` を呼び出すまで承認プロセスが完了しません。 このプロセスはワークフローに似ています。
 
 ```

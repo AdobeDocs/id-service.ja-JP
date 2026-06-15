@@ -63,7 +63,7 @@ CSP の使用は一般的であり、よく理解されています。 このド
   </tr>
   <tr>
    <td colname="col1">
-    <p><b>Target</b></p>
+    <p><b>ターゲット</b></p>
    </td>
    <td colname="col2">
     <p>CSP に <span class="codeph">*.tt.omtrdc.net</span> を追加します。</p>
