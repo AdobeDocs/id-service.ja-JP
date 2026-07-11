@@ -4,9 +4,16 @@ keywords: 訪問者 ID サービス
 title: Adobe Visitor ID サービスのテストと検証
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
 TQID: https://experienceleague.adobe.com/LPXZ0ydoky48kzyRnMK0kHsfoQyK3mi5IeXM0vtQV0s
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 713
@@ -30,11 +37,11 @@ Visitor ID サービスのテストと検証を開始する前に知っておく
 
 **ツール**
 
-[Adobe デバッガー](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=ja)と[Charles HTTP プロキシ ](https://www.charlesproxy.com/)は、訪問者ID サービスがAnalyticsで正しく動作するように設定されているかどうかを判断するのに役立ちます。 この節の情報は、Adobe Debugger および Charles が返す結果に基づいています。 ただし、お客様に最適なツールやデバッガーを自由に使用することができます。
+[Adobe デバッガー](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=ja)と[Charles HTTP プロキシ &#x200B;](https://www.charlesproxy.com/)は、訪問者ID サービスがAnalyticsで正しく動作するように設定されているかどうかを判断するのに役立ちます。 この節の情報は、Adobe Debugger および Charles が返す結果に基づいています。 ただし、お客様に最適なツールやデバッガーを自由に使用することができます。
 
 ## Adobe Debugger を使用したテスト {#section-861365abc24b498e925b3837ea81d469}
 
-Adobe デバッガーのレスポンスにECIDが表示される場合、サービス統合が正しく設定されます。 MIDについて詳しくは、[Cookieと訪問者ID サービス ](../introduction/cookies.md)を参照してください。
+Adobe デバッガーのレスポンスにECIDが表示される場合、サービス統合が正しく設定されます。 MIDについて詳しくは、[Cookieと訪問者ID サービス &#x200B;](../introduction/cookies.md)を参照してください。
 
 Adobe [debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=ja)を使用して訪問者ID サービスのステータスを確認するには：
 
@@ -88,7 +95,7 @@ Charles を使用して HTTP 呼び出しを監視する場合、どこを見て
 
 **チャールズでの訪問者ID サービスの応答が成功しました**
 
-[ データ収集サーバー](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=ja) （DCS）からの応答がMIDを返す場合、訪問者ID サービスに対してアカウントが正しくプロビジョニングされました。 MIDは、次の構文を使用するキーと値のペアとして返されます：`d_mid: *`訪問者ECID`*`。 以下に示すように、「[!UICONTROL Response]」タブで、MID を探します。
+[&#x200B; データ収集サーバー](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=ja) （DCS）からの応答がMIDを返す場合、訪問者ID サービスに対してアカウントが正しくプロビジョニングされました。 MIDは、次の構文を使用するキーと値のペアとして返されます：`d_mid: *`訪問者ECID`*`。 以下に示すように、「[!UICONTROL Response]」タブで、MID を探します。
 
 ![](assets/charles_response_success.png)
 

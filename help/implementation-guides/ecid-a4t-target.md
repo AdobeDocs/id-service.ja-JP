@@ -4,9 +4,16 @@ keywords: 訪問者 ID サービス
 title: A4TおよびTargetのサーバーサイド実装での訪問者ID サービスの使用
 exl-id: 6f201378-29a1-44b7-b074-6004246fc999
 TQID: https://experienceleague.adobe.com/NQKu4J9BE0pnMswSHCtE7Hi8FJGDXmInvSEKTNuM80M
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 774
@@ -29,7 +36,7 @@ A4T （およびその他のお客様）は、必要に応じて、このバー�
 
 ## コードのダウンロードと提供されたインターフェイス {#section-32d75561438b4c3dba8861be6557be8a}
 
-[訪問者ID サービス NPM リポジトリ ](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)を参照して、サーバーサイド コードパッケージをダウンロードし、現在のビルドに含まれるインターフェイスを確認します。
+[訪問者ID サービス NPM リポジトリ &#x200B;](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)を参照して、サーバーサイド コードパッケージをダウンロードし、現在のビルドに含まれるインターフェイスを確認します。
 
 ## ワークフロー {#section-56b01017922046ed96536404239a272b}
 
@@ -158,5 +165,5 @@ Response.send("
 
 >[!MORELIKETHIS]
 >
->* [ ノードパッケージマネージャー](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)のサーバーサイド訪問者ID サービスパッケージ
+>* [&#x200B; ノードパッケージマネージャー](https://www.npmjs.com/package/@adobe-mcid/visitor-js-server)のサーバーサイド訪問者ID サービスパッケージ
 

@@ -3,9 +3,17 @@ description: オプトインサービスを、CX エンタープライズソリ�
 title: オプトインサービスの設定
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 TQID: https://experienceleague.adobe.com/Nq3mYoy0U-0RK8MHzsu-yCIVwbCbaAJnIUR8QZDCKcs
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 965
@@ -45,7 +53,7 @@ ht-degree: 84%
 
 1. 会社のプライバシー要件は、GDPR への準拠を選択する方法によって異なります。 会社のプライバシーチームが事前同意状態で使用しても問題ないライブラリを確認してください。
 
-[ タグ ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を使用している場合は、[ オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)を利用してオプトインサービスを設定します。
+[&#x200B; タグ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を使用している場合は、[&#x200B; オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)を利用してオプトインサービスを設定します。
 
 ## オプトインのカテゴリー {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 

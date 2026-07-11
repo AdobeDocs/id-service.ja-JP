@@ -4,9 +4,17 @@ keywords: 訪問者 ID サービス
 title: 2015 年リリースノート
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 TQID: https://experienceleague.adobe.com/WmeSY7aRbvnZJN0a-lNR-yYzWzF4dfJLPZqA--6lpYQ
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 457
@@ -22,7 +30,7 @@ ht-degree: 60%
 
 2015 年 11 月
 
-児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。 COPPAを懸念するお客様は、ブラウザーのサードパーティドメインでCookieを設定できないように、オプションの変数を訪問者ID サービスコードに追加できます。 訪問者ID サービス ](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)の[COPPA サポートを参照してください。 バージョン 1.5.3 以降でサポートされています。
+児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。 COPPAを懸念するお客様は、ブラウザーのサードパーティドメインでCookieを設定できないように、オプションの変数を訪問者ID サービスコードに追加できます。 訪問者ID サービス [&#128279;](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)のCOPPA サポートを参照してください。 バージョン 1.5.3 以降でサポートされています。
 
 ## バージョン 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 

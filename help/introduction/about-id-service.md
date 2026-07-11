@@ -4,8 +4,13 @@ keywords: 訪問者 ID サービス
 title: 概要
 exl-id: d907e299-bde0-4b5f-8c16-867a4eaa8be1
 TQID: https://experienceleague.adobe.com/YUy7gs28-5lGzLmfE-MJ4nRtQc7I05Q4nRCBO4gOdMI
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 336
@@ -37,7 +42,7 @@ mcvid-functionality.xml
 
 * プロファイルと ID のリンクに使用できる共通キーまたは ID を作成します。
 * 複数のソリューションにわたってデバイスを一意に識別します。
-* 同じドメインでトラッキングを確実に行えるように、顧客のドメインにファーストパーティ Cookie を設定します。 [Cookieと訪問者ID サービス ](../introduction/cookies.md)を参照してください。
+* 同じドメインでトラッキングを確実に行えるように、顧客のドメインにファーストパーティ Cookie を設定します。 [Cookieと訪問者ID サービス &#x200B;](../introduction/cookies.md)を参照してください。
 * CX Enterpriseの顧客およびパートナーからエイリアスとID マッピングを受信します。
 * CX Enterprise内のID同期を管理します。
 * 広告技術エコシステム全体にわたり様々なサードパーティとの ID 同期をサポートする。

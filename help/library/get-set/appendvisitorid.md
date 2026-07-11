@@ -4,9 +4,16 @@ keywords: 訪問者 ID サービス
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 TQID: https://experienceleague.adobe.com/F4rWmYj6NidX861-qU8KI9RRbdwNdzP0x4CZUxPZfYw
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 432
@@ -32,7 +39,7 @@ ht-degree: 61%
 
 ## ブラウザーでサードパーティの Cookie がブロックされている場合に複数のドメインをまたいだ訪問者を追跡する {#section-7251d88befd440b4b79520e33c5aa44a}
 
-訪問者ID サービスは、ユーザーがサイトにアクセスしたときに、ファーストパーティおよびサードパーティのCookieをブラウザーに書き込みます（[Cookieと訪問者ID サービス ](../../introduction/cookies.md)を参照）。 ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。 サードパーティ Cookieには、訪問者ID サービスがMIDを生成するために使用する別のIDが含まれています。 ブラウザーがこのサードパーティ Cookieをブロックすると、訪問者ID サービスは次のことができません。
+訪問者ID サービスは、ユーザーがサイトにアクセスしたときに、ファーストパーティおよびサードパーティのCookieをブラウザーに書き込みます（[Cookieと訪問者ID サービス &#x200B;](../../introduction/cookies.md)を参照）。 ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。 サードパーティ Cookieには、訪問者ID サービスがMIDを生成するために使用する別のIDが含まれています。 ブラウザーがこのサードパーティ Cookieをブロックすると、訪問者ID サービスは次のことができません。
 
 * サイト訪問者が別のドメインに移動したときに、その訪問者の一意の ID を再生成する。
 * 同じ組織が所有する異なるドメインにわたって訪問者を追跡する。

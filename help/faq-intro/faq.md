@@ -4,9 +4,15 @@ keywords: 訪問者 ID サービス
 title: 訪問者ID サービスに関するFAQ
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 TQID: https://experienceleague.adobe.com/FxgL8UXSmoJM1oFr47yCAgYGcTa2PqKvSNM4bHjTw1M
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080b
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 824
@@ -26,7 +32,7 @@ ht-degree: 54%
 
 **訪問者ID サービスがECIDを取得するための呼び出しを行わないのはなぜですか？**
 
-これは診断が難しい問題です。 まず、サイトのコンテンツセキュリティポリシーのヘッダーを確認してください。 厳格なセキュリティポリシーがある場合、これらの設定により、訪問者ID サービスによるサードパーティの呼び出しがブロックされる可能性があります。 [ コンテンツセキュリティポリシーと訪問者ID サービス ](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)を参照してください。
+これは診断が難しい問題です。 まず、サイトのコンテンツセキュリティポリシーのヘッダーを確認してください。 厳格なセキュリティポリシーがある場合、これらの設定により、訪問者ID サービスによるサードパーティの呼び出しがブロックされる可能性があります。 [&#x200B; コンテンツセキュリティポリシーと訪問者ID サービス &#x200B;](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)を参照してください。
 
 **`VisitorAPI.js`ファイル ストレージ**
 
@@ -38,7 +44,7 @@ ht-degree: 54%
 
 コードの`<head>` セクションのページ上部に`VisitorAPI.js` ライブラリを配置します。 これにより、ページ本文の読み込み前に ID の呼び出しがおこなわれるので、ID が問題なく返される可能性が高くなります。
 
-訪問者ID サービス呼び出しは非同期であり、[demdex.net ドメイン ](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja)への唯一の呼び出しです。 訪問者ID サービス呼び出しは、ページ上の他の要素の読み込みをブロックしません。
+訪問者ID サービス呼び出しは非同期であり、[demdex.net ドメイン &#x200B;](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja)への唯一の呼び出しです。 訪問者ID サービス呼び出しは、ページ上の他の要素の読み込みをブロックしません。
 
 Targetのお客様の場合、ページの`<body>`に訪問者ID サービスコードを配置すると、Target呼び出しをブロックする可能性が高くなる可能性があります。 訪問者ID サービス コードをページの本文に配置する必要がある場合は、開いた`<body>` タグの後に配置する必要があります。
 
@@ -70,23 +76,23 @@ Targetのお客様の場合、ページの`<body>`に訪問者ID サービスコ
 
 一般的に、リソースリクエストには、JSON-P よりも CORS を使用する方が望ましいと言えます。 JSON-P の場合、一部のブラウザーはリクエストをキューに追加し、ページ上の他の同期呼び出しや非同期呼び出しリクエストを基準にして優先順位を下げます。 CORS を使用すると、ブラウザーのコールスタック内でのこれらのリクエストの優先度の高さを確保できます。
 
-訪問者ID サービス ](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)の[CORS サポートを参照してください。
+訪問者ID サービス [&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)のCORS サポートを参照してください。
 
 ## セキュリティ {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
 **訪問者ID サービスはCORSをサポートしていますか？**
 
-はい。 訪問者ID サービス ](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)の[CORS サポートを参照してください。
+はい。 訪問者ID サービス [&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)のCORS サポートを参照してください。
 
 **CORS とは何ですか。**
 
-*`Cross-Origin Resource Sharing`*（CORS）とは、ブラウザーがリソースをリクエストする際に使用するメソッドです。 訪問者ID サービスは、常にCORSをサポートするブラウザーでCORSを使用してリソースをリクエストします。 訪問者ID サービスは、CORSをサポートしていない古いブラウザーでJSON-Pを使用してリソースをリクエストします。 訪問者ID サービス ](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)の[CORS サポートを参照してください。
+*`Cross-Origin Resource Sharing`*（CORS）とは、ブラウザーがリソースをリクエストする際に使用するメソッドです。 訪問者ID サービスは、常にCORSをサポートするブラウザーでCORSを使用してリソースをリクエストします。 訪問者ID サービスは、CORSをサポートしていない古いブラウザーでJSON-Pを使用してリソースをリクエストします。 訪問者ID サービス [&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)のCORS サポートを参照してください。
 
 **厳格なセキュリティ要件があり、JSONP を使用できない場合はどうすればよいですか。**
 
 厳格なセキュリティ要件がある場合は、訪問者ID サービス API設定`useCORSOnly: true`を設定します。 サイト訪問者がCORSをサポートするブラウザーを使用していることを確信している場合にのみ、このモードを有効にする必要があります。
 
-訪問者ID サービス ](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)および[useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)の[CORS サポートを参照してください。
+訪問者ID サービス [&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)および[useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)のCORS サポートを参照してください。
 
 >[!MORELIKETHIS]
 >

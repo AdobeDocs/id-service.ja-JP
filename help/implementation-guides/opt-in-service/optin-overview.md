@@ -3,9 +3,15 @@ description: オプトインサービスを使用すると、サイトを訪問�
 title: オプトインサービス
 exl-id: 351da861-4faa-409b-b0ff-f4d2ce66700b
 TQID: https://experienceleague.adobe.com/7XqAQ83gu6qQQfIWNB7Ui6aqtU-IbOxSMrYbMerHBCo
-product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 512
@@ -21,7 +27,7 @@ ht-degree: 89%
 
 オプトインサービスを使用すると、訪問者が複数のアドビソリューションのオプトインを一度に実行できるか、権限に合わせてソリューションを順番に表示できるかを指定できます。 承認プロセスが完了し、顧客によって記録されると、すべてのアドビソリューションから CMP 訪問者の承認を取得できます。
 
-オプトインサービスは、[ タグ ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)と[ オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)を使用して簡単に実装および設定できます。
+オプトインサービスは、[&#x200B; タグ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)と[&#x200B; オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)を使用して簡単に実装および設定できます。
 
 開始するには、[オプトインサービスの設定](../../implementation-guides/opt-in-service/getting-started.md)を参照してください。
 
