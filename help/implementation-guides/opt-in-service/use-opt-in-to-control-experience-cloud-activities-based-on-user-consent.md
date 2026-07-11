@@ -40,7 +40,7 @@ Adobe [!UICONTROL Opt-in] オブジェクトは、Adobe Visitor ID サービス�
 
 [!UICONTROL Opt-in]は、タグを使用して簡単に設定できます。 方法については、次の短いビデオをご覧ください。
 
->[!VIDEO](https://video.tv.adobe.com/v/26431/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40335/?captions=jpn&quality=12)
 
 タグを使用していない場合は、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=ja)に示すように、グローバル訪問者オブジェクトの初期化で[!UICONTROL Opt-in]の設定を設定できます。
 
@@ -54,7 +54,7 @@ Adobe [!UICONTROL Opt-in] オブジェクトは、Adobe Visitor ID サービス�
 
 次のビデオでは、ページで作業している[!UICONTROL Opt-in]の簡単なデモと、CX Enterprise ソリューションがCookieを設定したり、ビーコンを開始したりできるかどうかに与える影響について説明します。
 
->[!VIDEO](https://video.tv.adobe.com/v/26432/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/40340/?captions=jpn&quality=12)
 
 **メモ：**&#x200B;この記事の執筆時点では、[!UICONTROL Opt-in]がすべてのCX Enterprise アプリケーションのライブラリに組み込まれていないことに注意してください。 現在[!UICONTROL Opt-in]でサポートされているライブラリは次のとおりです。
 
