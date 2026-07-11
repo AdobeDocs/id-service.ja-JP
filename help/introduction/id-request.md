@@ -1,7 +1,7 @@
 ---
-description: ID のリクエストと応答のプロセスについて、概要を説明します。 個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
-keywords: ID サービス
-title: Experience Cloud ID サービスによる ID のリクエスト方法と設定方法
+description: ID のリクエストと応答のプロセスについて、概要を説明します。 これらの例では、個々のサイト、異なるサイト、および独自のIMS組織IDを持つ異なるCX Enterprise顧客が管理するサイトのID割り当てについて説明します。
+keywords: 訪問者 ID サービス
+title: Adobe Visitor ID サービスがIDをリクエストおよび設定する方法
 exl-id: 1bbee560-d72a-47cf-b3fe-d6bbcacb9eff
 TQID: https://experienceleague.adobe.com/B6fpw9A-yjGD58XgzLd1UQmAhxr-rGYcSbfPODdbZz4
 product_v2:
@@ -14,58 +14,58 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 759
-ht-degree: 100%
+source-wordcount: 777
+ht-degree: 35%
 
 ---
 
-# Experience Cloud ID サービスによる ID のリクエスト方法と設定方法{#how-the-experience-cloud-id-service-requests-and-sets-ids}
+# Adobe Visitor ID サービスがIDをリクエストおよび設定する方法{#how-the-experience-cloud-id-service-requests-and-sets-ids}
 
-ID のリクエストと応答のプロセスについて、概要を説明します。 個々のサイト、異なる複数のサイトおよびそれぞれ独自の組織 ID を持つ異なる Experience Cloud ユーザーによって管理されるサイトに対する ID の割り当て例を示しています。
+ID のリクエストと応答のプロセスについて、概要を説明します。 これらの例では、個々のサイト、異なるサイト、および独自のIMS組織IDを持つ異なるCX Enterprise顧客が管理するサイトのID割り当てについて説明します。
 
 >[!NOTE]
 >
->Experience Cloud ID サービスによる訪問者 ID の作成方法がわからない場合は、[Experience Cloud](../introduction/cookies.md) を参照してください。
+>訪問者ID サービスが訪問者IDを作成する方法に慣れていない場合は、少し時間をかけて[Cookieと訪問者ID サービス &#x200B;](../introduction/cookies.md)を確認してください。
 
-## Experience Cloud ID のリクエスト {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
+## ECIDのリクエスト {#section-0b5e261fbd0547d9b9a1680e5ce536cc}
 
-以下の例では、ID サービスが Experience Cloud 訪問者 ID をリクエストして受け取る方法を示します。 これらの例では、「食品会社」と「スポーツ会社」という 2 つの架空の会社を使用して、ID のリクエストと応答のデータフローを示しています。 それぞれの会社には固有の Experience Cloud 組織 ID が割り当てられ、すべてのサイトに ID サービスコードが実装されています。 これらの使用例では、Analytics や従来の ID を使用せず、サードパーティ Cookie をブロックするブラウザーも使用しない一般的な ID サービス実装のデータフローを表しています。
+次の例は、訪問者ID サービスがECIDをリクエストおよび受信する方法を示しています。 これらの例では、「食品会社」と「スポーツ会社」という 2 つの架空の会社を使用して、ID のリクエストと応答のデータフローを示しています。 各企業は一意のIMS組織IDを持ち、すべてのサイトに訪問者ID サービスコードを実装しています。 これらのユースケースは、Analytics、レガシーID、サードパーティ Cookieをブロックするブラウザーを使用しない、汎用的な訪問者ID サービス実装のデータフローを表します。
 
 ![](assets/sample_sites.png)
 
 **最初のリクエスト**
 
-この例では、「食品会社」が管理するピザサイトに新しい訪問者がアクセスします。 「食品会社」のこのピザ Web サイトには ID サービスコードが含まれています。 ピザサイトが読み込まれるときに、この ID サービスコードは、pizza ドメインの AMCV Cookie があるかをチェックします。
+この例では、「食品会社」が管理するピザサイトに新しい訪問者がアクセスします。 食品会社は、ピザのweb サイトに訪問者ID サービスコードを掲載しています。 ピザサイトが読み込まれると、訪問者ID サービスコードがピザドメインのAMCV Cookieをチェックします。
 
-* AMCV Cookie が設定されている場合、そのサイトの訪問者には Experience Cloud ID が割り当てられています。 この場合、その ID を使用して訪問者を追跡し、他の Experience Cloud ソリューションとデータを共有することになります。
-* AMCV Cookie が設定されていない場合、ID サービスコードは、`dpm.demdex.net/id` にある地域の[データ収集サーバー](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=ja)（DCS）を呼び出します（[Demdex ドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja)も参照してください）。 この呼び出しには、「食品会社」の組織 ID が含まれます。 この組織 ID は、ID サービスコードの `Visitor.getInstance` 関数に設定されます。
+* AMCV Cookieが設定されている場合、サイト訪問者にはECIDが設定されます。 この場合、Cookieは訪問者を追跡し、他のCX Enterprise ソリューションとデータを共有します。
+* AMCV Cookieが設定されていない場合、訪問者ID サービスコードは`dpm.demdex.net/id`の地域[&#x200B; データ収集サーバー](https://experienceleague.adobe.com/docs/analytics/technotes/rdc/regional-data-collection.html?lang=ja) （DCS）を呼び出します（[Demdex ドメインへの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja)も参照）。 この呼び出しには、食品会社のIMS組織IDが含まれます。 IMS組織IDは、訪問者ID サービスコードの`Visitor.getInstance`関数で設定されます。
 
 ![](assets/request1.png)
 
 **最初の応答**
 
-応答では、DCS が [!DNL Experience Cloud] ID（MID）と demdex Cookie を返します。 ID サービスコードが AMCV Cookie に MID 値を書き込みます。 例えば、DCS が 1234 という MID 値を返す場合、 この値が AMCV Cookie に `mid|1234` として保存され、ファーストパーティの pizza ドメインに設定されます。 demdex Cookie にも固有の ID があります（5678 とします）。 この Cookie は、pizza ドメインとは異なる、サードパーティの demdex.net ドメインに設定されます。
+応答では、DCSはECIDとdemdex Cookieを返します。 訪問者ID サービスコードは、MID値をAMCV Cookieに書き込みます。 例えば、DCS が 1234 という MID 値を返す場合、 この値が AMCV Cookie に `mid|1234` として保存され、ファーストパーティの pizza ドメインに設定されます。 demdex Cookie にも固有の ID があります（5678 とします）。 この Cookie は、pizza ドメインとは異なる、サードパーティの demdex.net ドメインに設定されます。
 
 ![](assets/response1.png)
 
-以下の例で示すとおり、訪問者が「食品会社」に属する別のサイトに移動すると、ID サービスは demdex ID と組織 ID を使用して正しい MID を作成して返すことができます。
+次の例で示すように、demdex IDとIMS組織IDを使用すると、訪問者が食品会社に属する別のサイトに移動したときに、訪問者ID サービスが正しいMIDを作成して返すことができます。
 
 ## クロスサイトのリクエストと応答 {#section-15ea880453af467abd2874b8b4ed6ee9}
 
-この例では、「食品会社」の訪問者は、ピザサイトからタコスサイトに移動します。 「食品会社」のこのタコス Web サイトには ID サービスコードが含まれています。 この訪問者が過去にタコス Web サイトにアクセスしたことはありません。
+この例では、「食品会社」の訪問者は、ピザサイトからタコスサイトに移動します。 食品会社は、タコスのweb サイトに訪問者ID サービスコードがあります。 この訪問者が過去にタコス Web サイトにアクセスしたことはありません。
 
-この条件下では、タコスサイトに AMCV Cookie が存在しません。 また、ID サービスは、ピザサイトに設定されている AMCV Cookie を使用できません。この Cookie は pizza ドメインに固有のものであるからです。 そのため、ID サービスは DCS を呼び出して、訪問者 ID を確認してリクエストする必要があります。 この場合、DCS の呼び出しには、「食品会社」の組織 ID *に加えて* demdex ID も含まれます。 また、前述のとおり、demdex ID は pizza サイトから取得され、demdex.net ドメイン下でサードパーティ Cookie として保存されます。
+この条件下では、タコスサイトに AMCV Cookie が存在しません。 また、訪問者ID サービスは、ピザドメインに固有であるため、ピザサイトで設定されたAMCV Cookieを使用できません。 そのため、訪問者ID サービスはDCSを呼び出して、訪問者IDを確認して要求する必要があります。 この場合、DCS呼び出しには、食品会社のIMS組織ID *と*&#x200B;のdemdex IDが含まれます。 また、前述のとおり、demdex ID は pizza サイトから取得され、demdex.net ドメイン下でサードパーティ Cookie として保存されます。
 
 ![](assets/request2.png)
 
-DCS が組織 ID と demdex ID を受け取った後、サイト訪問者の正しい MID を作成して返します。 この MID は組織 ID と demdex ID から計算されるので、AMCV Cookie には `mid = 1234` という MID 値が含まれます。
+DCSがIMS組織IDとdemdex IDを受け取ると、サイト訪問者に対して正しいMIDが作成され、返されます。 MIDはIMS組織IDとdemdex IDから数学的に派生するため、AMCV cookieにはMID値`mid = 1234`が含まれます。
 
 ![](assets/response2.png)
 
 ## 他のサイトからの ID のリクエスト {#section-ba9a929e50d64b0aba080630fd83b6f1}
 
-この例では、訪問者は「食品会社」のサイトを離れ、「スポーツ会社」が所有するサッカーサイトに移動します。 訪問者がサッカーサイトにアクセスしたときの ID チェックとリクエストの処理は、前の例で説明したとおりに実行されます。 ただし、「スポーツ会社」には独自の組織 ID があるので、ID サービスが返す MID は異なります。 新しい MID は「スポーツ会社」が管理するドメインに固有のものであり、この MID によってこの会社が [!DNL Experience Cloud] の複数のソリューションで訪問者データを追跡して共有することができます。 demdex ID は、サードパーティ Cookie に保存されており、異なるドメインで維持されるので、この訪問者に対して同じものになります。
+この例では、訪問者は「食品会社」のサイトを離れ、「スポーツ会社」が所有するサッカーサイトに移動します。 訪問者がサッカーサイトにアクセスしたときの ID チェックとリクエストの処理は、前の例で説明したとおりに実行されます。 ただし、スポーツ会社には独自のIMS組織IDがあるため、訪問者ID サービスは別のMIDを返します。 新しいMIDは、スポーツ企業が管理するドメインに固有であり、CX Enterpriseのソリューション間で訪問者データを追跡および共有できます。 demdex ID は、サードパーティ Cookie に保存されており、異なるドメインで維持されるので、この訪問者に対して同じものになります。
 
 ![](assets/req_resp.png)

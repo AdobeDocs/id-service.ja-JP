@@ -1,7 +1,7 @@
 ---
-description: ID サービス利用の特長、機能、課題に関するよくある質問です。
-keywords: ID サービス
-title: ID サービス FAQ
+description: 訪問者ID サービスの使用に関連する機能、機能、問題に関するよくある質問です。
+keywords: 訪問者 ID サービス
+title: 訪問者ID サービスに関するFAQ
 exl-id: 4dd2220c-8a9d-4e27-838b-be5ad357cb3e
 TQID: https://experienceleague.adobe.com/FxgL8UXSmoJM1oFr47yCAgYGcTa2PqKvSNM4bHjTw1M
 product_v2:
@@ -13,48 +13,48 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 801
-ht-degree: 97%
+source-wordcount: 824
+ht-degree: 54%
 
 ---
 
-# ID サービス FAQ{#id-service-faqs}
+# 訪問者ID サービスに関するFAQ{#id-service-faqs}
 
-ID サービス利用の特長、機能、課題に関するよくある質問です。
+訪問者ID サービスの使用に関連する機能、機能、問題に関するよくある質問です。
 
 ## 機能 {#section-659e89f8b9a74cb8afff35587dc96836}
 
-**ID サービスにはどのような機能がありますか。**
+**訪問者ID サービスが提供する機能の種類を教えてください。**
 
 [概要](../introduction/overview.md)を参照してください。
 
-**ID サービスが Experience Cloud ID を取得するための呼び出しをおこないません。なぜですか。**
+**訪問者ID サービスがECIDを取得するための呼び出しを行わないのはなぜですか？**
 
-これは診断が難しい問題です。 まず、サイトのコンテンツセキュリティポリシーのヘッダーを確認してください。 厳格なセキュリティポリシーが適用されている場合は、設定により、ID サービスによるサードパーティ呼び出しがブロックされている可能性があります。 [コンテンツセキュリティポリシーおよび Experience Cloud ID サービス](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)を参照してください。
+これは診断が難しい問題です。 まず、サイトのコンテンツセキュリティポリシーのヘッダーを確認してください。 厳格なセキュリティポリシーがある場合、これらの設定により、訪問者ID サービスによるサードパーティの呼び出しがブロックされる可能性があります。 [&#x200B; コンテンツセキュリティポリシーと訪問者ID サービス &#x200B;](../reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)を参照してください。
 
-**VisitorAPI.js ファイルの保存**
+**`VisitorAPI.js`ファイル ストレージ**
 
-VisitorAPI.js をモバイルアプリケーションのローカルファイルとしてホストすると、問題が生じる場合があります。 このファイルは、Web サーバーでホストすることをお勧めします。
+モバイルアプリで`VisitorAPI.js`をローカルファイルとしてホストすると、問題が発生する可能性があります。 このファイルは、Web サーバーでホストすることをお勧めします。
 
 ## ページ読み込み時間と待ち時間 {#section-c78e148d8dbe4c77a436ef0f2af5434b}
 
-**ID サービスの VisitorAPI.js ライブラリの場所は、ページ読み込み時間にどのように影響しますか。**
+**訪問者ID サービス `VisitorAPI.js` ライブラリの配置は、ページの読み込み時間にどのような影響を与えますか？**
 
-VisitorAPI.js ライブラリはページ上部にあるコードの `<head>` セクションに配置してください。 これにより、ページ本文の読み込み前に ID の呼び出しがおこなわれるので、ID が問題なく返される可能性が高くなります。
+コードの`<head>` セクションのページ上部に`VisitorAPI.js` ライブラリを配置します。 これにより、ページ本文の読み込み前に ID の呼び出しがおこなわれるので、ID が問題なく返される可能性が高くなります。
 
-ID サービス呼び出しは非同期であり、[demdex.net ドメイン](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja) への唯一の呼び出しです。 ID サービス呼び出しにより、ページ上で他の要素が読み込まれないようにブロックされることはありません。
+訪問者ID サービス呼び出しは非同期であり、[demdex.net ドメイン &#x200B;](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja)への唯一の呼び出しです。 訪問者ID サービス呼び出しは、ページ上の他の要素の読み込みをブロックしません。
 
-[!DNL Target] を使用している場合、ページの `<body>` に ID サービスコードを配置すると、[!DNL Target] 呼び出しがブロックされる可能性が高くなります。 ページ本文に ID サービスコードを配置しなければならない場合は、`<body>` 開始タグの後にこのコードを配置してください。
+Targetのお客様の場合、ページの`<body>`に訪問者ID サービスコードを配置すると、Target呼び出しをブロックする可能性が高くなる可能性があります。 訪問者ID サービス コードをページの本文に配置する必要がある場合は、開いた`<body>` タグの後に配置する必要があります。
 
-**ID サービスは、ページが読み込まれるたびにサーバー呼び出しをおこないますか。**
+**訪問者ID サービスは、ページが読み込まれるたびにサーバーコールを実行しますか？**
 
-いいえ、この呼び出しはそのページが初めてレンダリングされるときにのみ発生し、その後 7 日おきにおこなわれます。 その間、サーバー呼び出しは必要ありません。 ID サービスはクライアント側モードで稼働するので、ID を返すためにサーバー呼び出しをおこなう必要はありません。
+いいえ、この呼び出しはそのページが初めてレンダリングされるときにのみ発生し、その後 7 日おきにおこなわれます。 その間、サーバー呼び出しは必要ありません。 訪問者ID サービスはクライアントサイドモードで動作し、IDを返すためにサーバー呼び出しを行う必要はありません。
 
 [概要](../introduction/overview.md)を参照してください。
 
-**ID サービスを利用する際、ページ読み込みが遅くなったりユーザーエクスペリエンスに影響したりする原因は何ですか。**
+**訪問者ID サービスを使用する場合、ページの読み込み時間が遅くなったり、ユーザーエクスペリエンスに影響を与えたりする可能性は何ですか？**
 
 考えうるすべての条件を並べるのは難しいことです。 何十億人もの消費者クライアントがアドビのサービスに接続しており、その接続の場所や方法がパフォーマンスに与える影響も多岐にわたります。 次に例を示します。
 
@@ -76,23 +76,23 @@ ID サービス呼び出しは非同期であり、[demdex.net ドメイン](htt
 
 一般的に、リソースリクエストには、JSON-P よりも CORS を使用する方が望ましいと言えます。 JSON-P の場合、一部のブラウザーはリクエストをキューに追加し、ページ上の他の同期呼び出しや非同期呼び出しリクエストを基準にして優先順位を下げます。 CORS を使用すると、ブラウザーのコールスタック内でのこれらのリクエストの優先度の高さを確保できます。
 
-[Experience Cloud ID サービスでの CORS のサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)を参照してください。
+訪問者ID サービス [&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)のCORS サポートを参照してください。
 
 ## セキュリティ {#section-b176b8492fbe4acfb79ebb30ec902f98}
 
-**ID サービスは CORS をサポートしていますか。**
+**訪問者ID サービスはCORSをサポートしていますか？**
 
-はい。 [Experience Cloud ID サービスでの CORS のサポート](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)を参照してください。
+はい。 訪問者ID サービス [&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)のCORS サポートを参照してください。
 
 **CORS とは何ですか。**
 
-*`Cross-Origin Resource Sharing`*（CORS）とは、ブラウザーがリソースをリクエストする際に使用するメソッドです。 ブラウザーが CORS をサポートしている場合、ID サービスは常に CORS を使用してリソースをリクエストします。 CORS をサポートしていない古いブラウザー上では JSONP を使用してリソースをリクエストします。 [Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) に関する説明を参照してください。
+*`Cross-Origin Resource Sharing`*（CORS）とは、ブラウザーがリソースをリクエストする際に使用するメソッドです。 訪問者ID サービスは、常にCORSをサポートするブラウザーでCORSを使用してリソースをリクエストします。 訪問者ID サービスは、CORSをサポートしていない古いブラウザーでJSON-Pを使用してリソースをリクエストします。 訪問者ID サービス [&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)のCORS サポートを参照してください。
 
 **厳格なセキュリティ要件があり、JSONP を使用できない場合はどうすればよいですか。**
 
-厳格なセキュリティ要件がある場合は、ID サービスの API 設定で `useCORSOnly: true` を設定してください。 サイト訪問者がCORSをサポートするブラウザーを使用していることを確信している場合にのみ、このモードを有効にする必要があります。
+厳格なセキュリティ要件がある場合は、訪問者ID サービス API設定`useCORSOnly: true`を設定します。 サイト訪問者がCORSをサポートするブラウザーを使用していることを確信している場合にのみ、このモードを有効にする必要があります。
 
-[Experience Cloud](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758) および [useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa) を参照してください。
+訪問者ID サービス [&#128279;](../reference/cors.md#concept-6c280446990d46d88ba9da15d2dcc758)および[useCORSOnly](../library/function-vars/use-cors-only.md#reference-8a9a143d838b48d6b23329b84b13e1fa)のCORS サポートを参照してください。
 
 >[!MORELIKETHIS]
 >

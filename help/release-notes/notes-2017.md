@@ -1,6 +1,6 @@
 ---
-description: 2017 年の Experience Cloud ID サービスの機能リリース、更新、変更点です。
-keywords: ID サービス
+description: 機能リリース、アップデート、または2017年の訪問者ID サービスの変更。
+keywords: 訪問者 ID サービス
 title: 2017 年リリースノート
 exl-id: 0b51d3b1-e405-4473-9e1a-f89a55250e5e
 TQID: https://experienceleague.adobe.com/lt0zISb6FrqIuziYTt8pA6VZyU4XQkVsIha19v-LU7w
@@ -16,22 +16,22 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 734
-ht-degree: 97%
+source-wordcount: 751
+ht-degree: 47%
 
 ---
 
 # 2017 年リリースノート {#release-notes}
 
-2017 年の Experience Cloud ID サービスの機能リリース、更新、変更点です。
+機能リリース、アップデート、または2017年の訪問者ID サービスの変更。
 
-これらの変更点は、[Experience Cloud リリースノート](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)にも記載されています。
+これらの変更は、[CX Enterprise リリースノート &#x200B;](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=ja)にも記載されています。
 
 >[!NOTE]
 >
->2017 年 3 月、4 月、5 月、10 月については、お客様に関わるリリースノートおよびコード変更はありません。 これらの月の ID サービスコードは v2.1 から変更されていません。
+>2017 年 3 月、4 月、5 月、10 月については、お客様に関わるリリースノートおよびコード変更はありません。 これらの月の間、訪問者ID サービスコードはv2.1で変更されませんでした。
 
 ## バージョン 2.5 {#section-27b441509124493f80984ed09bd9e88b}
 
@@ -40,7 +40,7 @@ ht-degree: 97%
 <!--
 <p>
 <note type="important">
-ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release.
+Visitor ID Service support for Internet Explorer 6, 7, and 8 is deprecated and will be discontinued in a future release.
 </note> </p>
 -->
 
@@ -54,16 +54,16 @@ ID service support for Internet Explorer 6, 7, and 8 is deprecated and will be d
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> getVisitorValues</span> </p> </td> 
-   <td colname="col2"> <p>これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。 オプションの <span class="codeph">visitor.FIELDS</span> 列挙を使用して、返される ID を制御することもできます。 <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>これは、Analytics、訪問者ID サービス、データ収集オプトアウト、地理的な場所、メタデータ「BLOB」コンテンツの識別子をデフォルトで返す非同期APIです。 オプションの <span class="codeph">visitor.FIELDS</span> 列挙を使用して、返される ID を制御することもできます。 <a href="../library/get-set/getvisitorvalues.md#reference-b8c9e17c170c4291829a792df46ce279" format="dita" scope="local"> getVisitorValues</a> を参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **問題の修正とその他の変更**
 
-* Chrome でブラウザーの戻るボタンをクリックしたときに ID サービスがエラー状態になる問題を修正しました。
-* ID サービスで、イベント呼び出し応答の地域 ID が変更されたときに ID 同期が再実行されるようになりました。
-* ID サービスで使用されるアドビドメインへの呼び出しをホワイトリストに登録する方法について、[コンテンツのセキュリティポリシーと Experience Cloud ID Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3) のドキュメントを新たに追加しました。
+* ブラウザーで「戻る」ボタンをクリックすると、Visitor ID サービスでエラーがスローされるChrome関連のバグを修正しました。
+* イベント呼び出し応答のリージョン IDが変更されたときに、訪問者ID サービスがID同期を再実行するようになりました。
+* Visitor ID サービスで使用されるAdobe ドメインへの呼び出しを許可リストに登録する方法を説明する新しいドキュメント [Content Security Policies and the Visitor ID Service](/help/reference/csp.md#concept-968c423a7392479db0a0d821ae9783e3)を追加しました。
 
 <!--
 ## Version 2.4 {#section-f4d1608dd8894f558a92b82e83321200}
@@ -80,14 +80,14 @@ August, 2017
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> isCoopSafe</span> </p> </td> 
-   <td colname="col2"> <p>An optional, Boolean configuration that determines if the ID service sends (or does not send) data to the Adobe Experience Cloud Device Co-op. See <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
+   <td colname="col2"> <p>An optional, Boolean configuration that determines if the Visitor ID Service sends (or does not send) data to the Adobe Device Co-op. See <a href="../library/function-vars/coopsafe.md#reference-7fbed36f38a048d1a5883c53d430ddf4" format="dita" scope="local"> isCoopSafe</a>. </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **Revised Documentation**
 
-Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different [!DNL Experience Cloud] solutions. 
+Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate FAQs for different CX Enterprise solutions. 
 -->
 
 ## バージョン 2.3 {#section-ae7b1cb1e52e4ca5a46b453a3ba1f571}
@@ -115,8 +115,8 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
 
 **問題の修正とその他の変更**
 
-* VisitorAPI.js バージョン 2.2 で、Internet Explorer において ID サービスと Target が連携しなかった問題を修正しました。
-* ID サービスが Destination Publishing iFrame にデータを送信する方法を改善するために、コードを改訂しました。 これにより、CPU 負荷を低減できます。
+* `VisitorAPI.js` v2.2で、訪問者ID サービスとTargetがInternet Explorerで連携しないバグを修正しました。
+* 訪問者ID サービスがDestination Publishing iFrameにデータを送信する方法を改善するために、コードを修正しました。 これにより、CPU 負荷を低減できます。
 
 ## バージョン 2.2 {#section-b7dee2495c29470e9b3a3132ec1fd951}
 
@@ -132,7 +132,7 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/whitelistdomain.md#reference-999899ff7b5b429a8824c9db7a379808" format="dita" scope="local"> whitelistParentDomain および whitelistIframeDomains </a> </p> </td> 
-   <td colname="col2"> <p>これらの設定を使用すると、iFrame と親ページに実装されている ID サービスコードのインスタンスが互いに通信できるようになります。 これらの設定は、自社が管理しているドメインの iFrame に ID サービスコードを読み込む場合の 2 つの具体的な使用例（親ページまたはドメインを制御できる場合とできない場合）に関わる問題の解決に役立つように設計されています。 </p> </td> 
+   <td colname="col2"> <p>これらの設定を使用すると、iFrameおよび親ページに実装された様々な訪問者ID サービスコードのインスタンスを相互に通信できます。 この機能は、親ページ/ドメインを制御できる場合とできない場合の2つの特定のユースケースで問題を解決するために設計されており、制御するドメインのiFrameに訪問者ID サービスコードが読み込まれています。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -170,7 +170,7 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
   </tr> 
   <tr> 
    <td colname="col1"> <p> <a href="../library/function-vars/subdomain-config.md" format="dita" scope="local"> ID 同期と一致率について </a> </p> </td> 
-   <td colname="col2"> <p><span class="keyword">Media Manager</span> に関する節を改訂し、<span class="codeph">cm.eversttech.net</span> への呼び出しについての説明を追加しました。 これは、ID サービスと <span class="keyword">Media Manager</span> の間でおこなわれる自動 ID 同期です。 この機能は 2017 年 1 月にリリースされました。 後述の<a href="../release-notes/notes-2017.md#section-0ceac6007c1241b58ad607e2b76b2b7e" format="dita" scope="local">バージョン 2.0</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">Media Manager</span> に関する節を改訂し、<span class="codeph">cm.eversttech.net</span> への呼び出しについての説明を追加しました。 これは、訪問者ID サービスが<span class="keyword"> Media Optimizer</span>で実行する自動ID同期です。 この機能は 2017 年 1 月にリリースされました。 後述の<a href="../release-notes/notes-2017.md#section-0ceac6007c1241b58ad607e2b76b2b7e" format="dita" scope="local">バージョン 2.0</a> を参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -190,11 +190,11 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> ID サービス API プロパティ、<span class="codeph"> idSyncContainerID</span></p> </td> 
+   <td colname="col1"> <p> 訪問者ID サービス API プロパティ、<span class="codeph"> idSyncContainerID</span></p> </td> 
    <td colname="col2"> <p>このプロパティは、ID 同期用に <span class="keyword">Audience Manager</span> で使用されるコンテナ ID を設定します。 <a href="/help/library/function-vars/idsyncontainerid.md" format="https" scope="external"> idSyncContainerID</a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>ID サービス API メソッド、<span class="codeph">appendSupplementalDataIDTo(<span class="varname"> URL</span>、<span class="varname"> SDID</span>)</span></p> </td> 
+   <td colname="col1"> <p>訪問者ID サービス API メソッド、<span class="codeph">appendSupplementalDataIDTo （<span class="varname"> URL</span>,<span class="varname"> SDID</span>） </span></p> </td> 
    <td colname="col2"> <p>この公開メソッドは、<span class="wintitle">Supplemental Data ID</span>（SDID）をクエリ文字列パラメーターとしてリダイレクト URL に追加します。 <a href="../library/get-set/appendsupplementaldataidto.md#reference-65d09de6fde0418f8c62fa79304a755d" format="dita" scope="local">appendSupplementalDataIDTo</a> を参照してください。 （MCID-285） </p> </td> 
   </tr> 
  </tbody> 
@@ -202,11 +202,11 @@ Updated and revised the [FAQs](/help/faq-intro/faq-intro.md) to include separate
 
 **修正点**
 
-ID サービスが原因で、AMCV Cookie に格納された ID を使用する代わりに ID の重複したサーバーコールを送信していた問題を修正しました。 （MCID-296）
+訪問者ID サービスが、AMCV Cookieに保存されているIDを使用せずに、IDに対する冗長なサーバーコールを行う原因となるバグを修正しました。 （MCID-296）
 
 **新しいドキュメント**
 
-[さまざまなExperience Cloud ソリューションやサービスでのDNS プリフェッチの使用](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=ja)
+[さまざまなCX エンタープライズソリューションやサービスでのDNS プリフェッチの使用](https://experienceleague.adobe.com/docs/core-services/interface/more-resources/dns-prefetch.html?lang=ja)
 
 ## バージョン 2.0 {#section-0ceac6007c1241b58ad607e2b76b2b7e}
 
@@ -214,15 +214,15 @@ ID サービスが原因で、AMCV Cookie に格納された ID を使用する�
 
 >[!IMPORTANT]
 >
->ID サービスコード v2.0 はデフォルトで ID を自動的に Adobe Media Manager と同期します。 つまり、ページから `cm.eversttech.net` への呼び出しが発生します。これは、[!DNL Adobe] が管理する従来の [!DNL Media Optimizer] ドメインです。 [ID 同期と一致率について](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)も参照してください。
+>訪問者ID サービスコード v2.0は、デフォルトでIDをAdobe Media Optimizerと自動的に同期します。 つまり、ページから`cm.eversttech.net`への呼び出しが表示されます。これは、Adobeによって制御される従来のMedia Optimizer ドメインです。 [ID 同期と一致率について](../introduction/match-rates.md#concept-e55cf228b90c457fbee8c3cb06b195ab)も参照してください。
 
 **修正点および改善点**
 
 * AppMeasurement から Analytics に対してトラッキングコールを実行できない問題を修正しました。 （MCID-254、MCID-256、MCID-286）
-* 訪問者が demdex.net ドメインを除外するように設定された広告ブロッカーを利用している場合に ID サービスがトラッキングを停止するまでに時間がかかる問題を修正しました。 demdex.net ドメインをブロックしない広告ブロックツールがほとんどなので、これはまれな問題です。 （MCID-233）
-* お客様の Web サイトでの ID サービスコードとカスタムスクリプトがコンフリクトすることがある問題を修正しました。 この問題が原因で、Internet Explorer 9 で Web ページを読み込めませんでした。 （MCID-206）
+* 訪問者が広告ブロッカーを有効にし、そのブロッカーがdemdex.net ドメインを除外するように設定されている場合、訪問者ID サービスがすぐに失敗しないバグを修正しました。 demdex.net ドメインをブロックしない広告ブロックツールがほとんどなので、これはまれな問題です。 （MCID-233）
+* 訪問者ID サービスコードと顧客のweb サイト上のカスタムスクリプトとの間のやり取りが原因で発生するバグを修正しました。 この問題が原因で、Internet Explorer 9 で Web ページを読み込めませんでした。 （MCID-206）
 
 ## 以前の年度 {#section-aaabe2b7b0f04641b24acffc11cd7d2e}
 
-過去の ID サービスリリースノートです。
+古い訪問者ID サービスのリリースノート。
 

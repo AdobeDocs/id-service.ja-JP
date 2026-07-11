@@ -1,6 +1,6 @@
 ---
-description: 2018 年の Experience Cloud ID サービスの機能リリース、更新、変更点です。
-keywords: ID サービス
+description: 2018年の訪問者ID サービスの機能リリース、更新、または変更。
+keywords: 訪問者 ID サービス
 title: 2018 年リリースノート
 exl-id: ad3cccf1-2753-4ac9-a68c-15b2d62bbc1a
 TQID: https://experienceleague.adobe.com/1vrVFuFbQiLL9XYnZwEf0WkElW-qhsklHbrem-mo5LE
@@ -15,16 +15,16 @@ topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 94%
+source-wordcount: 488
+ht-degree: 66%
 
 ---
 
 # 2018 年リリースノート {#release-notes}
 
-2018 年の Experience Cloud ID サービスの機能リリース、更新、変更点です。
+2018年の訪問者ID サービスの機能リリース、更新、または変更。
 
 ## バージョン 3.3 {#section-3202c8d5457a45a5b5f4b4c838d44de3}
 
@@ -38,7 +38,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>AMCV Cookie のセキュリティの強化 </p> </td> 
-   <td colname="col2"> <p>内部セキュリティスキャンで、DTM ライブラリ使用時に、セッション管理に使用する Cookie で正しい属性を指定できないことがわかりました。 この結果、Cookie の情報が誤って共有されるおそれがあります。 この問題を解決するために、お客様が AMCV Cookie を安全なものとして指定できる設定を導入しました。 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>内部セキュリティスキャン中に、セッション管理に使用されるCookieが適切な属性を指定できないことが判明しました。 この結果、Cookie の情報が誤って共有されるおそれがあります。 この問題を解決するために、お客様が AMCV Cookie を安全なものとして指定できる設定を導入しました。 <a href="/help/library/function-vars/securecookie.md" format="https" scope="external">secureCookie</a> を参照してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -55,7 +55,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>AMCV Cookie のセキュリティの強化 </p> </td> 
-   <td colname="col2"> <p>内部セキュリティスキャンで、DTM ライブラリ使用時に、セッション管理に使用する Cookie で正しい属性を指定できないことがわかりました。 この結果、Cookie の情報が誤って共有されるおそれがあります。 この問題を解決するために、お客様が AMCV Cookie を安全なものとして指定できる設定を導入しました。 secureCookie を参照してください。 </p> </td> 
+   <td colname="col2"> <p>内部セキュリティスキャン中に、セッション管理に使用されるCookieが適切な属性を指定できないことが判明しました。 この結果、Cookie の情報が誤って共有されるおそれがあります。 この問題を解決するために、お客様が AMCV Cookie を安全なものとして指定できる設定を導入しました。 secureCookie を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>統合コードと ID を数値または空以外の文字列にする必要がある </p> </td> 
@@ -63,7 +63,7 @@ ht-degree: 94%
   </tr> 
   <tr> 
    <td colname="col1"> ECID JS がパブリック Git リポジトリで使用可能 </td> 
-   <td colname="col2"> ECID JS がパブリック Git リポジトリ（https://github.com/Adobe-Marketing-Cloud/id-service/releases）ですべての Experience Cloud ユーザーに公開されました。 </td> 
+   <td colname="col2"> ECID JSは、すべてのCX Enterpriseのお客様がhttps://github.com/Adobe-Marketing-Cloud/id-service/releasesでパブリック Git リポジトリで利用できるようになりました。 </td> 
   </tr> 
  </tbody> 
 </table>
@@ -80,7 +80,7 @@ ht-degree: 94%
  <tbody> 
   <tr> 
    <td colname="col1"> <p>ユニーク訪問者数の非現実的なスパイク </p> </td> 
-   <td colname="col2"> <p>Experience Cloud ID サービス3.1.0 のリリースでは、このバージョンが実装された際に、ユニーク訪問者数で非現実的なスパイクが作成される問題が見つかりました。 この動作は、最新バージョンの ECID v3.1.0 で、Safari ブラウザーのプライバシー設定で「現在の Web サイトからのみ許可」オプションを選択した場合にのみ発生します。 バージョン 3.1.2 では、この問題が修正されています。 </p> </td> 
+   <td colname="col2"> <p>訪問者ID サービス 3.1.0のリリースでは、このバージョンが実装されたときに、一意の訪問者数に非現実的なスパイクを作成する問題が見つかりました。 この動作は、最新バージョンの ECID v3.1.0 で、Safari ブラウザーのプライバシー設定で「現在の Web サイトからのみ許可」オプションを選択した場合にのみ発生します。 バージョン 3.1.2 では、この問題が修正されています。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -89,7 +89,7 @@ ht-degree: 94%
 
 >[!NOTE]
 >
->できるだけ早期に、バージョン 3.1.0 から最新バージョンにアップグレードすることをお勧めします。 バージョン 3.1.2 の説明を参照してください。 Adobe Experience Platform Launch、DTM および AppMeasurement 内で最新バンドルを使用できます。
+>できるだけ早期に、バージョン 3.1.0 から最新バージョンにアップグレードすることをお勧めします。 バージョン 3.1.2 の説明を参照してください。 最新のバンドルは、tagsおよびAppMeasurement内で利用できます。
 
 <table id="table_512039AFC4D34038B8F116B71EEEE7F6"> 
  <thead> 
@@ -126,7 +126,7 @@ ht-degree: 94%
   </tr> 
   <tr> 
    <td colname="col1"> <p>Internet Explorer のサポート </p> </td> 
-   <td colname="col2"> <p>ID サービスでは、Internet Explorer 6、7、8 および 9 をサポートしなくなりました。 </p> </td> 
+   <td colname="col2"> <p>訪問者ID サービスは、Internet Explorer 6、7、8、および9をサポートしなくなりました。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>getInstance ドキュメントの更新 </p> </td> 

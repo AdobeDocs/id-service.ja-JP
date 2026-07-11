@@ -1,6 +1,6 @@
 ---
-description: この設定を使用すると、更新対象の ID サービスのバージョンに基づいて、孤立したり古くなったりした Experience Cloud ID（ECID）を消去できます。
-keywords: ID サービス
+description: この設定を使用すると、更新中の訪問者ID サービスのバージョンに基づいて、孤立したECIDまたは古いECID （ECID）をクリアできます。
+keywords: 訪問者 ID サービス
 title: resetBeforeVersion
 exl-id: 9fa40baa-433d-4f16-824b-521948a92a4b
 TQID: https://experienceleague.adobe.com/5aqi7F5QkybjotjVMJgDWCchFw1XOYa6qPOSUzDyeqE
@@ -11,20 +11,20 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 254
-ht-degree: 87%
+source-wordcount: 257
+ht-degree: 41%
 
 ---
 
 # resetBeforeVersion{#resetbeforeversion}
 
-この設定を使用すると、更新対象の ID サービスのバージョンに基づいて、孤立したり古くなったりした Experience Cloud ID（ECID）を消去できます。
+この設定を使用すると、更新中の訪問者ID サービスのバージョンに基づいて、孤立したECIDまたは古いECID （ECID）をクリアできます。
 
-`resetBeforeVersion` 変数の値として ID サービスのバージョンを指定すると、クライアント側 ID から古い ECID が消去されます。
+訪問者ID サービスのバージョンを`resetBeforeVersion`変数の値として指定すると、クライアント側のIDから古いECIDがクリアされます。
 
-セッションのタイムアウトなど、条件によっては、ID サービスでサーバーサイド ID が正常に取得されずに、クライアントサイド ID が生成されることがあります。 この場合、孤立したクライアントサイド ID は ID サービスによって追跡されますが、ドメイン間で追跡したり、他のソリューションと適切に同期したりすることはできません。 この動作では、現在の AMCV Cookie のバージョンと `resetBeforeVersion` の値が比較されます。 Cookieが存在しないか、Cookieのバージョンが最新リリースされたバージョンの`resetBeforeVersion`より古い（古い）場合、AMCV Cookieが削除され、ID サービスは新しいECIDをリクエストします。
+セッションのタイムアウトなどの一部の条件では、訪問者ID サービスがサーバーサイド IDを正常に取得せずに、クライアントサイド IDが生成されることがあります。 このような場合、孤立したクライアントサイド IDは、ドメイン間で追跡されたり、他のソリューションと適切に同期したりすることなく、訪問者ID サービスによって追跡されます。 この動作では、現在の AMCV Cookie のバージョンと `resetBeforeVersion` の値が比較されます。 Cookieが存在しないか、Cookieのバージョンが最新リリースされたバージョンの`resetBeforeVersion`よりも古い場合、AMCV Cookieは削除され、訪問者ID サービスは新しいECIDをリクエストします。
 
 ブラウザーにサードパーティ Demedex Cookie がある訪問者の場合、ECID が、この Demedex Cookie の UUID を使用して適切に生成されたかどうかがチェックされます。 そのチェックの結果が真であるとわかった場合、新しい ECID は同じになり、訪問者は新規と見なされます。 何らかの理由で、クリアされる ECID が demdex Cookie を使用して生成されなかった場合、または demdex Cookie がない場合、訪問者は新しい ECID を受け取り、新規と見なされます。
 
@@ -33,8 +33,8 @@ ht-degree: 87%
 **コードサンプル**
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance ("Insert Marketing Cloud organization ID here", { 
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
   
     //Same as s.trackingServer 
     trackingServer: "Insert tracking server here ", 

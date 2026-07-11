@@ -1,6 +1,6 @@
 ---
-description: Experience Cloud ID サービス地域 ID を返します。 地域 ID（またはロケーションヒント）は、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。 Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
-keywords: ID サービス
+description: 訪問者ID サービス領域IDを返します。 地域ID （または場所ヒント）は、特定の訪問者ID サービスデータセンターの地理的位置の数値識別子です。 Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
+keywords: 訪問者 ID サービス
 title: getLocationHint
 exl-id: 0213f828-a985-4201-8a38-0a4b170ed057
 TQID: https://experienceleague.adobe.com/Q58a-bmHINs-3mhlUarH8Ipo85tNhjTjMDSlZLFcHsw
@@ -11,16 +11,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 195
-ht-degree: 100%
+source-wordcount: 196
+ht-degree: 70%
 
 ---
 
 # getLocationHint{#getlocationhint}
 
-Experience Cloud ID サービス地域 ID を返します。 地域 ID（またはロケーションヒント）は、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。 Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
+訪問者ID サービス領域IDを返します。 地域ID （または場所ヒント）は、特定の訪問者ID サービスデータセンターの地理的位置の数値識別子です。 Audience Manager へのサーバー側 API 呼び出しをおこなうには、地域 ID が必要です。
 
 **構文：** `var *`変数名`* = visitor.getLocationHint()`
 

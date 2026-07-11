@@ -1,6 +1,6 @@
 ---
-description: あるドメインから別のドメインに訪問者が移動すると、訪問者の Experience Cloud ID と Analytics ID がこのプロパティで上書きされます。 ID を上書きするには、各ドメインで ID サービスを所有し実装してあることが必要です。 このコードでは、制御の対象でないドメインで ID を上書きできません。
-keywords: ID サービス
+description: このプロパティは、あるドメインから2番目のドメインに移動する訪問者のECIDとAnalytics IDを上書きします。 IDを上書きするには、各ドメインに訪問者ID サービスを所有して実装している必要があります。 このコードでは、制御の対象でないドメインで ID を上書きできません。
+keywords: 訪問者 ID サービス
 title: overwriteCrossDomainMCIDAndAID
 exl-id: 726261b1-c8d0-4b12-b0cb-52d7e21e7fac
 TQID: https://experienceleague.adobe.com/dJUuTbc9zspC93WZrRaxBsp2BgpbE-z-iUuePQXGTeY
@@ -11,16 +11,16 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 401
-ht-degree: 100%
+source-wordcount: 404
+ht-degree: 71%
 
 ---
 
 # overwriteCrossDomainMCIDAndAID{#overwritecrossdomainmcidandaid}
 
-あるドメインから別のドメインに訪問者が移動すると、訪問者の Experience Cloud ID と Analytics ID がこのプロパティで上書きされます。 ID を上書きするには、各ドメインで ID サービスを所有し実装してあることが必要です。 このコードでは、制御の対象でないドメインで ID を上書きできません。
+このプロパティは、あるドメインから2番目のドメインに移動する訪問者のECIDとAnalytics IDを上書きします。 IDを上書きするには、各ドメインに訪問者ID サービスを所有して実装している必要があります。 このコードでは、制御の対象でないドメインで ID を上書きできません。
 
 **構文：** `Visitor.overwriteCrossDomainMCIDAndAID: true|false`（デフォルトは `false`）
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 JavaScript コードは次の例のようになります。
 
 ```js
-//Call the ID service 
+//Call the Visitor ID Service 
 var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", { 
      ... 
  
@@ -40,7 +40,7 @@ var visitor = Visitor.getInstance("INSERT-MARKETING-CLOUD-ID-HERE", {
 
 **使用例**
 
-サイト訪問者を追跡するために、ID サービスは、[!DNL Experience Cloud] ID（MID）をブラウザー Cookie に書き込みます。 別のドメインの ID サービスで設定された既存の MID を上書きした方がよい一般的なユースケースの一覧と説明を次の表に示します。
+サイト訪問者を追跡するために、訪問者ID サービスはECID （またはMID）をブラウザーのCookieに書き込みます。 次の表に、別のドメインの訪問者ID サービスによって設定された既存のMIDを上書きする一般的なユースケースを示します。
 
 <table id="table_FC1AF6551D6646E0BF1C4FB7C1316EBB"> 
  <thead> 

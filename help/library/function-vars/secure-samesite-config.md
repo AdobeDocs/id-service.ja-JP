@@ -1,6 +1,6 @@
 ---
 description: Google AMP ページで AMCV Cookie をサポートするために使用できる、ECID 内の設定。
-keywords: ID サービス
+keywords: 訪問者 ID サービス
 title: セキュア設定と SameSite 設定
 exl-id: c3bc44fc-5adc-4eae-8169-9d731d148458
 TQID: https://experienceleague.adobe.com/qT9et54-InwTH7usPnjGN8mdBeMMrqK-qjxGOwqsXBA
@@ -13,10 +13,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 156
-ht-degree: 100%
+source-wordcount: 151
+ht-degree: 54%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 この設定を使用すると、Cookie の設定変更と Google AMP ページでの [AMCV Cookie](../../introduction/cookies.md) のサポートが可能になります。
 
-アドビ訪問者 ID サービスでは、ブラウザーのデフォルト設定 `SameSite = Lax` を使用して ECID Cookie を設定します。このデフォルト設定は、Google AMP ページなどの iframe にページが読み込まれる場合はアクセスできません。 ECID Cookie にアクセスするには、次の設定を使用して SameSite 設定を `SameSite = None` に更新します。
+Adobe訪問者ID サービスは、ブラウザーのデフォルト設定`SameSite = Lax`でECID Cookieを設定します。これは、ページがGoogle AMP ページのようなiframeに読み込まれた場合にアクセスできません。 ECID Cookie にアクセスするには、次の設定を使用して SameSite 設定を `SameSite = None` に更新します。
 
 >[!NOTE]
 >
@@ -32,9 +32,9 @@ ht-degree: 100%
 
 **実装**:
 
-Adobe Experience Platform Launch を使用する場合は、Experience Cloud ID 拡張機能をバージョン 5.1.0 にアップグレードし、`secureCookie: true` と `sameSiteCookie: none` を設定します。
+タグを使用している場合は、[!UICONTROL Experience Cloud ID Service] タグ拡張機能をバージョン 5.1.0にアップグレードし、`secureCookie: true`と`sameSiteCookie: none`を設定します。
 
-Experience Platform Launch を使用しない場合は、訪問者インスタンスを初期化する一方、最新の訪問者ライブラリ 5.1.0 に更新し、次の設定に従います。
+タグを使用していない場合は、Visitor インスタンスを初期化しながら、最新のVisitor 5.1.0 ライブラリにアップデートし、以下の設定に従います。
 
 **コードサンプル**
 

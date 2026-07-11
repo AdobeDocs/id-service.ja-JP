@@ -1,7 +1,7 @@
 ---
-description: コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。 ID サービスを使用していて、信頼されているドメインからのリソースを受け入れる許可リストを用いる厳格な CSP がある場合は、このセクションを確認してください。 ここに記載されているアドビドメインを CSP 許可リストに追加する必要があります。
-keywords: ID サービス
-title: コンテンツセキュリティポリシーおよび Experience Cloud ID サービス
+description: コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。 Visitor ID サービスを使用しており、信頼できるドメインからリソースを受け入れるために許可リストを使用する厳格なCSPを使用している場合は、この節を参照してください。 ここに記載されているアドビドメインを CSP 許可リストに追加する必要があります。
+keywords: 訪問者 ID サービス
+title: コンテンツセキュリティポリシーとAdobe Visitor ID サービス
 exl-id: e35c6809-764e-4c3e-9139-88bb92e82338
 TQID: https://experienceleague.adobe.com/UX0RWE7v912XEHJCJE49yt1sy13t1P0I0I79gG9Z7m8
 product_v2:
@@ -14,16 +14,16 @@ role_v2:
 topic_v2:
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 530
-ht-degree: 100%
+source-wordcount: 527
+ht-degree: 70%
 
 ---
 
-# コンテンツセキュリティポリシーおよび Experience Cloud ID サービス {#content-security-policies-and-the-experience-cloud-id-service}
+# コンテンツセキュリティポリシーとAdobe Visitor ID サービス {#content-security-policies-and-the-experience-cloud-id-service}
 
-コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。 ID サービスを使用していて、信頼されているドメインからのリソースを受け入れる許可リストを用いる厳格な CSP がある場合は、このセクションを確認してください。 ここに記載されているアドビドメインを CSP 許可リストに追加する必要があります。
+コンテンツセキュリティポリシー（CSP）は、Web ページに読み込まれるリソースのタイプをブラウザーで制御できるようにするために HTTP ヘッダーで使用されるセキュリティ機能です。 Visitor ID サービスを使用しており、信頼できるドメインからリソースを受け入れるために許可リストを使用する厳格なCSPを使用している場合は、この節を参照してください。 ここに記載されているアドビドメインを CSP 許可リストに追加する必要があります。
 
 ## CSP レビュー {#section-5fde5c00a678455c914b8307a8caab82}
 
@@ -35,16 +35,16 @@ CSP は HTTP ヘッダー `Content-Security-Policy` を使用してブラウザ�
 * サイト改ざん攻撃。
 * マルウェアの配布。
 
-CSP の使用は一般的であり、よく理解されています。 このドキュメントの目的は CSP について詳しく説明することではありません（詳しくは、後にある関連情報リンクを参照してください）。 重要なのは、厳格なセキュリティポリシーを適用する必要がある場合に、CSP に追加する必要があるアドビのドメイン名を理解することです。 これらのドメインを追加することで、お客様のサイトにアクセスした訪問者のブラウザーが、使用する Experience Cloud リソースに対する重要な呼び出しをおこなえるようになります。
+CSP の使用は一般的であり、よく理解されています。 このドキュメントの目的は CSP について詳しく説明することではありません（詳しくは、後にある関連情報リンクを参照してください）。 重要なのは、厳格なセキュリティポリシーを適用する必要がある場合に、CSP に追加する必要があるアドビのドメイン名を理解することです。 これらのドメインを追加すると、サイトにアクセスする訪問者ブラウザーが、使用するCX エンタープライズリソースに対して重要な呼び出しを行うことができます。
 
-## 許可リスト用の Experience Cloud ドメイン {#section-30693e9a96834edfbf04de9e698cf2aa}
+## 許可リストに加える用CX Enterprise Domains {#section-30693e9a96834edfbf04de9e698cf2aa}
 
-現在使用している Experience Cloud ソリューションまたはサービスごとに、これらのドメイン名または URL を CSP に追加してください。
+使用するリスト CX Enterprise ソリューションまたはサービスごとに、これらのドメイン名またはURLをCSPに追加します。
 
 <table id="table_EC9FC999A62D4B7A830CE73B0AB9EF3C">
  <thead>
   <tr>
-   <th colname="col1" class="entry">Experience Cloud ソリューションまたはサービス</th>
+   <th colname="col1" class="entry">CX エンタープライズソリューション/サービス</th>
    <th colname="col2" class="entry">説明</th>
   </tr>
  </thead>
@@ -71,7 +71,7 @@ CSP の使用は一般的であり、よく理解されています。 このド
   </tr>
   <tr>
    <td colname="col1">
-    <p><b>Experience Cloud ID サービスと Audience Manager</b></p>
+    <p><b>Visitor ID ServiceとAudience Manager</b></p>
    </td>
    <td colname="col2">
     <p>CSP を変更し、以下のドメインを含めます。</p>
@@ -80,9 +80,9 @@ CSP の使用は一般的であり、よく理解されています。 このド
      <li>img-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
      <li>script-src 'self' <code>https://*.demdex.net https://cm.everesttech.net https://assets.adobedtm.com;</code></li>
      <li>frame-src 'self' <code>https://*.demdex.net;</code></li>
-     <li>Adobe Launch を使用してタグをデプロイする場合は、ドメインのリストに <code>https://assets.adobedtm.com</code> も追加する必要があります。</li>
+     <li>タグを使用する場合は、<code>https://assets.adobedtm.com</code>をドメインのリストに追加する必要もあります。</li>
     </ul>
-    <p><span class="codeph">demdex.net</span> ドメインの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookies および Experience Cloud ID サービス</a>の生成と、ID 同期用に使用されます。 詳しくは、<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。</p>
+    <p><span class="codeph">demdex.net</span> ドメインへの呼び出しは、<a href="../introduction/cookies.md" format="dita" scope="local">Cookieと訪問者ID サービス </a>の生成およびID同期に使用されます。 詳しくは、<a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja" format="https" scope="external">Demdex ドメインの呼び出しについて</a>も参照してください。</p>
    </td>
   </tr>
   <tr>

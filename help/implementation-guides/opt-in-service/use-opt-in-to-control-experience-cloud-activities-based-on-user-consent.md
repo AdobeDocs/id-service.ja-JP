@@ -1,6 +1,6 @@
 ---
-title: オプトインを使用し、ユーザーの同意に基づいて Experience Cloud アクティビティを制御する
-description: Adobe Opt-in Object は、Adobe Experience Platform ID サービスの拡張機能で、エンドユーザーの同意に基づいて、Experience Cloud ソリューションが web ページに cookie を作成するかどうか、またはビーコンを開始するかどうかを制御するのに役立つよう設計されています。
+title: オプトインを使用して、ユーザーの同意にもとづいて顧客体験のエンタープライズアクティビティを制御する
+description: Adobe オプトインオブジェクトは、Adobe Visitor ID サービスの拡張機能であり、エンドユーザーの同意に基づいて、web ページ上でCookieを作成したり、ビーコンを開始したりできるCX エンタープライズソリューションを制御するのに役立つように設計されています。
 exl-id: ac44e628-01ca-401c-864b-30fed0450e5f
 TQID: https://experienceleague.adobe.com/YfYkXzK8wKw6JC3-EB2ljIOfXGXQV5r6Nw2-XYsGW6c
 product_v2:
@@ -13,53 +13,53 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 517
-ht-degree: 39%
+source-wordcount: 518
+ht-degree: 28%
 
 ---
 
-# ユーザーの同意に基づいて Experience Cloud アクティビティを制御する
+# ユーザーの同意に基づいた顧客体験のエンタープライズアクティビティの管理
 
-Adobe [!UICONTROL Opt-in] オブジェクトは、Adobe [!UICONTROL Experience Platform Identity Service]の拡張機能であり、エンドユーザーの同意に基づいて、Web ページでCookieを作成したり、ビーコンを開始したりできるExperience Cloud ソリューションを制御するのに役立つように設計されています。
+Adobe [!UICONTROL Opt-in] オブジェクトは、Adobe Visitor ID サービスの拡張機能で、エンドユーザーの同意に基づいて、web ページにCookieを作成したり、ビーコンを開始したりできるCX Enterprise ソリューションを制御するのに役立つように設計されています。
 
 ## [!UICONTROL Opt-In]の基本
 
-プライバシー規制の重要な側面は、個人データの利用方法や利用者に関するユーザーの同意の取得と伝達です。 [!UICONTROL Identity Service]の最新バージョンには、エンドユーザーの同意が与えられたかどうかに基づいて、Experience Cloud ソリューションタグの条件付き起動（同意の前後など）を提供する機能が含まれています。 このプロセスについては、次の画像をご覧ください。
+プライバシー規制の重要な側面は、個人データの利用方法や利用者に関するユーザーの同意の取得と伝達です。 訪問者ID サービスの最新バージョンには、エンドユーザーの同意が付与されているかどうかに基づいて、CX エンタープライズソリューションタグの条件付き起動（同意の前や後など）を提供する機能が含まれています。 このプロセスについては、次の画像をご覧ください。
 
 [!UICONTROL Opt-in]の仕組みの![図](assets/opt-in.png)
 
 [!UICONTROL Opt-in]は次のように動作します。
 
-**ID サービスで[!UICONTROL Opt-in]が（ブール変数を使用して）有効になっている場合、Experience Cloud ソリューションライブラリがそのソリューションに対して同意が与えられるまで、タグの実行やCookieの設定を遅らせます。**
+**訪問者ID サービスで[!UICONTROL Opt-in]が（ブール変数を使用して）有効になっている場合、そのソリューションに対して同意が与えられるまで、CX Enterprise ソリューション ライブラリのタグの実行やCookieの設定が遅れます。**
 
 [!UICONTROL Opt-in]では、ユーザーの同意の前にタグが適用されるかどうかを決定することもできます。その後、この同意情報（およびエンドユーザーから与えられた同意）が保存され、その後のヒットで使用できるようになります。 同意の保存は、[!UICONTROL Opt-in] オプションで利用できます。または、CMPと統合して、同意の選択を保存させることができます。
 
 ## [!UICONTROL Opt-In]の有効化と設定
 
-[!UICONTROL Opt-in]は、Adobe Experience Platform タグ （以前のLaunch）で最も簡単に設定できます。 方法については、次の短いビデオをご覧ください。
+[!UICONTROL Opt-in]は、タグを使用して簡単に設定できます。 方法については、次の短いビデオをご覧ください。
 
 >[!VIDEO](https://video.tv.adobe.com/v/40335/?captions=jpn&quality=12)
 
-Experience Platform タグを使用していない場合は、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=ja)に示すように、[!UICONTROL Opt-in]の設定をグローバル訪問者オブジェクトの初期化に設定できます。
+タグを使用していない場合は、[&#x200B; ドキュメント &#x200B;](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/getting-started.html?lang=ja)に示すように、グローバル訪問者オブジェクトの初期化で[!UICONTROL Opt-in]の設定を設定できます。
 
 ## ページに[!UICONTROL Opt-In]を実装しています
 
 このセットアップとバックエンドの設定はすべて、サイト訪問者に同意オプションを提示するためのインターフェイスを提供するための準備です。 この UI は自分で作成することも、CMP（Consent Management Platform）パートナーを使用して作成することもできます。
 
-同意を収集するために[!UICONTROL Opt-in]を使用するUIを設定する場合は、[!UICONTROL Opt-in]に接続するAPIを呼び出し、一部またはすべてのAdobe Experience Cloud ソリューションに同意を与えるように設定する必要があります。 これらの API に関する詳細は、[オプトインリファレンスドキュメント](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=ja)を参照してください。 オプトインに関する追加情報は、その前後のドキュメントページにも含まれています。
+同意を収集するために[!UICONTROL Opt-in]を使用するUIを設定する場合は、[!UICONTROL Opt-in]に接続するAPIを呼び出し、Adobe CX Enterprise ソリューションの一部またはすべてを同意するように通知するように設定する必要があります。 これらの API に関する詳細は、[オプトインリファレンスドキュメント](https://experienceleague.adobe.com/docs/id-service/using/implementation/opt-in-service/api.html?lang=ja)を参照してください。 オプトインに関する追加情報は、その前後のドキュメントページにも含まれています。
 
 ## [!UICONTROL Opt-In] デモ
 
-次のビデオでは、ページで作業している[!UICONTROL Opt-in]の簡単なデモと、Experience Cloud ソリューションがCookieを設定したり、ビーコンを開始したりできるかどうかに与える影響について説明します。
+次のビデオでは、ページで作業している[!UICONTROL Opt-in]の簡単なデモと、CX Enterprise ソリューションがCookieを設定したり、ビーコンを開始したりできるかどうかに与える影響について説明します。
 
 >[!VIDEO](https://video.tv.adobe.com/v/40340/?captions=jpn&quality=12)
 
-**メモ：**&#x200B;この記事の執筆時点では、[!UICONTROL Opt-in]がすべてのExperience Cloud アプリケーションのライブラリに組み込まれていないことに注意してください。 現在[!UICONTROL Opt-in]でサポートされているライブラリは次のとおりです。
+**メモ：**&#x200B;この記事の執筆時点では、[!UICONTROL Opt-in]がすべてのCX Enterprise アプリケーションのライブラリに組み込まれていないことに注意してください。 現在[!UICONTROL Opt-in]でサポートされているライブラリは次のとおりです。
 
-* ID サービス
+* 訪問者 ID サービス
 * Analytics
 * Audience Manager
-* [!DNL Target]
+* ターゲット
 

@@ -1,7 +1,7 @@
 ---
-description: ここでは、Experience Cloud ID サービスに必要な適切なソリューション、サービス、コードバージョンを使用していることを確認します。
-keywords: ID サービス
-title: Experience Cloud ID サービスの要件
+description: この節を確認して、訪問者ID サービスで必要な適切なソリューション、サービス、コードバージョンを使用していることを確認します。
+keywords: 訪問者 ID サービス
+title: Adobe Visitor ID サービスの要件
 exl-id: ebeac4c7-b36c-4a4e-9378-351fac5baf53
 TQID: https://experienceleague.adobe.com/yOoLEIKihVSpDLeZsplTZzg-toOENKlBzsQt2G2YcKk
 product_v2:
@@ -17,56 +17,56 @@ topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: df401a2a-327d-468c-a5e4-b7b7ccd071a0
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 707
-ht-degree: 91%
+source-wordcount: 727
+ht-degree: 39%
 
 ---
 
-# Experience Cloud ID サービスの要件 {#requirements-for-the-experience-cloud-id-service}
+# Adobe Visitor ID サービスの要件 {#requirements-for-the-experience-cloud-id-service}
 
-ここでは、Experience Cloud ID サービスに必要な適切なソリューション、サービス、コードバージョンを使用していることを確認します。
+この節を確認して、訪問者ID サービスで必要な適切なソリューション、サービス、コードバージョンを使用していることを確認します。
 
 ## 実装の成功とサポートを確実にする要件 {#section-15e54a9e9ad2443cb9dc950b4a78f1f1}
 
-成功した、サポートされた実装は、コード要件を満たし（または上回り）、[!DNL Adobe] ヘルプに記載された説明に従っています。 サポートされない実装は、予期せぬ結果を生み出し、カスタマーケアおよびアドビのエンジニアリングチームが ID サービスの問題をトラブルシューティングまたは解決するための努力を支援するのを妨げます。
+サポートされている実装が成功した場合は、コード要件を満たし、Adobe ヘルプに記載されている手順に従います。 サポートされていない実装では、予期しない結果が生じるため、カスタマーケアおよび当社のエンジニアリングチームは、訪問者ID サービスに関する問題のトラブルシューティングや解決を支援できません。
 
 ### 標準実装
 
-標準実装について詳しくは、[Experience Platform タグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を参照してください。
+標準実装については、Adobe Experience Platform Data Collectionの[tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を参照してください。
 
 ### 非標準実装
 
-非標準、または手動の実装の場合、ID サービスをこのガイドの手順で説明するとおりに設定する必要があります。 前述の DTM ガイドラインのように、不適切なコード配置および読み込みによって、サポートされない実装が作成されます。
+非標準または手動の実装の場合は、このガイドの手順に従って訪問者ID サービスを設定する必要があります。 上記の標準実装ガイドラインと同様に、コードの配置と読み込みが不適切な場合、サポートされていない実装が作成されます。
 
-## Experience Cloud の要件：組織 ID {#section-a02f537129a64ffbb690d5738d360c26}
+## CX エンタープライズ要件：IMS組織ID {#section-a02f537129a64ffbb690d5738d360c26}
 
-ID サービスを使用するには、会社で [!DNL Experience Cloud] を有効にして、組織 ID を持つ必要があります。 会社の [!DNL Experience Cloud] ステータスが不明であり、組織 ID を探す必要がある場合は、以下のリストを確認してください。
+訪問者ID サービスを使用するには、お客様の会社がCX エンタープライズを有効にし、IMS組織IDを持っている必要があります。 自社のCX Enterpriseのステータスが不明で、IMS組織IDを見つける必要がある場合は、次のリストを確認してください。
 
 >[!IMPORTANT]
 >
->組織 ID は大文字小文字が区別され、割り当てられたとおりに使用する必要があります。
+>IMS組織IDは大文字と小文字が区別され、指定されたとおりに正確に使用する必要があります。
 
 <table id="table_6C74B676EB094C568D2439FDCC9A7830"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Experience Cloud のステータス </th> 
+   <th colname="col1" class="entry"> CX エンタープライズステータス </th> 
    <th colname="col2" class="entry"> 説明 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>有効</b> </p> </td> 
-   <td colname="col2"> <p>会社が <span class="keyword">Experience Cloud</span> を有効にしているものの、組織 ID がない場合は、<a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=ja" format="https" scope="external">組織 ID</a> を確認してください（<i>組織 ID を見つける</i>セクションまで下にスクロールしてください）。 </p> </td> 
+   <td colname="col2"> <p>会社がCX Enterpriseに対して有効になっていても、IMS組織IDがない場合は、<a href="https://experienceleague.adobe.com/docs/core-services/interface/manage-users-and-products/organizations.html?lang=ja" format="https" scope="external">組織ID</a>を参照してください（セクション <i>組織IDを検索</i>までスクロールします）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>不明</b> </p> </td> 
-   <td colname="col2"> <p> 会社の <span class="keyword">Experience Cloud</span> のステータスが不明である場合は、会社のアドビアカウントの管理者に、会社のメンバーが Adobe ID を使用して <a href="https://experiencecloud.adobe.com" format="https" scope="external">marketing.adobe.com</a> にログインできるかどうかを問い合わせてください。 ログインできる場合は有効であり、管理者が組織 ID を参照できる状態にあります。 この ID を探す方法については、<a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=ja" format="https" scope="external">Experience Cloud 管理</a>の「管理ページ」の節を参照してください。 </p> </td> 
+   <td colname="col2"> <p> 自社のCX Enterprise ステータスがわからない場合は、自社のメンバーがAdobe IDを使用して<a href="https://experiencecloud.adobe.com" format="https" scope="external"> marketing.adobe.com</a>でログインできるかどうかを、Adobe アカウントを管理している人に尋ねます。 可能な場合は、有効になり、管理者はIMS組織IDを表示できます。 IMS組織IDを見つけるには、<a href="https://experienceleague.adobe.com/docs/core-services/interface/experience-cloud.html?lang=ja" format="https" scope="external"> CX Enterprise Administration</a>の「管理ページ」の節を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>無効</b> </p> </td> 
-   <td colname="col2"> <p> 会社が Experience Cloud を有効にしていない場合は、はじめに、<a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=ja" format="https" scope="external">コアサービス - ソリューションを有効にする方法</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p> お客様の会社がCX Enterpriseに対して有効になっていない場合は、「<a href="https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=ja" format="https" scope="external"> Core Services - Enabling Your Solutions</a>」を参照して開始してください。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -77,7 +77,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
 
 ## コードライブラリとバージョンの要件 {#section-ad7542a4317d430fa79fc6b095beb84d}
 
-以降では、[!DNL Experience Cloud] ID サービスを使用する際に必要となる最小コードバージョンについて示します。
+次の節では、訪問者ID サービスの使用に必要な最小コードバージョンを示します。
 
 >[!TIP]
 >
@@ -88,14 +88,14 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
 <table id="table_8E773F76DBCB4797A0C117080CA8707C"> 
  <thead> 
   <tr> 
-   <th colname="col1" class="entry"> Experience Cloud ソリューション </th> 
+   <th colname="col1" class="entry"> CX エンタープライズソリューション </th> 
    <th colname="col3" class="entry"> コードライブラリ </th> 
    <th colname="col4" class="entry"> バージョンの要件 </th> 
   </tr> 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b> <span class="keyword"> Experience Cloud</span> ID サービス</b> </p> </td> 
+   <td colname="col1"> <p> <b>訪問者ID サービス </b> </p> </td> 
    <td colname="col3"> <p> <span class="codeph"> VisitorAPI.js</span> </p> </td> 
    <td colname="col4"> <p>2.0 以降 </p> </td> 
   </tr> 
@@ -106,7 +106,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
   </tr> 
   <tr> 
    <td colname="col3"> <p> <span class="codeph"> s_code.js</span> </p> </td> 
-   <td colname="col4"> <p>H.27 </p> <p> <p>注：ID サービス バージョン 1.6.0のリリースでは、Analytics</span> s_code バージョン H.27の<span class="keyword">がサポートされなくなりました。 コードを最新バージョンのAppMeasurementにアップグレードします。 </p> </p> </td> 
+   <td colname="col4"> <p>H.27 </p> <p> <p>注：<span class="keyword"> Analytics</span> s_code バージョン H.27は、Visitor ID Service バージョン 1.6.0のリリースではサポートされなくなりました。 コードを最新バージョンのAppMeasurementにアップグレードします。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col3"> <p>ビデオハートビート </p> <p><a href="https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=ja" format="https" scope="external">JavaScript 向けビデオハートビート 2.x</a> を参照してください。 </p> </td> 
@@ -131,7 +131,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
 
 ## Android および iOS 向け SDK 要件 {#section-73b2446fba8e463888642c7d7dfd94f1}
 
-少なくとも、ID サービスには、以下に示す SDK バージョンが必要です。
+少なくとも、Visitor ID サービスには、以下に示すSDK バージョンが必要です。
 
 * Android：4.11.0
 * iOS：4.11.0
@@ -140,7 +140,7 @@ ID サービスを使用するには、会社で [!DNL Experience Cloud] を有�
 >
 >必要最小限ではなく、最新のコードバージョンを使用することをお勧めします。
 
-ID サービスに関して、SDK コードが有効になっている必要があります。 [Adobe Mobile Services](https://mobilemarketing.adobe.com/) アカウントから、各アプリ用の最新 SDK コードを有効にして、ダウンロードします。 関連トピック:
+Visitor ID サービスに対してSDK コードを有効にする必要があります。 [Adobe Mobile Services](https://mobilemarketing.adobe.com/) アカウントから、各アプリ用の最新 SDK コードを有効にして、ダウンロードします。 関連トピック:
 
 * [SDK 訪問者 ID サービスの設定](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/t-config-visitor.html?lang=ja)
 * [Android SDK のメソッド](https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/c-marketing-cloud.html?lang=ja)

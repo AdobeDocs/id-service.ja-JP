@@ -1,6 +1,6 @@
 ---
 title: ユニーク訪問者数の識別
-description: Adobe ECID（ID サービス）のドキュメント
+description: Adobe ECID （訪問者ID サービス）のドキュメント
 exl-id: 379dbf0a-814d-4348-9ac4-d0e8fc13b9dc
 TQID: https://experienceleague.adobe.com/1iZMkBA6-SnhhVmqp8qrFuk-Ev-tKOae5FAduivghXM
 product_v2:
@@ -14,10 +14,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 251
-ht-degree: 100%
+source-wordcount: 257
+ht-degree: 80%
 
 ---
 
@@ -28,8 +28,8 @@ ht-degree: 100%
 | 使用順序 | クエリパラメーター（収集方法） | post_visid_type 列の値 | 以下の場合に表示される |
 |---|---|---|---|
 |  1  | vid [s.visitorID](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/visitorid.html?lang=ja)  | 0  | `s.visitorID` が設定されている。 |
-|  2  | aid [s_vi cookie](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-analytics.html?lang=ja#section-5d50a078de444d12b7d927d68ff3b679)  | 3  | 訪問者 ID サービスをデプロイする前に訪問者が既に s_vi cookie を持っていた、または訪問者 ID [猶予期間](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=ja)が設定済みである。  |
-|  3  | mid [ID サービスによって設定される AMCV_ cookie](../introduction/cookies.md)  |  5  |  訪問者のブラウザーが Cookie（ファーストパーティ）を受け入れ、[!DNL Identity Service] がデプロイされている。  |
+|  2  | aid [s_vi cookie](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-analytics.html?lang=ja#section-5d50a078de444d12b7d927d68ff3b679)  | 3  | 訪問者は、訪問者ID サービスをデプロイする前に既存のs_vi Cookieを持っていましたが、または訪問者ID [猶予期間](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html?lang=ja)が設定されています。  |
+|  3  | 訪問者ID サービスによって設定された[AMCV_ Cookieの中](../introduction/cookies.md)  |  5  |  訪問者のブラウザーはCookie （ファーストパーティ）を受け入れ、訪問者ID サービスがデプロイされます。  |
 |  4  | fid [H.25.3 以降の代替の cookie、または JavaScript 版 AppMeasurement](https://experienceleague.adobe.com/docs/core-services/interface/administration/ec-cookies/cookies-analytics.html?lang=ja#section-65e33f9bfc264959ac1513e2f4b10ac7)  |  4  |  訪問者のブラウザーが cookie（ファーストパーティ）を受け入れる。  |
 |  5  |  [HTTP モバイル加入者ヘッダー](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-reference.html?lang=ja)  |  2  |  デバイスがモバイルデバイスとして認識されている。  |
 |  6  |  [IP アドレス、ユーザーエージェント、ゲートウェイ IP アドレス](https://experienceleague.adobe.com/docs/analytics/components/metrics/unique-visitors.html?lang=ja)  |  1  |  訪問者のブラウザーで cookie が許可されていない。 |

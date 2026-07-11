@@ -1,7 +1,7 @@
 ---
-description: これらの説明、ツール、手順は、ID サービスが適切に動作しているかどうかを判定するのに役立ちます。 これらのテストは、一般に、ID サービスに適用され、様々な ID サービスと Experience Cloud ソリューションの組み合わせに適用されます。
-keywords: ID サービス
-title: Experience Cloud ID サービスのテストと検証
+description: これらの手順、ツール、手順は、訪問者ID サービスが適切に動作しているかどうかを判断するのに役立ちます。 これらのテストは、一般的に訪問者ID サービスに適用され、様々な訪問者ID サービスとCX エンタープライズソリューションの組み合わせに適用されます。
+keywords: 訪問者 ID サービス
+title: Adobe Visitor ID サービスのテストと検証
 exl-id: afdf9778-e73d-46ca-9d2f-a65abaae2fe6
 TQID: https://experienceleague.adobe.com/LPXZ0ydoky48kzyRnMK0kHsfoQyK3mi5IeXM0vtQV0s
 product_v2:
@@ -14,55 +14,55 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 689
-ht-degree: 100%
+source-wordcount: 713
+ht-degree: 46%
 
 ---
 
-# Experience Cloud ID サービスのテストと検証{#test-and-verify-the-experience-cloud-id-service}
+# Adobe Visitor ID サービスのテストと検証{#test-and-verify-the-experience-cloud-id-service}
 
-これらの説明、ツール、手順は、ID サービスが適切に動作しているかどうかを判定するのに役立ちます。 これらのテストは、一般に、ID サービスに適用され、様々な ID サービスと Experience Cloud ソリューションの組み合わせに適用されます。
+これらの手順、ツール、手順は、訪問者ID サービスが適切に動作しているかどうかを判断するのに役立ちます。 これらのテストは、一般的に訪問者ID サービスに適用され、様々な訪問者ID サービスとCX エンタープライズソリューションの組み合わせに適用されます。
 
 ## 始める前に {#section-b1e76ad552ed4eb793b6e521a55127d4}
 
-ID サービスのテストと検証を始める前に知っておくべき重要な情報です。
+Visitor ID サービスのテストと検証を開始する前に知っておくべき重要な情報です。
 
 **ブラウザー環境**
 
 通常のブラウザーセッションでテストする場合、各テストの前にブラウザーキャッシュをクリアします。
 
-または、匿名ブラウザーセッションで ID サービスをテストできます。 匿名セッションでは、各テストの前に、ブラウザーの Cookie またはキャッシュをクリアする必要はありません。
+または、匿名または匿名のブラウザーセッションで訪問者ID サービスをテストすることもできます。 匿名セッションでは、各テストの前に、ブラウザーの Cookie またはキャッシュをクリアする必要はありません。
 
 **ツール**
 
-[Adobe Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=ja) および [Charles HTTP プロキシ](https://www.charlesproxy.com/)を使用すると、Analytics を使用して ID サービスが適切に動作するように設定されていることを判定できます。 この節の情報は、Adobe Debugger および Charles が返す結果に基づいています。 ただし、お客様に最適なツールやデバッガーを自由に使用することができます。
+[Adobe デバッガー](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=ja)と[Charles HTTP プロキシ &#x200B;](https://www.charlesproxy.com/)は、訪問者ID サービスがAnalyticsで正しく動作するように設定されているかどうかを判断するのに役立ちます。 この節の情報は、Adobe Debugger および Charles が返す結果に基づいています。 ただし、お客様に最適なツールやデバッガーを自由に使用することができます。
 
 ## Adobe Debugger を使用したテスト {#section-861365abc24b498e925b3837ea81d469}
 
-[!DNL Adobe] Debugger の応答に [!DNL Experience Cloud ID]（MID）が表示される場合、サービス統合は適切に設定されています。 MID について詳しくは、[Cookie と Experience Cloud ID サービス](../introduction/cookies.md)を参照してください。
+Adobe デバッガーのレスポンスにECIDが表示される場合、サービス統合が正しく設定されます。 MIDについて詳しくは、[Cookieと訪問者ID サービス &#x200B;](../introduction/cookies.md)を参照してください。
 
-[!DNL Adobe] [Debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=ja) を使用した ID サービスのステータスを検証するには：
+Adobe [debugger](https://experienceleague.adobe.com/docs/analytics/implementation/validate/debugger.html?lang=ja)を使用して訪問者ID サービスのステータスを確認するには：
 
 1. ブラウザーの Cookie をクリアするか、匿名ブラウジングセッションを開きます。
-1. ID サービスコードを含むテストページを読み込みます。
-1. [!DNL Adobe] Debugger を開きます。
+1. 訪問者ID サービスコードを含むテストページを読み込みます。
+1. Adobe デバッガーを開きます。
 1. MID の結果をチェックします。
 
 ## Adobe Debugger の結果について {#section-bd2caa6643d54d41a476d747b41e7e25}
 
-MID は、キーと値のペアで格納されます（`MID= *`Experience Cloud ID`*` という構文が使用されます）。 デバッガーは、この情報を以下に示すように表示します。
+MIDは、この構文を使用するキーと値のペアに格納されます：`MID= *`ECID`*`。 デバッガーは、この情報を以下に示すように表示します。
 
 **成功**
 
-以下に示すような応答が表示される場合、ID サービスは適切に実装されています。
+次のような応答が表示された場合、訪問者ID サービスは適切に実装されています。
 
 ```
 mid=20265673158980419722735089753036633573
 ```
 
-[!DNL Analytics] のお客様の場合、MID に加えて [!DNL Analytics] ID（AID）が表示されることがあります。 これは、以下の場合に発生します。
+Analyticsのお客様の場合は、MIDに加えてAnalytics ID （AID）が表示される場合があります。 これは、以下の場合に発生します。
 
 * 初期のサイト訪問者または長期滞在しているサイト訪問者がいる場合。
 * 猶予期間を有効にしている場合。
@@ -76,30 +76,30 @@ mid=20265673158980419722735089753036633573
 
 ## Charles HTTP プロキシを使用したテスト {#section-d9e91f24984146b2b527fe059d7c9355}
 
-Charles を使用した ID サービスのステータスを検証するには：
+Charlesで訪問者ID サービスのステータスを確認するには：
 
 1. ブラウザーの Cookie をクリアするか、匿名ブラウジングセッションを開きます。
 1. Charles を開始します。
-1. ID サービスコードを含むテストページを読み込みます。
+1. 訪問者ID サービスコードを含むテストページを読み込みます。
 1. 以下に説明するリクエストと応答の呼び出しとデータをチェックします。
 
 ## Charles の結果について {#section-c10c3dc0bb9945cbaffcf6fec7082fab}
 
 Charles を使用して HTTP 呼び出しを監視する場合、どこを見て何を探すかに関する情報については、この節を参照してください。
 
-**Charles での成功した ID サービスリクエスト**
+**チャールズでの訪問者ID サービスのリクエストが正常に完了しました**
 
-`Visitor.getInstance` 関数が `dpm.demdex.net` に対する JavaScript 呼び出しをおこなう場合、ID サービスコードは適切に動作しています。 成功したリクエストには、[組織 ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) が含まれます。 組織 ID は、キーと値のペアとして渡されます（`d_orgid= *`組織 ID`*` という構文が使用されます）。 「[!UICONTROL Structure]」タブで、`dpm.demdex.net` および JavaScript 呼び出しを探します。 「[!UICONTROL Request]」タブで、組織 ID を探します。
+`Visitor.getInstance`関数が`dpm.demdex.net`へのJavaScript呼び出しを行うと、訪問者ID サービスコードが正しく機能しています。 リクエストが成功すると、[IMS組織ID](../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)が含まれます。 IMS組織IDは、次の構文を使用するキーと値のペアとして渡されます：`d_orgid= *`IMS組織ID`*`。 「[!UICONTROL Structure]」タブで、`dpm.demdex.net` および JavaScript 呼び出しを探します。 [!UICONTROL Request] タブでIMS組織IDを探します。
 
 ![](assets/charles_request.png)
 
-**Charles での成功した ID サービス応答**
+**チャールズでの訪問者ID サービスの応答が成功しました**
 
-[データ収集サーバー](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=ja)（DCS）からの応答が MID を返す場合、アカウントは ID サービスに関して適切にプロビジョニングされています。 MID は、キーと値のペアとして返されます（`d_mid: *`訪問者の Experience Cloud ID`*` という構文が使用されます）。 以下に示すように、「[!UICONTROL Response]」タブで、MID を探します。
+[&#x200B; データ収集サーバー](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/system-components/components-data-collection.html?lang=ja) （DCS）からの応答がMIDを返す場合、訪問者ID サービスに対してアカウントが正しくプロビジョニングされました。 MIDは、次の構文を使用するキーと値のペアとして返されます：`d_mid: *`訪問者ECID`*`。 以下に示すように、「[!UICONTROL Response]」タブで、MID を探します。
 
 ![](assets/charles_response_success.png)
 
-**Charles での失敗した ID サービス応答**
+**チャールズで失敗した訪問者ID サービスの応答**
 
 DCS 応答に MID がない場合、アカウントは適切にプロビジョニングされています。 失敗した応答は、以下に示すように、「[!UICONTROL Response]」タブにエラーコードとメッセージを返します。 DCS 応答にこのエラーメッセージが表示された場合は、カスタマーケアへのお問い合わせ。
 

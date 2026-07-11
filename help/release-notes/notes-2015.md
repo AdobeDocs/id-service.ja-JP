@@ -1,6 +1,6 @@
 ---
 description: 2015 年版のリリースノートと更新情報です。
-keywords: ID サービス
+keywords: 訪問者 ID サービス
 title: 2015 年リリースノート
 exl-id: 57c45726-f856-4af5-a30a-9a1bdcaa6411
 TQID: https://experienceleague.adobe.com/WmeSY7aRbvnZJN0a-lNR-yYzWzF4dfJLPZqA--6lpYQ
@@ -15,10 +15,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 449
-ht-degree: 94%
+source-wordcount: 457
+ht-degree: 60%
 
 ---
 
@@ -30,38 +30,38 @@ ht-degree: 94%
 
 2015 年 11 月
 
-児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。 COPPA を遵守するために、オプションの変数を [!DNL Experience Cloud] ID サービスコードに追加して、ブラウザーのサードパーティドメインに cookie を設定できなくすることができます。 [Experience Cloud ID サービスでの COPPA のサポート](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)を参照してください。 バージョン 1.5.3 以降でサポートされています。
+児童オンラインプライバシー保護法（COPPA）では、証明可能な親の同意なく 13 歳未満の子供からの個人情報をオンラインで取得することを禁止しています。 COPPAを懸念するお客様は、ブラウザーのサードパーティドメインでCookieを設定できないように、オプションの変数を訪問者ID サービスコードに追加できます。 訪問者ID サービス [&#128279;](../reference/coppa.md#concept-d7ddf81bebd74f129661fcec1ca19413)のCOPPA サポートを参照してください。 バージョン 1.5.3 以降でサポートされています。
 
 ## バージョン 1.5.2 {#section-e3c73e47539942a89b02d33061128148}
 
 2015 年 9 月
 
 * Safari ブラウザーでユーザーがサードパーティ Cookie をブロックしたときに同期サービスが機能しなくなるバグを修正しました。 （AAM-20764）
-* ID サービスの呼び出しで、`d_visid_ver=` パラメーターにバージョン ID が含まれるようになりました。 返された ID は、内部チームが問題をトラブルシューティングしたりサポートしたりするのに役立ちます。 （AAM-20824）
+* 訪問者ID サービスへの呼び出しに、`d_visid_ver=` パラメーターにバージョン IDが含まれるようになりました。 返された ID は、内部チームが問題をトラブルシューティングしたりサポートしたりするのに役立ちます。 （AAM-20824）
 
 ## バージョン 1.5.1 {#section-f4309d7917964a748fee4bdb45bffa44}
 
 2015 年 8 月
 
-* 同期または送信するデータがない場合に、ID サービスが iframe をリクエストできないバグを修正しました。 （AAM-20164）
-* ID サービスでマルチパートのトップレベルドメイン Cookie を適切に設定できないバグを修正しました。 例えば、`my_company.co.uk` のようなドメインの場合、状況によっては、ID サービスは、`co.uk` にのみ Cookie を設定していました。 （AN-104683）
+* 同期または起動するデータがない場合に、訪問者ID サービスがiframeをリクエストできないようにするバグを修正しました。 （AAM-20164）
+* 訪問者ID サービスがマルチパートのトップレベルのドメイン Cookieを適切に設定できないバグを修正しました。 例えば、`my_company.co.uk`のようなドメインがある場合、場合によっては、訪問者ID サービスは`co.uk`でのみCookieを設定します。 （AN-104683）
 
   これは、次の条件の&#x200B;*すべて*&#x200B;を満たす少数のクライアントにのみ影響がありました。
 
-   * ID サービスの使用。
+   * Visitor ID サービスを使用します。
    * [猶予期間](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/migration) *または*&#x200B;がファーストパーティ Cookieを使用しており、ユーザーがサードパーティ Cookieをブロックすることを有効にしました。
    * マルチパートのトップレベルドメインのページがある。
 
 このリリースでのドキュメントの改訂には、次のものが含まれます。
 
 * [API メソッドとコードライブラリ](../library/library.md#concept-ff27497375644a898d47984aefb21c97)：コンテンツとテキストを再構成しました。 ほとんどの場合、メソッドごとにページを設けました。
-* [Experience Cloud ID サービスの要件](../reference/requirements.md)：内容を改訂し、テキストを再構成しました。
+* [訪問者ID サービスの要件](../reference/requirements.md)：コンテンツを修正し、テキストを再編成しました。
 
 ## バージョン 1.5 {#section-db5edfa11ae143ada07a96e0ab06dc57}
 
 2015 年 7 月
 
-[!DNL Experience Cloud] ID サービスは複数の ID と認証状態をサポートします。 この変更により、[!DNL Audience Manager] 関数で使用されているユーザー ID への `setCustomerIDs` DPID マッピングのサポートが完全に廃止されました。 詳しくは、[顧客 ID と認証状態](../reference/authenticated-state.md)を参照してください。
+訪問者ID サービスは、複数のIDと認証状態をサポートしています。 この変更により、`setCustomerIDs`関数で使用されるユーザーIDへのAudience Manager DPID マッピングに対する非推奨のサポートも削除されます。 詳しくは、[顧客 ID と認証状態](../reference/authenticated-state.md)を参照してください。
 
 ## バージョン 1.4 {#section-f5c596f355b14da28f45c798df513572}
 

@@ -1,6 +1,6 @@
 ---
 title: Safari ITP での ECID ライブラリの手法
-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
+description: Adobe ECID （訪問者ID サービス）ライブラリのドキュメント。
 exl-id: ac1d1ee1-2b5f-457a-a694-60bb4c960ae7
 TQID: https://experienceleague.adobe.com/GwI5LkCBXGiKyfjGm6bOqbyGbHQ2GwW64PeyLIrl3Ck
 product_v2:
@@ -13,10 +13,10 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 833
-ht-degree: 93%
+source-wordcount: 830
+ht-degree: 75%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 93%
 
 Safari は ITP を使用したクロスドメイントラッキングと強く結びついているので、アドビでは、お客様および消費者のプライバシーおよび選択肢をサポートするライブラリのベストプラクティスを維持する必要があります。
 
-2020年11月10日現在、document.cookie APIを介して設定されたすべてのファーストパーティの永続的なCookie （クライアント側のCookie）と、Safariおよびモバイル iOSのブラウザーでファーストパーティ CNAME実装を介して設定されるCookieは、有効期限が7日に制限されています。 サードパーティ Cookie は、ITP の以前のバージョンで記載されているように、引き続きブロックされます。 ITP 2.1 およびアドビソリューションへの影響について詳しくは、[Safari ITP 2.1 が Adobe Experience Cloud および Experience Platform のお客様に与える影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)を参照してください。
+2020年11月10日現在、document.cookie APIを介して設定されたすべてのファーストパーティの永続的なCookie （クライアント側のCookie）と、Safariおよびモバイル iOSのブラウザーでファーストパーティ CNAME実装を介して設定されるCookieは、有効期限が7日に制限されています。 サードパーティ Cookie は、ITP の以前のバージョンで記載されているように、引き続きブロックされます。 ITP 2.1とAdobe ソリューションの影響について詳しくは、[Safari ITP 2.1 Adobe Experience Platformのお客様への影響](https://medium.com/adobetech/safari-itp-2-1-impact-on-adobe-experience-cloud-customers-9439cecb55ac)を参照してください。
 
 ## ITP 関連の変更、方法および設定
 
@@ -42,7 +42,7 @@ ITP および ECID ライブラリの使用に関する取り組みについて�
 
 ## ITP および Apple の WebKit に関する現在の ECID ライブラリの動作
 
-ITP 2.1 は、クライアント側 Cookie の書き込み機能を阻止し、正確な訪問者トラッキング情報をお客様に提供する機能を低下させます。 そのため、訪問者の Experience Cloud ID（ECID）をファーストパーティ Cookie に格納するという変更が、アドビの CNAME トラッキングサーバーに導入されています。
+ITP 2.1 は、クライアント側 Cookie の書き込み機能を阻止し、正確な訪問者トラッキング情報をお客様に提供する機能を低下させます。 そのため、AdobeのCNAME トラッキングサーバーには、訪問者のECIDをファーストパーティ Cookieに保存する機能が導入されています。
 
 この変更は、ファーストパーティのコンテキストで Analytics CNAME を使用している ECID お客様にのみ役立ちます。 Analytics のお客様で現在 CNAME を使用していない場合や Analytics のお客様でない場合でも、CNAME レコードが適しています。 カスタマーケアまたは担当のアカウント担当者に問い合わせて、[CNAME](https://experienceleague.adobe.com/docs/core-services/interface/ec-cookies/cookies-first-party.html?lang=ja) の登録プロセスを開始してください。
 
@@ -70,7 +70,7 @@ demdex.net に対して ID リクエストがおこなわれ、ECID が取得さ
 
 ## クロスドメイントラッキング（自社内の複数のドメイン）用の appendVisitorIDsTo メソッドの使用
 
-この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の ECID を共有できます。 この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。 VisitorAPI.js バージョン 1.7.0 以降（ただし、バージョン 1.10.0 を除く）で利用できます。
+この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の ECID を共有できます。 この関数を使用するには、訪問者ID サービスを実装し、ソースドメインと宛先ドメインを所有している必要があります。 `VisitorAPI.js` バージョン 1.7.0以降で使用できます（バージョン 1.10.0では使用できません）。
 
 **デザイン**
 
@@ -78,14 +78,14 @@ demdex.net に対して ID リクエストがおこなわれ、ECID が取得さ
 
   この URL を使用して、元のドメインから宛先ドメインにリダイレクトします。
 
-* アドビに訪問者の ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から ECID が抽出されます。
+* 宛先ドメインの訪問者ID サービスコードは、その訪問者のIDのリクエストをAdobeに送信する代わりに、URLからECIDを抽出します。
 
   このリクエストにはサードパーティ Cookie が含まれますが、この場合、サードパーティ Cookie を利用できません。
 
-* 宛先ページの ID サービスコードは、ECID で渡された値を使用して訪問者を追跡します。
+* 宛先ページの訪問者ID サービスコードは、渡されたECIDを使用して訪問者を追跡します。
 
   >[!NOTE]
-  >宛先ページが既に以前の訪問での ECID を持っている場合、既存の Cookie を上書きする決定がこの設定 overwriteCrossDomainMCIDAndAID によって制御されます。 この設定について詳しくは、[overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md) を参照してください。
+  >宛先ページに以前の訪問からのECIDが既にある場合、既存のCookieを上書きする決定は、この設定overwriteCrossDomainMCIDAndAIDによって制御されます。 この設定について詳しくは、[overwriteCrossDomainMCIDAndAID](/help/library/function-vars/overwrite-visitor-id.md) を参照してください。
   >
   >このメソッドについて詳しくは、[appendVisitorIDsTo（クロスドメイントラッキング）](/help/library/get-set/appendvisitorid.md)リファレンスページを参照してください。
 

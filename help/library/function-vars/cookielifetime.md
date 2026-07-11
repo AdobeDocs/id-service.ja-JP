@@ -1,6 +1,6 @@
 ---
 description: この変数を使用すると、AMCV Cookie のデフォルトのライフタイム間隔を上書きできます。
-keywords: ID サービス
+keywords: 訪問者 ID サービス
 title: cookieLifetime
 exl-id: bdbabdcd-a87b-412c-8c2f-3f39820f939a
 TQID: https://experienceleague.adobe.com/EBAkG9W3VE4p7Xd5NkegOtFDNo6qBOKrKRaBUYwwJog
@@ -11,10 +11,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 51
-ht-degree: 100%
+source-wordcount: 53
+ht-degree: 81%
 
 ---
 
@@ -22,14 +22,14 @@ ht-degree: 100%
 
 この変数を使用すると、AMCV Cookie のデフォルトのライフタイム間隔を上書きできます。
 
-デフォルトでは、[!DNL Experience Cloud] ID サービス Cookie は、24 ヶ月後に有効期限が切れます。 この間隔を秒単位で設定します。
+デフォルトでは、訪問者ID サービス Cookieは24か月後に期限切れになります。 この間隔を秒単位で設定します。
 
 **構文：** `cookieLifetime: *`全期間（秒単位）`*`
 
 **コードサンプル**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    trackingServer: "Insert tracking server here here",  //Same as s.trackingServer 
    trackingServerSecure: "Insert secure tracking server here",  //Same as s.trackingServerSecure 
  

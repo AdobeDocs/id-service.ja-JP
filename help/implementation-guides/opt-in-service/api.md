@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 916
-ht-degree: 99%
+source-wordcount: 928
+ht-degree: 92%
 
 ---
 
@@ -36,13 +36,13 @@ adobe.OptInCategories = {
 
 ## オプトイン設定パラメーター {#section-d66018342baf401389f248bb381becbf}
 
-このセクションでは、API を使用してオプトインを設定する方法について説明します。 設定および実装の大部分は、Experience Platform Launch 拡張を使用しておこなうことができます。
+このセクションでは、API を使用してオプトインを設定する方法について説明します。 設定と実装の多くは、タグ拡張機能を使用して実行できます。
 
 オプトインの設定は、グローバルな `getInstance()` オブジェクトをインスタンス化する、Visitor JavaScript `adobe` 関数で指定されます。 以下に、オプトインサービスに関連した Visitor JS 設定を示します。
 
 **`doesOptInApply (boolean or function that evaluates to a boolean)`**：
 
-false の場合は、訪問者がオプトインする必要がないことを示します。 結果として、オプトインまたはオプトアウトの対象となるカテゴリーに関わらず、Experience Cloud では Cookie が作成されます。 この設定は、オプトインを全体的に有効または無効にします。
+false の場合は、訪問者がオプトインする必要がないことを示します。 顧客体験企業は、オプトインまたはオプトアウトしたカテゴリーにかかわらずCookieを作成します。 この設定は、オプトインを全体的に有効または無効にします。
 
 **`preOptInApprovals (Object <adobe.OptInCategories enum: boolean>)`**
 
@@ -106,7 +106,7 @@ false の場合は、訪問者がオプトインする必要がないことを�
 
 `adobe.optIn.permissions`
 
-訪問者が許可または拒否した Experience Cloud のすべてのソリューションをカテゴリーとしてリストするオブジェクト。
+訪問者によって付与または拒否された、すべてのCX エンタープライズソリューションをカテゴリとしてリストするオブジェクト。
 
 `adobe.optIn.isApproved(categories)`
 
@@ -118,7 +118,7 @@ false の場合は、訪問者がオプトインする必要がないことを�
 
 **`permissions`**
 
-訪問者が許可または拒否した Experience Cloud の全ソリューションをカテゴリーとしてリストするオブジェクト。例：`{ aa: true, ecid: false, aam: true... }`
+訪問者によって付与または拒否されたすべてのCX エンタープライズ ソリューションをカテゴリとして一覧表示するオブジェクト例：`{ aa: true, ecid: false, aam: true... }`
 
 **`status`**
 

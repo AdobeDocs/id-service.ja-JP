@@ -12,10 +12,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 528
-ht-degree: 100%
+source-wordcount: 512
+ht-degree: 89%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 100%
 
 オプトインサービスを使用すると、サイトを訪問したユーザーのデバイスまたはブラウザーに Cookie を設定できるかどうかを訪問者が決定するようにプロトコルを設定できます。
 
-オプトインサービスは、Experience Cloud ID（ECID）の拡張で、Experience Cloud ソリューションでユーザーの同意を得る前に Web ページに訪問者に対する Cookie を作成可能にするかどうか、どの Experience Cloud ソリューションで作成可能にするかを制御できるように設計されています。 また、オプトインサービスを使用すれば、より大規模な設計の一環として、同意管理プラットフォーム（CMP）や既存のシステムとの統合するプロトコルを設定できます。
+オプトインサービスは、ECIDの拡張機能であり、ユーザーの同意に先立って、訪問者のweb ページでCookieを作成できるかどうか、およびどのCX エンタープライズソリューションを作成できるかを制御できるように設計されています。 また、オプトインサービスを使用すれば、より大規模な設計の一環として、同意管理プラットフォーム（CMP）や既存のシステムとの統合するプロトコルを設定できます。
 
 オプトインサービスを使用すると、訪問者が複数のアドビソリューションのオプトインを一度に実行できるか、権限に合わせてソリューションを順番に表示できるかを指定できます。 承認プロセスが完了し、顧客によって記録されると、すべてのアドビソリューションから CMP 訪問者の承認を取得できます。
 
-オプトインサービスは、[Adobe Experience Platform のタグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を[オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)と共に使用すると、容易に実装および設定できます。 また、[DTM](../../implementation-guides/opt-in-service/optin-dtm.md) を使用して実装および設定することもできます。
+オプトインサービスは、[&#x200B; タグ &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)と[&#x200B; オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)を使用して簡単に実装および設定できます。
 
 開始するには、[オプトインサービスの設定](../../implementation-guides/opt-in-service/getting-started.md)を参照してください。
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 >
 >このドキュメントの内容は法的な助言ではなく、その代用になるものでもありません。 オプトインの実装を設定する際の同意とベストプラクティスに関するアドバイスについては、自社の法務部門に相談してください。
 
-## Experience Cloud ソリューション間のオプトイン {#section-053e6224505542cf961896f0ca869e52}
+## CX エンタープライズソリューション全体でのオプトイン {#section-053e6224505542cf961896f0ca869e52}
 
 オプトインサービスは、自身のニーズに応じて同意オプトインワークフローを作成するためのツールです。これにより、ユーザーまたは同意の管理者から同意が得られる前と後に反応（タグを実行）するようワークフローを設計できます。
 

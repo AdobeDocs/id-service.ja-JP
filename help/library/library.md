@@ -1,7 +1,7 @@
 ---
-description: プログラムによる Experience Cloud ID サービスとの連携を可能にするプロパティ、メソッド、設定について説明します。
-keywords: ID サービス
-title: ID サービスの API
+description: Visitor ID サービスでプログラムで作業できるプロパティ、メソッド、設定。
+keywords: 訪問者 ID サービス
+title: 訪問者ID サービス API
 feature-set: Experience Cloud Services
 feature: TK421
 exl-id: 60ae4927-e905-4252-b9ec-9cc74073e8d5
@@ -15,21 +15,16 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 79
-ht-degree: 100%
+source-wordcount: 43
+ht-degree: 16%
 
 ---
 
-# ID サービスの API{#id-service-api}
+# 訪問者ID サービス API{#id-service-api}
 
-プログラムによる Experience Cloud ID サービスとの連携を可能にするプロパティ、メソッド、設定について説明します。
+Visitor ID サービスでプログラムで作業できるプロパティ、メソッド、設定。
 
 * [設定の概要](function-vars/function-vars.md)
 * [メソッドの概要](get-set/get-set.md)
-
->[!NOTE]
->
->*Experience Cloud ID Javascript ライブラリ*&#x200B;は最近移行しました。 ECID JS ライブラリの最新リリースは、[https://github.com/Adobe-Marketing-Cloud/id-service/releases](https://github.com/Adobe-Marketing-Cloud/id-service/releases) にあります。
-

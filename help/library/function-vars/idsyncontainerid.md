@@ -1,6 +1,6 @@
 ---
 description: このプロパティは ID 同期に使用するデータソースコンテナ ID を設定します。
-keywords: ID サービス
+keywords: 訪問者 ID サービス
 title: idSyncContainerID
 exl-id: 6c4cd41b-902b-4872-8c3f-475a834b76f4
 TQID: https://experienceleague.adobe.com/bDW5Z4LKbLW2igmRsJ-QxajnBj8KyvoTypUjUekElj4
@@ -11,10 +11,10 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
   - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 320
-ht-degree: 96%
+source-wordcount: 328
+ht-degree: 60%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 96%
 **コードサンプル:**
 
 ```js
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{ 
    ... 
    //Set container ID 
    idSyncContainerID:80 
@@ -48,16 +48,16 @@ var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here
 
 **コンテナ**
 
-コンテナは [!DNL Audience Manager] によって作成されるオブジェクトです。 外部からはアクセスできませんが、これらのコンテナには、次のようなすべてのデータソースがリストされます。
+コンテナは、Audience Managerによって作成されたオブジェクトです。 外部からはアクセスできませんが、これらのコンテナには、次のようなすべてのデータソースがリストされます。
 
 * ユーザーからは使用できるが、ID 同期には使用されない。
 * ID 同期に使用されている。
 
-[!DNL Audience Manager] を使用していない場合でも、ドメイン内の他のページの他のデータソースと ID を交換している場合、アカウントにはこれらのコンテナがあります。 これは、[!DNL Audience Manager] が ID 同期を可能にするテクノロジーとバックエンド機能を提供しているからです。
+Audience Managerを利用していない場合でも、ドメイン全体のさまざまなページで異なるデータソースとIDを交換している場合、アカウントには次のコンテナが割り当てられます。 これは、Audience Managerが、IDの同期を可能にするテクノロジーとバックエンド機能を提供するからです。
 
 **使用例**
 
-ID サービスコードにこの設定を追加する必要があるかどうかは、状況次第です。
+状況に応じて、この設定を訪問者ID サービスコードに追加する必要がある場合とない場合があります。
 
 <table id="table_48621F343C7F4760A75F6BCC2DB2DA20"> 
  <thead> 
@@ -71,7 +71,7 @@ ID サービスコードにこの設定を追加する必要があるかどう�
    <td colname="col1"> <p> <b>不要</b> </p> </td> 
    <td colname="col2"> <p>次の場合は、この設定を使用する必要はありません。 </p> <p> 
      <ul id="ul_4D6F794CD65C43D0BEFBA6F5DE420C2E"> 
-      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">ID サービスを <span class="keyword">Experience Cloud</span> ソリューションと組み合わせて使用しているが、他のデータソースとの ID 同期はおこなっていない。 この場合、アカウントには ID 0 のデフォルトのコンテナがあり、アクションは不要です。 </li> 
+      <li id="li_0F048A6AC7BE4450AFA1B20B1AC25808">任意のCX Enterprise ソリューションで訪問者ID サービスを使用し、他のデータソースとのID同期を実行しません。 この場合、アカウントには ID 0 のデフォルトのコンテナがあり、アクションは不要です。 </li> 
       <li id="li_5657D64D9406407D9B4DB7D8BE4F8EE4">すべてのデータソースが 1 つのコンテナに格納されている。 </li> 
      </ul> </p> </td> 
   </tr> 
@@ -87,10 +87,10 @@ ID サービスコードにこの設定を追加する必要があるかどう�
  </tbody> 
 </table>
 
-## DIL および VisitorAPI.js を使用する場合のコンテナ ID の設定 {#section-f283cb69c8de4348b5316cc4e02a3e9e}
+## DILおよび`VisitorAPI.js`を使用する場合のコンテナ IDの設定 {#section-f283cb69c8de4348b5316cc4e02a3e9e}
 
-[!UICONTROL DIL]件の&#x200B;*および*&#x200B;件のVisitorAPI.jsを同じページにデプロイした場合：
+[!UICONTROL DIL] *と* `VisitorAPI.js`を同じページにデプロイした場合：
 
-* ID 同期において、訪問者 ID サービスコードが DIL よりも優先されます。
-* ID サービスコードでのみ、`idSyncContainerID` コンフィギュレーションを設定します。
+* 訪問者ID サービスコードは、ID同期ではDILよりも優先されます。
+* 訪問者ID サービスコードでのみ`idSyncContainerID`設定を設定します。
 
