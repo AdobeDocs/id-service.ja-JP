@@ -1,18 +1,18 @@
 ---
-description: ID サービスから Adobe Experience Cloud Device Co-op にデータを送信するかどうかを指定する任意のブール型設定です。
-keywords: ID サービス
+description: Visitor ID サービスがAdobe Device Co-opにデータを送信するかどうかを決定する、オプションのブール値の設定。
+keywords: 訪問者 ID サービス
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
-source-git-commit: cb89ac70e37f35d5e4e2b971f2df9645304522f8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '618'
+ht-degree: 69%
 
 ---
 
 # isCoopSafe{#iscoopsafe}
 
-ID サービスから Adobe Experience Cloud Device Co-op にデータを送信するかどうかを指定する任意のブール型設定です。
+Visitor ID サービスがAdobe Device Co-opにデータを送信するかどうかを決定する、オプションのブール値の設定。
 
 内容：
 
@@ -28,10 +28,10 @@ ID サービスから Adobe Experience Cloud Device Co-op にデータを送信�
 
 `isCoopSafe` を使用するには、以下の要件を満たす必要があります。
 
-* バージョン 2.4 以降の ID サービスコードを使用する。
-* [Experience Cloud Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=ja) に参加する。 Co-op への参加を検討している場合は、このドキュメントをよく読み、デバイスグラフの作成にデータがどのように使用されるかに関する懸念に `isCoopSafe` で対処できるかどうかを確認する必要があります。
+* 訪問者ID サービスコードバージョン 2.4以降を使用します。
+* [Adobe Device Co-op](https://experienceleague.adobe.com/docs/device-co-op/using/about/overview.html?lang=ja)に参加します。 Co-op への参加を検討している場合は、このドキュメントをよく読み、デバイスグラフの作成にデータがどのように使用されるかに関する懸念に `isCoopSafe` で対処できるかどうかを確認する必要があります。
 
-* [!DNL Adobe]コンサルタントに依頼して、Device Co-op アカウントにホワイトリストまたはブラックリストのフラグを設定する。 これらのフラグをセルフサービスで有効にする方法はありません。
+* Adobe コンサルタントと連携して、Device Co-op アカウントにホワイトリストまたはブラックリストフラグを設定します。 これらのフラグをセルフサービスで有効にする方法はありません。
 
 ## ユースケース {#section-d18af2b903f248e18ae8108aaf0a8ebb}
 
@@ -47,11 +47,11 @@ ID サービスから Adobe Experience Cloud Device Co-op にデータを送信�
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>認証済み訪問者</b> </p> </td> 
-   <td colname="col2"> <p><span class="codeph">isCoopSafe</span> を ID サービスコードに追加して、使用規約同意書に同意した（または同意していない）認証済み訪問者のデータを Device Co-op がデバイスグラフの作成にどのように使用するかを管理します。 </p> </td> 
+   <td colname="col2"> <p>訪問者ID サービスコードに<span class="codeph">isCoopSafe </span>を追加して、使用期限に同意している、または同意していない認証済み訪問者のデータをDevice Co-opが使用してデバイスグラフを作成する方法を制御します。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>サードパーティサイトの DIL</b> </p> </td> 
-   <td colname="col2"> <p><span class="codeph">isCoopSafe</span> を ID サービスコードに追加して、以下の場合にサードパーティサイトで使用します。 </p> <p> 
+   <td colname="col2"> <p>訪問者ID サービス コードに<span class="codeph">isCoopSafe </span>を追加して、次の場所のサードパーティ サイトで使用します。 </p> <p> 
      <ul id="ul_C27BB26510314834A2A7CD99D46DA4AC"> 
       <li id="li_4E6AE574F18646F09C0CF4553EEA1A9E">認証済み訪問者が使用規約同意書に同意したかどうかを確認できない。 </li> 
       <li id="li_26D0561BF32B4278B0A6B5082C17FED8">Device Co-op によるデバイスグラフの作成でデータがどのように利用されるかを管理する必要がある。 </li> 
@@ -72,10 +72,10 @@ Device Co-op で顧客データを利用するか利用しないかをブール�
 
 **コードサンプル**
 
-ID サービスコードをインスタンス化する際には、次のように設定します。
+訪問者ID サービスのコードがインスタンス化されたときに、これを設定します。
 
 ```js
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here",{ 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE",{ 
      ... 
      isCoopSafe: true 
 });
@@ -83,12 +83,12 @@ var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here"
 
 ## イベント呼び出し POST パラメーター {#section-fcd441933506493faefaa6b51f194a17}
 
-設定したフラグ（`true` または `false`）に応じて、ID サービスは `isCoopSafe` をこれらの POST パラメーターに変換し、イベント呼び出しで [!DNL Adobe] に送信します。
+設定したフラグ（`true`または`false`）に応じて、訪問者ID サービスは`isCoopSafe`をこれらのPOST パラメーターに変換し、イベント呼び出しでAdobeに送信します。
 
 * `d_coop_safe=1`
 * `d_coop_unsafe=1`
 
-POST パラメーターは、ユーザーデータをデバイスグラフに含めてもよいかどうかを [!DNL Experience Cloud] Device Co-op に通知します。 次の表で `isCoopSafe` のブール型フラグとイベント呼び出し時に渡される POST パラメーターの関係について説明します。 `isCoopSafe` を使用しない場合、イベント呼び出しにおいて、これらのいずれも渡されません。
+POST パラメーターは、デバイスグラフにユーザーデータを含めることができるかどうかをAdobe Device Co-opに伝えます。 次の表で `isCoopSafe` のブール型フラグとイベント呼び出し時に渡される POST パラメーターの関係について説明します。 `isCoopSafe` を使用しない場合、イベント呼び出しにおいて、これらのいずれも渡されません。
 
 <table id="table_0A544534CA904F4D9836A34B8C1EACBB"> 
  <thead> 

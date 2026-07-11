@@ -1,24 +1,15 @@
 ---
 title: Google Chrome SameSite のラベル付けの変更
-description: Adobe ECID（ID サービス）ライブラリのドキュメントです。
+description: Adobe ECID （訪問者ID サービス）ライブラリのドキュメント。
 exl-id: f20b25a4-c9bc-41b9-8e49-79b8424e62a0
 TQID: https://experienceleague.adobe.com/VlmpxMM0Jm4ExEL1WdjeA3h9brGBslGoJCqgQ-xFaRs
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 1125
-ht-degree: 99%
+ht-degree: 95%
 
 ---
 
@@ -40,7 +31,7 @@ SameSite 属性の詳細については、[Cookie 標準ドキュメント](http
 | `lax` | この設定を持つ Cookie は、ブラウザーの URL に表示されるドメインが Cookie のドメインと一致する場合にのみ送信されます。 これは、Chrome の Cookie の新しいデフォルトです。 |
 | `none` | この設定の Cookie は、「クロスサイト」などの外部アクセスまたはサードパーティアクセスに使用できます。 この変更がおこなわれるより前、`none` は cookie に対するデフォルトの SameSite 設定でした。そのため、この設定を使用すると、cookie の動作が従来の動作と最も似た動作になります。 ただし、Google では現在、この設定を持つ cookie に secure フラグを指定する必要があります。つまり、cookie は常に HTTPS 経由リクエストで作成および送信されます。 secure フラグの付いていないクロスサイト cookie はすべて Google によって拒否されます。 |
 
-## Adobe Experience Cloud の顧客が知っておくべき情報
+## Adobe CX Enterpriseのお客様として知っておくべきこと
 
 **JavaScript の更新は不要**
 
@@ -48,7 +39,7 @@ SameSite 属性の詳細については、[Cookie 標準ドキュメント](http
 
 **サードパーティのエンドポイントで HTTPS が使用されていることを確認する**
 
-すべての顧客は、JavaScript 設定でアドビのサービスへの呼び出しに HTTPS が使用されていることを確認する必要があります。 Target、Audience Manager および Experience Cloud ID サービス（ECID）は、サードパーティの HTTP 呼び出しをそれぞれの HTTPS エンドポイントにリダイレクトしているので、待機時間が長くなる可能性があります。 つまり、設定を変更する必要はありません。 Analytics の顧客は、HTTPS のみを使用するように実装を更新する必要があります。これは、Analytics に固有のリダイレクトによってデータが失われる可能性があるためです。
+すべての顧客は、JavaScript 設定でアドビのサービスへの呼び出しに HTTPS が使用されていることを確認する必要があります。 Target、Audience Manager、Visitor ID Service （ECID）は、サードパーティのHTTP呼び出しをそれぞれのHTTPS エンドポイントにリダイレクトしているため、遅延が増加する可能性があります。 つまり、設定を変更する必要はありません。 Analytics の顧客は、HTTPS のみを使用するように実装を更新する必要があります。これは、Analytics に固有のリダイレクトによってデータが失われる可能性があるためです。
 
 **正しくラベル付けされた cookie は、意図したとおりにデータを収集する**
 

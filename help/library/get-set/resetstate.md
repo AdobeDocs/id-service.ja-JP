@@ -1,22 +1,16 @@
 ---
 description: この機能は、単一ページのサイト／画面またはアプリでの ID の使用に関連する問題を解決するために、主に A4T のお客様向けに設計されています。
-keywords: ID サービス
+keywords: 訪問者 ID サービス
 title: resetState
 exl-id: 8e8cb299-bb89-4bc1-8841-3091ce0cbd81
 TQID: https://experienceleague.adobe.com/ud8yTufRC6V5T58oh20G65MYNTCZvMlK5FdHVrrZFpU
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 377
-ht-degree: 100%
+ht-degree: 54%
 
 ---
 
@@ -26,10 +20,10 @@ ht-degree: 100%
 
 ## ユースケース {#section-840b88a5cdb042488b340cad5d7b22a5}
 
-ID サービスを利用している A4T のお客様の場合、以下をおこなう必要があるときには `visitor.resetState()` 関数を使用することが推奨されます。
+訪問者ID サービスを使用するA4Tのお客様は、次の場合に`visitor.resetState()`関数を使用できます。
 
-* リダイレクトを使用して、補助的なデータ ID（SDID）またはその他の任意の ID を 1 つのページまたは画面から別のページに渡す。 通常、この関数がなければ、ID サービスはこの ID を渡しません。
-* Ajax 呼び出しを通じてページまたはアプリの特定のセクションのみを更新するコードを使用し、それらのアクションを追跡する必要がある。 例えば、オブジェクトをクリックすると、特別なセクションのみが読み込まれたり変更されたりするページがあるとします。 この場合、ID サービスは、ページが再読み込みされない限り、別の ID をリクエストできません。 しかし、`visitor.resetState()` を使用すると、この条件でも新しい ID をリクエストできます。
+* リダイレクトを使用して、補助的なデータ ID（SDID）またはその他の任意の ID を 1 つのページまたは画面から別のページに渡す。 通常、訪問者ID サービスはこの関数なしでは、このIDを渡しません。
+* Ajax 呼び出しを通じてページまたはアプリの特定のセクションのみを更新するコードを使用し、それらのアクションを追跡する必要がある。 例えば、オブジェクトをクリックすると、特別なセクションのみが読み込まれたり変更されたりするページがあるとします。 この場合、訪問者ID サービスは、ページが再読み込みされない限り、別のIDをリクエストすることはできません。 しかし、`visitor.resetState()` を使用すると、この条件でも新しい ID をリクエストできます。
 
 以下のコードサンプルを参照してください。
 
@@ -39,20 +33,20 @@ ID サービスを利用している A4T のお客様の場合、以下をおこ
 
 ## コードサンプル {#section-d75b211bb4ea473887eb284de2ad838b}
 
-ID サービスの実装によって、この関数の使用方法が変わります。 例については、以下の表を参照してください。
+訪問者ID サービスの実装は、この関数の使用方法に影響します。 例については、以下の表を参照してください。
 
 **サーバー側実装**
 
-サーバー側実装は、[!DNL Analytics]、[!DNL Target]、および ID サービスのサーバーおよびクライアント側実装を使用する A4T のお客様向けです。 この方法で ID サービスを設定した場合は、ページに `visitor.resetState()` を追加するだけでかまいません。 ID サービスの呼び出しにより自動的に新しい ID とサーバーの状態が返されます。
+サーバーサイド実装は、Target、Analytics、および訪問者ID サービスのサーバーサイドとクライアントサイドの両方の実装を持つA4Tのお客様向けです。 この方法で訪問者ID サービスを設定した場合は、ページに`visitor.resetState()`を追加するだけです。 訪問者ID サービスへの呼び出しでは、新しいIDとサーバーの状態が自動的に返されます。
 
 **非標準的な実装**（ID を渡す場合）
 
-ID サービスを[非標準的な実装](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113)で設定した場合、`visitor.resetState()` と共に渡す SDID（またはその他の ID）を保持するための可変オブジェクトを設定する必要があります。 以下に示すように、これには[組織 ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26) と、渡す ID が含まれます。 コードは、以下の例のようになります。
+[非標準の実装](../../implementation-guides/implementation-guides.md#section-2c4f2db1f9704315a7cccab6d2e07113)で訪問者ID サービスを設定している場合は、`visitor.resetState()`で渡すSDID （または他のID）を保持するように変数オブジェクトを設定する必要があります。 以下に示すように、これには[IMS組織ID](../../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26)と渡すIDが含まれます。 コードは、以下の例のようになります。
 
 ```js
 //Instantiate server state variable 
 var serverState = { 
-     "Insert Experience Cloud organization ID here": { 
+     "INSERT-IMS-ORG-ID-HERE": { 
           //Specify the SDID or other ID 
           supplementalDataIDCurrent: "1234", 
           supplementalDataIDCurrentConsumed: { 
@@ -61,8 +55,8 @@ var serverState = {
      } 
 }; 
  
-//Instantiate ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here", { 
+//Instantiate Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
      ... 
 }); 
  
@@ -76,8 +70,8 @@ visitor.resetState(serverState);
 
 ```js
  
-//Instantiate ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here", { 
+//Instantiate Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE", { 
      ... 
 }); 
  
@@ -95,8 +89,4 @@ var sdid1 = visitor.getSupplementalDataID("consumer3"); // sdid1: 5678
  
 var sdid2 = visitor.getSupplementalDataID("consumer4"); // sdid2: 5678
 ```
-
-**Dynamic Tag Manager（DTM）**
-
-現在、`visitor.resetState()` を DTM で使用するための設定方法はありません。
 

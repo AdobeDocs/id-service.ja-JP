@@ -1,49 +1,44 @@
 ---
-description: Adobe Experience Cloud における Experience Cloud ID サービスの役割です。
-keywords: ID サービス
+description: Adobe CX EnterpriseのVisitor ID サービスの役割。
+keywords: 訪問者 ID サービス
 title: 概要
 exl-id: d907e299-bde0-4b5f-8c16-867a4eaa8be1
 TQID: https://experienceleague.adobe.com/YUy7gs28-5lGzLmfE-MJ4nRtQc7I05Q4nRCBO4gOdMI
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 321
-ht-degree: 96%
+source-wordcount: 336
+ht-degree: 25%
 
 ---
 
-# ID サービスについて{#aboutidservice}
+# 訪問者ID サービスについて{#aboutidservice}
 
-Adobe Experience Cloud における Experience Cloud ID サービスの役割です。
+Adobe CX EnterpriseのVisitor ID サービスの役割。
 
 <!--
 mcvid-functionality.xml
 -->
 
-## Experience Cloud ID サービス：コアサービスの基礎的要素 {#section-2de0eb1d65664e92a4d8bbb167b84bde}
+## 訪問者ID サービス：コアサービスの基本要素 {#section-2de0eb1d65664e92a4d8bbb167b84bde}
 
-Experience Cloud ID サービスは、Experience Cloud コアサービス、ソリューション、顧客属性、オーディエンスのための、共通の識別フレームワークです。 サイト訪問者に一意の永続的なIDを割り当てることで機能します。 組織が ID サービスを実装している場合、この ID を使用すれば、異なる Experience Cloud ソリューション内で、同じサイト訪問者と彼らのデータを識別できます。
+訪問者ID サービスは、CX エンタープライズ コアサービス、ソリューション、顧客属性およびオーディエンスの共通の識別フレームワークを有効にします。 サイト訪問者に一意の永続的なIDを割り当てることで機能します。 組織が訪問者ID サービスを実装する場合、このIDを使用すると、同じサイト訪問者とそのデータを異なるCX Enterprise ソリューションで識別できます。
 
 ![](assets/ecid-new.png)
 
-また、ID サービスは、ソリューション固有の様々な ID（例：Analytics AID）を置き換えることができます。 [顧客 ID と認証状態](../reference/authenticated-state.md)機能を使用すると、ID サービスを通じて顧客 ID を [!DNL Experience Cloud] に渡すことが可能になります。 ただし、ID サービスは、登録済みのソリューションに対してのみ機能します。 登録していない他の製品には、アクセスできません。
+また、訪問者ID サービスは、異なるソリューション固有のID （Analytics AIDなど）を置き換えることができます。 また、訪問者ID サービスでは、[顧客IDと認証状態](../reference/authenticated-state.md)機能を通じて、独自の顧客IDをCX Enterpriseに渡すことができます。 ただし、訪問者ID サービスは、既にサブスクライブしているソリューションでのみ動作することに注意してください。 登録していない他の製品には、アクセスできません。
 
-いずれは、ID サービスは、多くの現在および将来の [!DNL Experience Cloud] 機能、強化、サービスにとって不可欠な要素になります。 現在、ID サービスは、[Analytics](http://www.adobe.com/jp/marketing-cloud/web-analytics.html)、[Audience Manager](http://www.adobe.com/jp/marketing-cloud/data-management-platform.html) および [Target](http://www.adobe.com/jp/marketing-cloud/testing-targeting.html) をサポートしています。 さらに、[!DNL Adobe Experience Cloud] Device Co-op に参加する場合に必要です。 ID サービスを実装していない場合、今が移行戦略を検討し始めるチャンスです。
+今後、訪問者ID サービスは、現在および将来の多くのCX エンタープライズ機能、機能強化、サービスの不可欠なコンポーネントとなります。 現在、訪問者ID サービスは[Analytics](http://www.adobe.com/jp/marketing-cloud/web-analytics.html)、[Audience Manager](http://www.adobe.com/jp/marketing-cloud/data-management-platform.html)、[Target](http://www.adobe.com/jp/marketing-cloud/testing-targeting.html)をサポートしています。 また、Adobe Device Co-opに参加する場合は必須です。 訪問者ID サービスを実装していない場合は、今から移行戦略の検討を開始します。
 
 ## 機能の概要 {#section-96555473455c4bf8924c2d56ff4f3255}
 
-要約すると、ID サービスの機能は次のとおりです。
+まとめると、訪問者ID サービス：
 
 * プロファイルと ID のリンクに使用できる共通キーまたは ID を作成します。
 * 複数のソリューションにわたってデバイスを一意に識別します。
-* 同じドメインでトラッキングを確実に行えるように、顧客のドメインにファーストパーティ Cookie を設定します。 [Experience Cloud](../introduction/cookies.md) に関する説明を参照してください。
-* エイリアス と ID マッピングを [!DNL Experience Cloud] の顧客とパートナーから受け取る。
-* [!DNL Experience Cloud] 内の ID 同期を管理する。
+* 同じドメインでトラッキングを確実に行えるように、顧客のドメインにファーストパーティ Cookie を設定します。 [Cookieと訪問者ID サービス ](../introduction/cookies.md)を参照してください。
+* CX Enterpriseの顧客およびパートナーからエイリアスとID マッピングを受信します。
+* CX Enterprise内のID同期を管理します。
 * 広告技術エコシステム全体にわたり様々なサードパーティとの ID 同期をサポートする。
 

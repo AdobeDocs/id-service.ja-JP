@@ -1,31 +1,24 @@
 ---
-description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。 Experience Cloud ID サービスは、これらのクライアント側のクロスオリジンリソースリクエストを可能にする CORS 標準規格をサポートしています。 古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。
-keywords: ID サービス
-title: Experience Cloud ID サービスでの CORS のサポート
+description: ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。 訪問者ID サービスは、これらのクライアントサイドのクロスオリジンのリソースリクエストを有効にするCORS標準をサポートしています。 訪問者ID サービスは、CORSをサポートしていない古いブラウザーまたはブラウザーのJSONP リクエストに戻ります。
+keywords: 訪問者 ID サービス
+title: ADOBE Visitor ID サービスでのCORS サポート
 exl-id: 0e8ffe85-8d1f-42a0-aae3-a2b3b28c7bce
 TQID: https://experienceleague.adobe.com/eix2FaBue-Nf--wGzg5jBqB93QGIWtbM78Efjd8QZWM
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 630
-ht-degree: 96%
+source-wordcount: 639
+ht-degree: 66%
 
 ---
 
-# Experience Cloud ID サービスでの CORS のサポート {#cors-support-in-the-experience-cloud-id-service}
+# ADOBE Visitor ID サービスでのCORS サポート {#cors-support-in-the-experience-cloud-id-service}
 
-ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。 Experience Cloud ID サービスは、これらのクライアント側のクロスオリジンリソースリクエストを可能にする CORS 標準規格をサポートしています。 古いブラウザーや CORS をサポートしていないブラウザー上では、JSONP リクエストに切り替わります。
+ブラウザーは、クロスオリジンリソース共有（CORS）を使用して、現在のドメイン以外のドメインのリソースをリクエストします。 訪問者ID サービスは、これらのクライアントサイドのクロスオリジンのリソースリクエストを有効にするCORS標準をサポートしています。 訪問者ID サービスは、CORSをサポートしていない古いブラウザーまたはブラウザーのJSONP リクエストに戻ります。
 
-## 同一生成元ポリシーと ID サービスリクエストの問題 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
+## 同一生成元ポリシーと訪問者ID サービスリクエストに関する問題 {#section-6608cf46d27143eeaeabacaa6aa14e8e}
 
 同一生成元ポリシー（同一オリジンポリシー）は、web ブラウザーによって適用されるセキュリティ制御または制限です。 このレベルで適用されると、あるページから別のページへのリソースのリクエストを許可するかブロックするかを web ブラウザー自体が決定します。 リクエストが同一生成元（オリジン）のリクエストであるかどうかを判断するために、ブラウザーは以下を比較します。
 
@@ -42,7 +35,7 @@ CORS は、異なるドメインをまたいでリソースをリクエストす
 * `Origin`：リクエストのソースを識別するリクエストヘッダー。
 * `Access-Control-Allow-Origin`：リソースがリクエスト元と共有できるかどうかを示す応答ヘッダー。
 
-これらのヘッダーがどのように動作するかを説明します。 この例では、金融サービス会社がサイト [!DNL Experience Cloud] ID サービスを実装しているとします。`www.finance-website.com` CORS リクエストヘッダーおよび応答ヘッダーでリソースへのアクセスをチェックする方法を次の表に示します。
+これらのヘッダーがどのように動作するかを説明します。 この例では、サイト `www.finance-website.com`に訪問者ID サービスを実装した金融サービス会社があるとします。 CORS リクエストヘッダーおよび応答ヘッダーでリソースへのアクセスをチェックする方法を次の表に示します。
 
 <table id="table_B004ACF52B5A4D33B1DCF7EA77BE4E6D"> 
  <thead> 
@@ -54,7 +47,7 @@ CORS は、異なるドメインをまたいでリソースをリクエストす
  <tbody> 
   <tr> 
    <td colname="col1"> <p> <b>リクエスト</b> </p> </td> 
-   <td colname="col2"> <p>金融会社のページが読み込まれると、ブラウザーは <span class="codeph">dpm.demdex.net</span> に対してリクエストをおこないます。 これは、ID サービスで使用するデータ収集サーバー（DCS）のドメインへの呼び出しです。 このクロスドメインリクエストには、次のヘッダーが含まれます。 </p> <p> 
+   <td colname="col2"> <p>金融会社のページが読み込まれると、ブラウザーは <span class="codeph">dpm.demdex.net</span> に対してリクエストをおこないます。 これは、訪問者ID サービスで使用されるデータ収集サーバー（DCS）のドメインへの呼び出しです。 このクロスドメインリクエストには、次のヘッダーが含まれます。 </p> <p> 
      <ul class="simplelist"> 
       <li> <code> Origin:https://www.finance-website.com</code> </li> 
      </ul> </p> </td> 
@@ -74,7 +67,7 @@ CORS は、異なるドメインをまたいでリソースをリクエストす
 
 ## CORS を使用することのその他のメリット {#section-6f44f30694c44f95bf9854b8a2af8449}
 
-ID サービスを使用する顧客にとっての CORS の利点をいくつか次の表に示します。
+次の表に、訪問者ID サービスを使用する顧客にCORSが提供する利点の一部を示します。
 
 <table id="table_AEB51A263D454F90B66E8C8D0513CF79"> 
  <thead> 
@@ -86,15 +79,15 @@ ID サービスを使用する顧客にとっての CORS の利点をいくつ�
  <tbody> 
   <tr> 
    <td colname="col1"> <p><b>セキュリティの向上</b> </p> </td> 
-   <td colname="col2"> <p>CORS では、<a href="https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> を使用して、データをリクエストおよび転送します。 このメソッドは、JSONP リクエストよりも安全です。 これにより、DCS からの応答に含まれている可能性のある任意の JavaScript を実行できなくなります。 CORS XMLHttpRequest 応答ペイロードは、ID サービス JavaScript によって解析され、コールバック関数で単純に実行されることはなくなります。 </p> <p> <p>注意：Cookie を受け入れるために、<span class="codeph">XMLHttpRequest</span> オブジェクトの <span class="codeph">withCredentials</span> プロパティを <span class="codeph">true</span> に設定する必要があります。 このプロパティは、Chrome、Firefox、Internet Explorer（v10 以降）、Opera および Safari でサポートされています。 </p> </p> </td> 
+   <td colname="col2"> <p>CORS では、<a href="https://developer.mozilla.org/ja/docs/Web/API/XMLHttpRequest" format="https" scope="external">XMLHttpRequest</a> を使用して、データをリクエストおよび転送します。 このメソッドは、JSONP リクエストよりも安全です。 これにより、DCS からの応答に含まれている可能性のある任意の JavaScript を実行できなくなります。 CORS XMLHttpRequest レスポンス ペイロードは、Visitor ID サービス JavaScriptによって解析され、単にコールバック関数で実行されるわけではありません。 </p> <p> <p>注意：Cookie を受け入れるために、<span class="codeph">XMLHttpRequest</span> オブジェクトの <span class="codeph">withCredentials</span> プロパティを <span class="codeph">true</span> に設定する必要があります。 このプロパティは、Chrome、Firefox、Internet Explorer（v10 以降）、Opera および Safari でサポートされています。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>パフォーマンスの向上</b> </p> </td> 
    <td colname="col2"> <p>次の理由で、CORS はパフォーマンスの向上に役立ちます。 </p> 
     <ul id="ul_EC3A178003A94D70883B914050D7C464"> 
-     <li id="li_F8B44352BFBB46CDBD07AE40B9F2D0EC">ブラウザーがリソースリクエストを管理します。 リクエストプロセスは ID サービスに対して透過的です。 </li> 
+     <li id="li_F8B44352BFBB46CDBD07AE40B9F2D0EC">ブラウザーがリソースリクエストを管理します。 リクエストプロセスは、訪問者ID サービスに対して透過的です。 </li> 
      <li id="li_C63E43A4CAB84210AB6A39100E5864BE">非同期 JSONP リクエストとは異なり、ブラウザーが CORS リクエストの優先順位を下げたりキューに入れたりしません。 </li> 
-     <li id="li_1A2A15F591B84D1BAED3CFAB391EEBEC">ID サービスが寛容に応答します。 これは、URL が <span class="codeph">Origin</span> として渡された場合に、ID サービスは必要なリソースに対するアクセスをページに付与することを意味します。 </li> 
+     <li id="li_1A2A15F591B84D1BAED3CFAB391EEBEC">訪問者ID サービスは許可して応答します。 つまり、<span class="codeph"> Origin</span>として渡されたURLに対して、訪問者ID サービスはページに必要なリソースへのアクセス権を付与します。 </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

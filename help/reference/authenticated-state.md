@@ -1,36 +1,31 @@
 ---
-description: 通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID と認証状態を各訪問者に関連付けることができます。
-keywords: ID サービス
+description: ECIDに加えて、追加の顧客IDと認証ステータスを各訪問者に関連付けることができます。
+keywords: 訪問者 ID サービス
 title: 顧客 ID と認証状態
 exl-id: 0215225c-20f5-4e44-a368-b2df683aca9d
 TQID: https://experienceleague.adobe.com/0z2HaRyNYcuJhE6WMkTZVXK-DiPu2S5bdnOiYsZwxYg
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
 source-wordcount: 642
-ht-degree: 97%
+ht-degree: 78%
 
 ---
 
 # 顧客 ID と認証状態 {#customer-ids-and-authentication-states}
 
-通常の Experience Cloud 訪問者 ID に加えて、追加の顧客 ID と認証状態を各訪問者に関連付けることができます。
+ECIDに加えて、追加の顧客IDと認証ステータスを各訪問者に関連付けることができます。
 
 ## 認証状態 {#section-68ad4065dfaa437d9070832d6e2bf85c}
 
-`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。 そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。 例えば、これらの ID を[顧客属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=ja)として [!DNL Experience Cloud] にアップロードして、異なるソリューションからこのデータにアクセスすることができます。
+`setCustomerIDs` メソッドは、同じ訪問者に対する複数の顧客 ID を受け入れます。 そのため、異なるデバイス間で個々のユーザーを識別したりターゲットにしたりすることができます。 例えば、これらのIDを[顧客属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=ja)としてCX Enterpriseにアップロードし、様々なソリューションからこのデータにアクセスできます。
 
 >[!IMPORTANT]
 >
->顧客属性とコアサービス機能には、`setCustomerIDs`（顧客 ID の同期）が必要です。 顧客 ID の同期は、[!DNL Analytics] のオプションの識別方法です。 [!DNL Target] には、顧客属性を機能させるために `Visitor.AuthState.AUTHENTICATED` が必要です。 例については、[コアサービス - ソリューションを有効にする方法](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=ja)を参照してください。
+>顧客属性とコアサービス機能には、`setCustomerIDs`（顧客 ID の同期）が必要です。 顧客IDの同期は、Analyticsのオプションの識別方法です。 Targetは、顧客属性を機能させるには`Visitor.AuthState.AUTHENTICATED`が必要です。 例については、[コアサービス - ソリューションを有効にする方法](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=ja)を参照してください。
 
-Experience Cloud ID サービスv1.5 以降の `setCustomerIDs` には、オプションの `AuthState` オブジェクトが含まれます。 `AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。 認証状態は、表に示すステータス値を使用して設定します。 認証状態は整数で返されます。
+訪問者ID サービス v1.5以降では、`setCustomerIDs`にはオプションの`AuthState` オブジェクトが含まれています。 `AuthState` は、訪問者の認証状態（ログイン済み、ログアウト済みなど）に従って訪問者を識別します。 認証状態は、表に示すステータス値を使用して設定します。 認証状態は整数で返されます。
 
 <table id="table_8547671CC97145529981FBF6C302BEC5"> 
  <thead> 
@@ -217,12 +212,12 @@ Object customerIDs = visitor.getCustomerIDs();
 
 ## SDK のサポート {#section-861c6b3b1ba645dda133dccb22ec7bb0}
 
-[!DNL Experience Cloud] ID サービスは、アドビの Android および iOS SDK コードで顧客 ID と認証状態をサポートします。 次のコードライブラリを参照してください。
+訪問者ID サービスは、AndroidおよびiOS SDK コードの顧客IDと認証状態をサポートしています。 次のコードライブラリを参照してください。
 
 * [Android SDK のメソッド](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=ja)
 * [iOS SDK メソッド](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=ja)
 
 ## Analytics および Audience Manager ユーザー向けの注意点 {#section-3a8e9d51e71c4c6e865184b81ed9d99b}
 
-宣言済み ID を [!DNL Audience Manager] に渡す場合、`userid` オブジェクトが、データソースに関連付けられた統合コードと一致している必要があります。 詳しくは、[結合ルールコードの設定](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=ja#configure-merge-rule-code) ドキュメントの[!UICONTROL Visitor ID Service] セクションを参照してください。
+宣言されたIDをAudience Managerに渡す場合、`userid` オブジェクトは、データソースに関連付けられた統合コードと一致する必要があります。 詳しくは、[結合ルールコードの設定](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/profile-merge-rules/merge-rules-start.html?lang=ja#configure-merge-rule-code) ドキュメントの[!UICONTROL Visitor ID Service] セクションを参照してください。
 

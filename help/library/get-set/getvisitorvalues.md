@@ -1,29 +1,22 @@
 ---
-description: これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。 オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
-keywords: ID サービス
+description: これは、Analytics、訪問者ID サービス、データ収集オプトアウト、地理的な場所、メタデータ「BLOB」コンテンツの識別子をデフォルトで返す非同期APIです。 オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
+keywords: 訪問者 ID サービス
 title: getVisitorValues
 exl-id: bd023e8d-a804-4205-989f-e1e58080b63c
 TQID: https://experienceleague.adobe.com/CF9G6wKlDxjklwedJk8KVmYH7KjA7CRkxtNu-mQ-Kjs
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 421
-ht-degree: 100%
+source-wordcount: 420
+ht-degree: 77%
 
 ---
 
 # getVisitorValues{#getvisitorvalues}
 
-これは、デフォルトで Analytics の識別子、ID サービス、データ収集オプトアウト、地域およびメタデータ「blob」コンテンツを返す非同期 API です。 オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
+これは、Analytics、訪問者ID サービス、データ収集オプトアウト、地理的な場所、メタデータ「BLOB」コンテンツの識別子をデフォルトで返す非同期APIです。 オプションの visitor.FIELDS 列挙を使用して、返される ID を制御することもできます。
 
 内容：
 
@@ -50,8 +43,8 @@ ht-degree: 100%
 このコードは、標準データセットを返します。 リクエストと応答は、次の例のようになります。
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance ("Insert Experience Cloud organization ID here",{...}); 
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance ("INSERT-IMS-ORG-ID-HERE",{...}); 
    
 //Add your callback to the GET method to return IDs and data. 
 visitor.getVisitorValues(visitorIdsCallback);
@@ -72,11 +65,11 @@ visitor.getVisitorValues(visitorIdsCallback);
 
 ## ユースケース 2：カスタムデータセットのリクエスト {#section-467b2f4e513344c89b7332b05f6f59f3}
 
-このコードはオプションの配列を使用し、`visitor.FIELDS` 列挙を使用して特定の ID セットを返します。 この場合、訪問者の Experience Cloud ID（MCID）と Analytics ID（MCAID）のみが必要です。 リクエストと応答は、次の例のようになります。
+このコードはオプションの配列を使用し、`visitor.FIELDS` 列挙を使用して特定の ID セットを返します。 この場合、訪問者のECID （MCID）とAnalytics ID （MCAID）のみが必要です。 リクエストと応答は、次の例のようになります。
 
 ```js
-//Call the ID service 
-var visitor = Visitor.getInstance("Insert Experience Cloud organization ID here", { ... });
+//Call the Visitor ID Service 
+var visitor = Visitor.getInstance("INSERT-IMS-ORG-ID-HERE", { ... });
 
 // Add an optional array to specify which IDs you want to return. 
 visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIELDS.MCAID]);
@@ -110,7 +103,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAAMLH </span> </p> </td> 
-   <td colname="col2"> <p>データ収集地域 ID です。 これは、特定の ID サービスデータセンターの地理的場所を示す数値識別子です。 </p> <p><a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=ja" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>および<a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint</a> を参照してください。 </p> </td> 
+   <td colname="col2"> <p>データ収集地域 ID です。 これは、特定の訪問者ID サービスデータセンターの地理的位置の数値識別子です。 </p> <p><a href="https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-api-reference/dcs-regions.html?lang=ja" format="https" scope="external">DCS 地域 ID、場所、ホスト名</a>および<a href="../../library/get-set/getlocationhint.md#reference-a761030ff06c4439946bb56febf42d4c" format="dita" scope="local"> getLocationHint</a> を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCAID </span> </p> </td> 
@@ -118,7 +111,7 @@ visitor.getVisitorValues(visitorIdsCallback, [visitor.FIELDS.MCMID, visitor.FIEL
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCMID </span> </p> </td> 
-   <td colname="col2"> <p>訪問者の Experience Cloud ID です。 </p> <p><a href="../../introduction/cookies.md" format="dita" scope="local">Cookie と Experience Cloud ID サービス</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>訪問者のECID。 </p> <p><a href="../../introduction/cookies.md" format="dita" scope="local"> Cookieと訪問者ID サービス </a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <span class="codeph"> MCOPTOUT </span> </p> </td> 

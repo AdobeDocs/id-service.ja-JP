@@ -1,23 +1,16 @@
 ---
-description: この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の Experience Cloud ID を共有できます。 この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。 VisitorAPI.js バージョン 1.7.0 以降で利用できます。
-keywords: ID サービス
+description: この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の ECID を共有できます。 この関数を使用するには、訪問者ID サービスを実装し、ソースドメインと宛先ドメインを所有している必要があります。 VisitorAPI.js バージョン 1.7.0 以降で利用できます。
+keywords: 訪問者 ID サービス
 title: appendVisitorIDsTo（クロスドメイントラッキング）
 exl-id: 3e4f4e2c-e658-4124-bd0e-59c63127bdde
 TQID: https://experienceleague.adobe.com/F4rWmYj6NidX861-qU8KI9RRbdwNdzP0x4CZUxPZfYw
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 89fabda03cf7b1e604cc043d6ec7c75dc967c5e4
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 429
-ht-degree: 100%
+source-wordcount: 432
+ht-degree: 61%
 
 ---
 
@@ -27,7 +20,7 @@ ht-degree: 100%
 >
 >ECID が最初に（または以前に）拒否された場合、クロスドメイントラッキングは意図したとおりに機能しません。 同意が「いいえ」に設定された時点での ID であったことを考慮し、URL を介して渡された既存の ID や、以前に Cookie に存在していた既存の ID はチェックされません。
 
-この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の Experience Cloud ID を共有できます。 この関数を使用するには、ID サービスを実装し、ソースドメインおよび宛先ドメインを所有している必要があります。 VisitorAPI.js バージョン 1.7.0 以降で利用できます。
+この関数を使用すると、ブラウザーでサードパーティ Cookie がブロックされている場合でも、複数のドメインにまたがって訪問者の ECID を共有できます。 この関数を使用するには、訪問者ID サービスを実装し、ソースドメインと宛先ドメインを所有している必要があります。 `VisitorAPI.js` バージョン 1.7.0以降で使用できます。
 
 内容：
 
@@ -37,20 +30,18 @@ ht-degree: 100%
  </a> </li> 
 </ul>
 
-<!-- <li> <a href="../../library/get-set/appendvisitorid.md#section-168e313df6054af0a7e27b9fa0d69640" format="dita" scope="local"> Dynamic Tag Management (DTM) and SDK Support -->
-
 ## ブラウザーでサードパーティの Cookie がブロックされている場合に複数のドメインをまたいだ訪問者を追跡する {#section-7251d88befd440b4b79520e33c5aa44a}
 
-ID サービスは、ユーザーがサイトを訪問したときにファーストパーティ Cookie とサードパーティ Cookie をブラウザーに書き込みます（[Cookie と Experience Cloud Identity Service ](../../introduction/cookies.md)を参照）。 ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。 サードパーティ Cookie には、ID サービスで MID を生成するために使用される別の ID が含まれます。 ブラウザーでサードパーティ Cookie がブロックされている場合、ID サービスは以下のことができなくなります。
+訪問者ID サービスは、ユーザーがサイトにアクセスしたときに、ファーストパーティおよびサードパーティのCookieをブラウザーに書き込みます（[Cookieと訪問者ID サービス ](../../introduction/cookies.md)を参照）。 ファーストパーティ Cookie には、訪問者の一意の ID である MID が含まれます。 サードパーティ Cookieには、訪問者ID サービスがMIDを生成するために使用する別のIDが含まれています。 ブラウザーがこのサードパーティ Cookieをブロックすると、訪問者ID サービスは次のことができません。
 
 * サイト訪問者が別のドメインに移動したときに、その訪問者の一意の ID を再生成する。
 * 同じ組織が所有する異なるドメインにわたって訪問者を追跡する。
 
-この問題を解決するには、`Visitor.appendVisitorIDsTo( *`url`*)` を実装します。 これにより、ブラウザーがサードパーティ Cookie をブロックしても、ID サービスが複数ドメインにわたってサイト訪問者を適切に追跡できます。 このプロパティは以下のように動作します。
+この問題を解決するには、`Visitor.appendVisitorIDsTo( *`url`*)` を実装します。 このプロパティを使用すると、ブラウザーがサードパーティ Cookieをブロックしている場合でも、訪問者ID サービスが複数のドメインのサイト訪問者を追跡できます。 このプロパティは以下のように動作します。
 
 * 訪問者が同じ組織の他のドメインを参照すると、`Visitor.appendVisitorIDsTo( *`url`*)` によって、元のドメインから宛先ドメインへの URL リダイレクトのクエリパラメーターとして MID が追加されます。
-* アドビに訪問者の ID のリクエストを送信するのではなく、宛先ドメインの ID サービスコードによって、URL から MID が抽出されます。 このリクエストにはサードパーティ Cookie が含まれますが、この場合、サードパーティ Cookie を利用できません。
-* 宛先ページの ID サービスコードは、MID で渡された値を使用して訪問者を追跡します。
+* 宛先ドメインの訪問者ID サービスコードは、その訪問者のIDのリクエストをAdobeに送信する代わりに、URLからMIDを抽出します。 このリクエストにはサードパーティ Cookie が含まれますが、この場合、サードパーティ Cookie を利用できません。
+* 宛先ページの訪問者ID サービスコードは、渡されたMIDを使用して訪問者を追跡します。
 
 詳しくは、コードサンプルを参照してください。
 
@@ -95,19 +86,19 @@ The following example can help you get started with `Visitor.appendVisitorIDsTo(
 //Code on Domain A 
 var destinationURL = "www.destination.com"; 
  
-//Call the ID service 
+//Call the Visitor ID Service 
 var visitor = Visitor.getInstance(...); 
  
 //Append visitor IDs to the destination URL 
 var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL); 
-     //Result of appendVisitorIDsTo includes destination URL, Experience Cloud ID (MCMID), and Analytics ID (MCAID) 
+     //Result of appendVisitorIDsTo includes destination URL, ECID (MCMID), and Analytics ID (MCAID) 
      "www.destination.com?adobe_mc=MCMID=1234|MCAID=5678"
 //Redirect to the destination
 ``` 
 -->
 
 <!--
-## Dynamic Tag Management (DTM) and SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
+## SDK Support {#section-168e313df6054af0a7e27b9fa0d69640}
 
 <table id="table_6E7152B4FD2B4C4D8C9477C68204C4FF"> 
  <thead> 
@@ -118,15 +109,11 @@ var destinationURLWithVisitorIDs = visitor.appendVisitorIDsTo(destinationURL);
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p> <b>DTM</b> </p> </td> 
-   <td colname="col2"> <p> <a href="https://helpx.adobe.com/dtm/kb/how-to-set-marketing-cloud-id-service-helper-function-in-adobe-d.html" format="https" scope="external"> Set the appendVisitorIDTo Function in DTM </a> </p> </td> 
-  </tr> 
-  <tr> 
    <td colname="col1"> <p> <b>SDK</b> </p> </td> 
    <td colname="col2"> 
     <ul id="ul_9D7933FF68EE4C71BAE999B3747F8398"> 
-     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html?lang=ja" format="https" scope="external"> Android ID Service Methods </a> </li> 
-     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html?lang=ja" format="https" scope="external"> iOS ID Service Methods </a> </li> 
+     <li id="li_9036C76AAECC4E639C23020C0C9F2AF8"> <a href="https://experienceleague.adobe.com/docs/mobile-services/android/experience-cloud-android/mc-methods.html" format="https" scope="external"> Android Visitor ID Service Methods </a> </li> 
+     <li id="li_E49D357905584674BFDFE348345B3849"> <a href="https://experienceleague.adobe.com/docs/mobile-services/ios/exp-cloud-ios/mc-methods.html" format="https" scope="external"> iOS Visitor ID Service Methods </a> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 

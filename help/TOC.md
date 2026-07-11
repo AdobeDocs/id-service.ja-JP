@@ -1,50 +1,49 @@
 ---
 audience: end-user
-user-guide-title: Experience Cloud ID サービスのヘルプ
-breadcrumb-title: ID サービスガイド
-user-guide-description: Adobe Experience Cloud ID サービスは、Experience Cloud のすべてのソリューションで訪問者を識別する永続的な汎用 ID を提供します。 これは、Experience Cloud ソリューションおよびサービスの従来の ID 生成コードを置き換えるのに役立ちます。
+user-guide-title: Adobe Visitor ID サービスのヘルプ
+breadcrumb-title: 訪問者ID サービスガイド
+user-guide-description: Adobe Visitor ID Serviceは、CX Enterpriseのすべてのソリューションをまたいで訪問者を識別する、ユニバーサルで永続的なIDを提供します。 CX Enterpriseのソリューションおよびサービスの従来のID生成コードを置き換えるのに役立ちます。
 user-guide-url: /content/help/en/id-service/using/home.html
-source-git-commit: 13bfd8b38596dd64f607c897a60bbeb2733b89bf
+source-git-commit: 7621dc8925235bd3cf159a404741bd02fc9b6a77
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 94%
+source-wordcount: '374'
+ht-degree: 45%
 
 ---
 
 
-# Experience Cloud ID サービスのヘルプ {#using}
+# Adobe Visitor ID サービスのヘルプ {#using}
 
-+ [ID サービスのヘルプ](home.md)
++ [訪問者ID サービスのヘルプ](home.md)
 + 概要 {#intro}
    + [概要](introduction/overview.md)
-   + [ID サービスについて](introduction/about-id-service.md)
-   + [Cookie と ID サービス](introduction/cookies.md)
-   + [ID サービスによる ID のリクエスト方法と設定方法](introduction/id-request.md)
+   + [訪問者ID サービスについて](introduction/about-id-service.md)
+   + [Cookieと訪問者ID サービス](introduction/cookies.md)
+   + [訪問者ID サービスがIDをリクエストおよび設定する方法](introduction/id-request.md)
    + [同期と一致率について](introduction/match-rates.md)
 + 実装 {#implementation}
    + [実装方法](implementation-guides/implementation-methods.md)
    + [実装ガイド](implementation-guides/implementation-guides.md)
-   + [Experience Platform タグを使用した実装](implementation-guides/ecid-implement-with-launch.md)
-   + [Analyticsの実装](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/overview){target=_blank}
+   + [タグを使用した実装](implementation-guides/ecid-implement-with-launch.md)
+   + [Analyticsの実装](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/overview){target=_blank}
    + [Target への実装](implementation-guides/setup-target.md)
    + [Analytics および Audience Manager への実装](implementation-guides/setup-aam-analytics.md)
    + [Analytics、Audience Manager および Target への実装](implementation-guides/setup-aam-analytics-target.md)
-   + [A4T での ID サービスの使用と Target のサーバーサイド実装](implementation-guides/ecid-a4t-target.md)
-   + [ID サービスとの直接統合](implementation-guides/direct-integration.md)
+   + [A4TおよびTargetのサーバーサイド実装での訪問者ID サービスの使用](implementation-guides/ecid-a4t-target.md)
+   + [訪問者ID サービスとの直接統合](implementation-guides/direct-integration.md)
    + [直接統合のユースケース](implementation-guides/direct-integration-examples.md)
-   + [ID サービスのテストと検証](implementation-guides/test-verify.md)
+   + [訪問者ID サービスのテストと検証](implementation-guides/test-verify.md)
    + オプトインサービス {#opt-in-service}
       + [オプトインサービスの概要](implementation-guides/opt-in-service/optin-overview.md)
       + [オプトインサービスの設定](implementation-guides/opt-in-service/getting-started.md)
       + [オプトインサービスの検証](implementation-guides/opt-in-service/testing-optin-and-iab-plugin.md)
-      + [Experience Platform Launch を使用したオプトインの設定](implementation-guides/opt-in-service/launch.md)
-      + [DTM を使用したオプトインの設定](implementation-guides/opt-in-service/optin-dtm.md)
-      + [ユーザーの同意に基づいて Experience Cloud アクティビティを制御する](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
+      + [タグを使用したオプトインの設定](implementation-guides/opt-in-service/launch.md)
+      + [ユーザーの同意に基づいた顧客体験のエンタープライズアクティビティの管理](implementation-guides/opt-in-service/use-opt-in-to-control-experience-cloud-activities-based-on-user-consent.md)
       + [オプトインのユースケース](implementation-guides/opt-in-service/use-cases.md)
       + [オプトインのリファレンス](implementation-guides/opt-in-service/api.md)
       + [IAB フレームワークでのオプトインサービスの使用](implementation-guides/opt-in-service/iab.md)
-+ ID サービス API {#id-service-api}
-   + [ID サービス API の概要](library/library.md)
++ 訪問者ID サービス API {#id-service-api}
+   + [訪問者ID サービス APIの概要](library/library.md)
    + 設定 {#configurations}
       + [設定の概要](library/function-vars/function-vars.md)
       + [audienceManagerServer および audienceManagerServerSecure](library/function-vars/subdomain-config.md)
@@ -82,22 +81,21 @@ ht-degree: 94%
 + リファレンス {#reference}
    + [リファレンスの概要](reference/reference.md)
    + [Google Chrome SameSite のラベル付けの変更](reference/chrome-samesite-labelling.md)
-   + [コンテンツセキュリティポリシーおよび ID サービス](reference/csp.md)
-   + [ID サービスでの COPPA のサポート](reference/coppa.md)
-   + [ID サービスでの CORS のサポート](reference/cors.md)
+   + [コンテンツセキュリティポリシーと訪問者ID サービス](reference/csp.md)
+   + [訪問者ID サービスでのCOPPA サポート](reference/coppa.md)
+   + [訪問者ID サービスでのCORS サポート](reference/cors.md)
    + [顧客 ID と認証状態](reference/authenticated-state.md)
    + [Safari ITP の世界における ECID ライブラリのメソッド](reference/ecid-library-methods.md)
    + [ユニーク訪問者数の識別](reference/unique-vis-method.md)
-   + [AMCV Cookie または ID サービスからの地域 ID およびユーザー ID の取得](reference/regions.md)
-   + [ID サービスの要件](reference/requirements.md)
-   + [ビデオのハートビートと ID サービス](reference/heartbeat.md)
-   + [Data Workbench と ID サービス](reference/dwb.md)
+   + [AMCV Cookieまたは訪問者ID サービスからリージョンとユーザーIDを取得する](reference/regions.md)
+   + [Visitor ID サービスの要件](reference/requirements.md)
+   + [ビデオハートビートと訪問者ID サービス](reference/heartbeat.md)
    + [setCustomerIDs の SHA256 ハッシュサポート](reference/hashing-support.md)
 + よくある質問（FAQ） {#faqs}
    + [FAQ の概要](faq-intro/faq-intro.md)
-   + [ID サービスに関する FAQ](faq-intro/faq.md)
-   + [他の Experience Cloud ソリューションに関する FAQ](faq-intro/other-faq.md)
-+ ID サービスのリリースノート {#release-notes}
+   + [訪問者ID サービスに関するFAQ](faq-intro/faq.md)
+   + [他のCX エンタープライズソリューションに関するFAQ](faq-intro/other-faq.md)
++ 訪問者ID サービスのリリースノート {#release-notes}
    + [2022年リリースノート](release-notes/notes-2022.md)
    + [2021年リリースノート](release-notes/notes-2021.md)
    + [2020 年リリースノート](release-notes/notes-2020.md)
@@ -106,5 +104,3 @@ ht-degree: 94%
    + [2017 年リリースノート](release-notes/notes-2017.md)
    + [2016 年リリースノート](release-notes/notes-2016.md)
    + [2015 年リリースノート](release-notes/notes-2015.md)
-+ {hide-from-toc}[目次から非表示のAnalytics テスト](analytics-test-file-hidetoc.md)
-+ {hide-from-toc}[非表示のテストファイル &#x200B;](hidden-file.md)

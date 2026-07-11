@@ -1,31 +1,23 @@
 ---
-description: Experience Cloud ソリューション（オプトインではカテゴリーと呼ばれます）で使用される単一の参照ポイントとしてオプトインサービスを実装し、訪問者のデバイスで Cookie を作成するかどうかを決定します。
+description: オプトインサービスを、CX エンタープライズソリューション（オプトインのカテゴリと呼ばれる）が使用する単一参照先として実装し、訪問者のデバイスにCookieを作成するかどうかを決定します。
 title: オプトインサービスの設定
 exl-id: 6e8a6531-9924-4523-a842-cb4614a7a7a0
 TQID: https://experienceleague.adobe.com/Nq3mYoy0U-0RK8MHzsu-yCIVwbCbaAJnIUR8QZDCKcs
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 849
-ht-degree: 97%
+source-wordcount: 965
+ht-degree: 84%
 
 ---
 
 # オプトインサービスの設定{#setting-up-opt-in-service}
 
-Experience Cloud ソリューション（オプトインではカテゴリーと呼ばれます）で使用される単一の参照ポイントとしてオプトインサービスを実装し、訪問者のデバイスで Cookie を作成するかどうかを決定します。
+オプトインサービスを、CX エンタープライズソリューション（オプトインのカテゴリと呼ばれる）が使用する単一参照先として実装し、訪問者のデバイスにCookieを作成するかどうかを決定します。
 
-オプトインサービスは、Experience Cloud ID（ECID）にバンドルされた JavaScript ライブラリであり、Visitor JS のグローバルな `adobe` オブジェクトに `adobe.optIn` オブジェクトとして存在します。 インストールされたオプトインサービスを使用すると、訪問者が複数のアドビソリューションのオプトインを一度に実行するか、それぞれの権限に合わせてソリューションを順番に表示するかを指定できます。 オプトインサービスの同意管理機能を使用すると、固有のプライバシー要件に応じたさまざまな設定での実装が可能になります。
+オプトインサービスは、ECIDにバンドルされたJavaScript ライブラリで、グローバル `adobe` オブジェクトの`adobe.optIn` オブジェクトとしてVisitor JSに存在します。 インストールされたオプトインサービスを使用すると、訪問者が複数のアドビソリューションのオプトインを一度に実行するか、それぞれの権限に合わせてソリューションを順番に表示するかを指定できます。 オプトインサービスの同意管理機能を使用すると、固有のプライバシー要件に応じたさまざまな設定での実装が可能になります。
 
 オプトインサービスを使用すると、訪問者が複数のアドビソリューションのオプトインを一度に実行するか、それぞれの権限に合わせてソリューションを順番に表示するかを指定できます。 承認プロセスが完了し、顧客によって記録されると、CMP の訪問者の承認は、関連する同意の要求に対応するためにすべてのアドビソリューションで取得できます。
 
@@ -41,7 +33,7 @@ Experience Cloud ソリューション（オプトインではカテゴリーと
    * AppMeasurement 2.11 以降
    * DIL 9.0
    * AT.js バージョン 1.7.0
-   * AT.js Launch 拡張バージョン 9.0
+   * AT.js タグ拡張機能バージョン 9.0
    * Analytics の場合、App Measurement 2.11（拡張機能 1.6 付き）
    * Target の場合、拡張機能 0.9.1
 
@@ -53,13 +45,13 @@ Experience Cloud ソリューション（オプトインではカテゴリーと
 
 1. 会社のプライバシー要件は、GDPR への準拠を選択する方法によって異なります。 会社のプライバシーチームが事前同意状態で使用しても問題ないライブラリを確認してください。
 
-[Adobe Experience Platform のタグ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を使用している場合は、[オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)を活用してオプトインサービスを設定します。
+[ タグ ](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ja)を使用している場合は、[ オプトイン拡張機能](../../implementation-guides/opt-in-service/launch.md)を利用してオプトインサービスを設定します。
 
 ## オプトインのカテゴリー {#section-9ab0492ab4414f0ca16dc08d3a905f47}
 
-訪問者のオプトインの環境設定は Adobe Experience Cloud ソリューションとは相対的で、各ソリューションがカテゴリーとして表されます。 カテゴリーは `adobe.OptInCategories` オブジェクトで指定されます。例えば、ECID コンポーネントは `adobe.OptInCategories` となります。 `ECID`. 以下は、`adobe.OptInCategories` の定義です。
+訪問者のオプトインの環境設定は、Adobe CX Enterprise ソリューションを基準とし、各ソリューションはカテゴリとして表されます。 カテゴリーは `adobe.OptInCategories` オブジェクトで指定されます。例えば、ECID コンポーネントは `adobe.OptInCategories` となります。 `ECID`. 以下は、`adobe.OptInCategories` の定義です。
 
-オプトインの設定は、カテゴリーごとに管理されます。ここでは、各 Experience Cloud ソリューションはカテゴリーで表されます。
+オプトイン設定はカテゴリごとに管理され、各CX Enterprise ソリューションはカテゴリで表されます。
 
 ```
 adobe.OptInCategories = { 
@@ -71,8 +63,7 @@ adobe.OptInCategories = {
 };
 ```
 
-オプトインサービスでは、サイトで使用する各Adobe ソリューションごとに、訪問者の権限の設定を行うことができます。承認されたカテゴリ別に訪問者の設定を保存するライブラリを含み、順次フローをサポートします。このフローでは、承認プロセスが各カテゴリの「確認」または「拒否」設定を一度に1つずつ受け取ります。ソリューション/カテゴリを設定して、全体または個別のソリューションとしてオプトインできます。
-Adobeソリューションのクライアントサイドライブラリはすべてオプトインサービスに依存しており、ソリューションに権限が付与されない限りCookieは生成されません。オプトインは、現在の訪問者の同意設定を提供および更新するための様々なアプローチをサポートします。この節では、オプトインサービスの環境設定の例を示します。関数とパラメーターの完全なリストについては、[&#x200B; オプトイン API リファレンス &#x200B;](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)を参照してください。
+オプトインサービスにより、サイトで使用されるアドビソリューションごとに訪問者の権限設定を設定できます。 このオブジェクトでは、承認済みのカテゴリーごとに訪問者の設定を保存するライブラリが用意されており、承認プロセスで各カテゴリーの「確認」または「拒否」設定を 1 つずつ受け取るシーケンシャルフローがサポートされています。 複数のソリューション（カテゴリー）をまとめてオプトインするか、個別のソリューションとしてオプトインするかを設定できます。アドビソリューションのクライアント側ライブラリはすべて、オプトインサービスに依存しており、ソリューションに権限が付与されない限り Cookie を生成しません。 オプトインでは、現在の訪問者の同意設定をさまざまな方法で指定および更新できます。 このセクションでは、オプトインサービスの設定例を示します。 機能とパラメーターのリストについては、[オプトイン API リファレンス](../../implementation-guides/opt-in-service/api.md#reference-4f30152333dd4990ab10c1b8b82fc867)を参照してください。
 
 オプトインサービスの設定は、グローバルな `getInstance()` オブジェクトをインスタンス化する Visitor JS `adobe` 関数で指定します。 以下に、オプトインサービス用の Visitor JS [設定](../../implementation-guides/opt-in-service/api.md#section-d66018342baf401389f248bb381becbf)を示します。
 

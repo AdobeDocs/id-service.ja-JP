@@ -1,36 +1,30 @@
 ---
-description: これらの例は、直接統合と Experience Cloud ID（MID）に関連する 2 つの一般的なユースケースを扱っています。 MID はサイト訪問者の一意の永続的な ID です。
-keywords: ID サービス
+description: これらの例では、直接統合とECIDに関連する2つの一般的なユースケースについて説明します。 MID はサイト訪問者の一意の永続的な ID です。
+keywords: 訪問者 ID サービス
 title: 直接統合の使用例
 exl-id: f2a55b90-8307-4242-b20a-6a3c367a251b
 TQID: https://experienceleague.adobe.com/1vfYQsSZiqM3SrnP0lmSrZEWpAMsbwVK8sR0MNitetQ
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 457
-ht-degree: 86%
+source-wordcount: 456
+ht-degree: 53%
 
 ---
 
 # 直接統合の使用例 {#direct-integration-use-cases}
 
-直接統合と Experience Cloud ID（ECID または MID）に関連する 2 つの一般的な使用例を示します。 この ID は、サイト訪問者に割り当てられる一意の永続的 ID です。
+これらの例では、直接統合とECID （MIDとも呼ばれます）に関連する2つの一般的なユースケースについて説明します。 この ID は、サイト訪問者に割り当てられる一意の永続的 ID です。
 
 >[!TIP]
 >
 >* 使用例を参照する前に、[コード構文と変数](../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9)をよくお読みください。
->* MID について詳しくは、[Cookie と Experience Cloud ID サービス](../introduction/cookies.md)を参照してください。
+>* MIDについて詳しくは、[Cookieと訪問者ID サービス ](../introduction/cookies.md)を参照してください。
 >
 
-## ユースケース 1：Experience Cloud ID（MID）は持っているが、自分の訪問者 ID を渡して認証状態を設定したい {#section-a67d89a343754d1286d03cf08d34b806}
+## ユースケース 1:ECIDがあるが、訪問者IDを渡して認証状態を設定したい {#section-a67d89a343754d1286d03cf08d34b806}
 
 <table id="table_DA8840FCB51541109FE6DF20430E8924"> 
  <thead> 
@@ -52,7 +46,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>アクション</b> </p> </td> 
-   <td colname="col2"> <p>これらの条件を前提として、以下を含む ID サービスを呼び出します。 </p> 
+   <td colname="col2"> <p>これらの条件を考慮して、以下を含む訪問者ID サービスを呼び出します。 </p> 
     <ul id="ul_9ECB1A65266644E89E949C57D202D5A4"> 
      <li id="li_10A6F5A9C54D44A08F4F2E405E6019E2">MID（1234）。 </li> 
      <li id="li_4869572B40E54C54B88A2474DAC475A8">データプロバイダー ID。 これは、会社に割り当てられる一意の ID です。 この ID を 4444 としましょう。 </li> 
@@ -62,7 +56,7 @@ ht-degree: 86%
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>ソリューションとコードサンプル</b> </p> </td> 
-   <td colname="col2"> <p>ID サービスへの呼び出しを次のような形式に設定します。 </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&d_cid=4444%019876%011&d_ver=2</span> </p> <p>この呼び出しの例には以下が含まれていることに注意してください。 </p> 
+   <td colname="col2"> <p>訪問者ID サービスへの呼び出しの形式を次のように設定します。 </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_mid=1234&amp;d_cid=4444%019876%011&amp;d_ver=2</span> </p> <p>この呼び出しの例には以下が含まれていることに注意してください。 </p> 
     <ul id="ul_0667FBFD8D3C46BDBD027F484691EC97"> 
      <li id="li_FAB1FAE703DB48D1A32EE72684028964">MID：<span class="codeph">d_mid=1234</span> </li> 
      <li id="li_C97B74FF444F4BB4B4A5CB1CBBE52249">訪問者の独自の ID に結合された MID：<span class="codeph">d_mid=1234&amp;d_cid=4444%019876%011</span> </li> 
@@ -87,17 +81,17 @@ ht-degree: 86%
    <td colname="col2"> <p>このユースケースでは、次のことを仮定します。 </p> 
     <ul id="ul_BF3BD821907B46A4B2EFA63146D35722"> 
      <li id="li_E658AE0671D14558B65FDD8992F25996">サイト訪問者の MID がない。 </li> 
-     <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">ID サービスに MID をリクエストする必要がある。 </li> 
-     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41">自社の<a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local">組織 ID</a> がわかっている。 これを 5555 としましょう。 </li> 
+     <li id="li_28A48BB3F71C4E4297F95A2D3E10AD7B">訪問者ID サービスからMIDをリクエストする必要があります。 </li> 
+     <li id="li_E2C306B9308D41E5BFE2F23EF48F5A41"><a href="../reference/requirements.md#section-a02f537129a64ffbb690d5738d360c26" format="dita" scope="local"> IMS組織ID</a>を把握します。 これを 5555 としましょう。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>アクション</b> </p> </td> 
-   <td colname="col2"> <p>これらの条件を前提として、組織 ID を含む ID サービスを呼び出します。 </p> <p>また、<a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">直接統合ガイド </a>に記載されているその他のパラメーター（例：<span class="codeph"> d_blob</span>または<span class="codeph"> dcs_region</span>など）がある場合 これらを渡しても構いません。 </p> </td> 
+   <td colname="col2"> <p>これらの条件を考慮して、IMS組織IDを含む訪問者ID サービスを呼び出します。 </p> <p>また、<a href="../implementation-guides/direct-integration.md#concept-4cd3206a84bb4687af0b312ae09648b9" format="dita" scope="local">直接統合ガイド </a>に記載されているその他のパラメーター（例：<span class="codeph"> d_blob</span>または<span class="codeph"> dcs_region</span>など）がある場合 これらを渡しても構いません。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>ソリューションとコードサンプル</b> </p> </td> 
-   <td colname="col2"> <p>ID サービスへの呼び出しを次のような形式に設定します。 </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&d_ver=2</span> </p> <p>この呼び出しの例には組織 ID <span class="codeph">d_orgid=5555</span> が含まれていることに注意してください。 この訪問者の <span class="keyword">Experience Cloud</span> ID が返されます。 </p> </td> 
+   <td colname="col2"> <p>訪問者ID サービスへの呼び出しの形式を次のように設定します。 </p> <p> <span class="codeph">https://dpm.demdex.net/id?d_orgid=5555&amp;d_ver=2</span> </p> <p>サンプル呼び出しにIMS組織ID <span class="codeph">d_orgid=5555</span>が含まれていることに注意してください。 この訪問者のECIDが返されます。 </p> </td> 
   </tr> 
  </tbody> 
 </table>

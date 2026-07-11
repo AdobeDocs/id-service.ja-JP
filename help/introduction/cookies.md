@@ -1,52 +1,47 @@
 ---
-description: ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。 これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
-keywords: playstation;ID サービス
-title: Cookie と Experience Cloud ID サービス
+description: 訪問者ID サービスは、IMS組織ID、CX エンタープライズ AMCV Cookie、およびdemdex Cookieを使用して、サイト訪問者の一意の永続的なIDを作成および保存します。 こうしたCookieにより、Visitor ID Serviceは様々なドメインをまたいで訪問者を追跡し、様々なCX Enterprise ソリューション間でのデータ共有を可能にします。
+keywords: playstation；訪問者ID サービス
+title: CookieとAdobe Visitor ID サービス
 exl-id: 727c6381-56b9-44b8-8e59-355d072769be
 TQID: https://experienceleague.adobe.com/iLOFGQ9t-DqYfqOZs3K5yZI7903dMPEjANaJ7lH8K0o
-product_v2:
-  - id: e1971122-7081-4556-9222-8a31bd71800c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 5c41e39a833b527a329f62e5f0929445f47139de
+product_v2: id: e1971122-7081-4556-9222-8a31bd71800c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: f8a45b24-4be7-4f1b-909b-60d06b483a20id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
 workflow-type: tm+mt
-source-wordcount: 968
-ht-degree: 100%
+source-wordcount: 990
+ht-degree: 42%
 
 ---
 
-# Cookie と Experience Cloud ID サービス{#cookies-and-the-experience-cloud-id-service}
+# CookieとAdobe Visitor ID サービス{#cookies-and-the-experience-cloud-id-service}
 
-ID サービスは組織 ID、Experience Cloud AMCV Cookie および demdex Cookie を使用して、サイト訪問者固有の永続的な識別子を作成して保存します。 これらの Cookie により、ID サービスでは異なるドメインをまたいで訪問者を追跡できるようになり、異なる Experience Cloud ソリューション間でデータの共有が可能になります。
+訪問者ID サービスは、IMS組織ID、CX エンタープライズ AMCV Cookie、およびdemdex Cookieを使用して、サイト訪問者の一意の永続的なIDを作成および保存します。 こうしたCookieにより、Visitor ID Serviceは様々なドメインをまたいで訪問者を追跡し、様々なCX Enterprise ソリューション間でのデータ共有を可能にします。
 
-## ID サービス Cookie について {#section-f438168beaec409ab8b2cc58bd021e26}
+## 訪問者ID サービス Cookieについて {#section-f438168beaec409ab8b2cc58bd021e26}
 
-ID サービスは、正常に機能するために AMCV Cookie、AMCVS Cookie および demdex Cookie を使用します。 これらの Cookie は ID サービスで使用されるデータが格納されるファイルです。 このような ID サービス Cookie は、他のファーストパーティ Cookie やサードパーティ Cookie を制御する場合と同様のルールに従っており、危険なものでも悪意があるものでもなく、ブラウザーの Web サイトやサービスで保存される他のファーストパーティ Cookie やサードパーティ Cookie と変わりません。 ID サービスで使用される Cookie について詳しくは、次の各セクションを参照してください。
+訪問者ID サービスは、適切に機能するためにAMCV、AMCVS、およびdemdex Cookieに依存しています。 これらのCookieは、訪問者ID サービスで使用されるデータを保存するファイルです。 これらの訪問者ID サービス Cookieは、他のファーストパーティ Cookieとサードパーティ Cookieを管理する同じルールに従って、Web サイトまたはサービスがブラウザーに保存する他のファーストパーティ Cookieやサードパーティ Cookieとは危険でも悪意もなく、異なるものでもありません。 訪問者ID サービスで使用されるCookieについて詳しくは、以下の節を参照してください。
 
-### ID サービス Cookie で実行できること
+### 訪問者ID サービス Cookieの機能
 
 * サイト訪問者に一意の ID（MID）を設定して保存する。
-* ID サービスがデータを収集して他の Experience Cloud ソリューションと共有できるように、この一意の ID を維持する。
-* 複数のドメインをまたいでユーザーを追跡する。 ただし、そのためには、同じ組織が他のドメインも所有している必要があり、それらのドメインに ID サービスコードがデプロイされている必要があります。
+* 訪問者ID サービスが他のCX Enterprise ソリューションとデータを収集および共有できるように、この一意のIDを保持します。
+* 複数のドメインをまたいでユーザーを追跡する。 ただし、そのためには、他のドメインを所有し、訪問者ID サービスコードがデプロイされている必要があります。
 
-### ID サービス Cookie で実行できないこと
+### 訪問者ID サービス Cookieで実行できないこと
 
 * コンピューターウィルスを格納して転送し、実行する。
 * 電子メールアドレスなどの個人を特定できる情報（PII）にアクセスしたり、そのような情報を保存したりする。
 * コンピューターのハードウェアまたはソフトウェアを制御する。
 * コンピューターを不安定にしたりパフォーマンスの問題を引き起こしたりする。
-* ID サービスを使用していないサイトでユーザーを追跡する。
+* 訪問者ID サービスを使用しないサイトのユーザーを追跡します。
 
 ## AMCV Cookie {#section-c55af54828dc4cce89f6118655d694c8}
 
-ID サービスによって設定される Cookie の属性は次のとおりです。
+訪問者ID サービスによって設定されたCookieの次の属性。
 
 **名前**
 
-AMCV Cookie 名は、`AMCV_<variable name>@AdobeOrg` という構文に従います。 この名前の「`<variable name>`」要素は、Experience Cloud 組織 ID の一部を示すプレースホルダーです。 ID サービスコードの `Visitor.getInstance` 関数によって、この ID が DCS に渡されます。
+AMCV Cookie 名は、`AMCV_<variable name>@AdobeOrg` という構文に従います。 名前では、`<variable name>`要素はIMS組織IDの一部のプレースホルダーです。 このIDは、訪問者ID サービスコードの`Visitor.getInstance`関数によってDCSに渡されます。
 
 完全形式の Cookie 名は以下のようになります。
 
@@ -56,7 +51,7 @@ AMCV_1FD6776A524453CC0A490D44%40AdobeOrg
 
 **内容**
 
-AMCV Cookie には Experience Cloud 訪問者 ID（MID）が含まれます。 MID は、`MCMID|<Experience Cloud ID>` という構文に従うキーと値のペアとして保存されます。
+AMCV Cookieには、ECIDまたはMIDが含まれています。 MID は、`MCMID|<ECID>` という構文に従うキーと値のペアとして保存されます。
 
 完全形式のキーと値のペアは以下のようになります。
 
@@ -68,15 +63,15 @@ MCMID|20265673158980419722735089753036633573
 
 **ドメイン**
 
-AMCV Cookie は、ブラウザーのファーストパーティドメインに設定されます。 つまり、ユーザーが現在訪問しているサイトのドメインに設定されます。 その結果、ID サービスコードおよびその他の Experience Cloud コードライブラリが、AMCV Cookie に保存されている MID を読み取ることができます。
+AMCV Cookie は、ブラウザーのファーストパーティドメインに設定されます。 つまり、ユーザーが現在訪問しているサイトのドメインに設定されます。 そのため、訪問者ID サービスコードおよびその他のCX エンタープライズコードライブラリは、AMCV Cookieに保存されているMIDを読み取ることができます。
 
-ただし、AMCV Cookie はファーストパーティドメインに設定されているので、異なるドメインでユーザーを追跡して識別するために使用することはできません。 その代わりに、ID サービスは組織 ID と demdex ID を利用して、サイトの訪問者が別のドメインに移動したときに正しい MID を返します。
+ただし、AMCV Cookie はファーストパーティドメインに設定されているので、異なるドメインでユーザーを追跡して識別するために使用することはできません。 代わりに、訪問者ID サービスは、IMS組織IDとdemdex IDに依存して、サイト訪問者が別のドメインに移動したときに正しいMIDを返します。
 
 ## AMCVS Cookie {#section-92a9454f1ac645948f9059b9fad928bf}
 
 **名前**
 
-AMCVS Cookie 名は、`AMCVS_####@AdobeOrg` 構文に従います。 この名前の「####」要素は、Experience Cloud 組織 ID の一部を示すプレースホルダーです。 ID サービスコードの `theVisitor.getInstance` 関数によって、この ID が DCS に渡されます。
+AMCVS Cookie 名は、`AMCVS_####@AdobeOrg` 構文に従います。 名前では、####要素は、IMS組織IDの一部のプレースホルダーです。 このIDは、訪問者ID サービスコードの`theVisitor.getInstance`関数によってDCSに渡されます。
 
 完全形式の Cookie 名は以下のようになります。
 
@@ -116,7 +111,7 @@ AMCVS Cookie は、ブラウザーのファーストパーティドメインに�
   </tr> 
   <tr> 
    <td colname="col1"> <p> <b>ドメイン</b> </p> </td> 
-   <td colname="col2"> <p>demdex Cookie は、ブラウザーの demdex.net というサードパーティドメインに設定されます。 サードパーティドメインは、ユーザーが現在訪問しているサイトとは異なります。 </p> <p>ファーストパーティの AMCV Cookie とは異なり、demdex Cookie および demdex ID は異なるドメインをまたいで維持されます。 demdex ID と組織 ID は、ID サービスが正しい訪問者 ID を使用してサイト訪問者を識別し、正しい訪問者 ID を返すための共通の値です。 </p> </td> 
+   <td colname="col2"> <p>demdex Cookie は、ブラウザーの demdex.net というサードパーティドメインに設定されます。 サードパーティドメインは、ユーザーが現在訪問しているサイトとは異なります。 </p> <p>ファーストパーティの AMCV Cookie とは異なり、demdex Cookie および demdex ID は異なるドメインをまたいで維持されます。 Demdex IDとIMS組織IDは、訪問者ID サービスが適切な訪問者IDを持つサイト訪問者を返して識別できるようにする一般的な値です。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -125,15 +120,15 @@ Demdex に関する開示について詳しくは、[Audience Manager デバイ�
 
 関連情報については、[Demdex ドメインの呼び出しについて](https://experienceleague.adobe.com/docs/audience-manager/user-guide/reference/demdex-calls.html?lang=ja)に関するドキュメントを参照してください。
 
-## Experience Cloud ID の生成 {#section-15f69c0bac394b4b9966a23fbc586d17}
+## ECIDの生成 {#section-15f69c0bac394b4b9966a23fbc586d17}
 
-Experience Cloud ID（MID）は、組織 ID と demdex ID から計算によって生成されます。 これらの ID が変わらない限り、特定のユーザーに関する正しい MID を生成できるかどうかは、単純に計算上の問題になります。 同じ組織 ID と demdex ID があれば、いつでも同じ MID 値が得られます。 そのため、ID サービスは、同じ組織で管理され、ID サービスコードが設定されている複数のドメインをまたいで訪問者を追跡することができます。
+ECIDは、IMS組織IDとdemdex IDから数学的に導き出されます。 これらの ID が変わらない限り、特定のユーザーに関する正しい MID を生成できるかどうかは、単純に計算上の問題になります。 同じIMS組織IDとdemdex IDを使用すると、毎回同じMID値を取得できます。 これにより、訪問者ID サービスは、ユーザーが制御し、訪問者ID サービスコードで設定したドメイン間で訪問者を追跡できます。
 
-ページが読み込まれると、ID サービスは MID の作成を開始します。 このプロセスでは、`visitorAPI.js` コードライブラリに含まれるコードによって ID サービスへのイベント呼び出しが発行され、その呼び出しを通じて組織 ID が送信されます。 ID サービスは MID と demdex ID を作成して、前者を AMCV Cookie に、後者を demdex Cookie にそれぞれ返します。
+訪問者ID サービスは、ページの読み込み時にMIDの作成を開始します。 このプロセス中に、`VisitorAPI.js` コードライブラリによって提供されたコードは、イベント呼び出しでIMS組織IDを訪問者ID サービスに送信します。 訪問者ID サービスは、それぞれAMCVおよびdemdex CookieでMIDおよびdemdex IDを作成して返します。
 
 ## Cookie フラグ
 
-Experience Cloud Cookie のフラグを次の表に示します。
+次の表に、CX Enterprise Cookieのフラグを示します。
 
 | cookie（設定元） | httpOnly | 安全 | SameSite |
 |--- |--- |--- |--- |
@@ -145,5 +140,5 @@ Experience Cloud Cookie のフラグを次の表に示します。
 
 ## 次の手順 {#section-8db1727a63bc4ff68b495f270315d453}
 
-[Experience Cloud ID サービスによる ID のリクエスト方法と設定方法](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)を参照してください。
+[訪問者ID サービスがIDを要求および設定する方法を参照してください…](../introduction/id-request.md#concept-2caacebb1d244402816760e9b8bcef6a)。
 
