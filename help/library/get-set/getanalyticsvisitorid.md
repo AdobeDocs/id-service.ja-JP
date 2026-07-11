@@ -58,7 +58,7 @@ var analyticsID = visitor.getAnalyticsVisitorID(useAnalyticsVisitorID)
 
 **例 2**
 
-組織が訪問者ID サービスを完全に実装する前に[猶予期間](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)を使用している場合、クエリ文字列に`aid` パラメーターが表示されます。 サイトを訪問しているユーザーが新しいユーザーで、猶予期間を使用していない場合、訪問者は`mid` （ECID） パラメーターを取得します。
+組織が訪問者ID サービスを完全に実装する前に[猶予期間](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/migration)を使用している場合、クエリ文字列に`aid` パラメーターが表示されます。 サイトを訪問しているユーザーが新しいユーザーで、猶予期間を使用していない場合、訪問者は`mid` （ECID） パラメーターを取得します。
 
 >[!MORELIKETHIS]
 >

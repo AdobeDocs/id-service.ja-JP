@@ -172,7 +172,7 @@ s.prop1 = (typeof(Visitor) != "undefined" ? "VisitorAPI Present" : "VisitorAPI M
 
 ## 手順 8：（オプション）猶予期間の設定 {#section-aceacdb7d5794f25ac6ff46f82e148e1}
 
-これらの使用例のいずれかがお客様の状況に当てはまる場合は、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)までお問い合わせいただき、一時的な[猶予期間](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)を設定するよう依頼してください。 猶予期間は最大180日間有効です。 必要に応じて、猶予期間を更新できます。
+これらの使用例のいずれかがお客様の状況に当てはまる場合は、[カスタマーケア](https://helpx.adobe.com/jp/marketing-cloud/contact-support.html)までお問い合わせいただき、一時的な[猶予期間](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/migration)を設定するよう依頼してください。 猶予期間は最大180日間有効です。 必要に応じて、猶予期間を更新できます。
 
 **部分的実装**
 

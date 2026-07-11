@@ -36,7 +36,7 @@ Adobe Visitor ID サービスは、CX Enterprise アプリケーションとサ�
 アドビがどのように訪問者を一意に識別し、ID 情報を解決しているかを深く理解するには、以下の分類を参照してください。
 
 * **訪問者ID サービス**：訪問者ID サービス **は、ECID**&#x200B;の設定を担当します。 詳しくは、[訪問者ID サービスの概要](./introduction/overview.md)を参照してください。
-* **ECID**: ECIDは、Adobe Experience PlatformおよびAdobe CX Enterprise アプリケーション全体で人とデバイスを識別するために使用される共有ID名前空間です。 ECID について詳しくは、[ECID の概要](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid)を参照してください。
+* **ECID**: ECIDは、Adobe Experience PlatformおよびAdobe CX Enterprise アプリケーション全体で人とデバイスを識別するために使用される共有ID名前空間です。 ECID について詳しくは、[ECID の概要](https://experienceleague.adobe.com/ja/docs/experience-platform/identity/features/ecid)を参照してください。
 * **Experience Platform ID サービス**：Experience Platform ID サービスは、デバイスやシステム間で ID を橋渡しすることで、顧客とその行動を包括的に把握できるようにします。 詳しくは、[Experience Platform ID サービスの概要](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ja)を参照してください。
 
 ## 基本を学ぶ

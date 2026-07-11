@@ -37,7 +37,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### アドビの従業員による大きな変更
 
-CX Enterprise ソリューションの製品チームのテクニカルライター、プログラムマネージャー、開発者であり、技術記事の投稿や作成が自分の仕事である場合は、`https://github.com/Adobe-Enterprise-Docs/id-service.en`のプライベートリポジトリを使用する必要があります。
+CX Enterprise ソリューションの製品チームのテクニカルライター、プログラムマネージャー、開発者であり、技術記事の投稿や作成が自分の仕事である場合は、`https://github.com/Adobe-Enterprise-Docs/id-service.ja-JP`のプライベートリポジトリを使用する必要があります。
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 

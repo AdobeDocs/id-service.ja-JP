@@ -220,7 +220,7 @@ JavaScript リクエストの SDID 識別子をチェックします。 Analytic
 テストで AID が返される場合、以下のいずれかであることを示します。
 
 * 従来のAnalytics IDを移行するプロセスの再訪問者です。
-* [猶予期間](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/migration)を有効にしている。
+* [猶予期間](https://experienceleague.adobe.com/ja/docs/analytics/implementation/id/migration)を有効にしている。
 
 AIDが表示されたら、その値をTarget mboxMCAVIDと比較します。 これらの値は、訪問者ID サービスが正しく実装されている場合と同じです。
 
