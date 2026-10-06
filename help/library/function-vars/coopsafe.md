@@ -3,13 +3,20 @@ description: Visitor ID サービスがAdobe Device Co-opにデータを送信�
 keywords: 訪問者 ID サービス
 title: isCoopSafe
 exl-id: 827f7819-9f95-4e8d-90c3-dcf86b67715b
-source-git-commit: 09ee359440c122702a6ce83708c98af3862c9cc9
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 8164b6bb0cfea56330c775d8ffb0b839a23ecf3f
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 69%
-
 ---
-
 # isCoopSafe{#iscoopsafe}
 
 Visitor ID サービスがAdobe Device Co-opにデータを送信するかどうかを決定する、オプションのブール値の設定。
